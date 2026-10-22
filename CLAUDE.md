@@ -94,7 +94,8 @@ w dyskusji.
 ### Do ustalenia na callu
 - Kto bierze rolę A, B i C.
 - Czy powtórzenie badania z artykułu bazowego na Lab 3 ma liczby porównane z tabelą autorów.
-- Kto zakłada repo na GitHubie.
+- ~~Kto zakłada repo na GitHubie.~~ Założone 22.10: https://github.com/anton-ovod/polish-ocr-benchmark (prywatne;
+  upublicznić: `gh repo edit --visibility public --accept-visibility-change-consequences`).
 
 ## Stan prac (MVP, 22.10.2026)
 
