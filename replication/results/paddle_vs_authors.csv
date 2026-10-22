@@ -1,0 +1,335 @@
+file,prediction,seconds,text,type,category,subcategory,key,authors_prediction,cer_ours_run,cer_authors_run,identical,cer_between_runs
+syntetic-turkish-dataset/benchmark/text_category/handwritten/98.png,En siddetli elestiriciler bile dillerinin altindakini soylemekten cekindiler,0.486,En şiddetli eleştiriciler bile dillerinin altındakini söylemekten çekindiler.,handwritten,context_dependent_errors,sentences,98.png,En siddetli elestiriciler bile dillerinin altindakini soylemekten cekindiler,0.07792207792207792,0.07792207792207792,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/148.png,Bu ordunun yeniden genis capta hareket ve taarruz yaparak talihini tecrube etmeye bir daha kalkismasi muskul idi,1.266,Bu ordunun yeniden geniş çapta hareket ve taarruz yaparak talihini tecrübe etmeye bir daha kalkışması müşkül idi.,handwritten,context_dependent_errors,sentences,148.png,Bu ordunun yeniden genis capta hareket ve taarruz yaparak talihini tecrube etmeye bir daha kalkismasi muskul idi,0.08849557522123894,0.08849557522123894,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/181.png,"Efendiler, o ginlerde butaarruytehinde, hertarafta ve /hecliste mithis bir propaganda cereyanediyord",0.468,"Efendiler, o günlerde bu taarruz lehinde, her tarafta ve Meclis'te müthiş bir propaganda cereyan ediyordu.",handwritten,context_dependent_errors,sentences,181.png,"Efendiler, o ginlerde butaarruytehinde, hertarafta ve /hecliste mithis bir propaganda cereyanediyord",0.1320754716981132,0.1320754716981132,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/79.png,,0.291,"Bizim, Teşkilatı Esasiye Kanunu'nu değiştirmeye salahiyetimiz yok demek, gayri meşru olduğumuzu kabul etmek demektir.",handwritten,context_dependent_errors,sentences,79.png,,1.0,1.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/45.png,Cepheden uzak bulunuyormus.,0.408,Cepheden uzak bulunuyormuş.,handwritten,context_dependent_errors,sentences,45.png,Cepheden uzak bulunuyormus.,0.037037037037037035,0.037037037037037035,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/16.png,"Ankara'da bulunan Retet Pasa, beni izel olarak girerek izah talebinde buhunou",0.518,"Ankara'da bulunan Refet Paşa, beni özel olarak görerek izah talebinde bulundu.",handwritten,context_dependent_errors,sentences,16.png,"Ankara'da bulunan Retet Pasa, beni izel olarak girerek izah talebinde buhunou",0.08974358974358974,0.08974358974358974,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/127.png,Tabiatiyla icabinin icrasina girisecegiz,0.542,Tabiatıyla icabının icrasına girişeceğiz.,handwritten,context_dependent_errors,sentences,127.png,Tabiatiyla icabinin icrasina girisecegiz,0.17073170731707318,0.17073170731707318,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/182.png,"Bilakis, bir tehdit vasitass ortadan kalkt.",0.649,"Bilakis, bir tehdit vasıtası ortadan kalktı.",handwritten,context_dependent_errors,sentences,182.png,"Bilakis, bir tehdit vasitass ortadan kalkt.",0.06818181818181818,0.06818181818181818,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/41.png,Bwnwn da zamanu geleceklin,0.499,Bunun da zamanı gelecektir.,handwritten,context_dependent_errors,sentences,41.png,Bwnwn da zamanu geleceklin,0.2222222222222222,0.2222222222222222,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/165.png,"Fakat, senelerden beri kan doktugumuzu goren Avrupa ve butun dunya, su kanl mucadelelerin neden ileri geldigini elbette dusunmektedirler.",0.599,"Fakat, senelerden beri kan döktüğümüzü gören Avrupa ve bütün dünya, şu kanlı mücadelelerin neden ileri geldiğini elbette düşünmektedirler.",handwritten,context_dependent_errors,sentences,165.png,"Fakat, senelerden beri kan doktugumuzu goren Avrupa ve butun dunya, su kanl mucadelelerin neden ileri geldigini elbette dusunmektedirler.",0.12318840579710146,0.12318840579710146,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/373.png,hugur,0.252,hızır,handwritten,context_dependent_errors,word,373.png,hugur,0.6,0.6,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/320.png,usulsiizliikler,0.207,usulsüzlükler,handwritten,context_dependent_errors,word,320.png,usulsiizliikler,0.3076923076923077,0.3076923076923077,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/394.png,kanuniastran,0.238,kanunlaştıran,handwritten,context_dependent_errors,word,394.png,kanuniastran,0.23076923076923078,0.23076923076923078,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/215.png,cemiyetge,0.187,cemiyetçe,handwritten,context_dependent_errors,word,215.png,cemiyetge,0.1111111111111111,0.1111111111111111,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/326.png,sawrlarin,0.406,satırların,handwritten,context_dependent_errors,word,326.png,sawrlarin,0.3,0.3,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/258.png,sogunluk,0.21,çoğunluk,handwritten,context_dependent_errors,word,258.png,sogunluk,0.25,0.25,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/313.png,irtibati,0.156,irtibatı,handwritten,context_dependent_errors,word,313.png,irtibati,0.125,0.125,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/255.png,yayimliyorlardi,0.187,yayımlıyorlardı,handwritten,context_dependent_errors,word,255.png,yayimliyorlardi,0.2,0.2,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/297.png,sorylamagd.,0.183,sayılamazdı,handwritten,context_dependent_errors,word,297.png,sorylamagd.,0.45454545454545453,0.45454545454545453,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/284.png,eaaazahase,0.238,almayacaklarını,handwritten,context_dependent_errors,word,284.png,eaaazahase,0.7333333333333333,0.7333333333333333,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/564.png,savuslo,0.292,çavuşla,handwritten,distortion_type,blur,564.png,savuslo,0.42857142857142855,0.42857142857142855,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/529.png,sak,0.316,şaki,handwritten,distortion_type,blur,529.png,sak,0.5,0.5,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/540.png,cmrtiurmaoja,0.128,emrolunmasıyla,handwritten,distortion_type,blur,540.png,cmrtiurmaoja,0.5714285714285714,0.5714285714285714,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/488.png,nurlanyla,0.108,nurlarıyla,handwritten,distortion_type,blur,488.png,nurlanyla,0.2,0.2,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/554.png,dokim,0.152,döküm,handwritten,distortion_type,blur,554.png,dokim,0.4,0.4,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/507.png,mubadele,0.186,mübadele,handwritten,distortion_type,blur,507.png,mubadele,0.125,0.125,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/530.png,kollar,0.336,kolları,handwritten,distortion_type,blur,530.png,kollar,0.14285714285714285,0.14285714285714285,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/446.png,Erganlk,0.194,kırgınlık,handwritten,distortion_type,blur,446.png,Erganlk,0.4444444444444444,0.4444444444444444,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/451.png,,0.143,yenişehir,handwritten,distortion_type,blur,451.png,,1.0,1.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/492.png,muduru,0.181,müdürü,handwritten,distortion_type,blur,492.png,muduru,0.5,0.5,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1382.png,,0.1,endişesine,handwritten,distortion_type,clean,1382.png,,1.0,1.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1297.png,yaydirildi,0.117,yaydırıldı,handwritten,distortion_type,clean,1297.png,yaydirildi,0.3,0.3,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1222.png,esitlik,0.143,eşitlik,handwritten,distortion_type,clean,1222.png,esitlik,0.14285714285714285,0.14285714285714285,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1384.png,beysehir,0.117,beyşehir,handwritten,distortion_type,clean,1384.png,beysehir,0.125,0.125,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1386.png,acilisindan,0.145,açılışından,handwritten,distortion_type,clean,1386.png,acilisindan,0.45454545454545453,0.45454545454545453,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1366.png,vash,0.191,vasfı,handwritten,distortion_type,clean,1366.png,vash,0.4,0.4,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1352.png,yapsin,0.263,yapsın,handwritten,distortion_type,clean,1352.png,yapsin,0.16666666666666666,0.16666666666666666,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1284.png,cekismekten,0.268,çekişmekten,handwritten,distortion_type,clean,1284.png,cekismekten,0.18181818181818182,0.18181818181818182,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1260.png,siiriilmemektedin,0.343,sürülmemektedir,handwritten,distortion_type,clean,1260.png,siiriilmemektedin,0.3333333333333333,0.3333333333333333,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1310.png,fransizlardan,0.163,fransızlardan,handwritten,distortion_type,clean,1310.png,fransizlardan,0.07692307692307693,0.07692307692307693,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/777.png,EVLATIARING,0.191,evlatlarını,handwritten,distortion_type,low_resolution,777.png,EVLATIARING,0.2727272727272727,0.2727272727272727,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/776.png,,0.055,başlıları,handwritten,distortion_type,low_resolution,776.png,,1.0,1.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/741.png,,0.099,erkânıkamuoyuna,handwritten,distortion_type,low_resolution,741.png,,1.0,1.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/627.png,,0.059,üzücü,handwritten,distortion_type,low_resolution,627.png,,1.0,1.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/684.png,,0.071,çekişmekten,handwritten,distortion_type,low_resolution,684.png,,1.0,1.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/651.png,,0.031,yenişehir,handwritten,distortion_type,low_resolution,651.png,,1.0,1.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/713.png,,0.038,alışverişinde,handwritten,distortion_type,low_resolution,713.png,,1.0,1.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/794.png,,0.308,sevdasına,handwritten,distortion_type,low_resolution,794.png,,1.0,1.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/697.png,,0.063,yaydırıldı,handwritten,distortion_type,low_resolution,697.png,,1.0,1.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/746.png,,0.022,taahhüdün,handwritten,distortion_type,low_resolution,746.png,,1.0,1.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/886.png,sikri,0.169,şükrü,handwritten,distortion_type,noisy,886.png,sikri,0.6,0.6,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/874.png,,0.215,hafazasında,handwritten,distortion_type,noisy,874.png,,1.0,1.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/930.png,kollaru,0.232,kolları,handwritten,distortion_type,noisy,930.png,kollaru,0.14285714285714285,0.14285714285714285,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/965.png,taagyinune,0.245,taayyününe,handwritten,distortion_type,noisy,965.png,taagyinune,0.3,0.3,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/820.png,subeleri,0.125,şubeleri,handwritten,distortion_type,noisy,820.png,subeleri,0.125,0.125,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/973.png,arsivi,0.232,arşivi,handwritten,distortion_type,noisy,973.png,arsivi,0.16666666666666666,0.16666666666666666,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/970.png,savas,0.244,savaş,handwritten,distortion_type,noisy,970.png,savas,0.2,0.2,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/953.png,,0.058,mülayim,handwritten,distortion_type,noisy,953.png,,1.0,1.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/993.png,insanhgin,0.219,insanlığın,handwritten,distortion_type,noisy,993.png,insanhgin,0.4,0.4,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/971.png, kwstah.,0.22,küstah,handwritten,distortion_type,noisy,971.png, kwstah.,0.3333333333333333,0.3333333333333333,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1177.png,eolatlarmu,0.157,evlatlarını,handwritten,distortion_type,rotated,1177.png,eolatlarmu,0.36363636363636365,0.36363636363636365,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1163.png,goriulendir,0.13,görülendir,handwritten,distortion_type,rotated,1163.png,goriulendir,0.3,0.3,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1092.png,,0.025,müdürü,handwritten,distortion_type,rotated,1092.png,,1.0,1.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1058.png,uzgun,0.275,üzgün,handwritten,distortion_type,rotated,1058.png,uzgun,0.4,0.4,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1025.png,mutecaviz,0.16,mütecaviz,handwritten,distortion_type,rotated,1025.png,mutecaviz,0.1111111111111111,0.1111111111111111,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1023.png,yollanacaktier,0.143,yollanacaktır,handwritten,distortion_type,rotated,1023.png,yollanacaktier,0.15384615384615385,0.15384615384615385,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1035.png,mutesekkir,0.357,müteşekkir,handwritten,distortion_type,rotated,1035.png,mutesekkir,0.2,0.2,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1116.png,genislemis,0.327,genişlemiş,handwritten,distortion_type,rotated,1116.png,genislemis,0.2,0.2,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1038.png,askerligin,0.216,askerliğin,handwritten,distortion_type,rotated,1038.png,askerligin,0.1,0.1,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1178.png,findiden,0.177,şimdiden,handwritten,distortion_type,rotated,1178.png,findiden,0.25,0.25,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1751.png,,0.206,mesela,handwritten,turkish_character_confusion,non_turkish,1751.png,,1.0,1.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1768.png,venedik,0.271,venedik,handwritten,turkish_character_confusion,non_turkish,1768.png,venedik,0.0,0.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1606.png,omriyetie,0.236,emniyetle,handwritten,turkish_character_confusion,non_turkish,1606.png,omriyetie,0.3333333333333333,0.3333333333333333,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1673.png,,0.051,bayrakla,handwritten,turkish_character_confusion,non_turkish,1673.png,,1.0,1.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1749.png,alt,0.185,alt,handwritten,turkish_character_confusion,non_turkish,1749.png,alt,0.0,0.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1784.png,firar,0.128,firar,handwritten,turkish_character_confusion,non_turkish,1784.png,firar,0.0,0.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1601.png,dolu,0.207,dolu,handwritten,turkish_character_confusion,non_turkish,1601.png,dolu,0.0,0.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1693.png,beridir,0.18,beridir,handwritten,turkish_character_confusion,non_turkish,1693.png,beridir,0.0,0.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1783.png,venizelos,0.166,venizelos,handwritten,turkish_character_confusion,non_turkish,1783.png,venizelos,0.0,0.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1638.png,,0.149,hariciye,handwritten,turkish_character_confusion,non_turkish,1638.png,,1.0,1.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1435.png,goktan,0.183,çoktan,handwritten,turkish_character_confusion,turkish,1435.png,goktan,0.16666666666666666,0.16666666666666666,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1439.png,sokaklarnda,0.38,sokaklarında,handwritten,turkish_character_confusion,turkish,1439.png,sokaklarnda,0.08333333333333333,0.08333333333333333,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1582.png,rmu,0.299,nüfusu,handwritten,turkish_character_confusion,turkish,1582.png,rmu,0.8333333333333334,0.8333333333333334,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1551.png,odeden,0.324,öteden,handwritten,turkish_character_confusion,turkish,1551.png,odeden,0.3333333333333333,0.3333333333333333,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1405.png,suslu,0.333,süslü,handwritten,turkish_character_confusion,turkish,1405.png,suslu,0.4,0.4,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1506.png,bagllik,0.2,bağlılık,handwritten,turkish_character_confusion,turkish,1506.png,bagllik,0.375,0.375,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1437.png,kisimlarindaki,0.349,kısımlarındaki,handwritten,turkish_character_confusion,turkish,1437.png,kisimlarindaki,0.21428571428571427,0.21428571428571427,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1524.png,mewitktue,0.489,menatıktaki,handwritten,turkish_character_confusion,turkish,1524.png,mewitktue,0.5454545454545454,0.5454545454545454,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1487.png,nigamlarn,0.204,nizamların,handwritten,turkish_character_confusion,turkish,1487.png,nigamlarn,0.2,0.2,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1432.png,goturmek,0.217,götürmek,handwritten,turkish_character_confusion,turkish,1432.png,goturmek,0.25,0.25,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2075.png,miuesseselerin,0.311,müesseselerin,handwritten,word_length_effects,long_words,2075.png,miuesseselerin,0.15384615384615385,0.15384615384615385,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2005.png,tutuklularinin,0.154,tutuklularının,handwritten,word_length_effects,long_words,2005.png,tutuklularinin,0.14285714285714285,0.14285714285714285,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2122.png,vazimakaminin,0.586,vazimakamının,handwritten,word_length_effects,long_words,2122.png,vazimakaminin,0.15384615384615385,0.15384615384615385,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2118.png,nimetiyturk,0.148,nimetiytürk,handwritten,word_length_effects,long_words,2118.png,nimetiyturk,0.09090909090909091,0.09090909090909091,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2062.png,intarlarina,0.281,ihtarlarına,handwritten,word_length_effects,long_words,2062.png,intarlarina,0.18181818181818182,0.18181818181818182,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2140.png,gagrldigini,0.269,çağrıldığını,handwritten,word_length_effects,long_words,2140.png,gagrldigini,0.5833333333333334,0.5833333333333334,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2128.png,teryrariarndas,0.267,taraftarlarından,handwritten,word_length_effects,long_words,2128.png,teryrariarndas,0.4375,0.4375,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2119.png,muhatabimin,0.419,muhatabımın,handwritten,word_length_effects,long_words,2119.png,muhatabimin,0.18181818181818182,0.18181818181818182,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2096.png,sikayetleri,0.202,şikâyetleri,handwritten,word_length_effects,long_words,2096.png,sikayetleri,0.18181818181818182,0.18181818181818182,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2196.png,yogunlasturabilmek,0.289,yoğunlaştırabilmek,handwritten,word_length_effects,long_words,2196.png,yogunlasturabilmek,0.16666666666666666,0.16666666666666666,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1945.png,,0.092,açılıyor,handwritten,word_length_effects,short_words,1945.png,,1.0,1.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1820.png,divan,0.286,divanı,handwritten,word_length_effects,short_words,1820.png,divan,0.16666666666666666,0.16666666666666666,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1831.png,,0.278,erbabı,handwritten,word_length_effects,short_words,1831.png,,1.0,1.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1960.png,,0.267,takipçisi,handwritten,word_length_effects,short_words,1960.png,,1.0,1.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1857.png,,0.278,şarkat,handwritten,word_length_effects,short_words,1857.png,,1.0,1.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1845.png,tirklerine,0.223,türklerine,handwritten,word_length_effects,short_words,1845.png,tirklerine,0.1,0.1,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1940.png,inkisafat,0.322,inkişafat,handwritten,word_length_effects,short_words,1940.png,inkisafat,0.1111111111111111,0.1111111111111111,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1923.png,dort,0.209,dört,handwritten,word_length_effects,short_words,1923.png,dort,0.25,0.25,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1865.png,catalca,0.19,çatalca,handwritten,word_length_effects,short_words,1865.png,catalca,0.14285714285714285,0.14285714285714285,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1849.png,siurim,0.191,şiarını,handwritten,word_length_effects,short_words,1849.png,siurim,0.7142857142857143,0.7142857142857143,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/2307.png,"Hakikaten adetleri cok, uyeleri sinirli sayida olan bu hizipler, birbiriyle musabakaya kalkismislar ve yekdigerini dinlememek yuzunden adeta Meclis'te bir kargasa varligina sebep oimaya baslamislard.",3.768,"Hakikaten adetleri çok, üyeleri sınırlı sayıda olan bu hizipler, birbiriyle müsabakaya kalkışmışlar ve yekdiğerini dinlememek yüzünden adeta Meclis'te bir kargaşa varlığına sebep olmaya başlamışlardı.",printed,context_dependent_errors,sentences,2307.png,"Hakikaten adetleri cok, uyeleri sinirli sayida olan bu hizipler, birbiriyle musabakaya kalkismislar ve yekdigerini dinlememek yuzunden adeta Meclis'te bir kargasa varligina sebep oimaya baslamislard.",0.115,0.115,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/2309.png,"Bu cemiyetin, zararli bir sekil ve mahiyet aldigina kani oldum",0.702,"Bu cemiyetin, zararlı bir şekil ve mahiyet aldığına kani oldum.",printed,context_dependent_errors,sentences,2309.png,"Bu cemiyetin, zararli bir sekil ve mahiyet aldigina kani oldum",0.09523809523809523,0.09523809523809523,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/2239.png,"Katibi Umumisi Hakki Behic Bey ve Ankara'daki heyeti idaresi, ciddi ve esasli faaliyet sarf etmisler.",1.181,"Kâtibi Umumisi Hakkı Behiç Bey ve Ankara'daki heyeti idaresi, ciddi ve esaslı faaliyet sarf etmişler.",printed,context_dependent_errors,sentences,2239.png,"Katibi Umumisi Hakki Behic Bey ve Ankara'daki heyeti idaresi, ciddi ve esasli faaliyet sarf etmisler.",0.04950495049504951,0.04950495049504951,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/2358.png,"Istanbul'da Vatan, Tanin, Tevhidi Ejkar ve Son Telgraf ve Adana'da Abdulkadir Kemali Bey tarafindan cikanlan Toksoz gibi gazetelerle birle$tiler.",1.87,"İstanbul'da Vatan, Tanin, Tevhidi Efkâr ve Son Telgraf ve Adana'da Abdülkadir Kemali Bey tarafından çıkarılan Toksöz gibi gazetelerle birleştiler.",printed,context_dependent_errors,sentences,2358.png,"Istanbul'da Vatan, Tanin, Tevhidi Ejkar ve Son Telgraf ve Adana'da Abdulkadir Kemali Bey tarafindan cikanlan Toksoz gibi gazetelerle birle$tiler.",0.07482993197278912,0.07482993197278912,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/2210.png,"Seri ve kati netice almak, dusmani bu cenahindan vurmakla mumkundu",1.836,"Seri ve kati netice almak, düşmanı bu cenahından vurmakla mümkündü.",printed,context_dependent_errors,sentences,2210.png,"Seri ve kati netice almak, dusmani bu cenahindan vurmakla mumkundu",0.11940298507462686,0.11940298507462686,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/2271.png,"Efendiler, komedya oynayan ve oynatan Sukru Efendi'nin kendisidir.",1.091,"Efendiler, komedya oynayan ve oynatan Şükrü Efendi'nin kendisidir.",printed,context_dependent_errors,sentences,2271.png,"Efendiler, komedya oynayan ve oynatan Sukru Efendi'nin kendisidir.",0.045454545454545456,0.045454545454545456,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/2399.png,Gumushane Mebusu Zeki Bey ondan evvel oldugu iddiasinda bulundu.,1.064,Gümüşhane Mebusu Zeki Bey ondan evvel olduğu iddiasında bulundu.,printed,context_dependent_errors,sentences,2399.png,Gumushane Mebusu Zeki Bey ondan evvel oldugu iddiasinda bulundu.,0.078125,0.078125,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/2263.png,"Ali Bey'in Ayvalik mintikasinda muharebe cephesi teskil etmesi 
+yavas Soma'da, Akhisar'da, Salihli'de milli cepheler teskil olunmaya baslamist",2.78,"Ali Bey'in Ayvalık mıntıkasında muharebe cephesi teşkil etmesi üzerine, yavaş yavaş Soma'da, Akhisar'da, Salihli'de milli cepheler teşkil olunmaya başlamıştı.",printed,context_dependent_errors,sentences,2263.png,"Ali Bey'in Ayvalik mintikasinda muharebe cephesi teskil etmesi 
+yavas Soma'da, Akhisar'da, Salihli'de milli cepheler teskil olunmaya baslamist",0.17088607594936708,0.17088607594936708,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/2237.png,Boyle sey olur mu?,0.434,Böyle şey olur mu?,printed,context_dependent_errors,sentences,2237.png,Boyle sey olur mu?,0.1111111111111111,0.1111111111111111,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/2308.png," Musir ibrahim Pasa'nin bu suretle hakkindaki itimadi teyit etmesi, cok gegmeden, kendisinin butun Makedonya'yl istibdat aleyhtarlarindan temizlemeye memur edilmesini hazirlad.",0.883,"Müşir İbrahim Paşa'nın bu suretle hakkındaki itimadı teyit etmesi, çok geçmeden, kendisinin bütün Makedonya'yı istibdat aleyhtarlarından temizlemeye memur edilmesini hazırladı.",printed,context_dependent_errors,sentences,2308.png," Musir ibrahim Pasa'nin bu suretle hakkindaki itimadi teyit etmesi, cok gegmeden, kendisinin butun Makedonya'yl istibdat aleyhtarlarindan temizlemeye memur edilmesini hazirlad.",0.0847457627118644,0.0847457627118644,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/2515.png,tasar!,0.297,tasarı,printed,context_dependent_errors,word,2515.png,tasar!,0.16666666666666666,0.16666666666666666,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/2412.png,uzdu,0.454,üzdü,printed,context_dependent_errors,word,2412.png,uzdu,0.5,0.5,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/2564.png,manevryall,0.148,maneviyatı,printed,context_dependent_errors,word,2564.png,manevryall,0.3,0.3,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/2563.png,saki,0.273,şaki,printed,context_dependent_errors,word,2563.png,saki,0.25,0.25,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/2547.png,malumatini,0.309,malumatını,printed,context_dependent_errors,word,2547.png,malumatini,0.2,0.2,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/2552.png,musaadesini,0.186,müsaadesini,printed,context_dependent_errors,word,2552.png,musaadesini,0.09090909090909091,0.09090909090909091,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/2574.png,cihanina,0.185,cihanına,printed,context_dependent_errors,word,2574.png,cihanina,0.125,0.125,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/2511.png,curetkar,0.281,cüretkâr,printed,context_dependent_errors,word,2511.png,curetkar,0.25,0.25,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/2503.png,politikacilar,0.156,politikacılar,printed,context_dependent_errors,word,2503.png,politikacilar,0.07692307692307693,0.07692307692307693,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/2524.png,ogludur,0.154,oğludur,printed,context_dependent_errors,word,2524.png,ogludur,0.14285714285714285,0.14285714285714285,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/2750.png,hususlarindan,0.32,hususlarından,printed,distortion_type,blur,2750.png,hususlarindan,0.07692307692307693,0.07692307692307693,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/2658.png,uzgun,0.155,üzgün,printed,distortion_type,blur,2658.png,uzgun,0.4,0.4,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/2694.png,gorusmekte,0.134,görüşmekte,printed,distortion_type,blur,2694.png,gorusmekte,0.3,0.3,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/2627.png,uzucu,0.199,üzücü,printed,distortion_type,blur,2627.png,uzucu,0.6,0.6,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/2706.png,sarayinda,0.111,sarayında,printed,distortion_type,blur,2706.png,sarayinda,0.1111111111111111,0.1111111111111111,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/2731.png,dogrultusunda,0.122,doğrultusunda,printed,distortion_type,blur,2731.png,dogrultusunda,0.07692307692307693,0.07692307692307693,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/2637.png,sultanlarin,0.17,sultanların,printed,distortion_type,blur,2637.png,sultanlarin,0.09090909090909091,0.09090909090909091,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/2671.png,ultimatomunu,0.191,ültimatomunu,printed,distortion_type,blur,2671.png,ultimatomunu,0.08333333333333333,0.08333333333333333,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/2669.png,cikarmadikca,0.171,çıkarmadıkça,printed,distortion_type,blur,2669.png,cikarmadikca,0.3333333333333333,0.3333333333333333,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/2782.png,endisesine,0.285,endişesine,printed,distortion_type,blur,2782.png,endisesine,0.1,0.1,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3492.png,muduru,0.109,müdürü,printed,distortion_type,clean,3492.png,muduru,0.5,0.5,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3562.png,yiiklenmeliydi,0.141,yüklenmeliydi,printed,distortion_type,clean,3562.png,yiiklenmeliydi,0.15384615384615385,0.15384615384615385,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3559.png,eklenmistir,0.228,eklenmiştir,printed,distortion_type,clean,3559.png,eklenmistir,0.09090909090909091,0.09090909090909091,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3426.png,kiymettar,0.25,kıymettar,printed,distortion_type,clean,3426.png,kiymettar,0.1111111111111111,0.1111111111111111,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3581.png,hyanete,0.103,hıyanete,printed,distortion_type,clean,3581.png,hyanete,0.125,0.125,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3515.png,beyanatlarinda,0.315,beyanatlarında,printed,distortion_type,clean,3515.png,beyanatlarinda,0.07142857142857142,0.07142857142857142,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3528.png,subelerinin,0.162,şubelerinin,printed,distortion_type,clean,3528.png,subelerinin,0.09090909090909091,0.09090909090909091,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3476.png,Zaatt,0.135,zattır,printed,distortion_type,clean,3476.png,Zaatt,0.5,0.5,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3442.png,uzattigi,0.127,uzattığı,printed,distortion_type,clean,3442.png,uzattigi,0.375,0.375,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3570.png,savas,0.2,savaş,printed,distortion_type,clean,3570.png,savas,0.2,0.2,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/2968.png,bulduklarindan,0.436,bulduklarından,printed,distortion_type,low_resolution,2968.png,bulduklarindan,0.07142857142857142,0.07142857142857142,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/2963.png,gorulendir,0.249,görülendir,printed,distortion_type,low_resolution,2963.png,gorulendir,0.2,0.2,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/2976.png,bashilon,0.21,başlıları,printed,distortion_type,low_resolution,2976.png,bashilon,0.6666666666666666,0.6666666666666666,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/2959.png,eklenmistir,0.457,eklenmiştir,printed,distortion_type,low_resolution,2959.png,eklenmistir,0.09090909090909091,0.09090909090909091,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/2984.png,beysehir,0.283,beyşehir,printed,distortion_type,low_resolution,2984.png,beysehir,0.125,0.125,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/2965.png,,0.038,taayyününe,printed,distortion_type,low_resolution,2965.png,,1.0,1.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/2924.png,,0.047,bağımsızlığını,printed,distortion_type,low_resolution,2924.png,,1.0,1.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/2958.png,mebusanina,0.125,mebusanına,printed,distortion_type,low_resolution,2958.png,mebusanina,0.1,0.1,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/2883.png,,0.149,çoğunluğuyla,printed,distortion_type,low_resolution,2883.png,,1.0,1.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/2962.png,yuklenmeliydi,0.124,yüklenmeliydi,printed,distortion_type,low_resolution,2962.png,yuklenmeliydi,0.07692307692307693,0.07692307692307693,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3052.png,esnaflari,0.102,esnafları,printed,distortion_type,noisy,3052.png,esnaflari,0.1111111111111111,0.1111111111111111,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3033.png,seckin,0.134,seçkin,printed,distortion_type,noisy,3033.png,seckin,0.16666666666666666,0.16666666666666666,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3063.png,mensuplarinin,0.3,mensuplarının,printed,distortion_type,noisy,3063.png,mensuplarinin,0.15384615384615385,0.15384615384615385,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3038.png,askerligin,0.145,askerliğin,printed,distortion_type,noisy,3038.png,askerligin,0.1,0.1,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3141.png,erkanikdmuoyuna,0.232,erkânıkamuoyuna,printed,distortion_type,noisy,3141.png,erkanikdmuoyuna,0.2,0.2,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3069.png,cikarmadikca,0.271,çıkarmadıkça,printed,distortion_type,noisy,3069.png,cikarmadikca,0.3333333333333333,0.3333333333333333,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3185.png,varlig1,0.14,varlığı,printed,distortion_type,noisy,3185.png,varlig1,0.42857142857142855,0.42857142857142855,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3160.png,yuceltmenin,0.128,yüceltmenin,printed,distortion_type,noisy,3160.png,yuceltmenin,0.09090909090909091,0.09090909090909091,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3040.png,olumsuz,0.143,ölümsüz,printed,distortion_type,noisy,3040.png,olumsuz,0.42857142857142855,0.42857142857142855,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3134.png,ayvalik,0.197,ayvalık,printed,distortion_type,noisy,3134.png,ayvalik,0.14285714285714285,0.14285714285714285,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3289.png,kasabasina,0.268,kasabasına,printed,distortion_type,rotated,3289.png,kasabasina,0.1,0.1,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3392.png,sevkini,0.139,şevkini,printed,distortion_type,rotated,3392.png,sevkini,0.14285714285714285,0.14285714285714285,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3353.png,mulayim,0.126,mülayim,printed,distortion_type,rotated,3353.png,mulayim,0.14285714285714285,0.14285714285714285,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3375.png,zitlastigi,0.192,zıtlaştığı,printed,distortion_type,rotated,3375.png,zitlastigi,0.5,0.5,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3383.png,dinlemistik,0.22,dinlemiştik,printed,distortion_type,rotated,3383.png,dinlemistik,0.09090909090909091,0.09090909090909091,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3265.png,bayindirligina,0.315,bayındırlığına,printed,distortion_type,rotated,3265.png,bayindirligina,0.35714285714285715,0.35714285714285715,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3256.png,yanlisini,0.131,yanlışını,printed,distortion_type,rotated,3256.png,yanlisini,0.4444444444444444,0.4444444444444444,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3370.png,SDADs,0.226,savaş,printed,distortion_type,rotated,3370.png,SDADs,0.8,0.8,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3224.png,dordunden,0.304,dördünden,printed,distortion_type,rotated,3224.png,dordunden,0.2222222222222222,0.2222222222222222,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3284.png,cekismekten,0.2,çekişmekten,printed,distortion_type,rotated,3284.png,cekismekten,0.18181818181818182,0.18181818181818182,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3861.png,esaretten,0.199,esaretten,printed,turkish_character_confusion,non_turkish,3861.png,esaretten,0.0,0.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3931.png,silabla,0.198,silahla,printed,turkish_character_confusion,non_turkish,3931.png,silabla,0.14285714285714285,0.14285714285714285,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3860.png,yunus,0.173,yunus,printed,turkish_character_confusion,non_turkish,3860.png,yunus,0.0,0.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3840.png,bildirimimi,0.203,bildirimimi,printed,turkish_character_confusion,non_turkish,3840.png,bildirimimi,0.0,0.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3870.png,cihat,0.196,cihat,printed,turkish_character_confusion,non_turkish,3870.png,cihat,0.0,0.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3886.png,hasmane,0.149,hasmane,printed,turkish_character_confusion,non_turkish,3886.png,hasmane,0.0,0.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3896.png,parlementaire,0.125,parlementaire,printed,turkish_character_confusion,non_turkish,3896.png,parlementaire,0.0,0.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3947.png,patrikhanelere,0.129,patrikhanelere,printed,turkish_character_confusion,non_turkish,3947.png,patrikhanelere,0.0,0.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3937.png,aleyhtedir,0.142,aleyhtedir,printed,turkish_character_confusion,non_turkish,3937.png,aleyhtedir,0.0,0.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3813.png,toplarken,0.127,toplarken,printed,turkish_character_confusion,non_turkish,3813.png,toplarken,0.0,0.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3685.png,tebaas,0.14,tebaası,printed,turkish_character_confusion,turkish,3685.png,tebaas,0.14285714285714285,0.14285714285714285,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3800.png,onunuzde,0.2,önünüzde,printed,turkish_character_confusion,turkish,3800.png,onunuzde,0.375,0.375,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3777.png,erkanikamuoyuna,0.206,erkânıkamuoyuna,printed,turkish_character_confusion,turkish,3777.png,erkanikamuoyuna,0.13333333333333333,0.13333333333333333,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3753.png,taahhudun,0.134,taahhüdün,printed,turkish_character_confusion,turkish,3753.png,taahhudun,0.2222222222222222,0.2222222222222222,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3730.png,tamiratundan,0.162,tamiratından,printed,turkish_character_confusion,turkish,3730.png,tamiratundan,0.08333333333333333,0.08333333333333333,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3661.png,misir,0.157,mısır,printed,turkish_character_confusion,turkish,3661.png,misir,0.4,0.4,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3721.png,mahsuludur,0.366,mahsulüdür,printed,turkish_character_confusion,turkish,3721.png,mahsuludur,0.2,0.2,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3784.png,Itilaj,0.169,ıtilaf,printed,turkish_character_confusion,turkish,3784.png,Itilaj,0.3333333333333333,0.3333333333333333,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3735.png,yuceltmenin,0.14,yüceltmenin,printed,turkish_character_confusion,turkish,3735.png,yuceltmenin,0.09090909090909091,0.09090909090909091,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/3781.png,paramizla,0.117,paramızla,printed,turkish_character_confusion,turkish,3781.png,paramizla,0.1111111111111111,0.1111111111111111,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/4325.png,uyelerinden,0.197,üyelerinden,printed,word_length_effects,long_words,4325.png,uyelerinden,0.09090909090909091,0.09090909090909091,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/4217.png,genetlegince,0.157,genelleşince,printed,word_length_effects,long_words,4217.png,genetlegince,0.16666666666666666,0.16666666666666666,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/4315.png,saldirganca,0.268,saldırganca,printed,word_length_effects,long_words,4315.png,saldirganca,0.09090909090909091,0.09090909090909091,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/4205.png,izahatinizdan,0.253,izahatınızdan,printed,word_length_effects,long_words,4205.png,izahatinizdan,0.15384615384615385,0.15384615384615385,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/4321.png,meddahligindo,0.353,meddahlığında,printed,word_length_effects,long_words,4321.png,meddahligindo,0.3076923076923077,0.3076923076923077,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/4280.png,girilememis,0.341,girilememiş,printed,word_length_effects,long_words,4280.png,girilememis,0.09090909090909091,0.09090909090909091,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/4227.png,hayrrhahliginda,0.276,hayırhahlığında,printed,word_length_effects,long_words,4227.png,hayrrhahliginda,0.26666666666666666,0.26666666666666666,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/4360.png,itaatsizlige,0.389,itaatsizliğe,printed,word_length_effects,long_words,4360.png,itaatsizlige,0.08333333333333333,0.08333333333333333,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/4276.png,tanstunimalann,0.244,tanıttırılmalarını,printed,word_length_effects,long_words,4276.png,tanstunimalann,0.5,0.5,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/4372.png,tutuklularinin,0.224,tutuklularının,printed,word_length_effects,long_words,4372.png,tutuklularinin,0.14285714285714285,0.14285714285714285,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/4164.png,kiskanglik,0.206,kıskançlık,printed,word_length_effects,short_words,4164.png,kiskanglik,0.3,0.3,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/4168.png,sizladi,0.204,sızladı,printed,word_length_effects,short_words,4168.png,sizladi,0.2857142857142857,0.2857142857142857,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/4003.png,hesapsiz,0.205,hesapsız,printed,word_length_effects,short_words,4003.png,hesapsiz,0.125,0.125,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/4178.png,molegimie,0.189,mesleğimiz,printed,word_length_effects,short_words,4178.png,molegimie,0.4,0.4,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/4045.png,bogazimiza,0.196,boğazımıza,printed,word_length_effects,short_words,4045.png,bogazimiza,0.3,0.3,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/4197.png,tecavuzdur,0.617,tecavüzdür,printed,word_length_effects,short_words,4197.png,tecavuzdur,0.2,0.2,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/4135.png,abdulaziz,0.274,abdülâziz,printed,word_length_effects,short_words,4135.png,abdulaziz,0.2222222222222222,0.2222222222222222,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/4008.png,zapt1,0.151,zaptı,printed,word_length_effects,short_words,4008.png,zapt1,0.2,0.2,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/4041.png,zitla$tig!,0.315,zıtlaştığı,printed,word_length_effects,short_words,4041.png,zitla$tig!,0.5,0.5,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/printed/4055.png,muhafazasi,0.256,muhafazası,printed,word_length_effects,short_words,4055.png,muhafazasi,0.1,0.1,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/6497.png,13.0ne,0.487,Diyarbakır bölgesinde bulunan 2 tümenli 13'üncü,scene,context_dependent_errors,sentences,6497.png,13.0ne,0.9361702127659575,0.9361702127659575,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/6448.png,Iste bun an dolayrdie?,1.146,"İşte bundan dolayıdır ki, dernek, aynı",scene,context_dependent_errors,sentences,6448.png,Iste bun an dolayrdie?,0.5384615384615384,0.5384615384615384,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/6506.png,,0.229,"Ben, bu görevin yerine getirilmesinin bir",scene,context_dependent_errors,sentences,6506.png,,1.0,1.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/6488.png,"Bunlardan biri, merkezr'Sivas'ta bulunan 3'uncu",0.871,"Bunlardan biri, merkezi Sivas'ta bulunan 3'üncü",scene,context_dependent_errors,sentences,6488.png,"Bunlardan biri, merkezr'Sivas'ta bulunan 3'uncu",0.0851063829787234,0.0851063829787234,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/6527.png,su devletlerden yalniz biri ile bile,0.519,Bu devletlerden yalnız biri ile bile,scene,context_dependent_errors,sentences,6527.png,su devletlerden yalniz biri ile bile,0.05555555555555555,0.05555555555555555,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/6473.png,,0.734,"Bu görüşte olanlar, düşüncelerinde çok direndiler.",scene,context_dependent_errors,sentences,6473.png,,1.0,1.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/6414.png,ntal,0.265,"Antalya ve Konya'da İtalyan askerî birlikleri,",scene,context_dependent_errors,sentences,6414.png,ntal,0.9148936170212766,0.9148936170212766,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/6470.png,Sait Molla nna dernegin aeuktan yapug.,0.547,Sait Molla 'nın derneğin açıktan yaptığı,scene,context_dependent_errors,sentences,6470.png,Sait Molla nna dernegin aeuktan yapug.,0.25,0.25,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/6416.png,"Nihayet, konusmamizs baslangic olarak aldigimiz tarihten",1.212,"Nihayet, konuşmamıza başlangıç olarak aldığımız tarihten",scene,context_dependent_errors,sentences,6416.png,"Nihayet, konusmamizs baslangic olarak aldigimiz tarihten",0.17857142857142858,0.17857142857142858,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/6442.png,Gercekten de bu yolda calismalar yapmaktan,1.13,Gerçekten de bu yolda çalışmalar yapmaktan,scene,context_dependent_errors,sentences,6442.png,Gercekten de bu yolda calismalar yapmaktan,0.09523809523809523,0.09523809523809523,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/6370.png,goruyorlar,0.626,görüyorlar,scene,context_dependent_errors,word,6370.png,goruyorlar,0.2,0.2,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/6385.png,tecrubelerle,0.509,tecrübelerle,scene,context_dependent_errors,word,6385.png,tecrubelerle,0.08333333333333333,0.08333333333333333,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/6202.png,bulunamyor,1.311,bulunamıyor,scene,context_dependent_errors,word,6202.png,bulunamyor,0.09090909090909091,0.09090909090909091,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/6281.png,kullaniyorlar,0.7,kullanıyorlar,scene,context_dependent_errors,word,6281.png,kullaniyorlar,0.07692307692307693,0.07692307692307693,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/6318.png,calisildiging,0.343,çalışıldığını,scene,context_dependent_errors,word,6318.png,calisildiging,0.6153846153846154,0.6153846153846154,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/6383.png,asikandr,0.351,aşikardır,scene,context_dependent_errors,word,6383.png,asikandr,0.3333333333333333,0.3333333333333333,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/6350.png,yaknlar,0.273,yakınları,scene,context_dependent_errors,word,6350.png,yaknlar,0.2222222222222222,0.2222222222222222,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/6388.png,zulumler,0.59,zülümler,scene,context_dependent_errors,word,6388.png,zulumler,0.25,0.25,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/6316.png,basladigindan,0.339,başladığından,scene,context_dependent_errors,word,6316.png,basladigindan,0.3076923076923077,0.3076923076923077,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/6374.png,safhalarinda,0.273,safhalarında,scene,context_dependent_errors,word,6374.png,safhalarinda,0.08333333333333333,0.08333333333333333,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/4546.png,bildirdigimiz,0.45,bildirdiğimiz,scene,distortion_type,blur,4546.png,bildirdigimiz,0.07692307692307693,0.07692307692307693,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/4413.png,verildiginden,0.605,verildiğinden,scene,distortion_type,blur,4413.png,verildiginden,0.07692307692307693,0.07692307692307693,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/4477.png,duyurmayi,0.343,duyurmayı,scene,distortion_type,blur,4477.png,duyurmayi,0.1111111111111111,0.1111111111111111,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/4403.png,-aresine,0.411,çaresine,scene,distortion_type,blur,4403.png,-aresine,0.125,0.125,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/4521.png,barsla,0.298,barışla,scene,distortion_type,blur,4521.png,barsla,0.2857142857142857,0.2857142857142857,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/4445.png,goruslerime,0.673,görüşlerime,scene,distortion_type,blur,4445.png,goruslerime,0.2727272727272727,0.2727272727272727,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/4487.png,sunlardi,0.443,şunlardı,scene,distortion_type,blur,4487.png,sunlardi,0.25,0.25,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/4534.png,soyle,0.363,şöyle,scene,distortion_type,blur,4534.png,soyle,0.4,0.4,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/4455.png,cay,0.387,çay,scene,distortion_type,blur,4455.png,cay,0.3333333333333333,0.3333333333333333,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/4544.png,aras ndak.,0.572,arasındaki,scene,distortion_type,blur,4544.png,aras ndak.,0.2,0.2,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/4771.png,zabitlarin,0.913,zabıtların,scene,distortion_type,clean,4771.png,zabitlarin,0.2,0.2,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/4716.png,,0.612,bağdaştırılamaz,scene,distortion_type,clean,4716.png,,1.0,1.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/4696.png,sirlar,0.453,sırlar,scene,distortion_type,clean,4696.png,sirlar,0.16666666666666666,0.16666666666666666,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/4721.png,barisla,0.227,barışla,scene,distortion_type,clean,4721.png,barisla,0.2857142857142857,0.2857142857142857,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/4736.png,cizmemekliqim,0.465,çizmemekliğim,scene,distortion_type,clean,4736.png,cizmemekliqim,0.15384615384615385,0.15384615384615385,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/4649.png,getirecegimizi,0.396,getireceğimizi,scene,distortion_type,clean,4649.png,getirecegimizi,0.07142857142857142,0.07142857142857142,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/4720.png,karsilasmamak,0.447,karşılaşmamak,scene,distortion_type,clean,4720.png,karsilasmamak,0.23076923076923078,0.23076923076923078,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/4699.png,katnmaktan!,0.422,katılmaktan,scene,distortion_type,clean,4699.png,katnmaktan!,0.2727272727272727,0.2727272727272727,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/4695.png,,0.343,düşünüleceği,scene,distortion_type,clean,4695.png,,1.0,1.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/4664.png,dusuneemizin,0.42,düşüncemizin,scene,distortion_type,clean,4664.png,dusuneemizin,0.3333333333333333,0.3333333333333333,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5192.png,denilmistir,0.567,denilmiştir,scene,distortion_type,low_resolution,5192.png,denilmistir,0.09090909090909091,0.09090909090909091,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5056.png,kullanilacaktiy,0.324,kullanılacaktır,scene,distortion_type,low_resolution,5056.png,kullanilacaktiy,0.2,0.2,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5097.png,ornegini,0.232,örneğini,scene,distortion_type,low_resolution,5097.png,ornegini,0.25,0.25,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5115.png,yolarm,0.351,yolların,scene,distortion_type,low_resolution,5115.png,yolarm,0.375,0.375,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5071.png,renusla-enl,0.428,tutmuşlardır,scene,distortion_type,low_resolution,5071.png,renusla-enl,0.75,0.75,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5096.png,sirlar,0.235,sırlar,scene,distortion_type,low_resolution,5096.png,sirlar,0.16666666666666666,0.16666666666666666,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5169.png,ulasabilmesi,0.505,ulaşabilmesi,scene,distortion_type,low_resolution,5169.png,ulasabilmesi,0.08333333333333333,0.08333333333333333,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5074.png,Bursamlz,0.33,Bursamız,scene,distortion_type,low_resolution,5074.png,Bursamlz,0.125,0.125,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5015.png,bakanlarin,0.221,bakanların,scene,distortion_type,low_resolution,5015.png,bakanlarin,0.1,0.1,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5108.png,Carafana,0.365,tarafına,scene,distortion_type,low_resolution,5108.png,Carafana,0.25,0.25,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/4934.png,soyle,0.284,şöyle,scene,distortion_type,noisy,4934.png,soyle,0.4,0.4,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/4924.png,Bakxoar,0.333,hakkıdır,scene,distortion_type,noisy,4924.png,Bakxoar,0.625,0.625,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/4906.png,kotulaklene?,0.285,kötülüklerle,scene,distortion_type,noisy,4906.png,kotulaklene?,0.5,0.5,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/4933.png,soyluyorum,0.427,söylüyorum,scene,distortion_type,noisy,4933.png,soyluyorum,0.2,0.2,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/4941.png,,0.405,programını,scene,distortion_type,noisy,4941.png,,1.0,1.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/4992.png,denilnisur,0.349,denilmiştir,scene,distortion_type,noisy,4992.png,denilnisur,0.36363636363636365,0.36363636363636365,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/4931.png,hukumetin,0.191,hükümetin,scene,distortion_type,noisy,4931.png,hukumetin,0.2222222222222222,0.2222222222222222,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/4936.png,cizmemeklion,0.36,çizmemekliğim,scene,distortion_type,noisy,4936.png,cizmemeklioin,0.3076923076923077,0.23076923076923078,False,0.07692307692307693
+syntetic-turkish-dataset/benchmark/text_category/scene/4890.png,uk,0.241,yüktür,scene,distortion_type,noisy,4890.png,uk,0.8333333333333334,0.8333333333333334,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/4870.png, na yacag.,0.237,katılmayacağı,scene,distortion_type,noisy,4870.png, na yacag.,0.6153846153846154,0.6153846153846154,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5305.png,AYRILIGINI,0.295,AYRILIĞINI,scene,distortion_type,rotated,5305.png,AYRILIGINI,0.1,0.1,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5328.png,AZIZ,0.268,AZİZ,scene,distortion_type,rotated,5328.png,AZIZ,0.2,0.2,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5341.png,programin,0.387,programını,scene,distortion_type,rotated,5341.png,programin,0.2,0.2,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5312.png,osterdik,0.5,gösterdik,scene,distortion_type,rotated,5312.png,osterdik,0.2222222222222222,0.2222222222222222,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5398.png,hat!ralarlnl,0.59,hatıralarını,scene,distortion_type,rotated,5398.png,hat!ralarlnl,0.25,0.25,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5208.png,limanlarina,0.357,limanlarına,scene,distortion_type,rotated,5208.png,limanlarina,0.09090909090909091,0.09090909090909091,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5216.png,telasli,0.416,telaşlı,scene,distortion_type,rotated,5216.png,telasli,0.2857142857142857,0.2857142857142857,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5295.png,di sinuleceg,0.527,düşünüleceği,scene,distortion_type,rotated,5295.png,di sinuleceg,0.5833333333333334,0.5833333333333334,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5214.png,ayakkabilarini,0.235,ayakkabılarını,scene,distortion_type,rotated,5214.png,ayakkabilarini,0.21428571428571427,0.21428571428571427,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5399.png,kalmadraim,0.336,kalmadığını,scene,distortion_type,rotated,5399.png,kalmadraim,0.45454545454545453,0.45454545454545453,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5977.png,devlette,0.204,devlette,scene,turkish_character_confusion,non_turkish,5977.png,devlette,0.0,0.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5873.png,,0.184,bulunabilecektim,scene,turkish_character_confusion,non_turkish,5873.png,,1.0,1.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5982.png,toprak,0.336,toprak,scene,turkish_character_confusion,non_turkish,5982.png,toprak,0.0,0.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5850.png,Kuruntulara,0.287,kuruntularla,scene,turkish_character_confusion,non_turkish,5850.png,Kuruntulara,0.08333333333333333,0.08333333333333333,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5899.png,,0.255,bildirilecek,scene,turkish_character_confusion,non_turkish,5899.png,,1.0,1.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5894.png,e.ainden,0.351,esirlerinden,scene,turkish_character_confusion,non_turkish,5894.png,e.ainden,0.5,0.5,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5989.png,ismi,0.334,ismi,scene,turkish_character_confusion,non_turkish,5989.png,ismi,0.0,0.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5875.png,Ordumuzun,0.368,Ordumuzun,scene,turkish_character_confusion,non_turkish,5875.png,Ordumuzun,0.0,0.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5815.png,Gelnes.,0.258,Gelmesi,scene,turkish_character_confusion,non_turkish,5815.png,Gelnes.,0.2857142857142857,0.2857142857142857,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5903.png,Susurluk,0.245,Susurluk,scene,turkish_character_confusion,non_turkish,5903.png,Susurluk,0.0,0.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/6002.png,kiyamet,0.268,kıyamet,scene,turkish_character_confusion,turkish,6002.png,kiyamet,0.14285714285714285,0.14285714285714285,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/6037.png,yurutmekie,0.196,yürütmekle,scene,turkish_character_confusion,turkish,6037.png,yurutmekie,0.3,0.3,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/6016.png,bitisik,0.436,bitişik,scene,turkish_character_confusion,turkish,6016.png,bitisik,0.14285714285714285,0.14285714285714285,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/6020.png,onayh,0.252,onaylı,scene,turkish_character_confusion,turkish,6020.png,onayh,0.3333333333333333,0.3333333333333333,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/6121.png,hosuna,0.294,hoşuna,scene,turkish_character_confusion,turkish,6121.png,hosuna,0.16666666666666666,0.16666666666666666,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/6068.png,Dumlupinar,0.452,Dumlupınar,scene,turkish_character_confusion,turkish,6068.png,Dumlupinar,0.1,0.1,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/6057.png,,0.397,üstâdım,scene,turkish_character_confusion,turkish,6057.png,,1.0,1.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/6076.png,Karaagac'a,0.198,Karaağaç'a,scene,turkish_character_confusion,turkish,6076.png,Karaagac'a,0.2,0.2,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/6043.png,,0.303,rağbet,scene,turkish_character_confusion,turkish,6043.png,,1.0,1.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/6177.png,Sakarya nn.,0.54,Sakarya'nın,scene,turkish_character_confusion,turkish,6177.png,Sakarya nn.,0.2727272727272727,0.2727272727272727,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5453.png,etrafindaki,0.258,etrafındaki,scene,word_length_effects,long_words,5453.png,etrafindaki,0.09090909090909091,0.09090909090909091,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5503.png,buyuracaklar.,0.248,buyuracakları,scene,word_length_effects,long_words,5503.png,buyuracaklar.,0.07692307692307693,0.07692307692307693,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5414.png,yumulmavacaktr,0.452,yumulmayacaktır,scene,word_length_effects,long_words,5414.png,yumulmavacaktr,0.13333333333333333,0.13333333333333333,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5586.png,bolgelerle,0.149,bölgelerle,scene,word_length_effects,long_words,5586.png,bolgelerle,0.1,0.1,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5595.png,,0.232,bakanlıklarına,scene,word_length_effects,long_words,5595.png,,1.0,1.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5522.png,kuruculard,0.64,kuruculardı,scene,word_length_effects,long_words,5522.png,kuruculard,0.09090909090909091,0.09090909090909091,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5428.png,telgrafindan,0.44,telgrafından,scene,word_length_effects,long_words,5428.png,telgrafindan,0.08333333333333333,0.08333333333333333,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5526.png,Cumhurbaskan,0.372,Cumhurbaşkanı,scene,word_length_effects,long_words,5526.png,Cumhurbaskan,0.15384615384615385,0.15384615384615385,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5479.png,yontemlere,0.25,yöntemlere,scene,word_length_effects,long_words,5479.png,yontemlere,0.1,0.1,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5411.png,UZAKLASMAM,0.358,UZAKLAŞMAM,scene,word_length_effects,long_words,5411.png,UZAKLASMAM,0.1,0.1,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5727.png,"cekmekten
+UDS.COM",0.547,çekmekten,scene,word_length_effects,short_words,5727.png,"cekmekten
+UDS.COM",1.0,1.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5665.png,sey,0.329,şey,scene,word_length_effects,short_words,5665.png,sey,0.3333333333333333,0.3333333333333333,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5651.png,basina,0.455,basına,scene,word_length_effects,short_words,5651.png,basina,0.16666666666666666,0.16666666666666666,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5662.png,sayrlarak,0.23,sayılarak,scene,word_length_effects,short_words,5662.png,sayrlarak,0.1111111111111111,0.1111111111111111,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5729.png,,0.106,cümleden,scene,word_length_effects,short_words,5729.png,,1.0,1.0,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5602.png,bes,0.401,beş,scene,word_length_effects,short_words,5602.png,bes,0.3333333333333333,0.3333333333333333,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5619.png,gorusmus,0.384,görüşmüş,scene,word_length_effects,short_words,5619.png,gorusmus,0.625,0.625,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5647.png,saldumak,0.167,saldırmak,scene,word_length_effects,short_words,5647.png,saldumak,0.2222222222222222,0.2222222222222222,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5798.png,gorusune,0.255,görüşüne,scene,word_length_effects,short_words,5798.png,gorusune,0.5,0.5,True,0.0
+syntetic-turkish-dataset/benchmark/text_category/scene/5779.png,hakkidir,0.192,hakkıdır,scene,word_length_effects,short_words,5779.png,hakkidir,0.25,0.25,True,0.0

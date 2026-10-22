@@ -1,0 +1,331 @@
+file,prediction,seconds
+syntetic-turkish-dataset/benchmark/text_category/handwritten/98.png,EN SIDGETLI ELECTIFICILER BILE DILLERININ ALTHDAK,3.506
+syntetic-turkish-dataset/benchmark/text_category/handwritten/148.png,"BUY ONLINE AGAIN PAY PRICE, PLEASE RETURNS AND RECEIPT WITH",4.03
+syntetic-turkish-dataset/benchmark/text_category/handwritten/181.png,"BARBLEA, JALANASA, B, JALANAS LEBAR",3.957
+syntetic-turkish-dataset/benchmark/text_category/handwritten/79.png,"BIZIM, TAKEILAH ESSAYS KARUNAING DEG3H",3.854
+syntetic-turkish-dataset/benchmark/text_category/handwritten/45.png,CEPHEDEN UZAK BULUNUYORMUS.,3.664
+syntetic-turkish-dataset/benchmark/text_category/handwritten/16.png,"PHILIPAMA BALANAN RATE PAPP, BARI ESELALANAK",3.727
+syntetic-turkish-dataset/benchmark/text_category/handwritten/127.png,TABIATIYLA ICABININ ICRASINA GIRISECEGIZ,3.957
+syntetic-turkish-dataset/benchmark/text_category/handwritten/182.png,"BILAKIS, BIR TEHDIT VASITASI ONTADAN BAL",4.497
+syntetic-turkish-dataset/benchmark/text_category/handwritten/41.png,BUNUN DA ZAMANI GELECEETSIN.,3.748
+syntetic-turkish-dataset/benchmark/text_category/handwritten/165.png,"FAX, SENDERIAN BRI JAN DETAIL,AMAIAI, AE",3.822
+syntetic-turkish-dataset/benchmark/text_category/handwritten/373.png,HIGH,3.096
+syntetic-turkish-dataset/benchmark/text_category/handwritten/320.png,USUUSJZLIKLER,3.445
+syntetic-turkish-dataset/benchmark/text_category/handwritten/394.png,KANUNLASTIRAN,3.478
+syntetic-turkish-dataset/benchmark/text_category/handwritten/215.png,PERMIVETGE,3.129
+syntetic-turkish-dataset/benchmark/text_category/handwritten/326.png,SATURLANN,3.388
+syntetic-turkish-dataset/benchmark/text_category/handwritten/258.png,COGUNLUE,3.185
+syntetic-turkish-dataset/benchmark/text_category/handwritten/313.png,ITIBATI,3.127
+syntetic-turkish-dataset/benchmark/text_category/handwritten/255.png,YAYIMRYORLARDI,3.429
+syntetic-turkish-dataset/benchmark/text_category/handwritten/297.png,SAYALAMAGLE,4.218
+syntetic-turkish-dataset/benchmark/text_category/handwritten/284.png,PLATELLATION,4.575
+syntetic-turkish-dataset/benchmark/text_category/handwritten/564.png,SAVORIA,4.856
+syntetic-turkish-dataset/benchmark/text_category/handwritten/529.png,9.00,4.67
+syntetic-turkish-dataset/benchmark/text_category/handwritten/540.png,-,4.452
+syntetic-turkish-dataset/benchmark/text_category/handwritten/488.png,MARYLANDLE,3.966
+syntetic-turkish-dataset/benchmark/text_category/handwritten/554.png,DATE:,3.997
+syntetic-turkish-dataset/benchmark/text_category/handwritten/507.png,MUBADALE,4.149
+syntetic-turkish-dataset/benchmark/text_category/handwritten/530.png,BALANCE,4.147
+syntetic-turkish-dataset/benchmark/text_category/handwritten/446.png,1,4.373
+syntetic-turkish-dataset/benchmark/text_category/handwritten/451.png,***,3.913
+syntetic-turkish-dataset/benchmark/text_category/handwritten/492.png,MUDURO,4.125
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1382.png,ENDISESIME,3.816
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1297.png,YAYDINLDI,3.942
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1222.png,ESITLIK,4.652
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1384.png,BEYSEHIR,4.298
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1386.png,AGLISINDAN,4.091
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1366.png,VASH,3.92
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1352.png,YAPSIM,4.024
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1284.png,CERISMEKTEN,3.838
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1260.png,SIRIILMEMEKTEDIN,3.962
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1310.png,PRANSUELANDAN,3.9
+syntetic-turkish-dataset/benchmark/text_category/handwritten/777.png,***,3.778
+syntetic-turkish-dataset/benchmark/text_category/handwritten/776.png,-,3.93
+syntetic-turkish-dataset/benchmark/text_category/handwritten/741.png,-,3.592
+syntetic-turkish-dataset/benchmark/text_category/handwritten/627.png,+,3.534
+syntetic-turkish-dataset/benchmark/text_category/handwritten/684.png,1,4.623
+syntetic-turkish-dataset/benchmark/text_category/handwritten/651.png,T,3.669
+syntetic-turkish-dataset/benchmark/text_category/handwritten/713.png,-,4.039
+syntetic-turkish-dataset/benchmark/text_category/handwritten/794.png,-,3.851
+syntetic-turkish-dataset/benchmark/text_category/handwritten/697.png,YAYAYAYAIOLA,4.983
+syntetic-turkish-dataset/benchmark/text_category/handwritten/746.png,TRAHRADAN,5.063
+syntetic-turkish-dataset/benchmark/text_category/handwritten/886.png,SILERI,5.325
+syntetic-turkish-dataset/benchmark/text_category/handwritten/874.png,HAFAXASNOLA,4.203
+syntetic-turkish-dataset/benchmark/text_category/handwritten/930.png,ROLLARU,3.858
+syntetic-turkish-dataset/benchmark/text_category/handwritten/965.png,TRAYYLINLINE,3.251
+syntetic-turkish-dataset/benchmark/text_category/handwritten/820.png,SUBELERI,3.191
+syntetic-turkish-dataset/benchmark/text_category/handwritten/973.png,ARGIVI,3.273
+syntetic-turkish-dataset/benchmark/text_category/handwritten/970.png,SAVAS,3.076
+syntetic-turkish-dataset/benchmark/text_category/handwritten/953.png,TOTAL PAYMENT,3.219
+syntetic-turkish-dataset/benchmark/text_category/handwritten/993.png,INSANLIGIN,3.245
+syntetic-turkish-dataset/benchmark/text_category/handwritten/971.png,KISTAH,3.263
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1177.png,EXCLATION,3.019
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1163.png,GORALENDER,3.351
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1092.png,MIDING,3.11
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1058.png,UZGUN,3.034
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1025.png,MITECAVIZ,3.72
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1023.png,GOLLANACABTEN,3.399
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1035.png,MITCHELL,3.028
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1116.png,GENISLEMIS,3.112
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1038.png,LABALISH,3.44
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1178.png,FINDEDEN,3.433
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1751.png,WESCA,3.216
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1768.png,VENEDIK,3.441
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1606.png,AMPAYABLE,3.232
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1673.png,$4.49,3.144
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1749.png,ART,2.963
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1784.png,FIRAR,3.153
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1601.png,DOLU,3.189
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1693.png,BERIDIR,3.215
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1783.png,VENIZELOS,3.331
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1638.png,LAY,3.028
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1435.png,SOKTAN,3.126
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1439.png,SOLAKLANADA,3.246
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1582.png,NIFUSU,3.28
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1551.png,ATED,3.225
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1405.png,SUSLU,3.26
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1506.png,BAGLULK,3.369
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1437.png,KISIMLARINDAKI,3.384
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1524.png,MENATIANG,3.092
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1487.png,NIGAMLANN,3.105
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1432.png,GOTURMEK,3.281
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2075.png,MILESSESELERIN,4.131
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2005.png,TUTUBLLARUMM,4.026
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2122.png,VAZIMAKAMININ,4.162
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2118.png,NUMETIYTURK,4.233
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2062.png,iRTARLARINA,4.63
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2140.png,GAGRIDIGINI,4.843
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2128.png,TAMORANDARD,5.214
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2119.png,MUHATABIMIN,4.274
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2096.png,FLAYELLEMS,3.888
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2196.png,YOGUNLASTURABILMER,4.171
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1945.png,-,3.864
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1820.png,DIVAN,3.674
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1831.png,CASH,3.594
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1960.png,TAKIPCISI,3.674
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1857.png,***,3.723
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1845.png,TURKLEMINE,4.346
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1940.png,INKISAFAT,4.211
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1923.png,DORT,3.714
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1865.png,SATALCA,7.024
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1849.png,STARTING,4.686
+syntetic-turkish-dataset/benchmark/text_category/printed/2307.png,TRAHAN MARAN SHAMPAN AND AYPAN AYAN SHAPE,5.725
+syntetic-turkish-dataset/benchmark/text_category/printed/2309.png,"BU CEMIYETIN, ZARARL BIR SEKIL VE MA",5.599
+syntetic-turkish-dataset/benchmark/text_category/printed/2239.png,"KATIBI UMLIMISI HAIKI, BERI,VE ANK",5.759
+syntetic-turkish-dataset/benchmark/text_category/printed/2358.png,"REGISTER TODAY TAX, TAXED DATE IN FOR TAX OF IN ADVERTISED",5.678
+syntetic-turkish-dataset/benchmark/text_category/printed/2210.png,"SERI VE KATI NETICE ALMAK, DOSMANI BU CENA",6.096
+syntetic-turkish-dataset/benchmark/text_category/printed/2271.png,"EFENDILER, KOMEDYA OYNAYAN VE OYNAT",5.725
+syntetic-turkish-dataset/benchmark/text_category/printed/2399.png,GUMJISHANE MEBUSU ZEKI BEY ONDAN EVVEL OLD,5.916
+syntetic-turkish-dataset/benchmark/text_category/printed/2263.png,ALL BE/IN AVEIN AND AUTHERS AND PRIMARY AND EXPRESS LEVEL RET,5.855
+syntetic-turkish-dataset/benchmark/text_category/printed/2237.png,BOYLE SEY OLUR MU?,4.913
+syntetic-turkish-dataset/benchmark/text_category/printed/2308.png,"MISY BOHA P9-1A, 1, 1A,1,1",5.89
+syntetic-turkish-dataset/benchmark/text_category/printed/2515.png,TASARI,4.424
+syntetic-turkish-dataset/benchmark/text_category/printed/2412.png,UZDU,4.666
+syntetic-turkish-dataset/benchmark/text_category/printed/2564.png,MANEVIVAN,4.802
+syntetic-turkish-dataset/benchmark/text_category/printed/2563.png,SAKI,4.642
+syntetic-turkish-dataset/benchmark/text_category/printed/2547.png,MALUMATINI,4.642
+syntetic-turkish-dataset/benchmark/text_category/printed/2552.png,MUSOADESINI,4.736
+syntetic-turkish-dataset/benchmark/text_category/printed/2574.png,CINANINA,4.612
+syntetic-turkish-dataset/benchmark/text_category/printed/2511.png,CURETKAR,4.936
+syntetic-turkish-dataset/benchmark/text_category/printed/2503.png,POLITIKACILAR,4.548
+syntetic-turkish-dataset/benchmark/text_category/printed/2524.png,OGLUDUR,4.834
+syntetic-turkish-dataset/benchmark/text_category/printed/2750.png,HUSUSLANDAN,4.421
+syntetic-turkish-dataset/benchmark/text_category/printed/2658.png,GZGUN,4.507
+syntetic-turkish-dataset/benchmark/text_category/printed/2694.png,GORUSMEKTE,4.629
+syntetic-turkish-dataset/benchmark/text_category/printed/2627.png,020000,4.474
+syntetic-turkish-dataset/benchmark/text_category/printed/2706.png,SARAYINDA,4.714
+syntetic-turkish-dataset/benchmark/text_category/printed/2731.png,DORALIANANDA,6.181
+syntetic-turkish-dataset/benchmark/text_category/printed/2637.png,SULTANLANN,5.297
+syntetic-turkish-dataset/benchmark/text_category/printed/2671.png,ULTIMATOMUNU,4.905
+syntetic-turkish-dataset/benchmark/text_category/printed/2669.png,CIKARMADIKCA,5.047
+syntetic-turkish-dataset/benchmark/text_category/printed/2782.png,ENDIGESINE,4.82
+syntetic-turkish-dataset/benchmark/text_category/printed/3492.png,MUDURU,4.726
+syntetic-turkish-dataset/benchmark/text_category/printed/3562.png,YIKLEAMELIYDI,5.344
+syntetic-turkish-dataset/benchmark/text_category/printed/3559.png,EKLENMISTIR,5.009
+syntetic-turkish-dataset/benchmark/text_category/printed/3426.png,KLYMETTAR,5.084
+syntetic-turkish-dataset/benchmark/text_category/printed/3581.png,HAYANETE,8.761
+syntetic-turkish-dataset/benchmark/text_category/printed/3515.png,BEYANATLARINDA,5.95
+syntetic-turkish-dataset/benchmark/text_category/printed/3528.png,SUBELERININ,6.202
+syntetic-turkish-dataset/benchmark/text_category/printed/3476.png,ZATTIR,4.782
+syntetic-turkish-dataset/benchmark/text_category/printed/3442.png,UZATTIGI,5.29
+syntetic-turkish-dataset/benchmark/text_category/printed/3570.png,SAVAS,5.009
+syntetic-turkish-dataset/benchmark/text_category/printed/2968.png,BULDUKLARINDAN,5.467
+syntetic-turkish-dataset/benchmark/text_category/printed/2963.png,GOROLENDER,3.627
+syntetic-turkish-dataset/benchmark/text_category/printed/2976.png,***,3.502
+syntetic-turkish-dataset/benchmark/text_category/printed/2959.png,***,3.686
+syntetic-turkish-dataset/benchmark/text_category/printed/2984.png,BEYSEH,3.748
+syntetic-turkish-dataset/benchmark/text_category/printed/2965.png,XXXXXXXXX,3.81
+syntetic-turkish-dataset/benchmark/text_category/printed/2924.png,096/1/2018,3.967
+syntetic-turkish-dataset/benchmark/text_category/printed/2958.png,MEBUSANNA,3.83
+syntetic-turkish-dataset/benchmark/text_category/printed/2883.png,COGUNTUGUYIA,7.65
+syntetic-turkish-dataset/benchmark/text_category/printed/2962.png,YOURMENTLYO .,9.145
+syntetic-turkish-dataset/benchmark/text_category/printed/3052.png,ESNAFLARI,8.425
+syntetic-turkish-dataset/benchmark/text_category/printed/3033.png,SEQKIN,5.242
+syntetic-turkish-dataset/benchmark/text_category/printed/3063.png,MENSUPLARININ,3.94
+syntetic-turkish-dataset/benchmark/text_category/printed/3038.png,ASKERLIGIN,4.459
+syntetic-turkish-dataset/benchmark/text_category/printed/3141.png,ERKÓNIKAMUOYUNA,4.25
+syntetic-turkish-dataset/benchmark/text_category/printed/3069.png,CIKARMADIKCA,4.201
+syntetic-turkish-dataset/benchmark/text_category/printed/3185.png,VARLIGI,3.764
+syntetic-turkish-dataset/benchmark/text_category/printed/3160.png,YÚCELTMENIN,3.927
+syntetic-turkish-dataset/benchmark/text_category/printed/3040.png,OLUMSIZ,3.785
+syntetic-turkish-dataset/benchmark/text_category/printed/3134.png,AYVALIK,3.691
+syntetic-turkish-dataset/benchmark/text_category/printed/3289.png,KASABASINA,3.789
+syntetic-turkish-dataset/benchmark/text_category/printed/3392.png,SEVKINI,3.783
+syntetic-turkish-dataset/benchmark/text_category/printed/3353.png,MULAYIM,3.774
+syntetic-turkish-dataset/benchmark/text_category/printed/3375.png,ZITLASTIGI,4.143
+syntetic-turkish-dataset/benchmark/text_category/printed/3383.png,DINLEMISTIK,4.168
+syntetic-turkish-dataset/benchmark/text_category/printed/3265.png,PAYMENTABLE,4.108
+syntetic-turkish-dataset/benchmark/text_category/printed/3256.png,YANDISINI,3.788
+syntetic-turkish-dataset/benchmark/text_category/printed/3370.png,SAVAS,3.65
+syntetic-turkish-dataset/benchmark/text_category/printed/3224.png,DORDUNDEN,3.536
+syntetic-turkish-dataset/benchmark/text_category/printed/3284.png,CERISMEKTER,4.193
+syntetic-turkish-dataset/benchmark/text_category/printed/3861.png,ESARETTEN,6.08
+syntetic-turkish-dataset/benchmark/text_category/printed/3931.png,SILABLA,4.501
+syntetic-turkish-dataset/benchmark/text_category/printed/3860.png,YUNUS,4.499
+syntetic-turkish-dataset/benchmark/text_category/printed/3840.png,BILLIRIMIMI,3.884
+syntetic-turkish-dataset/benchmark/text_category/printed/3870.png,CIHAT,3.957
+syntetic-turkish-dataset/benchmark/text_category/printed/3886.png,HASMANE,4.071
+syntetic-turkish-dataset/benchmark/text_category/printed/3896.png,PARLEMENTAIRE,4.241
+syntetic-turkish-dataset/benchmark/text_category/printed/3947.png,PATRIKHANELERE,4.778
+syntetic-turkish-dataset/benchmark/text_category/printed/3937.png,ALEYHTEDIR,4.09
+syntetic-turkish-dataset/benchmark/text_category/printed/3813.png,TOPLARKEN,4.269
+syntetic-turkish-dataset/benchmark/text_category/printed/3685.png,TEBAAS1,3.75
+syntetic-turkish-dataset/benchmark/text_category/printed/3800.png,ONÜNÜZDE,4.279
+syntetic-turkish-dataset/benchmark/text_category/printed/3777.png,ERKANIKAMUOYUNA,4.021
+syntetic-turkish-dataset/benchmark/text_category/printed/3753.png,TAAHHÚDON,4.014
+syntetic-turkish-dataset/benchmark/text_category/printed/3730.png,TAMIRATINDAN,4.147
+syntetic-turkish-dataset/benchmark/text_category/printed/3661.png,MISIR,3.836
+syntetic-turkish-dataset/benchmark/text_category/printed/3721.png,MAHSULÚDOR,4.482
+syntetic-turkish-dataset/benchmark/text_category/printed/3784.png,ITILAI,3.775
+syntetic-turkish-dataset/benchmark/text_category/printed/3735.png,YUCEITMENIN,3.937
+syntetic-turkish-dataset/benchmark/text_category/printed/3781.png,PARAMIZIA,4.069
+syntetic-turkish-dataset/benchmark/text_category/printed/4325.png,UYELERINDEN,4.583
+syntetic-turkish-dataset/benchmark/text_category/printed/4217.png,GENELIESINCE,3.755
+syntetic-turkish-dataset/benchmark/text_category/printed/4315.png,SALDIRGANCA,3.921
+syntetic-turkish-dataset/benchmark/text_category/printed/4205.png,IZAHATINIZDAN,4.115
+syntetic-turkish-dataset/benchmark/text_category/printed/4321.png,MEDDAHLIGINDA,4.08
+syntetic-turkish-dataset/benchmark/text_category/printed/4280.png,GIRILEMEMIS,4.162
+syntetic-turkish-dataset/benchmark/text_category/printed/4227.png,HAYIRHAHLIGINDA,4.392
+syntetic-turkish-dataset/benchmark/text_category/printed/4360.png,ITAATSIZLIGE,3.61
+syntetic-turkish-dataset/benchmark/text_category/printed/4276.png,TAROTINIMALARY,3.648
+syntetic-turkish-dataset/benchmark/text_category/printed/4372.png,TUTUKJULARININ,3.903
+syntetic-turkish-dataset/benchmark/text_category/printed/4164.png,KISKANCHK,3.835
+syntetic-turkish-dataset/benchmark/text_category/printed/4168.png,SIZIADI,4.119
+syntetic-turkish-dataset/benchmark/text_category/printed/4003.png,HESOPSIZ,3.86
+syntetic-turkish-dataset/benchmark/text_category/printed/4178.png,MEMBER ME OVER,3.869
+syntetic-turkish-dataset/benchmark/text_category/printed/4045.png,BOGAZIMIZA,4.008
+syntetic-turkish-dataset/benchmark/text_category/printed/4197.png,TECAVÚDÜR,3.998
+syntetic-turkish-dataset/benchmark/text_category/printed/4135.png,ABDULAZIZ,4.182
+syntetic-turkish-dataset/benchmark/text_category/printed/4008.png,ZAPT1,4.083
+syntetic-turkish-dataset/benchmark/text_category/printed/4041.png,ZITLASTIGI,4.235
+syntetic-turkish-dataset/benchmark/text_category/printed/4055.png,MUHAFAZASI,4.41
+syntetic-turkish-dataset/benchmark/text_category/scene/6497.png,RECEIPTATION AND RETURNS AND RETURN FOR AN OFFER,4.183
+syntetic-turkish-dataset/benchmark/text_category/scene/6448.png,"1,000 AMOUNT OF RECEIPT FOR AN OFFER",4.01
+syntetic-turkish-dataset/benchmark/text_category/scene/6506.png,TOTAL,3.543
+syntetic-turkish-dataset/benchmark/text_category/scene/6488.png,"BUNTARDAN BAH, INVOICE, PLEASE BE WITHINER & RECE",4.935
+syntetic-turkish-dataset/benchmark/text_category/scene/6527.png,AN DEVIECLENDAN YALNIZ BIRI 1LE BLUE,5.413
+syntetic-turkish-dataset/benchmark/text_category/scene/6473.png,TOTAL RETURN ME OVER FOR A FREE FRY & DRINK . TURN OVER FOR A,5.037
+syntetic-turkish-dataset/benchmark/text_category/scene/6414.png,*,3.502
+syntetic-turkish-dataset/benchmark/text_category/scene/6470.png,"SANT MAGLIA, MAN ALAMORAN ARRIAN YAPPARA",4.573
+syntetic-turkish-dataset/benchmark/text_category/scene/6416.png,"NETHAYAT, KOONUG MEMBER BEGBANGLE OLORATE, G",4.938
+syntetic-turkish-dataset/benchmark/text_category/scene/6442.png,CARDIFIED US ON YOUR RETURN FOR SUBJECT NOTE IN NEED AGAIN,4.57
+syntetic-turkish-dataset/benchmark/text_category/scene/6370.png,GORUYORLAR,5.441
+syntetic-turkish-dataset/benchmark/text_category/scene/6385.png,TECRODELERIE,4.583
+syntetic-turkish-dataset/benchmark/text_category/scene/6202.png,BULLUMAMILYOR,3.722
+syntetic-turkish-dataset/benchmark/text_category/scene/6281.png,KUILLAMMYORLAR,4.17
+syntetic-turkish-dataset/benchmark/text_category/scene/6318.png,CALLSIDIGIN,5.03
+syntetic-turkish-dataset/benchmark/text_category/scene/6383.png,ASIKARDIN,4.794
+syntetic-turkish-dataset/benchmark/text_category/scene/6350.png,VARANLAM,4.379
+syntetic-turkish-dataset/benchmark/text_category/scene/6388.png,ZUMBER,4.431
+syntetic-turkish-dataset/benchmark/text_category/scene/6316.png,BASIADIGINDAN,4.056
+syntetic-turkish-dataset/benchmark/text_category/scene/6374.png,SATHALARINDA,4.025
+syntetic-turkish-dataset/benchmark/text_category/scene/4546.png,BILLARDIGIMIZ,3.886
+syntetic-turkish-dataset/benchmark/text_category/scene/4413.png,VERIDIGINDEN.,4.042
+syntetic-turkish-dataset/benchmark/text_category/scene/4477.png,BUYUMAYI,3.959
+syntetic-turkish-dataset/benchmark/text_category/scene/4403.png,CARESINE,3.851
+syntetic-turkish-dataset/benchmark/text_category/scene/4521.png,BARISIA,3.912
+syntetic-turkish-dataset/benchmark/text_category/scene/4445.png,GORÜSLERIME,4.174
+syntetic-turkish-dataset/benchmark/text_category/scene/4487.png,SUNIARD,3.736
+syntetic-turkish-dataset/benchmark/text_category/scene/4534.png,SOYLE,4.795
+syntetic-turkish-dataset/benchmark/text_category/scene/4455.png,DAY,5.321
+syntetic-turkish-dataset/benchmark/text_category/scene/4544.png,ARASINDAKA,4.89
+syntetic-turkish-dataset/benchmark/text_category/scene/4771.png,ZABITIANG,5.014
+syntetic-turkish-dataset/benchmark/text_category/scene/4716.png,BAGOLE JALAMAZ,4.121
+syntetic-turkish-dataset/benchmark/text_category/scene/4696.png,SITLAR,3.906
+syntetic-turkish-dataset/benchmark/text_category/scene/4721.png,BANGLE,3.654
+syntetic-turkish-dataset/benchmark/text_category/scene/4736.png,CISMEMEL LIGING,4.164
+syntetic-turkish-dataset/benchmark/text_category/scene/4649.png,GETIRECEGIMIZE,4.001
+syntetic-turkish-dataset/benchmark/text_category/scene/4720.png,KARSILASMASMAIL,4.005
+syntetic-turkish-dataset/benchmark/text_category/scene/4699.png,KATIMEKTAN,4.25
+syntetic-turkish-dataset/benchmark/text_category/scene/4695.png,POSTALLECEOR,5.557
+syntetic-turkish-dataset/benchmark/text_category/scene/4664.png,JUSTING EMIZIN,4.39
+syntetic-turkish-dataset/benchmark/text_category/scene/5192.png,DENILMISTUR,3.659
+syntetic-turkish-dataset/benchmark/text_category/scene/5056.png,KULLONLOCOLIC,3.896
+syntetic-turkish-dataset/benchmark/text_category/scene/5097.png,ORNEGINI,3.979
+syntetic-turkish-dataset/benchmark/text_category/scene/5115.png,TOTAL:,3.922
+syntetic-turkish-dataset/benchmark/text_category/scene/5071.png,RUNUSLAYA,4.063
+syntetic-turkish-dataset/benchmark/text_category/scene/5096.png,SITLAR,4.72
+syntetic-turkish-dataset/benchmark/text_category/scene/5169.png,ULASABELMESI,4.305
+syntetic-turkish-dataset/benchmark/text_category/scene/5074.png,BURSAMIZ,4.158
+syntetic-turkish-dataset/benchmark/text_category/scene/5015.png,BAKANLANN,4.4
+syntetic-turkish-dataset/benchmark/text_category/scene/5108.png,TARAFINA,5.114
+syntetic-turkish-dataset/benchmark/text_category/scene/4934.png,SOYLE,3.947
+syntetic-turkish-dataset/benchmark/text_category/scene/4924.png,HAKKEDZR,4.069
+syntetic-turkish-dataset/benchmark/text_category/scene/4906.png,KOTULAKLEME,3.967
+syntetic-turkish-dataset/benchmark/text_category/scene/4933.png,SOYLOYORUM,4.292
+syntetic-turkish-dataset/benchmark/text_category/scene/4941.png,PROGRAMING,4.123
+syntetic-turkish-dataset/benchmark/text_category/scene/4992.png,DENILMISTUR,3.862
+syntetic-turkish-dataset/benchmark/text_category/scene/4931.png,HÜKJMETIN,4.222
+syntetic-turkish-dataset/benchmark/text_category/scene/4936.png,CIZMEMERLIGIM,4.169
+syntetic-turkish-dataset/benchmark/text_category/scene/4890.png,YUKTAR,4.453
+syntetic-turkish-dataset/benchmark/text_category/scene/4870.png,PAULMAYACAGR,4.014
+syntetic-turkish-dataset/benchmark/text_category/scene/5305.png,AYRILIGINI,4.241
+syntetic-turkish-dataset/benchmark/text_category/scene/5328.png,AZIZ,5.569
+syntetic-turkish-dataset/benchmark/text_category/scene/5341.png,SPROGRAMING,7.541
+syntetic-turkish-dataset/benchmark/text_category/scene/5312.png,GOSTERDIL,6.645
+syntetic-turkish-dataset/benchmark/text_category/scene/5398.png,HAT RALARINI,9.947
+syntetic-turkish-dataset/benchmark/text_category/scene/5208.png,LIMANLARINA,7.261
+syntetic-turkish-dataset/benchmark/text_category/scene/5216.png,TELOJL,4.068
+syntetic-turkish-dataset/benchmark/text_category/scene/5295.png,AMOUNT OF RECEIPT FOR AN OFFER,5.111
+syntetic-turkish-dataset/benchmark/text_category/scene/5214.png,AYAKKABILARNI,4.989
+syntetic-turkish-dataset/benchmark/text_category/scene/5399.png,KALPRABLEUM,4.19
+syntetic-turkish-dataset/benchmark/text_category/scene/5977.png,DEVLETE,4.087
+syntetic-turkish-dataset/benchmark/text_category/scene/5873.png,"BARTELL, PRICEBOOK",4.624
+syntetic-turkish-dataset/benchmark/text_category/scene/5982.png,TOPRAK,3.944
+syntetic-turkish-dataset/benchmark/text_category/scene/5850.png,KURUNWALARIA,6.421
+syntetic-turkish-dataset/benchmark/text_category/scene/5899.png,BARANORA,7.655
+syntetic-turkish-dataset/benchmark/text_category/scene/5894.png,GST FLORANDEN,8.662
+syntetic-turkish-dataset/benchmark/text_category/scene/5989.png,ISMI,3.581
+syntetic-turkish-dataset/benchmark/text_category/scene/5875.png,ORDUMUZUN,3.801
+syntetic-turkish-dataset/benchmark/text_category/scene/5815.png,GELMESI,4.054
+syntetic-turkish-dataset/benchmark/text_category/scene/5903.png,SUBURUK,4.009
+syntetic-turkish-dataset/benchmark/text_category/scene/6002.png,KTYAMET,4.889
+syntetic-turkish-dataset/benchmark/text_category/scene/6037.png,YURITIMEBLE,5.915
+syntetic-turkish-dataset/benchmark/text_category/scene/6016.png,BITISIK,7.323
+syntetic-turkish-dataset/benchmark/text_category/scene/6020.png,ONAYL,5.725
+syntetic-turkish-dataset/benchmark/text_category/scene/6121.png,HOSUNA,4.456
+syntetic-turkish-dataset/benchmark/text_category/scene/6068.png,DUMLUPINAR,4.501
+syntetic-turkish-dataset/benchmark/text_category/scene/6057.png,GST ADEM,5.358
+syntetic-turkish-dataset/benchmark/text_category/scene/6076.png,KARAAGAC'A,4.184
+syntetic-turkish-dataset/benchmark/text_category/scene/6043.png,TOTAL,4.994
+syntetic-turkish-dataset/benchmark/text_category/scene/6177.png,SAKARYA MIN,3.917
+syntetic-turkish-dataset/benchmark/text_category/scene/5453.png,ETRAFINDAKI,4.799
+syntetic-turkish-dataset/benchmark/text_category/scene/5503.png,BUYURACAKLAN,5.469
+syntetic-turkish-dataset/benchmark/text_category/scene/5414.png,YUMUL MAYACAKUR,5.052
+syntetic-turkish-dataset/benchmark/text_category/scene/5586.png,BOLGELERLE,3.891
+syntetic-turkish-dataset/benchmark/text_category/scene/5595.png,BARTELL DRUGS,4.323
+syntetic-turkish-dataset/benchmark/text_category/scene/5522.png,SURUCULAR,4.123
+syntetic-turkish-dataset/benchmark/text_category/scene/5428.png,TELGRAFINDAN,4.233
+syntetic-turkish-dataset/benchmark/text_category/scene/5526.png,CUMMUNBASKANI,4.778
+syntetic-turkish-dataset/benchmark/text_category/scene/5479.png,YONTEHLERE,3.726
+syntetic-turkish-dataset/benchmark/text_category/scene/5411.png,UZAKLASMAM,4.396
+syntetic-turkish-dataset/benchmark/text_category/scene/5727.png,GEKMEKTEN,4.793
+syntetic-turkish-dataset/benchmark/text_category/scene/5665.png,SEY,4.522
+syntetic-turkish-dataset/benchmark/text_category/scene/5651.png,BASMA,5.376
+syntetic-turkish-dataset/benchmark/text_category/scene/5662.png,SAYLLARAIK,5.023
+syntetic-turkish-dataset/benchmark/text_category/scene/5729.png,CUMPLEDEN,4.058
+syntetic-turkish-dataset/benchmark/text_category/scene/5602.png,BES,4.242
+syntetic-turkish-dataset/benchmark/text_category/scene/5619.png,GORDOMOS,5.71
+syntetic-turkish-dataset/benchmark/text_category/scene/5647.png,SALATIMAKE,4.806
+syntetic-turkish-dataset/benchmark/text_category/scene/5798.png,GORUSINE,4.775
+syntetic-turkish-dataset/benchmark/text_category/scene/5779.png,HAKKIDIN,9.59

@@ -1,0 +1,28 @@
+# environments and local tools
+.venv/
+.venv-paddle/
+.tools/
+__pycache__/
+
+# large or third-party inputs, downloaded separately (see README)
+replication/data/
+replication/authors/
+colab/ocr_bundle.zip
+*.pdf
+!docs/**/*.pdf
+*.xlsx
+info_ogolne.txt
+logs/
+
+# LaTeX build files
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.synctex.gz

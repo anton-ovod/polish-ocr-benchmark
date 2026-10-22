@@ -1,0 +1,12 @@
+\begin{tabular}{lrrrcrrr}
+\toprule
+Model & \multicolumn{4}{c}{CER} & WER & Diakr. & s/obraz \\
+ & druk & pismo & razem & 95\% CI & zdania & [\%] & \\
+\midrule
+Tesseract & .114 & .329 & .221 & [.191, .254] & .210 & 4 & 0.10 \\
+EasyOCR & .085 & .257 & .171 & [.147, .199] & .392 & 8 & 0.12 \\
+PaddleOCR (pl) & .111 & .261 & .186 & [.162, .213] & .489 & 24 & 0.05 \\
+PaddleOCR (en) & .114 & .249 & .182 & [.157, .206] & .498 & 31 & 0.16 \\
+TrOCR & .122 & .283 & .202 & [.182, .226] & .601 & 25 & 4.21 \\
+\bottomrule
+\end{tabular}

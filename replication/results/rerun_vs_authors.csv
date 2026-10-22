@@ -1,0 +1,9 @@
+model,type,n,identical,cer_our_run,cer_authors_run,cer_between_runs,sec_per_image
+trocr,all,330,0.997,0.376,0.376,0.0,4.37
+trocr,handwritten,110,1.0,0.468,0.468,0.0,3.79
+trocr,printed,110,0.991,0.294,0.294,0.001,4.61
+trocr,scene,110,1.0,0.367,0.367,0.0,4.71
+paddle,all,330,0.997,0.315,0.314,0.0,0.33
+paddle,handwritten,110,1.0,0.399,0.399,0.0,0.24
+paddle,printed,110,1.0,0.215,0.215,0.0,0.33
+paddle,scene,110,0.991,0.329,0.329,0.001,0.41

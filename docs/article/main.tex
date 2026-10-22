@@ -1,0 +1,211 @@
+% Artykuł własny: LNCS, po polsku, IMRaD, max 6 stron bez bibliografii.
+% Kompilacja: latexmk -pdf main.tex
+% Tabele w tables/ generuje src/summarize.py -- nie edytować ręcznie.
+% \TODO{...} oznacza miejsca do uzupełnienia przez grupę.
+\documentclass[runningheads]{llncs}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{polski}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\newcommand{\TODO}[1]{\textcolor{red}{[TODO: #1]}}
+\renewcommand{\abstractname}{Streszczenie}
+\renewcommand{\keywordname}{\textbf{Słowa kluczowe:}}
+\renewcommand{\tablename}{Tabela}
+\renewcommand{\figurename}{Rys.}
+\renewcommand{\refname}{Bibliografia}
+
+\begin{document}
+
+\title{Ocena silników OCR i modeli wizyjno-językowych w~rozpoznawaniu tekstu polskiego na danych syntetycznych}
+\titlerunning{OCR i VLM dla tekstu polskiego}
+\author{\TODO{Autor 1} \and \TODO{Autor 2} \and \TODO{Autor 3}}
+\authorrunning{\TODO{Autorzy}}
+\institute{\TODO{Uczelnia, wydział}\\\email{\TODO{e-mail}}}
+
+\maketitle
+
+\begin{abstract}
+Systemy OCR i~modele wizyjno-językowe (VLM) trenowane są głównie na danych angielskich, przez co
+gorzej radzą sobie ze znakami diakrytycznymi innych języków. Przenosimy protokół badania
+Yılmaza i~in.~\cite{yilmaz2026} z~języka tureckiego na polski: generujemy syntetyczny zbiór obrazów
+z~\emph{Lalki} B.~Prusa (tekst drukowany i~odręczny), kontrolując obecność polskich znaków, długość słowa,
+kontekst zdania i~pięć rodzajów zniekształceń. Porównujemy \TODO{liczba} modeli: Tesseract i~EasyOCR
+z~modelami polskimi, PaddleOCR, TrOCR oraz Qwen2.5-VL. \TODO{Główny wynik w~jednym zdaniu.} Pokazujemy
+też, że słownik znaków PaddleOCR dla języków łacińskich nie zawiera liter ń, ś, ź, ż, co wyklucza
+ich poprawne rozpoznanie. Kod i~dane udostępniamy publicznie.
+\keywords{OCR \and modele wizyjno-językowe \and język polski \and dane syntetyczne \and znaki diakrytyczne}
+\end{abstract}
+
+%------------------------------------------------------------------------------
+\section{Wprowadzenie}
+
+\TODO{1 akapit: OCR, VLM, problem języków innych niż angielski.}
+
+Yılmaz i~in.~\cite{yilmaz2026} zaproponowali syntetyczny benchmark dla języka tureckiego i~pokazali,
+że znaki specyficzne dla języka są główną trudnością dla większości modeli. Język polski ma
+dziewięć liter z~diakrytykami (ą, ć, ę, ł, ń, ó, ś, ź, ż), z~których część różni się od liter
+łacińskich jedynie drobnym znakiem (ogonek, kreska, kropka).
+
+\textbf{Cel.} Celem artykułu jest ocena, jak dokładnie dostępne lokalnie silniki OCR i~otwarty model
+VLM rozpoznają tekst polski oraz jak na wynik wpływają polskie znaki, długość słowa, kontekst zdania,
+typ tekstu i~zniekształcenia obrazu.
+
+\textbf{Elementy nowości:}
+(1) przeniesienie protokołu~\cite{yilmaz2026} na język polski wraz z~otwartym generatorem;
+(2) uwzględnienie klasycznych silników z~modelem polskim (Tesseract \texttt{pol}, EasyOCR \texttt{pl}),
+których autorzy nie badali;
+(3) analiza błędów wyłącznie diakrytycznych i~ograniczeń słowników znaków;
+(4) weryfikacja odtwarzalności badania bazowego.
+
+%------------------------------------------------------------------------------
+\section{Przegląd literatury}
+
+\TODO{Krótko: Tesseract~\cite{smith2007}, PP-OCR~\cite{li2022ppocrv3}, TrOCR~\cite{li2023trocr},
+VLM~\cite{bai2025qwen25vl}; dane syntetyczne~\cite{jaderberg2014,trdg}; benchmark turecki~\cite{yilmaz2026};
+prace o~OCR dla polskiego (do uzupełnienia, max 10 pozycji łącznie).}
+
+%------------------------------------------------------------------------------
+\section{Materiał i metody}
+
+\subsection{Zbiór danych}
+Tekst źródłowy to \emph{Lalka, tom pierwszy}~\cite{wolnelektury} (domena publiczna). Pulę słów stanowią
+wyrazy co najmniej trzyliterowe występujące w~tekście co najmniej dwa razy (8720 słów), a~pulę zdań
+-- zdania liczące 4--8 słów, złożone wyłącznie z~liter i~interpunkcji (680 zdań).
+Obrazy generujemy biblioteką TRDG 1.8.0~\cite{trdg} z~parametrami autorów badania bazowego: wysokość
+64~px, marginesy 15~px, czarny tekst na białym tle. Tekst drukowany renderujemy 15 fontami (Open Sans,
+Roboto, Source Sans 3), a~odręczny 19 popularnymi fontami odręcznymi z~Google Fonts. Każdy font
+sprawdzamy w~tabeli \texttt{cmap} pod kątem wszystkich znaków korpusu, aby wykluczyć brakujące glify.
+
+Dla każdego typu tekstu (drukowany, odręczny) tworzymy cztery kategorie:
+(1) słowa z~polskimi znakami i~bez nich,
+(2) słowa krótkie (${<}10$ znaków) i~długie (${>}10$),
+(3) pojedyncze słowo i~zdanie,
+(4) zniekształcenia: obraz czysty, rozmycie (promień 2), obrót (do $\pm16^\circ$), szum gaussowski
+($\sigma=50$) i~niska rozdzielczość (wysokość 40~px), stosowane do tych samych słów.
+Daje to 22 komórki po $n$ obrazów; \TODO{wyniki wstępne: $n=20$ (440 obrazów); docelowo $n=100$ (2200)}.
+Losowanie jest deterministyczne (stałe ziarno), a~mniejsza próba jest podzbiorem większej.
+
+\subsection{Modele}
+\begin{itemize}
+  \item \textbf{Tesseract} 5.5~\cite{smith2007}, model \texttt{pol}, tryb jednej linii (\texttt{--psm 7});
+  \item \textbf{EasyOCR}~\cite{easyocr}, model \texttt{pl};
+  \item \textbf{PaddleOCR} 2.9 (PP-OCRv4)~\cite{li2022ppocrv3}, model \texttt{pl} oraz \texttt{en}
+    (ustawienie autorów badania bazowego);
+  \item \textbf{TrOCR} large-printed~\cite{li2023trocr}, model angielski, jak w~badaniu bazowym,
+    z~domyślnym limitem 21 tokenów wyjścia (co skraca dłuższe zdania, także u~autorów);
+  \item \textbf{Qwen2.5-VL}~\cite{bai2025qwen25vl} \TODO{3B/7B}, prompt autorów z~,,Turkish''
+    zamienionym na ,,Polish''.
+\end{itemize}
+Modele klasyczne uruchamiamy na CPU, \TODO{Qwen: CPU (3B) / Colab GPU (7B)}.
+
+\subsection{Miary}
+Niech $t_i$ oznacza tekst wzorcowy, a~$p_i$ predykcję modelu dla obrazu $i$, oba po normalizacji
+(Unicode NFC, małe litery, scalone białe znaki). Główną miarą jest współczynnik błędów znakowych
+\begin{equation}\label{eq:cer}
+  \mathrm{CER}_i = \min\left(1,\ \frac{S_i + D_i + I_i}{N_i}\right),
+\end{equation}
+gdzie $S_i$, $D_i$, $I_i$ to liczby podstawień, usunięć i~wstawień znaków w~minimalnym ciągu edycji
+(odległość Levenshteina~\cite{levenshtein1966}), a~$N_i = |t_i|$ to liczba znaków wzorca. Obcięcie do~1
+odpowiada protokołowi~\cite{yilmaz2026}: predykcja dłuższa od wzorca nie może dać błędu powyżej 100\%.
+Współczynnik błędów słów $\mathrm{WER}_i$ liczymy tym samym wzorem na ciągach słów i~podajemy tylko dla
+zdań, bo dla pojedynczego słowa przyjmuje on wartości 0 lub~1.
+
+Wynik dla zbioru obrazów $A$ (komórki, typu tekstu lub całego zbioru) to średnia
+\begin{equation}\label{eq:mean}
+  \overline{\mathrm{CER}}(A) = \frac{1}{|A|}\sum_{i\in A}\mathrm{CER}_i .
+\end{equation}
+Wpływ polskich znaków na błędy opisujemy odsetkiem \emph{błędów wyłącznie diakrytycznych}: wśród błędnych
+predykcji $E=\{i: p_i\neq t_i\}$ liczymy te, które stają się poprawne po usunięciu diakrytyków
+funkcją $s(\cdot)$ (ą$\to$a, ł$\to$l itd.):
+\begin{equation}\label{eq:diacr}
+  R_{\mathrm{diakr}} = \frac{|\{i\in E: s(p_i) = s(t_i)\}|}{|E|}.
+\end{equation}
+
+\subsection{Analiza statystyczna}
+Niepewność średniej~\eqref{eq:mean} szacujemy jak w~\cite{yilmaz2026} nieparametrycznym bootstrapem:
+z~wartości $\mathrm{CER}_i$ losujemy ze zwracaniem $B=1000$ prób o~liczności $|A|$, a~95\% przedział
+ufności wyznaczają percentyle 2,5 i~97,5 rozkładu średnich z~prób. Wpływ czynnika (np.\ obecności
+polskich znaków) mierzymy różnicą średnich między grupą z~czynnikiem $A$ i~grupą odniesienia $B$:
+\begin{equation}\label{eq:delta}
+  \Delta = \overline{\mathrm{CER}}(A) - \overline{\mathrm{CER}}(B),
+\end{equation}
+np.\ $A$ -- słowa z~polskimi znakami, $B$ -- słowa bez nich; dla zniekształceń $B$ to obrazy czyste.
+Przedział ufności dla $\Delta$ wyznaczamy, losując niezależnie obie grupy; efekt uznajemy za istotny,
+gdy przedział nie zawiera zera. Ziarno generatora losowego jest stałe, więc wyniki są powtarzalne.
+
+%------------------------------------------------------------------------------
+\section{Wyniki}
+
+Tabela~\ref{tab:overall} przedstawia wyniki zbiorcze, a~tabela~\ref{tab:cells} -- wyniki w~komórkach.
+
+\begin{table}
+  \caption{Średni CER~\eqref{eq:mean} według typu tekstu z~95\% przedziałem ufności (bootstrap), WER dla
+  zdań, odsetek błędów wyłącznie diakrytycznych~\eqref{eq:diacr} i~czas na obraz (CPU).}
+  \label{tab:overall}
+  \centering\small
+  \input{tables/overall.tex}
+\end{table}
+
+\begin{table}
+  \caption{Średni CER w~komórkach: tekst drukowany / odręczny.}
+  \label{tab:cells}
+  \centering
+  \resizebox{\textwidth}{!}{\input{tables/cells.tex}}
+\end{table}
+
+\begin{table}
+  \caption{Wpływ czynników: różnica średniego CER $\Delta$~\eqref{eq:delta} między grupą z~czynnikiem
+  a~grupą odniesienia (dla zniekształceń: obrazy czyste). Pogrubienie: 95\% przedział ufności nie
+  zawiera zera.}
+  \label{tab:effects}
+  \centering\small
+  \input{tables/effects.tex}
+\end{table}
+
+\TODO{Opis wyników po kategoriach (tab.~\ref{tab:effects}): polskie znaki, długość, kontekst,
+zniekształcenia, typ tekstu.}
+
+%------------------------------------------------------------------------------
+\section{Dyskusja}
+
+\textbf{Słowniki znaków.} PaddleOCR dla języka polskiego korzysta ze wspólnego modelu łacińskiego,
+którego słownik (\texttt{latin\_dict.txt}) zawiera litery ą, ć, ę, ł, ó, ale nie zawiera ń, ś, ź, ż.
+Model nie może więc ich zwrócić i~zastępuje je literami podobnymi (np. ,,ludnošci'' zamiast
+,,ludności''). Wyjaśnia to, dlaczego ustawienie \texttt{pl} daje wyniki zbliżone do \texttt{en}.
+
+\textbf{Odtwarzalność badania bazowego.} Autorzy udostępnili dane, kod i~predykcje dla każdego obrazu.
+Ponowne uruchomienie PaddleOCR na warstwowej próbie 330 obrazów dało predykcje identyczne
+z~opublikowanymi w~99,7\% przypadków. \TODO{TrOCR.} Kod autorów zamiast wzoru~\eqref{eq:cer} liczy
+\begin{equation}\label{eq:cer-authors}
+  \mathrm{CER}^{\mathrm{kod}}_i = \frac{S_i + D_i + I_i}{|p_i|},
+\end{equation}
+czyli dzieli przez długość predykcji, a~nie wzorca (zamienione argumenty funkcji). Wartości z~tekstu
+artykułu (np.\ TrOCR 0,38) odtwarzamy z~opublikowanych predykcji dopiero wzorem~\eqref{eq:cer}.
+
+\TODO{Porównanie z~wynikami tureckimi (tylko jakościowo).}
+
+%------------------------------------------------------------------------------
+\section{Ograniczenia i dalsze prace}
+
+Dane są syntetyczne, jednoliniowe i~na białym tle (tekstury papieru z~badania bazowego nie zostały
+udostępnione); pominięto tekst w~scenie i~zdjęcia rzeczywiste. \TODO{Mała próba / jeden korpus /
+mniejszy wariant Qwen.}
+
+%------------------------------------------------------------------------------
+\section{Wnioski}
+
+\TODO{3--4 zdania.}
+
+\subsubsection*{Dostępność danych i kodu.}
+Generator, skrypty uruchomieniowe, wyniki dla każdego obrazu i~zbiór obrazów:
+\TODO{adres repozytorium}. Kod na licencji MIT, dane na licencji CC BY 4.0.
+
+\bibliographystyle{splncs04}
+\bibliography{references}
+
+\end{document}

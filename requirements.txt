@@ -1,0 +1,20 @@
+# main environment (.venv, Python 3.12): generator, Tesseract, EasyOCR, TrOCR, Qwen, metrics
+# torch/torchvision CPU wheels: --index-url https://download.pytorch.org/whl/cpu
+torch==2.14.1
+torchvision==0.29.1
+transformers==5.20.2
+qwen-vl-utils==0.0.14
+easyocr==1.7.2
+pytesseract==0.3.13
+jiwer==4.0.0
+editdistance==0.8.1
+numpy==2.3.5
+pandas==3.1.0
+pillow==12.3.0
+fonttools==4.67.0
+# trdg 1.8.0 pins an old Pillow; install it with --no-deps, its runtime deps are listed below
+arabic-reshaper
+python-bidi
+diffimg
+wikipedia
+requests
