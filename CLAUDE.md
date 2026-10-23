@@ -128,11 +128,15 @@ cd docs/article && latexmk -pdf main.tex             # analogicznie docs/present
 `.venv-paddle` (paddleocr 2.9.1), Tesseract w `.tools/tess`. Wyniki Qwen: `qwen.csv` = 3B, `qwen7b.csv` = 7B.
 
 ### Ustalenia (do artykułu i prezentacji)
-- **CER w kodzie autorów** dzieli odległość przez długość *predykcji*, nie prawdy. Liczby z tekstu
-  artykułu odtwarzamy dopiero przy poprawnym CER (małe litery, /długość prawdy): TrOCR 0,383 vs 0,38;
-  GPT-4o clean 0,017 vs 0,017; Paddle clean 0,262 vs 0,239.
+- **CER w kodzie autorów** (`cer_wer_calculation.py`, zamienione argumenty) dzieli odległość przez długość
+  *predykcji*; tak liczone są wszystkie 65 036 wartości `cer` w ich JSON-ie (bez małych liter). Liczby
+  z tekstu artykułu odtwarza jednak inny wariant z ich repo (`graphs_lower_trocr.py`): małe litery,
+  **bez spacji i interpunkcji**, /długość prawdy; artykuł tego nie opisuje. Kolumna `nospace` w
+  `replication/results/`: TrOCR 0,380 vs 0,38; GPT-4o turkish 0,065 vs 0,065, clean 0,017 vs 0,017.
+  Nieodtworzone: GPT-4o non_turkish 0,066 vs 0,055, Paddle clean 0,260 vs 0,239. W tym wariancie TrOCR
+  jest ostatni (0,380), a GOT-OCR2, który gubi spacje, ma 0,311 (poprawny CER 0,391, czyli ostatni).
 - **Claude:** JSON autorów zawiera Claude 3.7 Sonnet (CER 0,349), artykuł podaje Sonnet 4 z CER 0,197.
-- **Ponowny przebieg PaddleOCR** (`en`, 330 obrazów): 99,7% predykcji identycznych z autorami.
+- **Ponowny przebieg PaddleOCR i TrOCR** (330 obrazów): po 99,7% predykcji identycznych z autorami.
 - **TrOCR:** checkpoint ma `use_cache=False` (2,5× wolniej na CPU, włączamy cache: wynik identyczny);
   `max_length` domyślne 21 tokenów jak u autorów, więc dłuższe zdania są ucinane (u autorów też).
 - **PaddleOCR `pl`** używa wspólnego słownika łacińskiego (`latin_dict.txt`) bez ń, ś, ź, ż: nie może ich

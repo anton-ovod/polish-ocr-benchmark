@@ -180,12 +180,15 @@ Model nie może więc ich zwrócić i~zastępuje je literami podobnymi (np. ,,lu
 
 \textbf{Odtwarzalność badania bazowego.} Autorzy udostępnili dane, kod i~predykcje dla każdego obrazu.
 Ponowne uruchomienie PaddleOCR na warstwowej próbie 330 obrazów dało predykcje identyczne
-z~opublikowanymi w~99,7\% przypadków. \TODO{TrOCR.} Kod autorów zamiast wzoru~\eqref{eq:cer} liczy
+z~opublikowanymi w~99,7\% przypadków, tak samo jak TrOCR. Kod autorów zamiast wzoru~\eqref{eq:cer} liczy
 \begin{equation}\label{eq:cer-authors}
   \mathrm{CER}^{\mathrm{kod}}_i = \frac{S_i + D_i + I_i}{|p_i|},
 \end{equation}
-czyli dzieli przez długość predykcji, a~nie wzorca (zamienione argumenty funkcji). Wartości z~tekstu
-artykułu (np.\ TrOCR 0,38) odtwarzamy z~opublikowanych predykcji dopiero wzorem~\eqref{eq:cer}.
+czyli dzieli przez długość predykcji, a~nie wzorca (zamienione argumenty funkcji); tak policzone są
+wartości w~opublikowanym pliku z~predykcjami. Liczby z~tekstu artykułu (np.\ TrOCR 0,38) odtwarza
+natomiast inny wariant z~ich repozytorium: wzór~\eqref{eq:cer} po usunięciu spacji i~interpunkcji,
+czego artykuł nie opisuje. Zmienia to ranking: GOT-OCR2, który gubi spacje, ma w~tym wariancie
+CER 0,311, a~wzorem~\eqref{eq:cer} 0,391.
 
 \TODO{Porównanie z~wynikami tureckimi (tylko jakościowo).}
 

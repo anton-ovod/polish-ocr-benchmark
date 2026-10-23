@@ -5,6 +5,8 @@ A. Recompute the paper's numbers from the authors' per-image predictions (author
    shown as bar charts, so the text is the only exact reference):
      stored     -- the `cer` field saved in the JSON, clipped to 1.0, missing -> 1.0 (authors' aggregation)
      authors_lc -- the authors' formula (distance / prediction length) after lowercasing, as the paper says
+     nospace    -- the authors' other variant (graphs_lower_trocr.py): lowercase, no whitespace or punctuation,
+                   distance / ground-truth length; this one reproduces the numbers in the paper text
      ours       -- distance / ground-truth length after NFC + lowercase (src/metrics.py)
 B. Compare our own re-run of TrOCR and PaddleOCR on the stratified sample (results/*.csv) with the authors'
    predictions for the same images.
@@ -22,7 +24,7 @@ import pandas as pd
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent / "src"))
-from metrics import cer, cer_authors, normalize  # noqa: E402
+from metrics import cer, cer_authors, cer_authors_nospace, normalize  # noqa: E402
 
 OUT = HERE / "results"
 
@@ -53,12 +55,13 @@ def load_authors():
                              prediction=pred,
                              stored=1.0 if stored is None else min(float(stored), 1.0),
                              authors_lc=cer_authors(item["ground_truth"], pred, lowercase=True),
+                             nospace=cer_authors_nospace(item["ground_truth"], pred),
                              ours=cer(item["ground_truth"], pred)))
     return pd.DataFrame(rows)
 
 
 def part_a(df):
-    variants = ["stored", "authors_lc", "ours"]
+    variants = ["stored", "authors_lc", "nospace", "ours"]
     overall = df.groupby("model")[variants].mean().sort_values("ours")
     by_type = df.pivot_table(index="model", columns="type", values="ours", aggfunc="mean")
     by_cell = df.groupby(["model", "type", "category", "subcategory"])[variants].mean()

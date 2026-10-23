@@ -1,7 +1,7 @@
-model,subset,paper,where,stored,authors_lc,ours
-trocr-large-printed,all,0.38,"Sec. 4.2, overall, ranked last",0.982,0.403,0.383
-claude-3-7-sonnet-20250219,all,0.197,"Sec. 4.2, overall (paper names Claude Sonnet 4)",0.344,0.341,0.349
-gpt4o,turkish,0.065,"Sec. 4.3, 0.055/0.065 across both subcategories",0.074,0.068,0.064
-gpt4o,non_turkish,0.055,Sec. 4.3,0.073,0.067,0.066
-gpt4o,clean,0.017,"Sec. 4.4, clean images",0.018,0.016,0.017
-paddleocr,clean,0.239,"Sec. 4.4, clean images",0.267,0.265,0.262
+model,subset,paper,where,stored,authors_lc,nospace,ours
+trocr-large-printed,all,0.38,"Sec. 4.2, overall, ranked last",0.982,0.403,0.38,0.383
+claude-3-7-sonnet-20250219,all,0.197,"Sec. 4.2, overall (paper names Claude Sonnet 4)",0.344,0.341,0.348,0.349
+gpt4o,turkish,0.065,"Sec. 4.3, 0.055/0.065 across both subcategories",0.074,0.068,0.065,0.064
+gpt4o,non_turkish,0.055,Sec. 4.3,0.073,0.067,0.066,0.066
+gpt4o,clean,0.017,"Sec. 4.4, clean images",0.018,0.016,0.017,0.017
+paddleocr,clean,0.239,"Sec. 4.4, clean images",0.267,0.265,0.26,0.262

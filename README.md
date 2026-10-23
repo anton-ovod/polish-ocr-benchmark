@@ -11,8 +11,10 @@ Qwen2.5-VL jeszcze nie był liczony.
 ## Co zostało zrobione
 
 1. **Powtórzenie badania bazowego** (`replication/`)
-   - Liczby z artykułu przeliczone z per-obrazowych predykcji autorów. Kod autorów dzieli odległość edycyjną
-     przez długość *predykcji* zamiast wzorca; tabelę z artykułu odtwarza dopiero CER liczony względem wzorca.
+   - Liczby z artykułu przeliczone z per-obrazowych predykcji autorów. Kod autorów (i zapisany przez nich
+     JSON) dzieli odległość edycyjną przez długość *predykcji* zamiast wzorca. Liczby z tekstu artykułu
+     odtwarza inny wariant z ich repo: małe litery, bez spacji i interpunkcji, dzielenie przez długość wzorca
+     (artykuł tego nie opisuje).
    - Ponowne uruchomienie PaddleOCR i TrOCR na warstwowej próbce 330 obrazów tureckich, z ustawieniami
      z notebooków autorów: 99,7% predykcji identycznych, CER 0,315 wobec 0,314 (Paddle) i 0,376 wobec 0,376 (TrOCR).
 2. **Własny zbiór polski** (`src/generate_dataset.py`)
