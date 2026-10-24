@@ -23,8 +23,8 @@ Qwen2.5-VL jeszcze nie był liczony.
    - Komórki: z polskimi znakami / bez, krótkie / długie słowa, słowo / zdanie, zakłócenia
      (clean, blur, rotated, noisy, low_resolution) na tych samych słowach.
    - Fonty z Google Fonts sprawdzone w `cmap` na 18 polskich liter (`tools/fonts/`).
-3. **Modele** (`src/ocr_models.py`, `src/run_ocr.py`): Tesseract `pol`, EasyOCR `pl`, PaddleOCR (`pl` i `en`
-   jak u autorów), TrOCR, Qwen2.5-VL (3B lokalnie, 7B przez `colab/qwen_colab.ipynb`).
+3. **Modele** (`src/ocr_models.py`, `src/run_ocr.py`): Tesseract `pol`, EasyOCR `pl`, PaddleOCR `pl`, TrOCR,
+   Qwen2.5-VL (3B lokalnie, 7B przez `colab/qwen_colab.ipynb`).
 4. **Ewaluacja** (`src/metrics.py`, `src/summarize.py`): CER i WER (NFC, małe litery, CER obcięty do 1),
    odsetek błędów wyłącznie diakrytycznych, bootstrapowe 95% przedziały ufności i efekty czynników (Δ CER).
    Skrypt zapisuje CSV w `polish/results/summary/` i tabele LaTeX w `docs/article/tables/`.
@@ -35,7 +35,6 @@ Qwen2.5-VL jeszcze nie był liczony.
 | Model | Druk | Pismo odręczne | Razem |
 |---|---|---|---|
 | EasyOCR `pl` | 0,085 | 0,257 | 0,171 |
-| PaddleOCR `en` | 0,114 | 0,249 | 0,182 |
 | PaddleOCR `pl` | 0,111 | 0,261 | 0,186 |
 | TrOCR | 0,122 | 0,283 | 0,202 |
 | Tesseract `pol` | 0,114 | 0,329 | 0,221 |

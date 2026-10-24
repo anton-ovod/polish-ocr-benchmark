@@ -94,8 +94,7 @@ Losowanie jest deterministyczne (stałe ziarno), a~mniejsza próba jest podzbior
 \begin{itemize}
   \item \textbf{Tesseract} 5.5~\cite{smith2007}, model \texttt{pol}, tryb jednej linii (\texttt{--psm 7});
   \item \textbf{EasyOCR}~\cite{easyocr}, model \texttt{pl};
-  \item \textbf{PaddleOCR} 2.9 (PP-OCRv4)~\cite{li2022ppocrv3}, model \texttt{pl} oraz \texttt{en}
-    (ustawienie autorów badania bazowego);
+  \item \textbf{PaddleOCR} 2.9 (PP-OCRv4)~\cite{li2022ppocrv3}, model \texttt{pl};
   \item \textbf{TrOCR} large-printed~\cite{li2023trocr}, model angielski, jak w~badaniu bazowym,
     z~domyślnym limitem 21 tokenów wyjścia (co skraca dłuższe zdania, także u~autorów);
   \item \textbf{Qwen2.5-VL}~\cite{bai2025qwen25vl} \TODO{3B/7B}, prompt autorów z~,,Turkish''
@@ -176,7 +175,7 @@ zniekształcenia, typ tekstu.}
 \textbf{Słowniki znaków.} PaddleOCR dla języka polskiego korzysta ze wspólnego modelu łacińskiego,
 którego słownik (\texttt{latin\_dict.txt}) zawiera litery ą, ć, ę, ł, ó, ale nie zawiera ń, ś, ź, ż.
 Model nie może więc ich zwrócić i~zastępuje je literami podobnymi (np. ,,ludnošci'' zamiast
-,,ludności''). Wyjaśnia to, dlaczego ustawienie \texttt{pl} daje wyniki zbliżone do \texttt{en}.
+,,ludności'').
 
 \textbf{Odtwarzalność badania bazowego.} Autorzy udostępnili dane, kod i~predykcje dla każdego obrazu.
 Ponowne uruchomienie PaddleOCR na warstwowej próbie 330 obrazów dało predykcje identyczne
