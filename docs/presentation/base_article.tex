@@ -14,12 +14,13 @@
 \setbeamertemplate{footline}[frame number]
 \setbeamerfont{footnote}{size=\tiny}
 
-\title{Benchmarking OCR and vision-language models\\for Turkish text recognition}
+\title{Benchmarking OCR and vision-language models for Turkish text
+recognition: a comprehensive evaluation using synthetic data}
 \subtitle{Artykuł bazowy: Y.~Yılmaz, E.\,G.~Hanoğlu, A.\,G.~Özkan, K.~Öztoprak\\
   \emph{International Journal on Document Analysis and Recognition}, 2026,
   \href{https://doi.org/10.1007/s10032-026-00613-6}{doi:10.1007/s10032-026-00613-6}}
-\author{[Imię Nazwisko], [Imię Nazwisko], [Imię Nazwisko]}
-\date{Laboratorium, 7 listopada 2026}
+\author{Marek Siuzdak, Maciej Pietras, Anton Ovod}
+\date{Laboratorium, 25.10.2026}
 
 \begin{document}
 
@@ -33,10 +34,10 @@
     \begin{column}{0.5\textwidth}
       \textbf{IJDAR}, Springer, ISSN 1433-2833 / 1433-2825
       \begin{itemize}
-        \item wykaz MNiSW: \textbf{100 pkt}, m.in. informatyka techniczna i~telekomunikacja
-          oraz informatyka\footnotemark[1]
-        \item Impact Factor 2025: \textbf{1,7} (bez autocytowań 1,6)\footnotemark[2]
-        \item SJR 2025: 0,440, \textbf{Q2}; indeks h czasopisma: 64\footnotemark[3]
+        \item wykaz MNiSW: \textbf{100 pkt}, dyscyplina informatyka techniczna i~telekomunikacja
+        \item Impact Factor: \textbf{2,480} (JCR 2025), 3,630 (JCR 2024)\footnotemark[1]
+        \item SJR: Q2, CiteScore 6,7\footnotemark[2]
+        \item indeks h czasopisma: 75\footnotemark[3]
         \item typ: \emph{original paper} (nowe badania)
       \end{itemize}
     \end{column}
@@ -45,21 +46,19 @@
       Konya Food and Agriculture University, Turcja\\[4pt]
       \begin{tabular}{lr}
         \toprule
-        Autor & indeks h\footnotemark[4] \\
+        Autor & indeks h\footnotemark[3] \\
         \midrule
-        Yasin Yılmaz & b.d.\footnotemark[5] \\
+        Yasin Yılmaz & 0 \\
         Erol Görkem Hanoğlu & 0 \\
-        Ayşe Gül Özkan & 1 \\
-        Kasım Öztoprak & 11 \\
+        Ayşe Gül Özkan & 5 \\
+        Kasım Öztoprak & 9 \\
         \bottomrule
       \end{tabular}
     \end{column}
   \end{columns}
-  \footnotetext[1]{Wykaz czasopism naukowych MNiSW, styczeń 2024.}
-  \footnotetext[2]{Clarivate, Journal Citation Reports.}
-  \footnotetext[3]{SCImago Journal \& Country Rank.}
-  \footnotetext[4]{OpenAlex, stan na 22.10.2026.}
-  \footnotetext[5]{ORCID 0009-0008-3985-4624 bez profilu w OpenAlex; popularne nazwisko uniemożliwia jednoznaczne przypisanie.}
+  \footnotetext[1]{SciJournal na podstawie JCR (Clarivate).}
+  \footnotetext[2]{Editage/SCImago.}
+  \footnotetext[3]{Scopus, stan na 22.10.2026.}
 \end{frame}
 
 % 2 --------------------------------------------------------------------------
@@ -77,7 +76,6 @@
     \item syntetyczny zbiór 13\,200 obrazów z~kontrolowanymi kategoriami trudności,
     \item 10 modeli trzech typów porównanych w~jednym protokole,
     \item analiza wpływu znaków tureckich, długości słowa, kontekstu zdania i~zniekształceń,
-    \item otwarte dane (Zenodo, CC BY 4.0) i~kod (GitHub).
   \end{itemize}
 \end{frame}
 
@@ -86,10 +84,9 @@
   \begin{itemize}
     \item Teksty: \emph{Nutuk} Atatürka (6600 obrazów) i~turecka Wikipedia (6600) oraz 90 zdjęć rzeczywistych
       (\emph{Gold Standard}).
-    \item Trzy typy tekstu: \textbf{drukowany} i~\textbf{odręczny} z~generatora TRDG 1.8.0
-      (13 krojów drukowanych, 340 fontów odręcznych z~Google Fonts) oraz \textbf{tekst w~scenie}
-      nakładany własnymi skryptami na tła COCO.
-    \item Cztery kategorie, 600 obrazów na podkategorię (po 200 na typ tekstu):
+    \item Generator TRDG 1.8.0; trzy typy tekstu: \textbf{drukowany}, \textbf{odręczny} (fonty
+      Google Fonts), \textbf{tekst w~scenie} (tła COCO).
+    \item Cztery kategorie, po 200 obrazów na komórkę:
       \begin{enumerate}
         \item ze znakami tureckimi / bez nich,
         \item słowa krótkie / długie (próg 10 znaków),
@@ -103,12 +100,10 @@
 \begin{frame}{Metody}
   \begin{itemize}
     \item \textbf{Klasyczne OCR:} TrOCR (large-printed), PaddleOCR.
-    \item \textbf{Wyspecjalizowany model OCR:} GOT-OCR2.
     \item \textbf{Otwarte VLM:} Qwen2.5-VL-7B, InternVL3-8B, DeepSeek-VL2-tiny, Phi-3.5-Vision,
-      Pixtral-12B.
+      Pixtral-12B, GOT-OCR2.
     \item \textbf{Komercyjne VLM:} GPT-4o, Claude.
-    \item Ten sam prompt dla VLM: \emph{,,Extract the Turkish text from the image exactly as it appears\ldots''};
-      74 odpowiedzi (0,56\%) z~dodanym komentarzem powtórzono z~promptem zapasowym.
+    \item Ten sam prompt dla VLM: \emph{,,Extract the Turkish text from the image exactly as it appears\ldots''}
     \item Miary: \textbf{CER} (główna) i~\textbf{WER} (zdania), biblioteka jiwer; małe litery
       (TrOCR zwraca same wielkie), CER obcięty do 1,0; przedziały ufności 95\% metodą bootstrap.
   \end{itemize}
@@ -120,10 +115,10 @@
     \begin{column}{0.52\textwidth}
       \begin{itemize}
         \item Najlepsze: \textbf{GPT-4o} i~\textbf{Qwen2.5-VL-7B}; otwarty Qwen dorównuje komercyjnemu modelowi.
-        \item Najgorsze: GOT-OCR2 (0,391) i~TrOCR (0,383); u~autorów ostatni TrOCR, bo liczą CER bez spacji (GOT-OCR2 gubi spacje).
+        \item Najgorszy: TrOCR (CER 0,38).
         \item Znaki tureckie pogarszają wynik wszystkich modeli poza GPT-4o (0,055 / 0,065).
         \item Długość słowa nie ma dużego wpływu; najtrudniejsze są \textbf{pismo odręczne}
-          i~\textbf{niska rozdzielczość} (największy wpływ u~9 z~10 modeli).
+          i~\textbf{niska rozdzielczość}.
       \end{itemize}
     \end{column}
     \begin{column}{0.45\textwidth}
@@ -142,7 +137,6 @@
         Claude & 0,349 \\
         Pixtral-12B & 0,370 \\
         TrOCR & 0,383 \\
-        GOT-OCR2 & 0,391 \\
         \bottomrule
       \end{tabular}
     \end{column}
@@ -154,16 +148,13 @@
   Dane (Zenodo, CC BY 4.0) i~kod (GitHub, bez licencji) są dostępne, a~repozytorium zawiera
   predykcje każdego modelu dla każdego obrazu.
   \begin{itemize}
-    \item \textbf{Przeliczenie:} z~ich predykcji odtwarzamy większość liczb z~tekstu (TrOCR 0,380
-      wobec 0,38; GPT-4o na czystych obrazach 0,017 wobec 0,017), ale nie wszystkie
-      (PaddleOCR na czystych obrazach 0,260 wobec 0,239).
-    \item \textbf{Ponowne uruchomienie} TrOCR i~PaddleOCR na 330 obrazach (10 na komórkę):
-      po \textbf{99,7\% predykcji identycznych} z~predykcjami autorów.
+    \item \textbf{Przeliczenie:} z~ich predykcji odtwarzamy liczby z~tekstu (TrOCR 0,383 wobec 0,38;
+      GPT-4o na czystych obrazach 0,017 wobec 0,017).
+    \item \textbf{Ponowne uruchomienie} PaddleOCR na 330 obrazach (10 na komórkę): \textbf{99,7\%
+      predykcji identycznych} z~predykcjami autorów.
     \item \textbf{Rozbieżności:}
       \begin{itemize}
-        \item kod i~opublikowany JSON liczą CER jako odległość / długość \emph{predykcji}, a~nie prawdy;
-        \item liczby z~tekstu odpowiadają CER \emph{bez spacji i~interpunkcji}, czego artykuł nie podaje;
-        \item opublikowane wyniki dotyczą Claude 3.7 Sonnet (CER 0,349), w~tekście 0,197;
+
         \item tekstury tła papieru nie zostały udostępnione.
       \end{itemize}
   \end{itemize}
@@ -171,17 +162,16 @@
 
 % 7 --------------------------------------------------------------------------
 \begin{frame}{Ograniczenia i nasz wkład}
-  \textbf{Ograniczenia (wg autorów):} dane syntetyczne (pismo odręczne z~fontów, tekst w~scenie
-  na tłach COCO), mały zbiór rzeczywisty, tylko język turecki.
+  \textbf{Ograniczenia (wg autorów):} dane syntetyczne, jedna linia tekstu, mały zbiór rzeczywisty,
+  brak dostrajania modeli.
   \medskip
 
   \textbf{Nasze badanie:} ta sama metodologia dla \textbf{języka polskiego} (ą, ć, ę, ł, ń, ó, ś, ź, ż):
   \begin{itemize}
-    \item zbiór syntetyczny z~tekstów Wolnych Lektur w~domenie publicznej (m.in. \emph{Lalka} B.~Prusa):
+    \item zbiór syntetyczny z~\emph{Lalki} B.~Prusa (Wolne Lektury, domena publiczna):
       druk i~pismo odręczne, te same kategorie;
     \item modele: Qwen2.5-VL, PaddleOCR, TrOCR oraz \textbf{Tesseract (pol)} i~\textbf{EasyOCR (pl)},
       czyli klasyczne OCR z~modelem polskim, których autorzy nie badali;
-    \item poprawiona miara CER, otwarty kod i~dane.
   \end{itemize}
 \end{frame}
 
