@@ -25,9 +25,9 @@ sys.path.insert(0, str(Path(__file__).parent))
 from metrics import cer, cer_authors, normalize, wer  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
-MODEL_ORDER = ["qwen7b", "qwen", "tesseract", "easyocr", "paddle", "paddle_en", "trocr"]
-MODEL_NAMES = {"qwen7b": "Qwen2.5-VL-7B", "qwen": "Qwen2.5-VL-3B", "tesseract": "Tesseract", "easyocr": "EasyOCR", "paddle": "PaddleOCR (pl)",
-               "paddle_en": "PaddleOCR (en)", "trocr": "TrOCR"}
+MODEL_ORDER = ["qwen7b", "qwen", "tesseract", "easyocr", "paddle", "trocr"]
+MODEL_NAMES = {"qwen7b": "Qwen2.5-VL-7B", "qwen": "Qwen2.5-VL-3B", "tesseract": "Tesseract", "easyocr": "EasyOCR", "paddle": "PaddleOCR",
+               "trocr": "TrOCR"}
 CELL_ORDER = [
     ("polish_character_confusion", "polish", "z polskimi znakami"),
     ("polish_character_confusion", "non_polish", "bez polskich znaków"),

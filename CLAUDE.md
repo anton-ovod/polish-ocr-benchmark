@@ -104,7 +104,8 @@ Kod, identyfikatory, komentarze, nazwy plików i kolumny CSV piszemy **po angiel
 
 ### Struktura
 - `src/`: generator (`generate_dataset.py`), modele (`ocr_models.py`), runner (`run_ocr.py`, wznawialny),
-  metryki (`metrics.py`), podsumowanie i tabele LaTeX (`summarize.py`), `run_all_local.sh`.
+  metryki (`metrics.py`), podsumowanie i tabele LaTeX (`summarize.py`), wykresy (`plot_results.py` →
+  `docs/article/figures/*.{pdf,png}`), `run_all_local.sh`.
 - `polish/`: korpus (`texts/`), fonty (`fonts/`), zbiór (`data/labels.csv` + `data/images/`), wyniki
   (`results/<model>.csv`, `results/summary/`).
 - `replication/`: powtórzenie badania bazowego. `authors/cer_wer_calculated.json` (predykcje autorów
@@ -121,6 +122,7 @@ Kod, identyfikatory, komentarze, nazwy plików i kolumny CSV piszemy **po angiel
 .venv/bin/python src/generate_dataset.py --n 20      # 440 obrazów; --n 100 = docelowe 2200 (n=20 to podzbiór)
 src/run_all_local.sh                                 # wszystkie modele, wznawialne
 .venv/bin/python src/summarize.py                    # tabele + docs/article/tables/
+.venv/bin/python src/plot_results.py                 # wykresy z polish/results/summary/ (po summarize.py)
 .venv/bin/python replication/analyze.py              # powtórzenie badania bazowego
 cd docs/article && latexmk -pdf main.tex             # analogicznie docs/presentation
 ```
@@ -140,12 +142,13 @@ cd docs/article && latexmk -pdf main.tex             # analogicznie docs/present
 - **TrOCR:** checkpoint ma `use_cache=False` (2,5× wolniej na CPU, włączamy cache: wynik identyczny);
   `max_length` domyślne 21 tokenów jak u autorów, więc dłuższe zdania są ucinane (u autorów też).
 - **PaddleOCR `pl`** używa wspólnego słownika łacińskiego (`latin_dict.txt`) bez ń, ś, ź, ż: nie może ich
-  zwrócić („ludnošci”, „5piacy”), stąd `pl` ≈ `en`.
+  zwrócić („ludnošci”, „5piacy”). Przebieg z `en` (ustawienie autorów) dawał to samo (CER 0,18 vs 0,19), więc go usunęliśmy;
+  w artykule jest tylko PaddleOCR `pl`, podpisywany po prostu „PaddleOCR”.
 - Tekstury papieru autorów nie są opublikowane; renderujemy na białym tle.
 - **Obliczenia w artykule** (sekcje 3.3–3.4): wzory (1)–(5) — CER/WER, średnia, odsetek błędów
   diakrytycznych, bootstrap 95% CI (B=1000 jak u autorów), efekt Δ = różnica średnich z CI. Liczy je
   `summarize.py` → `tables/effects.tex` i kolumna CI w `overall.tex`.
-- Wstępne wyniki PL (n=20, CER): Tesseract 0,22, EasyOCR 0,17, Paddle pl 0,19, Paddle en 0,18.
+- Wstępne wyniki PL (n=20, CER): Tesseract 0,22, EasyOCR 0,17, PaddleOCR 0,19, TrOCR 0,20.
 
 ### Do zrobienia
 - Wyniki TrOCR i Qwen 3B na zbiorze polskim, potem pełny zbiór `--n 100`.

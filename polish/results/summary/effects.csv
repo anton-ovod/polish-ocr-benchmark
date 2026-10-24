@@ -1,41 +1,33 @@
 model,effect,a,b,delta,lo,hi,significant
-easyocr,polskie znaki,polish,non_polish,0.0426,-0.0277,0.122,False
-easyocr,długie słowa,long_words,short_words,-0.0008,-0.0394,0.0354,False
-easyocr,zdanie zamiast słowa,sentences,word,0.0839,0.0222,0.1425,True
-easyocr,pismo odręczne,handwritten,printed,0.1719,0.1222,0.2225,True
-easyocr,rozmycie,blur,clean,0.4393,0.3208,0.5596,True
-easyocr,obrót,rotated,clean,0.0198,-0.0476,0.0902,False
-easyocr,szum,noisy,clean,0.0198,-0.0473,0.0881,False
-easyocr,niska rozdzielczość,low_resolution,clean,0.6609,0.5487,0.7564,True
-paddle,polskie znaki,polish,non_polish,0.2263,0.14,0.3205,True
-paddle,długie słowa,long_words,short_words,-0.096,-0.1722,-0.0292,True
-paddle,zdanie zamiast słowa,sentences,word,-0.0633,-0.1378,-0.0005,True
-paddle,pismo odręczne,handwritten,printed,0.15,0.1009,0.2006,True
-paddle,rozmycie,blur,clean,0.0374,-0.0699,0.1362,False
-paddle,obrót,rotated,clean,-0.0302,-0.1292,0.0593,False
-paddle,szum,noisy,clean,-0.0109,-0.1171,0.0844,False
-paddle,niska rozdzielczość,low_resolution,clean,0.4461,0.2904,0.5934,True
-paddle_en,polskie znaki,polish,non_polish,0.2384,0.1675,0.3272,True
-paddle_en,długie słowa,long_words,short_words,-0.1022,-0.1861,-0.0373,True
-paddle_en,zdanie zamiast słowa,sentences,word,-0.0668,-0.1408,-0.0082,True
-paddle_en,pismo odręczne,handwritten,printed,0.1346,0.0835,0.1802,True
-paddle_en,rozmycie,blur,clean,0.0418,-0.0649,0.1428,False
-paddle_en,obrót,rotated,clean,-0.0246,-0.1141,0.0704,False
-paddle_en,szum,noisy,clean,-0.0079,-0.0996,0.0816,False
-paddle_en,niska rozdzielczość,low_resolution,clean,0.443,0.2896,0.5911,True
-tesseract,polskie znaki,polish,non_polish,-0.0381,-0.1348,0.0574,False
-tesseract,długie słowa,long_words,short_words,0.0102,-0.0554,0.0907,False
-tesseract,zdanie zamiast słowa,sentences,word,0.0518,-0.025,0.1375,False
-tesseract,pismo odręczne,handwritten,printed,0.2151,0.1507,0.2798,True
-tesseract,rozmycie,blur,clean,0.1962,0.0753,0.3135,True
-tesseract,obrót,rotated,clean,0.1276,0.0226,0.2336,True
-tesseract,szum,noisy,clean,0.7718,0.6495,0.8822,True
-tesseract,niska rozdzielczość,low_resolution,clean,0.5451,0.4237,0.6585,True
-trocr,polskie znaki,polish,non_polish,0.1777,0.1305,0.2225,True
-trocr,długie słowa,long_words,short_words,-0.08,-0.1315,-0.0276,True
-trocr,zdanie zamiast słowa,sentences,word,0.0506,-0.0205,0.1157,False
-trocr,pismo odręczne,handwritten,printed,0.1603,0.1198,0.202,True
-trocr,rozmycie,blur,clean,0.1928,0.0786,0.3139,True
-trocr,obrót,rotated,clean,-0.0076,-0.082,0.0555,False
-trocr,szum,noisy,clean,0.0118,-0.0574,0.0804,False
-trocr,niska rozdzielczość,low_resolution,clean,0.3811,0.2685,0.502,True
+easyocr,polskie znaki,polish,non_polish,0.0426,-0.026,0.1203,False
+easyocr,długie słowa,long_words,short_words,-0.0008,-0.0373,0.0355,False
+easyocr,zdanie zamiast słowa,sentences,word,0.0839,0.0251,0.1471,True
+easyocr,pismo odręczne,handwritten,printed,0.1719,0.1224,0.2225,True
+easyocr,rozmycie,blur,clean,0.4393,0.3181,0.5638,True
+easyocr,obrót,rotated,clean,0.0198,-0.0534,0.0915,False
+easyocr,szum,noisy,clean,0.0198,-0.0485,0.0911,False
+easyocr,niska rozdzielczość,low_resolution,clean,0.6609,0.5605,0.7547,True
+paddle,polskie znaki,polish,non_polish,0.2263,0.1363,0.3202,True
+paddle,długie słowa,long_words,short_words,-0.096,-0.1732,-0.0253,True
+paddle,zdanie zamiast słowa,sentences,word,-0.0633,-0.1276,-0.0066,True
+paddle,pismo odręczne,handwritten,printed,0.15,0.1024,0.1963,True
+paddle,rozmycie,blur,clean,0.0374,-0.0671,0.1379,False
+paddle,obrót,rotated,clean,-0.0302,-0.1256,0.0579,False
+paddle,szum,noisy,clean,-0.0109,-0.1151,0.0762,False
+paddle,niska rozdzielczość,low_resolution,clean,0.4461,0.2962,0.6059,True
+tesseract,polskie znaki,polish,non_polish,-0.0381,-0.1309,0.0606,False
+tesseract,długie słowa,long_words,short_words,0.0102,-0.0559,0.0928,False
+tesseract,zdanie zamiast słowa,sentences,word,0.0518,-0.023,0.1354,False
+tesseract,pismo odręczne,handwritten,printed,0.2151,0.1488,0.2782,True
+tesseract,rozmycie,blur,clean,0.1962,0.0832,0.3142,True
+tesseract,obrót,rotated,clean,0.1276,0.0248,0.233,True
+tesseract,szum,noisy,clean,0.7718,0.639,0.8791,True
+tesseract,niska rozdzielczość,low_resolution,clean,0.5451,0.4291,0.6694,True
+trocr,polskie znaki,polish,non_polish,0.1777,0.1271,0.2251,True
+trocr,długie słowa,long_words,short_words,-0.08,-0.1382,-0.0257,True
+trocr,zdanie zamiast słowa,sentences,word,0.0506,-0.0213,0.117,False
+trocr,pismo odręczne,handwritten,printed,0.1603,0.1228,0.2013,True
+trocr,rozmycie,blur,clean,0.1928,0.0779,0.3124,True
+trocr,obrót,rotated,clean,-0.0076,-0.0733,0.0587,False
+trocr,szum,noisy,clean,0.0118,-0.0585,0.0754,False
+trocr,niska rozdzielczość,low_resolution,clean,0.3811,0.2676,0.497,True
