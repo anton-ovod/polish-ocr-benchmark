@@ -15,8 +15,10 @@ Qwen2.5-VL jeszcze nie był liczony.
      JSON) dzieli odległość edycyjną przez długość *predykcji* zamiast wzorca. Liczby z tekstu artykułu
      odtwarza inny wariant z ich repo: małe litery, bez spacji i interpunkcji, dzielenie przez długość wzorca
      (artykuł tego nie opisuje).
-   - Ponowne uruchomienie PaddleOCR i TrOCR na warstwowej próbce 330 obrazów tureckich, z ustawieniami
-     z notebooków autorów: 99,7% predykcji identycznych, CER 0,315 wobec 0,314 (Paddle) i 0,376 wobec 0,376 (TrOCR).
+   - Ponowne uruchomienie 8 otwartych modeli z artykułu (bez GPT-4o i Claude'a) na warstwowej próbce 1650 obrazów
+     tureckich (`colab/replication_colab.ipynb`, A100). Średni CER różni się od predykcji autorów najwyżej o 0,001,
+     a u Pixtrala o 0,007. Identycznych predykcji jest od 90,4% do 99,9%, poza Pixtralem (28,3%). Liczby dla każdego
+     modelu: `replication/results/rerun_vs_authors.csv`.
 2. **Własny zbiór polski** (`src/generate_dataset.py`)
    - Generator TRDG 1.8.0 z parametrami autorów, druk i pismo odręczne, tekst z *Lalki* (Wolne Lektury,
      domena publiczna).
@@ -49,7 +51,7 @@ src/              generator, modele OCR, metryki, podsumowanie
 replication/      powtórzenie badania bazowego (analyze.py, build_labels.py, results/)
 polish/           teksty, fonty, wygenerowany zbiór (data/) i wyniki (results/)
 tools/fonts/      pobieranie i sprawdzanie fontów odręcznych
-colab/            notebook dla Qwen2.5-VL na GPU
+colab/            notebooki na GPU: powtórzenie badania bazowego i Qwen2.5-VL 7B na zbiorze polskim
 docs/             artykuł (article/) i prezentacja (presentation/), LaTeX
 ```
 
@@ -75,7 +77,9 @@ Do powtórzenia badania bazowego potrzebne są dane autorów, których nie ma w 
 - `json/cer_wer_calculated.json` z [repo autorów](https://github.com/OCR-benchmark-project/turkish-synthetic-text-recognition-benchmark)
   (commit `966b119`) skopiowany do `replication/authors/`.
 
-Potem `replication/build_labels.py --n 10` i `replication/analyze.py`.
+Potem `replication/build_labels.py --n 50` i `colab/make_bundle.sh`. Powstały `colab/ocr_bundle.zip` trafia do
+`MyDrive/ocr-benchmark/`, a `colab/replication_colab.ipynb` uruchamia modele na GPU. Wyniki z
+`MyDrive/ocr-benchmark/replication/` kopiujemy do `replication/results/` i uruchamiamy `replication/analyze.py`.
 
 ## Licencje
 

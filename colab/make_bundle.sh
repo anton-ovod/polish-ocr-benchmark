@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Pack the code and images needed on Colab into colab/ocr_bundle.zip (~30 MB):
-#   src/, polish/data/ (images + labels.csv), and the 330-image Turkish replication sample.
+#   src/, polish/data/ (images + labels.csv), the Turkish replication sample, and what
+#   colab/replication_colab.ipynb needs: the runner, analyze.py, the authors' predictions and our earlier re-runs.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 rm -f colab/ocr_bundle.zip
@@ -19,4 +20,6 @@ with zipfile.ZipFile(src) as zin, zipfile.ZipFile(dst, "w", zipfile.ZIP_DEFLATED
         zout.writestr(name, zin.read(item))
 shutil.move(dst, src)
 EOF
+zip -q colab/ocr_bundle.zip colab/run_replication.py replication/analyze.py replication/authors/cer_wer_calculated.json \
+    replication/results/trocr.csv replication/results/paddle.csv
 ls -lh colab/ocr_bundle.zip

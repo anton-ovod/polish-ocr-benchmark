@@ -8,7 +8,7 @@ Ground truth and cell metadata come from the authors' replication/authors/cer_we
 "N.png"; the key is checked against text_category/<type>/text_labels.txt from Zenodo.
 
 Usage:
-    .venv/bin/python replication/build_labels.py --n 10
+    .venv/bin/python replication/build_labels.py --n 50
 """
 import argparse
 import csv
@@ -20,6 +20,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 BENCHMARK = "syntetic-turkish-dataset/benchmark"  # sic, the folder name in the Zenodo archive
+BASE_SAMPLE = 10  # images per cell of the first sample; larger samples extend it, so finished predictions stay usable
 
 
 def read_text_labels(path):
@@ -56,7 +57,10 @@ def main():
         cells[row["type"], row["category"], row["subcategory"]].append(row)
     sample = []
     for cell in sorted(cells):
-        sample += random.Random(f"{args.seed}-{'-'.join(cell)}").sample(cells[cell], args.n)
+        rng = random.Random(f"{args.seed}-{'-'.join(cell)}")
+        chosen = rng.sample(cells[cell], min(args.n, BASE_SAMPLE))
+        chosen += rng.sample([r for r in cells[cell] if r not in chosen], args.n - len(chosen))
+        sample += chosen
     print(f"sample: {len(sample)} images from {len(cells)} cells")
 
     for name, data in (("labels.csv", rows), ("sample.csv", sample)):

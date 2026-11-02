@@ -48,22 +48,25 @@ def main():
         if new_file:
             writer.writerow(["file", "prediction", "seconds"])
             f.flush()
-        errors_in_row = 0
+        failed = []  # images that raised since the last success; only recorded as empty once the model works again
         for i, file in enumerate(todo, 1):
             t0 = time.perf_counter()
             try:
                 pred = read(args.data / file)
-                errors_in_row = 0
             except Exception as e:  # one bad image must not stop the whole run...
                 print(f"error {file}: {e}", flush=True)
-                errors_in_row += 1
-                if errors_in_row >= 5:  # ...but a broken model must not fill the CSV with empty predictions
+                failed.append(file)
+                if len(failed) >= 5:  # ...but a broken model must not leave empty predictions that a resume skips
+                    f.flush()
                     raise
-                pred = ""
+                continue
+            writer.writerows([name, "", 0] for name in failed)
+            failed.clear()
             writer.writerow([file, pred, round(time.perf_counter() - t0, 3)])
             if i % 25 == 0:
                 f.flush()
                 print(f"  {i}/{len(todo)}", flush=True)
+        writer.writerows([name, "", 0] for name in failed)
 
 
 if __name__ == "__main__":

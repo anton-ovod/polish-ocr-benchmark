@@ -8,8 +8,8 @@ A. Recompute the paper's numbers from the authors' per-image predictions (author
      nospace    -- the authors' other variant (graphs_lower_trocr.py): lowercase, no whitespace or punctuation,
                    distance / ground-truth length; this one reproduces the numbers in the paper text
      ours       -- distance / ground-truth length after NFC + lowercase (src/metrics.py)
-B. Compare our own re-run of TrOCR and PaddleOCR on the stratified sample (results/*.csv) with the authors'
-   predictions for the same images.
+B. Compare our own re-run of the eight open models on the stratified sample (results/*.csv, produced by
+   colab/replication_colab.ipynb) with the authors' predictions for the same images.
 
 Usage:
     .venv/bin/python replication/analyze.py
@@ -40,7 +40,8 @@ PAPER = [
 # our result file -> the authors' model key in the JSON; qwen.csv is the 3B model (CPU), so against the authors'
 # 7B it is a reference point only, not a replication
 OUR_MODELS = {"trocr": "trocr-large-printed", "paddle": "paddleocr", "qwen7b": "qwen2.5-vl-7b-instruct",
-              "qwen": "qwen2.5-vl-7b-instruct"}
+              "qwen": "qwen2.5-vl-7b-instruct", "internvl": "internvl3-8b", "deepseek": "deepseek-vl2-tiny",
+              "phi": "phi-3.5-vision-instruct", "pixtral": "pixtral-12b-2409", "got": "got-ocr2_0"}
 
 
 def load_authors():
