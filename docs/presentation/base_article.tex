@@ -149,8 +149,9 @@ recognition: a comprehensive evaluation using synthetic data}
   \begin{itemize}
     \item \textbf{Przeliczenie:} z~ich predykcji odtwarzamy liczby z~tekstu (TrOCR 0,383 wobec 0,38;
       GPT-4o na czystych obrazach 0,017 wobec 0,017).
-    \item \textbf{Ponowne uruchomienie} PaddleOCR na 330 obrazach (10 na komórkę): \textbf{99,7\%
-      predykcji identycznych} z~predykcjami autorów.
+    \item \textbf{Ponowne uruchomienie} 8 otwartych modeli na 1650 obrazach (50 na komórkę, GPU A100):
+      \textbf{średni CER różni się od predykcji autorów najwyżej o~0,001}, a~u~Pixtrala o~0,007.
+      Predykcje identyczne: 90,4-99,9\%, poza Pixtralem (28,3\%).
     \item \textbf{Rozbieżności:}
       \begin{itemize}
 

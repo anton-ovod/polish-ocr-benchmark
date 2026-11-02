@@ -116,7 +116,8 @@ ustalenia, które trzeba zachować, trafiają do tego pliku.
 - `colab/`: `replication_colab.ipynb` + `run_replication.py` (powtórzenie: 8 modeli, każdy we własnym środowisku,
   wznawialne, wyniki na Dysku w `MyDrive/ocr-benchmark/replication/`), `qwen_colab.ipynb` (Qwen 7B na zbiorze
   polskim), `make_bundle.sh` (buduje `ocr_bundle.zip`, poza gitem).
-- `docs/presentation/base_article.tex`: 8 slajdów o artykule bazowym (Lab 4, 7.11).
+- `docs/presentation/base_article.tex`: 8 slajdów o artykule bazowym (Lab 4, 7.11). `docs/presentation_v2/`: wersja
+  kolegi z notatkami do wystąpienia; `base_article.tex` kompilujemy z `-jobname=prezentacja_v2`.
 - `docs/article/main.tex`: szkielet LNCS po polsku z `\TODO{}`; tabele `docs/article/tables/*.tex`
   generuje `summarize.py`, nie edytować ręcznie.
 - `tools/fonts/`: pobieranie i sprawdzanie fontów.
@@ -189,7 +190,6 @@ cd docs/article && latexmk -pdf main.tex             # analogicznie docs/present
 
 ### Do zrobienia
 - Wyniki TrOCR i Qwen 3B na zbiorze polskim, potem pełny zbiór `--n 100`.
-- Prezentacja: uzupełnić nazwiska, zweryfikować IF w Clarivate JCR; `docs/presentation/base_article.tex` wciąż
-  podaje stary wynik (Paddle, 330 obrazów, 99,7%), nowy jest w tabeli wyżej.
+- Prezentacja: uzupełnić nazwiska, zweryfikować IF w Clarivate JCR.
 - Artykuł: wszystkie `\TODO{}`, przegląd literatury (prace o OCR dla polskiego), opis wyników.
 - Repo na GitHubie (kod MIT, dane CC BY 4.0).
