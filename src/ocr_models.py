@@ -1,9 +1,4 @@
-"""OCR engines. Each loader takes a language code and returns read(path) -> str.
-
-Imports are lazy because the models need conflicting dependencies: PaddleOCR 2.9.1 lives in .venv-paddle without
-torch, and the replication-only models at the bottom get one environment each (colab/run_replication.py).
-TrOCR, PaddleOCR and the replication-only models copy the settings of the authors' notebooks (run_ocr/*.ipynb).
-"""
+"""OCR engines: each loader returns read(path) -> str."""
 import os
 from pathlib import Path
 
@@ -14,11 +9,10 @@ def tesseract(lang="pol"):
     import pytesseract
     from PIL import Image
 
-    tess = ROOT / ".tools" / "tess"  # local micromamba install (see README); otherwise the system tesseract
+    tess = ROOT / ".tools" / "tess"
     if (tess / "bin" / "tesseract").exists():
         pytesseract.pytesseract.tesseract_cmd = str(tess / "bin" / "tesseract")
         os.environ.setdefault("TESSDATA_PREFIX", str(tess / "share" / "tessdata"))
-    # psm 7: the image holds a single text line (a word or a sentence)
     return lambda path: pytesseract.image_to_string(Image.open(path), lang=lang, config="--psm 7").strip()
 
 
@@ -37,8 +31,6 @@ def trocr(lang=None, model="microsoft/trocr-large-printed"):
     processor = TrOCRProcessor.from_pretrained(model)
     device = "cuda" if torch.cuda.is_available() else "cpu"
     net = VisionEncoderDecoderModel.from_pretrained(model).eval()
-    # transformers 5 builds the model on the meta device; the sinusoidal position table is a plain attribute
-    # (not a buffer), so it is never materialised and has to be recomputed
     for m in net.modules():
         if hasattr(m, "get_embedding") and getattr(m, "weights", None) is not None and m.weights.is_meta:
             m.weights = m.get_embedding(m.weights.size(0), m.embedding_dim, m.padding_idx)
@@ -47,8 +39,6 @@ def trocr(lang=None, model="microsoft/trocr-large-printed"):
     def read(path):
         pixels = processor(images=Image.open(path).convert("RGB"), return_tensors="pt").pixel_values.to(device)
         with torch.inference_mode():
-            # the checkpoint ships use_cache=False, which makes CPU decoding ~2.5x slower; greedy output is identical
-            # max_length stays at the library default (21 tokens), as in the authors' runs, so long lines are cut
             ids = net.generate(pixels, use_cache=True)
         return processor.batch_decode(ids, skip_special_tokens=True)[0]
 
@@ -59,8 +49,8 @@ def paddle(lang="en"):
     import paddle as framework
     from paddleocr import PaddleOCR
 
-    use_gpu = framework.device.is_compiled_with_cuda()  # as in the authors' notebook
-    if use_gpu and not framework.device.cuda.device_count():  # otherwise Paddle only warns and silently uses the CPU
+    use_gpu = framework.device.is_compiled_with_cuda()
+    if use_gpu and not framework.device.cuda.device_count():
         raise RuntimeError("GPU build of Paddle, but it sees no GPU")
     ocr = PaddleOCR(use_angle_cls=True, lang=lang, use_gpu=use_gpu, show_log=False)
     print(f"PaddleOCR device: {framework.device.get_device()}", flush=True)
@@ -68,7 +58,7 @@ def paddle(lang="en"):
     def read(path):
         result = ocr.ocr(str(path), cls=True)
         lines = [line[1][0] for block in (result or []) if block for line in block]
-        return "\n".join(lines)  # as in the authors' notebook
+        return "\n".join(lines)
 
     return read
 
@@ -78,10 +68,6 @@ QWEN_PROMPT = ("Extract the {language} text from the image exactly as it appears
 
 
 def qwen(lang="Polish", model=None):
-    """Qwen2.5-VL with the authors' prompt (run_ocr/qwen.ipynb), the language name swapped in.
-
-    The authors used the 7B model; it needs ~17 GB in bf16 (Colab L4/A100). The 3B model fits a T4 or 16 GB RAM.
-    """
     import torch
     import transformers
     from qwen_vl_utils import process_vision_info
@@ -93,7 +79,6 @@ def qwen(lang="Polish", model=None):
         model = f"Qwen/Qwen2.5-VL-{'7B' if big else '3B'}-Instruct"
     print(f"loading {model} on {'cuda' if gpu else 'cpu'}", flush=True)
     dtype = torch.bfloat16 if not gpu or torch.cuda.is_bf16_supported() else torch.float16
-    # transformers >= 4.56 renamed torch_dtype to dtype; the replication environment uses the authors' 4.53
     dtype_arg = "dtype" if tuple(int(x) for x in transformers.__version__.split(".")[:2]) >= (4, 56) else "torch_dtype"
     net = Qwen2_5_VLForConditionalGeneration.from_pretrained(
         model, **{dtype_arg: dtype},
@@ -114,9 +99,6 @@ def qwen(lang="Polish", model=None):
     return read
 
 
-# Replication-only models (not used in the Polish study). Prompts and generation settings are verbatim from the
-# authors' notebooks, the language name swapped in. One difference: no flash-attn, which has no wheels and would have
-# to be compiled in every environment; Qwen and Phi-3.5 fall back to the default attention, InternVL to its own.
 INTERNVL_PROMPT = ("<image>\nExtract the {language} text from the image exactly as it appears. Do not repeat any text, "
                    "do not add any comments, and do not generate additional text. Only return the raw text found in "
                    "the image, without any formatting or repetition. If the text or image is not clear to extract "
@@ -125,7 +107,6 @@ DEEPSEEK_PROMPT = "<image>\n<|ref|>Extract the {language} text exactly.<|/ref|>.
 
 
 def _internvl_tiles(image, image_size=448, max_num=12):
-    """InternVL's dynamic_preprocess: split the image into tiles matching its aspect ratio, plus a thumbnail."""
     width, height = image.size
     ratios = sorted({(i, j) for i in range(1, max_num + 1) for j in range(1, max_num + 1) if i * j <= max_num},
                     key=lambda r: r[0] * r[1])
@@ -228,7 +209,7 @@ def pixtral(lang="Turkish", model="mistralai/Pixtral-12B-2409"):
     from vllm.sampling_params import SamplingParams
 
     llm = LLM(model=model, tokenizer_mode="mistral", max_model_len=8192, trust_remote_code=True)
-    sampling = SamplingParams(max_tokens=8192)  # as the authors: vLLM's default temperature, so runs are stochastic
+    sampling = SamplingParams(max_tokens=8192)
     prompt = QWEN_PROMPT.format(language=lang)
 
     def read(path):
@@ -243,7 +224,6 @@ def pixtral(lang="Turkish", model="mistralai/Pixtral-12B-2409"):
 
 
 def got(lang=None, model="stepfun-ai/GOT-OCR2_0"):
-    """The authors' ucaslcl/GOT-OCR2_0 now redirects to stepfun-ai/GOT-OCR2_0. It takes no prompt or language."""
     import torch
     from transformers import AutoModel, AutoTokenizer
 

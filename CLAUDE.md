@@ -100,7 +100,8 @@ w dyskusji.
 ## Stan prac (MVP, 22.10.2026)
 
 Kod, identyfikatory, komentarze, nazwy plików i kolumny CSV piszemy **po angielsku**; dokumenty
-(artykuł, slajdy) po polsku.
+(artykuł, slajdy) po polsku. W kodzie **nie piszemy komentarzy**, a docstring to najwyżej jedna linia opisu modułu;
+ustalenia, które trzeba zachować, trafiają do tego pliku.
 
 ### Struktura
 - `src/`: generator (`generate_dataset.py`), modele (`ocr_models.py`), runner (`run_ocr.py`, wznawialny),
@@ -162,13 +163,21 @@ cd docs/article && latexmk -pdf main.tex             # analogicznie docs/present
   - Puste odpowiedzi nasze / autorów / na tych samych obrazach: Paddle 173/173/173, Phi 61/60/59, GOT 1/1/1,
     Pixtral 2/1/0.
   - Próbka a całość: dla predykcji autorów CER różni się od CER z 6600 obrazów najwyżej o 0,010 (TrOCR).
-  - Komunikat `qwen.csv missing` w `analyze.py` jest tu nieszkodliwy: to plik modelu 3B, którego autorzy nie badali.
+  - Prompty i ustawienia generowania są dosłownie z notebooków autorów. Jedyna różnica to brak flash-attn (nie ma
+    gotowych pakietów): Phi i Qwen używają domyślnej uwagi, InternVL własnej. GOT: repo autorów `ucaslcl/GOT-OCR2_0`
+    przekierowuje na `stepfun-ai/GOT-OCR2_0`.
+  - Środowiska: `paddlepaddle-gpu` 2.6.2 wymaga CUDA 11.8 i cuDNN 8, więc instalujemy je jako pakiety `nvidia-*`
+    i dopisujemy do `LD_LIBRARY_PATH` (nie nadpisywać: na Colabie wskazuje sterownik). Torch 2.0 nie uruchamia się
+    z `expandable_segments`. Bez GPU Paddle tylko ostrzega i liczy na CPU, dlatego kod zgłasza wtedy błąd.
   - Odtwarzalność środowisk: checkpointy przypięte do commitów (`runs.json`), wersje pakietów w `envs/<model>.txt`.
     Data `--exclude-newer` nie obejmuje kroku z torchem, więc środowiska nie odtwarzają w pełni stanu z 2025 r.
   - TrOCR w tym przebiegu ma włączony cache, a `sec_per_image` obejmuje też pomiar z pierwszych 330 obrazów
     (ta sama karta). Suma dla 8 modeli to ok. 2,85 s/obraz.
 - **TrOCR:** checkpoint ma `use_cache=False` (2,5× wolniej na CPU, włączamy cache: wynik identyczny);
   `max_length` domyślne 21 tokenów jak u autorów, więc dłuższe zdania są ucinane (u autorów też).
+  Transformers 5 tworzy model na urządzeniu `meta` i nie wypełnia tabeli pozycji, dlatego `trocr()` liczy ją od nowa.
+- **Generator:** TRDG 1.8.0 woła `getsize()` usunięte z Pillow 10, więc podmieniamy `get_text_height` jak autorzy.
+- **Tesseract:** `--psm 7`, bo obraz zawiera jedną linię tekstu.
 - **PaddleOCR `pl`** używa wspólnego słownika łacińskiego (`latin_dict.txt`) bez ń, ś, ź, ż: nie może ich
   zwrócić („ludnošci”, „5piacy”). Przebieg z `en` (ustawienie autorów) dawał to samo (CER 0,18 vs 0,19), więc go usunęliśmy;
   w artykule jest tylko PaddleOCR `pl`, podpisywany po prostu „PaddleOCR”.

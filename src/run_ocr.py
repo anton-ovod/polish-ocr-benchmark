@@ -1,12 +1,4 @@
-"""Run one OCR model over a dataset and append predictions to a CSV (safe to interrupt and resume).
-
-Examples:
-    .venv/bin/python src/run_ocr.py --model tesseract --lang pol --data polish/data --out polish/results/tesseract.csv
-    .venv-paddle/bin/python src/run_ocr.py --model paddle --lang pl --data polish/data --out polish/results/paddle.csv
-
-Input:  <data>/labels.csv with a `file` column holding image paths relative to <data>.
-Output: CSV with columns file, prediction, seconds.
-"""
+"""Run one OCR model over a dataset and append predictions to a CSV."""
 import argparse
 import csv
 import sys
@@ -14,7 +6,7 @@ import time
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from ocr_models import MODELS  # noqa: E402
+from ocr_models import MODELS
 
 
 def main():
@@ -48,15 +40,15 @@ def main():
         if new_file:
             writer.writerow(["file", "prediction", "seconds"])
             f.flush()
-        failed = []  # images that raised since the last success; only recorded as empty once the model works again
+        failed = []
         for i, file in enumerate(todo, 1):
             t0 = time.perf_counter()
             try:
                 pred = read(args.data / file)
-            except Exception as e:  # one bad image must not stop the whole run...
+            except Exception as e:
                 print(f"error {file}: {e}", flush=True)
                 failed.append(file)
-                if len(failed) >= 5:  # ...but a broken model must not leave empty predictions that a resume skips
+                if len(failed) >= 5:
                     f.flush()
                     raise
                 continue

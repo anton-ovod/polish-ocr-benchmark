@@ -1,13 +1,4 @@
-"""Check which downloaded fonts really draw all Polish letters and A-Z/a-z.
-
-The `subsets` field in Google Fonts metadata is unreliable (fonts tagged latin-ext may miss Polish letters and
-vice versa), so each glyph is looked up in the font's cmap and must have at least one contour.
-Near-identical Playwrite variants are dropped from the output list.
-
-Usage:
-    python tools/fonts/check_fonts.py fonts_dir/ metadata.json tools/fonts/handwriting_fonts_pl.txt
-The output lists usable families, most popular first.
-"""
+"""Check which downloaded fonts really draw all Polish letters and A-Z/a-z."""
 import argparse
 import json
 import re
@@ -29,7 +20,7 @@ def missing_glyphs(path, chars):
         name = cmap.get(ord(c))
         if name is None:
             return False
-        return glyf is None or glyf[name].numberOfContours != 0  # an empty outline renders as a blank
+        return glyf is None or glyf[name].numberOfContours != 0
 
     return "".join(c for c in chars if not drawn(c))
 

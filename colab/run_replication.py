@@ -1,18 +1,4 @@
-"""Run the authors' open models on the replication sample, one isolated environment per model.
-
-The models need conflicting dependencies (GOT-OCR2 and DeepSeek torch 2.0, Pixtral torch 2.7 and vLLM), so each gets
-its own uv environment, pinned to the state of the authors' runs (June-July 2025). A model that fails to install or
-run is logged and skipped. Finished models are skipped on a re-run, and interrupted ones continue where they stopped.
-
-Writes to --out:
-    <name>.csv        predictions (file, prediction, seconds), same format as src/run_ocr.py
-    logs/<name>.log   full output of the model's install and run
-    envs/<name>.txt   exact package versions
-    runs.json         per-model status and timings
-
-Usage (Colab, see replication_colab.ipynb):
-    python colab/run_replication.py --out /content/drive/MyDrive/ocr-benchmark/replication
-"""
+"""Run the authors' open models on the replication sample, one isolated environment per model."""
 import argparse
 import csv
 import json
@@ -24,10 +10,8 @@ import time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+SMOKE_IMAGES = 3
 
-# name: run_ocr model, repo and revision (pinned: these models execute code from the repo), minimal GPU memory in GB,
-# Python, (torch, torchvision, CUDA build), packages, and a date limit for everything not pinned here.
-# Without a repo the model fetches its own weights; `libs` are package directories added to LD_LIBRARY_PATH.
 SPECS = {
     "got": dict(loader="got", repo="stepfun-ai/GOT-OCR2_0", rev="979938bf89ccdc949c0131ddd3841e24578a4742",
                 vram=6, python="3.11", torch=("2.0.1", "0.15.2", "cu118"),
@@ -55,7 +39,6 @@ SPECS = {
     "trocr": dict(loader="trocr", repo="microsoft/trocr-large-printed", rev="9ff792d8e7c22061f2ee67e1ed2246b1f9ef1e98",
                   vram=4, python="3.11", torch=("2.6.0", "0.21.0", "cu124"), packages=["transformers", "pillow"],
                   date="2025-07-01"),
-    # the PyPI wheel is built for CUDA 11.8 and cuDNN 8, and loads both from the system, so they come as packages
     "paddle": dict(loader="paddle", repo=None, rev=None, lang="en", vram=4, python="3.11", torch=None,
                    packages=["paddlepaddle-gpu==2.6.2", "paddleocr==2.9.1", "numpy==1.26.4", "setuptools<81",
                              "nvidia-cudnn-cu11==8.6.0.163", "nvidia-cublas-cu11==11.11.3.6"],
@@ -64,7 +47,6 @@ SPECS = {
 
 
 def run(cmd, log, **kwargs):
-    """Run a command, echoing its output to the notebook and the model's log. Raises if it fails."""
     with subprocess.Popen([str(c) for c in cmd], stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True,
                           errors="replace", **kwargs) as p:
         for line in p.stdout:
@@ -83,7 +65,7 @@ def gpu_memory_gb():
         return 0.0
 
 
-def build_env(name, spec, work, torch_index, log):
+def build_env(name, spec, work, log):
     env = work / "envs" / name
     python = env / "bin" / "python"
     marker = env / ".complete"
@@ -92,9 +74,8 @@ def build_env(name, spec, work, torch_index, log):
     run(["uv", "venv", "--clear", "--python", spec["python"], env], log)
     if spec["torch"]:
         torch_version, vision_version, cuda = spec["torch"]
-        build = torch_index or cuda
-        run(["uv", "pip", "install", "--python", python, f"torch=={torch_version}+{build}",
-             f"torchvision=={vision_version}+{build}", "--index-url", f"https://download.pytorch.org/whl/{build}"], log)
+        run(["uv", "pip", "install", "--python", python, f"torch=={torch_version}+{cuda}",
+             f"torchvision=={vision_version}+{cuda}", "--index-url", f"https://download.pytorch.org/whl/{cuda}"], log)
     run(["uv", "pip", "install", "--python", python, "--exclude-newer", spec["date"], *spec["packages"],
          "editdistance", "jiwer"], log)
     marker.touch()
@@ -109,51 +90,47 @@ def csv_rows(path):
 
 
 def run_model(name, spec, args, n_images, log, record):
-    from huggingface_hub import snapshot_download  # part of the Colab base image
+    from huggingface_hub import snapshot_download
 
     out = args.out / f"{name}.csv"
     t = time.time()
-    python = build_env(name, spec, args.work, args.torch_index, log)
+    python = build_env(name, spec, args.work, log)
     record["install_s"] = round(time.time() - t)
 
     t = time.time()
     command = [python, ROOT / "src" / "run_ocr.py", "--model", spec["loader"], "--lang", spec.get("lang", "Turkish"),
                "--data", args.data, "--labels", args.labels, "--out", out]
-    repo, rev = args.repo.get(name, (spec["repo"], spec["rev"]))
-    if repo:
-        weights = snapshot_download(repo, revision=rev, cache_dir=args.work / "hf",
+    if spec["repo"]:
+        weights = snapshot_download(spec["repo"], revision=spec["rev"], cache_dir=args.work / "hf",
                                     ignore_patterns=["*.bin", "*.pth", "*.h5", "*.msgpack", "*.onnx"])
         record["download_s"] = round(time.time() - t)
-        record["checkpoint"] = f"{repo}@{rev}"
+        record["checkpoint"] = f"{spec['repo']}@{spec['rev']}"
         command += ["--checkpoint", weights]
     environment = {**os.environ, "HF_HOME": str(args.work / "hf"), "HF_HUB_OFFLINE": "1"}
-    if spec["torch"] and spec["torch"][0] != "2.0.1":  # torch 2.0 refuses to start with this option
+    if spec["torch"] and spec["torch"][0] != "2.0.1":
         environment["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
     if spec.get("libs"):
         packages = python.parent.parent / "lib" / f"python{spec['python']}" / "site-packages"
-        # keep the existing value: on Colab it points to the NVIDIA driver (libcuda.so.1)
         paths = [str(packages / d) for d in spec["libs"]] + [os.environ.get("LD_LIBRARY_PATH", "")]
         environment["LD_LIBRARY_PATH"] = ":".join(filter(None, paths))
 
-    # a few images first: a broken model should fail in a minute, not leave empty predictions for the whole sample
     t = time.time()
-    run([*command, "--limit", args.smoke], log, env=environment)
+    run([*command, "--limit", SMOKE_IMAGES], log, env=environment)
     rows = csv_rows(out)
     if not any(r["prediction"].strip() for r in rows):
         out.unlink(missing_ok=True)
-        raise RuntimeError(f"no text in the first {args.smoke} predictions")
+        raise RuntimeError(f"no text in the first {SMOKE_IMAGES} predictions")
     print(f"--- {name}, first predictions:", *[repr(r["prediction"][:70]) for r in rows[:3]], sep="\n    ", flush=True)
-    if not args.smoke_only:
-        run(command, log, env=environment)
+    run(command, log, env=environment)
     record["run_s"] = round(time.time() - t)
 
     rows = csv_rows(out)
-    seconds = [float(r["seconds"]) for r in rows[1:]]  # the first image includes lazy initialisation
+    seconds = [float(r["seconds"]) for r in rows[1:]]
     record.update(images=len(rows), empty=sum(not r["prediction"].strip() for r in rows),
                   sec_per_image=round(sum(seconds) / max(1, len(seconds)), 2))
     freeze = subprocess.run(["uv", "pip", "freeze", "--python", str(python)], capture_output=True, text=True).stdout
     (args.out / "envs" / f"{name}.txt").write_text(freeze, encoding="utf-8")
-    if not args.smoke_only and len(rows) < n_images:
+    if len(rows) < n_images:
         raise RuntimeError(f"only {len(rows)}/{n_images} images finished")
 
 
@@ -164,14 +141,7 @@ def main():
     ap.add_argument("--data", type=Path, default=ROOT / "replication" / "data")
     ap.add_argument("--labels", default="sample.csv")
     ap.add_argument("--work", type=Path, default=Path("/content/work"), help="environments and model weights")
-    ap.add_argument("--smoke", type=int, default=3, help="images in the initial check of each model")
-    ap.add_argument("--smoke-only", action="store_true", help="stop after the initial check")
-    ap.add_argument("--keep-files", action="store_true", help="keep a model's weights and environment after its run")
-    ap.add_argument("--torch-index", help="override the torch build, e.g. cpu for a test without a GPU")
-    ap.add_argument("--no-vram-check", action="store_true")
-    ap.add_argument("--repo", nargs="*", default=[], metavar="NAME=REPO@REV", help="use another checkpoint (tests)")
     args = ap.parse_args()
-    args.repo = {k: tuple(v.split("@")) for k, v in (item.split("=") for item in args.repo)}
     args.out = args.out.resolve()
     args.data = args.data.resolve()
     (args.out / "logs").mkdir(parents=True, exist_ok=True)
@@ -190,7 +160,7 @@ def main():
         if len(csv_rows(args.out / f"{name}.csv")) >= n_images:
             print("already finished", flush=True)
             continue
-        if memory < spec["vram"] and not args.no_vram_check:
+        if memory < spec["vram"]:
             print(f"skipped: needs {spec['vram']} GB of GPU memory", flush=True)
             summary[name] = dict(status="skipped", reason=f"needs {spec['vram']} GB, have {memory:.0f} GB")
             summary_path.write_text(json.dumps(summary, indent=2), encoding="utf-8")
@@ -200,16 +170,15 @@ def main():
         with open(args.out / "logs" / f"{name}.log", "a", encoding="utf-8") as log:
             try:
                 run_model(name, spec, args, n_images, log, record)
-            except Exception as e:  # one model must not cost the others their turn on the GPU
+            except Exception as e:
                 record.update(status="failed", reason=str(e))
                 print(f"FAILED {name}: {e}", file=sys.stderr, flush=True)
         record["total_s"] = round(time.time() - t)
         summary[name] = record
         summary_path.write_text(json.dumps(summary, indent=2), encoding="utf-8")
-        if not args.keep_files:  # 74 GB of weights for all six, about 7 GB per environment
-            shutil.rmtree(args.work / "hf", ignore_errors=True)
-            if record["status"] == "ok":
-                shutil.rmtree(args.work / "envs" / name, ignore_errors=True)
+        shutil.rmtree(args.work / "hf", ignore_errors=True)
+        if record["status"] == "ok":
+            shutil.rmtree(args.work / "envs" / name, ignore_errors=True)
 
     print("\n===== summary =====")
     for name in args.models:

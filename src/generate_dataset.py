@@ -1,18 +1,4 @@
-"""Generate the Polish synthetic OCR dataset with TRDG 1.8.0, following Yılmaz et al. (IJDAR 2026).
-
-Usage:
-    .venv/bin/python src/generate_dataset.py --n 20     # MVP: 20 images per cell (440 images)
-    .venv/bin/python src/generate_dataset.py --n 100    # full dataset (2200 images)
-
-Cells, for each text type (printed, handwritten); names mirror the authors' JSON:
-    polish_character_confusion: polish / non_polish            (words, clean image)
-    word_length_effects:        short_words (<10) / long_words (>10)
-    context_dependent_errors:   word / sentences (4-8 words)
-    distortion_type:            clean / blur / rotated / noisy / low_resolution (same words)
-
-Sampling is prefix-stable: the set for --n 20 is a subset of the set for --n 100, so results
-computed on the small sample remain valid when the dataset grows.
-"""
+"""Generate the Polish synthetic OCR dataset with TRDG 1.8.0."""
 import argparse
 import csv
 import random
@@ -28,7 +14,6 @@ from PIL import Image
 import trdg.computer_text_generator as ctg
 from trdg.data_generator import FakeTextDataGenerator
 
-# TRDG 1.8.0 calls getsize(), removed in Pillow 10; same fix as the authors' notebooks
 ctg.get_text_height = lambda font, text: font.getbbox(text)[3]
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -36,7 +21,6 @@ POLISH = set("ąćęłńóśźżĄĆĘŁŃÓŚŹŻ")
 LETTERS = "a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ"
 SENTENCE_OK = re.compile(rf"^[{LETTERS}][{LETTERS} ,.;:!?-]*[.!?]$")
 
-# Rendering parameters from the authors' trdg_distortions_creator.ipynb
 HEIGHT = 64
 MARGINS = (15, 15, 15, 15)
 DISTORTIONS = {
@@ -50,12 +34,11 @@ DISTORTIONS = {
 
 def load_text(path):
     text = path.read_text(encoding="utf-8")
-    text = text.split("\n-----\n")[0]  # drop the Wolne Lektury footer
+    text = text.split("\n-----\n")[0]
     return unicodedata.normalize("NFC", text)
 
 
 def word_pool(text, min_count=2):
-    """Lowercased words with at least 3 letters that occur at least `min_count` times."""
     counts = Counter(w.lower() for w in re.findall(rf"[{LETTERS}]+", text))
     return sorted(w for w, c in counts.items() if c >= min_count and len(w) >= 3)
 
@@ -67,7 +50,6 @@ def sentence_pool(text, min_words=4, max_words=8):
 
 
 def font_coverage(font_dir, chars):
-    """Map font path -> set of `chars` with a non-empty glyph; fonts lacking any Polish letter are skipped."""
     fonts = {}
     for path in sorted(font_dir.glob("*.ttf")):
         font = TTFont(path)
@@ -81,12 +63,12 @@ def font_coverage(font_dir, chars):
 
 
 def render(text, font, seed, size=HEIGHT, blur=0, skewing_angle=0, random_skew=False, noise_std=0):
-    random.seed(seed)  # TRDG draws the skew angle from the global `random` module
+    random.seed(seed)
     img = FakeTextDataGenerator.generate(
         0, text, font, None, size, "png", skewing_angle, random_skew, blur, False,
         1, 0, 0, False, 2, -1, 0, "#000000", 0, 1.0, 0, MARGINS, False, False, True, "",
     )
-    if noise_std:  # Gaussian noise added after rendering, as in the authors' add_gaussian_noise()
+    if noise_std:
         arr = np.asarray(img).astype(float)
         arr += np.random.default_rng(seed).normal(0, noise_std, arr.shape)
         img = Image.fromarray(np.clip(arr, 0, 255).astype(np.uint8))
@@ -116,7 +98,7 @@ def main():
     def has_polish(s):
         return bool(POLISH & set(s))
 
-    cells = []  # (type, category, subcategory, texts, distortion)
+    cells = []
     for typ in fonts:
         cells += [
             (typ, "polish_character_confusion", "polish", sample(words, has_polish, f"{typ}-polish"), "clean"),
@@ -133,7 +115,7 @@ def main():
     (args.out / "images").mkdir(parents=True, exist_ok=True)
     rows = []
     for typ, cat, sub, texts, distortion in cells:
-        font_rng = random.Random(f"{args.seed}-{typ}-{cat}-fonts")  # same font for the same word across distortions
+        font_rng = random.Random(f"{args.seed}-{typ}-{cat}-fonts")
         for i, t in enumerate(texts):
             font = font_rng.choice(sorted(f for f, cov in fonts[typ].items() if set(t) - {" "} <= cov))
             seed = random.Random(f"{args.seed}-{typ}-{cat}-{i}").randrange(2**31)
