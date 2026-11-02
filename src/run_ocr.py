@@ -1,12 +1,4 @@
-"""Run one OCR model over a dataset and append predictions to a CSV (safe to interrupt and resume).
-
-Examples:
-    .venv/bin/python src/run_ocr.py --model tesseract --lang pol --data polish/data --out polish/results/tesseract.csv
-    .venv-paddle/bin/python src/run_ocr.py --model paddle --lang pl --data polish/data --out polish/results/paddle.csv
-
-Input:  <data>/labels.csv with a `file` column holding image paths relative to <data>.
-Output: CSV with columns file, prediction, seconds.
-"""
+"""Run one OCR model over a dataset and append predictions to a CSV."""
 import argparse
 import csv
 import sys
@@ -14,7 +6,7 @@ import time
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from ocr_models import MODELS  # noqa: E402
+from ocr_models import MODELS
 
 
 def main():
@@ -48,22 +40,25 @@ def main():
         if new_file:
             writer.writerow(["file", "prediction", "seconds"])
             f.flush()
-        errors_in_row = 0
+        failed = []
         for i, file in enumerate(todo, 1):
             t0 = time.perf_counter()
             try:
                 pred = read(args.data / file)
-                errors_in_row = 0
-            except Exception as e:  # one bad image must not stop the whole run...
+            except Exception as e:
                 print(f"error {file}: {e}", flush=True)
-                errors_in_row += 1
-                if errors_in_row >= 5:  # ...but a broken model must not fill the CSV with empty predictions
+                failed.append(file)
+                if len(failed) >= 5:
+                    f.flush()
                     raise
-                pred = ""
+                continue
+            writer.writerows([name, "", 0] for name in failed)
+            failed.clear()
             writer.writerow([file, pred, round(time.perf_counter() - t0, 3)])
             if i % 25 == 0:
                 f.flush()
                 print(f"  {i}/{len(todo)}", flush=True)
+        writer.writerows([name, "", 0] for name in failed)
 
 
 if __name__ == "__main__":

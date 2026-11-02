@@ -1,14 +1,4 @@
-"""Comparison figures for the article and slides, drawn from the tables written by summarize.py.
-
-Usage:
-    .venv/bin/python src/summarize.py        # first, refreshes polish/results/summary/
-    .venv/bin/python src/plot_results.py
-Outputs (PDF for LaTeX, PNG for slides and quick previews):
-    docs/article/figures/{overall,cells,effects,diacritics,speed}.{pdf,png}
-
-Every model keeps the same colour in every figure; a model without results is simply skipped.
-Labels are in Polish because the figures go straight into the article.
-"""
+"""Draw the comparison figures from the tables written by summarize.py."""
 import argparse
 import sys
 from pathlib import Path
@@ -16,25 +6,23 @@ from pathlib import Path
 import matplotlib
 
 matplotlib.use("Agg")
-import matplotlib.pyplot as plt  # noqa: E402
-import numpy as np  # noqa: E402
-import pandas as pd  # noqa: E402
-from matplotlib.colors import LinearSegmentedColormap  # noqa: E402
-from matplotlib.lines import Line2D  # noqa: E402
-from matplotlib.ticker import FuncFormatter  # noqa: E402
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+from matplotlib.colors import LinearSegmentedColormap
+from matplotlib.lines import Line2D
+from matplotlib.ticker import FuncFormatter
 
 sys.path.insert(0, str(Path(__file__).parent))
-from summarize import CELL_ORDER, EFFECTS, MODEL_NAMES, ordered  # noqa: E402
+from summarize import CELL_ORDER, EFFECTS, MODEL_NAMES, ordered
 
 ROOT = Path(__file__).resolve().parents[1]
 
-# categorical palette checked for colour-blind separation in MODEL_ORDER (dataviz validate_palette.js)
 COLORS = {"qwen7b": "#6250d6", "qwen": "#008300", "tesseract": "#2a78d6", "easyocr": "#eb6834",
           "paddle": "#1baf7a", "trocr": "#eda100"}
 INK, INK2, MUTED, GRID, AXIS = "#0b0b0b", "#52514e", "#898781", "#e1e0d9", "#c3c2b7"
 BLUES = ["#cde2fb", "#9ec5f4", "#6da7ec", "#3987e5", "#256abf", "#184f95", "#0d366b"]
-WIDTH = 4.8  # inches, LNCS text width
-# where the speed plot puts a model's name, in points from the marker (default: to the right)
+WIDTH = 4.8
 SPEED_LABELS = {"paddle": (-6, 0, "right", "center"), "easyocr": (0, -8, "center", "top")}
 
 plt.rcParams.update({
@@ -63,7 +51,6 @@ def save(fig, out, stem):
 
 
 def plot_overall(overall, out):
-    """Mean CER per model with its 95% bootstrap interval, best model on top."""
     o = overall.sort_values("cer", ascending=False)
     fig, ax = plt.subplots(figsize=(WIDTH, 0.35 * len(o) + 0.6))
     y = np.arange(len(o))
@@ -82,7 +69,6 @@ def plot_overall(overall, out):
 
 
 def plot_cells(df, models, out):
-    """Heat map of mean CER in every cell, printed and handwritten side by side."""
     cmap = LinearSegmentedColormap.from_list("blues", BLUES)
     fig, axes = plt.subplots(1, 2, figsize=(WIDTH, 3.6), sharey=True)
     for ax, typ, title in zip(axes, ("printed", "handwritten"), ("druk", "pismo odręczne")):
@@ -93,7 +79,6 @@ def plot_cells(df, models, out):
         for (i, j), v in np.ndenumerate(grid):
             if not np.isnan(v):
                 ax.text(j, i, pl(v), ha="center", va="center", fontsize=6.5, color="white" if v > 0.45 else INK)
-        # white rules between the four comparison groups
         cats = [c for c, _, _ in CELL_ORDER]
         for i in range(1, len(cats)):
             if cats[i] != cats[i - 1]:
@@ -113,7 +98,6 @@ def plot_cells(df, models, out):
 
 
 def plot_effects(effects, models, out):
-    """Forest plot of effect sizes: filled marker when the 95% interval excludes zero."""
     labels = [label for label, *_ in EFFECTS]
     fig, ax = plt.subplots(figsize=(WIDTH, 0.42 * len(labels) + 0.9))
     step = 0.7 / max(len(models) - 1, 1)
@@ -125,7 +109,7 @@ def plot_effects(effects, models, out):
         sig = e.significant.astype(bool).to_numpy()
         ax.scatter(e.delta[sig], y[sig], s=22, color=c, zorder=3, edgecolor="white", linewidth=0.6)
         ax.scatter(e.delta[~sig], y[~sig], s=22, facecolor="white", edgecolor=c, linewidth=1.2, zorder=3)
-    for i in range(0, len(labels), 2):  # alternate bands keep the rows apart
+    for i in range(0, len(labels), 2):
         ax.axhspan(i - 0.5, i + 0.5, color="#f4f3ef", zorder=0, linewidth=0)
     ax.axvline(0, color=INK2, linewidth=0.8)
     ax.set_yticks(range(len(labels)), labels)
@@ -145,7 +129,6 @@ def plot_effects(effects, models, out):
 
 
 def plot_diacritics(df, overall, models, out):
-    """CER without vs with Polish letters, and the share of errors caused by diacritics alone."""
     fig, (a, b) = plt.subplots(1, 2, figsize=(WIDTH, 0.3 * len(models) + 1.1), sharey=True,
                                gridspec_kw={"width_ratios": [1.4, 1]})
     y = np.arange(len(models))
@@ -181,7 +164,6 @@ def plot_diacritics(df, overall, models, out):
 
 
 def plot_speed(overall, models, out):
-    """Accuracy against CPU time per image (intervals are in the overall figure)."""
     fig, ax = plt.subplots(figsize=(WIDTH * 0.75, 2.4))
     for m in models:
         r = overall.loc[m]

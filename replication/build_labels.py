@@ -1,15 +1,4 @@
-"""Build labels for the authors' Turkish benchmark (Zenodo 10.5281/zenodo.21923181).
-
-Writes, next to the extracted dataset:
-    replication/data/labels.csv  all 6600 images
-    replication/data/sample.csv  stratified sample, --n images per (type, category, subcategory) cell
-
-Ground truth and cell metadata come from the authors' replication/authors/cer_wer_calculated.json, keyed by
-"N.png"; the key is checked against text_category/<type>/text_labels.txt from Zenodo.
-
-Usage:
-    .venv/bin/python replication/build_labels.py --n 10
-"""
+"""Build labels and a stratified sample for the authors' Turkish benchmark."""
 import argparse
 import csv
 import json
@@ -19,7 +8,12 @@ from collections import defaultdict
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-BENCHMARK = "syntetic-turkish-dataset/benchmark"  # sic, the folder name in the Zenodo archive
+BENCHMARK = "syntetic-turkish-dataset/benchmark"
+BASE_SAMPLE = 10
+
+
+def nfc(text):
+    return unicodedata.normalize("NFC", text.strip())
 
 
 def read_text_labels(path):
@@ -45,7 +39,6 @@ def main():
         typ = item["type"]
         if typ not in zenodo:
             zenodo[typ] = read_text_labels(args.data / BENCHMARK / "text_category" / typ / "text_labels.txt")
-        nfc = lambda s: unicodedata.normalize("NFC", s.strip())
         mismatches += nfc(zenodo[typ].get(name, "")) != nfc(item["ground_truth"])
         rows.append(dict(file=f"{BENCHMARK}/text_category/{typ}/{name}", text=item["ground_truth"], type=typ,
                          category=item["category"], subcategory=item["subcategory"], key=name))
@@ -56,7 +49,10 @@ def main():
         cells[row["type"], row["category"], row["subcategory"]].append(row)
     sample = []
     for cell in sorted(cells):
-        sample += random.Random(f"{args.seed}-{'-'.join(cell)}").sample(cells[cell], args.n)
+        rng = random.Random(f"{args.seed}-{'-'.join(cell)}")
+        chosen = rng.sample(cells[cell], min(args.n, BASE_SAMPLE))
+        chosen += rng.sample([r for r in cells[cell] if r not in chosen], args.n - len(chosen))
+        sample += chosen
     print(f"sample: {len(sample)} images from {len(cells)} cells")
 
     for name, data in (("labels.csv", rows), ("sample.csv", sample)):

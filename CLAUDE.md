@@ -100,7 +100,8 @@ w dyskusji.
 ## Stan prac (MVP, 22.10.2026)
 
 Kod, identyfikatory, komentarze, nazwy plików i kolumny CSV piszemy **po angielsku**; dokumenty
-(artykuł, slajdy) po polsku.
+(artykuł, slajdy) po polsku. W kodzie **nie piszemy komentarzy**, a docstring to najwyżej jedna linia opisu modułu;
+ustalenia, które trzeba zachować, trafiają do tego pliku.
 
 ### Struktura
 - `src/`: generator (`generate_dataset.py`), modele (`ocr_models.py`), runner (`run_ocr.py`, wznawialny),
@@ -109,10 +110,14 @@ Kod, identyfikatory, komentarze, nazwy plików i kolumny CSV piszemy **po angiel
 - `polish/`: korpus (`texts/`), fonty (`fonts/`), zbiór (`data/labels.csv` + `data/images/`), wyniki
   (`results/<model>.csv`, `results/summary/`).
 - `replication/`: powtórzenie badania bazowego. `authors/cer_wer_calculated.json` (predykcje autorów
-  z ich repo), `build_labels.py` (etykiety + próbka 10 obrazów/komórkę = 330), `analyze.py`, `results/`.
-  Obrazy autorów z Zenodo w `replication/data/syntetic-turkish-dataset/`.
-- `colab/`: `qwen_colab.ipynb` i `make_bundle.sh` (tylko do Qwen 7B na GPU).
-- `docs/presentation/base_article.tex`: 8 slajdów o artykule bazowym (Lab 4, 7.11).
+  z ich repo), `build_labels.py` (etykiety + próbka; używamy `--n 50` = 1650 obrazów, większa próbka zawiera
+  mniejszą), `analyze.py`, `results/` (`<model>.csv`, `<model>_vs_authors.csv`, `rerun_vs_authors.csv`,
+  `runs.json`, `envs/` z wersjami pakietów). Obrazy autorów z Zenodo w `replication/data/syntetic-turkish-dataset/`.
+- `colab/`: `replication_colab.ipynb` + `run_replication.py` (powtórzenie: 8 modeli, każdy we własnym środowisku,
+  wznawialne, wyniki na Dysku w `MyDrive/ocr-benchmark/replication/`), `qwen_colab.ipynb` (Qwen 7B na zbiorze
+  polskim), `make_bundle.sh` (buduje `ocr_bundle.zip`, poza gitem).
+- `docs/presentation/base_article.tex`: 8 slajdów o artykule bazowym (Lab 4, 7.11). `docs/presentation_v2/`: wersja
+  kolegi z notatkami do wystąpienia; `base_article.tex` kompilujemy z `-jobname=prezentacja_v2`.
 - `docs/article/main.tex`: szkielet LNCS po polsku z `\TODO{}`; tabele `docs/article/tables/*.tex`
   generuje `summarize.py`, nie edytować ręcznie.
 - `tools/fonts/`: pobieranie i sprawdzanie fontów.
@@ -123,7 +128,8 @@ Kod, identyfikatory, komentarze, nazwy plików i kolumny CSV piszemy **po angiel
 src/run_all_local.sh                                 # wszystkie modele, wznawialne
 .venv/bin/python src/summarize.py                    # tabele + docs/article/tables/
 .venv/bin/python src/plot_results.py                 # wykresy z polish/results/summary/ (po summarize.py)
-.venv/bin/python replication/analyze.py              # powtórzenie badania bazowego
+.venv/bin/python replication/build_labels.py --n 50  # próbka powtórzenia, potem colab/make_bundle.sh
+.venv/bin/python replication/analyze.py              # powtórzenie badania bazowego (modele liczymy w Colabie)
 cd docs/article && latexmk -pdf main.tex             # analogicznie docs/presentation
 ```
 Środowiska: `.venv` (py3.12, torch CPU; brak pip, instalacja `uv pip install --python .venv/bin/python`),
@@ -138,9 +144,41 @@ cd docs/article && latexmk -pdf main.tex             # analogicznie docs/present
   Nieodtworzone: GPT-4o non_turkish 0,066 vs 0,055, Paddle clean 0,260 vs 0,239. W tym wariancie TrOCR
   jest ostatni (0,380), a GOT-OCR2, który gubi spacje, ma 0,311 (poprawny CER 0,391, czyli ostatni).
 - **Claude:** JSON autorów zawiera Claude 3.7 Sonnet (CER 0,349), artykuł podaje Sonnet 4 z CER 0,197.
-- **Ponowny przebieg PaddleOCR i TrOCR** (330 obrazów): po 99,7% predykcji identycznych z autorami.
+- **Ponowny przebieg 8 otwartych modeli** (2.11.2026, Colab A100, 1650 obrazów = 50 na każdą z 33 komórek,
+  25% zbioru; bez GPT-4o i Claude'a). Liczone naszym CER (NFC, małe litery), więc nie są to wartości z tekstu
+  artykułu. Kolejność modeli taka sama jak u autorów:
+
+  | Model | Identyczne | CER nasz | CER autorów | s/obraz |
+  |---|---:|---:|---:|---:|
+  | Qwen2.5-VL 7B | 95,8% | 0,081 | 0,081 | 0,32 |
+  | InternVL3-8B | 90,4% | 0,183 | 0,184 | 0,60 |
+  | DeepSeek-VL2-tiny | 99,9% | 0,191 | 0,191 | 0,34 |
+  | Phi-3.5-vision | 93,8% | 0,242 | 0,241 | 0,91 |
+  | PaddleOCR | 99,4% | 0,311 | 0,311 | 0,04 |
+  | Pixtral-12B | 28,3% | 0,357 | 0,364 | 0,24 |
+  | TrOCR | 99,9% | 0,373 | 0,373 | 0,11 |
+  | GOT-OCR2 | 93,5% | 0,393 | 0,392 | 0,29 |
+
+  - Pixtral: średnią da się powtórzyć, pojedynczych predykcji nie (CER między przebiegami 0,389). Prawdopodobnie
+    losowość (domyślna temperatura vLLM, brak ziarna), niepotwierdzone drugim własnym przebiegiem.
+  - Puste odpowiedzi nasze / autorów / na tych samych obrazach: Paddle 173/173/173, Phi 61/60/59, GOT 1/1/1,
+    Pixtral 2/1/0.
+  - Próbka a całość: dla predykcji autorów CER różni się od CER z 6600 obrazów najwyżej o 0,010 (TrOCR).
+  - Prompty i ustawienia generowania są dosłownie z notebooków autorów. Jedyna różnica to brak flash-attn (nie ma
+    gotowych pakietów): Phi i Qwen używają domyślnej uwagi, InternVL własnej. GOT: repo autorów `ucaslcl/GOT-OCR2_0`
+    przekierowuje na `stepfun-ai/GOT-OCR2_0`.
+  - Środowiska: `paddlepaddle-gpu` 2.6.2 wymaga CUDA 11.8 i cuDNN 8, więc instalujemy je jako pakiety `nvidia-*`
+    i dopisujemy do `LD_LIBRARY_PATH` (nie nadpisywać: na Colabie wskazuje sterownik). Torch 2.0 nie uruchamia się
+    z `expandable_segments`. Bez GPU Paddle tylko ostrzega i liczy na CPU, dlatego kod zgłasza wtedy błąd.
+  - Odtwarzalność środowisk: checkpointy przypięte do commitów (`runs.json`), wersje pakietów w `envs/<model>.txt`.
+    Data `--exclude-newer` nie obejmuje kroku z torchem, więc środowiska nie odtwarzają w pełni stanu z 2025 r.
+  - TrOCR w tym przebiegu ma włączony cache, a `sec_per_image` obejmuje też pomiar z pierwszych 330 obrazów
+    (ta sama karta). Suma dla 8 modeli to ok. 2,85 s/obraz.
 - **TrOCR:** checkpoint ma `use_cache=False` (2,5× wolniej na CPU, włączamy cache: wynik identyczny);
   `max_length` domyślne 21 tokenów jak u autorów, więc dłuższe zdania są ucinane (u autorów też).
+  Transformers 5 tworzy model na urządzeniu `meta` i nie wypełnia tabeli pozycji, dlatego `trocr()` liczy ją od nowa.
+- **Generator:** TRDG 1.8.0 woła `getsize()` usunięte z Pillow 10, więc podmieniamy `get_text_height` jak autorzy.
+- **Tesseract:** `--psm 7`, bo obraz zawiera jedną linię tekstu.
 - **PaddleOCR `pl`** używa wspólnego słownika łacińskiego (`latin_dict.txt`) bez ń, ś, ź, ż: nie może ich
   zwrócić („ludnošci”, „5piacy”). Przebieg z `en` (ustawienie autorów) dawał to samo (CER 0,18 vs 0,19), więc go usunęliśmy;
   w artykule jest tylko PaddleOCR `pl`, podpisywany po prostu „PaddleOCR”.

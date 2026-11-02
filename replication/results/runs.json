@@ -1,0 +1,96 @@
+{
+  "got": {
+    "status": "ok",
+    "gpu_memory_gb": 40,
+    "install_s": 1,
+    "download_s": 8,
+    "checkpoint": "stepfun-ai/GOT-OCR2_0@979938bf89ccdc949c0131ddd3841e24578a4742",
+    "run_s": 400,
+    "images": 1650,
+    "empty": 1,
+    "sec_per_image": 0.29,
+    "total_s": 409
+  },
+  "deepseek": {
+    "status": "ok",
+    "gpu_memory_gb": 40,
+    "install_s": 1,
+    "download_s": 34,
+    "checkpoint": "deepseek-ai/deepseek-vl2-tiny@66c54660eae7e90c9ba259bfdf92d07d6e3ce8aa",
+    "run_s": 477,
+    "images": 1650,
+    "empty": 0,
+    "sec_per_image": 0.34,
+    "total_s": 512
+  },
+  "phi": {
+    "status": "ok",
+    "gpu_memory_gb": 40,
+    "install_s": 1,
+    "download_s": 29,
+    "checkpoint": "microsoft/Phi-3.5-vision-instruct@12b77fb40b63a2c73c68243d3f767aab688a1b2a",
+    "run_s": 1213,
+    "images": 1650,
+    "empty": 61,
+    "sec_per_image": 0.91,
+    "total_s": 1243
+  },
+  "qwen7b": {
+    "status": "ok",
+    "gpu_memory_gb": 40,
+    "install_s": 1,
+    "download_s": 56,
+    "checkpoint": "Qwen/Qwen2.5-VL-7B-Instruct@cc594898137f460bfe9f0759e9844b3ce807cfb5",
+    "run_s": 443,
+    "images": 1650,
+    "empty": 0,
+    "sec_per_image": 0.32,
+    "total_s": 500
+  },
+  "internvl": {
+    "status": "ok",
+    "gpu_memory_gb": 40,
+    "install_s": 1,
+    "download_s": 55,
+    "checkpoint": "OpenGVLab/InternVL3-8B@853e3a797a661694b1b8ece0cb72dc2b23e3dac9",
+    "run_s": 813,
+    "images": 1650,
+    "empty": 0,
+    "sec_per_image": 0.6,
+    "total_s": 869
+  },
+  "pixtral": {
+    "status": "ok",
+    "gpu_memory_gb": 40,
+    "install_s": 1,
+    "download_s": 85,
+    "checkpoint": "mistralai/Pixtral-12B-2409@a5ca2b7a9421a35ea24411c46e970758b8d3c6a7",
+    "run_s": 435,
+    "images": 1650,
+    "empty": 2,
+    "sec_per_image": 0.24,
+    "total_s": 521
+  },
+  "trocr": {
+    "status": "ok",
+    "gpu_memory_gb": 40,
+    "install_s": 0,
+    "download_s": 19,
+    "checkpoint": "microsoft/trocr-large-printed@9ff792d8e7c22061f2ee67e1ed2246b1f9ef1e98",
+    "run_s": 155,
+    "images": 1650,
+    "empty": 0,
+    "sec_per_image": 0.11,
+    "total_s": 174
+  },
+  "paddle": {
+    "status": "ok",
+    "gpu_memory_gb": 40,
+    "install_s": 0,
+    "run_s": 55,
+    "images": 1650,
+    "empty": 173,
+    "sec_per_image": 0.03,
+    "total_s": 56
+  }
+}

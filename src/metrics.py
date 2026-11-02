@@ -1,14 +1,4 @@
-"""CER and WER.
-
-Three variants:
-  * `cer` -- ours, matching the protocol described in the paper: NFC, lowercase, collapsed whitespace,
-    Levenshtein distance / ground-truth length, clipped to 1.0.
-  * `cer_authors` -- exactly what the authors' code computes (src/preprocessing/cer_wer_calculation.py):
-    no normalisation, and because of swapped arguments it divides by the PREDICTION length.
-  * `cer_authors_nospace` -- the lowercase variant in the authors' results/graphs/tablolar/graphs_lower_trocr.py:
-    whitespace and punctuation removed, divided by ground-truth length. Not described in the paper, but it is
-    the variant that reproduces the numbers quoted in its text.
-"""
+"""CER and WER: ours and the two variants found in the authors' code."""
 import re
 import string
 import unicodedata
@@ -37,7 +27,7 @@ def wer(truth, pred):
 def cer_authors(truth, pred, lowercase=False):
     t, p = str(truth or "").strip(), str(pred or "").strip()
     if not t or not p:
-        return 1.0  # the authors store None and later fillna(1.0)
+        return 1.0
     if lowercase:
         t, p = t.lower(), p.lower()
     return min(editdistance.eval(t, p) / max(1, len(p)), 1.0)

@@ -1,0 +1,1651 @@
+file,prediction,seconds
+syntetic-turkish-dataset/benchmark/text_category/handwritten/98.png,En şiddetli elestiriciler bile dillerin altindaki çekindiler.,1.472
+syntetic-turkish-dataset/benchmark/text_category/handwritten/148.png,Bu orduun yeniden genis capa hareket ve taarruz yaprak talihini tecrübe etmeye bir daha kalkışması müsüklü idi.,1.471
+syntetic-turkish-dataset/benchmark/text_category/handwritten/181.png,"Efendiler, o günlerde batırılar lehinde, her tarafı ve Meclis'te muhasırlar bir propaganda cereyan ediyordu.",1.364
+syntetic-turkish-dataset/benchmark/text_category/handwritten/79.png,"Bizim, Teşkilatı Esasiye Kanununu değiştirmeye salihiyetimiz yok demek, gayri mesru olduğumuzu kabul etmek demektir.",2.088
+syntetic-turkish-dataset/benchmark/text_category/handwritten/45.png,Cepheden uzak bulunuyormus.,0.47
+syntetic-turkish-dataset/benchmark/text_category/handwritten/16.png,"Ankara'da bulunan Refet Pasa, beni özel olarak görenek izah talebinde bulundu.",0.997
+syntetic-turkish-dataset/benchmark/text_category/handwritten/127.png,Tabiatliyla icabinin icrasina giriscegiz.,0.641
+syntetic-turkish-dataset/benchmark/text_category/handwritten/182.png,"Bilakis, bir tehdit vasiyasi ortadan kalktı.",0.705
+syntetic-turkish-dataset/benchmark/text_category/handwritten/41.png,Bunun da zamani geleceklerdir.,0.47
+syntetic-turkish-dataset/benchmark/text_category/handwritten/165.png,"Fakat, senelerden beri kan döktüğümüzü gören Avrupa ve bütün dünyaya, şu kamil müdadelere neden ileri geldigini elbette düşünmektedirler.",1.906
+syntetic-turkish-dataset/benchmark/text_category/handwritten/373.png,huzur,0.241
+syntetic-turkish-dataset/benchmark/text_category/handwritten/320.png,usulsuuzliikler,0.351
+syntetic-turkish-dataset/benchmark/text_category/handwritten/394.png,kanunlaştiran,0.281
+syntetic-turkish-dataset/benchmark/text_category/handwritten/215.png,cemiyetge,0.253
+syntetic-turkish-dataset/benchmark/text_category/handwritten/326.png,saturlanin,0.257
+syntetic-turkish-dataset/benchmark/text_category/handwritten/258.png,gogunluk,0.28
+syntetic-turkish-dataset/benchmark/text_category/handwritten/313.png,irtibatu.,0.252
+syntetic-turkish-dataset/benchmark/text_category/handwritten/255.png,yayimliyorlardi.,0.402
+syntetic-turkish-dataset/benchmark/text_category/handwritten/297.png,sayismags,0.252
+syntetic-turkish-dataset/benchmark/text_category/handwritten/284.png,alınaraklar,0.251
+syntetic-turkish-dataset/benchmark/text_category/handwritten/564.png,savusla,0.251
+syntetic-turkish-dataset/benchmark/text_category/handwritten/529.png,sali,0.202
+syntetic-turkish-dataset/benchmark/text_category/handwritten/540.png,emrurmaq,0.279
+syntetic-turkish-dataset/benchmark/text_category/handwritten/488.png,nurolarynx,0.224
+syntetic-turkish-dataset/benchmark/text_category/handwritten/554.png,dokum,0.223
+syntetic-turkish-dataset/benchmark/text_category/handwritten/507.png,mübadale,0.256
+syntetic-turkish-dataset/benchmark/text_category/handwritten/530.png,kollar,0.195
+syntetic-turkish-dataset/benchmark/text_category/handwritten/446.png,logullu,0.222
+syntetic-turkish-dataset/benchmark/text_category/handwritten/451.png,YENISCAIR,0.279
+syntetic-turkish-dataset/benchmark/text_category/handwritten/492.png,müdürü,0.257
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1382.png,endise sine,0.224
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1297.png,yaydırıldı,0.339
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1222.png,esitlik,0.228
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1384.png,beysehir,0.255
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1386.png,açılışında,0.31
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1366.png,vasfi,0.2
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1352.png,yapsin,0.223
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1284.png,çekismekten,0.278
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1260.png,süriülmemektedir,0.361
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1310.png,fransuzlardan,0.306
+syntetic-turkish-dataset/benchmark/text_category/handwritten/777.png,evlatlarin,0.257
+syntetic-turkish-dataset/benchmark/text_category/handwritten/776.png,değilmi,0.252
+syntetic-turkish-dataset/benchmark/text_category/handwritten/741.png,erkenliklerinizde,0.332
+syntetic-turkish-dataset/benchmark/text_category/handwritten/627.png,Türkçe,0.282
+syntetic-turkish-dataset/benchmark/text_category/handwritten/684.png,pademalikem,0.282
+syntetic-turkish-dataset/benchmark/text_category/handwritten/651.png,yanığıh,0.249
+syntetic-turkish-dataset/benchmark/text_category/handwritten/713.png,aligverigde,0.275
+syntetic-turkish-dataset/benchmark/text_category/handwritten/794.png,sorakas,0.247
+syntetic-turkish-dataset/benchmark/text_category/handwritten/697.png,yaydarlildi,0.315
+syntetic-turkish-dataset/benchmark/text_category/handwritten/746.png,taahhüüdün,0.305
+syntetic-turkish-dataset/benchmark/text_category/handwritten/886.png,sikrii,0.249
+syntetic-turkish-dataset/benchmark/text_category/handwritten/874.png,kafazasunda,0.281
+syntetic-turkish-dataset/benchmark/text_category/handwritten/930.png,kolları,0.222
+syntetic-turkish-dataset/benchmark/text_category/handwritten/965.png,taayyiniine,0.279
+syntetic-turkish-dataset/benchmark/text_category/handwritten/820.png,subeleri,0.225
+syntetic-turkish-dataset/benchmark/text_category/handwritten/973.png,arsivi,0.193
+syntetic-turkish-dataset/benchmark/text_category/handwritten/970.png,savas,0.195
+syntetic-turkish-dataset/benchmark/text_category/handwritten/953.png,milaç,0.225
+syntetic-turkish-dataset/benchmark/text_category/handwritten/993.png,insanligin,0.249
+syntetic-turkish-dataset/benchmark/text_category/handwritten/971.png,kiistah,0.223
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1177.png,evlatlarını,0.255
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1163.png,görülendir,0.276
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1092.png,miidirii,0.249
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1058.png,üzgün,0.22
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1025.png,mütecaviz,0.307
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1023.png,yollanacakter,0.302
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1035.png,müteşekkir,0.304
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1116.png,genislemis,0.252
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1038.png,askerligin,0.249
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1178.png,sindiden,0.22
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1751.png,pencil,0.22
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1768.png,venedik,0.222
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1606.png,enriyette.,0.276
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1673.png,Rigel.,0.247
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1749.png,alt,0.164
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1784.png,firar,0.219
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1601.png,dolu,0.198
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1693.png,beridir,0.221
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1783.png,venizelos,0.219
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1638.png,leyli,0.194
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1435.png,soktan,0.224
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1439.png,sokaklarunda,0.282
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1582.png,niifusu,0.223
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1551.png,Öleden,0.222
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1405.png,süslü,0.25
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1506.png,bağluk,0.25
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1437.png,kisimlarindaki,0.303
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1524.png,menhatlik,0.218
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1487.png,nizamlarin,0.246
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1432.png,götürmek,0.274
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2075.png,miesseselerin,0.273
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2005.png,tutukluların,0.301
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2122.png,vazimakaminin,0.302
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2118.png,nimetiytürk,0.277
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2062.png,ihtarlarina,0.248
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2140.png,sağrıldıgini,0.358
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2128.png,cavafarlarindan,0.329
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2119.png,muhatabimin,0.274
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2096.png,sikayetleri,0.301
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2196.png,yogunlasturabilmek,0.366
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1945.png,cilyon,0.224
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1820.png,divani,0.195
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1831.png,abab,0.194
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1960.png,takipcisi,0.255
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1857.png,yol,0.197
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1845.png,türklerine,0.283
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1940.png,inkisafat,0.249
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1923.png,dört,0.192
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1865.png,catalca,0.22
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1849.png,sirani,0.221
+syntetic-turkish-dataset/benchmark/text_category/printed/2307.png,"Hakikatten adetleri çok, Üyeleri sinirliler sayida olan bu hizipler, birbiriyle müşabakaya kalkışmışlar ve yekdigerini dinlememek yüzünden adeta Meclis'te bir kargasaya varıldı.",2.21
+syntetic-turkish-dataset/benchmark/text_category/printed/2309.png,"Bu cemiyetin, zararlı bir şekil ve mahiyet aldığına kani oldum.",0.931
+syntetic-turkish-dataset/benchmark/text_category/printed/2239.png,"Kâtibi Umumisi Hakki Behçi Bey ve Ankara'daki heyeti idaresi, ciddi ve esaslı faaliyet sarf etmişler.",1.226
+syntetic-turkish-dataset/benchmark/text_category/printed/2358.png,"Istanbul'da Vatan, Tanin, Tevhidi Efdkar ve Son Telgraf ve Adana'da Abdülkadir Kemali Bey tarafindan çikanlan Toksöz gibi gazetelerle birlesitiler.",1.663
+syntetic-turkish-dataset/benchmark/text_category/printed/2210.png,"Seri ve kati netice almak, düşmanı bu cenahında vurmakla mümkündü.",0.931
+syntetic-turkish-dataset/benchmark/text_category/printed/2271.png,"Efendiler, komedyaya oynayan ve oynatan Şükrü Efendi'nin Kendisidir.",0.943
+syntetic-turkish-dataset/benchmark/text_category/printed/2399.png,Gümüşhane Mebusu Zeki Bey ondan evvel olduğu iddiasında bulundu.,0.97
+syntetic-turkish-dataset/benchmark/text_category/printed/2263.png,"Ali Bey'in Ayvalik mintikasında muharebe cephesi teskil etmesi üzerine, yavaş yavaş Soma'da, Akhisar'da Salihli'de milli cepheler teskil olundu.",1.881
+syntetic-turkish-dataset/benchmark/text_category/printed/2237.png,Böyle sey olur mu?,0.404
+syntetic-turkish-dataset/benchmark/text_category/printed/2308.png,"Müşir İbrahim Paşa'nin bu suratle hakkında itimadi tayit etmesi, çok geçmeden, kendisinin bütün Makedonya'yı istibdat aleyhtarlarindan temizlemeye memur edilmesini hazırladı.",2.201
+syntetic-turkish-dataset/benchmark/text_category/printed/2515.png,tasari,0.194
+syntetic-turkish-dataset/benchmark/text_category/printed/2412.png,üzdü,0.222
+syntetic-turkish-dataset/benchmark/text_category/printed/2564.png,maviyau,0.25
+syntetic-turkish-dataset/benchmark/text_category/printed/2563.png,saki,0.194
+syntetic-turkish-dataset/benchmark/text_category/printed/2547.png,malumatini,0.22
+syntetic-turkish-dataset/benchmark/text_category/printed/2552.png,müsaadesini,0.275
+syntetic-turkish-dataset/benchmark/text_category/printed/2574.png,cihanina,0.221
+syntetic-turkish-dataset/benchmark/text_category/printed/2511.png,cüretkar,0.252
+syntetic-turkish-dataset/benchmark/text_category/printed/2503.png,politikacilar,0.253
+syntetic-turkish-dataset/benchmark/text_category/printed/2524.png,oğludur,0.28
+syntetic-turkish-dataset/benchmark/text_category/printed/2750.png,hususlarindan,0.278
+syntetic-turkish-dataset/benchmark/text_category/printed/2658.png,Uzgün,0.221
+syntetic-turkish-dataset/benchmark/text_category/printed/2694.png,görüsmekte,0.275
+syntetic-turkish-dataset/benchmark/text_category/printed/2627.png,ÜZÜCÜ,0.276
+syntetic-turkish-dataset/benchmark/text_category/printed/2706.png,saroyinda,0.221
+syntetic-turkish-dataset/benchmark/text_category/printed/2731.png,doğrultusunda,0.304
+syntetic-turkish-dataset/benchmark/text_category/printed/2637.png,sultanlarin,0.251
+syntetic-turkish-dataset/benchmark/text_category/printed/2671.png,ultimatumunu,0.248
+syntetic-turkish-dataset/benchmark/text_category/printed/2669.png,çikarmadikca,0.302
+syntetic-turkish-dataset/benchmark/text_category/printed/2782.png,endise sine,0.218
+syntetic-turkish-dataset/benchmark/text_category/printed/3492.png,müdürü,0.249
+syntetic-turkish-dataset/benchmark/text_category/printed/3562.png,yüklenmeliydi,0.331
+syntetic-turkish-dataset/benchmark/text_category/printed/3559.png,eklenmistir,0.249
+syntetic-turkish-dataset/benchmark/text_category/printed/3426.png,kiymettar,0.246
+syntetic-turkish-dataset/benchmark/text_category/printed/3581.png,hıyanete,0.25
+syntetic-turkish-dataset/benchmark/text_category/printed/3515.png,beyanatlarinda,0.274
+syntetic-turkish-dataset/benchmark/text_category/printed/3528.png,subelerin,0.219
+syntetic-turkish-dataset/benchmark/text_category/printed/3476.png,zattir,0.22
+syntetic-turkish-dataset/benchmark/text_category/printed/3442.png,uzattigi,0.221
+syntetic-turkish-dataset/benchmark/text_category/printed/3570.png,savas,0.193
+syntetic-turkish-dataset/benchmark/text_category/printed/2968.png,bulduklarindan,0.301
+syntetic-turkish-dataset/benchmark/text_category/printed/2963.png,görülendir,0.274
+syntetic-turkish-dataset/benchmark/text_category/printed/2976.png,bashiç,0.22
+syntetic-turkish-dataset/benchmark/text_category/printed/2959.png,eklenmıştır,0.306
+syntetic-turkish-dataset/benchmark/text_category/printed/2984.png,beysehir,0.25
+syntetic-turkish-dataset/benchmark/text_category/printed/2965.png,tayyentin,0.249
+syntetic-turkish-dataset/benchmark/text_category/printed/2924.png,bagimsizligun,0.288
+syntetic-turkish-dataset/benchmark/text_category/printed/2958.png,mebusanina,0.257
+syntetic-turkish-dataset/benchmark/text_category/printed/2883.png,çogunluguyla,0.316
+syntetic-turkish-dataset/benchmark/text_category/printed/2962.png,yüklenmeliydi,0.354
+syntetic-turkish-dataset/benchmark/text_category/printed/3052.png,esnaflar,0.253
+syntetic-turkish-dataset/benchmark/text_category/printed/3033.png,seçkin,0.223
+syntetic-turkish-dataset/benchmark/text_category/printed/3063.png,mensuplarinin,0.281
+syntetic-turkish-dataset/benchmark/text_category/printed/3038.png,askerligin,0.249
+syntetic-turkish-dataset/benchmark/text_category/printed/3141.png,erkanikamuyuna,0.304
+syntetic-turkish-dataset/benchmark/text_category/printed/3069.png,çikarmadikça,0.308
+syntetic-turkish-dataset/benchmark/text_category/printed/3185.png,varliği,0.221
+syntetic-turkish-dataset/benchmark/text_category/printed/3160.png,yüceltmenin,0.305
+syntetic-turkish-dataset/benchmark/text_category/printed/3040.png,ölümsüz,0.278
+syntetic-turkish-dataset/benchmark/text_category/printed/3134.png,ayvalik,0.226
+syntetic-turkish-dataset/benchmark/text_category/printed/3289.png,kasabasina,0.224
+syntetic-turkish-dataset/benchmark/text_category/printed/3392.png,şevkini,0.249
+syntetic-turkish-dataset/benchmark/text_category/printed/3353.png,mülayim,0.249
+syntetic-turkish-dataset/benchmark/text_category/printed/3375.png,zitlastigi,0.249
+syntetic-turkish-dataset/benchmark/text_category/printed/3383.png,dinlemistik,0.247
+syntetic-turkish-dataset/benchmark/text_category/printed/3265.png,bayindirlugina,0.277
+syntetic-turkish-dataset/benchmark/text_category/printed/3256.png,yanlışını,0.249
+syntetic-turkish-dataset/benchmark/text_category/printed/3370.png,savas,0.194
+syntetic-turkish-dataset/benchmark/text_category/printed/3224.png,dördünden,0.25
+syntetic-turkish-dataset/benchmark/text_category/printed/3284.png,çekismekten,0.278
+syntetic-turkish-dataset/benchmark/text_category/printed/3861.png,esaretten.,0.255
+syntetic-turkish-dataset/benchmark/text_category/printed/3931.png,silabla,0.232
+syntetic-turkish-dataset/benchmark/text_category/printed/3860.png,yunus,0.231
+syntetic-turkish-dataset/benchmark/text_category/printed/3840.png,bildirimimi,0.261
+syntetic-turkish-dataset/benchmark/text_category/printed/3870.png,cihat,0.201
+syntetic-turkish-dataset/benchmark/text_category/printed/3886.png,hasmane,0.223
+syntetic-turkish-dataset/benchmark/text_category/printed/3896.png,parlementaire,0.221
+syntetic-turkish-dataset/benchmark/text_category/printed/3947.png,patrikhanelerere,0.277
+syntetic-turkish-dataset/benchmark/text_category/printed/3937.png,aleyhtedir,0.247
+syntetic-turkish-dataset/benchmark/text_category/printed/3813.png,toplarken,0.249
+syntetic-turkish-dataset/benchmark/text_category/printed/3685.png,tebaasi,0.22
+syntetic-turkish-dataset/benchmark/text_category/printed/3800.png,önünüzde,0.249
+syntetic-turkish-dataset/benchmark/text_category/printed/3777.png,erkanikamuyuna,0.303
+syntetic-turkish-dataset/benchmark/text_category/printed/3753.png,taahhüdün,0.277
+syntetic-turkish-dataset/benchmark/text_category/printed/3730.png,tamiratundan,0.274
+syntetic-turkish-dataset/benchmark/text_category/printed/3661.png,misir,0.194
+syntetic-turkish-dataset/benchmark/text_category/printed/3721.png,mahsulüdür,0.277
+syntetic-turkish-dataset/benchmark/text_category/printed/3784.png,itilaj,0.224
+syntetic-turkish-dataset/benchmark/text_category/printed/3735.png,yüceltmenin,0.311
+syntetic-turkish-dataset/benchmark/text_category/printed/3781.png,paramizla,0.221
+syntetic-turkish-dataset/benchmark/text_category/printed/4325.png,üyelerinden,0.247
+syntetic-turkish-dataset/benchmark/text_category/printed/4217.png,genelleince,0.221
+syntetic-turkish-dataset/benchmark/text_category/printed/4315.png,saldirganca,0.276
+syntetic-turkish-dataset/benchmark/text_category/printed/4205.png,izahatınızdan,0.277
+syntetic-turkish-dataset/benchmark/text_category/printed/4321.png,meddahliginda,0.277
+syntetic-turkish-dataset/benchmark/text_category/printed/4280.png,girilememis,0.279
+syntetic-turkish-dataset/benchmark/text_category/printed/4227.png,hayirhahliginda,0.305
+syntetic-turkish-dataset/benchmark/text_category/printed/4360.png,itaatsizlige,0.252
+syntetic-turkish-dataset/benchmark/text_category/printed/4276.png,tanittunmalarny,0.309
+syntetic-turkish-dataset/benchmark/text_category/printed/4372.png,tutukklulararinin,0.34
+syntetic-turkish-dataset/benchmark/text_category/printed/4164.png,kiskancik,0.251
+syntetic-turkish-dataset/benchmark/text_category/printed/4168.png,sizladi,0.25
+syntetic-turkish-dataset/benchmark/text_category/printed/4003.png,hesapsiz,0.222
+syntetic-turkish-dataset/benchmark/text_category/printed/4178.png,meclegimiz,0.288
+syntetic-turkish-dataset/benchmark/text_category/printed/4045.png,bogazimiza,0.283
+syntetic-turkish-dataset/benchmark/text_category/printed/4197.png,tecavuzdür,0.305
+syntetic-turkish-dataset/benchmark/text_category/printed/4135.png,abdülâziz,0.28
+syntetic-turkish-dataset/benchmark/text_category/printed/4008.png,zaptı,0.233
+syntetic-turkish-dataset/benchmark/text_category/printed/4041.png,zitlastigi,0.261
+syntetic-turkish-dataset/benchmark/text_category/printed/4055.png,muhafazasi,0.281
+syntetic-turkish-dataset/benchmark/text_category/scene/6497.png,bogazide bulunan 2 cimdi 13'deki,0.587
+syntetic-turkish-dataset/benchmark/text_category/scene/6448.png,"Iste bundan doyaydır ki, dermek, eynin.",0.676
+syntetic-turkish-dataset/benchmark/text_category/scene/6506.png,Ben bir güneyden geçen gemiye girmek için.,0.655
+syntetic-turkish-dataset/benchmark/text_category/scene/6488.png,"Bunlardan biri, merkezi Sivasta bulunan 3'üncü",0.764
+syntetic-turkish-dataset/benchmark/text_category/scene/6527.png,Bu devletlerden yalniz biri ile bile,0.481
+syntetic-turkish-dataset/benchmark/text_category/scene/6473.png,"37 günlük yemekler, dişçiçeklerin göl döndüğü",0.867
+syntetic-turkish-dataset/benchmark/text_category/scene/6414.png,Amalya ve Konya da İtalyan askeri birikileri.,0.635
+syntetic-turkish-dataset/benchmark/text_category/scene/6470.png,Saat Molla 'nun dernegin aciktan yaptigidir.,0.659
+syntetic-turkish-dataset/benchmark/text_category/scene/6416.png,"Nihayet, korusmanizla baglantiq olarak aldigimiz tarhıten.",0.836
+syntetic-turkish-dataset/benchmark/text_category/scene/6442.png,Gerçekten de bu yolda çalışmam yapmakta.,0.661
+syntetic-turkish-dataset/benchmark/text_category/scene/6370.png,görüyorlar.,0.328
+syntetic-turkish-dataset/benchmark/text_category/scene/6385.png,tecrubelerle.,0.3
+syntetic-turkish-dataset/benchmark/text_category/scene/6202.png,bulunamiyor,0.284
+syntetic-turkish-dataset/benchmark/text_category/scene/6281.png,kullanıyorlar,0.28
+syntetic-turkish-dataset/benchmark/text_category/scene/6318.png,calisildigini,0.272
+syntetic-turkish-dataset/benchmark/text_category/scene/6383.png,aşikardur.,0.301
+syntetic-turkish-dataset/benchmark/text_category/scene/6350.png,yakinlari,0.249
+syntetic-turkish-dataset/benchmark/text_category/scene/6388.png,zülmler,0.246
+syntetic-turkish-dataset/benchmark/text_category/scene/6316.png,basladigindan.,0.304
+syntetic-turkish-dataset/benchmark/text_category/scene/6374.png,safhalarinda.,0.303
+syntetic-turkish-dataset/benchmark/text_category/scene/4546.png,bildirdigimiz,0.303
+syntetic-turkish-dataset/benchmark/text_category/scene/4413.png,verildiginden,0.256
+syntetic-turkish-dataset/benchmark/text_category/scene/4477.png,duyumayı,0.274
+syntetic-turkish-dataset/benchmark/text_category/scene/4403.png,caresine,0.22
+syntetic-turkish-dataset/benchmark/text_category/scene/4521.png,barışla,0.22
+syntetic-turkish-dataset/benchmark/text_category/scene/4445.png,görüslerime,0.275
+syntetic-turkish-dataset/benchmark/text_category/scene/4487.png,sunlardi,0.221
+syntetic-turkish-dataset/benchmark/text_category/scene/4534.png,söyle,0.223
+syntetic-turkish-dataset/benchmark/text_category/scene/4455.png,gay,0.194
+syntetic-turkish-dataset/benchmark/text_category/scene/4544.png,arasindaki,0.222
+syntetic-turkish-dataset/benchmark/text_category/scene/4771.png,zabitlarn,0.276
+syntetic-turkish-dataset/benchmark/text_category/scene/4716.png,bagdastirilamaz,0.337
+syntetic-turkish-dataset/benchmark/text_category/scene/4696.png,sirlar,0.222
+syntetic-turkish-dataset/benchmark/text_category/scene/4721.png,barışla,0.221
+syntetic-turkish-dataset/benchmark/text_category/scene/4736.png,çizmemekliğim,0.332
+syntetic-turkish-dataset/benchmark/text_category/scene/4649.png,getirecegimizi,0.312
+syntetic-turkish-dataset/benchmark/text_category/scene/4720.png,karsilasmamak,0.309
+syntetic-turkish-dataset/benchmark/text_category/scene/4699.png,katilmaktan.,0.279
+syntetic-turkish-dataset/benchmark/text_category/scene/4695.png,dusunilecegi,0.307
+syntetic-turkish-dataset/benchmark/text_category/scene/4664.png,duşinecimizin,0.308
+syntetic-turkish-dataset/benchmark/text_category/scene/5192.png,denilmistir,0.25
+syntetic-turkish-dataset/benchmark/text_category/scene/5056.png,kullanilacaktir,0.304
+syntetic-turkish-dataset/benchmark/text_category/scene/5097.png,Örnek gini,0.277
+syntetic-turkish-dataset/benchmark/text_category/scene/5115.png,yollarin,0.221
+syntetic-turkish-dataset/benchmark/text_category/scene/5071.png,tutmuslardir,0.303
+syntetic-turkish-dataset/benchmark/text_category/scene/5096.png,sirlar,0.222
+syntetic-turkish-dataset/benchmark/text_category/scene/5169.png,ulasabilmesi,0.281
+syntetic-turkish-dataset/benchmark/text_category/scene/5074.png,Bursam1z,0.276
+syntetic-turkish-dataset/benchmark/text_category/scene/5015.png,bakanlarin,0.25
+syntetic-turkish-dataset/benchmark/text_category/scene/5108.png,tarafına,0.249
+syntetic-turkish-dataset/benchmark/text_category/scene/4934.png,söyle,0.222
+syntetic-turkish-dataset/benchmark/text_category/scene/4924.png,hakkıdır,0.274
+syntetic-turkish-dataset/benchmark/text_category/scene/4906.png,kötülükler,0.275
+syntetic-turkish-dataset/benchmark/text_category/scene/4933.png,soyluyorum.,0.279
+syntetic-turkish-dataset/benchmark/text_category/scene/4941.png,programmi,0.194
+syntetic-turkish-dataset/benchmark/text_category/scene/4992.png,denimmistir.,0.276
+syntetic-turkish-dataset/benchmark/text_category/scene/4931.png,hükümetin,0.278
+syntetic-turkish-dataset/benchmark/text_category/scene/4936.png,Çizmemekliğim.,0.358
+syntetic-turkish-dataset/benchmark/text_category/scene/4890.png,yük tü.,0.277
+syntetic-turkish-dataset/benchmark/text_category/scene/4870.png,Kadim Mayacagi,0.302
+syntetic-turkish-dataset/benchmark/text_category/scene/5305.png,AYRILIGINI,0.275
+syntetic-turkish-dataset/benchmark/text_category/scene/5328.png,Aziz.,0.221
+syntetic-turkish-dataset/benchmark/text_category/scene/5341.png,programmi,0.193
+syntetic-turkish-dataset/benchmark/text_category/scene/5312.png,gösterdik,0.276
+syntetic-turkish-dataset/benchmark/text_category/scene/5398.png,Naturalarini,0.22
+syntetic-turkish-dataset/benchmark/text_category/scene/5208.png,limanlarina,0.251
+syntetic-turkish-dataset/benchmark/text_category/scene/5216.png,telasli.,0.249
+syntetic-turkish-dataset/benchmark/text_category/scene/5295.png,duşnulecegi,0.306
+syntetic-turkish-dataset/benchmark/text_category/scene/5214.png,ayakkabilarni,0.249
+syntetic-turkish-dataset/benchmark/text_category/scene/5399.png,kalmadigin,0.226
+syntetic-turkish-dataset/benchmark/text_category/scene/5977.png,devette.,0.229
+syntetic-turkish-dataset/benchmark/text_category/scene/5873.png,bulonabilecekkin.,0.333
+syntetic-turkish-dataset/benchmark/text_category/scene/5982.png,toprak,0.196
+syntetic-turkish-dataset/benchmark/text_category/scene/5850.png,kurutularla,0.253
+syntetic-turkish-dataset/benchmark/text_category/scene/5899.png,Büyüklock,0.285
+syntetic-turkish-dataset/benchmark/text_category/scene/5894.png,esirlerinden.,0.284
+syntetic-turkish-dataset/benchmark/text_category/scene/5989.png,ismi,0.196
+syntetic-turkish-dataset/benchmark/text_category/scene/5875.png,Ordumuzun.,0.306
+syntetic-turkish-dataset/benchmark/text_category/scene/5815.png,Gelmesi.,0.282
+syntetic-turkish-dataset/benchmark/text_category/scene/5903.png,Susurluk.,0.255
+syntetic-turkish-dataset/benchmark/text_category/scene/6002.png,kiymet,0.229
+syntetic-turkish-dataset/benchmark/text_category/scene/6037.png,yürütmekle,0.317
+syntetic-turkish-dataset/benchmark/text_category/scene/6016.png,bitisik,0.224
+syntetic-turkish-dataset/benchmark/text_category/scene/6020.png,Onayli.,0.254
+syntetic-turkish-dataset/benchmark/text_category/scene/6121.png,hosuna.,0.225
+syntetic-turkish-dataset/benchmark/text_category/scene/6068.png,Dumlupinar,0.282
+syntetic-turkish-dataset/benchmark/text_category/scene/6057.png,Tüstadim.,0.284
+syntetic-turkish-dataset/benchmark/text_category/scene/6076.png,Karaağaç'a,0.342
+syntetic-turkish-dataset/benchmark/text_category/scene/6043.png,rachet,0.201
+syntetic-turkish-dataset/benchmark/text_category/scene/6177.png,Sakarya'nin.,0.31
+syntetic-turkish-dataset/benchmark/text_category/scene/5453.png,etrafindaki,0.248
+syntetic-turkish-dataset/benchmark/text_category/scene/5503.png,buyuracaklari,0.31
+syntetic-turkish-dataset/benchmark/text_category/scene/5414.png,yumulmayacaktur.,0.361
+syntetic-turkish-dataset/benchmark/text_category/scene/5586.png,bölgelerle,0.278
+syntetic-turkish-dataset/benchmark/text_category/scene/5595.png,bakantiklarina,0.277
+syntetic-turkish-dataset/benchmark/text_category/scene/5522.png,kuruçuları,0.277
+syntetic-turkish-dataset/benchmark/text_category/scene/5428.png,telgrafndan,0.25
+syntetic-turkish-dataset/benchmark/text_category/scene/5526.png,Cumhurbaşkanı.,0.36
+syntetic-turkish-dataset/benchmark/text_category/scene/5479.png,yontemlere,0.277
+syntetic-turkish-dataset/benchmark/text_category/scene/5411.png,UZAKLASMAM,0.305
+syntetic-turkish-dataset/benchmark/text_category/scene/5727.png,çekmekten,0.277
+syntetic-turkish-dataset/benchmark/text_category/scene/5665.png,Sey.,0.227
+syntetic-turkish-dataset/benchmark/text_category/scene/5651.png,basina,0.197
+syntetic-turkish-dataset/benchmark/text_category/scene/5662.png,sayılarak,0.253
+syntetic-turkish-dataset/benchmark/text_category/scene/5729.png,cümleden,0.261
+syntetic-turkish-dataset/benchmark/text_category/scene/5602.png,beş,0.207
+syntetic-turkish-dataset/benchmark/text_category/scene/5619.png,görüşmüş,0.347
+syntetic-turkish-dataset/benchmark/text_category/scene/5647.png,saldirmak,0.261
+syntetic-turkish-dataset/benchmark/text_category/scene/5798.png,görüsüne,0.287
+syntetic-turkish-dataset/benchmark/text_category/scene/5779.png,hakkidir,0.253
+syntetic-turkish-dataset/benchmark/text_category/handwritten/46.png,Rauf Bey yanuma geldi.,1.148
+syntetic-turkish-dataset/benchmark/text_category/handwritten/170.png,Görüsmenin Ingiliz zuhusunda vikii lazundar.,0.705
+syntetic-turkish-dataset/benchmark/text_category/handwritten/80.png,"O kadar ki, devlet bu istikrazlarin fizlerini odeyemeyecek hale gelmis, cihan nazarinda iflas etmis sayilmisti.",1.44
+syntetic-turkish-dataset/benchmark/text_category/handwritten/10.png,"Dolayısıyla Itialaf devletlerin, Anadolu'yu tahliley ve Yakindogu meselesini hal maksadiyla oldugunu ifade eyledikleri bu mutareke sartlarini ciddiyetle inceledik.",1.922
+syntetic-turkish-dataset/benchmark/text_category/handwritten/66.png,Bu ne mantıksızca hareket etir.,0.498
+syntetic-turkish-dataset/benchmark/text_category/handwritten/158.png,"Kamuyu, bu Türkler, Delegeleri vasıta sağlayan nicin bahsetmemisler, simdi yeryeni meseleler çekaryerler diyeciklerdir.",1.494
+syntetic-turkish-dataset/benchmark/text_category/handwritten/95.png,"Eskişehir de uyandığım zaman, trenin nicin durup hareketine devam etmedigini sordum.",1.192
+syntetic-turkish-dataset/benchmark/text_category/handwritten/189.png,Dolayısıyla bu noktadan bu iki seyi kansturmak lazımdır.,0.883
+syntetic-turkish-dataset/benchmark/text_category/handwritten/49.png,"Bu fikrini evvelce Müdafla Milliyeye vekili nebiyle bildirdigini zaten öğrendigim Pasa, ricami hemen yetirde getirdi.",1.587
+syntetic-turkish-dataset/benchmark/text_category/handwritten/12.png,Bittabi Yunan tamiratinin bütün askıdaki meselelerin hallinde daimi bir silah olarak kullanacagiz.,1.172
+syntetic-turkish-dataset/benchmark/text_category/handwritten/88.png,"Büyük Millet Meclisi Genel Kurulu tarafından seçilen reis, bir seçim devresi zarlında Büyük Millet Meclisi Reisi'dir.",1.486
+syntetic-turkish-dataset/benchmark/text_category/handwritten/147.png,Halife'nin aldığı sahisısalla Semin edilemeyecekt olan vazifeler neler imiş ve 15 Nisan 1923 larında hükümet ne gibi vaaslerde ve bilirlerde bulunmazsın?,2.023
+syntetic-turkish-dataset/benchmark/text_category/handwritten/136.png,"kesilecekse, brunun Yunanluların teçavürüze ile olması bizi mazur vaziyette gösterirdi görüşü vardır.",1.476
+syntetic-turkish-dataset/benchmark/text_category/handwritten/82.png,memeket ve millete faydali islere baslanilmasundan ibaretir.,0.83
+syntetic-turkish-dataset/benchmark/text_category/handwritten/132.png,"Fakat millet, tarıh, unvan vermekte o kadar çömer değildir.",0.879
+syntetic-turkish-dataset/benchmark/text_category/handwritten/168.png,"Yine İstanbul hükümeti ve Halife ve Padisah değil miydi ki, Yunan cephesinde kullanılan kırmızı bir fırkayı, 24.",1.571
+syntetic-turkish-dataset/benchmark/text_category/handwritten/180.png,"Yalniz su noktaya nazari alikati cekerim: Bu Meclis, Türkiye halkinin meclisidir.",1.211
+syntetic-turkish-dataset/benchmark/text_category/handwritten/190.png,Bu hayalin hikbini vakit tahakkuk etmemis olduğu malumdur.,0.812
+syntetic-turkish-dataset/benchmark/text_category/handwritten/169.png,"Yoksa Nurettin Pasa, büyük zaferin serefine en az istirak hakki olanlardan biridir.",1.194
+syntetic-turkish-dataset/benchmark/text_category/handwritten/100.png,"Eger dün ""Birbirine girdiler dolaplarla ablar/ Ablar galip gelince dondüler dolaplar"" dizelerini hatırlayın.",1.337
+syntetic-turkish-dataset/benchmark/text_category/handwritten/163.png,Buna karsi olanlar da vardi.,0.475
+syntetic-turkish-dataset/benchmark/text_category/handwritten/51.png,"Efendilek Refig Bey: 20/21 Kışın (20/21 Aralık) peçesi evinde dört kıyı, ordu subaylar ve bilhassa eftradan, Kuveci Siyyare ile bir çapma taşındı.",2.095
+syntetic-turkish-dataset/benchmark/text_category/handwritten/17.png,karsı zikre değer bir kahramanlıkla müdaflaada bulundular.,0.856
+syntetic-turkish-dataset/benchmark/text_category/handwritten/140.png,"Rauf Bey, cumhuriyet珍珠in karelerleşmemi ve son edilmesi noticisuna tamas etti.",1.062
+syntetic-turkish-dataset/benchmark/text_category/handwritten/64.png,"Bugün, ortaplan kalktığında gömmekle memnun olduğumuz bu ihtiyacın, bunda sonra da hasıl olduğunu göstermekle baktıyar olacak.",1.871
+syntetic-turkish-dataset/benchmark/text_category/handwritten/47.png,Ben bu siyasi mesleklere hiçbirini yeni Türkiye siyasi teşekkülün mesleği olmayacak.,1.225
+syntetic-turkish-dataset/benchmark/text_category/handwritten/130.png,köprüsiniinii tahrif ederek Bursa istikametine çekildi.,0.87
+syntetic-turkish-dataset/benchmark/text_category/handwritten/33.png,"Dışmanın istila hürsi, azim ve hamiyetimizin yalçun kayalarına basınca hürdaha oldu.",1.263
+syntetic-turkish-dataset/benchmark/text_category/handwritten/56.png,"Bazi yabancı hikmetler, Pontus teşkiline arka çikacaklarını vat ettiiler ve Samsung ve havarlisindeki Rumluk niifusunu artırmak için de, Rusya'daki Rum ve Ermenileri Batum'da topladular.",2.263
+syntetic-turkish-dataset/benchmark/text_category/handwritten/71.png,Gensoru müzakeresi ertesi günine bularıdı.,0.713
+syntetic-turkish-dataset/benchmark/text_category/handwritten/134.png,Zatu Sahamının arzusu bu sabah yerine getirilmiştir.,0.782
+syntetic-turkish-dataset/benchmark/text_category/handwritten/101.png,"Kisa bir münakasadan sonra, Heyeti Vekile ile mutabik kaldık.",0.856
+syntetic-turkish-dataset/benchmark/text_category/handwritten/200.png,Aynı günde su telgrafnameyi yazdım: Lozan'da Delege Heyeti Resi Hariciye Vekili Ismet Pasa Hazretleri'ne Millet ve hükümetin zatıralıne vermis olduğu yeni vazifeyi muvafla fakiyetle tamamladı.,2.589
+syntetic-turkish-dataset/benchmark/text_category/handwritten/155.png,"Diger fikir, saltanat idaresine son venedek cumhuriyet idaresi tecis eylemekti.",1.03
+syntetic-turkish-dataset/benchmark/text_category/handwritten/133.png,Bu değerlendirmeden sonra 'Meclis'in hakkını gasp etmek' söziini tamamen Salih Efendi'ye ret ve iade ederim.,1.387
+syntetic-turkish-dataset/benchmark/text_category/handwritten/108.png,"Hayatta nuraffakiyet, nütlaka nücadelide nuraffakiyetle nükleindir.",1.054
+syntetic-turkish-dataset/benchmark/text_category/handwritten/19.png,"Verdiğim cevap aynen şudur: Tel, makama mahsustur 5.",0.902
+syntetic-turkish-dataset/benchmark/text_category/handwritten/194.png,Surf bu leskilah vücuda getirmek için de Dahiliye Vexili bulunan Refet Bey'ye (Refet Pasha) exolarak bu vazifeyi vererek kendisini Kongo ve havalisini gördürmeyi münasip gördüyorum.,2.224
+syntetic-turkish-dataset/benchmark/text_category/handwritten/178.png,"Limdiye kadar Türkiye'yi medeniyet 1 Nüktur'um 1927 basimlarindaki ""zat"" sozcuigi, 1934 basiminda ""zervat"" seklinde.",1.68
+syntetic-turkish-dataset/benchmark/text_category/handwritten/31.png,Bu orduya da Nurettin Pasa'yi kumandan yaptı.,0.742
+syntetic-turkish-dataset/benchmark/text_category/handwritten/256.png,müşiri,0.275
+syntetic-turkish-dataset/benchmark/text_category/handwritten/303.png,YALSARILMAKTA,0.358
+syntetic-turkish-dataset/benchmark/text_category/handwritten/261.png,kusurlari,0.24
+syntetic-turkish-dataset/benchmark/text_category/handwritten/272.png,küsatucisi,0.3
+syntetic-turkish-dataset/benchmark/text_category/handwritten/276.png,Kastamonu,0.266
+syntetic-turkish-dataset/benchmark/text_category/handwritten/257.png,mukaddesatum,0.335
+syntetic-turkish-dataset/benchmark/text_category/handwritten/344.png,Laprasiums,0.259
+syntetic-turkish-dataset/benchmark/text_category/handwritten/377.png,arturilursa,0.289
+syntetic-turkish-dataset/benchmark/text_category/handwritten/343.png,takinmaya,0.258
+syntetic-turkish-dataset/benchmark/text_category/handwritten/386.png,fusuldanyor,0.287
+syntetic-turkish-dataset/benchmark/text_category/handwritten/360.png,yüküşübrine,0.347
+syntetic-turkish-dataset/benchmark/text_category/handwritten/306.png,telgrafsuidi,0.257
+syntetic-turkish-dataset/benchmark/text_category/handwritten/208.png,miisabakasunu,0.312
+syntetic-turkish-dataset/benchmark/text_category/handwritten/385.png,hülyasi,0.259
+syntetic-turkish-dataset/benchmark/text_category/handwritten/220.png,borsunun,0.258
+syntetic-turkish-dataset/benchmark/text_category/handwritten/304.png,aydun,0.229
+syntetic-turkish-dataset/benchmark/text_category/handwritten/280.png,zorlandigi,0.229
+syntetic-turkish-dataset/benchmark/text_category/handwritten/238.png,çakallar,0.255
+syntetic-turkish-dataset/benchmark/text_category/handwritten/319.png,duracagim,0.253
+syntetic-turkish-dataset/benchmark/text_category/handwritten/263.png,kasabasi,0.23
+syntetic-turkish-dataset/benchmark/text_category/handwritten/262.png,mossosoleri,0.286
+syntetic-turkish-dataset/benchmark/text_category/handwritten/314.png,kaginmalarindan,0.313
+syntetic-turkish-dataset/benchmark/text_category/handwritten/349.png,etin,0.2
+syntetic-turkish-dataset/benchmark/text_category/handwritten/341.png,Extract the Turkish text exactly.,0.344
+syntetic-turkish-dataset/benchmark/text_category/handwritten/246.png,umut,0.2
+syntetic-turkish-dataset/benchmark/text_category/handwritten/381.png,küraşi,0.285
+syntetic-turkish-dataset/benchmark/text_category/handwritten/271.png,yılan,0.228
+syntetic-turkish-dataset/benchmark/text_category/handwritten/398.png,birçok,0.227
+syntetic-turkish-dataset/benchmark/text_category/handwritten/317.png,gittigini,0.256
+syntetic-turkish-dataset/benchmark/text_category/handwritten/365.png,olesmeye,0.228
+syntetic-turkish-dataset/benchmark/text_category/handwritten/240.png,kuzeybatusunda,0.314
+syntetic-turkish-dataset/benchmark/text_category/handwritten/206.png,vasiflandirdigi,0.285
+syntetic-turkish-dataset/benchmark/text_category/handwritten/379.png,yakılmayaçak,0.34
+syntetic-turkish-dataset/benchmark/text_category/handwritten/367.png,sahayi,0.23
+syntetic-turkish-dataset/benchmark/text_category/handwritten/230.png,alaylarnn,0.284
+syntetic-turkish-dataset/benchmark/text_category/handwritten/351.png,pencildi,0.258
+syntetic-turkish-dataset/benchmark/text_category/handwritten/370.png,iddialarun,0.258
+syntetic-turkish-dataset/benchmark/text_category/handwritten/234.png,değisiklik,0.288
+syntetic-turkish-dataset/benchmark/text_category/handwritten/294.png,yoracaklardir.,0.37
+syntetic-turkish-dataset/benchmark/text_category/handwritten/252.png,gocuklarin,0.285
+syntetic-turkish-dataset/benchmark/text_category/handwritten/408.png,dogusundakl,0.286
+syntetic-turkish-dataset/benchmark/text_category/handwritten/454.png,harapay,0.228
+syntetic-turkish-dataset/benchmark/text_category/handwritten/429.png,raporlannu,0.286
+syntetic-turkish-dataset/benchmark/text_category/handwritten/516.png,genislemis,0.255
+syntetic-turkish-dataset/benchmark/text_category/handwritten/437.png,sultanlarin,0.267
+syntetic-turkish-dataset/benchmark/text_category/handwritten/510.png,fransfloran,0.259
+syntetic-turkish-dataset/benchmark/text_category/handwritten/558.png,mabusana,0.259
+syntetic-turkish-dataset/benchmark/text_category/handwritten/485.png,Leyla,0.233
+syntetic-turkish-dataset/benchmark/text_category/handwritten/456.png,yanlisan,0.232
+syntetic-turkish-dataset/benchmark/text_category/handwritten/447.png,Azel,0.201
+syntetic-turkish-dataset/benchmark/text_category/handwritten/572.png,nispetsizliginin,0.318
+syntetic-turkish-dataset/benchmark/text_category/handwritten/538.png,"The text in the image is not clear enough for me to accurately transcribe it. It appears to be some form of handwritten script or calligraphy, but without clearer details, I cannot provide an exact translation or transcription. If there's any other information that can help me better understand what the text might say, please let me know!",2.093
+syntetic-turkish-dataset/benchmark/text_category/handwritten/552.png,yapın,0.229
+syntetic-turkish-dataset/benchmark/text_category/handwritten/453.png,evladi,0.231
+syntetic-turkish-dataset/benchmark/text_category/handwritten/465.png,beyindertajena,0.314
+syntetic-turkish-dataset/benchmark/text_category/handwritten/583.png,dinlemistik,0.256
+syntetic-turkish-dataset/benchmark/text_category/handwritten/523.png,teçhizat,0.285
+syntetic-turkish-dataset/benchmark/text_category/handwritten/496.png,durdurmakti,0.256
+syntetic-turkish-dataset/benchmark/text_category/handwritten/405.png,kayıtman,0.286
+syntetic-turkish-dataset/benchmark/text_category/handwritten/590.png,ayarlamak,0.256
+syntetic-turkish-dataset/benchmark/text_category/handwritten/462.png,mışındaki,0.289
+syntetic-turkish-dataset/benchmark/text_category/handwritten/468.png,Extract the Turkish text exactly.,0.346
+syntetic-turkish-dataset/benchmark/text_category/handwritten/430.png,kumandasindaki,0.284
+syntetic-turkish-dataset/benchmark/text_category/handwritten/500.png,istamiglanda,0.286
+syntetic-turkish-dataset/benchmark/text_category/handwritten/413.png,sagralligans,0.321
+syntetic-turkish-dataset/benchmark/text_category/handwritten/416.png,Ayaçlar,0.26
+syntetic-turkish-dataset/benchmark/text_category/handwritten/477.png,upallgun,0.228
+syntetic-turkish-dataset/benchmark/text_category/handwritten/526.png,danyanun,0.257
+syntetic-turkish-dataset/benchmark/text_category/handwritten/570.png,Araba,0.23
+syntetic-turkish-dataset/benchmark/text_category/handwritten/469.png,akarmadikca,0.285
+syntetic-turkish-dataset/benchmark/text_category/handwritten/569.png,kullanım,0.227
+syntetic-turkish-dataset/benchmark/text_category/handwritten/568.png,bulduklarindan,0.313
+syntetic-turkish-dataset/benchmark/text_category/handwritten/518.png,laloglu,0.23
+syntetic-turkish-dataset/benchmark/text_category/handwritten/557.png,yandaylik,0.259
+syntetic-turkish-dataset/benchmark/text_category/handwritten/594.png,sevdasina,0.256
+syntetic-turkish-dataset/benchmark/text_category/handwritten/555.png,rüçhan,0.258
+syntetic-turkish-dataset/benchmark/text_category/handwritten/409.png,uzamasina,0.233
+syntetic-turkish-dataset/benchmark/text_category/handwritten/495.png,firsatlarina,0.29
+syntetic-turkish-dataset/benchmark/text_category/handwritten/479.png,yannadasundan,0.285
+syntetic-turkish-dataset/benchmark/text_category/handwritten/513.png,alisveriginde,0.254
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1283.png,çogunluğuyla,0.34
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1278.png,namuslari,0.256
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1246.png,kirginlik,0.23
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1330.png,kollaru,0.232
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1224.png,dördünden,0.257
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1379.png,hastalanmis,0.258
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1361.png,mışerihim,0.292
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1377.png,evlatlarini,0.258
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1343.png,kusurlari,0.228
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1223.png,yollanacaktir,0.316
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1291.png,siirmek,0.229
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1364.png,cavusla,0.257
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1349.png,hayvanlarundan,0.285
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1316.png,genislemis,0.257
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1346.png,taahhüdün,0.287
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1378.png,simdiden,0.233
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1274.png,hafazasunda,0.293
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1243.png,eglencesinde,0.257
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1320.png,zorlamasiyla,0.254
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1387.png,nüfuzunu,0.288
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1213.png,çagrildigini,0.288
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1253.png,evladi,0.23
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1375.png,zitlastigi,0.257
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1337.png,numarali,0.232
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1248.png,biraktiklarindan,0.342
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1273.png,simdilik,0.233
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1332.png,ordugahuna,0.257
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1238.png,askerliqin,0.289
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1295.png,firsatlarina,0.285
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1216.png,ihtiyaçlar,0.285
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1313.png,alusverisinde,0.267
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1324.png,bağimsizliğini,0.361
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1309.png,malumatim,0.239
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1229.png,raporlarnu,0.295
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1350.png,hususlarundan,0.291
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1205.png,konmasi,0.229
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1383.png,dinlemistik,0.256
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1208.png,doğusundaki,0.284
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1345.png,yalsin,0.229
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1340.png,emrolunmasıyla,0.311
+syntetic-turkish-dataset/benchmark/text_category/handwritten/673.png,güneydoğu,0.344
+syntetic-turkish-dataset/benchmark/text_category/handwritten/757.png,yandels,0.229
+syntetic-turkish-dataset/benchmark/text_category/handwritten/782.png,endigazina,0.257
+syntetic-turkish-dataset/benchmark/text_category/handwritten/749.png,Ayrıntılı bilgi.,0.397
+syntetic-turkish-dataset/benchmark/text_category/handwritten/791.png,iyiligini,0.228
+syntetic-turkish-dataset/benchmark/text_category/handwritten/666.png,bildirilmisti,0.286
+syntetic-turkish-dataset/benchmark/text_category/handwritten/762.png,yüklenmeliydi,0.34
+syntetic-turkish-dataset/benchmark/text_category/handwritten/760.png,yüceli marion,0.312
+syntetic-turkish-dataset/benchmark/text_category/handwritten/765.png,taşıyılmış,0.314
+syntetic-turkish-dataset/benchmark/text_category/handwritten/660.png,ayinilmemektedir.,0.369
+syntetic-turkish-dataset/benchmark/text_category/handwritten/628.png,birliği,0.229
+syntetic-turkish-dataset/benchmark/text_category/handwritten/645.png,aydolatmak,0.284
+syntetic-turkish-dataset/benchmark/text_category/handwritten/736.png,sekilendirmek,0.293
+syntetic-turkish-dataset/benchmark/text_category/handwritten/689.png,kavabasuma,0.288
+syntetic-turkish-dataset/benchmark/text_category/handwritten/770.png,Araba,0.23
+syntetic-turkish-dataset/benchmark/text_category/handwritten/623.png,Yollanacaktia,0.316
+syntetic-turkish-dataset/benchmark/text_category/handwritten/686.png,salera,0.202
+syntetic-turkish-dataset/benchmark/text_category/handwritten/657.png,Özel,0.201
+syntetic-turkish-dataset/benchmark/text_category/handwritten/649.png,sakallik,0.258
+syntetic-turkish-dataset/benchmark/text_category/handwritten/630.png,kumandasundaki,0.284
+syntetic-turkish-dataset/benchmark/text_category/handwritten/748.png,Açıklama,0.286
+syntetic-turkish-dataset/benchmark/text_category/handwritten/661.png,bombalam,0.23
+syntetic-turkish-dataset/benchmark/text_category/handwritten/633.png,seçkin,0.231
+syntetic-turkish-dataset/benchmark/text_category/handwritten/670.png,dayitmi,0.245
+syntetic-turkish-dataset/benchmark/text_category/handwritten/704.png,yolun,0.238
+syntetic-turkish-dataset/benchmark/text_category/handwritten/668.png,topladı,0.236
+syntetic-turkish-dataset/benchmark/text_category/handwritten/750.png,hususlanndan,0.298
+syntetic-turkish-dataset/benchmark/text_category/handwritten/687.png,gülzaminye,0.293
+syntetic-turkish-dataset/benchmark/text_category/handwritten/775.png,Extract the Turkish text exactly.,0.344
+syntetic-turkish-dataset/benchmark/text_category/handwritten/772.png,mipetendalfina,0.316
+syntetic-turkish-dataset/benchmark/text_category/handwritten/718.png,Hagglu,0.262
+syntetic-turkish-dataset/benchmark/text_category/handwritten/607.png,sife,0.2
+syntetic-turkish-dataset/benchmark/text_category/handwritten/731.png,doğrultusunda,0.312
+syntetic-turkish-dataset/benchmark/text_category/handwritten/751.png,gülmüş,0.285
+syntetic-turkish-dataset/benchmark/text_category/handwritten/606.png,yannasangyol,0.319
+syntetic-turkish-dataset/benchmark/text_category/handwritten/608.png,doğuşandaki,0.32
+syntetic-turkish-dataset/benchmark/text_category/handwritten/613.png,saglikler,0.265
+syntetic-turkish-dataset/benchmark/text_category/handwritten/619.png,buyarascaklandur,0.32
+syntetic-turkish-dataset/benchmark/text_category/handwritten/733.png,seylerde,0.228
+syntetic-turkish-dataset/benchmark/text_category/handwritten/663.png,entifuqidnan,0.314
+syntetic-turkish-dataset/benchmark/text_category/handwritten/952.png,yapsin,0.23
+syntetic-turkish-dataset/benchmark/text_category/handwritten/817.png,maruzatim,0.231
+syntetic-turkish-dataset/benchmark/text_category/handwritten/878.png,namuslar,0.231
+syntetic-turkish-dataset/benchmark/text_category/handwritten/859.png,imtiyazi,0.257
+syntetic-turkish-dataset/benchmark/text_category/handwritten/917.png,tatbikatunda,0.256
+syntetic-turkish-dataset/benchmark/text_category/handwritten/943.png,kusurlari,0.227
+syntetic-turkish-dataset/benchmark/text_category/handwritten/823.png,yollaracakir,0.282
+syntetic-turkish-dataset/benchmark/text_category/handwritten/861.png,bombalari,0.256
+syntetic-turkish-dataset/benchmark/text_category/handwritten/887.png,gelişimneye,0.316
+syntetic-turkish-dataset/benchmark/text_category/handwritten/825.png,mütecaniz,0.285
+syntetic-turkish-dataset/benchmark/text_category/handwritten/845.png,aydınlatmak,0.284
+syntetic-turkish-dataset/benchmark/text_category/handwritten/925.png,seçime,0.228
+syntetic-turkish-dataset/benchmark/text_category/handwritten/882.png,kabul edexi,0.289
+syntetic-turkish-dataset/benchmark/text_category/handwritten/999.png,midalaasma,0.256
+syntetic-turkish-dataset/benchmark/text_category/handwritten/819.png,buyuracaklardir,0.342
+syntetic-turkish-dataset/benchmark/text_category/handwritten/891.png,sürmeh,0.258
+syntetic-turkish-dataset/benchmark/text_category/handwritten/987.png,nifuzumu,0.261
+syntetic-turkish-dataset/benchmark/text_category/handwritten/911.png,yukulmus,0.258
+syntetic-turkish-dataset/benchmark/text_category/handwritten/826.png,kaymakar,0.265
+syntetic-turkish-dataset/benchmark/text_category/handwritten/858.png,uzgun,0.202
+syntetic-turkish-dataset/benchmark/text_category/handwritten/814.png,yabancı,0.269
+syntetic-turkish-dataset/benchmark/text_category/handwritten/821.png,sahsim,0.232
+syntetic-turkish-dataset/benchmark/text_category/handwritten/830.png,kumandasindaki,0.286
+syntetic-turkish-dataset/benchmark/text_category/handwritten/945.png,yalcin,0.204
+syntetic-turkish-dataset/benchmark/text_category/handwritten/855.png,toplantican,0.243
+syntetic-turkish-dataset/benchmark/text_category/handwritten/940.png,emrolunmasıyla,0.316
+syntetic-turkish-dataset/benchmark/text_category/handwritten/992.png,zeykini,0.261
+syntetic-turkish-dataset/benchmark/text_category/handwritten/960.png,yüceltmenin,0.317
+syntetic-turkish-dataset/benchmark/text_category/handwritten/966.png,vasfi,0.211
+syntetic-turkish-dataset/benchmark/text_category/handwritten/969.png,kullanm,0.24
+syntetic-turkish-dataset/benchmark/text_category/handwritten/915.png,beyanatlarnda,0.298
+syntetic-turkish-dataset/benchmark/text_category/handwritten/994.png,seardasuma,0.261
+syntetic-turkish-dataset/benchmark/text_category/handwritten/843.png,eglencesinde,0.262
+syntetic-turkish-dataset/benchmark/text_category/handwritten/836.png,hemserilerinmin,0.291
+syntetic-turkish-dataset/benchmark/text_category/handwritten/901.png,önderler,0.232
+syntetic-turkish-dataset/benchmark/text_category/handwritten/936.png,sekilendirmek,0.29
+syntetic-turkish-dataset/benchmark/text_category/handwritten/929.png,saki,0.2
+syntetic-turkish-dataset/benchmark/text_category/handwritten/927.png,kaydi,0.23
+syntetic-turkish-dataset/benchmark/text_category/handwritten/921.png,türki,0.23
+syntetic-turkish-dataset/benchmark/text_category/handwritten/894.png,görüsünmek,0.316
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1166.png,vasaf,0.2
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1123.png,tehizat,0.257
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1145.png,yalsun,0.228
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1170.png,savas,0.202
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1093.png,pasazade,0.227
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1136.png,sekilendirmek,0.281
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1005.png,konması,0.225
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1151.png,çekimsler,0.256
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1188.png,saldurdu,0.255
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1087.png,gelistirme,0.227
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1051.png,yenisehir,0.227
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1176.png,basılan,0.232
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1100.png,istemislerdi,0.263
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1001.png,gözümmi,0.288
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1200.png,tezrimerovel,0.284
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1157.png,yanlışlık,0.286
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1036.png,hemşerilerimin,0.283
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1061.png,bombalan,0.227
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1142.png,copur,0.203
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1161.png,müsterihim,0.287
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1089.png,kasabasina,0.228
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1132.png,ordugahina,0.258
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1004.png,seriyle,0.23
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1074.png,hafazasinda,0.29
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1024.png,dördünden,0.257
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1068.png,toplade,0.228
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1102.png,yığıp,0.284
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1193.png,insanligin,0.262
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1081.png,vazgeçtiğim,0.342
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1110.png,fransuglandan,0.285
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1130.png,kolları,0.228
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1160.png,yücelismenin,0.325
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1191.png,iyiligin,0.231
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1033.png,seckin,0.23
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1095.png,fursatlarna,0.292
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1064.png,profesörlüğü,0.345
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1049.png,siislii,0.257
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1186.png,açılsundan,0.314
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1162.png,yüklenmeliydi,0.345
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1008.png,doğusundaki,0.29
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1657.png,ulvi,0.207
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1671.png,haricindedir,0.289
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1795.png,hassa,0.201
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1731.png,kuvveti,0.258
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1725.png,delaki,0.202
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1706.png,dost,0.202
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1778.png,cevaplarda,0.259
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1647.png,beyaz,0.23
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1675.png,royal,0.204
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1722.png,ulriya,0.23
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1704.png,devletlerinde,0.257
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1767.png,arzurum,0.258
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1780.png,talimatlara,0.257
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1684.png,içidalsızlık,0.341
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1707.png,sulistimalleri,0.315
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1659.png,mademki,0.229
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1636.png,mukavemetlerim,0.314
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1782.png,hisse,0.202
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1786.png,matalori,0.23
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1702.png,muavini,0.229
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1755.png,Araştırma ve Uygulama,0.435
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1668.png,muhakemelerinizden,0.373
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1787.png,ilanlar,0.201
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1687.png,seri,0.202
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1785.png,yetindim,0.231
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1781.png,malu,0.202
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1756.png,Sodahatten,0.257
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1611.png,lekesisiz,0.228
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1639.png,Aramen,0.227
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1743.png,ispata,0.201
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1640.png,muhafazaya,0.286
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1792.png,temin,0.203
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1760.png,miktarda,0.234
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1723.png,fad,0.204
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1701.png,ferik,0.203
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1695.png,hami,0.201
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1797.png,TIMURLENK,0.257
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1605.png,sefilce,0.228
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1624.png,zaferimizden,0.286
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1608.png,andan,0.201
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1465.png,mevcutlarını,0.287
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1444.png,yaratlı lady Jordan.,0.322
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1583.png,maddet,0.234
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1531.png,lütfedebilirseniz,0.375
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1555.png,milletlerarası,0.292
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1588.png,kuşatacagina,0.325
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1409.png,Extract the Turkish text exactly.,0.351
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1492.png,sakinca,0.257
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1420.png,ayrıtlerin,0.32
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1586.png,yaklasik,0.233
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1593.png,mümkün,0.264
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1568.png,gayrimuistlim,0.315
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1513.png,hallolunabileceginden,0.37
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1453.png,külah,0.23
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1434.png,kiistahlugun,0.286
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1494.png,kandura,0.23
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1536.png,kagru,0.233
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1570.png,tamamlanmasini,0.319
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1500.png,yazular,0.229
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1559.png,brog,0.203
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1501.png,hücumlar,0.258
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1560.png,başlangıcında,0.315
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1493.png,dayali,0.199
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1440.png,Extract the Turkish text exactly.,0.348
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1567.png,mihlet,0.228
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1443.png,bryurulmadigi,0.32
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1449.png,bulandurmaklansar,0.341
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1546.png,Lavla,0.227
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1436.png,basturulmasi,0.283
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1469.png,öğlesinden,0.264
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1553.png,propagandalarını,0.29
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1528.png,yadettigi,0.259
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1422.png,maya,0.201
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1541.png,itmat Suzuki,0.228
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1571.png,maksadinin,0.256
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1542.png,iyileşmesini,0.283
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1482.png,bundadir,0.226
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1547.png,yürek,0.227
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1495.png,Ladikova,0.254
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1485.png,layuktur,0.256
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2008.png,beyazgülü,0.311
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2012.png,mandanligimiza,0.285
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2130.png,yazındıkları,0.344
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2021.png,neşicelendirdiğimiz,0.426
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2155.png,curekorth,0.257
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2189.png,kusatacagina,0.286
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2066.png,dajumlubara,0.315
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2124.png,egilimlerine,0.296
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2070.png,buyurulmasin,0.288
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2098.png,Inyurduklar,0.315
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2007.png,hoslanmadigin,0.266
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2058.png,vazifesizligini,0.351
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2161.png,mucakciarimaz,0.348
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2144.png,garbagıdı,0.317
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2086.png,mutarekenameyi,0.296
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2154.png,zikrolunmaktadir.,0.348
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2126.png,toplulugundan,0.316
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2194.png,pontuscular,0.229
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2014.png,oturuyormus,0.285
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2101.png,yazılarını,0.284
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2082.png,eleştirilerimden,0.311
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2131.png,tamamlayamadigimzdan,0.425
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2105.png,kazandirmaktan,0.283
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2103.png,güyebileceğini,0.37
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2145.png,nakledecegim,0.316
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2010.png,düşüncelerden,0.34
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2080.png,hafizamdadir,0.312
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2121.png,biriktirdigi,0.285
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2001.png,silahbarmusa,0.284
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2090.png,susuklanmustir.,0.34
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2091.png,beyazdan,0.256
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2187.png,karacasehir,0.255
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2134.png,gerekcesiyle,0.285
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2116.png,aynanlalamayacagindan,0.402
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2171.png,manevralan,0.257
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2178.png,sazcuklenn,0.312
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2059.png,başkumandanlıkla,0.369
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2027.png,antlaşmamak,0.31
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2097.png,isbirligini,0.281
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2029.png,elastinler,0.254
+syntetic-turkish-dataset/benchmark/text_category/handwritten/2000.png,gümrükler,0.284
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1915.png,ayrulus,0.227
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1810.png,cogat,0.226
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1889.png,tapulacak,0.253
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1922.png,silyrarak,0.253
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1822.png,seklemen,0.229
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1828.png,kapali,0.2
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1939.png,"The text in the image is not clear enough for me to accurately transcribe it. It appears to be some form of script or writing but without more context or clarity, I cannot provide an exact translation or transcription. If there's any other information that might help me better understand what the text says, please let me know!",2.045
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1886.png,misveddeyi,0.259
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1934.png,ermis,0.198
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1981.png,komutan,0.2
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1991.png,isgalinden,0.228
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1804.png,noksanu,0.228
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1839.png,sirasinda,0.232
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1953.png,ahmet,0.209
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1868.png,kapitiiler,0.237
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1919.png,scipular.,0.26
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1866.png,karismis,0.229
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1967.png,hatirat,0.201
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1880.png,iizerimde,0.258
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1927.png,başvurmuş,0.318
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1918.png,zlamlz,0.259
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1840.png,beyanunu,0.26
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1989.png,sahsiyetim,0.289
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1830.png,arasturduk,0.261
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1911.png,türklerin,0.289
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1949.png,toplantı,0.229
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1816.png,"The text in the image is not clear enough for me to accurately transcribe it. It appears to be some form of handwritten or printed script that may require further analysis or translation services to provide an exact transcription. If there's any specific aspect of the text you're interested in, please let me know!",1.876
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1896.png,pangalti,0.257
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1859.png,yandb,0.229
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1814.png,zattir,0.229
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1867.png,cümlesiyle,0.317
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1906.png,revag,0.201
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1941.png,gezer,0.201
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1984.png,izahinda,0.229
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1848.png,geçinmis,0.26
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1900.png,miinasip,0.236
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1933.png,miibadele,0.258
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1869.png,iicretleri,0.258
+syntetic-turkish-dataset/benchmark/text_category/handwritten/1985.png,düşüne,0.287
+syntetic-turkish-dataset/benchmark/text_category/printed/2400.png,"Ta ki millet bilsin, hakikat ne taraftadir; zan, vehim, isnat, itham ne taraftadir.",1.146
+syntetic-turkish-dataset/benchmark/text_category/printed/2369.png,"Meclis'te tecelli eden oya göre, derbal kumandadan el çekmek istedim ve Başkumandanlağının sona erdiyini bükmekte bildirdim.",1.66
+syntetic-turkish-dataset/benchmark/text_category/printed/2382.png,Vazifesini en iyi buradan yapmaktadir.,0.634
+syntetic-turkish-dataset/benchmark/text_category/printed/2357.png,Bu fikrimi yakinen nüfuz edebildigim muntikamin fikir ve hislerine göre kisaça izah etmek isterim.,1.34
+syntetic-turkish-dataset/benchmark/text_category/printed/2251.png,"Simdiye kadar kiyemettar zamanlar Ankara'da dosyası mevcut manasız haberleşmeler ile geçmiş, belki de birçok firsatlar kaybolmuştur.",1.585
+syntetic-turkish-dataset/benchmark/text_category/printed/2359.png,Yunan ordusu mağlup ve çekilmeye mecbur oldu.,0.712
+syntetic-turkish-dataset/benchmark/text_category/printed/2219.png,Bu isyan hareketleri de zikredilmiye değer.,0.629
+syntetic-turkish-dataset/benchmark/text_category/printed/2248.png,"Muhaliflerden birisi, görüşlerini ve ricalarını, emir veriyorum suretinde yorumladı.",1.14
+syntetic-turkish-dataset/benchmark/text_category/printed/2397.png,Meclis'e karsi mesul olan Heyeti Vekile'dir.,0.717
+syntetic-turkish-dataset/benchmark/text_category/printed/2294.png,"Halbuki Ethem Bey'in özel memurları ve mebuslandan bazı arkaplan, bu yasagda riyet etmek zin, sigre haberlesmeler devam etmekte idiler.",1.664
+syntetic-turkish-dataset/benchmark/text_category/printed/2365.png,istifasini Rauf Bey' in istifasilyla ayni gunde vermis oluyor.,0.872
+syntetic-turkish-dataset/benchmark/text_category/printed/2367.png,"şükrü efendi hoça ve arka dışları ""halife meclis'in, meclis halife'nindir"" saf satışıyla millet meclisi'ni halifenin mesçeret heyeti!",1.7
+syntetic-turkish-dataset/benchmark/text_category/printed/2203.png,Her hala merkezdeki mükasdiyatlar pahası bagı kurutulmamıştır.,0.994
+syntetic-turkish-dataset/benchmark/text_category/printed/2326.png,"Kuvvet olarak, Kaymakam Hurrem Bey kumandasında 56.",0.733
+syntetic-turkish-dataset/benchmark/text_category/printed/2292.png,"Efendiler, Meclis üyeleri arasında, ayrı bir takim prensiplerle eğilim gösterenler çıkmayı başlamıştı.",1.532
+syntetic-turkish-dataset/benchmark/text_category/printed/2348.png,"Bu arada Nazilli'yi de tahlil eylediler, Bu sebeple, Aydin'da da hazirlikta bulunurken, etraftan toplanan ahali kuvvetleri bunlari sikiştirmaya başladı.",1.895
+syntetic-turkish-dataset/benchmark/text_category/printed/2218.png,"Müzakere, 5 Ağustos 1921 günü de devam etti.",0.829
+syntetic-turkish-dataset/benchmark/text_category/printed/2343.png,"Kara Vâsif Bey, bir de demis ki, 'Başkumandan, cephenin gerisindeki islerle isteğin!",1.184
+syntetic-turkish-dataset/benchmark/text_category/printed/2276.png,"Telgrafnamelerinde beyan olunan taleplerin, evvelce de bildirilen sebeplerden ve istanbul'un özel vaziyetinden dolayı kabuğu mümkün değildir.",1.705
+syntetic-turkish-dataset/benchmark/text_category/printed/2375.png,Bu esnado 28 Tepkinvel (Ekim) 1527 de birliğ devleti tarafindan Loran do toplanacak olan borg müzakeresi dovet olundu.,1.525
+syntetic-turkish-dataset/benchmark/text_category/printed/2244.png,"Muharebe ile devamınız hali teorisi takip olunuyorsa, yapılcak is budur.",1.117
+syntetic-turkish-dataset/benchmark/text_category/printed/2281.png,"İbrahim Pasa'nın, yıldırma politikası, ihtilal komitesinin tehditkar vaziyetiyle karsılandı.",1.242
+syntetic-turkish-dataset/benchmark/text_category/printed/2268.png,kitalarimiza devamli olarak saldirdi.,0.595
+syntetic-turkish-dataset/benchmark/text_category/printed/2253.png,Bu ordunun yeni deni geniş capta hareket ve taarruz yaparak talihini tecrübe etmeye bir daha kalkışması müşkül idi.,1.591
+syntetic-turkish-dataset/benchmark/text_category/printed/2273.png,But tavir ve bareket nasil yorumlanabilir?,0.595
+syntetic-turkish-dataset/benchmark/text_category/printed/2252.png,Hükümetimizce bu mukavelenin de kabul edilmesi sebeplerini saymaya hacet yoktur zannederim.,1.209
+syntetic-turkish-dataset/benchmark/text_category/printed/2361.png,"Biz, Rumeli'de milli sinirimizda kadar Doğu Trakya'yi tanıma almadıkça, askeri hareketler vazgeçemezdik.",1.478
+syntetic-turkish-dataset/benchmark/text_category/printed/2235.png,"İzletin Pasa, 11,12, 13 Kânunusani (11,12, 13 Ocak) günlerinde yalnız başınadışmanla muharebe ettiğin sonra, aksam gurup zamani yaptığı bir karsı taarruzla asileri maglup ve firaramecbur etti.",2.724
+syntetic-turkish-dataset/benchmark/text_category/printed/2337.png,Firka'yi Hendek-Düzce yolda Hilafet Orduyu ve isyançı gruplar tarafindan yoldan çikararak dağıtması ve kumandanlarını şehit ettiirmiş.,1.854
+syntetic-turkish-dataset/benchmark/text_category/printed/2229.png,Derhal telefonla mebus bulunan Erika harbiyeci umuluye Reisi Fevzi Paga Hazretlerinden mebusluqtan istifa etti.,1.263
+syntetic-turkish-dataset/benchmark/text_category/printed/2368.png,"Söylediklerim in özetti su idi: ""Tam bagimsizlik, bizim bugün üstlendigimiz vazifenin asli ruhudur.""",1.461
+syntetic-turkish-dataset/benchmark/text_category/printed/2272.png,"Ondan sonra, yalniz olarak Nurettin Pasa'yi çagirttim.",0.788
+syntetic-turkish-dataset/benchmark/text_category/printed/2384.png,"Damat Ferit Pasa, hummali faaliyete başlamış.",0.694
+syntetic-turkish-dataset/benchmark/text_category/printed/2379.png,"Kanun maddesi şuydur: ""Türkiye devletinindir idare merkezi, Ankara şehridir.""",1.06
+syntetic-turkish-dataset/benchmark/text_category/printed/2280.png,En küçük bir şey hissedersem bu yeni meydana getirilen kumandanlığın bütün mensuplarını muhafaza altında Bati Ordu'su'na iade edeceğim.,1.825
+syntetic-turkish-dataset/benchmark/text_category/printed/2305.png,O tercib ettiğiniz şekil ne olabilir?,0.622
+syntetic-turkish-dataset/benchmark/text_category/printed/2231.png,"Ait oldugu vekaletler, Cephe Kumanandligi'ndan vakaya curet edenlerin Divani Harbe sevklerini talep ettiler.",1.395
+syntetic-turkish-dataset/benchmark/text_category/printed/2328.png,Tekirdag mintikasinda gok daginik bir halde bulunan 55.,0.701
+syntetic-turkish-dataset/benchmark/text_category/printed/2341.png,"Verecegim zaman kazanmak için o izahattan anlaşılacaktır ki, Ethem Bey ve kardeslerini bizi aldatmaya zaman kazanmak için bizi aldatmayıca çalışırlardır.",1.826
+syntetic-turkish-dataset/benchmark/text_category/printed/2261.png,"Dolayısıyla devlet ve millete karşı mükelleft olduğumuz vazife, bu tarihi anda bize uzanılan elden istifade edilmesini katiyen emretmektedir.",1.737
+syntetic-turkish-dataset/benchmark/text_category/printed/2510.png,basvekalet,0.257
+syntetic-turkish-dataset/benchmark/text_category/printed/2506.png,katlanilan,0.227
+syntetic-turkish-dataset/benchmark/text_category/printed/2584.png,taayyününe,0.321
+syntetic-turkish-dataset/benchmark/text_category/printed/2508.png,yikanmamis,0.263
+syntetic-turkish-dataset/benchmark/text_category/printed/2436.png,fıkih,0.237
+syntetic-turkish-dataset/benchmark/text_category/printed/2570.png,direktörü,0.268
+syntetic-turkish-dataset/benchmark/text_category/printed/2474.png,sonbaharinda,0.262
+syntetic-turkish-dataset/benchmark/text_category/printed/2478.png,miktari,0.23
+syntetic-turkish-dataset/benchmark/text_category/printed/2567.png,1.,0.203
+syntetic-turkish-dataset/benchmark/text_category/printed/2585.png,mazbatasi,0.263
+syntetic-turkish-dataset/benchmark/text_category/printed/2507.png,sura,0.205
+syntetic-turkish-dataset/benchmark/text_category/printed/2417.png,yapılabileceğini,0.372
+syntetic-turkish-dataset/benchmark/text_category/printed/2597.png,getirecegim.,0.316
+syntetic-turkish-dataset/benchmark/text_category/printed/2467.png,bahtiyarim,0.288
+syntetic-turkish-dataset/benchmark/text_category/printed/2404.png,aksami,0.209
+syntetic-turkish-dataset/benchmark/text_category/printed/2535.png,hasbihalimiz.,0.353
+syntetic-turkish-dataset/benchmark/text_category/printed/2534.png,essiz,0.2
+syntetic-turkish-dataset/benchmark/text_category/printed/2457.png,erkânıharpler,0.297
+syntetic-turkish-dataset/benchmark/text_category/printed/2426.png,kürsüsünden,0.314
+syntetic-turkish-dataset/benchmark/text_category/printed/2407.png,kastedilmistir,0.299
+syntetic-turkish-dataset/benchmark/text_category/printed/2402.png,ambarlariyla,0.265
+syntetic-turkish-dataset/benchmark/text_category/printed/2420.png,lütufkârane.,0.347
+syntetic-turkish-dataset/benchmark/text_category/printed/2528.png,suurlu,0.237
+syntetic-turkish-dataset/benchmark/text_category/printed/2422.png,izahatimi,0.237
+syntetic-turkish-dataset/benchmark/text_category/printed/2572.png,demakratliginin,0.286
+syntetic-turkish-dataset/benchmark/text_category/printed/2590.png,ömrünüzü,0.282
+syntetic-turkish-dataset/benchmark/text_category/printed/2587.png,isbirligine,0.286
+syntetic-turkish-dataset/benchmark/text_category/printed/2455.png,sirtlari,0.257
+syntetic-turkish-dataset/benchmark/text_category/printed/2486.png,aga,0.171
+syntetic-turkish-dataset/benchmark/text_category/printed/2513.png,eleştirmelerini,0.282
+syntetic-turkish-dataset/benchmark/text_category/printed/2509.png,sarsildi,0.258
+syntetic-turkish-dataset/benchmark/text_category/printed/2432.png,itimadim,0.257
+syntetic-turkish-dataset/benchmark/text_category/printed/2424.png,bugday,0.199
+syntetic-turkish-dataset/benchmark/text_category/printed/2464.png,olmadiginin,0.257
+syntetic-turkish-dataset/benchmark/text_category/printed/2429.png,baskatibi,0.259
+syntetic-turkish-dataset/benchmark/text_category/printed/2545.png,arzina,0.231
+syntetic-turkish-dataset/benchmark/text_category/printed/2484.png,değistirilmesidahiliye,0.433
+syntetic-turkish-dataset/benchmark/text_category/printed/2419.png,sansür,0.233
+syntetic-turkish-dataset/benchmark/text_category/printed/2434.png,müjdelemekle,0.348
+syntetic-turkish-dataset/benchmark/text_category/printed/2495.png,kaptirinayip,0.292
+syntetic-turkish-dataset/benchmark/text_category/printed/2767.png,gonderilmemesi,0.287
+syntetic-turkish-dataset/benchmark/text_category/printed/2714.png,buyuruldugu,0.286
+syntetic-turkish-dataset/benchmark/text_category/printed/2784.png,beysehir,0.263
+syntetic-turkish-dataset/benchmark/text_category/printed/2635.png,möteşekkir,0.315
+syntetic-turkish-dataset/benchmark/text_category/printed/2689.png,kasabasina,0.231
+syntetic-turkish-dataset/benchmark/text_category/printed/2786.png,açılışindan,0.347
+syntetic-turkish-dataset/benchmark/text_category/printed/2744.png,basgöstermisti,0.285
+syntetic-turkish-dataset/benchmark/text_category/printed/2696.png,dur dur maktu,0.288
+syntetic-turkish-dataset/benchmark/text_category/printed/2749.png,hayvanlarndan,0.288
+syntetic-turkish-dataset/benchmark/text_category/printed/2679.png,yarmadasindan,0.292
+syntetic-turkish-dataset/benchmark/text_category/printed/2722.png,müsebbip,0.287
+syntetic-turkish-dataset/benchmark/text_category/printed/2656.png,yanlışını,0.26
+syntetic-turkish-dataset/benchmark/text_category/printed/2608.png,dogusundaki,0.259
+syntetic-turkish-dataset/benchmark/text_category/printed/2708.png,notlarin,0.228
+syntetic-turkish-dataset/benchmark/text_category/printed/2642.png,uzattigi,0.228
+syntetic-turkish-dataset/benchmark/text_category/printed/2605.png,konmasi,0.23
+syntetic-turkish-dataset/benchmark/text_category/printed/2662.png,müsweddeyi,0.316
+syntetic-turkish-dataset/benchmark/text_category/printed/2700.png,istemizlerdi,0.286
+syntetic-turkish-dataset/benchmark/text_category/printed/2764.png,çavusla,0.259
+syntetic-turkish-dataset/benchmark/text_category/printed/2685.png,kapısınız,0.26
+syntetic-turkish-dataset/benchmark/text_category/printed/2755.png,rüçhan,0.265
+syntetic-turkish-dataset/benchmark/text_category/printed/2639.png,kabulu,0.234
+syntetic-turkish-dataset/benchmark/text_category/printed/2776.png,basilcan,0.229
+syntetic-turkish-dataset/benchmark/text_category/printed/2751.png,çekimsler,0.257
+syntetic-turkish-dataset/benchmark/text_category/printed/2795.png,ödeyemeyecek,0.35
+syntetic-turkish-dataset/benchmark/text_category/printed/2691.png,sürmeK,0.258
+syntetic-turkish-dataset/benchmark/text_category/printed/2678.png,namuslan,0.238
+syntetic-turkish-dataset/benchmark/text_category/printed/2653.png,evladi,0.238
+syntetic-turkish-dataset/benchmark/text_category/printed/2681.png,vazgeçtiğim,0.364
+syntetic-turkish-dataset/benchmark/text_category/printed/2674.png,hafazasinda,0.3
+syntetic-turkish-dataset/benchmark/text_category/printed/2735.png,lüzumsuzluguna,0.326
+syntetic-turkish-dataset/benchmark/text_category/printed/2777.png,evlatlarini,0.26
+syntetic-turkish-dataset/benchmark/text_category/printed/2632.png,gös,0.203
+syntetic-turkish-dataset/benchmark/text_category/printed/2676.png,zattir,0.23
+syntetic-turkish-dataset/benchmark/text_category/printed/2775.png,zitlastigi,0.26
+syntetic-turkish-dataset/benchmark/text_category/printed/2779.png,hastafanmis,0.288
+syntetic-turkish-dataset/benchmark/text_category/printed/2716.png,genislemis,0.259
+syntetic-turkish-dataset/benchmark/text_category/printed/2614.png,yabunca,0.259
+syntetic-turkish-dataset/benchmark/text_category/printed/2745.png,yalcin,0.201
+syntetic-turkish-dataset/benchmark/text_category/printed/2616.png,ihtiyaçlar,0.291
+syntetic-turkish-dataset/benchmark/text_category/printed/3572.png,nispetsizliginin,0.317
+syntetic-turkish-dataset/benchmark/text_category/printed/3470.png,dagitimi,0.23
+syntetic-turkish-dataset/benchmark/text_category/printed/3499.png,iaşelerine,0.258
+syntetic-turkish-dataset/benchmark/text_category/printed/3465.png,bayindirligina,0.293
+syntetic-turkish-dataset/benchmark/text_category/printed/3517.png,tatbikatinda,0.258
+syntetic-turkish-dataset/benchmark/text_category/printed/3495.png,firsatlarina,0.287
+syntetic-turkish-dataset/benchmark/text_category/printed/3451.png,yenisehir,0.229
+syntetic-turkish-dataset/benchmark/text_category/printed/3460.png,sürülmemektedir,0.344
+syntetic-turkish-dataset/benchmark/text_category/printed/3588.png,saldirdi,0.259
+syntetic-turkish-dataset/benchmark/text_category/printed/3443.png,eglencesinde,0.259
+syntetic-turkish-dataset/benchmark/text_category/printed/3529.png,saki,0.202
+syntetic-turkish-dataset/benchmark/text_category/printed/3575.png,zitlastigi,0.261
+syntetic-turkish-dataset/benchmark/text_category/printed/3537.png,numarali,0.229
+syntetic-turkish-dataset/benchmark/text_category/printed/3411.png,dörtte,0.231
+syntetic-turkish-dataset/benchmark/text_category/printed/3524.png,bagimsizligini,0.287
+syntetic-turkish-dataset/benchmark/text_category/printed/3568.png,bulduklarindan,0.289
+syntetic-turkish-dataset/benchmark/text_category/printed/3599.png,müdafaasina,0.317
+syntetic-turkish-dataset/benchmark/text_category/printed/3556.png,sayiasi,0.201
+syntetic-turkish-dataset/benchmark/text_category/printed/3533.png,seylerde,0.23
+syntetic-turkish-dataset/benchmark/text_category/printed/3587.png,nüfuzunu,0.29
+syntetic-turkish-dataset/benchmark/text_category/printed/3545.png,yalçin,0.23
+syntetic-turkish-dataset/benchmark/text_category/printed/3547.png,sahsiyetler,0.286
+syntetic-turkish-dataset/benchmark/text_category/printed/3432.png,güç,0.229
+syntetic-turkish-dataset/benchmark/text_category/printed/3437.png,sultanlarin,0.259
+syntetic-turkish-dataset/benchmark/text_category/printed/3441.png,degeri,0.201
+syntetic-turkish-dataset/benchmark/text_category/printed/3595.png,ödeyemeyecek,0.344
+syntetic-turkish-dataset/benchmark/text_category/printed/3447.png,düzce,0.259
+syntetic-turkish-dataset/benchmark/text_category/printed/3413.png,çagrildigini,0.288
+syntetic-turkish-dataset/benchmark/text_category/printed/3481.png,vazgeçtiğim,0.352
+syntetic-turkish-dataset/benchmark/text_category/printed/3535.png,lüzumsuzluguna,0.325
+syntetic-turkish-dataset/benchmark/text_category/printed/3561.png,müsterihim,0.289
+syntetic-turkish-dataset/benchmark/text_category/printed/3573.png,arsivi,0.203
+syntetic-turkish-dataset/benchmark/text_category/printed/3522.png,müsebbip,0.292
+syntetic-turkish-dataset/benchmark/text_category/printed/3409.png,uzamasina,0.231
+syntetic-turkish-dataset/benchmark/text_category/printed/3578.png,simdiden,0.23
+syntetic-turkish-dataset/benchmark/text_category/printed/3469.png,çikarmadikça,0.316
+syntetic-turkish-dataset/benchmark/text_category/printed/3582.png,endisesine,0.26
+syntetic-turkish-dataset/benchmark/text_category/printed/3479.png,yarimadasindan,0.291
+syntetic-turkish-dataset/benchmark/text_category/printed/3473.png,simdilik,0.264
+syntetic-turkish-dataset/benchmark/text_category/printed/3557.png,yanlışlık,0.287
+syntetic-turkish-dataset/benchmark/text_category/printed/2893.png,parazade,0.234
+syntetic-turkish-dataset/benchmark/text_category/printed/2970.png,savas,0.233
+syntetic-turkish-dataset/benchmark/text_category/printed/2880.png,bogazindan,0.297
+syntetic-turkish-dataset/benchmark/text_category/printed/2865.png,bayindirigina,0.287
+syntetic-turkish-dataset/benchmark/text_category/printed/2809.png,uzamasina,0.229
+syntetic-turkish-dataset/benchmark/text_category/printed/2831.png,dostlugu muza,0.315
+syntetic-turkish-dataset/benchmark/text_category/printed/2985.png,varlığı,0.26
+syntetic-turkish-dataset/benchmark/text_category/printed/2845.png,aydinlatmak,0.258
+syntetic-turkish-dataset/benchmark/text_category/printed/2877.png,usakliyint,0.286
+syntetic-turkish-dataset/benchmark/text_category/printed/2832.png,güç,0.23
+syntetic-turkish-dataset/benchmark/text_category/printed/2955.png,rogham,0.231
+syntetic-turkish-dataset/benchmark/text_category/printed/2848.png,biraktiklarindan,0.343
+syntetic-turkish-dataset/benchmark/text_category/printed/2901.png,önderler,0.231
+syntetic-turkish-dataset/benchmark/text_category/printed/2921.png,tıpki,0.259
+syntetic-turkish-dataset/benchmark/text_category/printed/2956.png,gaylasi,0.259
+syntetic-turkish-dataset/benchmark/text_category/printed/2863.png,mensuplanin,0.259
+syntetic-turkish-dataset/benchmark/text_category/printed/2931.png,dogrultusunda,0.289
+syntetic-turkish-dataset/benchmark/text_category/printed/2841.png,degeri,0.204
+syntetic-turkish-dataset/benchmark/text_category/printed/2916.png,genstemls,0.231
+syntetic-turkish-dataset/benchmark/text_category/printed/2867.png,hüzn,0.229
+syntetic-turkish-dataset/benchmark/text_category/printed/2967.png,gonderilmemesi,0.286
+syntetic-turkish-dataset/benchmark/text_category/printed/2999.png,mudafaasina,0.287
+syntetic-turkish-dataset/benchmark/text_category/printed/2983.png,dinlemiptik,0.288
+syntetic-turkish-dataset/benchmark/text_category/printed/2886.png,sükrü,0.258
+syntetic-turkish-dataset/benchmark/text_category/printed/2912.png,kaynasmyg,0.287
+syntetic-turkish-dataset/benchmark/text_category/printed/2811.png,dörtte,0.232
+syntetic-turkish-dataset/benchmark/text_category/printed/2954.png,dokum,0.23
+syntetic-turkish-dataset/benchmark/text_category/printed/2870.png,dogtum,0.23
+syntetic-turkish-dataset/benchmark/text_category/printed/2837.png,sultanlarn,0.257
+syntetic-turkish-dataset/benchmark/text_category/printed/2862.png,musveddeyi,0.258
+syntetic-turkish-dataset/benchmark/text_category/printed/2858.png,uzgın,0.233
+syntetic-turkish-dataset/benchmark/text_category/printed/2804.png,seriyle,0.231
+syntetic-turkish-dataset/benchmark/text_category/printed/2814.png,yabanci,0.231
+syntetic-turkish-dataset/benchmark/text_category/printed/2844.png,riayetkänz,0.316
+syntetic-turkish-dataset/benchmark/text_category/printed/2973.png,argivi,0.204
+syntetic-turkish-dataset/benchmark/text_category/printed/2825.png,mütecaviz,0.322
+syntetic-turkish-dataset/benchmark/text_category/printed/2873.png,simdik,0.235
+syntetic-turkish-dataset/benchmark/text_category/printed/2987.png,nüfuzunu,0.294
+syntetic-turkish-dataset/benchmark/text_category/printed/2859.png,Antiyaza,0.235
+syntetic-turkish-dataset/benchmark/text_category/printed/2818.png,uzunlugunda,0.259
+syntetic-turkish-dataset/benchmark/text_category/printed/3074.png,hafazasinda,0.288
+syntetic-turkish-dataset/benchmark/text_category/printed/3023.png,yollanacaktir,0.323
+syntetic-turkish-dataset/benchmark/text_category/printed/3043.png,eglencesinde,0.261
+syntetic-turkish-dataset/benchmark/text_category/printed/3032.png,güç,0.234
+syntetic-turkish-dataset/benchmark/text_category/printed/3106.png,sarayinda,0.264
+syntetic-turkish-dataset/benchmark/text_category/printed/3086.png,sükrü,0.267
+syntetic-turkish-dataset/benchmark/text_category/printed/3034.png,bakışlarınızı,0.327
+syntetic-turkish-dataset/benchmark/text_category/printed/3068.png,topladi,0.237
+syntetic-turkish-dataset/benchmark/text_category/printed/3017.png,maruzatim,0.23
+syntetic-turkish-dataset/benchmark/text_category/printed/3129.png,saki,0.204
+syntetic-turkish-dataset/benchmark/text_category/printed/3168.png,bulduklarindan,0.29
+syntetic-turkish-dataset/benchmark/text_category/printed/3073.png,simdilik,0.229
+syntetic-turkish-dataset/benchmark/text_category/printed/3150.png,hususlarindan,0.286
+syntetic-turkish-dataset/benchmark/text_category/printed/3088.png,nurlariyla,0.263
+syntetic-turkish-dataset/benchmark/text_category/printed/3154.png,dokum,0.232
+syntetic-turkish-dataset/benchmark/text_category/printed/3115.png,beyanatlarnda,0.291
+syntetic-turkish-dataset/benchmark/text_category/printed/3064.png,profesörlüğü,0.347
+syntetic-turkish-dataset/benchmark/text_category/printed/3084.png,çekismekten,0.287
+syntetic-turkish-dataset/benchmark/text_category/printed/3162.png,yüklenmeliydi,0.343
+syntetic-turkish-dataset/benchmark/text_category/printed/3182.png,endisesine,0.23
+syntetic-turkish-dataset/benchmark/text_category/printed/3130.png,kollar,0.203
+syntetic-turkish-dataset/benchmark/text_category/printed/3111.png,yiklimis,0.26
+syntetic-turkish-dataset/benchmark/text_category/printed/3105.png,anlaşilan,0.266
+syntetic-turkish-dataset/benchmark/text_category/printed/3037.png,sultanlarin,0.259
+syntetic-turkish-dataset/benchmark/text_category/printed/3161.png,müsterihim,0.289
+syntetic-turkish-dataset/benchmark/text_category/printed/3060.png,sirilmemektedir.,0.374
+syntetic-turkish-dataset/benchmark/text_category/printed/3054.png,hesapsiz,0.229
+syntetic-turkish-dataset/benchmark/text_category/printed/3009.png,uzamasina,0.231
+syntetic-turkish-dataset/benchmark/text_category/printed/3067.png,hüznun,0.261
+syntetic-turkish-dataset/benchmark/text_category/printed/3113.png,alisverisinde,0.258
+syntetic-turkish-dataset/benchmark/text_category/printed/3188.png,saldirdi,0.258
+syntetic-turkish-dataset/benchmark/text_category/printed/3132.png,ordugabina,0.259
+syntetic-turkish-dataset/benchmark/text_category/printed/3173.png,arsivi,0.203
+syntetic-turkish-dataset/benchmark/text_category/printed/3072.png,meydaninda,0.258
+syntetic-turkish-dataset/benchmark/text_category/printed/3178.png,simdiden,0.23
+syntetic-turkish-dataset/benchmark/text_category/printed/3100.png,istemislerdi,0.261
+syntetic-turkish-dataset/benchmark/text_category/printed/3153.png,mülayim,0.259
+syntetic-turkish-dataset/benchmark/text_category/printed/3097.png,yaydırldı,0.313
+syntetic-turkish-dataset/benchmark/text_category/printed/3183.png,dinlemistik,0.26
+syntetic-turkish-dataset/benchmark/text_category/printed/3193.png,insanligin,0.257
+syntetic-turkish-dataset/benchmark/text_category/printed/3207.png,çift,0.202
+syntetic-turkish-dataset/benchmark/text_category/printed/3282.png,kabulündeki,0.258
+syntetic-turkish-dataset/benchmark/text_category/printed/3348.png,sirasina,0.229
+syntetic-turkish-dataset/benchmark/text_category/printed/3387.png,nüfuzunu,0.288
+syntetic-turkish-dataset/benchmark/text_category/printed/3397.png,tarafindan,0.26
+syntetic-turkish-dataset/benchmark/text_category/printed/3326.png,dünyanin,0.26
+syntetic-turkish-dataset/benchmark/text_category/printed/3209.png,uzamasina,0.237
+syntetic-turkish-dataset/benchmark/text_category/printed/3394.png,sevdasina,0.267
+syntetic-turkish-dataset/benchmark/text_category/printed/3231.png,dostlugumuza,0.292
+syntetic-turkish-dataset/benchmark/text_category/printed/3355.png,rüçhan,0.265
+syntetic-turkish-dataset/benchmark/text_category/printed/3222.png,esitlik,0.235
+syntetic-turkish-dataset/benchmark/text_category/printed/3271.png,ultimatumunu,0.261
+syntetic-turkish-dataset/benchmark/text_category/printed/3347.png,şahsiyetler,0.291
+syntetic-turkish-dataset/benchmark/text_category/printed/3247.png,düzce,0.231
+syntetic-turkish-dataset/benchmark/text_category/printed/3253.png,evladi,0.236
+syntetic-turkish-dataset/benchmark/text_category/printed/3369.png,kullanim,0.236
+syntetic-turkish-dataset/benchmark/text_category/printed/3245.png,aydinlatmak,0.268
+syntetic-turkish-dataset/benchmark/text_category/printed/3232.png,güç,0.236
+syntetic-turkish-dataset/benchmark/text_category/printed/3216.png,ibtiyagclar,0.26
+syntetic-turkish-dataset/benchmark/text_category/printed/3219.png,buyuracaklardir,0.345
+syntetic-turkish-dataset/benchmark/text_category/printed/3263.png,mensuplarinin,0.289
+syntetic-turkish-dataset/benchmark/text_category/printed/3311.png,yikilmis,0.259
+syntetic-turkish-dataset/benchmark/text_category/printed/3372.png,nispetsizliginin,0.317
+syntetic-turkish-dataset/benchmark/text_category/printed/3327.png,kaydi,0.23
+syntetic-turkish-dataset/benchmark/text_category/printed/3322.png,müsebbip,0.287
+syntetic-turkish-dataset/benchmark/text_category/printed/3366.png,vasfi,0.2
+syntetic-turkish-dataset/benchmark/text_category/printed/3304.png,yardimini,0.23
+syntetic-turkish-dataset/benchmark/text_category/printed/3395.png,ödeyemeyecek,0.345
+syntetic-turkish-dataset/benchmark/text_category/printed/3243.png,eglencesinde,0.259
+syntetic-turkish-dataset/benchmark/text_category/printed/3373.png,arsivi,0.201
+syntetic-turkish-dataset/benchmark/text_category/printed/3332.png,ordugahina,0.259
+syntetic-turkish-dataset/benchmark/text_category/printed/3280.png,bogazindan,0.289
+syntetic-turkish-dataset/benchmark/text_category/printed/3278.png,namuslari,0.264
+syntetic-turkish-dataset/benchmark/text_category/printed/3239.png,kabulu,0.241
+syntetic-turkish-dataset/benchmark/text_category/printed/3371.png,küstah,0.273
+syntetic-turkish-dataset/benchmark/text_category/printed/3268.png,topladı,0.241
+syntetic-turkish-dataset/benchmark/text_category/printed/3391.png,iyiligin,0.238
+syntetic-turkish-dataset/benchmark/text_category/printed/3376.png,baslilar,0.233
+syntetic-turkish-dataset/benchmark/text_category/printed/3218.png,uzunlugunda,0.263
+syntetic-turkish-dataset/benchmark/text_category/printed/3237.png,sultanlarin,0.261
+syntetic-turkish-dataset/benchmark/text_category/printed/3994.png,menderes,0.233
+syntetic-turkish-dataset/benchmark/text_category/printed/3897.png,kaburga,0.262
+syntetic-turkish-dataset/benchmark/text_category/printed/3929.png,anlayamayarak,0.287
+syntetic-turkish-dataset/benchmark/text_category/printed/3916.png,muafiyetten,0.257
+syntetic-turkish-dataset/benchmark/text_category/printed/3814.png,vaatlerine,0.262
+syntetic-turkish-dataset/benchmark/text_category/printed/3824.png,kalikratya,0.26
+syntetic-turkish-dataset/benchmark/text_category/printed/3901.png,parlamentosu,0.289
+syntetic-turkish-dataset/benchmark/text_category/printed/3829.png,paraph,0.203
+syntetic-turkish-dataset/benchmark/text_category/printed/3927.png,tbmm,0.202
+syntetic-turkish-dataset/benchmark/text_category/printed/3950.png,muhtemem,0.259
+syntetic-turkish-dataset/benchmark/text_category/printed/3988.png,hurda,0.205
+syntetic-turkish-dataset/benchmark/text_category/printed/3863.png,milette,0.231
+syntetic-turkish-dataset/benchmark/text_category/printed/3962.png,kendiliklerinden,0.29
+syntetic-turkish-dataset/benchmark/text_category/printed/3817.png,ezilir,0.23
+syntetic-turkish-dataset/benchmark/text_category/printed/3805.png,kutsal,0.23
+syntetic-turkish-dataset/benchmark/text_category/printed/3986.png,meslekleryle,0.286
+syntetic-turkish-dataset/benchmark/text_category/printed/3837.png,halil,0.212
+syntetic-turkish-dataset/benchmark/text_category/printed/3976.png,direktifle,0.26
+syntetic-turkish-dataset/benchmark/text_category/printed/3991.png,sima,0.201
+syntetic-turkish-dataset/benchmark/text_category/printed/3872.png,kararname,0.231
+syntetic-turkish-dataset/benchmark/text_category/printed/3851.png,curzon,0.203
+syntetic-turkish-dataset/benchmark/text_category/printed/3801.png,panik,0.201
+syntetic-turkish-dataset/benchmark/text_category/printed/3972.png,teragat,0.229
+syntetic-turkish-dataset/benchmark/text_category/printed/3839.png,vukuunun,0.259
+syntetic-turkish-dataset/benchmark/text_category/printed/3855.png,indirildikten,0.286
+syntetic-turkish-dataset/benchmark/text_category/printed/3880.png,karbir,0.23
+syntetic-turkish-dataset/benchmark/text_category/printed/3920.png,fahimanelerini,0.288
+syntetic-turkish-dataset/benchmark/text_category/printed/3934.png,telgrafnamelerinde,0.288
+syntetic-turkish-dataset/benchmark/text_category/printed/3809.png,gediktir,0.23
+syntetic-turkish-dataset/benchmark/text_category/printed/3883.png,telef,0.228
+syntetic-turkish-dataset/benchmark/text_category/printed/3856.png,ahmet,0.2
+syntetic-turkish-dataset/benchmark/text_category/printed/3849.png,uymayan,0.232
+syntetic-turkish-dataset/benchmark/text_category/printed/3868.png,lehimizde,0.26
+syntetic-turkish-dataset/benchmark/text_category/printed/3844.png,takviyelerine,0.288
+syntetic-turkish-dataset/benchmark/text_category/printed/3887.png,benden,0.208
+syntetic-turkish-dataset/benchmark/text_category/printed/3807.png,korkulur,0.265
+syntetic-turkish-dataset/benchmark/text_category/printed/3806.png,kar,0.175
+syntetic-turkish-dataset/benchmark/text_category/printed/3853.png,sizinle,0.23
+syntetic-turkish-dataset/benchmark/text_category/printed/3902.png,halis,0.201
+syntetic-turkish-dataset/benchmark/text_category/printed/3910.png,deniyor,0.229
+syntetic-turkish-dataset/benchmark/text_category/printed/3681.png,tereddüdüne,0.285
+syntetic-turkish-dataset/benchmark/text_category/printed/3710.png,erbabindan,0.257
+syntetic-turkish-dataset/benchmark/text_category/printed/3689.png,kainatin,0.229
+syntetic-turkish-dataset/benchmark/text_category/printed/3796.png,kasim,0.205
+syntetic-turkish-dataset/benchmark/text_category/printed/3670.png,müjde,0.263
+syntetic-turkish-dataset/benchmark/text_category/printed/3749.png,asir,0.204
+syntetic-turkish-dataset/benchmark/text_category/printed/3679.png,persembe,0.23
+syntetic-turkish-dataset/benchmark/text_category/printed/3645.png,istibdadindan,0.289
+syntetic-turkish-dataset/benchmark/text_category/printed/3638.png,ortaklik,0.23
+syntetic-turkish-dataset/benchmark/text_category/printed/3724.png,firkalari,0.257
+syntetic-turkish-dataset/benchmark/text_category/printed/3722.png,ağlamak,0.257
+syntetic-turkish-dataset/benchmark/text_category/printed/3711.png,besi,0.204
+syntetic-turkish-dataset/benchmark/text_category/printed/3731.png,kisiyi,0.257
+syntetic-turkish-dataset/benchmark/text_category/printed/3779.png,münasip,0.261
+syntetic-turkish-dataset/benchmark/text_category/printed/3756.png,agritan,0.235
+syntetic-turkish-dataset/benchmark/text_category/printed/3686.png,kanindaki,0.235
+syntetic-turkish-dataset/benchmark/text_category/printed/3747.png,Atoo,0.235
+syntetic-turkish-dataset/benchmark/text_category/printed/3620.png,banşlar,0.229
+syntetic-turkish-dataset/benchmark/text_category/printed/3706.png,müsterihim,0.287
+syntetic-turkish-dataset/benchmark/text_category/printed/3734.png,bölündüğü,0.316
+syntetic-turkish-dataset/benchmark/text_category/printed/3751.png,genelletim,0.259
+syntetic-turkish-dataset/benchmark/text_category/printed/3787.png,söylendigi,0.288
+syntetic-turkish-dataset/benchmark/text_category/printed/3605.png,yardima,0.207
+syntetic-turkish-dataset/benchmark/text_category/printed/3762.png,künye,0.263
+syntetic-turkish-dataset/benchmark/text_category/printed/3667.png,eleştirilerimden,0.317
+syntetic-turkish-dataset/benchmark/text_category/printed/3774.png,komisyonlarin,0.288
+syntetic-turkish-dataset/benchmark/text_category/printed/3662.png,tahsisatu,0.261
+syntetic-turkish-dataset/benchmark/text_category/printed/3752.png,anlasmalarla,0.265
+syntetic-turkish-dataset/benchmark/text_category/printed/3740.png,hicbir,0.208
+syntetic-turkish-dataset/benchmark/text_category/printed/3615.png,çikarmadikça,0.315
+syntetic-turkish-dataset/benchmark/text_category/printed/3616.png,vasiflarini,0.259
+syntetic-turkish-dataset/benchmark/text_category/printed/3770.png,omuzlarinda,0.262
+syntetic-turkish-dataset/benchmark/text_category/printed/3714.png,cenahim,0.203
+syntetic-turkish-dataset/benchmark/text_category/printed/3653.png,getrilmisti.,0.287
+syntetic-turkish-dataset/benchmark/text_category/printed/3707.png,fenaliklara,0.288
+syntetic-turkish-dataset/benchmark/text_category/printed/3766.png,sürgüne,0.288
+syntetic-turkish-dataset/benchmark/text_category/printed/3656.png,kalinmis,0.231
+syntetic-turkish-dataset/benchmark/text_category/printed/3697.png,yanlarindan,0.258
+syntetic-turkish-dataset/benchmark/text_category/printed/3604.png,yıllana,0.285
+syntetic-turkish-dataset/benchmark/text_category/printed/3748.png,düşürtüyü,0.378
+syntetic-turkish-dataset/benchmark/text_category/printed/4363.png,mütarekenamede,0.314
+syntetic-turkish-dataset/benchmark/text_category/printed/4366.png,kusurlarindan,0.286
+syntetic-turkish-dataset/benchmark/text_category/printed/4311.png,kurtaramayacaktir,0.377
+syntetic-turkish-dataset/benchmark/text_category/printed/4320.png,hemşerilerim,0.29
+syntetic-turkish-dataset/benchmark/text_category/printed/4391.png,amavutluğun,0.317
+syntetic-turkish-dataset/benchmark/text_category/printed/4266.png,açıklanmasina,0.347
+syntetic-turkish-dataset/benchmark/text_category/printed/4375.png,patlatacagi,0.258
+syntetic-turkish-dataset/benchmark/text_category/printed/4294.png,esaslarimiza.,0.315
+syntetic-turkish-dataset/benchmark/text_category/printed/4204.png,kolaylastirici,0.287
+syntetic-turkish-dataset/benchmark/text_category/printed/4348.png,görünmüyörülar,0.402
+syntetic-turkish-dataset/benchmark/text_category/printed/4272.png,inkilapçilarinin,0.317
+syntetic-turkish-dataset/benchmark/text_category/printed/4333.png,baskatipler,0.257
+syntetic-turkish-dataset/benchmark/text_category/printed/4261.png,teşebbüslerine,0.318
+syntetic-turkish-dataset/benchmark/text_category/printed/4299.png,Kaybedilmis.,0.287
+syntetic-turkish-dataset/benchmark/text_category/printed/4255.png,reddolundugunu,0.317
+syntetic-turkish-dataset/benchmark/text_category/printed/4395.png,başaramayacak,0.349
+syntetic-turkish-dataset/benchmark/text_category/printed/4379.png,tamamladiktan,0.315
+syntetic-turkish-dataset/benchmark/text_category/printed/4296.png,bastirilmasi,0.262
+syntetic-turkish-dataset/benchmark/text_category/printed/4267.png,Çikarttiklarn,0.321
+syntetic-turkish-dataset/benchmark/text_category/printed/4264.png,kadinefendi,0.289
+syntetic-turkish-dataset/benchmark/text_category/printed/4278.png,toplantilanna,0.26
+syntetic-turkish-dataset/benchmark/text_category/printed/4381.png,bulunmasindaki,0.291
+syntetic-turkish-dataset/benchmark/text_category/printed/4279.png,uydurulmustu,0.32
+syntetic-turkish-dataset/benchmark/text_category/printed/4206.png,bildirildiginden,0.29
+syntetic-turkish-dataset/benchmark/text_category/printed/4277.png,kapitülasyonlardan,0.375
+syntetic-turkish-dataset/benchmark/text_category/printed/4237.png,intihanndan,0.261
+syntetic-turkish-dataset/benchmark/text_category/printed/4208.png,karargahinin,0.259
+syntetic-turkish-dataset/benchmark/text_category/printed/4399.png,buyurulmasini,0.288
+syntetic-turkish-dataset/benchmark/text_category/printed/4384.png,hasreylemisti.,0.317
+syntetic-turkish-dataset/benchmark/text_category/printed/4244.png,sihhatlerinden,0.29
+syntetic-turkish-dataset/benchmark/text_category/printed/4344.png,asagilayici,0.293
+syntetic-turkish-dataset/benchmark/text_category/printed/4283.png,tecrübesizlikleri,0.361
+syntetic-turkish-dataset/benchmark/text_category/printed/4400.png,müsaadelerden,0.326
+syntetic-turkish-dataset/benchmark/text_category/printed/4378.png,hayvanlar yla,0.288
+syntetic-turkish-dataset/benchmark/text_category/printed/4228.png,dogumlularara,0.289
+syntetic-turkish-dataset/benchmark/text_category/printed/4359.png,dayandirdiginiz,0.287
+syntetic-turkish-dataset/benchmark/text_category/printed/4284.png,müzakerelerimizi,0.315
+syntetic-turkish-dataset/benchmark/text_category/printed/4275.png,iddialarini,0.258
+syntetic-turkish-dataset/benchmark/text_category/printed/4371.png,casuslugunu,0.258
+syntetic-turkish-dataset/benchmark/text_category/printed/4215.png,kontratlarin,0.259
+syntetic-turkish-dataset/benchmark/text_category/printed/4108.png,anlayışını,0.262
+syntetic-turkish-dataset/benchmark/text_category/printed/4138.png,karanlik,0.23
+syntetic-turkish-dataset/benchmark/text_category/printed/4182.png,kog,0.203
+syntetic-turkish-dataset/benchmark/text_category/printed/4188.png,bunlarin,0.258
+syntetic-turkish-dataset/benchmark/text_category/printed/4174.png,güzel,0.229
+syntetic-turkish-dataset/benchmark/text_category/printed/4106.png,iceren,0.2
+syntetic-turkish-dataset/benchmark/text_category/printed/4097.png,evladi,0.229
+syntetic-turkish-dataset/benchmark/text_category/printed/4160.png,saldirarak,0.258
+syntetic-turkish-dataset/benchmark/text_category/printed/4111.png,temerkuz,0.232
+syntetic-turkish-dataset/benchmark/text_category/printed/4122.png,cin,0.173
+syntetic-turkish-dataset/benchmark/text_category/printed/4087.png,Ölgmek,0.26
+syntetic-turkish-dataset/benchmark/text_category/printed/4031.png,kafasi,0.231
+syntetic-turkish-dataset/benchmark/text_category/printed/4050.png,tamamyla,0.258
+syntetic-turkish-dataset/benchmark/text_category/printed/4017.png,cezasindan,0.258
+syntetic-turkish-dataset/benchmark/text_category/printed/4038.png,Ilani.,0.23
+syntetic-turkish-dataset/benchmark/text_category/printed/4156.png,atti,0.173
+syntetic-turkish-dataset/benchmark/text_category/printed/4056.png,ardindayim,0.259
+syntetic-turkish-dataset/benchmark/text_category/printed/4079.png,münasebet,0.258
+syntetic-turkish-dataset/benchmark/text_category/printed/4005.png,dogitm,0.231
+syntetic-turkish-dataset/benchmark/text_category/printed/4146.png,sakin,0.206
+syntetic-turkish-dataset/benchmark/text_category/printed/4002.png,izahını,0.232
+syntetic-turkish-dataset/benchmark/text_category/printed/4074.png,hakkıyla,0.26
+syntetic-turkish-dataset/benchmark/text_category/printed/4143.png,Asker1201,0.257
+syntetic-turkish-dataset/benchmark/text_category/printed/4072.png,ilhakuna,0.227
+syntetic-turkish-dataset/benchmark/text_category/printed/4123.png,zevati,0.228
+syntetic-turkish-dataset/benchmark/text_category/printed/4148.png,kürtler,0.259
+syntetic-turkish-dataset/benchmark/text_category/printed/4121.png,varacagini.,0.26
+syntetic-turkish-dataset/benchmark/text_category/printed/4028.png,sozcukleri,0.29
+syntetic-turkish-dataset/benchmark/text_category/printed/4125.png,kaçınıyor,0.264
+syntetic-turkish-dataset/benchmark/text_category/printed/4137.png,kizilay,0.262
+syntetic-turkish-dataset/benchmark/text_category/printed/4100.png,müarasinda,0.263
+syntetic-turkish-dataset/benchmark/text_category/printed/4007.png,alçak,0.232
+syntetic-turkish-dataset/benchmark/text_category/printed/4093.png,bakırsa,0.26
+syntetic-turkish-dataset/benchmark/text_category/printed/4116.png,orantili,0.229
+syntetic-turkish-dataset/benchmark/text_category/printed/4155.png,odasinda,0.231
+syntetic-turkish-dataset/benchmark/text_category/printed/4082.png,alınir,0.23
+syntetic-turkish-dataset/benchmark/text_category/printed/4113.png,arkadasça,0.231
+syntetic-turkish-dataset/benchmark/text_category/printed/4019.png,teftisine,0.264
+syntetic-turkish-dataset/benchmark/text_category/printed/4184.png,hatlari,0.231
+syntetic-turkish-dataset/benchmark/text_category/printed/4016.png,erbabindan,0.259
+syntetic-turkish-dataset/benchmark/text_category/scene/6458.png,INGLIZ MÜNİPLERİ CTEMİYETTİ İstanbul'dan çeşitli maksatarlar,1.052
+syntetic-turkish-dataset/benchmark/text_category/scene/6475.png,Sırasi gelince bu konuda da bazi.,0.499
+syntetic-turkish-dataset/benchmark/text_category/scene/6587.png,23 Mayıs 1919'da Ankara'da bulunan 20'ncı,0.671
+syntetic-turkish-dataset/benchmark/text_category/scene/6413.png,"Adana ili Fransızlar; Urfa, Maras, Ayintap",0.602
+syntetic-turkish-dataset/benchmark/text_category/scene/6551.png,Yeniden bir devletin huzurunda hollayıcığına kabul etmek.,0.833
+syntetic-turkish-dataset/benchmark/text_category/scene/6539.png,"BENIM KARARIM ELEMDILER, BEN BU KARARAM.",0.715
+syntetic-turkish-dataset/benchmark/text_category/scene/6525.png,Diger onemli bir noktayi da belirtmek.,0.599
+syntetic-turkish-dataset/benchmark/text_category/scene/6552.png,"6 Halbuki Turk'Un hasiyeti, gururu ve",0.576
+syntetic-turkish-dataset/benchmark/text_category/scene/6420.png,"Mavri Mira Hey'ni tarafin, olan yönetilen Rum.",0.682
+syntetic-turkish-dataset/benchmark/text_category/scene/6523.png,Ne 3 porsiyon ve 3 adet sahsiz kurtulmus anlamini kavramak.,0.919
+syntetic-turkish-dataset/benchmark/text_category/scene/6443.png,Doğu Hilerindeki Muslimler unsurlerin haklarını savunmak.,0.731
+syntetic-turkish-dataset/benchmark/text_category/scene/6424.png,BUNLARA KARSI DUSONULEN KURTULUS GARELERI DURUMU,0.897
+syntetic-turkish-dataset/benchmark/text_category/scene/6451.png,Merkezi İstanbul'da olan Trabzon ve Havalisi,0.578
+syntetic-turkish-dataset/benchmark/text_category/scene/6492.png,Komutani Kazim Karabekir Pasaydi.,0.52
+syntetic-turkish-dataset/benchmark/text_category/scene/6549.png,"Bu ilke, ancak tam istiklale sahip.",0.523
+syntetic-turkish-dataset/benchmark/text_category/scene/6562.png,"Osmanli Hükumetine, Osmanli padishahna ve Muslimların.",0.747
+syntetic-turkish-dataset/benchmark/text_category/scene/6482.png,"Izmite bulunan 1inci Turken, Istanbul'daki 25'incil.",0.795
+syntetic-turkish-dataset/benchmark/text_category/scene/6444.png,Hadisat gazetesinin çikarma hakkini ahyor.,0.632
+syntetic-turkish-dataset/benchmark/text_category/scene/6487.png,Dogrudan dogruya emrim altinda olmak uzeri.,0.642
+syntetic-turkish-dataset/benchmark/text_category/scene/6477.png,vayda dozu'da baslari kurakustu.,0.612
+syntetic-turkish-dataset/benchmark/text_category/scene/6517.png,"Ordu, ismi var cismi yok bir.",0.524
+syntetic-turkish-dataset/benchmark/text_category/scene/6464.png,Dernekte Rahip Frew (Fru) gibi ingiliziz.,0.671
+syntetic-turkish-dataset/benchmark/text_category/scene/6415.png,Her tarafına yabancı subay ve memurlar.,0.608
+syntetic-turkish-dataset/benchmark/text_category/scene/6457.png,Hemleketin hemen her tarafında itilaf ve,0.553
+syntetic-turkish-dataset/benchmark/text_category/scene/6417.png,"Bundan başka, memleketin her tarafında Hristiyan",0.701
+syntetic-turkish-dataset/benchmark/text_category/scene/6504.png,"Hemen ifade etmeliyin ki, onlar bu.",0.554
+syntetic-turkish-dataset/benchmark/text_category/scene/6569.png,Yapilan Milli Mücadele disan gelen saldiriya,0.701
+syntetic-turkish-dataset/benchmark/text_category/scene/6518.png,"Komutanlar ve subaylar, I.",0.451
+syntetic-turkish-dataset/benchmark/text_category/scene/6520.png,Burada pek önemli olan bir noktay.,0.58
+syntetic-turkish-dataset/benchmark/text_category/scene/6466.png,Biri ağrı yönü ve usulüne uygun.,0.671
+syntetic-turkish-dataset/benchmark/text_category/scene/6425.png,Bu düşünce ile yapılan teşebbüsler birtakım.,0.756
+syntetic-turkish-dataset/benchmark/text_category/scene/6434.png,"Bunlar, Osmanli Devleti'nin çökeceğini çok kuvvetli.",0.871
+syntetic-turkish-dataset/benchmark/text_category/scene/6528.png,Koskoca Almanya Avusturya,0.466
+syntetic-turkish-dataset/benchmark/text_category/scene/6553.png,Boyle bir millet esir yasamaktansa yok.,0.579
+syntetic-turkish-dataset/benchmark/text_category/scene/6421.png,"Emeni Patriği Zazen Eftendi de, Mavni.",0.615
+syntetic-turkish-dataset/benchmark/text_category/scene/6405.png,Milleti ve memleketi I.,0.41
+syntetic-turkish-dataset/benchmark/text_category/scene/6455.png,Bu dernegin amaci yabanci devletlernimimayes.,0.671
+syntetic-turkish-dataset/benchmark/text_category/scene/6591.png,Bundan und etigim söyledi.,0.489
+syntetic-turkish-dataset/benchmark/text_category/scene/6581.png,7 MİLLİ SIR BU SON SÖZLERIMI,0.581
+syntetic-turkish-dataset/benchmark/text_category/scene/6547.png,"O da milin haki'miyete dayanan, kayitsiz.",0.638
+syntetic-turkish-dataset/benchmark/text_category/scene/6234.png,Üzolduguncu.,0.374
+syntetic-turkish-dataset/benchmark/text_category/scene/6284.png,basina,0.211
+syntetic-turkish-dataset/benchmark/text_category/scene/6297.png,çekilmeniz,0.293
+syntetic-turkish-dataset/benchmark/text_category/scene/6216.png,hazirlandigini,0.321
+syntetic-turkish-dataset/benchmark/text_category/scene/6226.png,geçmek için,0.296
+syntetic-turkish-dataset/benchmark/text_category/scene/6373.png,olamiyordu.,0.323
+syntetic-turkish-dataset/benchmark/text_category/scene/6355.png,yakinlarinda,0.269
+syntetic-turkish-dataset/benchmark/text_category/scene/6286.png,sarsilmamistir.,0.357
+syntetic-turkish-dataset/benchmark/text_category/scene/6302.png,yüce,0.242
+syntetic-turkish-dataset/benchmark/text_category/scene/6332.png,içindeyim,0.297
+syntetic-turkish-dataset/benchmark/text_category/scene/6247.png,anlatniz,0.271
+syntetic-turkish-dataset/benchmark/text_category/scene/6221.png,Çaresinin,0.233
+syntetic-turkish-dataset/benchmark/text_category/scene/6212.png,istanbul'da,0.293
+syntetic-turkish-dataset/benchmark/text_category/scene/6229.png,doğrudan,0.266
+syntetic-turkish-dataset/benchmark/text_category/scene/6334.png,bazi,0.205
+syntetic-turkish-dataset/benchmark/text_category/scene/6276.png,Kaymakami.,0.268
+syntetic-turkish-dataset/benchmark/text_category/scene/6331.png,Gelismesinin.,0.329
+syntetic-turkish-dataset/benchmark/text_category/scene/6238.png,Ispatlamadikca.,0.359
+syntetic-turkish-dataset/benchmark/text_category/scene/6309.png,sorusturma,0.292
+syntetic-turkish-dataset/benchmark/text_category/scene/6362.png,Çetelerin,0.263
+syntetic-turkish-dataset/benchmark/text_category/scene/6348.png,bütünlüğü,0.35
+syntetic-turkish-dataset/benchmark/text_category/scene/6264.png,Çalışmak,0.262
+syntetic-turkish-dataset/benchmark/text_category/scene/6217.png,adima,0.201
+syntetic-turkish-dataset/benchmark/text_category/scene/6321.png,etrafindaki.,0.289
+syntetic-turkish-dataset/benchmark/text_category/scene/6384.png,Cüretlerini.,0.324
+syntetic-turkish-dataset/benchmark/text_category/scene/6305.png,tasimayan.,0.258
+syntetic-turkish-dataset/benchmark/text_category/scene/6363.png,kaldirilmasina,0.317
+syntetic-turkish-dataset/benchmark/text_category/scene/6392.png,görüse bilecektir.,0.413
+syntetic-turkish-dataset/benchmark/text_category/scene/6260.png,aslim,0.202
+syntetic-turkish-dataset/benchmark/text_category/scene/6245.png,adina,0.202
+syntetic-turkish-dataset/benchmark/text_category/scene/6313.png,sey,0.173
+syntetic-turkish-dataset/benchmark/text_category/scene/6277.png,yapilmist1,0.298
+syntetic-turkish-dataset/benchmark/text_category/scene/6257.png,goz,0.203
+syntetic-turkish-dataset/benchmark/text_category/scene/6344.png,kapandi,0.201
+syntetic-turkish-dataset/benchmark/text_category/scene/6327.png,Çukmış.,0.289
+syntetic-turkish-dataset/benchmark/text_category/scene/6290.png,Galatali.,0.259
+syntetic-turkish-dataset/benchmark/text_category/scene/6322.png,düşüneceğine,0.373
+syntetic-turkish-dataset/benchmark/text_category/scene/6271.png,gerekinde,0.23
+syntetic-turkish-dataset/benchmark/text_category/scene/6223.png,icin,0.203
+syntetic-turkish-dataset/benchmark/text_category/scene/6361.png,Öteden,0.231
+syntetic-turkish-dataset/benchmark/text_category/scene/4552.png,düşünülmüştü,0.405
+syntetic-turkish-dataset/benchmark/text_category/scene/4597.png,sunlan,0.202
+syntetic-turkish-dataset/benchmark/text_category/scene/4484.png,Ankaralilar,0.259
+syntetic-turkish-dataset/benchmark/text_category/scene/4548.png,olmadigin,0.231
+syntetic-turkish-dataset/benchmark/text_category/scene/4420.png,olacaklarin,0.287
+syntetic-turkish-dataset/benchmark/text_category/scene/4424.png,Basindaki,0.228
+syntetic-turkish-dataset/benchmark/text_category/scene/4475.png,binicegim,0.259
+syntetic-turkish-dataset/benchmark/text_category/scene/4533.png,soyluyorum,0.257
+syntetic-turkish-dataset/benchmark/text_category/scene/4476.png,seçilerek,0.271
+syntetic-turkish-dataset/benchmark/text_category/scene/4442.png,üyeligin,0.231
+syntetic-turkish-dataset/benchmark/text_category/scene/4558.png,Baskan1.,0.26
+syntetic-turkish-dataset/benchmark/text_category/scene/4419.png,olacaklarinun,0.323
+syntetic-turkish-dataset/benchmark/text_category/scene/4466.png,görevlendirip,0.35
+syntetic-turkish-dataset/benchmark/text_category/scene/4580.png,Isarete.,0.263
+syntetic-turkish-dataset/benchmark/text_category/scene/4408.png,Limanarina.,0.29
+syntetic-turkish-dataset/benchmark/text_category/scene/4584.png,yörelerde,0.259
+syntetic-turkish-dataset/benchmark/text_category/scene/4599.png,kalmadigini,0.302
+syntetic-turkish-dataset/benchmark/text_category/scene/4436.png,aydinlatmasi,0.3
+syntetic-turkish-dataset/benchmark/text_category/scene/4532.png,sorumluluga,0.318
+syntetic-turkish-dataset/benchmark/text_category/scene/4530.png,yanilmus,0.231
+syntetic-turkish-dataset/benchmark/text_category/scene/4425.png,haftalik,0.231
+syntetic-turkish-dataset/benchmark/text_category/scene/4587.png,calisirken,0.261
+syntetic-turkish-dataset/benchmark/text_category/scene/4422.png,istediginizdir.,0.288
+syntetic-turkish-dataset/benchmark/text_category/scene/4592.png,denilmistir,0.261
+syntetic-turkish-dataset/benchmark/text_category/scene/4524.png,hakkıdır,0.289
+syntetic-turkish-dataset/benchmark/text_category/scene/4417.png,durumlaryla,0.293
+syntetic-turkish-dataset/benchmark/text_category/scene/4566.png,tutmamayı,0.319
+syntetic-turkish-dataset/benchmark/text_category/scene/4583.png,ncamiza,0.229
+syntetic-turkish-dataset/benchmark/text_category/scene/4526.png,kismas,0.231
+syntetic-turkish-dataset/benchmark/text_category/scene/4449.png,getirecegimizi.,0.349
+syntetic-turkish-dataset/benchmark/text_category/scene/4479.png,Günlerden,0.261
+syntetic-turkish-dataset/benchmark/text_category/scene/4443.png,isbasinda.,0.258
+syntetic-turkish-dataset/benchmark/text_category/scene/4567.png,Dört,0.202
+syntetic-turkish-dataset/benchmark/text_category/scene/4528.png,Aziz,0.204
+syntetic-turkish-dataset/benchmark/text_category/scene/4454.png,geçerken,0.261
+syntetic-turkish-dataset/benchmark/text_category/scene/4473.png,sekilde,0.232
+syntetic-turkish-dataset/benchmark/text_category/scene/4579.png,ILLERI,0.231
+syntetic-turkish-dataset/benchmark/text_category/scene/4448.png,Rizalarini,0.259
+syntetic-turkish-dataset/benchmark/text_category/scene/4514.png,cercevesinde,0.261
+syntetic-turkish-dataset/benchmark/text_category/scene/4557.png,Hükümetin.,0.318
+syntetic-turkish-dataset/benchmark/text_category/scene/4694.png,gormeleri,0.263
+syntetic-turkish-dataset/benchmark/text_category/scene/4676.png,seçilerek,0.261
+syntetic-turkish-dataset/benchmark/text_category/scene/4636.png,aydinlatmasi,0.292
+syntetic-turkish-dataset/benchmark/text_category/scene/4607.png,çekebileceklerinden,0.351
+syntetic-turkish-dataset/benchmark/text_category/scene/4616.png,telasli.,0.262
+syntetic-turkish-dataset/benchmark/text_category/scene/4693.png,açıdan,0.26
+syntetic-turkish-dataset/benchmark/text_category/scene/4688.png,karsilaçmadikca,0.347
+syntetic-turkish-dataset/benchmark/text_category/scene/4774.png,mutasarrifi,0.26
+syntetic-turkish-dataset/benchmark/text_category/scene/4712.png,gösterdik,0.289
+syntetic-turkish-dataset/benchmark/text_category/scene/4606.png,verilisin,0.233
+syntetic-turkish-dataset/benchmark/text_category/scene/4796.png,BEKLIYOR,0.288
+syntetic-turkish-dataset/benchmark/text_category/scene/4632.png,diyorlardi,0.289
+syntetic-turkish-dataset/benchmark/text_category/scene/4714.png,cercevesinde,0.259
+syntetic-turkish-dataset/benchmark/text_category/scene/4659.png,bagladim,0.228
+syntetic-turkish-dataset/benchmark/text_category/scene/4644.png,gelişimin,0.261
+syntetic-turkish-dataset/benchmark/text_category/scene/4769.png,ulasabilmesi,0.303
+syntetic-turkish-dataset/benchmark/text_category/scene/4768.png,konmasi,0.238
+syntetic-turkish-dataset/benchmark/text_category/scene/4689.png,Türkiyeyi.,0.352
+syntetic-turkish-dataset/benchmark/text_category/scene/4763.png,Nasil,0.211
+syntetic-turkish-dataset/benchmark/text_category/scene/4618.png,fedakarın,0.238
+syntetic-turkish-dataset/benchmark/text_category/scene/4637.png,Ayin,0.204
+syntetic-turkish-dataset/benchmark/text_category/scene/4665.png,sağlamış,0.261
+syntetic-turkish-dataset/benchmark/text_category/scene/4614.png,ayakkabilarni,0.264
+syntetic-turkish-dataset/benchmark/text_category/scene/4608.png,limanlarina,0.266
+syntetic-turkish-dataset/benchmark/text_category/scene/4789.png,haklaryla,0.266
+syntetic-turkish-dataset/benchmark/text_category/scene/4800.png,saglandigi,0.267
+syntetic-turkish-dataset/benchmark/text_category/scene/4698.png,etmedigi,0.235
+syntetic-turkish-dataset/benchmark/text_category/scene/4795.png,görüsmelelerdir.,0.381
+syntetic-turkish-dataset/benchmark/text_category/scene/4740.png,göstererek,0.259
+syntetic-turkish-dataset/benchmark/text_category/scene/4751.png,ögreTim,0.23
+syntetic-turkish-dataset/benchmark/text_category/scene/4786.png,dostluguimuzdan,0.347
+syntetic-turkish-dataset/benchmark/text_category/scene/4732.png,sorumluluğa,0.316
+syntetic-turkish-dataset/benchmark/text_category/scene/4776.png,ettigimiz.,0.284
+syntetic-turkish-dataset/benchmark/text_category/scene/4738.png,Ozetini.,0.257
+syntetic-turkish-dataset/benchmark/text_category/scene/4640.png,yil,0.203
+syntetic-turkish-dataset/benchmark/text_category/scene/4672.png,hicbir,0.2
+syntetic-turkish-dataset/benchmark/text_category/scene/4677.png,duyurmayi,0.262
+syntetic-turkish-dataset/benchmark/text_category/scene/4773.png,Çölü.,0.261
+syntetic-turkish-dataset/benchmark/text_category/scene/4749.png,Abdullah'in,0.232
+syntetic-turkish-dataset/benchmark/text_category/scene/4753.png,oldugunu,0.26
+syntetic-turkish-dataset/benchmark/text_category/scene/5045.png,görüşlerime,0.316
+syntetic-turkish-dataset/benchmark/text_category/scene/5184.png,yörelerde,0.259
+syntetic-turkish-dataset/benchmark/text_category/scene/5136.png,çizmemekliğim,0.35
+syntetic-turkish-dataset/benchmark/text_category/scene/5104.png,hattini,0.23
+syntetic-turkish-dataset/benchmark/text_category/scene/5024.png,BASINDAKI,0.257
+syntetic-turkish-dataset/benchmark/text_category/scene/5185.png,buyuracaginiz,0.29
+syntetic-turkish-dataset/benchmark/text_category/scene/5135.png,ÖNEMLI,0.264
+syntetic-turkish-dataset/benchmark/text_category/scene/5084.png,Ankaralilar,0.258
+syntetic-turkish-dataset/benchmark/text_category/scene/5121.png,barışla,0.229
+syntetic-turkish-dataset/benchmark/text_category/scene/5048.png,Rizalarini,0.26
+syntetic-turkish-dataset/benchmark/text_category/scene/5019.png,olacaklarin,0.287
+syntetic-turkish-dataset/benchmark/text_category/scene/5058.png,uzaklasir.,0.288
+syntetic-turkish-dataset/benchmark/text_category/scene/5124.png,hakkıdır,0.288
+syntetic-turkish-dataset/benchmark/text_category/scene/5131.png,hükümetin,0.289
+syntetic-turkish-dataset/benchmark/text_category/scene/5080.png,gonderip,0.231
+syntetic-turkish-dataset/benchmark/text_category/scene/5054.png,geçerken,0.258
+syntetic-turkish-dataset/benchmark/text_category/scene/5130.png,yanilmis,0.229
+syntetic-turkish-dataset/benchmark/text_category/scene/5178.png,Çikarlar,0.257
+syntetic-turkish-dataset/benchmark/text_category/scene/5122.png,Nazir,0.234
+syntetic-turkish-dataset/benchmark/text_category/scene/5020.png,olacakarni,0.292
+syntetic-turkish-dataset/benchmark/text_category/scene/5176.png,etogimiz.,0.297
+syntetic-turkish-dataset/benchmark/text_category/scene/5089.png,Türkiyeyi,0.321
+syntetic-turkish-dataset/benchmark/text_category/scene/5066.png,görevlendirip,0.358
+syntetic-turkish-dataset/benchmark/text_category/scene/5102.png,anlamalari,0.261
+syntetic-turkish-dataset/benchmark/text_category/scene/5160.png,Bulundugu,0.232
+syntetic-turkish-dataset/benchmark/text_category/scene/5065.png,sağlamış,0.261
+syntetic-turkish-dataset/benchmark/text_category/scene/5086.png,zanni,0.205
+syntetic-turkish-dataset/benchmark/text_category/scene/5199.png,kalmadiginl,0.291
+syntetic-turkish-dataset/benchmark/text_category/scene/5187.png,çalisirken,0.262
+syntetic-turkish-dataset/benchmark/text_category/scene/5149.png,Abdullah'in,0.235
+syntetic-turkish-dataset/benchmark/text_category/scene/5128.png,AZİZ,0.235
+syntetic-turkish-dataset/benchmark/text_category/scene/5049.png,getirecegimizi,0.326
+syntetic-turkish-dataset/benchmark/text_category/scene/5034.png,ESASIYE,0.234
+syntetic-turkish-dataset/benchmark/text_category/scene/5050.png,Ümidimizi,0.263
+syntetic-turkish-dataset/benchmark/text_category/scene/5005.png,okutturulmamasi,0.348
+syntetic-turkish-dataset/benchmark/text_category/scene/5032.png,diyorlardı,0.32
+syntetic-turkish-dataset/benchmark/text_category/scene/5106.png,köküklerle,0.289
+syntetic-turkish-dataset/benchmark/text_category/scene/5022.png,istediginizdir.,0.29
+syntetic-turkish-dataset/benchmark/text_category/scene/5060.png,lemosimza,0.262
+syntetic-turkish-dataset/benchmark/text_category/scene/5180.png,isarete,0.232
+syntetic-turkish-dataset/benchmark/text_category/scene/4817.png,durumlaryla,0.292
+syntetic-turkish-dataset/benchmark/text_category/scene/4943.png,açkmalarina.,0.347
+syntetic-turkish-dataset/benchmark/text_category/scene/4826.png,yuzdendirir,0.318
+syntetic-turkish-dataset/benchmark/text_category/scene/4834.png,ESASIYE.,0.261
+syntetic-turkish-dataset/benchmark/text_category/scene/4902.png,anmalari,0.234
+syntetic-turkish-dataset/benchmark/text_category/scene/4995.png,görüsmelelerdir.,0.376
+syntetic-turkish-dataset/benchmark/text_category/scene/4994.png,Kuscalı,0.26
+syntetic-turkish-dataset/benchmark/text_category/scene/4922.png,Nazir,0.232
+syntetic-turkish-dataset/benchmark/text_category/scene/4837.png,Ayin,0.203
+syntetic-turkish-dataset/benchmark/text_category/scene/4847.png,gösterdigin den,0.32
+syntetic-turkish-dataset/benchmark/text_category/scene/4903.png,alayinin,0.26
+syntetic-turkish-dataset/benchmark/text_category/scene/4980.png,Isarate.,0.261
+syntetic-turkish-dataset/benchmark/text_category/scene/4961.png,MILLETVEKIL,0.32
+syntetic-turkish-dataset/benchmark/text_category/scene/4854.png,geçerken,0.263
+syntetic-turkish-dataset/benchmark/text_category/scene/4989.png,haki kızıla,0.32
+syntetic-turkish-dataset/benchmark/text_category/scene/4838.png,basti,0.206
+syntetic-turkish-dataset/benchmark/text_category/scene/4824.png,BASINDAKI,0.259
+syntetic-turkish-dataset/benchmark/text_category/scene/4938.png,Özetini,0.232
+syntetic-turkish-dataset/benchmark/text_category/scene/4950.png,ayaklandı,0.26
+syntetic-turkish-dataset/benchmark/text_category/scene/4927.png,Türklerine.,0.319
+syntetic-turkish-dataset/benchmark/text_category/scene/4912.png,gösterdik,0.292
+syntetic-turkish-dataset/benchmark/text_category/scene/4822.png,Extract the Turkish text exactly.,0.344
+syntetic-turkish-dataset/benchmark/text_category/scene/4871.png,tutumuslarir.,0.319
+syntetic-turkish-dataset/benchmark/text_category/scene/4926.png,Klsma,0.23
+syntetic-turkish-dataset/benchmark/text_category/scene/4878.png,DÖNEN.,0.287
+syntetic-turkish-dataset/benchmark/text_category/scene/4986.png,dostlugu muzdan,0.351
+syntetic-turkish-dataset/benchmark/text_category/scene/4819.png,olacaklarin.,0.319
+syntetic-turkish-dataset/benchmark/text_category/scene/4970.png,sartlar,0.232
+syntetic-turkish-dataset/benchmark/text_category/scene/4840.png,"The text in the image is not clear enough for me to accurately transcribe it. The quality of the photo makes it difficult to discern any specific details or characters that might be present. If there's anything else I can help with based on your request, please let me know!",1.807
+syntetic-turkish-dataset/benchmark/text_category/scene/4917.png,verdigim,0.243
+syntetic-turkish-dataset/benchmark/text_category/scene/4812.png,teskilatlanmaya.,0.369
+syntetic-turkish-dataset/benchmark/text_category/scene/4971.png,zabihann,0.273
+syntetic-turkish-dataset/benchmark/text_category/scene/4867.png,yaptırı yorduk,0.357
+syntetic-turkish-dataset/benchmark/text_category/scene/4940.png,göstererek,0.261
+syntetic-turkish-dataset/benchmark/text_category/scene/4905.png,AYRILIGINI,0.289
+syntetic-turkish-dataset/benchmark/text_category/scene/4881.png,Cumhurbaşkanı,0.346
+syntetic-turkish-dataset/benchmark/text_category/scene/4866.png,görevlendirip,0.35
+syntetic-turkish-dataset/benchmark/text_category/scene/4875.png,binecegim.,0.319
+syntetic-turkish-dataset/benchmark/text_category/scene/4885.png,gerek tigini,0.289
+syntetic-turkish-dataset/benchmark/text_category/scene/4914.png,cercevesinde,0.259
+syntetic-turkish-dataset/benchmark/text_category/scene/5271.png,tutmuslaridir.,0.348
+syntetic-turkish-dataset/benchmark/text_category/scene/5283.png,görülürse,0.293
+syntetic-turkish-dataset/benchmark/text_category/scene/5396.png,BEKLIYOR,0.291
+syntetic-turkish-dataset/benchmark/text_category/scene/5367.png,Dört,0.203
+syntetic-turkish-dataset/benchmark/text_category/scene/5276.png,seçilerek,0.261
+syntetic-turkish-dataset/benchmark/text_category/scene/5339.png,bosaltmak.,0.263
+syntetic-turkish-dataset/benchmark/text_category/scene/5314.png,cercevesinde,0.262
+syntetic-turkish-dataset/benchmark/text_category/scene/5213.png,verildiginden,0.261
+syntetic-turkish-dataset/benchmark/text_category/scene/5316.png,bagdastirilamaz,0.354
+syntetic-turkish-dataset/benchmark/text_category/scene/5245.png,görüslerime,0.298
+syntetic-turkish-dataset/benchmark/text_category/scene/5294.png,görmeleri,0.292
+syntetic-turkish-dataset/benchmark/text_category/scene/5253.png,aydinlatmak,0.265
+syntetic-turkish-dataset/benchmark/text_category/scene/5297.png,Örnegini,0.26
+syntetic-turkish-dataset/benchmark/text_category/scene/5313.png,ölcüleri,0.263
+syntetic-turkish-dataset/benchmark/text_category/scene/5336.png,çizmemekliğim,0.347
+syntetic-turkish-dataset/benchmark/text_category/scene/5278.png,DÖNEN,0.265
+syntetic-turkish-dataset/benchmark/text_category/scene/5258.png,uzaklaşır.,0.32
+syntetic-turkish-dataset/benchmark/text_category/scene/5320.png,karsilasmamak,0.318
+syntetic-turkish-dataset/benchmark/text_category/scene/5388.png,güvenerek,0.267
+syntetic-turkish-dataset/benchmark/text_category/scene/5254.png,geçerken,0.267
+syntetic-turkish-dataset/benchmark/text_category/scene/5302.png,anlamalari,0.261
+syntetic-turkish-dataset/benchmark/text_category/scene/5201.png,gececegirl.,0.29
+syntetic-turkish-dataset/benchmark/text_category/scene/5266.png,görevlendirip,0.354
+syntetic-turkish-dataset/benchmark/text_category/scene/5272.png,hicbir,0.208
+syntetic-turkish-dataset/benchmark/text_category/scene/5307.png,egitimim.,0.263
+syntetic-turkish-dataset/benchmark/text_category/scene/5334.png,söyle,0.237
+syntetic-turkish-dataset/benchmark/text_category/scene/5317.png,verdigim,0.24
+syntetic-turkish-dataset/benchmark/text_category/scene/5277.png,duyurmayi,0.266
+syntetic-turkish-dataset/benchmark/text_category/scene/5224.png,BASINDAKI,0.274
+syntetic-turkish-dataset/benchmark/text_category/scene/5375.png,isbinliginden,0.276
+syntetic-turkish-dataset/benchmark/text_category/scene/5318.png,izmirden.,0.294
+syntetic-turkish-dataset/benchmark/text_category/scene/5354.png,beklendigini,0.298
+syntetic-turkish-dataset/benchmark/text_category/scene/5372.png,varmış,0.234
+syntetic-turkish-dataset/benchmark/text_category/scene/5393.png,Bugünlerde,0.265
+syntetic-turkish-dataset/benchmark/text_category/scene/5269.png,kullanmasina.,0.295
+syntetic-turkish-dataset/benchmark/text_category/scene/5234.png,ESASIYE,0.238
+syntetic-turkish-dataset/benchmark/text_category/scene/5343.png,açıkmalarına,0.364
+syntetic-turkish-dataset/benchmark/text_category/scene/5205.png,okutturulmaması,0.364
+syntetic-turkish-dataset/benchmark/text_category/scene/5331.png,hükümetin,0.294
+syntetic-turkish-dataset/benchmark/text_category/scene/5344.png,arasindaki.,0.262
+syntetic-turkish-dataset/benchmark/text_category/scene/5843.png,birbirimizi.,0.298
+syntetic-turkish-dataset/benchmark/text_category/scene/5990.png,toplayabilirse.,0.298
+syntetic-turkish-dataset/benchmark/text_category/scene/5841.png,Kolay,0.209
+syntetic-turkish-dataset/benchmark/text_category/scene/5818.png,Bol,0.176
+syntetic-turkish-dataset/benchmark/text_category/scene/5965.png,Durumda.,0.266
+syntetic-turkish-dataset/benchmark/text_category/scene/5940.png,uygulamada.,0.294
+syntetic-turkish-dataset/benchmark/text_category/scene/5896.png,derhal,0.206
+syntetic-turkish-dataset/benchmark/text_category/scene/5847.png,Emanet.,0.263
+syntetic-turkish-dataset/benchmark/text_category/scene/5964.png,iradenin,0.267
+syntetic-turkish-dataset/benchmark/text_category/scene/5929.png,simdi,0.207
+syntetic-turkish-dataset/benchmark/text_category/scene/5978.png,otomobil,0.241
+syntetic-turkish-dataset/benchmark/text_category/scene/5953.png,Cami,0.205
+syntetic-turkish-dataset/benchmark/text_category/scene/5856.png,gelmezse.,0.295
+syntetic-turkish-dataset/benchmark/text_category/scene/5888.png,Ekrem.,0.234
+syntetic-turkish-dataset/benchmark/text_category/scene/5951.png,oturumu.,0.265
+syntetic-turkish-dataset/benchmark/text_category/scene/5803.png,sundum,0.233
+syntetic-turkish-dataset/benchmark/text_category/scene/5933.png,bul,0.18
+syntetic-turkish-dataset/benchmark/text_category/scene/5932.png,Askeri,0.237
+syntetic-turkish-dataset/benchmark/text_category/scene/5963.png,Oysa,0.229
+syntetic-turkish-dataset/benchmark/text_category/scene/5999.png,kovalar,0.202
+syntetic-turkish-dataset/benchmark/text_category/scene/5912.png,girdi,0.23
+syntetic-turkish-dataset/benchmark/text_category/scene/5833.png,batgeler,0.231
+syntetic-turkish-dataset/benchmark/text_category/scene/5941.png,duyurularlari,0.314
+syntetic-turkish-dataset/benchmark/text_category/scene/5959.png,gerekirdi.,0.293
+syntetic-turkish-dataset/benchmark/text_category/scene/5921.png,yollarla,0.23
+syntetic-turkish-dataset/benchmark/text_category/scene/5901.png,gayretiniz,0.289
+syntetic-turkish-dataset/benchmark/text_category/scene/5869.png,uygun.,0.233
+syntetic-turkish-dataset/benchmark/text_category/scene/5979.png,Kabineye,0.234
+syntetic-turkish-dataset/benchmark/text_category/scene/5895.png,Filistin,0.235
+syntetic-turkish-dataset/benchmark/text_category/scene/5938.png,prensibini.,0.293
+syntetic-turkish-dataset/benchmark/text_category/scene/5925.png,Sonuna,0.205
+syntetic-turkish-dataset/benchmark/text_category/scene/5928.png,kastetmedik,0.289
+syntetic-turkish-dataset/benchmark/text_category/scene/5972.png,latil,0.206
+syntetic-turkish-dataset/benchmark/text_category/scene/5810.png,GRUBUNUN.,0.288
+syntetic-turkish-dataset/benchmark/text_category/scene/5809.png,Suat,0.202
+syntetic-turkish-dataset/benchmark/text_category/scene/5920.png,KONFERANSINA,0.291
+syntetic-turkish-dataset/benchmark/text_category/scene/5917.png,Telgraf,0.236
+syntetic-turkish-dataset/benchmark/text_category/scene/5884.png,getirtlik,0.232
+syntetic-turkish-dataset/benchmark/text_category/scene/5950.png,dikkatle,0.277
+syntetic-turkish-dataset/benchmark/text_category/scene/5980.png,devletlerinden,0.266
+syntetic-turkish-dataset/benchmark/text_category/scene/6187.png,başkalarinin.,0.326
+syntetic-turkish-dataset/benchmark/text_category/scene/6136.png,gecikilmemistir.,0.383
+syntetic-turkish-dataset/benchmark/text_category/scene/6039.png,maksadina.,0.295
+syntetic-turkish-dataset/benchmark/text_category/scene/6195.png,Pasa,0.203
+syntetic-turkish-dataset/benchmark/text_category/scene/6084.png,mesgul.,0.263
+syntetic-turkish-dataset/benchmark/text_category/scene/6066.png,tenkitçiler.,0.295
+syntetic-turkish-dataset/benchmark/text_category/scene/6094.png,saşirtmisti.,0.323
+syntetic-turkish-dataset/benchmark/text_category/scene/6044.png,tutukdandigindan.,0.417
+syntetic-turkish-dataset/benchmark/text_category/scene/6194.png,"The text in the image is not clear enough for me to accurately transcribe it. It appears to be some form of written language, possibly from an old document or book. If you have any additional context or information about the image, I might be able to help further.",1.74
+syntetic-turkish-dataset/benchmark/text_category/scene/6143.png,edecegiz,0.259
+syntetic-turkish-dataset/benchmark/text_category/scene/6199.png,Komutanliginca.,0.32
+syntetic-turkish-dataset/benchmark/text_category/scene/6097.png,silyirmak,0.261
+syntetic-turkish-dataset/benchmark/text_category/scene/6130.png,alinyordu.,0.298
+syntetic-turkish-dataset/benchmark/text_category/scene/6197.png,yikantisindam,0.298
+syntetic-turkish-dataset/benchmark/text_category/scene/6088.png,Çikayim.,0.291
+syntetic-turkish-dataset/benchmark/text_category/scene/6184.png,toplantlarinda.,0.296
+syntetic-turkish-dataset/benchmark/text_category/scene/6135.png,alinmistur.,0.263
+syntetic-turkish-dataset/benchmark/text_category/scene/6175.png,korundugunu,0.26
+syntetic-turkish-dataset/benchmark/text_category/scene/6082.png,hanedanini,0.262
+syntetic-turkish-dataset/benchmark/text_category/scene/6100.png,basvurduk.,0.325
+syntetic-turkish-dataset/benchmark/text_category/scene/6115.png,yarbayliğa,0.317
+syntetic-turkish-dataset/benchmark/text_category/scene/6131.png,tutuklamalan,0.288
+syntetic-turkish-dataset/benchmark/text_category/scene/6168.png,gidisten,0.236
+syntetic-turkish-dataset/benchmark/text_category/scene/6051.png,oldugumu.,0.291
+syntetic-turkish-dataset/benchmark/text_category/scene/6052.png,Bakınız.,0.291
+syntetic-turkish-dataset/benchmark/text_category/scene/6188.png,adamlar yla,0.262
+syntetic-turkish-dataset/benchmark/text_category/scene/6013.png,Bancakli,0.265
+syntetic-turkish-dataset/benchmark/text_category/scene/6106.png,çekinecegini,0.322
+syntetic-turkish-dataset/benchmark/text_category/scene/6086.png,Esraf.,0.231
+syntetic-turkish-dataset/benchmark/text_category/scene/6075.png,mesrulu guna.,0.319
+syntetic-turkish-dataset/benchmark/text_category/scene/6055.png,vermistim.,0.262
+syntetic-turkish-dataset/benchmark/text_category/scene/6085.png,karşı,0.203
+syntetic-turkish-dataset/benchmark/text_category/scene/6095.png,kulagina,0.231
+syntetic-turkish-dataset/benchmark/text_category/scene/6010.png,Başkanidir.,0.323
+syntetic-turkish-dataset/benchmark/text_category/scene/6096.png,karismayiniz.,0.322
+syntetic-turkish-dataset/benchmark/text_category/scene/6126.png,kurlmasindaki,0.289
+syntetic-turkish-dataset/benchmark/text_category/scene/6142.png,söylelemistim.,0.353
+syntetic-turkish-dataset/benchmark/text_category/scene/6145.png,süydü,0.272
+syntetic-turkish-dataset/benchmark/text_category/scene/6196.png,fenyadi.,0.264
+syntetic-turkish-dataset/benchmark/text_category/scene/6092.png,ANLATTIGIM,0.289
+syntetic-turkish-dataset/benchmark/text_category/scene/5560.png,olmadigini,0.265
+syntetic-turkish-dataset/benchmark/text_category/scene/5422.png,kanunlasturlir.,0.321
+syntetic-turkish-dataset/benchmark/text_category/scene/5500.png,olacaklarini.,0.321
+syntetic-turkish-dataset/benchmark/text_category/scene/5536.png,kötüliklerle,0.32
+syntetic-turkish-dataset/benchmark/text_category/scene/5501.png,istediginizdir.,0.289
+syntetic-turkish-dataset/benchmark/text_category/scene/5533.png,sagiracaklarini,0.356
+syntetic-turkish-dataset/benchmark/text_category/scene/5458.png,alindigunin,0.293
+syntetic-turkish-dataset/benchmark/text_category/scene/5410.png,uzuldugunu.,0.319
+syntetic-turkish-dataset/benchmark/text_category/scene/5470.png,görüyorlar,0.317
+syntetic-turkish-dataset/benchmark/text_category/scene/5562.png,düşünülmüştü,0.406
+syntetic-turkish-dataset/benchmark/text_category/scene/5463.png,ugradiginun.,0.294
+syntetic-turkish-dataset/benchmark/text_category/scene/5550.png,soyluyorum.,0.293
+syntetic-turkish-dataset/benchmark/text_category/scene/5517.png,tmasimiza.,0.295
+syntetic-turkish-dataset/benchmark/text_category/scene/5429.png,yapulmusu,0.296
+syntetic-turkish-dataset/benchmark/text_category/scene/5507.png,aydinlatması,0.295
+syntetic-turkish-dataset/benchmark/text_category/scene/5498.png,dunumlanyla.,0.346
+syntetic-turkish-dataset/benchmark/text_category/scene/5435.png,sarsilmamistir.,0.345
+syntetic-turkish-dataset/benchmark/text_category/scene/5438.png,söylediklerine,0.32
+syntetic-turkish-dataset/benchmark/text_category/scene/5597.png,şekeceklermis.,0.346
+syntetic-turkish-dataset/benchmark/text_category/scene/5496.png,ayakkabilarini,0.289
+syntetic-turkish-dataset/benchmark/text_category/scene/5476.png,bogazlardan,0.317
+syntetic-turkish-dataset/benchmark/text_category/scene/5406.png,görülmektedir.,0.377
+syntetic-turkish-dataset/benchmark/text_category/scene/5554.png,programmi,0.204
+syntetic-turkish-dataset/benchmark/text_category/scene/5569.png,mutasarrif1,0.291
+syntetic-turkish-dataset/benchmark/text_category/scene/5488.png,gececegini,0.297
+syntetic-turkish-dataset/benchmark/text_category/scene/5409.png,değistirileceğini,0.376
+syntetic-turkish-dataset/benchmark/text_category/scene/5448.png,mufettisligi.,0.347
+syntetic-turkish-dataset/benchmark/text_category/scene/5565.png,Hükümetin,0.29
+syntetic-turkish-dataset/benchmark/text_category/scene/5475.png,yararlanabilir.,0.317
+syntetic-turkish-dataset/benchmark/text_category/scene/5552.png,kafalarina.,0.29
+syntetic-turkish-dataset/benchmark/text_category/scene/5534.png,anlamalan,0.232
+syntetic-turkish-dataset/benchmark/text_category/scene/5598.png,ugrasanlarin.,0.319
+syntetic-turkish-dataset/benchmark/text_category/scene/5520.png,gorevlendirip,0.316
+syntetic-turkish-dataset/benchmark/text_category/scene/5449.png,basladigundan,0.288
+syntetic-turkish-dataset/benchmark/text_category/scene/5478.png,dayanmakta,0.261
+syntetic-turkish-dataset/benchmark/text_category/scene/5508.png,anlatilarak,0.261
+syntetic-turkish-dataset/benchmark/text_category/scene/5465.png,parçalanmasını.,0.321
+syntetic-turkish-dataset/benchmark/text_category/scene/5600.png,arttirilmasana.,0.347
+syntetic-turkish-dataset/benchmark/text_category/scene/5418.png,direnmislerdir.,0.322
+syntetic-turkish-dataset/benchmark/text_category/scene/5592.png,istedigimiz.,0.301
+syntetic-turkish-dataset/benchmark/text_category/scene/5644.png,edildigi,0.236
+syntetic-turkish-dataset/benchmark/text_category/scene/5685.png,işmelerde,0.293
+syntetic-turkish-dataset/benchmark/text_category/scene/5723.png,haftalik.,0.267
+syntetic-turkish-dataset/benchmark/text_category/scene/5670.png,Komutani.,0.264
+syntetic-turkish-dataset/benchmark/text_category/scene/5704.png,asikardir.,0.299
+syntetic-turkish-dataset/benchmark/text_category/scene/5694.png,On lemek.,0.269
+syntetic-turkish-dataset/benchmark/text_category/scene/5700.png,MILLI,0.234
+syntetic-turkish-dataset/benchmark/text_category/scene/5656.png,olaysiz,0.233
+syntetic-turkish-dataset/benchmark/text_category/scene/5655.png,kesif,0.208
+syntetic-turkish-dataset/benchmark/text_category/scene/5674.png,baska.,0.235
+syntetic-turkish-dataset/benchmark/text_category/scene/5794.png,Ödenekle.,0.289
+syntetic-turkish-dataset/benchmark/text_category/scene/5683.png,tüli,0.232
+syntetic-turkish-dataset/benchmark/text_category/scene/5797.png,Nasıl,0.202
+syntetic-turkish-dataset/benchmark/text_category/scene/5720.png,fedakarnn.,0.289
+syntetic-turkish-dataset/benchmark/text_category/scene/5637.png,ashni,0.202
+syntetic-turkish-dataset/benchmark/text_category/scene/5768.png,etmedigi,0.233
+syntetic-turkish-dataset/benchmark/text_category/scene/5650.png,bakalim,0.234
+syntetic-turkish-dataset/benchmark/text_category/scene/5701.png,dönmesi,0.259
+syntetic-turkish-dataset/benchmark/text_category/scene/5610.png,adima.,0.23
+syntetic-turkish-dataset/benchmark/text_category/scene/5604.png,dernegin,0.231
+syntetic-turkish-dataset/benchmark/text_category/scene/5664.png,Böyle,0.231
+syntetic-turkish-dataset/benchmark/text_category/scene/5711.png,topçeker.,0.26
+syntetic-turkish-dataset/benchmark/text_category/scene/5757.png,görülürse,0.289
+syntetic-turkish-dataset/benchmark/text_category/scene/5638.png,Notanun.,0.263
+syntetic-turkish-dataset/benchmark/text_category/scene/5765.png,görmeleri,0.292
+syntetic-turkish-dataset/benchmark/text_category/scene/5759.png,Suntardi.,0.262
+syntetic-turkish-dataset/benchmark/text_category/scene/5715.png,caresine,0.232
+syntetic-turkish-dataset/benchmark/text_category/scene/5672.png,ÇIKARMA,0.26
+syntetic-turkish-dataset/benchmark/text_category/scene/5660.png,YIKILIS,0.259
+syntetic-turkish-dataset/benchmark/text_category/scene/5626.png,vasitahinim.,0.319
+syntetic-turkish-dataset/benchmark/text_category/scene/5730.png,Ayn.,0.232
+syntetic-turkish-dataset/benchmark/text_category/scene/5608.png,hazurlar,0.262
+syntetic-turkish-dataset/benchmark/text_category/scene/5615.png,Özel.,0.234
+syntetic-turkish-dataset/benchmark/text_category/scene/5781.png,AziZ,0.233
+syntetic-turkish-dataset/benchmark/text_category/scene/5693.png,çekilip,0.259
+syntetic-turkish-dataset/benchmark/text_category/scene/5799.png,sütunlar,0.259
+syntetic-turkish-dataset/benchmark/text_category/scene/5629.png,görülür.,0.29
+syntetic-turkish-dataset/benchmark/text_category/scene/5712.png,Haklar,0.233
+syntetic-turkish-dataset/benchmark/text_category/scene/5642.png,hazamli,0.261
+syntetic-turkish-dataset/benchmark/text_category/scene/5691.png,açmaya,0.263

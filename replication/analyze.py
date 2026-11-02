@@ -1,20 +1,4 @@
-"""Replication of Yılmaz et al. (IJDAR 2026), two levels:
-
-A. Recompute the paper's numbers from the authors' per-image predictions (authors/cer_wer_calculated.json)
-   under three CER variants, and compare with the values quoted in the paper text (results are only
-   shown as bar charts, so the text is the only exact reference):
-     stored     -- the `cer` field saved in the JSON, clipped to 1.0, missing -> 1.0 (authors' aggregation)
-     authors_lc -- the authors' formula (distance / prediction length) after lowercasing, as the paper says
-     nospace    -- the authors' other variant (graphs_lower_trocr.py): lowercase, no whitespace or punctuation,
-                   distance / ground-truth length; this one reproduces the numbers in the paper text
-     ours       -- distance / ground-truth length after NFC + lowercase (src/metrics.py)
-B. Compare our own re-run of TrOCR and PaddleOCR on the stratified sample (results/*.csv) with the authors'
-   predictions for the same images.
-
-Usage:
-    .venv/bin/python replication/analyze.py
-Outputs go to replication/results/.
-"""
+"""Compare the paper's numbers and our re-runs with the authors' per-image predictions."""
 import csv
 import json
 import sys
@@ -24,11 +8,10 @@ import pandas as pd
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent / "src"))
-from metrics import cer, cer_authors, cer_authors_nospace, normalize  # noqa: E402
+from metrics import cer, cer_authors, cer_authors_nospace, normalize
 
 OUT = HERE / "results"
 
-# (model, filter column, filter value, CER quoted in the paper, where)
 PAPER = [
     ("trocr-large-printed", None, None, 0.38, "Sec. 4.2, overall, ranked last"),
     ("claude-3-7-sonnet-20250219", None, None, 0.197, "Sec. 4.2, overall (paper names Claude Sonnet 4)"),
@@ -37,10 +20,9 @@ PAPER = [
     ("gpt4o", "subcategory", "clean", 0.017, "Sec. 4.4, clean images"),
     ("paddleocr", "subcategory", "clean", 0.239, "Sec. 4.4, clean images"),
 ]
-# our result file -> the authors' model key in the JSON; qwen.csv is the 3B model (CPU), so against the authors'
-# 7B it is a reference point only, not a replication
 OUR_MODELS = {"trocr": "trocr-large-printed", "paddle": "paddleocr", "qwen7b": "qwen2.5-vl-7b-instruct",
-              "qwen": "qwen2.5-vl-7b-instruct"}
+              "internvl": "internvl3-8b", "deepseek": "deepseek-vl2-tiny",
+              "phi": "phi-3.5-vision-instruct", "pixtral": "pixtral-12b-2409", "got": "got-ocr2_0"}
 
 
 def load_authors():
@@ -89,7 +71,7 @@ def part_b(df):
     for name, model in OUR_MODELS.items():
         path = OUT / f"{name}.csv"
         if not path.exists() or path.stat().st_size == 0:
-            print(f"  {path.name} missing or empty, run src/run_all_local.sh first")
+            print(f"  {path.name}: no results, skipped")
             continue
         ours = pd.read_csv(path, keep_default_na=False).merge(labels, on="file")
         theirs = df[df.model == model].set_index("key")

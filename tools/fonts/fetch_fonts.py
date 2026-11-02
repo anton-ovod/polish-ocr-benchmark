@@ -1,9 +1,4 @@
-"""Download every Google Fonts family in the Handwriting category (one regular-weight TTF per family).
-
-Usage:
-    python tools/fonts/fetch_fonts.py metadata.json out_dir/
-where metadata.json is https://fonts.google.com/metadata/fonts saved locally.
-"""
+"""Download every Google Fonts Handwriting family; metadata is https://fonts.google.com/metadata/fonts saved locally."""
 import argparse
 import json
 import re
@@ -20,7 +15,6 @@ def file_name(family):
 def fetch(family, out_dir):
     css_url = "https://fonts.googleapis.com/css2?family=" + urllib.parse.quote(family)
     try:
-        # a non-browser user agent makes the CSS API return TTF instead of WOFF2 links
         request = urllib.request.Request(css_url, headers={"User-Agent": "curl/8"})
         css = urllib.request.urlopen(request, timeout=30).read().decode()
         ttf_url = re.search(r"url\((https://[^)]+)\)", css).group(1)

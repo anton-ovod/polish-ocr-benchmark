@@ -1,18 +1,4 @@
-"""Summarise OCR results for the Polish dataset: CSV tables and LaTeX tables for the article.
-
-Reads <data>/labels.csv and every <results>/<model>.csv (columns file, prediction, seconds); a Colab run
-of Qwen only needs to drop qwen.csv into the same folder.
-
-Usage:
-    .venv/bin/python src/summarize.py
-Outputs:
-    polish/results/summary/{per_image,by_cell,overall,effects}.csv
-    docs/article/tables/{overall,cells,effects}.tex
-
-Uncertainty follows the base paper: 95% percentile bootstrap intervals from 1000 resamples of per-image CER.
-An effect is the difference of mean CER between two groups of images (e.g. with vs without Polish letters);
-it is significant when its bootstrap interval excludes zero.
-"""
+"""Summarise OCR results for the Polish dataset: CSV and LaTeX tables."""
 import argparse
 import sys
 import unicodedata
@@ -22,7 +8,7 @@ import numpy as np
 import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).parent))
-from metrics import cer, cer_authors, normalize, wer  # noqa: E402
+from metrics import cer, cer_authors, normalize, wer
 
 ROOT = Path(__file__).resolve().parents[1]
 MODEL_ORDER = ["qwen7b", "qwen", "tesseract", "easyocr", "paddle", "trocr"]
@@ -42,7 +28,6 @@ CELL_ORDER = [
     ("distortion_type", "low_resolution", "niska rozdzielczość"),
 ]
 
-# (label in the article, column, group A, group B): effect = mean CER(A) - mean CER(B)
 EFFECTS = [
     ("polskie znaki", "subcategory", "polish", "non_polish"),
     ("długie słowa", "subcategory", "long_words", "short_words"),
@@ -53,7 +38,7 @@ EFFECTS = [
     ("szum", "subcategory", "noisy", "clean"),
     ("niska rozdzielczość", "subcategory", "low_resolution", "clean"),
 ]
-BOOTSTRAP = 1000  # resamples, as in the base paper
+BOOTSTRAP = 1000
 
 
 def bootstrap_means(values, rng):
@@ -62,24 +47,21 @@ def bootstrap_means(values, rng):
 
 
 def mean_ci(values, rng):
-    """Mean and its 95% percentile bootstrap interval."""
     lo, hi = np.percentile(bootstrap_means(values, rng), [2.5, 97.5])
     return np.mean(values), lo, hi
 
 
 def effect_ci(a, b, rng):
-    """Difference of means and its 95% bootstrap interval; the two groups are resampled independently."""
     lo, hi = np.percentile(bootstrap_means(a, rng) - bootstrap_means(b, rng), [2.5, 97.5])
     return np.mean(a) - np.mean(b), lo, hi
 
 
 def strip_diacritics(text):
-    text = text.replace("ł", "l").replace("Ł", "L")  # ł has no Unicode decomposition
+    text = text.replace("ł", "l").replace("Ł", "L")
     return "".join(c for c in unicodedata.normalize("NFD", text) if not unicodedata.combining(c))
 
 
 def diacritics_only(truth, pred):
-    """The prediction is wrong only because of missing or wrong diacritics."""
     t, p = normalize(truth), normalize(pred)
     return t != p and strip_diacritics(t) == strip_diacritics(p)
 
@@ -141,7 +123,6 @@ def latex_cells(by_cell, models, path):
 
 
 def latex_effects(effects, models, path):
-    """Effect per model; bold when the 95% interval excludes zero."""
     head = " & ".join(MODEL_NAMES.get(m, m) for m in models)
     lines = [r"\begin{tabular}{l" + "r" * len(models) + "}", r"\toprule", f"Czynnik & {head} \\\\", r"\midrule"]
     for label, *_ in EFFECTS:
@@ -194,7 +175,6 @@ def main():
         df.groupby("model")[["cer", "cer_authors", "exact", "seconds"]].mean(),
         ci[["cer_lo", "cer_hi"]],
         sentences.groupby("model").wer.mean().rename("wer_sentences"),
-        # share of wrong predictions that are wrong only because of diacritics
         errors.groupby("model").diacritics_only.mean().rename("diacritics_only_share"),
         df.groupby("model").size().rename("n"),
     ], axis=1).loc[models]

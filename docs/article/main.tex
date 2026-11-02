@@ -178,8 +178,10 @@ Model nie może więc ich zwrócić i~zastępuje je literami podobnymi (np. ,,lu
 ,,ludności'').
 
 \textbf{Odtwarzalność badania bazowego.} Autorzy udostępnili dane, kod i~predykcje dla każdego obrazu.
-Ponowne uruchomienie PaddleOCR na warstwowej próbie 330 obrazów dało predykcje identyczne
-z~opublikowanymi w~99,7\% przypadków, tak samo jak TrOCR. Kod autorów zamiast wzoru~\eqref{eq:cer} liczy
+Ponowne uruchomienie ośmiu otwartych modeli na warstwowej próbie 1650 obrazów dało średni CER różniący się
+od opublikowanych predykcji najwyżej o~0,001, a~w~przypadku Pixtrala o~0,007. Predykcje identyczne
+z~opublikowanymi stanowiły od 90,4\% do 99,9\%, poza Pixtralem (28,3\%). Kod autorów zamiast
+wzoru~\eqref{eq:cer} liczy
 \begin{equation}\label{eq:cer-authors}
   \mathrm{CER}^{\mathrm{kod}}_i = \frac{S_i + D_i + I_i}{|p_i|},
 \end{equation}
