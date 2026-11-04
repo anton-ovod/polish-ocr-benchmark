@@ -1,46 +1,74 @@
 # Notatki do wystąpienia na Lab 4
 
-Około 600 słów, czyli niecałe 5 minut spokojnym tempem. Czasy przy slajdach są orientacyjne.
+Około 550 słów – bezpieczne 4 minuty 20 sekund spokojnym tempem (zostawia 40 sekund buforu przed limitem 5 minut). Czasy przy slajdach są orientacyjne.
 
-## Slajd 1 (15 s)
+## Slajd 1: Tytułowy (15 s)
 
-Omówimy artykuł, który prowadząca zatwierdziła jako bazowy dla naszego projektu: porównanie systemów OCR i modeli wizyjno-językowych w rozpoznawaniu tekstu tureckiego.
+Omówimy artykuł, który wybraliśmy jako bazowy dla naszego projektu: kompleksowe porównanie systemów OCR i modeli wizyjno-językowych w rozpoznawaniu tekstu tureckiego na danych syntetycznych.
 
 ## Slajd 2: Czasopismo i autorzy (30 s)
 
-Artykuł ukazał się w 2026 roku w International Journal on Document Analysis and Recognition, czasopiśmie Springera. Impact Factor wynosi 1,7, a pięcioletni 2,3. Na liście ministerialnej ma 100 punktów, w dyscyplinie informatyka techniczna i telekomunikacja. Autorzy pracują na Konya Food and Agriculture University w Turcji. Dwie osoby z zespołu mają w Scopusie po jednej pracy i indeks Hirscha 0, a dwie osoby nadzorujące badania mają indeksy 5 i 9.
+Artykuł ukazał się w 2026 roku w _International Journal on Document Analysis and Recognition_, czasopiśmie Springera. Impact Factor wynosi 1,7, a pięcioletni 2,3. Na liście ministerialnej ma 100 punktów w dyscyplinie informatyka techniczna i telekomunikacja. Autorzy pracują na Konya Food and Agriculture University w Turcji: dwóch młodszych badaczy z indeksem Hirscha 0 oraz dwaj promotorzy nadzorujący projekt z indeksami 5 i 9.
 
 ## Slajd 3: Cel artykułu (40 s)
 
-Modele OCR i modele wizyjno-językowe uczy się głównie na danych z języków o dużych zasobach, przede wszystkim z angielskiego. Turecki ma mało danych treningowych, siedem własnych liter i długie słowa, bo jest językiem aglutynacyjnym. Wcześniejsze porównania dla tureckiego nie obejmowały modeli wizyjno-językowych i nie było publicznego zbioru z różnymi zniekształceniami. Autorzy stawiają więc cel: pierwsza systematyczna ocena dla tureckiego, z pomiarem wpływu liter, długości słowa, kontekstu, typu tekstu i zniekształceń oraz sprawdzeniem, czy wyniki z danych syntetycznych przenoszą się na prawdziwe zdjęcia.
+Modele wizyjno-językowe i klasyczny OCR trenuje się głównie na językach o wielkich zasobach, przede wszystkim angielskim. Turecki ma mało danych treningowych, siedem liter swoistych i długie słowa wynikające z aglutynacji. Wcześniejsze benchmarki nie obejmowały modeli wizyjno-językowych i brakowało publicznego zbioru z kontrolowanymi zniekształceniami. Autorzy stawiają jasny cel: pierwsza systematyczna ocena OCR i VLM dla tureckiego – pomiar wpływu liter, długości słów, zdań, pisma i zniekształceń oraz sprawdzenie, czy wyniki z syntetyków przekładają się na rzeczywiste zdjęcia.
 
-## Slajd 4: Materiał (45 s)
+## Slajd 4: Materiał: zbiór danych (40 s)
 
-Autorzy zbudowali własny zbiór: po 6600 syntetycznych obrazów z książki „Nutuk” i z tureckiej Wikipedii oraz 90 prawdziwych zdjęć. Tekst występuje w trzech typach: druk, pismo odręczne i tekst w scenie. Na dole widać przykłady. Każdy typ dzieli się na 11 podkategorii po 200 obrazów, w czterech kategoriach: litery tureckie, długość słowa, słowo albo zdanie oraz zniekształcenia. Dla pisma odręcznego użyli 340 fontów, a nie prawdziwego pisma, i wracają do tego w ograniczeniach. Zdjęcia zrobili sami: szyldy, skany i pismo osób z otoczenia.
+Autorzy wygenerowali 13 200 syntetycznych obrazów: po połowie z traktatu politycznego „Nutuk” i z Wikipedii, a do tego zebrali 90 prawdziwych zdjęć. Mamy tu trzy typy tekstu: druk, pismo odręczne z 340 fontów oraz tekst w scenie na tłach COCO. Każdy typ dzieli się na 11 podkategorii w czterech grupach: litery tureckie, długość słowa poniżej i powyżej 10 znaków, słowo lub zdanie oraz pięć rodzajów zniekształceń.
 
-## Slajd 5: Metody (40 s)
+## Slajd 5: Metody: modele i ocena (35 s)
 
-Porównali dziesięć modeli bez douczania: trzy systemy OCR, pięć otwartych modeli wizyjno-językowych i dwa komercyjne przez API. Każdy dostał to samo polecenie, a odpowiedzi z dodatkowym komentarzem powtórzono z ostrzejszym poleceniem, co dotyczyło 0,56% przypadków. Główna miara to błąd znakowy CER, liczony na małych literach i obcięty do 1, a dla zdań także błąd wyrazowy WER. Przedziały ufności pochodzą z bootstrapu. Litery tureckie analizowano osobno, a zgodność zdjęć z danymi syntetycznymi korelacją Spearmana.
+Przetestowano dziesięć modeli bez douczania: trzy silniki OCR, pięć modeli otwartych VLM i dwa komercyjne przez API. Każdy dostał identyczne polecenie wydobycia tekstu. Główna miara to błąd znakowy CER liczony na małych literach i obcięty do 1, a dla zdań dodatkowo błąd wyrazowy WER. Przedziały ufności wyznaczono bootstrapem, a zgodność rankingów na zdjęciach i syntetykach zbadano korelacją Spearmana.
 
-## Slajd 6: Wyniki, porównanie modeli (45 s)
+## Slajd 6: Wyniki: porównanie modeli (40 s)
 
-Najlepsze są GPT-4o i otwarty Qwen2.5-VL, z CER około 0,07-0,08. To wyraźnie mniej niż reszta, a Qwen jest modelem otwartym o 7 miliardach parametrów. Komercyjny model nie gwarantuje wyniku: Claude Sonnet 4 jest piąty, choć na prawdziwych zdjęciach awansuje na trzecie miejsce. TrOCR jest ostatni na obu zbiorach. Niebieskie słupki to dane syntetyczne, pomarańczowe to zdjęcia. Kolejność jest bardzo podobna, korelacja Spearmana wynosi 0,92, więc zbiór syntetyczny dobrze przewiduje wyniki na prawdziwych danych. Na zbiorze z Wikipedii błąd jest średnio o 3% wyższy, a kolejność prawie się nie zmienia.
+Zdecydowanymi liderami są komercyjny GPT-4o i otwarty Qwen2.5-VL 7B z błędem CER na poziomie 0,07–0,08. Otwarty model dorównuje więc rozwiązaniu komercyjnemu. Co ciekawe, Claude Sonnet 4 zajął dopiero piąte miejsce na syntetykach, choć na zdjęciach awansował na trzecie. TrOCR zamyka stawkę. Kluczowy wniosek: kolejność modeli na danych syntetycznych niemal idealnie pokrywa się ze zdjęciami rzeczywistymi – korelacja Spearmana wynosi aż 0,92.
 
-## Slajd 7: Wyniki, co utrudnia odczyt (45 s)
+## Slajd 7: Wyniki: co utrudnia odczyt (40 s)
 
-Ta tabela zbiera wyniki z pięciu rysunków artykułu, ciemniejszy kolor to większy błąd. Litery tureckie pogarszają wynik u dziewięciu modeli z dziesięciu, stabilny jest tylko GPT-4o. Pismo odręczne jest najtrudniejsze u wszystkich, a spośród zniekształceń najbardziej szkodzi niska rozdzielczość. Niespodzianka to długość słowa: dłuższe słowa nie są trudniejsze, więc aglutynacja nie jest głównym problemem. Zdania pomagają siedmiu modelom. Na poziomie pojedynczych liter GPT-4o czyta poprawnie 86-94%, a TrOCR i PaddleOCR prawie żadnej litery tureckiej.
+Wykres podsumowuje wpływ poszczególnych warunków:
 
-## Slajd 8: Wkład własny autorów i elementy nowości (40 s)
+- Litery tureckie pogarszają wynik niemal wszystkich modeli – stabilny jest wyłącznie GPT-4o. Najtrudniejsze są litery ı oraz wielkie İ.
+- Pismo odręczne i niska rozdzielczość sprawiają największą trudność.
+- Zaskoczeniem jest długość słów: dłuższe słowa wcale nie zwiększają błędu, więc aglutynacja nie jest główną przeszkodą.
+- Kontekst całego zdania wyraźnie pomaga modelom wizyjno-językowym.
 
-Na koniec to, co w tym artykule najważniejsze. Wkład własny autorów: sami zbudowali zbiór 13 200 obrazów i zebrali 90 prawdziwych zdjęć, porównali dziesięć modeli w jednym protokole oraz udostępnili dane i kod. Elementy nowości: według autorów to pierwszy systematyczny benchmark OCR i modeli wizyjno-językowych dla tureckiego, uwzględniający zniekształcenia i kontekst. Nowy jest też publiczny zbiór dla trzech typów tekstu, analiza każdej z siedmiu liter tureckich i sprawdzenie, czy wyniki przenoszą się na prawdziwe zdjęcia. Dane są na Zenodo, kod na GitHubie, ale bez części wyników wersji opublikowanej, więc odtwarzalność jest częściowa. Sami uruchomiliśmy ponownie osiem otwartych modeli na 1650 obrazach i średni CER zgadza się z predykcjami autorów.
+## Slajd 8: Wkład autorów, nowości i nasza replikacja (40 s)
 
-## Gdyby padły pytania
+Wkład autorów to budowa pierwszego tak wszechstronnego benchmarku dla tureckiego, publiczny zbiór danych oraz udowodnienie, że dane syntetyczne trafnie przewidują wyniki na zdjęciach.
 
-- Skąd elementy nowości: autorzy wprost wymieniają jako swój wkład (rozdz. 1) pierwszy benchmark uwzględniający zniekształcenia i kontekst oraz nowy, publiczny zbiór razem z 90 zdjęciami. Analizy liter tam nie wymieniają, a sprawdzenie przenoszenia wyników opisują w rozdz. 4.10. Te dwa punkty dopisaliśmy do listy po lekturze całego artykułu.
-- Nasze sprawdzenie: z plików autorów odtwarzamy wszystkie 65 036 zapisanych wartości CER, a osiem otwartych modeli uruchomiliśmy ponownie na 1650 obrazach, po 50 na komórkę (GPU A100, `replication/results/rerun_vs_authors.csv`). Średni CER różni się od predykcji autorów najwyżej o 0,001, a u Pixtrala o 0,007. Predykcje identyczne: 90,4-99,9%, poza Pixtralem (28,3%), który działa z domyślną temperaturą i bez ziarna, więc prawdopodobnie jest losowy. Liczymy CER na małych literach i dzielimy przez długość wzorca, dlatego wartości mogą się różnić od tych z tekstu artykułu na slajdzie 6 (np. TrOCR na tej próbce 0,373, w artykule 0,38).
-- Ograniczenia według autorów (rozdz. 5): pismo odręczne z fontów zamiast prawdziwego, tekst w scenie na losowych tłach COCO, mały zbiór zdjęć, tylko język turecki, brak pełnego strojenia hiperparametrów.
-- Impact Factor: 1,7 i 2,3 to wartości za 2025 rok ze strony czasopisma u Springera. Serwisy takie jak SciJournal podają inne liczby (np. 2,48), ale nie są źródłem oficjalnym.
-- GPT-4o na literach tureckich: tekst artykułu (rozdz. 4.3) podaje 0,055 i 0,065, a rysunek 4 pokazuje 0,066 i 0,065. Różnica bierze się z pustych odpowiedzi, które tekst pomija, a rysunek liczy jako błąd.
-- Długość słowa: tekst (rozdz. 4.6) mówi, że Pixtral radzi sobie wyraźnie lepiej z długimi słowami, a na rysunku 7 jest jedynym modelem z minimalnie gorszym wynikiem na długich (0,334 wobec 0,329).
-- Tekstury papieru: autorzy użyli pięciu rodzajów papieru z serwisu Vecteezy, a folder `textures` w ich repozytorium jest pusty. Same gotowe obrazy z tymi tłami są na Zenodo.
-- Skąd liczby na wykresach: autorzy podają w tekście tylko część wartości, więc resztę odczytaliśmy z grafiki wektorowej rysunków. Dla dziewięciu modeli zgadza się to z plikami autorów co do 0,0001.
+Jako nasz wkład własny zweryfikowaliśmy pełną odtwarzalność tego badania:
+
+1. Przeliczyliśmy wszystkie 65 tysięcy wartości CER z plików autorów – wyniki są w 100% spójne.
+2. Na platformie Google Colab z GPU A100 uruchomiliśmy ponownie osiem otwartych modeli na reprezentatywnej próbce 1650 obrazów.
+3. Uzyskaliśmy zgodność średniego błędu CER z autorami co do 0,001 dla siedmiu modeli i 0,007 dla Pixtrala.
+4. Wykryliśmy też braki w repozytorium autorów: brak logów Claude'a, brak zapisu wyników dla zdjęć i brak plików tekstur papieru.
+
+---
+
+## Gdyby padły pytania (Q&A)
+
+### Modele na Colabie i replikacja (wkład własny)
+
+- **Jakie modele uruchomiliśmy na Colabie?** Wszystkie 8 otwartych modeli autorów: GOT-OCR 2.0, DeepSeek-VL2-tiny, Phi-3.5-Vision, Qwen2.5-VL-7B, InternVL3-8B, Pixtral-12B, TrOCR i PaddleOCR (`colab/run_replication.py`).
+- **Na jakim sprzęcie i w jakim środowisku?** Google Colab z kartą Nvidia A100 (40 GB VRAM). Każdy model miał odizolowane środowisko wirtualne ze ściśle przypiętymi wersjami zależności i rewizjami wag z HuggingFace (`replication/results/runs.json`).
+- **Dlaczego nie uruchomiliśmy GPT-4o i Claude Sonnet 4?** Ponieważ to komercyjne modele dostępne wyłącznie przez płatne, zamknięte API. Dostawcy regularnie podmieniają wagi pod tymi samymi endpointami bez wersjonowania, co wyklucza pełną, niezależną odtwarzalność naukową.
+- **Dlaczego u Pixtrala zgodność predykcji wynosi 28,3%, a CER różni się o 0,007?** Pixtral w kodzie autorów był wywoływany z domyślną temperaturą i bez sztywnego ziarna generatora losowego, co wprowadziło drobną stochastyczność. Pozostałe 7 modeli osiągnęło 90,4–100% identycznych odpowiedzi.
+- **Skąd drobne różnice w liczbach (np. TrOCR 0,373 vs 0,38)?** Autorzy w tekście podają zaokrąglone wartości z całego zbioru 13 200 obrazów; nasza próba to 1650 obrazów (po 50 na każdą z 33 komórek), a CER liczymy po normalizacji do małych liter ze standardowym wzorem Levenshteina.
+
+### Metodyka i zbiór danych
+
+- **Dlaczego zbiór syntetyczny zamiast prawdziwych dokumentów?** Dla języka tureckiego nie istniał żaden publiczny, anotowany zbiór rzeczywisty zawierający zrównoważone kategorie zniekształceń i długości. Generator pozwolił ściśle wyizolować pojedyncze czynniki trudności. Wysoka korelacja ($\rho = 0{,}92$) ze zdjęciami potwierdziła słuszność tego podejścia.
+- **Dlaczego TrOCR i PaddleOCR miały blisko 0% na literach tureckich?** Były ewaluowane w trybie _zero-shot_ – TrOCR uczył się na angielskim, a Paddle używał modelu domyślnego. Ich tokenizery i słowniki nie zawierają specyficznych tureckich znaków (ı, İ, ğ, ş), więc modele te zastępują je literami łacińskimi lub je pomijają.
+- **Jakie są słabe strony i ograniczenia artykułu (rozdz. 5 wg autorów)?**
+  1. Pismo odręczne wygenerowano z fontów Google Fonts, a nie prawdziwego pisma ludzkiego (brak naturalnych wahań linii i nacisku).
+  2. Tekst w scenie to napisy nałożone na losowe tła COCO, co nie oddaje w pełni geometrii i oświetlenia naturalnych scen.
+  3. Skromny zbiór prawdziwych zdjęć (tylko 90 fotografii).
+  4. Brak dostrajania (_fine-tuningu_) modeli do języka tureckiego.
+- **Impact Factor:** 1,7 oraz 5-letni 2,3 to oficjalne wartości z bazy Journal Citation Reports (JCR) za 2025 rok podane bezpośrednio na stronie wydawnictwa Springer. Serwisy trzecie (np. SciJournal) podają nieoficjalne estymaty.
+- **Rozbieżności w artykule wyłapane podczas lektury:**
+  - _GPT-4o na literach tureckich:_ w tekście podano 0,055 i 0,065, a na rys. 4 jest 0,066 i 0,065 (tekst pominął puste odpowiedzi, a rysunek wliczył je jako błąd).
+  - _Długość słów u Pixtrala:_ tekst twierdzi, że Pixtral lepiej czyta długie słowa, podczas gdy na rys. 7 ma na nich minimalnie wyższy błąd (0,334 vs 0,329).
+  - _Tekstury:_ folder `textures` w repozytorium autorów jest pusty, choć same gotowe obrazy z tłami papieru udostępniono na Zenodo.
