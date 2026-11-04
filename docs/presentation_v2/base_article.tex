@@ -26,10 +26,10 @@
 \newcommand{\zrodlo}[1]{\par\vfill{\tiny\color{black!65}#1\par}}
 
 \title{Benchmarking OCR and vision-language models for Turkish text recognition: a comprehensive evaluation using synthetic data}
-\subtitle{Artykuł bazowy: Y.~Yılmaz, E.\,G.~Hanoğlu, A.\,G.~Özkan, K.~Öztoprak\\
+\subtitle{Artykuł bazowy: Y.~Yılmaz, E.~G.~Hanoğlu, A.~G.~Özkan, K.~Öztoprak\\
   \emph{International Journal on Document Analysis and Recognition}, Springer, 2026,
   \href{https://doi.org/10.1007/s10032-026-00613-6}{doi:10.1007/s10032-026-00613-6}}
-\author{Paweł Podgórski, Marek Siuzdak, Maciej Pietras, Anton Ovod}
+\author{Marek Siuzdak, Maciej Pietras, Anton Ovod, Paweł Podgórski}
 \date{Laboratorium 4, 7.11.2026}
 
 \begin{document}
@@ -78,7 +78,7 @@
 % 3 --------------------------------------------------------------------------
 \begin{frame}{Cel artykułu}
   \begin{itemize}
-    \item Modele OCR i~modele wizyjno-językowe (VLM) uczy się głównie na danych z~języków o~dużych zasobach, np.\ angielskiego.
+    \item Modele OCR i~modele wizyjno-językowe (VLM) uczy się głównie na danych z~języków o~dużych zasobach, np.~angielskiego.
     \item Turecki ma mało danych treningowych, siedem liter swoistych (ç, ğ, ı, İ, ö, ş, ü) i~budowę aglutynacyjną, czyli długie słowa.
     \item Wcześniejsze porównania dla tureckiego nie obejmowały VLM, a~brakowało publicznego zbioru z~różnymi zniekształceniami.
   \end{itemize}
@@ -88,7 +88,7 @@
     na zdjęcia.
   \end{block}
   \medskip
-  {\small Słowa kluczowe: OCR, VLMs, Turkish text recognition, Synthetic dataset}
+  {\normalsize \textbf{Słowa kluczowe: OCR, VLMs, Turkish text recognition, Synthetic dataset}}
 \end{frame}
 
 % 4 --------------------------------------------------------------------------
@@ -200,38 +200,38 @@
 \end{frame}
 
 % 8 --------------------------------------------------------------------------
-\begin{frame}{Wkład własny autorów i~elementy nowości}
+\begin{frame}{Wkład autorów, nowości i~nasza replikacja}
   \begin{columns}[T]
     \begin{column}{0.48\textwidth}
-      \begin{block}{Wkład własny autorów}
+      \begin{block}{Artykuł bazowy: wkład i nowości}
         \small
         \setlength{\leftmargini}{1.2em}
         \begin{itemize}
-          \item Zbudowali zbiór 13\,200 obrazów: własny proces generowania, kontrolowane kategorie.
-          \item Sami zebrali i~opisali 90 prawdziwych zdjęć.
-          \item Porównali 10 modeli w~jednym protokole oceny.
-          \item Udostępnili dane i~kod.
+          \setlength{\itemsep}{0pt}
+          \item Pierwszy benchmark OCR i~VLM dla tureckiego (zniekształcenia, kontekst).
+          \item Publiczny zbiór 13\,200 obrazów (druk, pismo, scena) oraz 90 zdjęć.
+          \item Analiza 7 liter tureckich i~ocena 10 modeli.
+          \item Walidacja na zdjęciach: $\rho=0{,}92$ ($p<0{,}001$).
         \end{itemize}
       \end{block}
+      \vspace{2pt}
+      {\scriptsize \textbf{Ograniczenia wg autorów:} pismo z~fontów zamiast odręcznego, brak dostrajania, mały zbiór zdjęć (90 szt.).\par}
     \end{column}
     \begin{column}{0.48\textwidth}
-      \begin{block}{Elementy nowości artykułu}
+      \begin{block}{Nasz wkład: replikacja na Colabie}
         \small
         \setlength{\leftmargini}{1.2em}
         \begin{itemize}
-          \item Według autorów pierwszy systematyczny benchmark OCR i~VLM dla tureckiego, uwzględniający zniekształcenia i~kontekst; wcześniej 3-4 silniki bez VLM.
-          \item Nowy, publiczny zbiór: druk, pismo i~scena, w~kontrolowanych kategoriach.
-          \item Analiza odczytu każdej z~7 liter tureckich.
-          \item Sprawdzenie, czy wyniki przenoszą się na prawdziwe zdjęcia ($\rho=0{,}92$).
+          \setlength{\itemsep}{0pt}
+          \item Weryfikacja 65\,036 wartości CER z~plików autorów (pełna zgodność).
+          \item \textbf{Uruchomienie 8 modeli na GPU A100} (próbka 1650 obrazów, po 50 na komórkę).
+          \item \textbf{Średni CER zgodny do 0,001} (Pixtral 0,007 z~braku stałego ziarna).
+          \item Identyczność predykcji: 90,4--100\%.
         \end{itemize}
       \end{block}
     \end{column}
   \end{columns}
-  \vfill
-  {\scriptsize Y.~Yılmaz, E.\,G.~Hanoğlu: koncepcja, metody, zbiór, ocena, tekst. A.\,G.~Özkan, K.~Öztoprak: nadzór, walidacja.\par}
-  {\scriptsize Dane: Zenodo (CC~BY~4.0), kod: GitHub (bez licencji). Odtwarzalność częściowa: brak odpowiedzi
-  Claude Sonnet 4 oraz wyników dla Wikipedii i~zdjęć. Ponowny przebieg 8 otwartych modeli (1650 obrazów):
-  średni CER zgodny z~autorami do 0,001 (Pixtral 0,007).\par}
+  \zrodlo{Dane autorów: Zenodo (CC~BY~4.0), kod: GitHub. Nasze kody i wyniki replikacji: w dołączonym repozytorium.}
 \end{frame}
 
 \end{document}
