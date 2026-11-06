@@ -52,7 +52,7 @@ replication/      powtórzenie badania bazowego (analyze.py, build_labels.py, re
 polish/           teksty, fonty, wygenerowany zbiór (data/) i wyniki (results/)
 tools/fonts/      pobieranie i sprawdzanie fontów odręcznych
 colab/            notebooki na GPU: powtórzenie badania bazowego i Qwen2.5-VL 7B na zbiorze polskim
-docs/             artykuł (article/) i prezentacja (presentation/), LaTeX
+docs/             artykuł (article/) i prezentacja artykułu bazowego (presentation/), LaTeX
 ```
 
 ## Uruchomienie

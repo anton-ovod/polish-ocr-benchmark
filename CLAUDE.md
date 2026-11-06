@@ -116,8 +116,8 @@ ustalenia, które trzeba zachować, trafiają do tego pliku.
 - `colab/`: `replication_colab.ipynb` + `run_replication.py` (powtórzenie: 8 modeli, każdy we własnym środowisku,
   wznawialne, wyniki na Dysku w `MyDrive/ocr-benchmark/replication/`), `qwen_colab.ipynb` (Qwen 7B na zbiorze
   polskim), `make_bundle.sh` (buduje `ocr_bundle.zip`, poza gitem).
-- `docs/presentation/base_article.tex`: 8 slajdów o artykule bazowym (Lab 4, 7.11). `docs/presentation_v2/`: wersja
-  kolegi z notatkami do wystąpienia; `base_article.tex` kompilujemy z `-jobname=prezentacja_v2`.
+- `docs/presentation/presentation.tex`: prezentacja artykułu bazowego (8 slajdów, Lab 4, 7.11), tylko o artykule
+  bazowym (bez naszej replikacji); notatki do wystąpienia w `speaker_notes.md`.
 - `docs/article/main.tex`: szkielet LNCS po polsku z `\TODO{}`; tabele `docs/article/tables/*.tex`
   generuje `summarize.py`, nie edytować ręcznie.
 - `tools/fonts/`: pobieranie i sprawdzanie fontów.
@@ -130,7 +130,7 @@ src/run_all_local.sh                                 # wszystkie modele, wznawia
 .venv/bin/python src/plot_results.py                 # wykresy z polish/results/summary/ (po summarize.py)
 .venv/bin/python replication/build_labels.py --n 50  # próbka powtórzenia, potem colab/make_bundle.sh
 .venv/bin/python replication/analyze.py              # powtórzenie badania bazowego (modele liczymy w Colabie)
-cd docs/article && latexmk -pdf main.tex             # analogicznie docs/presentation
+cd docs/article && latexmk -pdf main.tex             # analogicznie docs/presentation (presentation.tex)
 ```
 Środowiska: `.venv` (py3.12, torch CPU; brak pip, instalacja `uv pip install --python .venv/bin/python`),
 `.venv-paddle` (paddleocr 2.9.1), Tesseract w `.tools/tess`. Wyniki Qwen: `qwen.csv` = 3B, `qwen7b.csv` = 7B.
