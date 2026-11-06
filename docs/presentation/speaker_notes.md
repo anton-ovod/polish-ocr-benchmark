@@ -8,7 +8,7 @@ Autorzy chcą sprawdzić, jak dobrze klasyczny OCR i modele wizyjno-językowe cz
 
 ## Slajd 4: Materiał: zbiór syntetyczny i zdjęcia (40 s)
 
-Teksty pochodzą z dwóch źródeł: z _Nutuka_ Atatürka i z tureckiej Wikipedii, po 6600 obrazów z każdego. Do tego dochodzi 90 prawdziwych zdjęć do sprawdzenia wyników. Obrazy są w trzech odmianach: druk, pismo odręczne i napis w scenie. Każda odmiana ma 11 podkategorii po 200 obrazów: z literami tureckimi i bez, krótkie i długie słowa, słowa i zdania oraz pięć rodzajów zniekształceń.
+Teksty pochodzą z dwóch źródeł: z _Nutuka_, czyli słynnego przemówienia Atatürka z 1927 roku, i z tureckiej Wikipedii, po 6600 obrazów z każdego. Do tego dochodzi 90 prawdziwych zdjęć do sprawdzenia wyników. Obrazy są w trzech odmianach: druk, pismo odręczne i napis w scenie. Każda odmiana ma 11 podkategorii po 200 obrazów: z literami tureckimi i bez, krótkie i długie słowa, słowa i zdania oraz pięć rodzajów zniekształceń.
 
 **Przykłady na dole:** najpierw trzy rodzaje tekstu, potem to samo słowo z różnymi zniekształceniami, a na końcu prawdziwe zdjęcie.
 
