@@ -1,5 +1,5 @@
 % Prezentacja artykułu bazowego (8.11): 8 slajdów, do 5 minut.
-% Kompilacja: latexmk -pdf presentation.tex (obok muszą leżeć wykres_modele.pdf, wykres_warunki.pdf i przyklady.pdf).
+% Kompilacja: latexmk -pdf presentation.tex (obok muszą leżeć model_ranking.pdf, conditions_heatmap.pdf i examples.pdf).
 % Dane sprawdzone 2.11.2026: strona wydawcy, wykaz ministerialny, Scopus.
 \documentclass[aspectratio=169,11pt]{beamer}
 \usepackage[T1]{fontenc}
@@ -145,7 +145,7 @@
   \end{columns}
 
   \vspace{6pt}
-  \includegraphics[width=\textwidth]{przyklady.pdf}\par
+  \includegraphics[width=\textwidth]{examples.pdf}\par
   \zrodlo{Przykłady: zbiór autorów na Zenodo, DOI 10.5281/zenodo.21923181 (CC~BY~4.0).}
 \end{frame}
 
@@ -199,7 +199,7 @@
 \begin{frame}{Wyniki: ranking modeli i~walidacja na zdjęciach}
   \begin{columns}[T]
     \begin{column}{0.62\textwidth}
-      \includegraphics[width=\textwidth,height=0.80\textheight]{wykres_modele.pdf}
+      \includegraphics[width=\textwidth,height=0.80\textheight]{model_ranking.pdf}
     \end{column}
     \begin{column}{0.36\textwidth}
       \small
@@ -218,7 +218,7 @@
 % 7 --------------------------------------------------------------------------
 \begin{frame}{Wyniki: czynniki utrudniające odczyt}
   % Klamra zaraz po tytule ramki zostałaby podtytułem, dlatego \centerline.
-  \centerline{\includegraphics[width=\textwidth]{wykres_warunki.pdf}}
+  \centerline{\includegraphics[width=\textwidth]{conditions_heatmap.pdf}}
 \end{frame}
 
 % 8 --------------------------------------------------------------------------
