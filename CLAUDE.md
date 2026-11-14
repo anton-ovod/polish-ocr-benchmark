@@ -86,19 +86,6 @@ i zniekształcenia obrazu. Polskiego nie porównujemy z tureckim.
 - Korelacja Spearmana rankingów: syntetyczne pismo ręczne vs Gold Set.
 - Prompty modeli wizyjno-językowych: prompty autorów z „Turkish” zamienionym na „Polish”.
 
-### Elementy nowości
-1. Metodologia benchmarku przeniesiona na język polski.
-2. Klasyczne silniki OCR z polskim modelem językowym (Tesseract `pol`, EasyOCR `pl`), których autorzy
-   nie badali.
-3. Wpływ polskich znaków diakrytycznych na błąd rozpoznawania.
-4. Sprawdzenie benchmarku syntetycznego na 1968 prawdziwych odręcznych zdjęciach.
-5. Otwarty zbiór i kod (Colab).
-
-### Kod i dane
-- Jedno publiczne repo na GitHubie: generator, notebook Colab, skrypt CER/WER, CSV z wynikami, README.
-- Obrazy jako zip w GitHub Release (dają się też odtworzyć z generatora przy stałym ziarnie).
-- Licencje: kod MIT, dane CC BY 4.0. Fonty mają licencję OFL.
-
 ## Repozytorium
 
 Kod, identyfikatory, komentarze, nazwy plików i kolumny CSV piszemy **po angielsku**; dokumenty
