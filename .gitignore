@@ -6,6 +6,7 @@ replication/data/
 replication/authors/
 replication/ocr_bundle.zip
 research/ocr_bundle.zip
+research/data/
 *.pdf
 !docs/**/*.pdf
 *.xlsx

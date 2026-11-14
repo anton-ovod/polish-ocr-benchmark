@@ -39,8 +39,8 @@ i zniekształcenia obrazu. Polskiego nie porównujemy z tureckim.
   - druk / pismo ręczne,
   - słowo / zdanie (4–8 słów),
   - zniekształcenia: clean, blur, rotated, noisy, low_res (te same słowa, to samo ziarno).
-- 22 komórki (11 na rodzaj pisma). Obrazów na komórkę `N` ustawia notebook (domyślnie 60, czyli 1320 obrazów); cel
-  pierwotny to 100.
+- 22 komórki (11 na rodzaj pisma). Po 100 obrazów na komórkę, łącznie 2200 (`generate_dataset.py --n 100 --seed 42`).
+  Zbiór generujemy lokalnie (generator to nie model) i dołączamy do `ocr_bundle.zip`; notebook go nie generuje.
 - Fonty z Google Fonts, każdy sprawdzony (`cmap`) na 18 polskich liter (ąćęłńóśźż i wielkie).
   Z 357 fontów odręcznych 272 ma komplet polskich liter i A–Z; po odrzuceniu 104
   niemal identycznych wariantów Playwrite zostaje 168. Lista: `research/fonts_tools/handwriting_fonts_pl.txt`
@@ -55,8 +55,8 @@ i zniekształcenia obrazu. Polskiego nie porównujemy z tureckim.
   **wszystkie 1968** skanów całych stron z odręcznie przepisaną Inwokacją (szarość, szerokość 2500–5900 px,
   wysokość 640–1680 px, 4 linie). Kopia w `research/gold/images/` (115 MB, poza gitem). Pomijamy `phsf/znaki`
   (pojedyncze znaki 32×32), `ocr_files` i `.npy`. Modelom podajemy skany zmniejszone do 2048 px dłuższego boku
-  (`research/prepare_gold.py`), ten sam rozmiar dla wszystkich modeli. Limit czasu przebiegu to ok. 3 godziny, dlatego
-  notebook ocenia losową próbkę `GOLD_N` skanów (domyślnie 300, ziarno 42); `GOLD_N = None` bierze wszystkie.
+  (`research/prepare_gold.py`), ten sam rozmiar dla wszystkich modeli. Oceniamy wszystkie 1968 skanów;
+  przygotowane obrazy i `labels.csv` powstają lokalnie (`prepare_gold.py`) i trafiają do zipa.
 - Nazwa pliku: `inwokacja_<nr>_<rok urodzenia>_<K/M>_<kod formularza>.png`. Nazwy bywają nieregularne
   (pełna data, cyrylica w kodzie, spacja), więc metadane z nazw parsujemy ostrożnie.
 - Zmienia się tylko charakter pisma, więc różnice w wynikach to różnice między modelami, a nie treścią.
@@ -113,7 +113,7 @@ Każdy katalog zawiera tylko to, czego faktycznie używa.
 - `research/`: nasze badanie (polskie). `texts/` (korpus), `fonts/` (fonty), `fonts_tools/` (pobieranie i sprawdzanie
   fontów), `generate_dataset.py`, `summarize.py` (tabele LaTeX do `docs/research/article/tables/`), `plot_results.py`
   (wykresy do `docs/research/article/figures/`). `prepare_gold.py` (skalowanie skanów i etykiety),
-  `analyze.py` (CER, WER, błędy na znakach diakrytycznych, ranking, Spearman), `make_bundle.sh` (buduje `ocr_bundle.zip`,
+  `analyze.py` (CER, WER, błędy na znakach diakrytycznych, ranking, Spearman), `make_bundle.sh` (buduje `ocr_bundle.zip` z kodem i gotowymi zbiorami,
   poza gitem), `research.ipynb` (Colab, jedyny punkt wejścia). `summarize.py` i `plot_results.py` pochodzą z MVP i trzeba je
   dopasować do wyników `analyze.py`. Wygenerowane obrazy i wyniki nie są w repo (powstają w Colabie).
 - `docs/replication/`: dokumenty do powtórzenia badania bazowego. `presentation/`: `presentation.tex` (prezentacja
@@ -126,7 +126,7 @@ Każdy katalog zawiera tylko to, czego faktycznie używa.
 - Replikacja: `python replication/build_labels.py --n 50`, `replication/make_bundle.sh`, `ocr_bundle.zip` na
   `MyDrive/ocr-benchmark/`, potem `replication/replication.ipynb` w Colabie (A100).
 - Nasze badanie: `research/make_bundle.sh`, `ocr_bundle.zip` na `MyDrive/ocr-benchmark/`, potem `research/research.ipynb`
-  w Colabie (A100). Notebook generuje oba zbiory, uruchamia 9 modeli (`common/run_models.py`) i liczy wyniki.
+  w Colabie (A100). Notebook uruchamia 9 modeli (`common/run_models.py`) na obu zbiorach i liczy wyniki.
 - LaTeX: `cd docs/research/article && latexmk -pdf main.tex` (analogicznie `docs/replication/presentation`, `presentation.tex`).
 
 ### Ustalenia techniczne
@@ -185,7 +185,6 @@ Każdy katalog zawiera tylko to, czego faktycznie używa.
   `summarize.py` → `tables/effects.tex` i kolumna CI w `overall.tex`.
 
 ### Do zrobienia
-- Pierwszy przebieg `research/research.ipynb` w Colabie (notebook nie był jeszcze uruchamiany), zmierzenie czasu i
-  ewentualne zwiększenie `N` i `GOLD_N`.
+- Pierwszy przebieg `research/research.ipynb` w Colabie (notebook nie był jeszcze uruchamiany) i zmierzenie czasu.
 - Dopasowanie `summarize.py` i `plot_results.py` do wyników `analyze.py` (tabele i wykresy do artykułu).
 - Artykuł: wszystkie `\TODO{}`, przegląd literatury (prace o OCR dla polskiego), opis wyników.
