@@ -13,7 +13,7 @@ Wszystko liczymy w Google Colab (GPU). Lokalnie nic się nie uruchamia poza komp
 common/       loadery modeli, runner, metryki (wspólne dla obu badań)
 replication/  powtórzenie badania bazowego (notebook Colab, wyniki, analiza)
 research/     nasze badanie: korpus, fonty, generator, tabele i wykresy
-docs/         artykuł (article/) i prezentacja artykułu bazowego (presentation/), LaTeX
+docs/         replication/ (prezentacja i PDF artykułu bazowego), research/ (nasz artykuł), LaTeX
 ```
 
 ## Powtórzenie badania bazowego
