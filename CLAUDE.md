@@ -67,11 +67,12 @@ w dyskusji.
 - Zmienia się tylko charakter pisma, więc różnice w wynikach to różnice między modelami, a nie treścią.
 - Zdjęcia przetwarzamy w całości (cała strona), **bez cięcia na linie**.
 - **Tekst wzorcowy:** Inwokacja z „Pana Tadeusza” (cztery pierwsze wersy), linie scalone w jeden ciąg, małe litery,
-  NFC. Uwaga: na skanach (obejrzane wyrywkowo, także skrajnie różne rozmiary) tekst z formularza różni się od
+  NFC, bez interpunkcji (patrz Ewaluacja). Na skanach (obejrzane wyrywkowo) tekst z formularza różni się od
   edycji kanonicznej interpunkcją: „Litwo, Ojczyzno moja! Ty jesteś jak zdrowie; / Ile Cię trzeba cenić? Ten tylko
   się dowie: / Kto cię STRACIŁ. Dziś Piękność Twą w całej ozdobie, / Widzę i opisuję - bo tęsknię po tobie.”
-  Wzorzec trzeba oprzeć na tekście z formularza (sprawdzić w dokumentacji lub u prowadzącej), nie na edycji
-  z Wolnych Lektur, inaczej CER będzie zawyżony przez sam wzorzec. Pozostałe błędy przepisujących zostają.
+  Po normalizacji wzorzec to: „litwo ojczyzno moja ty jesteś jak zdrowie ile cię trzeba cenić ten tylko się dowie
+  kto cię stracił dziś piękność twą w całej ozdobie widzę i opisuję bo tęsknię po tobie”. Błędy przepisujących
+  zostają.
 - Służy do pytań 1 i 3; ranking porównujemy z rankingiem na syntetycznym piśmie ręcznym.
 
 ### Modele (9, w Colabie na GPU)
@@ -85,7 +86,10 @@ w dyskusji.
 
 ### Ewaluacja
 - CER (jiwer) i WER jak w artykule bazowym (WER dla zdań i Gold Setu).
-- Wszystko małymi literami, normalizacja Unicode do NFC, CER obcięty do 1,0.
+- Badanie własne (oba zbiory): `normalize_text` w `common/metrics.py`: małe litery, NFC, **interpunkcja usunięta po
+  obu stronach**, białe znaki do jednej spacji, polskie znaki zostają; CER obcięty do 1,0. Powód: interpunkcja
+  przepisujących jest niespójna, a modele zwracają ją losowo (mierzylibyśmy nawyki, nie rozpoznawanie liter);
+  autorzy bazowego też liczą liczby z tekstu bez interpunkcji. Replikacja zostaje przy dotychczasowym `normalize`.
 - Odsetek błędów na polskich znakach diakrytycznych (oba zbiory).
 - Korelacja Spearmana rankingów: syntetyczne pismo ręczne vs Gold Set.
 - Prompty modeli wizyjno-językowych: prompty autorów z „Turkish” zamienionym na „Polish”.

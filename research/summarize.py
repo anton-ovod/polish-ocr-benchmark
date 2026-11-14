@@ -8,7 +8,7 @@ import numpy as np
 import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "common"))
-from metrics import cer, cer_authors, normalize, wer
+from metrics import cer_authors, cer_text, normalize_text, wer_text
 
 ROOT = Path(__file__).resolve().parents[1]
 MODEL_ORDER = ["qwen7b", "qwen", "tesseract", "easyocr", "paddle", "trocr"]
@@ -62,7 +62,7 @@ def strip_diacritics(text):
 
 
 def diacritics_only(truth, pred):
-    t, p = normalize(truth), normalize(pred)
+    t, p = normalize_text(truth), normalize_text(pred)
     return t != p and strip_diacritics(t) == strip_diacritics(p)
 
 
@@ -77,10 +77,10 @@ def load(data, results):
         df.insert(0, "model", path.stem)
         frames.append(df)
     df = pd.concat(frames, ignore_index=True)
-    df["cer"] = [cer(t, p) for t, p in zip(df.text, df.prediction)]
-    df["wer"] = [wer(t, p) for t, p in zip(df.text, df.prediction)]
+    df["cer"] = [cer_text(t, p) for t, p in zip(df.text, df.prediction)]
+    df["wer"] = [wer_text(t, p) for t, p in zip(df.text, df.prediction)]
     df["cer_authors"] = [cer_authors(t, p) for t, p in zip(df.text, df.prediction)]
-    df["exact"] = [normalize(t) == normalize(p) for t, p in zip(df.text, df.prediction)]
+    df["exact"] = [normalize_text(t) == normalize_text(p) for t, p in zip(df.text, df.prediction)]
     df["diacritics_only"] = [diacritics_only(t, p) for t, p in zip(df.text, df.prediction)]
     return df
 
