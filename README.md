@@ -3,85 +3,40 @@
 Projekt na studia magisterskie: powtórzenie badania z artykułu
 Yılmaz i in., *Benchmarking OCR and vision-language models for Turkish text recognition* (IJDAR, 2026,
 [DOI 10.1007/s10032-026-00613-6](https://doi.org/10.1007/s10032-026-00613-6)) oraz własne badanie
-tej samej metodologii dla języka polskiego.
+tej samej metodologii dla języka polskiego. Plan i ustalenia: `CLAUDE.md`.
 
-Stan: **MVP** (22.10.2026). Mały zbiór (20 obrazów na komórkę, razem 440), modele uruchamiane lokalnie na CPU.
-Qwen2.5-VL jeszcze nie był liczony.
-
-## Co zostało zrobione
-
-1. **Powtórzenie badania bazowego** (`replication/`)
-   - Liczby z artykułu przeliczone z per-obrazowych predykcji autorów. Kod autorów (i zapisany przez nich
-     JSON) dzieli odległość edycyjną przez długość *predykcji* zamiast wzorca. Liczby z tekstu artykułu
-     odtwarza inny wariant z ich repo: małe litery, bez spacji i interpunkcji, dzielenie przez długość wzorca
-     (artykuł tego nie opisuje).
-   - Ponowne uruchomienie 8 otwartych modeli z artykułu (bez GPT-4o i Claude'a) na warstwowej próbce 1650 obrazów
-     tureckich (`colab/replication_colab.ipynb`, A100). Średni CER różni się od predykcji autorów najwyżej o 0,001,
-     a u Pixtrala o 0,007. Identycznych predykcji jest od 90,4% do 99,9%, poza Pixtralem (28,3%). Liczby dla każdego
-     modelu: `replication/results/rerun_vs_authors.csv`.
-2. **Własny zbiór polski** (`src/generate_dataset.py`)
-   - Generator TRDG 1.8.0 z parametrami autorów, druk i pismo odręczne, tekst z *Lalki* (Wolne Lektury,
-     domena publiczna).
-   - Komórki: z polskimi znakami / bez, krótkie / długie słowa, słowo / zdanie, zakłócenia
-     (clean, blur, rotated, noisy, low_resolution) na tych samych słowach.
-   - Fonty z Google Fonts sprawdzone w `cmap` na 18 polskich liter (`tools/fonts/`).
-3. **Modele** (`src/ocr_models.py`, `src/run_ocr.py`): Tesseract `pol`, EasyOCR `pl`, PaddleOCR `pl`, TrOCR,
-   Qwen2.5-VL (3B lokalnie, 7B przez `colab/qwen_colab.ipynb`).
-4. **Ewaluacja** (`src/metrics.py`, `src/summarize.py`): CER i WER (NFC, małe litery, CER obcięty do 1),
-   odsetek błędów wyłącznie diakrytycznych, bootstrapowe 95% przedziały ufności i efekty czynników (Δ CER).
-   Skrypt zapisuje CSV w `polish/results/summary/` i tabele LaTeX w `docs/article/tables/`.
-5. **Dokumenty** (`docs/`): szkic artykułu (LNCS, po polsku) i prezentacja artykułu bazowego (8 slajdów).
-
-### Wstępne wyniki (n = 440, CER)
-
-| Model | Druk | Pismo odręczne | Razem |
-|---|---|---|---|
-| EasyOCR `pl` | 0,085 | 0,257 | 0,171 |
-| PaddleOCR `pl` | 0,111 | 0,261 | 0,186 |
-| TrOCR | 0,122 | 0,283 | 0,202 |
-| Tesseract `pol` | 0,114 | 0,329 | 0,221 |
-
-Polskie znaki istotnie podnoszą błąd PaddleOCR (Δ ≈ +0,23; w jego słowniku brak ń, ś, ź, ż) i TrOCR,
-a nie Tesseracta ani EasyOCR. Niska rozdzielczość i pismo odręczne szkodzą wszystkim modelom.
+Wszystko liczymy w Google Colab (GPU). Lokalnie nic się nie uruchamia poza kompilacją LaTeX-a.
 
 ## Struktura
 
 ```
-src/              generator, modele OCR, metryki, podsumowanie
-replication/      powtórzenie badania bazowego (analyze.py, build_labels.py, results/)
-polish/           teksty, fonty, wygenerowany zbiór (data/) i wyniki (results/)
-tools/fonts/      pobieranie i sprawdzanie fontów odręcznych
-colab/            notebooki na GPU: powtórzenie badania bazowego i Qwen2.5-VL 7B na zbiorze polskim
-docs/             artykuł (article/) i prezentacja artykułu bazowego (presentation/), LaTeX
+common/       loadery modeli, runner, metryki (wspólne dla obu badań)
+replication/  powtórzenie badania bazowego (notebook Colab, wyniki, analiza)
+research/     nasze badanie: korpus, fonty, generator, tabele i wykresy
+docs/         artykuł (article/) i prezentacja artykułu bazowego (presentation/), LaTeX
 ```
 
-## Uruchomienie
+## Powtórzenie badania bazowego
 
-```bash
-uv venv -p 3.12 .venv
-uv pip install --python .venv/bin/python torch==2.14.1 torchvision==0.29.1 --index-url https://download.pytorch.org/whl/cpu
-uv pip install --python .venv/bin/python -r requirements.txt
-uv pip install --python .venv/bin/python --no-deps trdg==1.8.0
-uv venv -p 3.12 .venv-paddle && uv pip install --python .venv-paddle/bin/python -r requirements-paddle.txt
-# Tesseract z polskim modelem: apt install tesseract-ocr tesseract-ocr-pol
-#   (albo lokalnie: micromamba create -p .tools/tess -c conda-forge tesseract, wtedy kod sam go znajdzie)
+Ponowne uruchomienie 8 otwartych modeli z artykułu (bez GPT-4o i Claude'a) na warstwowej próbce 1650 obrazów
+tureckich (A100). Średni CER różni się od predykcji autorów najwyżej o 0,001, a u Pixtrala o 0,007. Liczby dla
+każdego modelu: `replication/results/rerun_vs_authors.csv`.
 
-.venv/bin/python src/generate_dataset.py --n 20   # polish/data/ (ziarno 42)
-bash src/run_all_local.sh                          # wszystkie modele, można przerywać i wznawiać
-.venv/bin/python src/summarize.py                  # tabele i CSV
-cd docs/article && latexmk -pdf main.tex
-```
-
-Do powtórzenia badania bazowego potrzebne są dane autorów, których nie ma w repo:
-- obrazy z Zenodo ([10.5281/zenodo.21923181](https://doi.org/10.5281/zenodo.21923181)), rozpakowane do `replication/data/`;
+Dane autorów nie są w repo:
+- obrazy z Zenodo ([10.5281/zenodo.21923181](https://doi.org/10.5281/zenodo.21923181)) do `replication/data/`;
 - `json/cer_wer_calculated.json` z [repo autorów](https://github.com/OCR-benchmark-project/turkish-synthetic-text-recognition-benchmark)
-  (commit `966b119`) skopiowany do `replication/authors/`.
+  (commit `966b119`) do `replication/authors/`.
 
-Potem `replication/build_labels.py --n 50` i `colab/make_bundle.sh`. Powstały `colab/ocr_bundle.zip` trafia do
-`MyDrive/ocr-benchmark/`, a `colab/replication_colab.ipynb` uruchamia modele na GPU. Wyniki z
-`MyDrive/ocr-benchmark/replication/` kopiujemy do `replication/results/` i uruchamiamy `replication/analyze.py`.
+Potem `python replication/build_labels.py --n 50` i `replication/make_bundle.sh`. Powstały
+`replication/ocr_bundle.zip` trafia do `MyDrive/ocr-benchmark/`, a `replication/replication.ipynb` uruchamia modele
+na GPU. Wyniki z `MyDrive/ocr-benchmark/replication/` kopiujemy do `replication/results/` i uruchamiamy
+`replication/analyze.py` (wymaga `jiwer`, `editdistance`).
+
+## Własne badanie
+
+W przygotowaniu (`research/`): zbiór syntetyczny TRDG z polskim korpusem, 1008 zdjęć odręcznej Inwokacji
+i 9 modeli. Notebook `research/research.ipynb` jeszcze nie istnieje.
 
 ## Licencje
 
-Kod: MIT. Wygenerowane dane i wyniki: CC BY 4.0. Fonty w `polish/fonts/`: SIL OFL / Apache 2.0 (Google Fonts).
-Teksty: Wolne Lektury, domena publiczna.
+Kod: MIT. Fonty w `research/fonts/`: SIL OFL / Apache 2.0 (Google Fonts). Teksty: Wolne Lektury, domena publiczna.
