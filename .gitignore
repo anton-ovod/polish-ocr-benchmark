@@ -7,7 +7,7 @@ __pycache__/
 # large or third-party inputs, downloaded separately (see README)
 replication/data/
 replication/authors/
-colab/ocr_bundle.zip
+replication/ocr_bundle.zip
 *.pdf
 !docs/**/*.pdf
 *.xlsx

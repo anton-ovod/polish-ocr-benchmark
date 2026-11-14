@@ -15,17 +15,28 @@ DOI 10.1007/s10032-026-00613-6. Lista ministerialna: 100 pkt.
   zdanie, zakłócenia (clean, rotated, noisy, blur, low_resolution). Typy tekstu: printed, handwritten,
   scene.
 
-## Nasz plan (ustalony 22.10.2026, do omówienia na callu 23.10)
+## Nasz plan (ustalony 22.10.2026, wstępnie zmieniony 11.11 po mailach prowadzącej)
 
 Zasada nadrzędna: **prostota**. Artykuł jest na zaliczenie, nie do publikacji, więc nie dokładamy analiz.
 
+**Zmiana 11.11 (wstępna, szczegóły do ustalenia w grupie):** prowadząca (dr M. Charytanowicz) udostępniła
+1008 zdjęć odręcznie przepisanej Inwokacji z „Pana Tadeusza” i zapytała, co porównujemy. Wracamy więc do
+Gold Setu z prawdziwymi zdjęciami i rozszerzamy zestaw modeli do 9. Dotychczasowe wyniki na zbiorze
+polskim (n=20, 4 modele) były tylko próbą działania kodu, nie traktujemy ich jako wyników.
+
 **Tytuł roboczy:** „Ocena silników OCR i modeli wizyjno-językowych w rozpoznawaniu tekstu polskiego na danych
-syntetycznych”
+syntetycznych i rzeczywistych”
 
 **Cel:** porównanie skuteczności klasycznych silników OCR i modeli wizyjno-językowych w rozpoznawaniu tekstu
 polskiego oraz określenie, jak na błąd wpływają polskie znaki diakrytyczne, długość tekstu, rodzaj pisma
 i zniekształcenia obrazu. Nie porównujemy polskiego z tureckim. Wyniki autorów najwyżej jako jedno zdanie
 w dyskusji.
+
+**Pytania badawcze:**
+1. Który model najlepiej rozpoznaje polski tekst (oba zbiory)?
+2. Jak na błąd wpływają polskie znaki, długość, druk / pismo ręczne i zniekształcenia (zbiór syntetyczny)?
+3. Czy ranking modeli na danych syntetycznych zgadza się z rankingiem na prawdziwym piśmie ręcznym
+   (korelacja Spearmana, jak ρ = 0,92 u autorów)?
 
 ### Dane
 - Generator TRDG 1.8.0, tylko druk (printed) i pismo ręczne (handwritten), **bez tekstu w scenie**.
@@ -41,31 +52,46 @@ w dyskusji.
 - Około 100 obrazów na komórkę, łącznie około 2000.
 - Fonty z Google Fonts, każdy sprawdzony (`cmap`) na 18 polskich liter (ąćęłńóśźż i wielkie).
   **Sprawdzone 22.10:** z 357 fontów odręcznych 272 ma komplet polskich liter i A–Z; po odrzuceniu 104
-  niemal identycznych wariantów Playwrite zostaje 168. Lista: `tools/fonts/handwriting_fonts_pl.txt`
-  (posortowana wg popularności), skrypty `tools/fonts/fetch_fonts.py` i `tools/fonts/check_fonts.py`.
+  niemal identycznych wariantów Playwrite zostaje 168. Lista: `research/fonts_tools/handwriting_fonts_pl.txt`
+  (posortowana wg popularności), skrypty `research/fonts_tools/fetch_fonts.py` i `check_fonts.py`.
   W zbiorze używamy 19 najpopularniejszych; Amatic SC wykluczony (same kapitaliki), patrz
-  `polish/fonts/excluded/`.
+  `research/fonts/excluded/`.
   Uwaga: pole `subsets` w metadanych Google Fonts jest niewiarygodne, trzeba sprawdzać `cmap`.
-- Wycięte: tekst w scenie (COCO), Gold Standard z prawdziwymi zdjęciami. W ograniczeniach powołujemy się
-  na ρ = 0,92 autorów.
+- Wycięte: tekst w scenie (COCO).
+- Do ustalenia: korpus z samej „Lalki” (tak mówiono na czacie 11.11) czy kilku autorów z Wolnych Lektur.
 
-### Modele (5, lokalnie na CPU; Qwen 7B opcjonalnie na Colabie)
-- Z artykułu bazowego: TrOCR, PaddleOCR, Qwen2.5-VL (3B lokalnie, 7B jak u autorów tylko na GPU > 20 GB).
-- Dodane przez nas: Tesseract `pol`, EasyOCR `pl`.
-- Bez modeli komercyjnych. Uzasadnienie w artykule: tylko modele otwarte, uruchamiane lokalnie, dla pełnej
-  odtwarzalności i zerowego kosztu (API są zamknięte, płatne i zmieniają się bez wersjonowania).
+### Gold Set: zdjęcia rzeczywiste (od 11.11)
+- 1008 zdjęć od prowadzącej, każde to odręcznie przepisany (ten sam) fragment Inwokacji. Zmienia się tylko
+  charakter pisma, więc różnice w wynikach to różnice między modelami, a nie treścią.
+- Zdjęcia przetwarzamy w całości (cała strona), **bez cięcia na linie**.
+- Tekst wzorcowy: jeden oryginalny tekst, linie scalone w jeden ciąg, małe litery, NFC.
+- Do sprawdzenia u prowadzącej: czy każdy przepisał dokładnie ten sam fragment (inaczej CER zawyżony
+  przez dane) i czy zdjęcia można opublikować w repo.
+- Służy do pytań 1 i 3; ranking porównujemy z rankingiem na syntetycznym piśmie ręcznym.
+
+### Modele (9, w Colabie na GPU)
+- Z artykułu bazowego (7): Qwen2.5-VL 7B, InternVL3-8B, DeepSeek-VL2-tiny, Phi-3.5-vision, Pixtral-12B,
+  GOT-OCR2, PaddleOCR. Środowiska i ustawienia jak w powtórzeniu (`replication/run_replication.py`).
+- Dodane przez nas (2): Tesseract `pol`, EasyOCR `pl`.
+- Pominięte: TrOCR (checkpoint `trocr-large-printed` rozpoznaje tylko pojedyncze linie angielskiego druku,
+  nie obsługuje całych stron), GPT-4o i Claude (komercyjne). Uzasadnienie w artykule: tylko modele otwarte
+  dla pełnej odtwarzalności i zerowego kosztu (API są zamknięte, płatne i zmieniają się bez wersjonowania).
+- Przy 8–9 modelach Spearman ma sens (próg istotności dla n = 8 to ρ ≈ 0,74; przy 5 modelach tylko ρ = 1).
 
 ### Ewaluacja
-- CER (jiwer), a dla zdań też WER.
+- CER (jiwer) i WER jak w artykule bazowym (WER dla zdań i Gold Setu).
 - Wszystko małymi literami, normalizacja Unicode do NFC, CER obcięty do 1,0.
-- Prompt dla Qwena: prompt autorów z „Turkish” zamienionym na „Polish”.
+- Odsetek błędów na polskich znakach diakrytycznych (oba zbiory).
+- Korelacja Spearmana rankingów: syntetyczne pismo ręczne vs Gold Set.
+- Prompty modeli wizyjno-językowych: prompty autorów z „Turkish” zamienionym na „Polish”.
 
 ### Elementy nowości
 1. Metodologia benchmarku przeniesiona na język polski.
 2. Klasyczne silniki OCR z polskim modelem językowym (Tesseract `pol`, EasyOCR `pl`), których autorzy
    nie badali.
 3. Wpływ polskich znaków diakrytycznych na błąd rozpoznawania.
-4. Otwarty zbiór i kod, odtwarzalne na zwykłym laptopie (CPU).
+4. Sprawdzenie benchmarku syntetycznego na 1008 prawdziwych odręcznych zdjęciach.
+5. Otwarty zbiór i kod (Colab).
 
 ### Kod i dane
 - Jedno publiczne repo na GitHubie: generator, notebook Colab, skrypt CER/WER, CSV z wynikami, README.
@@ -97,43 +123,39 @@ w dyskusji.
 - ~~Kto zakłada repo na GitHubie.~~ Założone 22.10: https://github.com/anton-ovod/polish-ocr-benchmark (prywatne;
   upublicznić: `gh repo edit --visibility public --accept-visibility-change-consequences`).
 
-## Stan prac (MVP, 22.10.2026)
+## Stan prac (14.11.2026)
 
 Kod, identyfikatory, komentarze, nazwy plików i kolumny CSV piszemy **po angielsku**; dokumenty
 (artykuł, slajdy) po polsku. W kodzie **nie piszemy komentarzy**, a docstring to najwyżej jedna linia opisu modułu;
 ustalenia, które trzeba zachować, trafiają do tego pliku.
 
+**Nic nie uruchamiamy lokalnie.** Modele, generator i ewaluacja działają tylko w Colabie (notebook jest jedynym
+punktem wejścia). Lokalnie najwyżej LaTeX. Brak venvów i `requirements*.txt`: zależności instalują notebooki.
+Każdy katalog zawiera tylko to, czego faktycznie używa.
+
 ### Struktura
-- `src/`: generator (`generate_dataset.py`), modele (`ocr_models.py`), runner (`run_ocr.py`, wznawialny),
-  metryki (`metrics.py`), podsumowanie i tabele LaTeX (`summarize.py`), wykresy (`plot_results.py` →
-  `docs/article/figures/*.{pdf,png}`), `run_all_local.sh`.
-- `polish/`: korpus (`texts/`), fonty (`fonts/`), zbiór (`data/labels.csv` + `data/images/`), wyniki
-  (`results/<model>.csv`, `results/summary/`).
-- `replication/`: powtórzenie badania bazowego. `authors/cer_wer_calculated.json` (predykcje autorów
-  z ich repo), `build_labels.py` (etykiety + próbka; używamy `--n 50` = 1650 obrazów, większa próbka zawiera
-  mniejszą), `analyze.py`, `results/` (`<model>.csv`, `<model>_vs_authors.csv`, `rerun_vs_authors.csv`,
-  `runs.json`, `envs/` z wersjami pakietów). Obrazy autorów z Zenodo w `replication/data/syntetic-turkish-dataset/`.
-- `colab/`: `replication_colab.ipynb` + `run_replication.py` (powtórzenie: 8 modeli, każdy we własnym środowisku,
-  wznawialne, wyniki na Dysku w `MyDrive/ocr-benchmark/replication/`), `qwen_colab.ipynb` (Qwen 7B na zbiorze
-  polskim), `make_bundle.sh` (buduje `ocr_bundle.zip`, poza gitem).
+- `common/`: kod wspólny dla obu badań: loadery modeli (`ocr_models.py`), runner (`run_ocr.py`, wznawialny),
+  metryki (`metrics.py`).
+- `replication/`: powtórzenie badania bazowego. `replication.ipynb` (Colab, 8 modeli, każdy we własnym środowisku,
+  wznawialne, wyniki na Dysku w `MyDrive/ocr-benchmark/replication/`), `run_replication.py` (logika środowisk),
+  `make_bundle.sh` (buduje `ocr_bundle.zip`, poza gitem), `build_labels.py` (etykiety + próbka; używamy `--n 50` =
+  1650 obrazów, większa próbka zawiera mniejszą), `analyze.py`, `authors/cer_wer_calculated.json` (predykcje autorów
+  z ich repo), `results/` (`<model>.csv`, `<model>_vs_authors.csv`, `rerun_vs_authors.csv`, `runs.json`, `envs/`
+  z wersjami pakietów). Obrazy autorów z Zenodo w `replication/data/syntetic-turkish-dataset/`.
+- `research/`: nasze badanie (polskie). `texts/` (korpus), `fonts/` (fonty), `fonts_tools/` (pobieranie i sprawdzanie
+  fontów), `generate_dataset.py`, `summarize.py` (tabele LaTeX do `docs/article/tables/`), `plot_results.py`
+  (wykresy do `docs/article/figures/`). Notebook `research.ipynb` jeszcze nie istnieje; `qwen_colab.ipynb` to stary
+  szkic, do zastąpienia. Wygenerowane obrazy i wyniki nie są w repo (powstają w Colabie).
 - `docs/presentation/presentation.tex`: prezentacja artykułu bazowego (8 slajdów, Lab 4, 7.11), tylko o artykule
   bazowym (bez naszej replikacji); notatki do wystąpienia w `speaker_notes.md`.
 - `docs/article/main.tex`: szkielet LNCS po polsku z `\TODO{}`; tabele `docs/article/tables/*.tex`
   generuje `summarize.py`, nie edytować ręcznie.
-- `tools/fonts/`: pobieranie i sprawdzanie fontów.
 
 ### Uruchamianie
-```
-.venv/bin/python src/generate_dataset.py --n 20      # 440 obrazów; --n 100 = docelowe 2200 (n=20 to podzbiór)
-src/run_all_local.sh                                 # wszystkie modele, wznawialne
-.venv/bin/python src/summarize.py                    # tabele + docs/article/tables/
-.venv/bin/python src/plot_results.py                 # wykresy z polish/results/summary/ (po summarize.py)
-.venv/bin/python replication/build_labels.py --n 50  # próbka powtórzenia, potem colab/make_bundle.sh
-.venv/bin/python replication/analyze.py              # powtórzenie badania bazowego (modele liczymy w Colabie)
-cd docs/article && latexmk -pdf main.tex             # analogicznie docs/presentation (presentation.tex)
-```
-Środowiska: `.venv` (py3.12, torch CPU; brak pip, instalacja `uv pip install --python .venv/bin/python`),
-`.venv-paddle` (paddleocr 2.9.1), Tesseract w `.tools/tess`. Wyniki Qwen: `qwen.csv` = 3B, `qwen7b.csv` = 7B.
+- Replikacja: `python replication/build_labels.py --n 50`, `replication/make_bundle.sh`, `ocr_bundle.zip` na
+  `MyDrive/ocr-benchmark/`, potem `replication/replication.ipynb` w Colabie (A100).
+- Nasze badanie: `research/` (notebook do napisania).
+- LaTeX: `cd docs/article && latexmk -pdf main.tex` (analogicznie `docs/presentation`).
 
 ### Ustalenia (do artykułu i prezentacji)
 - **CER w kodzie autorów** (`cer_wer_calculation.py`, zamienione argumenty) dzieli odległość przez długość
@@ -186,10 +208,11 @@ cd docs/article && latexmk -pdf main.tex             # analogicznie docs/present
 - **Obliczenia w artykule** (sekcje 3.3–3.4): wzory (1)–(5) — CER/WER, średnia, odsetek błędów
   diakrytycznych, bootstrap 95% CI (B=1000 jak u autorów), efekt Δ = różnica średnich z CI. Liczy je
   `summarize.py` → `tables/effects.tex` i kolumna CI w `overall.tex`.
-- Wstępne wyniki PL (n=20, CER): Tesseract 0,22, EasyOCR 0,17, PaddleOCR 0,19, TrOCR 0,20.
 
 ### Do zrobienia
-- Wyniki TrOCR i Qwen 3B na zbiorze polskim, potem pełny zbiór `--n 100`.
+- Notebook `research/research.ipynb` (generator + 9 modeli + metryki + tabele) zamiast starych skryptów MVP.
+- Plan z 11.11: odpowiedź do prowadzącej, pełny zbiór syntetyczny `--n 100`, przygotowanie Gold Setu
+  (zdjęcia + tekst wzorcowy), 9 modeli w Colabie na obu zbiorach, Spearman.
 - Prezentacja: uzupełnić nazwiska, zweryfikować IF w Clarivate JCR.
 - Artykuł: wszystkie `\TODO{}`, przegląd literatury (prace o OCR dla polskiego), opis wyników.
 - Repo na GitHubie (kod MIT, dane CC BY 4.0).

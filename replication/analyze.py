@@ -7,7 +7,7 @@ from pathlib import Path
 import pandas as pd
 
 HERE = Path(__file__).resolve().parent
-sys.path.insert(0, str(HERE.parent / "src"))
+sys.path.insert(0, str(HERE.parent / "common"))
 from metrics import cer, cer_authors, cer_authors_nospace, normalize
 
 OUT = HERE / "results"
