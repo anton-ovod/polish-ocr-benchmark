@@ -143,7 +143,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--data", type=Path, default=ROOT / "research" / "data")
     ap.add_argument("--results", type=Path, default=ROOT / "research" / "results")
-    ap.add_argument("--tables", type=Path, default=ROOT / "docs" / "research" / "tables")
+    ap.add_argument("--tables", type=Path, default=ROOT / "docs" / "research" / "article" / "tables")
     args = ap.parse_args()
 
     df = load(args.data, args.results)

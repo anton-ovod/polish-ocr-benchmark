@@ -119,20 +119,20 @@ Każdy katalog zawiera tylko to, czego faktycznie używa.
   z ich repo), `results/` (`<model>.csv`, `<model>_vs_authors.csv`, `rerun_vs_authors.csv`, `runs.json`, `envs/`
   z wersjami pakietów). Obrazy autorów z Zenodo w `replication/data/syntetic-turkish-dataset/`.
 - `research/`: nasze badanie (polskie). `texts/` (korpus), `fonts/` (fonty), `fonts_tools/` (pobieranie i sprawdzanie
-  fontów), `generate_dataset.py`, `summarize.py` (tabele LaTeX do `docs/research/tables/`), `plot_results.py`
-  (wykresy do `docs/research/figures/`). Notebook `research.ipynb` jeszcze nie istnieje; `qwen_colab.ipynb` to stary
+  fontów), `generate_dataset.py`, `summarize.py` (tabele LaTeX do `docs/research/article/tables/`), `plot_results.py`
+  (wykresy do `docs/research/article/figures/`). Notebook `research.ipynb` jeszcze nie istnieje; `qwen_colab.ipynb` to stary
   szkic, do zastąpienia. Wygenerowane obrazy i wyniki nie są w repo (powstają w Colabie).
-- `docs/replication/`: dokumenty do powtórzenia badania bazowego: `presentation.tex` (prezentacja artykułu bazowego,
-  8 slajdów, bez naszej replikacji), `speaker_notes.md`, PDF artykułu bazowego (poza gitem).
-- `docs/research/`: dokumenty do naszego badania: `main.tex` (szkielet LNCS po polsku z `\TODO{}`),
-  `references.bib`; tabele `tables/*.tex` generuje `summarize.py`, nie edytować ręcznie. Prezentacja naszego
-  badania trafi tutaj.
+- `docs/replication/`: dokumenty do powtórzenia badania bazowego. `presentation/`: `presentation.tex` (prezentacja
+  artykułu bazowego, 8 slajdów, bez naszej replikacji), `speaker_notes.md`. `article/`: PDF artykułu bazowego (poza gitem).
+- `docs/research/`: dokumenty do naszego badania. `article/`: `main.tex` (szkielet LNCS po polsku z `\TODO{}`),
+  `references.bib`, `tables/*.tex` (generuje `summarize.py`, nie edytować ręcznie), `figures/`. `presentation/`:
+  prezentacja naszego badania (jeszcze nie istnieje).
 
 ### Uruchamianie
 - Replikacja: `python replication/build_labels.py --n 50`, `replication/make_bundle.sh`, `ocr_bundle.zip` na
   `MyDrive/ocr-benchmark/`, potem `replication/replication.ipynb` w Colabie (A100).
 - Nasze badanie: `research/` (notebook do napisania).
-- LaTeX: `cd docs/research && latexmk -pdf main.tex` (analogicznie `docs/replication`, `presentation.tex`).
+- LaTeX: `cd docs/research/article && latexmk -pdf main.tex` (analogicznie `docs/replication/presentation`, `presentation.tex`).
 
 ### Ustalenia techniczne
 - **CER w kodzie autorów** (`cer_wer_calculation.py`, zamienione argumenty) dzieli odległość przez długość

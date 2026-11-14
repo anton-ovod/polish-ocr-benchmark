@@ -186,7 +186,7 @@ def plot_speed(overall, models, out):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--summary", type=Path, default=ROOT / "research" / "results" / "summary")
-    ap.add_argument("--out", type=Path, default=ROOT / "docs" / "research" / "figures")
+    ap.add_argument("--out", type=Path, default=ROOT / "docs" / "research" / "article" / "figures")
     args = ap.parse_args()
 
     df = pd.read_csv(args.summary / "per_image.csv", keep_default_na=False)
