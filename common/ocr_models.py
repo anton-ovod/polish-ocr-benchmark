@@ -6,13 +6,19 @@ def tesseract(lang="pol"):
     import pytesseract
     from PIL import Image
 
-    return lambda path: pytesseract.image_to_string(Image.open(path), lang=lang, config="--psm 7").strip()
+    def read(path):
+        image = Image.open(path)
+        psm = 7 if image.height < 200 else 6
+        return pytesseract.image_to_string(image, lang=lang, config=f"--psm {psm}").strip()
+
+    return read
 
 
 def easyocr(lang="pl"):
     import easyocr as easy
+    import torch
 
-    reader = easy.Reader([lang], gpu=False, verbose=False)
+    reader = easy.Reader([lang], gpu=torch.cuda.is_available(), verbose=False)
     return lambda path: " ".join(reader.readtext(str(path), detail=0))
 
 
@@ -60,7 +66,7 @@ QWEN_PROMPT = ("Extract the {language} text from the image exactly as it appears
                "or add any text. Return only the raw text. If no text is detected, return an empty response.")
 
 
-def qwen(lang="Polish", model=None):
+def qwen(lang="Polish", model=None, max_new_tokens=128):
     import torch
     import transformers
     from qwen_vl_utils import process_vision_info
@@ -86,7 +92,7 @@ def qwen(lang="Polish", model=None):
         images, videos = process_vision_info(messages)
         inputs = processor(text=[text], images=images, videos=videos, padding=True, return_tensors="pt").to(net.device)
         with torch.inference_mode():
-            ids = net.generate(**inputs, max_new_tokens=128)
+            ids = net.generate(**inputs, max_new_tokens=max_new_tokens)
         return processor.batch_decode(ids[:, inputs.input_ids.shape[1]:], skip_special_tokens=True)[0].strip()
 
     return read
@@ -193,7 +199,7 @@ def phi(lang="Turkish", model="microsoft/Phi-3.5-vision-instruct"):
     return read
 
 
-def pixtral(lang="Turkish", model="mistralai/Pixtral-12B-2409"):
+def pixtral(lang="Turkish", model="mistralai/Pixtral-12B-2409", temperature=None):
     import base64
     from io import BytesIO
 
@@ -202,7 +208,7 @@ def pixtral(lang="Turkish", model="mistralai/Pixtral-12B-2409"):
     from vllm.sampling_params import SamplingParams
 
     llm = LLM(model=model, tokenizer_mode="mistral", max_model_len=8192, trust_remote_code=True)
-    sampling = SamplingParams(max_tokens=8192)
+    sampling = SamplingParams(max_tokens=8192, **({} if temperature is None else {"temperature": temperature}))
     prompt = QWEN_PROMPT.format(language=lang)
 
     def read(path):

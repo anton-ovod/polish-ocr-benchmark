@@ -1,4 +1,4 @@
-"""Run the authors' open models on the replication sample, one isolated environment per model."""
+"""Run OCR models on one or more datasets, one isolated environment per model."""
 import argparse
 import csv
 import json
@@ -11,6 +11,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SMOKE_IMAGES = 3
+LANGUAGES = {
+    "Turkish": dict(vlm="Turkish", paddle="en", tesseract="tur", easyocr="tr"),
+    "Polish": dict(vlm="Polish", paddle="pl", tesseract="pol", easyocr="pl"),
+}
 
 SPECS = {
     "got": dict(loader="got", repo="stepfun-ai/GOT-OCR2_0", rev="979938bf89ccdc949c0131ddd3841e24578a4742",
@@ -39,10 +43,14 @@ SPECS = {
     "trocr": dict(loader="trocr", repo="microsoft/trocr-large-printed", rev="9ff792d8e7c22061f2ee67e1ed2246b1f9ef1e98",
                   vram=4, python="3.11", torch=("2.6.0", "0.21.0", "cu124"), packages=["transformers", "pillow"],
                   date="2025-07-01"),
-    "paddle": dict(loader="paddle", repo=None, rev=None, lang="en", vram=4, python="3.11", torch=None,
+    "paddle": dict(loader="paddle", repo=None, rev=None, lang_key="paddle", vram=4, python="3.11", torch=None,
                    packages=["paddlepaddle-gpu==2.6.2", "paddleocr==2.9.1", "numpy==1.26.4", "setuptools<81",
                              "nvidia-cudnn-cu11==8.6.0.163", "nvidia-cublas-cu11==11.11.3.6"],
                    libs=["nvidia/cudnn/lib", "nvidia/cublas/lib"], date="2025-07-01"),
+    "tesseract": dict(loader="tesseract", repo=None, rev=None, lang_key="tesseract", vram=0, python="3.11", torch=None,
+                      packages=["pytesseract", "pillow"], date="2025-07-01"),
+    "easyocr": dict(loader="easyocr", repo=None, rev=None, lang_key="easyocr", vram=4, python="3.11",
+                    torch=("2.6.0", "0.21.0", "cu124"), packages=["easyocr==1.7.2", "pillow"], date="2025-07-01"),
 }
 
 
@@ -89,24 +97,27 @@ def csv_rows(path):
         return list(csv.DictReader(f))
 
 
-def run_model(name, spec, args, n_images, log, record):
+def run_model(name, spec, args, datasets, log, record):
     from huggingface_hub import snapshot_download
 
-    out = args.out / f"{name}.csv"
     t = time.time()
     python = build_env(name, spec, args.work, log)
     record["install_s"] = round(time.time() - t)
 
     t = time.time()
-    command = [python, ROOT / "common" / "run_ocr.py", "--model", spec["loader"], "--lang", spec.get("lang", "Turkish"),
-               "--data", args.data, "--labels", args.labels, "--out", out]
+    language = LANGUAGES[args.language][spec.get("lang_key", "vlm")]
+    base = [python, ROOT / "common" / "run_ocr.py", "--model", spec["loader"], "--lang", language]
+    for option in args.option:
+        base += ["--option", option]
     if spec["repo"]:
         weights = snapshot_download(spec["repo"], revision=spec["rev"], cache_dir=args.work / "hf",
                                     ignore_patterns=["*.bin", "*.pth", "*.h5", "*.msgpack", "*.onnx"])
         record["download_s"] = round(time.time() - t)
         record["checkpoint"] = f"{spec['repo']}@{spec['rev']}"
-        command += ["--checkpoint", weights]
-    environment = {**os.environ, "HF_HOME": str(args.work / "hf"), "HF_HUB_OFFLINE": "1"}
+        base += ["--checkpoint", weights]
+    environment = {**os.environ, "HF_HOME": str(args.work / "hf")}
+    if spec["repo"]:
+        environment["HF_HUB_OFFLINE"] = "1"
     if spec["torch"] and spec["torch"][0] != "2.0.1":
         environment["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
     if spec.get("libs"):
@@ -114,50 +125,71 @@ def run_model(name, spec, args, n_images, log, record):
         paths = [str(packages / d) for d in spec["libs"]] + [os.environ.get("LD_LIBRARY_PATH", "")]
         environment["LD_LIBRARY_PATH"] = ":".join(filter(None, paths))
 
+    def command(dataset, out):
+        return [*base, "--data", dataset["data"], "--labels", dataset["labels"], "--out", out]
+
+    first = datasets[0]
+    smoke = args.out / first["name"] / f"{name}.csv"
     t = time.time()
-    run([*command, "--limit", SMOKE_IMAGES], log, env=environment)
-    rows = csv_rows(out)
+    run([*command(first, smoke), "--limit", SMOKE_IMAGES], log, env=environment)
+    rows = csv_rows(smoke)
     if not any(r["prediction"].strip() for r in rows):
-        out.unlink(missing_ok=True)
+        smoke.unlink(missing_ok=True)
         raise RuntimeError(f"no text in the first {SMOKE_IMAGES} predictions")
     print(f"--- {name}, first predictions:", *[repr(r["prediction"][:70]) for r in rows[:3]], sep="\n    ", flush=True)
-    run(command, log, env=environment)
-    record["run_s"] = round(time.time() - t)
 
-    rows = csv_rows(out)
-    seconds = [float(r["seconds"]) for r in rows[1:]]
-    record.update(images=len(rows), empty=sum(not r["prediction"].strip() for r in rows),
-                  sec_per_image=round(sum(seconds) / max(1, len(seconds)), 2))
+    record["datasets"] = {}
+    for dataset in datasets:
+        out = args.out / dataset["name"] / f"{name}.csv"
+        t_dataset = time.time()
+        run(command(dataset, out), log, env=environment)
+        rows = csv_rows(out)
+        seconds = [float(r["seconds"]) for r in rows[1:]]
+        record["datasets"][dataset["name"]] = dict(
+            images=len(rows), empty=sum(not r["prediction"].strip() for r in rows),
+            sec_per_image=round(sum(seconds) / max(1, len(seconds)), 2), run_s=round(time.time() - t_dataset))
+        if len(rows) < dataset["n_images"]:
+            raise RuntimeError(f"{dataset['name']}: only {len(rows)}/{dataset['n_images']} images finished")
+    record["run_s"] = round(time.time() - t)
     freeze = subprocess.run(["uv", "pip", "freeze", "--python", str(python)], capture_output=True, text=True).stdout
     (args.out / "envs" / f"{name}.txt").write_text(freeze, encoding="utf-8")
-    if len(rows) < n_images:
-        raise RuntimeError(f"only {len(rows)}/{n_images} images finished")
+
+
+def finished(name, datasets, out):
+    return all(len(csv_rows(out / d["name"] / f"{name}.csv")) >= d["n_images"] for d in datasets)
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", type=Path, required=True)
     ap.add_argument("--models", nargs="*", default=list(SPECS), choices=list(SPECS))
-    ap.add_argument("--data", type=Path, default=ROOT / "replication" / "data")
-    ap.add_argument("--labels", default="sample.csv")
+    ap.add_argument("--language", default="Turkish", choices=list(LANGUAGES))
+    ap.add_argument("--dataset", nargs=3, action="append", required=True, metavar=("NAME", "DATA", "LABELS"),
+                    help="dataset directory and labels file inside it; predictions go to OUT/NAME/")
+    ap.add_argument("--option", action="append", default=[], metavar="KEY=VALUE", help="passed to the model loaders")
     ap.add_argument("--work", type=Path, default=Path("/content/work"), help="environments and model weights")
     args = ap.parse_args()
     args.out = args.out.resolve()
-    args.data = args.data.resolve()
     (args.out / "logs").mkdir(parents=True, exist_ok=True)
     (args.out / "envs").mkdir(exist_ok=True)
 
-    with open(args.data / args.labels, encoding="utf-8") as f:
-        n_images = sum(1 for _ in csv.DictReader(f))
+    datasets = []
+    for dataset_name, data, labels in args.dataset:
+        data = Path(data).resolve()
+        with open(data / labels, encoding="utf-8") as f:
+            n_images = sum(1 for _ in csv.DictReader(f))
+        datasets.append(dict(name=dataset_name, data=data, labels=labels, n_images=n_images))
+        (args.out / dataset_name).mkdir(exist_ok=True)
     memory = gpu_memory_gb()
-    print(f"GPU memory: {memory:.0f} GB, {n_images} images, models: {' '.join(args.models)}", flush=True)
+    print(f"GPU memory: {memory:.0f} GB, datasets: { {d['name']: d['n_images'] for d in datasets} }, "
+          f"models: {' '.join(args.models)}", flush=True)
     summary_path = args.out / "runs.json"
     summary = json.loads(summary_path.read_text(encoding="utf-8")) if summary_path.exists() else {}
 
     for name in args.models:
         spec = SPECS[name]
         print(f"\n===== {name} =====", flush=True)
-        if len(csv_rows(args.out / f"{name}.csv")) >= n_images:
+        if finished(name, datasets, args.out):
             print("already finished", flush=True)
             continue
         if memory < spec["vram"]:
@@ -169,7 +201,7 @@ def main():
         t = time.time()
         with open(args.out / "logs" / f"{name}.log", "a", encoding="utf-8") as log:
             try:
-                run_model(name, spec, args, n_images, log, record)
+                run_model(name, spec, args, datasets, log, record)
             except Exception as e:
                 record.update(status="failed", reason=str(e))
                 print(f"FAILED {name}: {e}", file=sys.stderr, flush=True)

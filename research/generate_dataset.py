@@ -79,11 +79,12 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--n", type=int, default=20, help="images per cell")
     ap.add_argument("--seed", type=int, default=42)
-    ap.add_argument("--text", type=Path, default=ROOT / "research" / "texts" / "lalka-tom-pierwszy.txt")
+    ap.add_argument("--text", type=Path, nargs="+",
+                    default=[ROOT / "research" / "texts" / f"lalka-tom-{v}.txt" for v in ("pierwszy", "drugi")])
     ap.add_argument("--out", type=Path, default=ROOT / "research" / "data")
     args = ap.parse_args()
 
-    text = load_text(args.text)
+    text = "\n".join(load_text(path) for path in args.text)
     words, sentences = word_pool(text), sentence_pool(text)
     chars = (set("".join(sentences)) | set("".join(words)) | POLISH) - {" "}
     fonts = {t: font_coverage(ROOT / "research" / "fonts" / t, chars) for t in ("printed", "handwritten")}

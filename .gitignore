@@ -5,6 +5,7 @@ __pycache__/
 replication/data/
 replication/authors/
 replication/ocr_bundle.zip
+research/ocr_bundle.zip
 *.pdf
 !docs/**/*.pdf
 *.xlsx

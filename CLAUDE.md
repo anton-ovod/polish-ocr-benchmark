@@ -32,14 +32,15 @@ i zniekształcenia obrazu. Polskiego nie porównujemy z tureckim.
 ### Dane
 - Generator TRDG 1.8.0, tylko druk (printed) i pismo ręczne (handwritten), **bez tekstu w scenie**.
   Generator piszemy sami, kod autorów służy jako wzór parametrów (ma bugi).
-- Jeden korpus: Wolne Lektury, **sama „Lalka” Prusa** (domena publiczna), słowa filtrowane słownikiem.
+- Jeden korpus: Wolne Lektury, **sama „Lalka” Prusa, tom I i II** (domena publiczna), słowa filtrowane słownikiem.
 - Porównania:
   - z polskimi znakami / bez,
   - krótkie / długie słowa (próg 10 znaków),
   - druk / pismo ręczne,
   - słowo / zdanie (4–8 słów),
   - zniekształcenia: clean, blur, rotated, noisy, low_res (te same słowa, to samo ziarno).
-- Około 100 obrazów na komórkę, łącznie około 2000.
+- 22 komórki (11 na rodzaj pisma). Obrazów na komórkę `N` ustawia notebook (domyślnie 60, czyli 1320 obrazów); cel
+  pierwotny to 100.
 - Fonty z Google Fonts, każdy sprawdzony (`cmap`) na 18 polskich liter (ąćęłńóśźż i wielkie).
   Z 357 fontów odręcznych 272 ma komplet polskich liter i A–Z; po odrzuceniu 104
   niemal identycznych wariantów Playwrite zostaje 168. Lista: `research/fonts_tools/handwriting_fonts_pl.txt`
@@ -53,7 +54,9 @@ i zniekształcenia obrazu. Polskiego nie porównujemy z tureckim.
 - Zbiór PHSF (dokumentacja: `documentation.pdf` w paczce). Używamy **tylko `phsf/inwokacja/png`**:
   **wszystkie 1968** skanów całych stron z odręcznie przepisaną Inwokacją (szarość, szerokość 2500–5900 px,
   wysokość 640–1680 px, 4 linie). Kopia w `research/gold/images/` (115 MB, poza gitem). Pomijamy `phsf/znaki`
-  (pojedyncze znaki 32×32), `ocr_files` i `.npy`.
+  (pojedyncze znaki 32×32), `ocr_files` i `.npy`. Modelom podajemy skany zmniejszone do 2048 px dłuższego boku
+  (`research/prepare_gold.py`), ten sam rozmiar dla wszystkich modeli. Limit czasu przebiegu to ok. 3 godziny, dlatego
+  notebook ocenia losową próbkę `GOLD_N` skanów (domyślnie 300, ziarno 42); `GOLD_N = None` bierze wszystkie.
 - Nazwa pliku: `inwokacja_<nr>_<rok urodzenia>_<K/M>_<kod formularza>.png`. Nazwy bywają nieregularne
   (pełna data, cyrylica w kodzie, spacja), więc metadane z nazw parsujemy ostrożnie.
 - Zmienia się tylko charakter pisma, więc różnice w wynikach to różnice między modelami, a nie treścią.
@@ -69,7 +72,7 @@ i zniekształcenia obrazu. Polskiego nie porównujemy z tureckim.
 
 ### Modele (9, w Colabie na GPU)
 - Z artykułu bazowego (7): Qwen2.5-VL 7B, InternVL3-8B, DeepSeek-VL2-tiny, Phi-3.5-vision, Pixtral-12B,
-  GOT-OCR2, PaddleOCR. Środowiska i ustawienia jak w powtórzeniu (`replication/run_replication.py`).
+  GOT-OCR2, PaddleOCR. Środowiska i ustawienia jak w powtórzeniu (`common/run_models.py`).
 - Dodane przez nas (2): Tesseract `pol`, EasyOCR `pl`.
 - Pominięte: TrOCR (checkpoint `trocr-large-printed` rozpoznaje tylko pojedyncze linie angielskiego druku,
   nie obsługuje całych stron), GPT-4o i Claude (komercyjne). Uzasadnienie w artykule: tylko modele otwarte
@@ -83,7 +86,8 @@ i zniekształcenia obrazu. Polskiego nie porównujemy z tureckim.
   przepisujących jest niespójna, a modele zwracają ją losowo (mierzylibyśmy nawyki, nie rozpoznawanie liter);
   autorzy bazowego też liczą liczby z tekstu bez interpunkcji. Replikacja zostaje przy dotychczasowym `normalize`.
 - Odsetek błędów na polskich znakach diakrytycznych (oba zbiory).
-- Korelacja Spearmana rankingów: syntetyczne pismo ręczne vs Gold Set.
+- Korelacja Spearmana rankingów: CER na zdaniach pisma ręcznego (czyste) ze zbioru syntetycznego vs Gold Set
+  (`research/analyze.py`).
 - Prompty modeli wizyjno-językowych: prompty autorów z „Turkish” zamienionym na „Polish”.
 
 ## Repozytorium
@@ -98,17 +102,20 @@ Każdy katalog zawiera tylko to, czego faktycznie używa.
 
 ### Struktura
 - `common/`: kod wspólny dla obu badań: loadery modeli (`ocr_models.py`), runner (`run_ocr.py`, wznawialny),
+  środowiska modeli i uruchamianie na wielu zbiorach (`run_models.py`),
   metryki (`metrics.py`).
 - `replication/`: powtórzenie badania bazowego. `replication.ipynb` (Colab, 8 modeli, każdy we własnym środowisku,
-  wznawialne, wyniki na Dysku w `MyDrive/ocr-benchmark/replication/`), `run_replication.py` (logika środowisk),
+  wznawialne, wyniki na Dysku w `MyDrive/ocr-benchmark/replication/`),
   `make_bundle.sh` (buduje `ocr_bundle.zip`, poza gitem), `build_labels.py` (etykiety + próbka; używamy `--n 50` =
   1650 obrazów, większa próbka zawiera mniejszą), `analyze.py`, `authors/cer_wer_calculated.json` (predykcje autorów
   z ich repo), `results/` (`<model>.csv`, `<model>_vs_authors.csv`, `rerun_vs_authors.csv`, `runs.json`, `envs/`
   z wersjami pakietów). Obrazy autorów z Zenodo w `replication/data/syntetic-turkish-dataset/`.
 - `research/`: nasze badanie (polskie). `texts/` (korpus), `fonts/` (fonty), `fonts_tools/` (pobieranie i sprawdzanie
   fontów), `generate_dataset.py`, `summarize.py` (tabele LaTeX do `docs/research/article/tables/`), `plot_results.py`
-  (wykresy do `docs/research/article/figures/`). Notebook `research.ipynb` jeszcze nie istnieje; `qwen_colab.ipynb` to stary
-  szkic, do zastąpienia. Wygenerowane obrazy i wyniki nie są w repo (powstają w Colabie).
+  (wykresy do `docs/research/article/figures/`). `prepare_gold.py` (skalowanie skanów i etykiety),
+  `analyze.py` (CER, WER, błędy na znakach diakrytycznych, ranking, Spearman), `make_bundle.sh` (buduje `ocr_bundle.zip`,
+  poza gitem), `research.ipynb` (Colab, jedyny punkt wejścia). `summarize.py` i `plot_results.py` pochodzą z MVP i trzeba je
+  dopasować do wyników `analyze.py`. Wygenerowane obrazy i wyniki nie są w repo (powstają w Colabie).
 - `docs/replication/`: dokumenty do powtórzenia badania bazowego. `presentation/`: `presentation.tex` (prezentacja
   artykułu bazowego, 8 slajdów, bez naszej replikacji), `speaker_notes.md`. `article/`: PDF artykułu bazowego (poza gitem).
 - `docs/research/`: dokumenty do naszego badania. `article/`: `main.tex` (szkielet LNCS po polsku z `\TODO{}`),
@@ -118,7 +125,8 @@ Każdy katalog zawiera tylko to, czego faktycznie używa.
 ### Uruchamianie
 - Replikacja: `python replication/build_labels.py --n 50`, `replication/make_bundle.sh`, `ocr_bundle.zip` na
   `MyDrive/ocr-benchmark/`, potem `replication/replication.ipynb` w Colabie (A100).
-- Nasze badanie: `research/` (notebook do napisania).
+- Nasze badanie: `research/make_bundle.sh`, `ocr_bundle.zip` na `MyDrive/ocr-benchmark/`, potem `research/research.ipynb`
+  w Colabie (A100). Notebook generuje oba zbiory, uruchamia 9 modeli (`common/run_models.py`) i liczy wyniki.
 - LaTeX: `cd docs/research/article && latexmk -pdf main.tex` (analogicznie `docs/replication/presentation`, `presentation.tex`).
 
 ### Ustalenia techniczne
@@ -160,11 +168,14 @@ Każdy katalog zawiera tylko to, czego faktycznie używa.
     Data `--exclude-newer` nie obejmuje kroku z torchem, więc środowiska nie odtwarzają w pełni stanu z 2025 r.
   - TrOCR w tym przebiegu ma włączony cache, a `sec_per_image` obejmuje też pomiar z pierwszych 330 obrazów
     (ta sama karta). Suma dla 8 modeli to ok. 2,85 s/obraz.
+- **Pixtral w badaniu własnym:** temperatura 0 (`--option temperature=0`), bo domyślne próbkowanie vLLM nie dawało powtarzalnych
+  predykcji; replikacja zostaje przy domyślnych ustawieniach. Opcje `--option` trafiają tylko do loaderów, które je przyjmują
+  (też `max_new_tokens=512` dla Qwena; replikacja używa 128 jak autorzy).
 - **TrOCR:** checkpoint ma `use_cache=False` (2,5× wolniej na CPU, włączamy cache: wynik identyczny);
   `max_length` domyślne 21 tokenów jak u autorów, więc dłuższe zdania są ucinane (u autorów też).
   Transformers 5 tworzy model na urządzeniu `meta` i nie wypełnia tabeli pozycji, dlatego `trocr()` liczy ją od nowa.
 - **Generator:** TRDG 1.8.0 woła `getsize()` usunięte z Pillow 10, więc podmieniamy `get_text_height` jak autorzy.
-- **Tesseract:** `--psm 7`, bo obraz zawiera jedną linię tekstu.
+- **Tesseract:** `--psm 7` dla obrazów niższych niż 200 px (jedna linia, zbiór syntetyczny), `--psm 6` dla stron Gold Setu.
 - **PaddleOCR `pl`** używa wspólnego słownika łacińskiego (`latin_dict.txt`) bez ń, ś, ź, ż: nie może ich
   zwrócić („ludnošci”, „5piacy”). Przebieg z `en` (ustawienie autorów) dawał to samo (CER 0,18 vs 0,19), więc go usunęliśmy;
   w artykule jest tylko PaddleOCR `pl`, podpisywany po prostu „PaddleOCR”.
@@ -174,7 +185,7 @@ Każdy katalog zawiera tylko to, czego faktycznie używa.
   `summarize.py` → `tables/effects.tex` i kolumna CI w `overall.tex`.
 
 ### Do zrobienia
-- Notebook `research/research.ipynb` (generator, 9 modeli, metryki, tabele); zastąpi `qwen_colab.ipynb`.
-- Pełny zbiór syntetyczny `--n 100`, przygotowanie Gold Setu
-  (zdjęcia + tekst wzorcowy), 9 modeli w Colabie na obu zbiorach, Spearman.
+- Pierwszy przebieg `research/research.ipynb` w Colabie (notebook nie był jeszcze uruchamiany), zmierzenie czasu i
+  ewentualne zwiększenie `N` i `GOLD_N`.
+- Dopasowanie `summarize.py` i `plot_results.py` do wyników `analyze.py` (tabele i wykresy do artykułu).
 - Artykuł: wszystkie `\TODO{}`, przegląd literatury (prace o OCR dla polskiego), opis wyników.

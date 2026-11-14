@@ -1,12 +1,22 @@
 """Run one OCR model over a dataset and append predictions to a CSV."""
 import argparse
 import csv
+import inspect
+import json
 import sys
 import time
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 from ocr_models import MODELS
+
+
+def parse_option(text):
+    key, _, value = text.partition("=")
+    try:
+        return key, json.loads(value)
+    except ValueError:
+        return key, value
 
 
 def main():
@@ -18,6 +28,8 @@ def main():
     ap.add_argument("--checkpoint", default=None, help="Hugging Face model id for trocr/qwen (default in ocr_models.py)")
     ap.add_argument("--labels", default="labels.csv", help="labels file inside --data (e.g. a subset)")
     ap.add_argument("--limit", type=int, default=None, help="only the first N images (smoke test)")
+    ap.add_argument("--option", action="append", default=[], metavar="KEY=VALUE",
+                    help="extra loader argument, ignored by loaders that do not take it")
     args = ap.parse_args()
 
     with open(args.data / args.labels, encoding="utf-8") as f:
@@ -32,7 +44,11 @@ def main():
         return
 
     options = {"lang": args.lang, "model": args.checkpoint}
-    read = MODELS[args.model](**{k: v for k, v in options.items() if v})
+    options = {k: v for k, v in options.items() if v}
+    options.update(parse_option(o) for o in args.option)
+    loader = MODELS[args.model]
+    accepted = inspect.signature(loader).parameters
+    read = loader(**{k: v for k, v in options.items() if k in accepted})
     args.out.parent.mkdir(parents=True, exist_ok=True)
     new_file = not args.out.exists() or args.out.stat().st_size == 0
     with open(args.out, "a", newline="", encoding="utf-8") as f:
