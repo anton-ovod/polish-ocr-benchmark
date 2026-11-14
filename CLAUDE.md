@@ -19,10 +19,9 @@ DOI 10.1007/s10032-026-00613-6. Lista ministerialna: 100 pkt.
 
 Zasada nadrzędna: **prostota**. Artykuł jest na zaliczenie, nie do publikacji, więc nie dokładamy analiz.
 
-**Zmiana 11.11 (wstępna, szczegóły do ustalenia w grupie):** prowadząca (dr M. Charytanowicz) udostępniła
-1008 zdjęć odręcznie przepisanej Inwokacji z „Pana Tadeusza” i zapytała, co porównujemy. Wracamy więc do
-Gold Setu z prawdziwymi zdjęciami i rozszerzamy zestaw modeli do 9. Dotychczasowe wyniki na zbiorze
-polskim (n=20, 4 modele) były tylko próbą działania kodu, nie traktujemy ich jako wyników.
+**Zmiana 11.11:** prowadząca (dr M. Charytanowicz) udostępniła zdjęcia odręcznie przepisanej Inwokacji z „Pana
+Tadeusza”. Wracamy więc do Gold Setu z prawdziwymi zdjęciami i rozszerzamy zestaw modeli do 9. Wcześniejsze
+wyniki na zbiorze polskim (n=20, 4 modele) były tylko próbą działania kodu, nie traktujemy ich jako wyników.
 
 **Tytuł roboczy:** „Ocena silników OCR i modeli wizyjno-językowych w rozpoznawaniu tekstu polskiego na danych
 syntetycznych i rzeczywistych”
@@ -41,8 +40,7 @@ w dyskusji.
 ### Dane
 - Generator TRDG 1.8.0, tylko druk (printed) i pismo ręczne (handwritten), **bez tekstu w scenie**.
   Generator piszemy sami, kod autorów służy jako wzór parametrów (ma bugi).
-- Jeden korpus: Wolne Lektury, **tylko teksty z domeny publicznej** (Prus, Sienkiewicz, Żeromski…),
-  słowa filtrowane słownikiem.
+- Jeden korpus: Wolne Lektury, **sama „Lalka” Prusa** (domena publiczna), słowa filtrowane słownikiem.
 - Porównania:
   - z polskimi znakami / bez,
   - krótkie / długie słowa (próg 10 znaków),
@@ -58,15 +56,22 @@ w dyskusji.
   `research/fonts/excluded/`.
   Uwaga: pole `subsets` w metadanych Google Fonts jest niewiarygodne, trzeba sprawdzać `cmap`.
 - Wycięte: tekst w scenie (COCO).
-- Do ustalenia: korpus z samej „Lalki” (tak mówiono na czacie 11.11) czy kilku autorów z Wolnych Lektur.
 
 ### Gold Set: zdjęcia rzeczywiste (od 11.11)
-- 1008 zdjęć od prowadzącej, każde to odręcznie przepisany (ten sam) fragment Inwokacji. Zmienia się tylko
-  charakter pisma, więc różnice w wynikach to różnice między modelami, a nie treścią.
+- Zbiór PHSF od prowadzącej (dokumentacja: `documentation.pdf` w paczce). Używamy **tylko `phsf/inwokacja/png`**:
+  **wszystkie 1968** skanów całych stron z odręcznie przepisaną Inwokacją (szarość, szerokość 2500–5900 px,
+  wysokość 640–1680 px, 4 linie). Kopia w `research/gold/images/` (115 MB, poza gitem). Pomijamy `phsf/znaki`
+  (pojedyncze znaki 32×32), `ocr_files` i `.npy`. W mailu prowadzącej było 1008 zdjęć; nie wiemy, skąd ta różnica.
+- Nazwa pliku: `inwokacja_<nr>_<rok urodzenia>_<K/M>_<kod formularza>.png`. Nazwy bywają nieregularne
+  (pełna data, cyrylica w kodzie, spacja), więc metadane z nazw parsujemy ostrożnie.
+- Zmienia się tylko charakter pisma, więc różnice w wynikach to różnice między modelami, a nie treścią.
 - Zdjęcia przetwarzamy w całości (cała strona), **bez cięcia na linie**.
-- Tekst wzorcowy: jeden oryginalny tekst, linie scalone w jeden ciąg, małe litery, NFC.
-- Do sprawdzenia u prowadzącej: czy każdy przepisał dokładnie ten sam fragment (inaczej CER zawyżony
-  przez dane) i czy zdjęcia można opublikować w repo.
+- **Tekst wzorcowy:** Inwokacja z „Pana Tadeusza” (cztery pierwsze wersy), linie scalone w jeden ciąg, małe litery,
+  NFC. Uwaga: na skanach (obejrzane wyrywkowo, także skrajnie różne rozmiary) tekst z formularza różni się od
+  edycji kanonicznej interpunkcją: „Litwo, Ojczyzno moja! Ty jesteś jak zdrowie; / Ile Cię trzeba cenić? Ten tylko
+  się dowie: / Kto cię STRACIŁ. Dziś Piękność Twą w całej ozdobie, / Widzę i opisuję - bo tęsknię po tobie.”
+  Wzorzec trzeba oprzeć na tekście z formularza (sprawdzić w dokumentacji lub u prowadzącej), nie na edycji
+  z Wolnych Lektur, inaczej CER będzie zawyżony przez sam wzorzec. Pozostałe błędy przepisujących zostają.
 - Służy do pytań 1 i 3; ranking porównujemy z rankingiem na syntetycznym piśmie ręcznym.
 
 ### Modele (9, w Colabie na GPU)
@@ -98,15 +103,6 @@ w dyskusji.
 - Obrazy jako zip w GitHub Release (dają się też odtworzyć z generatora przy stałym ziarnie).
 - Licencje: kod MIT, dane CC BY 4.0. Fonty mają licencję OFL.
 
-### Role (osoby jeszcze nieprzypisane)
-- **A: dane.** Generator, słownik, sprawdzanie fontów, kategorie, zniekształcenia. Wynik: obrazy
-  i CSV z etykietami. Ścieżka krytyczna, startuje pierwsza.
-- **B: modele i ewaluacja.** Notebook z 5 modelami, skrypt CER/WER. Na start testuje na kilkunastu
-  ręcznie zrobionych obrazkach.
-- **C: artykuł bazowy i tekst.** Prezentacja 7.11, szkielet LNCS, wstęp, przegląd literatury,
-  bibliografia (do 10 pozycji). Naturalnie osoba, która ma już powtórzenie badania z artykułu bazowego.
-- Na koniec wszyscy razem: wyniki, dyskusja, redakcja.
-
 ### Harmonogram
 | Termin | Co |
 |---|---|
@@ -118,7 +114,6 @@ w dyskusji.
 | 8–10.12 | bufor i złożenie w turze I (tura II 15.01 jako zapas) |
 
 ### Do ustalenia na callu
-- Kto bierze rolę A, B i C.
 - Czy powtórzenie badania z artykułu bazowego na Lab 3 ma liczby porównane z tabelą autorów.
 - ~~Kto zakłada repo na GitHubie.~~ Założone 22.10: https://github.com/anton-ovod/polish-ocr-benchmark (prywatne;
   upublicznić: `gh repo edit --visibility public --accept-visibility-change-consequences`).
@@ -211,7 +206,7 @@ Każdy katalog zawiera tylko to, czego faktycznie używa.
 
 ### Do zrobienia
 - Notebook `research/research.ipynb` (generator + 9 modeli + metryki + tabele) zamiast starych skryptów MVP.
-- Plan z 11.11: odpowiedź do prowadzącej, pełny zbiór syntetyczny `--n 100`, przygotowanie Gold Setu
+- Plan z 11.11: pełny zbiór syntetyczny `--n 100`, przygotowanie Gold Setu
   (zdjęcia + tekst wzorcowy), 9 modeli w Colabie na obu zbiorach, Spearman.
 - Prezentacja: uzupełnić nazwiska, zweryfikować IF w Clarivate JCR.
 - Artykuł: wszystkie `\TODO{}`, przegląd literatury (prace o OCR dla polskiego), opis wyników.

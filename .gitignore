@@ -26,3 +26,6 @@ logs/
 *.snm
 *.toc
 *.synctex.gz
+
+# Gold Set (PHSF scans, loaded from Drive in Colab)
+research/gold/
