@@ -1,13 +1,12 @@
 # Polski benchmark OCR
 
-Grupowy projekt na studia magisterskie: powtórzenie badania z artykułu bazowego i przeprowadzenie
-własnego badania ze zmienionym jednym elementem (język polski zamiast tureckiego).
+Powtórzenie badania z artykułu bazowego i własne badanie tej samej metodologii dla języka polskiego.
 
 ## Artykuł bazowy
 
 Y. Yılmaz, E.G. Hanoğlu, A.G. Özkan, K. Öztoprak, "Benchmarking OCR and vision-language models for
 Turkish text recognition: a comprehensive evaluation using synthetic data", IJDAR (Springer), 2026,
-DOI 10.1007/s10032-026-00613-6. Lista ministerialna: 100 pkt.
+DOI 10.1007/s10032-026-00613-6.
 
 - Dane: Zenodo 10.5281/zenodo.21923181 (CC BY 4.0), generator TRDG 1.8.0.
 - Kod: https://github.com/OCR-benchmark-project/turkish-synthetic-text-recognition-benchmark
@@ -15,21 +14,14 @@ DOI 10.1007/s10032-026-00613-6. Lista ministerialna: 100 pkt.
   zdanie, zakłócenia (clean, rotated, noisy, blur, low_resolution). Typy tekstu: printed, handwritten,
   scene.
 
-## Nasz plan (ustalony 22.10.2026, wstępnie zmieniony 11.11 po mailach prowadzącej)
-
-Zasada nadrzędna: **prostota**. Artykuł jest na zaliczenie, nie do publikacji, więc nie dokładamy analiz.
-
-**Zmiana 11.11:** prowadząca (dr M. Charytanowicz) udostępniła zdjęcia odręcznie przepisanej Inwokacji z „Pana
-Tadeusza”. Wracamy więc do Gold Setu z prawdziwymi zdjęciami i rozszerzamy zestaw modeli do 9. Wcześniejsze
-wyniki na zbiorze polskim (n=20, 4 modele) były tylko próbą działania kodu, nie traktujemy ich jako wyników.
+## Własne badanie
 
 **Tytuł roboczy:** „Ocena silników OCR i modeli wizyjno-językowych w rozpoznawaniu tekstu polskiego na danych
 syntetycznych i rzeczywistych”
 
 **Cel:** porównanie skuteczności klasycznych silników OCR i modeli wizyjno-językowych w rozpoznawaniu tekstu
 polskiego oraz określenie, jak na błąd wpływają polskie znaki diakrytyczne, długość tekstu, rodzaj pisma
-i zniekształcenia obrazu. Nie porównujemy polskiego z tureckim. Wyniki autorów najwyżej jako jedno zdanie
-w dyskusji.
+i zniekształcenia obrazu. Polskiego nie porównujemy z tureckim.
 
 **Pytania badawcze:**
 1. Który model najlepiej rozpoznaje polski tekst (oba zbiory)?
@@ -49,7 +41,7 @@ w dyskusji.
   - zniekształcenia: clean, blur, rotated, noisy, low_res (te same słowa, to samo ziarno).
 - Około 100 obrazów na komórkę, łącznie około 2000.
 - Fonty z Google Fonts, każdy sprawdzony (`cmap`) na 18 polskich liter (ąćęłńóśźż i wielkie).
-  **Sprawdzone 22.10:** z 357 fontów odręcznych 272 ma komplet polskich liter i A–Z; po odrzuceniu 104
+  Z 357 fontów odręcznych 272 ma komplet polskich liter i A–Z; po odrzuceniu 104
   niemal identycznych wariantów Playwrite zostaje 168. Lista: `research/fonts_tools/handwriting_fonts_pl.txt`
   (posortowana wg popularności), skrypty `research/fonts_tools/fetch_fonts.py` i `check_fonts.py`.
   W zbiorze używamy 19 najpopularniejszych; Amatic SC wykluczony (same kapitaliki), patrz
@@ -57,11 +49,11 @@ w dyskusji.
   Uwaga: pole `subsets` w metadanych Google Fonts jest niewiarygodne, trzeba sprawdzać `cmap`.
 - Wycięte: tekst w scenie (COCO).
 
-### Gold Set: zdjęcia rzeczywiste (od 11.11)
-- Zbiór PHSF od prowadzącej (dokumentacja: `documentation.pdf` w paczce). Używamy **tylko `phsf/inwokacja/png`**:
+### Gold Set: zdjęcia rzeczywiste
+- Zbiór PHSF (dokumentacja: `documentation.pdf` w paczce). Używamy **tylko `phsf/inwokacja/png`**:
   **wszystkie 1968** skanów całych stron z odręcznie przepisaną Inwokacją (szarość, szerokość 2500–5900 px,
   wysokość 640–1680 px, 4 linie). Kopia w `research/gold/images/` (115 MB, poza gitem). Pomijamy `phsf/znaki`
-  (pojedyncze znaki 32×32), `ocr_files` i `.npy`. W mailu prowadzącej było 1008 zdjęć; nie wiemy, skąd ta różnica.
+  (pojedyncze znaki 32×32), `ocr_files` i `.npy`.
 - Nazwa pliku: `inwokacja_<nr>_<rok urodzenia>_<K/M>_<kod formularza>.png`. Nazwy bywają nieregularne
   (pełna data, cyrylica w kodzie, spacja), więc metadane z nazw parsujemy ostrożnie.
 - Zmienia się tylko charakter pisma, więc różnice w wynikach to różnice między modelami, a nie treścią.
@@ -99,7 +91,7 @@ w dyskusji.
 2. Klasyczne silniki OCR z polskim modelem językowym (Tesseract `pol`, EasyOCR `pl`), których autorzy
    nie badali.
 3. Wpływ polskich znaków diakrytycznych na błąd rozpoznawania.
-4. Sprawdzenie benchmarku syntetycznego na 1008 prawdziwych odręcznych zdjęciach.
+4. Sprawdzenie benchmarku syntetycznego na 1968 prawdziwych odręcznych zdjęciach.
 5. Otwarty zbiór i kod (Colab).
 
 ### Kod i dane
@@ -107,26 +99,11 @@ w dyskusji.
 - Obrazy jako zip w GitHub Release (dają się też odtworzyć z generatora przy stałym ziarnie).
 - Licencje: kod MIT, dane CC BY 4.0. Fonty mają licencję OFL.
 
-### Harmonogram
-| Termin | Co |
-|---|---|
-| ~25.10, Lab 3 | powtórzenie badania z artykułu bazowego, z liczbami porównanymi do tabeli autorów |
-| do 7.11 | generator i pełny zbiór (A), modele na próbce (B), **prezentacja bazowego na Lab 4, 7.11** (C) |
-| do 15.11 | **pełne wyniki 5 modeli**, tabela CER/WER |
-| 16–22.11 | wykresy, slajdy z własnym badaniem, **Lab 5 (zaliczenie) 22.11** |
-| 23.11–7.12 | pisanie 6 stron LNCS, wplatamy uwagi z Lab 5 |
-| 8–10.12 | bufor i złożenie w turze I (tura II 15.01 jako zapas) |
-
-### Do ustalenia na callu
-- Czy powtórzenie badania z artykułu bazowego na Lab 3 ma liczby porównane z tabelą autorów.
-- ~~Kto zakłada repo na GitHubie.~~ Założone 22.10: https://github.com/anton-ovod/polish-ocr-benchmark (prywatne;
-  upublicznić: `gh repo edit --visibility public --accept-visibility-change-consequences`).
-
-## Stan prac (14.11.2026)
+## Repozytorium
 
 Kod, identyfikatory, komentarze, nazwy plików i kolumny CSV piszemy **po angielsku**; dokumenty
 (artykuł, slajdy) po polsku. W kodzie **nie piszemy komentarzy**, a docstring to najwyżej jedna linia opisu modułu;
-ustalenia, które trzeba zachować, trafiają do tego pliku.
+decyzje, które trzeba zachować, trafiają do tego pliku.
 
 **Nic nie uruchamiamy lokalnie.** Modele, generator i ewaluacja działają tylko w Colabie (notebook jest jedynym
 punktem wejścia). Lokalnie najwyżej LaTeX. Brak venvów i `requirements*.txt`: zależności instalują notebooki.
@@ -145,7 +122,7 @@ Każdy katalog zawiera tylko to, czego faktycznie używa.
   fontów), `generate_dataset.py`, `summarize.py` (tabele LaTeX do `docs/article/tables/`), `plot_results.py`
   (wykresy do `docs/article/figures/`). Notebook `research.ipynb` jeszcze nie istnieje; `qwen_colab.ipynb` to stary
   szkic, do zastąpienia. Wygenerowane obrazy i wyniki nie są w repo (powstają w Colabie).
-- `docs/presentation/presentation.tex`: prezentacja artykułu bazowego (8 slajdów, Lab 4, 7.11), tylko o artykule
+- `docs/presentation/presentation.tex`: prezentacja artykułu bazowego (8 slajdów), tylko o artykule
   bazowym (bez naszej replikacji); notatki do wystąpienia w `speaker_notes.md`.
 - `docs/article/main.tex`: szkielet LNCS po polsku z `\TODO{}`; tabele `docs/article/tables/*.tex`
   generuje `summarize.py`, nie edytować ręcznie.
@@ -156,7 +133,7 @@ Każdy katalog zawiera tylko to, czego faktycznie używa.
 - Nasze badanie: `research/` (notebook do napisania).
 - LaTeX: `cd docs/article && latexmk -pdf main.tex` (analogicznie `docs/presentation`).
 
-### Ustalenia (do artykułu i prezentacji)
+### Ustalenia techniczne
 - **CER w kodzie autorów** (`cer_wer_calculation.py`, zamienione argumenty) dzieli odległość przez długość
   *predykcji*; tak liczone są wszystkie 65 036 wartości `cer` w ich JSON-ie (bez małych liter). Liczby
   z tekstu artykułu odtwarza jednak inny wariant z ich repo (`graphs_lower_trocr.py`): małe litery,
@@ -165,7 +142,7 @@ Każdy katalog zawiera tylko to, czego faktycznie używa.
   Nieodtworzone: GPT-4o non_turkish 0,066 vs 0,055, Paddle clean 0,260 vs 0,239. W tym wariancie TrOCR
   jest ostatni (0,380), a GOT-OCR2, który gubi spacje, ma 0,311 (poprawny CER 0,391, czyli ostatni).
 - **Claude:** JSON autorów zawiera Claude 3.7 Sonnet (CER 0,349), artykuł podaje Sonnet 4 z CER 0,197.
-- **Ponowny przebieg 8 otwartych modeli** (2.11.2026, Colab A100, 1650 obrazów = 50 na każdą z 33 komórek,
+- **Ponowny przebieg 8 otwartych modeli** (Colab A100, 1650 obrazów = 50 na każdą z 33 komórek,
   25% zbioru; bez GPT-4o i Claude'a). Liczone naszym CER (NFC, małe litery), więc nie są to wartości z tekstu
   artykułu. Kolejność modeli taka sama jak u autorów:
 
@@ -209,9 +186,7 @@ Każdy katalog zawiera tylko to, czego faktycznie używa.
   `summarize.py` → `tables/effects.tex` i kolumna CI w `overall.tex`.
 
 ### Do zrobienia
-- Notebook `research/research.ipynb` (generator + 9 modeli + metryki + tabele) zamiast starych skryptów MVP.
-- Plan z 11.11: pełny zbiór syntetyczny `--n 100`, przygotowanie Gold Setu
+- Notebook `research/research.ipynb` (generator, 9 modeli, metryki, tabele); zastąpi `qwen_colab.ipynb`.
+- Pełny zbiór syntetyczny `--n 100`, przygotowanie Gold Setu
   (zdjęcia + tekst wzorcowy), 9 modeli w Colabie na obu zbiorach, Spearman.
-- Prezentacja: uzupełnić nazwiska, zweryfikować IF w Clarivate JCR.
 - Artykuł: wszystkie `\TODO{}`, przegląd literatury (prace o OCR dla polskiego), opis wyników.
-- Repo na GitHubie (kod MIT, dane CC BY 4.0).
