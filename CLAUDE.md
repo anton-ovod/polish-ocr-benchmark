@@ -186,6 +186,5 @@ Każdy katalog zawiera tylko to, czego faktycznie używa.
   `summarize.py` → `tables/effects.tex` i kolumna CI w `overall.tex`.
 
 ### Do zrobienia
-- Pierwszy przebieg `research/research.ipynb` w Colabie (notebook nie był jeszcze uruchamiany) i zmierzenie czasu.
-- Dopasowanie `summarize.py` i `plot_results.py` do wyników `analyze.py` (tabele i wykresy do artykułu).
-- Artykuł: wszystkie `\TODO{}`, przegląd literatury (prace o OCR dla polskiego), opis wyników.
+- Artykuł (`main.tex`, ok. 5,4 strony treści): autorzy i uczelnia (`\TODO{}`), dopracowanie przeglądu literatury o OCR dla polskiego (jedyna pozycja to Idziak i in., arXiv 2303.16256), sprawdzenie wyniku GOT-OCR2 na skanach (0,795) na surowych predykcjach.
+- Prezentacja naszego badania (`docs/research/presentation/`).
