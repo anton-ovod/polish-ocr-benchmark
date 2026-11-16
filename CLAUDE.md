@@ -116,8 +116,8 @@ Każdy katalog zawiera tylko to, czego faktycznie używa.
   fontów), `generate_dataset.py`, `summarize.py` (tabele LaTeX do `docs/research/article/tables/`), `plot_results.py`
   (wykresy do `docs/research/article/figures/`). `prepare_gold.py` (skalowanie skanów i etykiety),
   `analyze.py` (CER, WER, błędy na znakach diakrytycznych, ranking, Spearman), `make_bundle.sh` (buduje `ocr_bundle.zip` z kodem i gotowymi zbiorami,
-  poza gitem), `research.ipynb` (Colab, jedyny punkt wejścia). `summarize.py` i `plot_results.py` pochodzą z MVP i trzeba je
-  dopasować do wyników `analyze.py`. Wygenerowane obrazy i wyniki nie są w repo (powstają w Colabie).
+  poza gitem), `research.ipynb` (Colab, jedyny punkt wejścia). `summarize.py` (tabele `overall.tex`, `gold.tex`) i `plot_results.py` (wykresy `conditions`, `ranking`) czytają wyniki `analyze.py`.
+  Wygenerowane obrazy i skany nie są w repo (`research/data/`, `research/gold/`); predykcje i podsumowania z Colaba są w `research/results/`.
 - `docs/replication/`: dokumenty do powtórzenia badania bazowego. `presentation/`: `presentation.tex` (prezentacja
   artykułu bazowego, 8 slajdów, bez naszej replikacji), `speaker_notes.md`. `article/`: PDF artykułu bazowego (poza gitem).
 - `docs/research/`: dokumenty do naszego badania. `article/`: `main.tex` (szkielet LNCS po polsku z `\TODO{}`),
@@ -183,7 +183,7 @@ Każdy katalog zawiera tylko to, czego faktycznie używa.
 - Tekstury papieru autorów nie są opublikowane; renderujemy na białym tle.
 - **Obliczenia w artykule** (sekcje 3.3–3.4): wzory (1)–(5) — CER/WER, średnia, odsetek błędów
   diakrytycznych, bootstrap 95% CI (B=1000 jak u autorów), efekt Δ = różnica średnich z CI. Liczy je
-  `summarize.py` → `tables/effects.tex` i kolumna CI w `overall.tex`.
+  `summarize.py` → `summary/effects.csv` i kolumna CI w `tables/overall.tex`.
 
 ### Do zrobienia
 - Artykuł (`main.tex`, ok. 5,4 strony treści): autorzy i uczelnia (`\TODO{}`), dopracowanie przeglądu literatury o OCR dla polskiego, sprawdzenie wyniku GOT-OCR2 na skanach (0,795) na surowych predykcjach.

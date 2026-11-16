@@ -117,40 +117,6 @@ def latex_gold(table, path):
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
-def latex_cells(by_cell, models, path):
-    head = " & ".join(MODEL_NAMES.get(m, m) for m in models)
-    lines = [r"\begin{tabular}{l" + "c" * len(models) + "}", r"\toprule", f"Podkategoria & {head} \\\\", r"\midrule"]
-    previous = None
-    for cat, sub, label in CELL_ORDER:
-        if previous and cat != previous:
-            lines.append(r"\midrule")
-        previous = cat
-        cells = []
-        for m in models:
-            p, h = (by_cell.get((m, typ, cat, sub), float("nan")) for typ in ("printed", "handwritten"))
-            cells.append(f"{fmt(p)} / {fmt(h)}")
-        lines.append(f"{label} & " + " & ".join(cells) + r" \\")
-    lines += [r"\bottomrule", r"\end{tabular}"]
-    path.write_text("\n".join(lines) + "\n", encoding="utf-8")
-
-
-def latex_effects(effects, models, path):
-    head = " & ".join(MODEL_NAMES.get(m, m) for m in models)
-    lines = [r"\begin{tabular}{l" + "r" * len(models) + "}", r"\toprule", f"Czynnik & {head} \\\\", r"\midrule"]
-    for label, *_ in EFFECTS:
-        cells = []
-        for m in models:
-            r = effects.get((m, label))
-            if r is None:
-                cells.append("--")
-                continue
-            text = f"{r['delta']:+.3f}".replace("0.", ".", 1)
-            cells.append(rf"\textbf{{{text}}}" if r["lo"] > 0 or r["hi"] < 0 else text)
-        lines.append(f"{label} & " + " & ".join(cells) + r" \\")
-    lines += [r"\bottomrule", r"\end{tabular}"]
-    path.write_text("\n".join(lines) + "\n", encoding="utf-8")
-
-
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--data", type=Path, default=ROOT / "research" / "data")
@@ -213,8 +179,6 @@ def main():
     args.tables.mkdir(parents=True, exist_ok=True)
     latex_gold(gold_table, args.tables / "gold.tex")
     latex_overall(overall, args.tables / "overall.tex")
-    latex_cells(by_cell.cer.to_dict(), models, args.tables / "cells.tex")
-    latex_effects(effects.set_index(["model", "effect"]).to_dict("index"), models, args.tables / "effects.tex")
     print(f"\nLaTeX tables written to {args.tables}")
 
 
