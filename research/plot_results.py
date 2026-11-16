@@ -18,8 +18,8 @@ from summarize import CELL_ORDER, EFFECTS, MODEL_NAMES, ordered
 
 ROOT = Path(__file__).resolve().parents[1]
 
-COLORS = {"qwen7b": "#6250d6", "qwen": "#008300", "tesseract": "#2a78d6", "easyocr": "#eb6834",
-          "paddle": "#1baf7a", "trocr": "#eda100"}
+COLORS = {"qwen7b": "#6250d6", "internvl": "#008300", "deepseek": "#d63a6a", "tesseract": "#2a78d6",
+          "easyocr": "#eb6834", "paddle": "#1baf7a", "got": "#eda100"}
 INK, INK2, MUTED, GRID, AXIS = "#0b0b0b", "#52514e", "#898781", "#e1e0d9", "#c3c2b7"
 BLUES = ["#cde2fb", "#9ec5f4", "#6da7ec", "#3987e5", "#256abf", "#184f95", "#0d366b"]
 WIDTH = 4.8
@@ -173,7 +173,7 @@ def plot_speed(overall, models, out):
         ax.annotate(name(m), (r.seconds, r.cer), xytext=(dx, dy), textcoords="offset points", ha=ha, va=va,
                     fontsize=7, color=INK)
     ax.set_xscale("log")
-    ax.set_xlabel("czas na obraz [s], CPU, skala logarytmiczna")
+    ax.set_xlabel("czas na obraz [s], Colab A100, skala logarytmiczna")
     ax.set_ylabel("średni CER")
     lo, hi = overall.loc[models, "seconds"].min(), overall.loc[models, "seconds"].max()
     ax.set_xlim(lo / 4, hi * 4)
@@ -181,6 +181,24 @@ def plot_speed(overall, models, out):
     ax.xaxis.set_major_formatter(decimal_comma)
     ax.yaxis.set_major_formatter(decimal_comma)
     save(fig, out, "speed")
+
+
+def plot_gold(gold, out):
+    fig, ax = plt.subplots(figsize=(WIDTH * 0.75, 2.9))
+    top = max(gold.synthetic_cer.max(), gold.gold_cer.max()) * 1.1
+    ax.plot([0, top], [0, top], color=AXIS, linewidth=0.8, linestyle="--", zorder=1)
+    for m, r in gold.iterrows():
+        ax.scatter(r.synthetic_cer, r.gold_cer, s=34, color=COLORS.get(m, MUTED), edgecolor="white", linewidth=0.8, zorder=3)
+        dx, ha = (-5, "right") if m == "paddle" else (5, "left")
+        ax.annotate(name(m), (r.synthetic_cer, r.gold_cer), xytext=(dx, 0), textcoords="offset points", fontsize=7,
+                    color=INK, va="center", ha=ha)
+    ax.set_xlabel("CER, syntetyczne pismo odręczne (zdania, czyste)")
+    ax.set_ylabel("CER, Gold Set")
+    ax.set_xlim(0, top)
+    ax.set_ylim(0, top)
+    ax.xaxis.set_major_formatter(decimal_comma)
+    ax.yaxis.set_major_formatter(decimal_comma)
+    save(fig, out, "gold")
 
 
 def main():
@@ -201,6 +219,7 @@ def main():
     plot_effects(effects, models, args.out)
     plot_diacritics(df, overall, models, args.out)
     plot_speed(overall, models, args.out)
+    plot_gold(pd.read_csv(args.summary / "gold.csv", index_col=0).loc[models], args.out)
 
 
 if __name__ == "__main__":
