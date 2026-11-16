@@ -13,6 +13,8 @@
 \usepackage{xcolor}
 \usepackage{hyperref}
 \newcommand{\TODO}[1]{\textcolor{red}{[TODO: #1]}}
+\renewcommand{\andname}{i}
+\renewcommand{\lastandname}{\unskip{} i}
 \renewcommand{\abstractname}{Streszczenie}
 \renewcommand{\keywordname}{\textbf{Słowa kluczowe:}}
 \renewcommand{\tablename}{Tabela}
@@ -27,9 +29,9 @@
 
 \title{Ocena silników OCR i modeli wizyjno-językowych w~rozpoznawaniu tekstu polskiego na danych syntetycznych i~rzeczywistych}
 \titlerunning{OCR i VLM dla tekstu polskiego}
-\author{\TODO{Autor 1} \and \TODO{Autor 2} \and \TODO{Autor 3}}
-\authorrunning{\TODO{Autorzy}}
-\institute{\TODO{Uczelnia, wydział}\\\email{\TODO{e-mail}}}
+\author{Anton Ovod \and Maciej Pietras \and Marek Siuzdak \and Paweł Podgórski}
+\authorrunning{A. Ovod i in.}
+\institute{Politechnika Lubelska, Wydział Elektrotechniki i Informatyki, Lublin\\\email{\TODO{e-mail}}}
 
 \maketitle
 
@@ -54,9 +56,10 @@ a~polski zawiera dziewięć liter z~diakrytykami (ą, ć, ę, ł, ń, ó, ś, ź
 łacińskich odpowiedników tylko ogonkiem, kreską lub kropką. Yılmaz i~in.~\cite{yilmaz2026} wykazali
 dla tureckiego, że znaki specyficzne dla języka stanowią główne źródło błędów.
 
-Stawiamy trzy pytania: (1) który z~otwartych systemów najlepiej rozpoznaje polski tekst, (2) jak błąd zależy
+Celem pracy jest ocena otwartych systemów OCR i~VLM na tekście polskim oraz określenie, jak błąd zależy od
+cech tekstu i~obrazu. Stawiamy trzy pytania: (1) który z~otwartych systemów najlepiej rozpoznaje polski tekst, (2) jak błąd zależy
 od polskich znaków, długości słowa, kontekstu, rodzaju pisma i~zniekształceń, (3) czy ranking na danych
-syntetycznych odpowiada rankingowi na prawdziwym piśmie odręcznym. Wkład pracy: przeniesienie protokołu
+syntetycznych odpowiada rankingowi na prawdziwym piśmie odręcznym. Elementy nowości: przeniesienie protokołu
 \cite{yilmaz2026} na język polski, dodanie klasycznych silników z~modelem polskim (Tesseract, EasyOCR), zbiór
 rzeczywisty 1968 skanów oraz analiza błędów diakrytycznych, w~tym ograniczeń słowników znaków.
 
@@ -193,9 +196,9 @@ PaddleOCR z~modelem \texttt{pl} korzysta ze wspólnego słownika łacińskiego, 
 liter ń, ś, ź i~ż, więc zastępuje je podobnymi (,,ludnošci'' zamiast ,,ludności''). Wzór~\eqref{eq:cer} daje dla GOT-OCR2, który gubi spacje, CER 0,391; kod autorów dzieli odległość przez długość
 predykcji i~odtwarza opublikowane liczby dopiero w~wariancie bez spacji (0,311), co zmienia miejsce modelu w~rankingu.
 
-\textbf{Ograniczenia.} Obrazy syntetyczne są jednoliniowe, na białym tle (tekstury papieru autorów nie zostały
+\textbf{Ograniczenia i dalsze prace.} Obrazy syntetyczne są jednoliniowe, na białym tle (tekstury papieru autorów nie zostały
 udostępnione), a~skany zawierają jeden krótki tekst. Przy siedmiu modelach korelacja jest istotna dopiero od $\rho\approx0{,}79$, a~zależy od ułożenia trzech środkowych
-pozycji.
+pozycji. W~dalszych pracach planujemy dodać większe modele, tła z teksturą papieru oraz teksty wielowierszowe.
 
 %------------------------------------------------------------------------------
 \section{Wnioski}
