@@ -35,7 +35,7 @@ na GPU. Wyniki z `MyDrive/ocr-benchmark/replication/` kopiujemy do `replication/
 ## Własne badanie
 
 Zbiór syntetyczny TRDG z polskim korpusem (*Lalka*), zdjęcia odręcznej Inwokacji (PHSF)
-i 9 modeli. Uruchamianie: `research/make_bundle.sh`, potem `research/research.ipynb` w Colabie.
+i 7 modeli. Uruchamianie: `research/make_bundle.sh`, potem `research/research.ipynb` w Colabie.
 
 ## Licencje
 

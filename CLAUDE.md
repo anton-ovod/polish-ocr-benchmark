@@ -70,14 +70,16 @@ i zniekształcenia obrazu. Polskiego nie porównujemy z tureckim.
   zostają.
 - Służy do pytań 1 i 3; ranking porównujemy z rankingiem na syntetycznym piśmie ręcznym.
 
-### Modele (9, w Colabie na GPU)
-- Z artykułu bazowego (7): Qwen2.5-VL 7B, InternVL3-8B, DeepSeek-VL2-tiny, Phi-3.5-vision, Pixtral-12B,
-  GOT-OCR2, PaddleOCR. Środowiska i ustawienia jak w powtórzeniu (`common/run_models.py`).
+### Modele (7, w Colabie na GPU)
+- Z artykułu bazowego (5): Qwen2.5-VL 7B, InternVL3-8B, DeepSeek-VL2-tiny, GOT-OCR2, PaddleOCR. Środowiska i ustawienia
+  jak w powtórzeniu (`common/run_models.py`).
 - Dodane przez nas (2): Tesseract `pol`, EasyOCR `pl`.
-- Pominięte: TrOCR (checkpoint `trocr-large-printed` rozpoznaje tylko pojedyncze linie angielskiego druku,
+- Pominięte: Phi-3.5-vision i Pixtral-12B (Colab przestał przydzielać A100/H100; Phi policzony tylko dla 833 z 2200 obrazów
+  syntetycznych, Pixtral dla całego syntetycznego, ale tylko 200 z 1968 skanów Gold; wyniki w `research/results/excluded/`,
+  nie wchodzą do analizy ani artykułu; oba są w replikacji), TrOCR (checkpoint `trocr-large-printed` rozpoznaje tylko pojedyncze linie angielskiego druku,
   nie obsługuje całych stron), GPT-4o i Claude (komercyjne). Uzasadnienie w artykule: tylko modele otwarte
   dla pełnej odtwarzalności i zerowego kosztu (API są zamknięte, płatne i zmieniają się bez wersjonowania).
-- Przy 8–9 modelach Spearman ma sens (próg istotności dla n = 8 to ρ ≈ 0,74; przy 5 modelach tylko ρ = 1).
+- Przy 7 modelach Spearman ma sens, ale próg istotności (dwustronny, 0,05) to ρ ≈ 0,79; przy 5 modelach tylko ρ = 1.
 
 ### Ewaluacja
 - CER (jiwer) i WER jak w artykule bazowym (WER dla zdań i Gold Setu).
@@ -126,7 +128,7 @@ Każdy katalog zawiera tylko to, czego faktycznie używa.
 - Replikacja: `python replication/build_labels.py --n 50`, `replication/make_bundle.sh`, `ocr_bundle.zip` na
   `MyDrive/ocr-benchmark/`, potem `replication/replication.ipynb` w Colabie (A100).
 - Nasze badanie: `research/make_bundle.sh`, `ocr_bundle.zip` na `MyDrive/ocr-benchmark/`, potem `research/research.ipynb`
-  w Colabie (A100). Notebook uruchamia 9 modeli (`common/run_models.py`) na obu zbiorach i liczy wyniki.
+  w Colabie (A100). Notebook uruchamia 7 modeli (`common/run_models.py`) na obu zbiorach i liczy wyniki.
 - LaTeX: `cd docs/research/article && latexmk -pdf main.tex` (analogicznie `docs/replication/presentation`, `presentation.tex`).
 
 ### Ustalenia techniczne
@@ -168,9 +170,8 @@ Każdy katalog zawiera tylko to, czego faktycznie używa.
     Data `--exclude-newer` nie obejmuje kroku z torchem, więc środowiska nie odtwarzają w pełni stanu z 2025 r.
   - TrOCR w tym przebiegu ma włączony cache, a `sec_per_image` obejmuje też pomiar z pierwszych 330 obrazów
     (ta sama karta). Suma dla 8 modeli to ok. 2,85 s/obraz.
-- **Pixtral w badaniu własnym:** temperatura 0 (`--option temperature=0`), bo domyślne próbkowanie vLLM nie dawało powtarzalnych
-  predykcji; replikacja zostaje przy domyślnych ustawieniach. Opcje `--option` trafiają tylko do loaderów, które je przyjmują
-  (też `max_new_tokens=512` dla Qwena; replikacja używa 128 jak autorzy).
+- **Opcje loaderów:** `--option` trafia tylko do loaderów, które ją przyjmują (`max_new_tokens=512` dla Qwena; replikacja
+  używa 128 jak autorzy). `temperature=0` dotyczyło tylko Pixtrala (usunięty z badania własnego).
 - **TrOCR:** checkpoint ma `use_cache=False` (2,5× wolniej na CPU, włączamy cache: wynik identyczny);
   `max_length` domyślne 21 tokenów jak u autorów, więc dłuższe zdania są ucinane (u autorów też).
   Transformers 5 tworzy model na urządzeniu `meta` i nie wypełnia tabeli pozycji, dlatego `trocr()` liczy ją od nowa.

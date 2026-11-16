@@ -1,0 +1,7 @@
+click==8.2.1
+editdistance==0.8.1
+jiwer==4.0.0
+packaging==25.0
+pillow==11.3.0
+pytesseract==0.3.13
+rapidfuzz==3.13.0
