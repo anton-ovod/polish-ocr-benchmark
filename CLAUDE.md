@@ -51,7 +51,7 @@ i zniekształcenia obrazu. Polskiego nie porównujemy z tureckim.
 - Wycięte: tekst w scenie (COCO).
 
 ### Gold Set: zdjęcia rzeczywiste
-- Zbiór PHSF (dokumentacja: `documentation.pdf` w paczce). Używamy **tylko `phsf/inwokacja/png`**:
+- Zbiór PHCD (Polish Handwritten Characters Database, Politechnika Lubelska, https://cs.pollub.pl/phcd/; cytowanie: Tokovarov, Kaczorowska, Miłosz, ASTRJ 14(3), 2020; dokumentacja `documentation.pdf` nazywa się „PHSF Documentation”, a katalog w paczce to `phsf`). Używamy **tylko `phsf/inwokacja/png`**:
   **wszystkie 1968** skanów całych stron z odręcznie przepisaną Inwokacją (szarość, szerokość 2500–5900 px,
   wysokość 640–1680 px, 4 linie). Kopia w `research/gold/images/` (115 MB, poza gitem). Pomijamy `phsf/znaki`
   (pojedyncze znaki 32×32), `ocr_files` i `.npy`. Modelom podajemy skany zmniejszone do 2048 px dłuższego boku

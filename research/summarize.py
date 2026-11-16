@@ -109,7 +109,7 @@ def latex_overall(overall, path):
 def latex_gold(table, path):
     lines = [r"\begin{tabular}{lrrrrrr}", r"\toprule",
              r"Model & \multicolumn{2}{c}{CER} & \multicolumn{2}{c}{Miejsce} & WER & Puste \\",
-             r" & syntetyczny & PHSF & syntetyczny & PHSF & PHSF & PHSF \\", r"\midrule"]
+             r" & syntetyczny & PHCD & syntetyczny & PHCD & PHCD & PHCD \\", r"\midrule"]
     for m, r in table.sort_values("gold_rank").iterrows():
         lines.append(f"{MODEL_NAMES.get(m, m)} & {fmt(r.synthetic_cer)} & {fmt(r.gold_cer)} & {int(r.synthetic_rank)} & "
                      f"{int(r.gold_rank)} & {fmt(r.gold_wer)} & {int(r.gold_empty)} \\\\")

@@ -83,7 +83,7 @@ słowa z~polskimi znakami i~bez nich, słowa krótkie (${<}10$ znaków) i~długi
 oraz pięć wariantów tych samych słów (czysty, rozmycie, obrót do $\pm16^\circ$, szum gaussowski, obniżona
 rozdzielczość). Daje to 22 komórki po 100 obrazów (ziarno 42, rys.~\ref{fig:examples}).
 
-\textbf{Zbiór PHSF.} Ze zbioru PHSF~\cite{phsf2020} bierzemy wszystkie 1968 skanów stron
+\textbf{Zbiór PHCD.} Z~Polish Handwritten Characters Database (PHCD)~\cite{tokovarov2020}, dostępnej publicznie\footnote{\url{https://cs.pollub.pl/phcd/}}, bierzemy wszystkie 1968 skanów stron
 z~odręcznie przepisanymi czterema pierwszymi wersami Inwokacji (szarość, 2500--5900~px szerokości).
 Skany zmniejszamy do 2048~px dłuższego boku i~przetwarzamy w~całości, bez dzielenia na linie. Tekst wzorcowy
 to ta sama Inwokacja znormalizowana jak predykcje; pomyłki przepisujących pozostają w~danych.
@@ -92,7 +92,7 @@ to ta sama Inwokacja znormalizowana jak predykcje; pomyłki przepisujących pozo
   \centering
   \includegraphics[width=0.9\textwidth]{figures/examples.pdf}
   \caption{Przykłady ze zbioru syntetycznego (kolejno: słowo z~polskimi znakami, słowo długie oraz pięć
-  wariantów jednego słowa) i~skan PHSF.}
+  wariantów jednego słowa) i~skan PHCD.}
   \label{fig:examples}
 \end{figure}
 
@@ -169,7 +169,7 @@ Tesseract, EasyOCR i~PaddleOCR.
 \begin{figure}[!tbp]
   \centering
   \includegraphics[width=\textwidth]{figures/ranking.pdf}
-  \caption{Średni CER na zbiorze syntetycznym i~na skanach PHSF.}
+  \caption{Średni CER na zbiorze syntetycznym i~na skanach PHCD.}
   \label{fig:ranking}
 \end{figure}
 
@@ -210,8 +210,8 @@ trafnie przewidują kolejność modeli na prawdziwym piśmie, choć nie poziom b
 
 \subsubsection*{Dostępność danych i kodu.}
 Generator, skrypty, predykcje dla każdego obrazu i~zbiór syntetyczny:
-\url{https://github.com/anton-ovod/polish-ocr-benchmark} (kod na licencji MIT). Skany PHSF pochodzą ze zbioru
-osób trzecich i~nie są udostępniane.
+\url{https://github.com/anton-ovod/polish-ocr-benchmark} (kod na licencji MIT). Skany PHCD pobiera się ze strony
+autorów zbioru.
 
 \bibliographystyle{splncs04}
 \bibliography{references}

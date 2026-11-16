@@ -140,7 +140,7 @@ def plot_ranking(overall, phsf_scores, models, out):
     y = np.arange(len(order))
     h = 0.36
     ax.barh(y - h / 2, [r[1] for r in order], height=h, color="#2a78d6", label="zbiór syntetyczny (2200 obrazów)")
-    ax.barh(y + h / 2, [r[4] for r in order], height=h, color="#eb6834", label="PHSF (1968 skanów)")
+    ax.barh(y + h / 2, [r[4] for r in order], height=h, color="#eb6834", label="PHCD (1968 skanów)")
     ax.errorbar([r[1] for r in order], y - h / 2, xerr=[[r[1] - r[2] for r in order], [r[3] - r[1] for r in order]],
                 fmt="none", ecolor=INK2, elinewidth=0.8, capsize=1.8)
     ax.errorbar([r[4] for r in order], y + h / 2, xerr=[[r[4] - r[5] for r in order], [r[6] - r[4] for r in order]],
@@ -153,7 +153,7 @@ def plot_ranking(overall, phsf_scores, models, out):
     ax.grid(axis="y", visible=False)
     ax.tick_params(axis="y", length=0)
     ax.text(1.02, -0.85, "synt.", transform=ax.get_yaxis_transform(), fontsize=6.5, color=MUTED, ha="left")
-    ax.text(1.16, -0.85, "PHSF", transform=ax.get_yaxis_transform(), fontsize=6.5, color=MUTED, ha="left")
+    ax.text(1.16, -0.85, "PHCD", transform=ax.get_yaxis_transform(), fontsize=6.5, color=MUTED, ha="left")
     for yi, r in zip(y, order):
         ax.text(1.02, yi, pl(r[1], 3), transform=ax.get_yaxis_transform(), fontsize=7, va="center")
         ax.text(1.16, yi, pl(r[4], 3), transform=ax.get_yaxis_transform(), fontsize=7, va="center")

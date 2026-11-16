@@ -1,4 +1,4 @@
-"""Draw sample images from the synthetic dataset and the PHSF scans for the article."""
+"""Draw sample images from the synthetic dataset and the PHCD scans for the article."""
 import argparse
 from pathlib import Path
 
@@ -64,7 +64,7 @@ def main():
             if k == 0:
                 ax.set_ylabel(name, fontsize=7.5, color=INK2)
     ax = fig.add_subplot(outer[2])
-    panel(ax, args.gold / gold.iloc[0].file, "skan ze zbioru PHSF (po zmniejszeniu do 2048 px)")
+    panel(ax, args.gold / gold.iloc[0].file, "skan ze zbioru PHCD (po zmniejszeniu do 2048 px)")
     args.out.mkdir(parents=True, exist_ok=True)
     for ext in ("pdf", "png"):
         fig.savefig(args.out / f"examples.{ext}")
