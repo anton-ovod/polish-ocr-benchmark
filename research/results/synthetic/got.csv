@@ -1,0 +1,2433 @@
+file,prediction,seconds
+images/printed_polish_character_confusion_polish_0000.png,op o wi ad at em,1.452
+images/printed_polish_character_confusion_polish_0001.png,cz to wie ka,0.238
+images/printed_polish_character_confusion_polish_0002.png,got a bek,0.201
+images/printed_polish_character_confusion_polish_0003.png,mus i at,0.483
+images/printed_polish_character_confusion_polish_0004.png,cz cia,0.211
+images/printed_polish_character_confusion_polish_0005.png,dtugi,0.177
+images/printed_polish_character_confusion_polish_0006.png,ktocq,0.203
+images/printed_polish_character_confusion_polish_0007.png,zat rw oz on a,0.292
+images/printed_polish_character_confusion_polish_0008.png,nara zac,0.231
+images/printed_polish_character_confusion_polish_0009.png,odebrac,0.203
+images/printed_polish_character_confusion_polish_0010.png,pachq,0.201
+images/printed_polish_character_confusion_polish_0011.png,ptaci,0.174
+images/printed_polish_character_confusion_polish_0012.png,b ty s neto,0.263
+images/printed_polish_character_confusion_polish_0013.png,kt use m,0.2
+images/printed_polish_character_confusion_polish_0014.png,optakany,0.202
+images/printed_polish_character_confusion_polish_0015.png,w fad zy,0.26
+images/printed_polish_character_confusion_polish_0016.png,corki,0.2
+images/printed_polish_character_confusion_polish_0017.png,po z nat am,0.233
+images/printed_polish_character_confusion_polish_0018.png,tbie,0.174
+images/printed_polish_character_confusion_polish_0019.png,ude rz y to,0.232
+images/printed_polish_character_confusion_polish_0020.png,pot eg a,0.198
+images/printed_polish_character_confusion_polish_0021.png,k west ie,0.2
+images/printed_polish_character_confusion_polish_0022.png,petne,0.168
+images/printed_polish_character_confusion_polish_0023.png,up t yn at,0.231
+images/printed_polish_character_confusion_polish_0024.png,wy rz u c,0.233
+images/printed_polish_character_confusion_polish_0025.png,oddaja,0.205
+images/printed_polish_character_confusion_polish_0026.png,por wa,0.172
+images/printed_polish_character_confusion_polish_0027.png,oskarzony,0.233
+images/printed_polish_character_confusion_polish_0028.png,orkiestre,0.198
+images/printed_polish_character_confusion_polish_0029.png,ska d ze,0.23
+images/printed_polish_character_confusion_polish_0030.png,niegdy s,0.233
+images/printed_polish_character_confusion_polish_0031.png,s tro zu,0.203
+images/printed_polish_character_confusion_polish_0032.png,bia ty m,0.198
+images/printed_polish_character_confusion_polish_0033.png,wyjaws zy,0.258
+images/printed_polish_character_confusion_polish_0034.png,rz uca j a,0.256
+images/printed_polish_character_confusion_polish_0035.png,lekce waz eni e,0.321
+images/printed_polish_character_confusion_polish_0036.png,inter es uj ac y,0.289
+images/printed_polish_character_confusion_polish_0037.png,skon cz ony m,0.292
+images/printed_polish_character_confusion_polish_0038.png,powtarzajac,0.261
+images/printed_polish_character_confusion_polish_0039.png,najkrotszym,0.291
+images/printed_polish_character_confusion_polish_0040.png,pr age,0.17
+images/printed_polish_character_confusion_polish_0041.png,uk tad,0.171
+images/printed_polish_character_confusion_polish_0042.png,m atz one k,0.257
+images/printed_polish_character_confusion_polish_0043.png,porobit,0.196
+images/printed_polish_character_confusion_polish_0044.png,tutatem,0.196
+images/printed_polish_character_confusion_polish_0045.png,daja,0.166
+images/printed_polish_character_confusion_polish_0046.png,porus zat,0.226
+images/printed_polish_character_confusion_polish_0047.png,uk tada t,0.229
+images/printed_polish_character_confusion_polish_0048.png,nie mafy,0.237
+images/printed_polish_character_confusion_polish_0049.png,obrazat,0.2
+images/printed_polish_character_confusion_polish_0050.png,sz c zeg o ln q,0.319
+images/printed_polish_character_confusion_polish_0051.png,cia gne ty,0.261
+images/printed_polish_character_confusion_polish_0052.png,s cia nie,0.228
+images/printed_polish_character_confusion_polish_0053.png,g dy s my,0.226
+images/printed_polish_character_confusion_polish_0054.png,zna j oma,0.23
+images/printed_polish_character_confusion_polish_0055.png,topiac,0.167
+images/printed_polish_character_confusion_polish_0056.png,zacza c,0.2
+images/printed_polish_character_confusion_polish_0057.png,napetnionym,0.26
+images/printed_polish_character_confusion_polish_0058.png,smiejac,0.198
+images/printed_polish_character_confusion_polish_0059.png,otrzymat,0.229
+images/printed_polish_character_confusion_polish_0060.png,zb liza my,0.229
+images/printed_polish_character_confusion_polish_0061.png,bo g in ie,0.232
+images/printed_polish_character_confusion_polish_0062.png,m tods zy ch,0.297
+images/printed_polish_character_confusion_polish_0063.png,widzac,0.17
+images/printed_polish_character_confusion_polish_0064.png,je z dz iec,0.265
+images/printed_polish_character_confusion_polish_0065.png,utatwi,0.204
+images/printed_polish_character_confusion_polish_0066.png,ma dry,0.172
+images/printed_polish_character_confusion_polish_0067.png,rozto zy t,0.261
+images/printed_polish_character_confusion_polish_0068.png,osobliwość,0.229
+images/printed_polish_character_confusion_polish_0069.png,przepraszać,0.297
+images/printed_polish_character_confusion_polish_0070.png,pospiechu,0.204
+images/printed_polish_character_confusion_polish_0071.png,go row aly,0.232
+images/printed_polish_character_confusion_polish_0072.png,g to s nie j,0.262
+images/printed_polish_character_confusion_polish_0073.png,gada c,0.201
+images/printed_polish_character_confusion_polish_0074.png,sz y c,0.2
+images/printed_polish_character_confusion_polish_0075.png,wstrzgsnienie,0.298
+images/printed_polish_character_confusion_polish_0076.png,gorze,0.17
+images/printed_polish_character_confusion_polish_0077.png,dz iata ln os ci,0.294
+images/printed_polish_character_confusion_polish_0078.png,mez at ki,0.2
+images/printed_polish_character_confusion_polish_0079.png,do my s las z,0.261
+images/printed_polish_character_confusion_polish_0080.png,my slat,0.204
+images/printed_polish_character_confusion_polish_0081.png,stuch amy,0.2
+images/printed_polish_character_confusion_polish_0082.png,ucicht,0.201
+images/printed_polish_character_confusion_polish_0083.png,zu pet ny,0.201
+images/printed_polish_character_confusion_polish_0084.png,matzonków,0.203
+images/printed_polish_character_confusion_polish_0085.png,cho cia z,0.23
+images/printed_polish_character_confusion_polish_0086.png,sie dz,0.169
+images/printed_polish_character_confusion_polish_0087.png,wyobraza,0.202
+images/printed_polish_character_confusion_polish_0088.png,walczq,0.23
+images/printed_polish_character_confusion_polish_0089.png,robito,0.2
+images/printed_polish_character_confusion_polish_0090.png,sk tad a jac,0.23
+images/printed_polish_character_confusion_polish_0091.png,k tani at,0.23
+images/printed_polish_character_confusion_polish_0092.png,ch topow,0.221
+images/printed_polish_character_confusion_polish_0093.png,wypytat,0.232
+images/printed_polish_character_confusion_polish_0094.png,z mus i to,0.232
+images/printed_polish_character_confusion_polish_0095.png,powr o cie,0.26
+images/printed_polish_character_confusion_polish_0096.png,ciezki,0.201
+images/printed_polish_character_confusion_polish_0097.png,jak a,0.17
+images/printed_polish_character_confusion_polish_0098.png,w sp om nie n,0.263
+images/printed_polish_character_confusion_polish_0099.png,bud zi,0.169
+images/printed_polish_character_confusion_non_polish_0000.png,wy sz li,0.202
+images/printed_polish_character_confusion_non_polish_0001.png,sze pt,0.198
+images/printed_polish_character_confusion_non_polish_0002.png,wy praw y,0.2
+images/printed_polish_character_confusion_non_polish_0003.png,zatopieni,0.269
+images/printed_polish_character_confusion_non_polish_0004.png,lu stra,0.2
+images/printed_polish_character_confusion_non_polish_0005.png,de lego wan y,0.266
+images/printed_polish_character_confusion_non_polish_0006.png,naczynia,0.231
+images/printed_polish_character_confusion_non_polish_0007.png,au s tria kami,0.264
+images/printed_polish_character_confusion_non_polish_0008.png,upadku,0.203
+images/printed_polish_character_confusion_non_polish_0009.png,wi ers ze,0.222
+images/printed_polish_character_confusion_non_polish_0010.png,panom,0.17
+images/printed_polish_character_confusion_non_polish_0011.png,on a,0.17
+images/printed_polish_character_confusion_non_polish_0012.png,znakomity,0.232
+images/printed_polish_character_confusion_non_polish_0013.png,dochody,0.168
+images/printed_polish_character_confusion_non_polish_0014.png,naz y w amy,0.261
+images/printed_polish_character_confusion_non_polish_0015.png,ew elin ie,0.228
+images/printed_polish_character_confusion_non_polish_0016.png,grobie,0.171
+images/printed_polish_character_confusion_non_polish_0017.png,ub i or y,0.231
+images/printed_polish_character_confusion_non_polish_0018.png,przerwa,0.199
+images/printed_polish_character_confusion_non_polish_0019.png,s tr as zi wie,0.262
+images/printed_polish_character_confusion_non_polish_0020.png,s trasz li we,0.267
+images/printed_polish_character_confusion_non_polish_0021.png,retort,0.172
+images/printed_polish_character_confusion_non_polish_0022.png,karz es z,0.232
+images/printed_polish_character_confusion_non_polish_0023.png,zaczekaj,0.203
+images/printed_polish_character_confusion_non_polish_0024.png,naz y w am,0.229
+images/printed_polish_character_confusion_non_polish_0025.png,niem cy,0.2
+images/printed_polish_character_confusion_non_polish_0026.png,warszawy,0.229
+images/printed_polish_character_confusion_non_polish_0027.png,powszedni,0.236
+images/printed_polish_character_confusion_non_polish_0028.png,od by wa,0.199
+images/printed_polish_character_confusion_non_polish_0029.png,koron ki,0.199
+images/printed_polish_character_confusion_non_polish_0030.png,zdumiona,0.231
+images/printed_polish_character_confusion_non_polish_0031.png,bohater st wa,0.257
+images/printed_polish_character_confusion_non_polish_0032.png,wal czy,0.169
+images/printed_polish_character_confusion_non_polish_0033.png,ochocki,0.198
+images/printed_polish_character_confusion_non_polish_0034.png,kraj em,0.203
+images/printed_polish_character_confusion_non_polish_0035.png,nie win ny,0.205
+images/printed_polish_character_confusion_non_polish_0036.png,zy sku,0.168
+images/printed_polish_character_confusion_non_polish_0037.png,in s zy,0.232
+images/printed_polish_character_confusion_non_polish_0038.png,warsztaty,0.228
+images/printed_polish_character_confusion_non_polish_0039.png,hr a bio wie,0.228
+images/printed_polish_character_confusion_non_polish_0040.png,stachowi,0.197
+images/printed_polish_character_confusion_non_polish_0041.png,student,0.137
+images/printed_polish_character_confusion_non_polish_0042.png,fortecy,0.197
+images/printed_polish_character_confusion_non_polish_0043.png,pomo cn ika,0.261
+images/printed_polish_character_confusion_non_polish_0044.png,wy pad ku,0.197
+images/printed_polish_character_confusion_non_polish_0045.png,kraju,0.198
+images/printed_polish_character_confusion_non_polish_0046.png,wycofam,0.227
+images/printed_polish_character_confusion_non_polish_0047.png,uni ka,0.172
+images/printed_polish_character_confusion_non_polish_0048.png,pr zy by s za,0.29
+images/printed_polish_character_confusion_non_polish_0049.png,stron nict wa,0.26
+images/printed_polish_character_confusion_non_polish_0050.png,dz is ie js z ego,0.291
+images/printed_polish_character_confusion_non_polish_0051.png,melancholii,0.234
+images/printed_polish_character_confusion_non_polish_0052.png,ch yba,0.199
+images/printed_polish_character_confusion_non_polish_0053.png,dystyngowanym,0.292
+images/printed_polish_character_confusion_non_polish_0054.png,drug ie,0.172
+images/printed_polish_character_confusion_non_polish_0055.png,dra b ink i,0.231
+images/printed_polish_character_confusion_non_polish_0056.png,w z rost u,0.262
+images/printed_polish_character_confusion_non_polish_0057.png,minami,0.168
+images/printed_polish_character_confusion_non_polish_0058.png,tea train y ch,0.224
+images/printed_polish_character_confusion_non_polish_0059.png,polity k,0.2
+images/printed_polish_character_confusion_non_polish_0060.png,ciemnych,0.2
+images/printed_polish_character_confusion_non_polish_0061.png,po zwala,0.198
+images/printed_polish_character_confusion_non_polish_0062.png,zapukano,0.196
+images/printed_polish_character_confusion_non_polish_0063.png,scene,0.137
+images/printed_polish_character_confusion_non_polish_0064.png,kolanami,0.196
+images/printed_polish_character_confusion_non_polish_0065.png,jutrz ej sze j,0.318
+images/printed_polish_character_confusion_non_polish_0066.png,austriackich,0.256
+images/printed_polish_character_confusion_non_polish_0067.png,rozwodu,0.195
+images/printed_polish_character_confusion_non_polish_0068.png,francuskie,0.228
+images/printed_polish_character_confusion_non_polish_0069.png,bielmo,0.196
+images/printed_polish_character_confusion_non_polish_0070.png,ol br zy mie,0.256
+images/printed_polish_character_confusion_non_polish_0071.png,pensji,0.199
+images/printed_polish_character_confusion_non_polish_0072.png,len is two,0.202
+images/printed_polish_character_confusion_non_polish_0073.png,mal we rsa c ji,0.29
+images/printed_polish_character_confusion_non_polish_0074.png,min cel,0.168
+images/printed_polish_character_confusion_non_polish_0075.png,o gona em,0.236
+images/printed_polish_character_confusion_non_polish_0076.png,obywatel,0.201
+images/printed_polish_character_confusion_non_polish_0077.png,granice,0.17
+images/printed_polish_character_confusion_non_polish_0078.png,balonach,0.199
+images/printed_polish_character_confusion_non_polish_0079.png,hand lem,0.168
+images/printed_polish_character_confusion_non_polish_0080.png,trocadero,0.205
+images/printed_polish_character_confusion_non_polish_0081.png,pod arty ch,0.196
+images/printed_polish_character_confusion_non_polish_0082.png,role ty,0.166
+images/printed_polish_character_confusion_non_polish_0083.png,naz wis ko,0.198
+images/printed_polish_character_confusion_non_polish_0084.png,rozmowy,0.202
+images/printed_polish_character_confusion_non_polish_0085.png,zu lus ami,0.233
+images/printed_polish_character_confusion_non_polish_0086.png,popycha,0.196
+images/printed_polish_character_confusion_non_polish_0087.png,hrab in ie,0.229
+images/printed_polish_character_confusion_non_polish_0088.png,naj le ps zy m,0.317
+images/printed_polish_character_confusion_non_polish_0089.png,szyje,0.194
+images/printed_polish_character_confusion_non_polish_0090.png,d zied z in iec,0.319
+images/printed_polish_character_confusion_non_polish_0091.png,pil nie,0.201
+images/printed_polish_character_confusion_non_polish_0092.png,roz lega,0.199
+images/printed_polish_character_confusion_non_polish_0093.png,biu rka,0.229
+images/printed_polish_character_confusion_non_polish_0094.png,szlachcicu,0.297
+images/printed_polish_character_confusion_non_polish_0095.png,gr z ecz nie,0.264
+images/printed_polish_character_confusion_non_polish_0096.png,herb at a,0.233
+images/printed_polish_character_confusion_non_polish_0097.png,zaprosin,0.233
+images/printed_polish_character_confusion_non_polish_0098.png,k lima tu,0.246
+images/printed_polish_character_confusion_non_polish_0099.png,oponent,0.201
+images/printed_word_length_effects_short_words_0000.png,go tym,0.2
+images/printed_word_length_effects_short_words_0001.png,takiej,0.202
+images/printed_word_length_effects_short_words_0002.png,p udel,0.199
+images/printed_word_length_effects_short_words_0003.png,obity,0.17
+images/printed_word_length_effects_short_words_0004.png,omi j a j qc,0.261
+images/printed_word_length_effects_short_words_0005.png,pie s cia,0.229
+images/printed_word_length_effects_short_words_0006.png,w rog a,0.202
+images/printed_word_length_effects_short_words_0007.png,zap om in a,0.238
+images/printed_word_length_effects_short_words_0008.png,zatrzymuj,0.259
+images/printed_word_length_effects_short_words_0009.png,miko taj em,0.259
+images/printed_word_length_effects_short_words_0010.png,nic z,0.168
+images/printed_word_length_effects_short_words_0011.png,malowa to,0.214
+images/printed_word_length_effects_short_words_0012.png,wagon,0.139
+images/printed_word_length_effects_short_words_0013.png,takt,0.17
+images/printed_word_length_effects_short_words_0014.png,przekonam,0.231
+images/printed_word_length_effects_short_words_0015.png,tan c zy ty,0.265
+images/printed_word_length_effects_short_words_0016.png,pani enki,0.23
+images/printed_word_length_effects_short_words_0017.png,ch to dem,0.201
+images/printed_word_length_effects_short_words_0018.png,a can,0.172
+images/printed_word_length_effects_short_words_0019.png,pi sy wa,0.2
+images/printed_word_length_effects_short_words_0020.png,drogiej,0.204
+images/printed_word_length_effects_short_words_0021.png,wie ks za,0.2
+images/printed_word_length_effects_short_words_0022.png,os tab nat,0.199
+images/printed_word_length_effects_short_words_0023.png,est,0.138
+images/printed_word_length_effects_short_words_0024.png,lze js zy,0.258
+images/printed_word_length_effects_short_words_0025.png,kt ade,0.17
+images/printed_word_length_effects_short_words_0026.png,s pr ze ty,0.228
+images/printed_word_length_effects_short_words_0027.png,r any,0.166
+images/printed_word_length_effects_short_words_0028.png,typow,0.168
+images/printed_word_length_effects_short_words_0029.png,do stale m,0.202
+images/printed_word_length_effects_short_words_0030.png,osobe,0.169
+images/printed_word_length_effects_short_words_0031.png,cz uwa j,0.229
+images/printed_word_length_effects_short_words_0032.png,bedzie cie,0.229
+images/printed_word_length_effects_short_words_0033.png,zapfacone,0.205
+images/printed_word_length_effects_short_words_0034.png,podata,0.174
+images/printed_word_length_effects_short_words_0035.png,miat by m,0.237
+images/printed_word_length_effects_short_words_0036.png,czysta,0.202
+images/printed_word_length_effects_short_words_0037.png,wystawie,0.255
+images/printed_word_length_effects_short_words_0038.png,odejsciu,0.23
+images/printed_word_length_effects_short_words_0039.png,nie jed ne j,0.229
+images/printed_word_length_effects_short_words_0040.png,taj da ck a,0.263
+images/printed_word_length_effects_short_words_0041.png,je chal i,0.232
+images/printed_word_length_effects_short_words_0042.png,t to czy ly,0.228
+images/printed_word_length_effects_short_words_0043.png,zostan,0.202
+images/printed_word_length_effects_short_words_0044.png,kt use m,0.202
+images/printed_word_length_effects_short_words_0045.png,bied ne,0.2
+images/printed_word_length_effects_short_words_0046.png,machajqc,0.199
+images/printed_word_length_effects_short_words_0047.png,skonic zy li,0.259
+images/printed_word_length_effects_short_words_0048.png,od bij,0.168
+images/printed_word_length_effects_short_words_0049.png,d zi en nie,0.231
+images/printed_word_length_effects_short_words_0050.png,ry n ku,0.197
+images/printed_word_length_effects_short_words_0051.png,cofnat,0.197
+images/printed_word_length_effects_short_words_0052.png,wyst a pity,0.225
+images/printed_word_length_effects_short_words_0053.png,parasol,0.196
+images/printed_word_length_effects_short_words_0054.png,klap y,0.198
+images/printed_word_length_effects_short_words_0055.png,pow oz em,0.201
+images/printed_word_length_effects_short_words_0056.png,s to ku,0.2
+images/printed_word_length_effects_short_words_0057.png,s wie got,0.199
+images/printed_word_length_effects_short_words_0058.png,zw rac a j qc,0.259
+images/printed_word_length_effects_short_words_0059.png,henryka,0.2
+images/printed_word_length_effects_short_words_0060.png,spokoju,0.234
+images/printed_word_length_effects_short_words_0061.png,puscić,0.199
+images/printed_word_length_effects_short_words_0062.png,idealista,0.169
+images/printed_word_length_effects_short_words_0063.png,kura c je,0.233
+images/printed_word_length_effects_short_words_0064.png,udziat,0.203
+images/printed_word_length_effects_short_words_0065.png,ogniste,0.188
+images/printed_word_length_effects_short_words_0066.png,pr ze f kn at,0.264
+images/printed_word_length_effects_short_words_0067.png,podwórka,0.235
+images/printed_word_length_effects_short_words_0068.png,ch wilo wo,0.236
+images/printed_word_length_effects_short_words_0069.png,won i,0.17
+images/printed_word_length_effects_short_words_0070.png,kanon i era,0.234
+images/printed_word_length_effects_short_words_0071.png,wtaściwym,0.258
+images/printed_word_length_effects_short_words_0072.png,ws z elk ich,0.229
+images/printed_word_length_effects_short_words_0073.png,waszej,0.166
+images/printed_word_length_effects_short_words_0074.png,roc zn ego,0.197
+images/printed_word_length_effects_short_words_0075.png,krzykneta,0.255
+images/printed_word_length_effects_short_words_0076.png,jasniej,0.198
+images/printed_word_length_effects_short_words_0077.png,b raz,0.17
+images/printed_word_length_effects_short_words_0078.png,wat pi c,0.196
+images/printed_word_length_effects_short_words_0079.png,god zit o,0.229
+images/printed_word_length_effects_short_words_0080.png,po bie gta,0.261
+images/printed_word_length_effects_short_words_0081.png,piorunu,0.197
+images/printed_word_length_effects_short_words_0082.png,pogla dach,0.257
+images/printed_word_length_effects_short_words_0083.png,opis y wat,0.232
+images/printed_word_length_effects_short_words_0084.png,music ie,0.168
+images/printed_word_length_effects_short_words_0085.png,jakos,0.171
+images/printed_word_length_effects_short_words_0086.png,czy tat,0.166
+images/printed_word_length_effects_short_words_0087.png,po zn a fem,0.263
+images/printed_word_length_effects_short_words_0088.png,zamilk t,0.225
+images/printed_word_length_effects_short_words_0089.png,pasjami,0.2
+images/printed_word_length_effects_short_words_0090.png,mo ze my,0.197
+images/printed_word_length_effects_short_words_0091.png,trzask,0.197
+images/printed_word_length_effects_short_words_0092.png,duszy,0.198
+images/printed_word_length_effects_short_words_0093.png,rodzaju,0.2
+images/printed_word_length_effects_short_words_0094.png,ch top,0.167
+images/printed_word_length_effects_short_words_0095.png,u ratowat,0.23
+images/printed_word_length_effects_short_words_0096.png,chowac,0.228
+images/printed_word_length_effects_short_words_0097.png,zerwali,0.2
+images/printed_word_length_effects_short_words_0098.png,spory,0.171
+images/printed_word_length_effects_short_words_0099.png,gdy by s my,0.257
+images/printed_word_length_effects_long_words_0000.png,dwudziestym,0.256
+images/printed_word_length_effects_long_words_0001.png,ko per nik i em,0.257
+images/printed_word_length_effects_long_words_0002.png,komplimentów,0.228
+images/printed_word_length_effects_long_words_0003.png,odwiedzających,0.29
+images/printed_word_length_effects_long_words_0004.png,nie bos z c zyk,0.287
+images/printed_word_length_effects_long_words_0005.png,przesiadywata,0.287
+images/printed_word_length_effects_long_words_0006.png,nie oc eni ony,0.291
+images/printed_word_length_effects_long_words_0007.png,dorobkiewiczów,0.32
+images/printed_word_length_effects_long_words_0008.png,nieprzeparta,0.259
+images/printed_word_length_effects_long_words_0009.png,fabry kantami,0.259
+images/printed_word_length_effects_long_words_0010.png,nau czy ciel a,0.286
+images/printed_word_length_effects_long_words_0011.png,zacie kaw iona,0.292
+images/printed_word_length_effects_long_words_0012.png,magnet y zo wac,0.299
+images/printed_word_length_effects_long_words_0013.png,"niebezpieczenstwa
+niebezpieczenstwa
+niebezpieczenstwa
+niebezpieczenstwa
+niebezpieczenstwa",1.331
+images/printed_word_length_effects_long_words_0014.png,ary stokrat kg,0.263
+images/printed_word_length_effects_long_words_0015.png,uprzejmosci,0.263
+images/printed_word_length_effects_long_words_0016.png,cierpniecie,0.269
+images/printed_word_length_effects_long_words_0017.png,me fi st of e les a,0.326
+images/printed_word_length_effects_long_words_0018.png,zamazpójsciu,0.327
+images/printed_word_length_effects_long_words_0019.png,zainteresowane,0.231
+images/printed_word_length_effects_long_words_0020.png,nat y ch miast,0.261
+images/printed_word_length_effects_long_words_0021.png,nie wi d zia lna,0.323
+images/printed_word_length_effects_long_words_0022.png,popielniczke,0.264
+images/printed_word_length_effects_long_words_0023.png,przestraszona,0.292
+images/printed_word_length_effects_long_words_0024.png,przekonywać,0.231
+images/printed_word_length_effects_long_words_0025.png,nieustannie,0.2
+images/printed_word_length_effects_long_words_0026.png,s post rze zen i a,0.328
+images/printed_word_length_effects_long_words_0027.png,przyjechała,0.261
+images/printed_word_length_effects_long_words_0028.png,przyj mow ali,0.291
+images/printed_word_length_effects_long_words_0029.png,naj sil nie j si,0.294
+images/printed_word_length_effects_long_words_0030.png,dobroczy n ny,0.262
+images/printed_word_length_effects_long_words_0031.png,najwyższych,0.292
+images/printed_word_length_effects_long_words_0032.png,pr ze j mu j ace,0.291
+images/printed_word_length_effects_long_words_0033.png,od prow adz ic,0.263
+images/printed_word_length_effects_long_words_0034.png,kil kad zi es iq t,0.293
+images/printed_word_length_effects_long_words_0035.png,zast anow it y,0.292
+images/printed_word_length_effects_long_words_0036.png,przy wi dz i a to,0.327
+images/printed_word_length_effects_long_words_0037.png,zaprotestownac,0.261
+images/printed_word_length_effects_long_words_0038.png,pr zy chod z ili,0.35
+images/printed_word_length_effects_long_words_0039.png,przeszkadzato,0.321
+images/printed_word_length_effects_long_words_0040.png,przyjemność,0.264
+images/printed_word_length_effects_long_words_0041.png,b ty sz cz qc y mi,0.324
+images/printed_word_length_effects_long_words_0042.png,do strzeg lem,0.262
+images/printed_word_length_effects_long_words_0043.png,uj az dow ski ch,0.264
+images/printed_word_length_effects_long_words_0044.png,pot rafi tab y m,0.293
+images/printed_word_length_effects_long_words_0045.png,przechodniów,0.261
+images/printed_word_length_effects_long_words_0046.png,pr zy got owan i a,0.355
+images/printed_word_length_effects_long_words_0047.png,za pew nie nie,0.229
+images/printed_word_length_effects_long_words_0048.png,kogokolwiek,0.29
+images/printed_word_length_effects_long_words_0049.png,zbank rut u je,0.264
+images/printed_word_length_effects_long_words_0050.png,podejrzywac,0.293
+images/printed_word_length_effects_long_words_0051.png,przesuwanie,0.262
+images/printed_word_length_effects_long_words_0052.png,pr zed sie bio r st w,0.352
+images/printed_word_length_effects_long_words_0053.png,spot e cze nist wie,0.33
+images/printed_word_length_effects_long_words_0054.png,poch to nie ty,0.264
+images/printed_word_length_effects_long_words_0055.png,wyzyskiwaczem,0.325
+images/printed_word_length_effects_long_words_0056.png,pr zy sia g tem,0.33
+images/printed_word_length_effects_long_words_0057.png,pocie m nia to,0.322
+images/printed_word_length_effects_long_words_0058.png,wi elmo z ne mu,0.295
+images/printed_word_length_effects_long_words_0059.png,m to dz ie nceM,0.326
+images/printed_word_length_effects_long_words_0060.png,niespokojna,0.265
+images/printed_word_length_effects_long_words_0061.png,obe jr zws zy,0.324
+images/printed_word_length_effects_long_words_0062.png,pr zy sze dte s,0.353
+images/printed_word_length_effects_long_words_0063.png,mraczewskim,0.261
+images/printed_word_length_effects_long_words_0064.png,sz cz eg ol ny m,0.288
+images/printed_word_length_effects_long_words_0065.png,nie s podzi ewan ie,0.318
+images/printed_word_length_effects_long_words_0066.png,nieszczęśliwymi,0.292
+images/printed_word_length_effects_long_words_0067.png,pr ze cia g ty m,0.32
+images/printed_word_length_effects_long_words_0068.png,niepotrzebne,0.258
+images/printed_word_length_effects_long_words_0069.png,przy wi o zte m,0.325
+images/printed_word_length_effects_long_words_0070.png,a mery kan s cy,0.289
+images/printed_word_length_effects_long_words_0071.png,od pow i adas z,0.293
+images/printed_word_length_effects_long_words_0072.png,spokojniejszy,0.291
+images/printed_word_length_effects_long_words_0073.png,niezmiernym,0.261
+images/printed_word_length_effects_long_words_0074.png,nie po zn a nia,0.292
+images/printed_word_length_effects_long_words_0075.png,nie z grab nyc h,0.292
+images/printed_word_length_effects_long_words_0076.png,se kundant em,0.266
+images/printed_word_length_effects_long_words_0077.png,umeblowanie,0.234
+images/printed_word_length_effects_long_words_0078.png,niewinności,0.205
+images/printed_word_length_effects_long_words_0079.png,sprawied li wość,0.291
+images/printed_word_length_effects_long_words_0080.png,socialistów,0.201
+images/printed_word_length_effects_long_words_0081.png,nie wo l nica mi,0.294
+images/printed_word_length_effects_long_words_0082.png,naj gors zy ch,0.321
+images/printed_word_length_effects_long_words_0083.png,niepokonana,0.261
+images/printed_word_length_effects_long_words_0084.png,u smie ch net a,0.29
+images/printed_word_length_effects_long_words_0085.png,zaczerwienit,0.267
+images/printed_word_length_effects_long_words_0086.png,oznaczajacy,0.26
+images/printed_word_length_effects_long_words_0087.png,osobliwościa,0.309
+images/printed_word_length_effects_long_words_0088.png,nadzwyczajnej,0.264
+images/printed_word_length_effects_long_words_0089.png,uspokoiwszy,0.269
+images/printed_word_length_effects_long_words_0090.png,be zi mien nie,0.263
+images/printed_word_length_effects_long_words_0091.png,mat z en st wem,0.339
+images/printed_word_length_effects_long_words_0092.png,pienia dz ach,0.232
+images/printed_word_length_effects_long_words_0093.png,przebaczenie,0.233
+images/printed_word_length_effects_long_words_0094.png,zn is z c zone go,0.292
+images/printed_word_length_effects_long_words_0095.png,listopadzie,0.229
+images/printed_word_length_effects_long_words_0096.png,nieobecności,0.228
+images/printed_word_length_effects_long_words_0097.png,pozegnaliśmy,0.3
+images/printed_word_length_effects_long_words_0098.png,przystoniete,0.294
+images/printed_word_length_effects_long_words_0099.png,finansowych,0.199
+images/printed_context_dependent_errors_word_0000.png,od part a,0.203
+images/printed_context_dependent_errors_word_0001.png,samym,0.185
+images/printed_context_dependent_errors_word_0002.png,za tr zy mu je,0.295
+images/printed_context_dependent_errors_word_0003.png,liczby,0.204
+images/printed_context_dependent_errors_word_0004.png,nie pew ny,0.2
+images/printed_context_dependent_errors_word_0005.png,now a,0.17
+images/printed_context_dependent_errors_word_0006.png,smieszny,0.234
+images/printed_context_dependent_errors_word_0007.png,mot yl a,0.235
+images/printed_context_dependent_errors_word_0008.png,oberman,0.168
+images/printed_context_dependent_errors_word_0009.png,pr zy si agt,0.292
+images/printed_context_dependent_errors_word_0010.png,z robie,0.205
+images/printed_context_dependent_errors_word_0011.png,bydlqt,0.202
+images/printed_context_dependent_errors_word_0012.png,podr o zy,0.261
+images/printed_context_dependent_errors_word_0013.png,sufitu,0.201
+images/printed_context_dependent_errors_word_0014.png,z to zy li,0.265
+images/printed_context_dependent_errors_word_0015.png,dec y duj,0.23
+images/printed_context_dependent_errors_word_0016.png,obietnic,0.2
+images/printed_context_dependent_errors_word_0017.png,przeszkadzam,0.293
+images/printed_context_dependent_errors_word_0018.png,zawotac,0.231
+images/printed_context_dependent_errors_word_0019.png,jasny,0.173
+images/printed_context_dependent_errors_word_0020.png,wy daj a,0.234
+images/printed_context_dependent_errors_word_0021.png,chciata,0.198
+images/printed_context_dependent_errors_word_0022.png,zajad to s,0.284
+images/printed_context_dependent_errors_word_0023.png,bismarck a,0.261
+images/printed_context_dependent_errors_word_0024.png,moc ny,0.199
+images/printed_context_dependent_errors_word_0025.png,do my s lae,0.262
+images/printed_context_dependent_errors_word_0026.png,fu tro,0.168
+images/printed_context_dependent_errors_word_0027.png,pragne,0.171
+images/printed_context_dependent_errors_word_0028.png,szkto,0.202
+images/printed_context_dependent_errors_word_0029.png,mogli s my,0.259
+images/printed_context_dependent_errors_word_0030.png,u smi ech aja c,0.32
+images/printed_context_dependent_errors_word_0031.png,mieszkali,0.225
+images/printed_context_dependent_errors_word_0032.png,c zy im s,0.258
+images/printed_context_dependent_errors_word_0033.png,sktonnosc,0.231
+images/printed_context_dependent_errors_word_0034.png,utatwiata,0.229
+images/printed_context_dependent_errors_word_0035.png,raczk a,0.202
+images/printed_context_dependent_errors_word_0036.png,was ow,0.172
+images/printed_context_dependent_errors_word_0037.png,trap it y,0.203
+images/printed_context_dependent_errors_word_0038.png,marz y ciel a,0.288
+images/printed_context_dependent_errors_word_0039.png,narzekajac,0.228
+images/printed_context_dependent_errors_word_0040.png,sz czy cie,0.23
+images/printed_context_dependent_errors_word_0041.png,pode jr zen i a,0.298
+images/printed_context_dependent_errors_word_0042.png,w ska zany ch,0.262
+images/printed_context_dependent_errors_word_0043.png,lišcie,0.199
+images/printed_context_dependent_errors_word_0044.png,od zi an a,0.229
+images/printed_context_dependent_errors_word_0045.png,nie wo ln iki em,0.292
+images/printed_context_dependent_errors_word_0046.png,god zit o,0.23
+images/printed_context_dependent_errors_word_0047.png,cafej,0.205
+images/printed_context_dependent_errors_word_0048.png,z dz i wi on a,0.297
+images/printed_context_dependent_errors_word_0049.png,gory,0.173
+images/printed_context_dependent_errors_word_0050.png,s qsi ed zi,0.261
+images/printed_context_dependent_errors_word_0051.png,oddzielony,0.198
+images/printed_context_dependent_errors_word_0052.png,ida,0.141
+images/printed_context_dependent_errors_word_0053.png,myl it,0.199
+images/printed_context_dependent_errors_word_0054.png,mol in a rie go,0.302
+images/printed_context_dependent_errors_word_0055.png,cie kaw e,0.235
+images/printed_context_dependent_errors_word_0056.png,uwaga,0.17
+images/printed_context_dependent_errors_word_0057.png,by d let a,0.234
+images/printed_context_dependent_errors_word_0058.png,zatruwać,0.234
+images/printed_context_dependent_errors_word_0059.png,skton no sci,0.232
+images/printed_context_dependent_errors_word_0060.png,s amow ar,0.23
+images/printed_context_dependent_errors_word_0061.png,cu down e,0.206
+images/printed_context_dependent_errors_word_0062.png,po to we,0.206
+images/printed_context_dependent_errors_word_0063.png,damie,0.174
+images/printed_context_dependent_errors_word_0064.png,rano,0.17
+images/printed_context_dependent_errors_word_0065.png,rozmowic,0.234
+images/printed_context_dependent_errors_word_0066.png,finansowych,0.201
+images/printed_context_dependent_errors_word_0067.png,cyrkule,0.2
+images/printed_context_dependent_errors_word_0068.png,kradt,0.181
+images/printed_context_dependent_errors_word_0069.png,maszze,0.196
+images/printed_context_dependent_errors_word_0070.png,kokieterii,0.227
+images/printed_context_dependent_errors_word_0071.png,zaj mu je,0.231
+images/printed_context_dependent_errors_word_0072.png,otoczonej,0.228
+images/printed_context_dependent_errors_word_0073.png,ptakow,0.202
+images/printed_context_dependent_errors_word_0074.png,ksiazka,0.197
+images/printed_context_dependent_errors_word_0075.png,s to j ko wi,0.256
+images/printed_context_dependent_errors_word_0076.png,is to ta,0.196
+images/printed_context_dependent_errors_word_0077.png,miesz kat,0.201
+images/printed_context_dependent_errors_word_0078.png,uks z taf ceni e,0.347
+images/printed_context_dependent_errors_word_0079.png,ton,0.139
+images/printed_context_dependent_errors_word_0080.png,wal czy c,0.201
+images/printed_context_dependent_errors_word_0081.png,solid arnie j si,0.259
+images/printed_context_dependent_errors_word_0082.png,pr zy pat r zy t,0.35
+images/printed_context_dependent_errors_word_0083.png,zamieszkat,0.26
+images/printed_context_dependent_errors_word_0084.png,stalowy,0.196
+images/printed_context_dependent_errors_word_0085.png,krzeszowski,0.226
+images/printed_context_dependent_errors_word_0086.png,pierwsza,0.227
+images/printed_context_dependent_errors_word_0087.png,przyzwoitym,0.287
+images/printed_context_dependent_errors_word_0088.png,wy bier at,0.236
+images/printed_context_dependent_errors_word_0089.png,z to zona,0.202
+images/printed_context_dependent_errors_word_0090.png,doga dz a,0.232
+images/printed_context_dependent_errors_word_0091.png,wy so kieg o,0.291
+images/printed_context_dependent_errors_word_0092.png,s pog la dac,0.227
+images/printed_context_dependent_errors_word_0093.png,poka ze,0.201
+images/printed_context_dependent_errors_word_0094.png,od wie dz ic,0.229
+images/printed_context_dependent_errors_word_0095.png,pótnocnej,0.262
+images/printed_context_dependent_errors_word_0096.png,dzi wit,0.2
+images/printed_context_dependent_errors_word_0097.png,pr zy jed zi e,0.295
+images/printed_context_dependent_errors_word_0098.png,tesk ni,0.2
+images/printed_context_dependent_errors_word_0099.png,pr ze zn a czy t,0.29
+images/printed_context_dependent_errors_sentences_0000.png,"Nożykiem TNiesz wi kline, a to porem de by.",0.675
+images/printed_context_dependent_errors_sentences_0001.png,Muszebycgotowymnawszystkichpunktach.,0.531
+images/printed_context_dependent_errors_sentences_0002.png,Gdziezonsiedziwdzier?,0.414
+images/printed_context_dependent_errors_sentences_0003.png,"Zmieni te ssi e tak, ze msi ez dz i wi.",0.652
+images/printed_context_dependent_errors_sentences_0004.png,Drobny ten wypadek mögt mieć pierwszorzedne znaczenie.,0.743
+images/printed_context_dependent_errors_sentences_0005.png,Tera zp anna lz a bela za wah at as ie.,0.619
+images/printed_context_dependent_errors_sentences_0006.png,Aletosaprocesyodtugi.,0.415
+images/printed_context_dependent_errors_sentences_0007.png,Pan Ign a cy pos i ed zia t jes z c ze zw a dr an sw mil c zen iu.,0.912
+images/printed_context_dependent_errors_sentences_0008.png,"Chcesz jeść czy pić, tu czy w sali?",0.555
+images/printed_context_dependent_errors_sentences_0009.png,"W kupcu skrytość jest wielką zaleta, duma wada.",0.657
+images/printed_context_dependent_errors_sentences_0010.png,Nie ch by tam mia tag ach ow.,0.414
+images/printed_context_dependent_errors_sentences_0011.png,GeistprzeciSqngntrekqpogtowie.,0.534
+images/printed_context_dependent_errors_sentences_0012.png,Pan Ignacy mies za sie coraz bardziej.,0.476
+images/printed_context_dependent_errors_sentences_0013.png,"Widzenieznikto,Wokulskiocknatsie.",0.601
+images/printed_context_dependent_errors_sentences_0014.png,Jestem nar ze cz ony mpa n nyL eck i ej.,0.684
+images/printed_context_dependent_errors_sentences_0015.png,Prawiewszystkieoknabyłyotwarte.,0.532
+images/printed_context_dependent_errors_sentences_0016.png,A nauczyte s sie cz ego?,0.446
+images/printed_context_dependent_errors_sentences_0017.png,"Myśli, że wszystkie rozumy pojadał.",0.544
+images/printed_context_dependent_errors_sentences_0018.png,Nagle k to s ch wy tag oz a ramie.,0.539
+images/printed_context_dependent_errors_sentences_0019.png,Wokulski wystuchat jego projektów.,0.447
+images/printed_context_dependent_errors_sentences_0020.png,"Bytotomeskiestapanie,miarowe,spokojne.",0.635
+images/printed_context_dependent_errors_sentences_0021.png,Ws zy st ko to jest dopier o w step em.,0.566
+images/printed_context_dependent_errors_sentences_0022.png,Zmienia! sie te! krajobraz.,0.48
+images/printed_context_dependent_errors_sentences_0023.png,Usi adf i nap if sie wo dy.,0.485
+images/printed_context_dependent_errors_sentences_0024.png,Śmiato możecie państwo jechać do Paryża.,0.635
+images/printed_context_dependent_errors_sentences_0025.png,Rysy tej damy były mi gdzieś znajome.,0.573
+images/printed_context_dependent_errors_sentences_0026.png,Tymczasem dyrektor kazał wyprowadzić kłacz na korytarz.,0.877
+images/printed_context_dependent_errors_sentences_0027.png,"Gtos jej drgnąt, ale Wokulski nie spostrzęgt tego.",0.719
+images/printed_context_dependent_errors_sentences_0028.png,Zarumienitaisieimilczata.,0.469
+images/printed_context_dependent_errors_sentences_0029.png,"Pamiętam, w grudniu mieliście świetne żywe obrazy.",0.758
+images/printed_context_dependent_errors_sentences_0030.png,"O co go pytano, co odpowiedział, nie pamięta.",0.69
+images/printed_context_dependent_errors_sentences_0031.png,Starskiemuplacidzisiajzawszystkiejegobatamuctwa.,0.712
+images/printed_context_dependent_errors_sentences_0032.png,Wstat z kr zest a i uk toni w s zy sie wy s zed t.,0.769
+images/printed_context_dependent_errors_sentences_0033.png,Znowu zostali we dwu.,0.377
+images/printed_context_dependent_errors_sentences_0034.png,W czerwcu fizjognomia Warszawy ulega widocznej zmianie.,0.799
+images/printed_context_dependent_errors_sentences_0035.png,Wokulskimimovolipotrzqsngtgłowq.,0.565
+images/printed_context_dependent_errors_sentences_0036.png,Lecz cóz jego to obchodzito?,0.447
+images/printed_context_dependent_errors_sentences_0037.png,"Zobacz, co jest w te szublade.",0.532
+images/printed_context_dependent_errors_sentences_0038.png,Wyszedtprzedbrameizatzrymatsienachodniku.,0.653
+images/printed_context_dependent_errors_sentences_0039.png,"Około dziesiątej biegł na kursa, potem znowu czytał.",0.827
+images/printed_context_dependent_errors_sentences_0040.png,Hrab in ie wy st api lna czo lo rumi eni ec i ge sty pot.,0.827
+images/printed_context_dependent_errors_sentences_0041.png,Szybko wziąt papier i pióro i zacząt pisać.,0.8
+images/printed_context_dependent_errors_sentences_0042.png,"Byt to ch top, wta sci ciel chat y.",0.589
+images/printed_context_dependent_errors_sentences_0043.png,Jakís czas oboje siedzieli milcząc.,0.529
+images/printed_context_dependent_errors_sentences_0044.png,Wszedt Mikotaj i oznajmit lekarzy.,0.597
+images/printed_context_dependent_errors_sentences_0045.png,Serce mi� de ry to jak mot.,0.445
+images/printed_context_dependent_errors_sentences_0046.png,Panna Izabela zmarszczyta brwi.,0.473
+images/printed_context_dependent_errors_sentences_0047.png,W Zamościu bawiłem rok z czymś.,0.572
+images/printed_context_dependent_errors_sentences_0048.png,W takim raz iena pew no cz eka nas bank ruc two.,0.648
+images/printed_context_dependent_errors_sentences_0049.png,Ale na-górze dokuczają mu subiekci i goście.,0.623
+images/printed_context_dependent_errors_sentences_0050.png,Jak wyglgda firma J.,0.381
+images/printed_context_dependent_errors_sentences_0051.png,"Wokulski czuł, że opuszcza go odwaga.",0.681
+images/printed_context_dependent_errors_sentences_0052.png,"Była tak czegoś wzruszona, że usiada.",0.597
+images/printed_context_dependent_errors_sentences_0053.png,"Kiedy styszę takie historie, dalibóg!",0.532
+images/printed_context_dependent_errors_sentences_0054.png,Dawniej robiłem stolarszczyzne i nie mogłem nadążyc.,0.735
+images/printed_context_dependent_errors_sentences_0055.png,Sklep nasz byt kolonialno-galanteryjno-mydlarski.,0.795
+images/printed_context_dependent_errors_sentences_0056.png,"ach, ty bezmozgi szlachcic polski!",0.537
+images/printed_context_dependent_errors_sentences_0057.png,Lecz przerwa ta nie zmieszata pana Leona.,0.565
+images/printed_context_dependent_errors_sentences_0058.png,Zydkizaczętypokazywaćpalcamianabaronoweichrząkać.,0.836
+images/printed_context_dependent_errors_sentences_0059.png,Skad zresztą wezmę innych ludzi?,0.53
+images/printed_context_dependent_errors_sentences_0060.png,"Niechże go sobie kocha, byle oboje byli szczęśliwi.",0.718
+images/printed_context_dependent_errors_sentences_0061.png,Maruszewicz ukląkt przed nim.,0.442
+images/printed_context_dependent_errors_sentences_0062.png,To licha praca i niepopłatna.,0.475
+images/printed_context_dependent_errors_sentences_0063.png,"Tu wt}},",0.205
+images/printed_context_dependent_errors_sentences_0064.png,Od doktora pojechatem do pani Misiewiczowej.,0.627
+images/printed_context_dependent_errors_sentences_0065.png,Jego surowa twarz nabrała dziwnie rzewnego wyrazu.,0.753
+images/printed_context_dependent_errors_sentences_0066.png,"Zabitaby barona, gdyby to uchodzito dobrze wychowanym kobietom.",0.842
+images/printed_context_dependent_errors_sentences_0067.png,"No, pr zed ew s zy st kim bawi tam moj an ar ze cz on a.",0.833
+images/printed_context_dependent_errors_sentences_0068.png,Wtedyjawykupitiwyratowat.,0.546
+images/printed_context_dependent_errors_sentences_0069.png,Wokulski zd much n q t j q ir zu c it sie na to z ko.,0.797
+images/printed_context_dependent_errors_sentences_0070.png,Zakrzesłemhrabinystałsłużacywczarnejliberii.,0.76
+images/printed_context_dependent_errors_sentences_0071.png,Szuman aż skoczył na krześle.,0.536
+images/printed_context_dependent_errors_sentences_0072.png,Stary M incel iw niedziel e by wa f w skle pie.,0.688
+images/printed_context_dependent_errors_sentences_0073.png,Рann lateratelawmiczeniucalowalaeeicotki.,0.619
+images/printed_context_dependent_errors_sentences_0074.png,AleWokulskibytpochmurnyimilczat.,0.587
+images/printed_context_dependent_errors_sentences_0075.png,Panibaronowazaczetasieniepokoić.,0.573
+images/printed_context_dependent_errors_sentences_0076.png,Książe miąt tzy w oczach.,0.528
+images/printed_context_dependent_errors_sentences_0077.png,"Umyl się, włożyć czystą bielizne, przebrat się.",0.68
+images/printed_context_dependent_errors_sentences_0078.png,WszedfgarsonipodałWokulskiemudużylist.,0.627
+images/printed_context_dependent_errors_sentences_0079.png,Atujestkwit.,0.293
+images/printed_context_dependent_errors_sentences_0080.png,Wie c w stat i po ze g naws zy to war zy st wo wy bie g tna ul ice.,0.962
+images/printed_context_dependent_errors_sentences_0081.png,Serce zaczeto mu bić spieszniej.,0.511
+images/printed_context_dependent_errors_sentences_0082.png,"Co prawda, nie tego w nim szukano.",0.475
+images/printed_context_dependent_errors_sentences_0083.png,Kiedy pan jeste´s w domu?,0.444
+images/printed_context_dependent_errors_sentences_0084.png,Lecz gdy zapytano mnie: do czego mam ochote?,0.601
+images/printed_context_dependent_errors_sentences_0085.png,NakilkaminutprzeddziesiqtqwszedtMaruszewicz.,0.718
+images/printed_context_dependent_errors_sentences_0086.png,Wzięta książkę i zaczęta czytać.,0.6
+images/printed_context_dependent_errors_sentences_0087.png,"Lzami sie nie raz zalewa, kiedy od nich wraca.",0.621
+images/printed_context_dependent_errors_sentences_0088.png,"Owszem, zdawał się być jeszcze więcej zmieszany.",0.557
+images/printed_context_dependent_errors_sentences_0089.png,Suzuman patrzył na niego spod oka.,0.536
+images/printed_context_dependent_errors_sentences_0090.png,Jednocześnie�ól wzmagat się.,0.475
+images/printed_context_dependent_errors_sentences_0091.png,Szlangbaum zaczerwienił się jak upiór.,0.594
+images/printed_context_dependent_errors_sentences_0092.png,W pare godzin później był w Zastawiu.,0.535
+images/printed_context_dependent_errors_sentences_0093.png,A jemu co dat przypadek?,0.414
+images/printed_context_dependent_errors_sentences_0094.png,Jaidziśjeszczecienamawiam.,0.51
+images/printed_context_dependent_errors_sentences_0095.png,"WziatgodoRak,ziewna,alenareszcieodpieczetowa.",0.78
+images/printed_context_dependent_errors_sentences_0096.png,Wokulski ws zed t do num eru.,0.502
+images/printed_context_dependent_errors_sentences_0097.png,On poj dz ie z as ze s c dz ies i atp are ty sie cy.,0.748
+images/printed_context_dependent_errors_sentences_0098.png,"Mówiono, że już zupetnie dojrzata.",0.562
+images/printed_context_dependent_errors_sentences_0099.png,"Surowychtódparku,zamiastuspokoić,podniecatgo.",0.715
+images/printed_distortion_type_clean_0000.png,okropne,0.198
+images/printed_distortion_type_clean_0001.png,pr zy s zte,0.288
+images/printed_distortion_type_clean_0002.png,wade,0.174
+images/printed_distortion_type_clean_0003.png,zaprosiny,0.232
+images/printed_distortion_type_clean_0004.png,przystuchiwat,0.269
+images/printed_distortion_type_clean_0005.png,za ba wie,0.201
+images/printed_distortion_type_clean_0006.png,s miat em,0.235
+images/printed_distortion_type_clean_0007.png,wzgorza,0.233
+images/printed_distortion_type_clean_0008.png,fig l arnie,0.228
+images/printed_distortion_type_clean_0009.png,szlachtq,0.23
+images/printed_distortion_type_clean_0010.png,zostawie,0.234
+images/printed_distortion_type_clean_0011.png,me c en as ie,0.267
+images/printed_distortion_type_clean_0012.png,floro,0.17
+images/printed_distortion_type_clean_0013.png,lotu,0.174
+images/printed_distortion_type_clean_0014.png,z j az du,0.23
+images/printed_distortion_type_clean_0015.png,zmi en it a,0.26
+images/printed_distortion_type_clean_0016.png,umystu,0.2
+images/printed_distortion_type_clean_0017.png,pie kta,0.201
+images/printed_distortion_type_clean_0018.png,czynu,0.201
+images/printed_distortion_type_clean_0019.png,ary stok rac j q,0.29
+images/printed_distortion_type_clean_0020.png,niezwykta,0.227
+images/printed_distortion_type_clean_0021.png,arogantem,0.227
+images/printed_distortion_type_clean_0022.png,z g ubic,0.233
+images/printed_distortion_type_clean_0023.png,n' z,0.199
+images/printed_distortion_type_clean_0024.png,b taz nem,0.23
+images/printed_distortion_type_clean_0025.png,bogata,0.199
+images/printed_distortion_type_clean_0026.png,slady,0.167
+images/printed_distortion_type_clean_0027.png,stab o sci,0.2
+images/printed_distortion_type_clean_0028.png,wsadziwszy,0.256
+images/printed_distortion_type_clean_0029.png,zap a now ac,0.229
+images/printed_distortion_type_clean_0030.png,daw id,0.204
+images/printed_distortion_type_clean_0031.png,z as zed t,0.262
+images/printed_distortion_type_clean_0032.png,s tabi,0.197
+images/printed_distortion_type_clean_0033.png,cel u,0.166
+images/printed_distortion_type_clean_0034.png,zapadt,0.167
+images/printed_distortion_type_clean_0035.png,my sli,0.2
+images/printed_distortion_type_clean_0036.png,tward y m,0.23
+images/printed_distortion_type_clean_0037.png,oparta,0.169
+images/printed_distortion_type_clean_0038.png,s to sun kowo,0.256
+images/printed_distortion_type_clean_0039.png,rozsadna,0.225
+images/printed_distortion_type_clean_0040.png,tyran,0.166
+images/printed_distortion_type_clean_0041.png,by wa to,0.2
+images/printed_distortion_type_clean_0042.png,dro go,0.169
+images/printed_distortion_type_clean_0043.png,ch wali t,0.226
+images/printed_distortion_type_clean_0044.png,ki pi at a,0.23
+images/printed_distortion_type_clean_0045.png,imieniem,0.204
+images/printed_distortion_type_clean_0046.png,zime,0.167
+images/printed_distortion_type_clean_0047.png,sz cz e ry m,0.256
+images/printed_distortion_type_clean_0048.png,by wa j a,0.235
+images/printed_distortion_type_clean_0049.png,dokota,0.196
+images/printed_distortion_type_clean_0050.png,pobr ali,0.225
+images/printed_distortion_type_clean_0051.png,mos ie z ny,0.224
+images/printed_distortion_type_clean_0052.png,wz g led ow,0.259
+images/printed_distortion_type_clean_0053.png,szampan,0.199
+images/printed_distortion_type_clean_0054.png,wierzytbym,0.261
+images/printed_distortion_type_clean_0055.png,cia g,0.201
+images/printed_distortion_type_clean_0056.png,mia t by s,0.23
+images/printed_distortion_type_clean_0057.png,a kade micki e,0.324
+images/printed_distortion_type_clean_0058.png,be z,0.17
+images/printed_distortion_type_clean_0059.png,parado ks,0.203
+images/printed_distortion_type_clean_0060.png,promienie jacy,0.229
+images/printed_distortion_type_clean_0061.png,usta wi one,0.229
+images/printed_distortion_type_clean_0062.png,wymyslat,0.234
+images/printed_distortion_type_clean_0063.png,troskliwości,0.291
+images/printed_distortion_type_clean_0064.png,fundus z w,0.229
+images/printed_distortion_type_clean_0065.png,zydka,0.204
+images/printed_distortion_type_clean_0066.png,zebrane,0.168
+images/printed_distortion_type_clean_0067.png,przedmiesciu,0.289
+images/printed_distortion_type_clean_0068.png,pal mie rie go,0.261
+images/printed_distortion_type_clean_0069.png,la sec z ka,0.227
+images/printed_distortion_type_clean_0070.png,kapitalne,0.197
+images/printed_distortion_type_clean_0071.png,okien,0.167
+images/printed_distortion_type_clean_0072.png,skutki,0.197
+images/printed_distortion_type_clean_0073.png,gu wern an tka,0.288
+images/printed_distortion_type_clean_0074.png,po jda,0.199
+images/printed_distortion_type_clean_0075.png,rozsadni,0.23
+images/printed_distortion_type_clean_0076.png,ztamang,0.199
+images/printed_distortion_type_clean_0077.png,ruskich,0.171
+images/printed_distortion_type_clean_0078.png,suzinow i,0.259
+images/printed_distortion_type_clean_0079.png,baje,0.169
+images/printed_distortion_type_clean_0080.png,szwa j car,0.229
+images/printed_distortion_type_clean_0081.png,mie,0.137
+images/printed_distortion_type_clean_0082.png,bic i em,0.199
+images/printed_distortion_type_clean_0083.png,otaczaty,0.231
+images/printed_distortion_type_clean_0084.png,koszem,0.167
+images/printed_distortion_type_clean_0085.png,chodnik,0.17
+images/printed_distortion_type_clean_0086.png,od zi ed zi czy t,0.288
+images/printed_distortion_type_clean_0087.png,przeklenstwo,0.255
+images/printed_distortion_type_clean_0088.png,ty In e,0.196
+images/printed_distortion_type_clean_0089.png,mie j,0.168
+images/printed_distortion_type_clean_0090.png,kuracje,0.204
+images/printed_distortion_type_clean_0091.png,bij e,0.166
+images/printed_distortion_type_clean_0092.png,zostawiajac,0.286
+images/printed_distortion_type_clean_0093.png,lat arni,0.197
+images/printed_distortion_type_clean_0094.png,s prow adz a,0.261
+images/printed_distortion_type_clean_0095.png,mo wites,0.198
+images/printed_distortion_type_clean_0096.png,zm arte go,0.198
+images/printed_distortion_type_clean_0097.png,stowem,0.196
+images/printed_distortion_type_clean_0098.png,dukatow,0.198
+images/printed_distortion_type_clean_0099.png,mies i a cu,0.26
+images/printed_distortion_type_blur_0000.png,okropne,0.202
+images/printed_distortion_type_blur_0001.png,przysste,0.235
+images/printed_distortion_type_blur_0002.png,wade,0.173
+images/printed_distortion_type_blur_0003.png,zaprosiny,0.241
+images/printed_distortion_type_blur_0004.png,przystuchiwat,0.228
+images/printed_distortion_type_blur_0005.png,zabawie,0.226
+images/printed_distortion_type_blur_0006.png,simiatem,0.199
+images/printed_distortion_type_blur_0007.png,wzgorza,0.234
+images/printed_distortion_type_blur_0008.png,figlarnie,0.229
+images/printed_distortion_type_blur_0009.png,szlochtq,0.258
+images/printed_distortion_type_blur_0010.png,zostawię,0.229
+images/printed_distortion_type_blur_0011.png,mecenasie,0.232
+images/printed_distortion_type_blur_0012.png,floro,0.171
+images/printed_distortion_type_blur_0013.png,lotu,0.174
+images/printed_distortion_type_blur_0014.png,zjazdu,0.231
+images/printed_distortion_type_blur_0015.png,zmienita,0.23
+images/printed_distortion_type_blur_0016.png,umsystu,0.202
+images/printed_distortion_type_blur_0017.png,pielka,0.17
+images/printed_distortion_type_blur_0018.png,czynu,0.172
+images/printed_distortion_type_blur_0019.png,arystokracjq,0.259
+images/printed_distortion_type_blur_0020.png,niezwykta,0.261
+images/printed_distortion_type_blur_0021.png,arogantem,0.228
+images/printed_distortion_type_blur_0022.png,z g ubic,0.227
+images/printed_distortion_type_blur_0023.png,noz,0.17
+images/printed_distortion_type_blur_0024.png,blaznem,0.231
+images/printed_distortion_type_blur_0025.png,bogata,0.197
+images/printed_distortion_type_blur_0026.png,slady,0.168
+images/printed_distortion_type_blur_0027.png,slabosci,0.197
+images/printed_distortion_type_blur_0028.png,wsodziwszy,0.26
+images/printed_distortion_type_blur_0029.png,zapanowac,0.227
+images/printed_distortion_type_blur_0030.png,dawid,0.201
+images/printed_distortion_type_blur_0031.png,zaszedt,0.198
+images/printed_distortion_type_blur_0032.png,stabi,0.168
+images/printed_distortion_type_blur_0033.png,celu,0.17
+images/printed_distortion_type_blur_0034.png,zapadt,0.172
+images/printed_distortion_type_blur_0035.png,муšli,0.197
+images/printed_distortion_type_blur_0036.png,twardym,0.197
+images/printed_distortion_type_blur_0037.png,oparta,0.167
+images/printed_distortion_type_blur_0038.png,tosunkowo,0.198
+images/printed_distortion_type_blur_0039.png,rozsadna,0.231
+images/printed_distortion_type_blur_0040.png,tyran,0.17
+images/printed_distortion_type_blur_0041.png,bywalo,0.198
+images/printed_distortion_type_blur_0042.png,dro go,0.167
+images/printed_distortion_type_blur_0043.png,chwait,0.169
+images/printed_distortion_type_blur_0044.png,kipiata,0.2
+images/printed_distortion_type_blur_0045.png,imieniem,0.2
+images/printed_distortion_type_blur_0046.png,time,0.145
+images/printed_distortion_type_blur_0047.png,szczerym,0.23
+images/printed_distortion_type_blur_0048.png,bywaja,0.197
+images/printed_distortion_type_blur_0049.png,dokota,0.198
+images/printed_distortion_type_blur_0050.png,pobrali,0.229
+images/printed_distortion_type_blur_0051.png,mos ie try,0.2
+images/printed_distortion_type_blur_0052.png,wzgledow,0.261
+images/printed_distortion_type_blur_0053.png,szampan,0.201
+images/printed_distortion_type_blur_0054.png,wierzyłbym,0.295
+images/printed_distortion_type_blur_0055.png,cig,0.17
+images/printed_distortion_type_blur_0056.png,mialbys,0.233
+images/printed_distortion_type_blur_0057.png,akademickie,0.237
+images/printed_distortion_type_blur_0058.png,be z,0.173
+images/printed_distortion_type_blur_0059.png,parado ks,0.203
+images/printed_distortion_type_blur_0060.png,prominiejacy,0.263
+images/printed_distortion_type_blur_0061.png,ustawione,0.2
+images/printed_distortion_type_blur_0062.png,wymystat,0.231
+images/printed_distortion_type_blur_0063.png,troskliwosci,0.294
+images/printed_distortion_type_blur_0064.png,funduszów,0.207
+images/printed_distortion_type_blur_0065.png,zydka,0.199
+images/printed_distortion_type_blur_0066.png,zebrane,0.168
+images/printed_distortion_type_blur_0067.png,przedmiesciu,0.287
+images/printed_distortion_type_blur_0068.png,palmieriego,0.234
+images/printed_distortion_type_blur_0069.png,laseczką,0.23
+images/printed_distortion_type_blur_0070.png,kapitalne,0.199
+images/printed_distortion_type_blur_0071.png,okien,0.168
+images/printed_distortion_type_blur_0072.png,skutki,0.198
+images/printed_distortion_type_blur_0073.png,guwernantka,0.26
+images/printed_distortion_type_blur_0074.png,pojda,0.198
+images/printed_distortion_type_blur_0075.png,rozsądni,0.228
+images/printed_distortion_type_blur_0076.png,z t amano q,0.256
+images/printed_distortion_type_blur_0077.png,ruskich,0.168
+images/printed_distortion_type_blur_0078.png,suzinowi,0.228
+images/printed_distortion_type_blur_0079.png,baje,0.169
+images/printed_distortion_type_blur_0080.png,szwajcar,0.234
+images/printed_distortion_type_blur_0081.png,mie,0.137
+images/printed_distortion_type_blur_0082.png,biciem,0.173
+images/printed_distortion_type_blur_0083.png,otaczaty,0.236
+images/printed_distortion_type_blur_0084.png,koszem,0.169
+images/printed_distortion_type_blur_0085.png,chodnik,0.168
+images/printed_distortion_type_blur_0086.png,odziedziczyt,0.294
+images/printed_distortion_type_blur_0087.png,przekleristwo,0.259
+images/printed_distortion_type_blur_0088.png,ty in e,0.198
+images/printed_distortion_type_blur_0089.png,miej,0.169
+images/printed_distortion_type_blur_0090.png,kuracje,0.2
+images/printed_distortion_type_blur_0091.png,bijie,0.166
+images/printed_distortion_type_blur_0092.png,zostawiając,0.32
+images/printed_distortion_type_blur_0093.png,latarni,0.197
+images/printed_distortion_type_blur_0094.png,sprowadzą,0.196
+images/printed_distortion_type_blur_0095.png,mowiles,0.198
+images/printed_distortion_type_blur_0096.png,zmartego,0.196
+images/printed_distortion_type_blur_0097.png,stowem,0.197
+images/printed_distortion_type_blur_0098.png,dukatów,0.227
+images/printed_distortion_type_blur_0099.png,miesiącu,0.227
+images/printed_distortion_type_rotated_0000.png,okropne,0.203
+images/printed_distortion_type_rotated_0001.png,pr zy sz te,0.26
+images/printed_distortion_type_rotated_0002.png,wade,0.172
+images/printed_distortion_type_rotated_0003.png,zaprosiny,0.231
+images/printed_distortion_type_rotated_0004.png,przystuchiwat,0.263
+images/printed_distortion_type_rotated_0005.png,za baw ie,0.229
+images/printed_distortion_type_rotated_0006.png,smiatem,0.198
+images/printed_distortion_type_rotated_0007.png,wzgorza,0.228
+images/printed_distortion_type_rotated_0008.png,fig l arnie,0.228
+images/printed_distortion_type_rotated_0009.png,szlachtq,0.227
+images/printed_distortion_type_rotated_0010.png,zostawie,0.231
+images/printed_distortion_type_rotated_0011.png,me c en as ie,0.27
+images/printed_distortion_type_rotated_0012.png,floro,0.168
+images/printed_distortion_type_rotated_0013.png,lotu,0.17
+images/printed_distortion_type_rotated_0014.png,z j az du,0.227
+images/printed_distortion_type_rotated_0015.png,zmi en it a,0.262
+images/printed_distortion_type_rotated_0016.png,umystu,0.203
+images/printed_distortion_type_rotated_0017.png,pie kta,0.2
+images/printed_distortion_type_rotated_0018.png,czynu,0.198
+images/printed_distortion_type_rotated_0019.png,ary stokrac j q,0.291
+images/printed_distortion_type_rotated_0020.png,niezwykta,0.23
+images/printed_distortion_type_rotated_0021.png,arogantem,0.229
+images/printed_distortion_type_rotated_0022.png,z g ubie,0.233
+images/printed_distortion_type_rotated_0023.png,n6z,0.198
+images/printed_distortion_type_rotated_0024.png,b taz nem,0.229
+images/printed_distortion_type_rotated_0025.png,bogata,0.2
+images/printed_distortion_type_rotated_0026.png,slady,0.168
+images/printed_distortion_type_rotated_0027.png,s tabo sci,0.229
+images/printed_distortion_type_rotated_0028.png,wsadziwszy,0.264
+images/printed_distortion_type_rotated_0029.png,zap a now ac,0.228
+images/printed_distortion_type_rotated_0030.png,daw id,0.199
+images/printed_distortion_type_rotated_0031.png,z as zed t,0.255
+images/printed_distortion_type_rotated_0032.png,s tabi,0.196
+images/printed_distortion_type_rotated_0033.png,cel u,0.17
+images/printed_distortion_type_rotated_0034.png,zapadt,0.166
+images/printed_distortion_type_rotated_0035.png,my sli,0.197
+images/printed_distortion_type_rotated_0036.png,tward y m,0.228
+images/printed_distortion_type_rotated_0037.png,oparta,0.167
+images/printed_distortion_type_rotated_0038.png,s to sun ko wo,0.259
+images/printed_distortion_type_rotated_0039.png,rozsadna,0.226
+images/printed_distortion_type_rotated_0040.png,tyran,0.168
+images/printed_distortion_type_rotated_0041.png,by wato,0.198
+images/printed_distortion_type_rotated_0042.png,dro go,0.167
+images/printed_distortion_type_rotated_0043.png,chwa lit,0.2
+images/printed_distortion_type_rotated_0044.png,ki pi at a,0.228
+images/printed_distortion_type_rotated_0045.png,imieniem,0.198
+images/printed_distortion_type_rotated_0046.png,zime,0.168
+images/printed_distortion_type_rotated_0047.png,sz cz e ry m,0.259
+images/printed_distortion_type_rotated_0048.png,by waj a,0.227
+images/printed_distortion_type_rotated_0049.png,dokota,0.199
+images/printed_distortion_type_rotated_0050.png,pobr ali,0.228
+images/printed_distortion_type_rotated_0051.png,mos ie z ny,0.247
+images/printed_distortion_type_rotated_0052.png,wz g led ow,0.265
+images/printed_distortion_type_rotated_0053.png,szampan,0.201
+images/printed_distortion_type_rotated_0054.png,wier zy t by m,0.323
+images/printed_distortion_type_rotated_0055.png,cia g,0.202
+images/printed_distortion_type_rotated_0056.png,mia t by s,0.23
+images/printed_distortion_type_rotated_0057.png,a kade micki e,0.325
+images/printed_distortion_type_rotated_0058.png,bez,0.139
+images/printed_distortion_type_rotated_0059.png,parado ks,0.203
+images/printed_distortion_type_rotated_0060.png,promie nie jacy,0.262
+images/printed_distortion_type_rotated_0061.png,usta wi one,0.228
+images/printed_distortion_type_rotated_0062.png,wymyslat,0.23
+images/printed_distortion_type_rotated_0063.png,troskliwości,0.292
+images/printed_distortion_type_rotated_0064.png,fund us z' w,0.263
+images/printed_distortion_type_rotated_0065.png,zydka,0.198
+images/printed_distortion_type_rotated_0066.png,zebrane,0.17
+images/printed_distortion_type_rotated_0067.png,przedmiesciu,0.291
+images/printed_distortion_type_rotated_0068.png,palmieriego,0.232
+images/printed_distortion_type_rotated_0069.png,las e czk a,0.268
+images/printed_distortion_type_rotated_0070.png,kapitalne,0.201
+images/printed_distortion_type_rotated_0071.png,okien,0.169
+images/printed_distortion_type_rotated_0072.png,skutki,0.2
+images/printed_distortion_type_rotated_0073.png,gu we rna ntka,0.295
+images/printed_distortion_type_rotated_0074.png,po jda,0.199
+images/printed_distortion_type_rotated_0075.png,rozs ad ni,0.23
+images/printed_distortion_type_rotated_0076.png,ztamanq,0.201
+images/printed_distortion_type_rotated_0077.png,ruskich,0.169
+images/printed_distortion_type_rotated_0078.png,suzinow i,0.261
+images/printed_distortion_type_rotated_0079.png,baje,0.169
+images/printed_distortion_type_rotated_0080.png,szwa j car,0.229
+images/printed_distortion_type_rotated_0081.png,mie,0.139
+images/printed_distortion_type_rotated_0082.png,bic i em,0.2
+images/printed_distortion_type_rotated_0083.png,otaczaty,0.228
+images/printed_distortion_type_rotated_0084.png,koszem,0.169
+images/printed_distortion_type_rotated_0085.png,chod nik,0.171
+images/printed_distortion_type_rotated_0086.png,od zi ed zi czy t,0.289
+images/printed_distortion_type_rotated_0087.png,przekleństwo,0.26
+images/printed_distortion_type_rotated_0088.png,ty In e,0.199
+images/printed_distortion_type_rotated_0089.png,mie j,0.171
+images/printed_distortion_type_rotated_0090.png,kuracje,0.198
+images/printed_distortion_type_rotated_0091.png,bi je,0.178
+images/printed_distortion_type_rotated_0092.png,zostawiajac,0.294
+images/printed_distortion_type_rotated_0093.png,lat arni,0.205
+images/printed_distortion_type_rotated_0094.png,s prow adz a,0.258
+images/printed_distortion_type_rotated_0095.png,mo wites,0.198
+images/printed_distortion_type_rotated_0096.png,zm art ego,0.199
+images/printed_distortion_type_rotated_0097.png,stowem,0.199
+images/printed_distortion_type_rotated_0098.png,dukatow,0.203
+images/printed_distortion_type_rotated_0099.png,mies i a cu,0.261
+images/printed_distortion_type_noisy_0000.png,okropne,0.201
+images/printed_distortion_type_noisy_0001.png,pr zy sze,0.265
+images/printed_distortion_type_noisy_0002.png,wade,0.168
+images/printed_distortion_type_noisy_0003.png,zap rosi ny,0.259
+images/printed_distortion_type_noisy_0004.png,przystuchiwat,0.262
+images/printed_distortion_type_noisy_0005.png,za baw ie,0.23
+images/printed_distortion_type_noisy_0006.png,s mla tem,0.237
+images/printed_distortion_type_noisy_0007.png,wzgorza,0.235
+images/printed_distortion_type_noisy_0008.png,fig l arnie,0.227
+images/printed_distortion_type_noisy_0009.png,szlochto,0.229
+images/printed_distortion_type_noisy_0010.png,zostawie,0.229
+images/printed_distortion_type_noisy_0011.png,me c en as ie,0.266
+images/printed_distortion_type_noisy_0012.png,floro,0.171
+images/printed_distortion_type_noisy_0013.png,lotu,0.171
+images/printed_distortion_type_noisy_0014.png,z j az du,0.226
+images/printed_distortion_type_noisy_0015.png,zmienita,0.202
+images/printed_distortion_type_noisy_0016.png,umyslu,0.199
+images/printed_distortion_type_noisy_0017.png,pie kl a,0.199
+images/printed_distortion_type_noisy_0018.png,czynu,0.199
+images/printed_distortion_type_noisy_0019.png,any stokrag,0.228
+images/printed_distortion_type_noisy_0020.png,niezwykta,0.228
+images/printed_distortion_type_noisy_0021.png,arogantem,0.231
+images/printed_distortion_type_noisy_0022.png,zubic,0.173
+images/printed_distortion_type_noisy_0023.png,noz,0.17
+images/printed_distortion_type_noisy_0024.png,blaznem,0.228
+images/printed_distortion_type_noisy_0025.png,bogata,0.198
+images/printed_distortion_type_noisy_0026.png,stove,0.169
+images/printed_distortion_type_noisy_0027.png,slab osci,0.226
+images/printed_distortion_type_noisy_0028.png,wsadziwszy,0.257
+images/printed_distortion_type_noisy_0029.png,zap an ova c,0.263
+images/printed_distortion_type_noisy_0030.png,daw id,0.199
+images/printed_distortion_type_noisy_0031.png,zased,0.171
+images/printed_distortion_type_noisy_0032.png,s tabi,0.199
+images/printed_distortion_type_noisy_0033.png,cel u,0.17
+images/printed_distortion_type_noisy_0034.png,zapadt,0.168
+images/printed_distortion_type_noisy_0035.png,my sli,0.203
+images/printed_distortion_type_noisy_0036.png,Wardym,0.204
+images/printed_distortion_type_noisy_0037.png,oparia,0.17
+images/printed_distortion_type_noisy_0038.png,s to sun kowo,0.261
+images/printed_distortion_type_noisy_0039.png,rozsadna,0.234
+images/printed_distortion_type_noisy_0040.png,tyran,0.173
+images/printed_distortion_type_noisy_0041.png,by waio,0.205
+images/printed_distortion_type_noisy_0042.png,drogo,0.168
+images/printed_distortion_type_noisy_0043.png,Ch wali,0.199
+images/printed_distortion_type_noisy_0044.png,kip iata,0.23
+images/printed_distortion_type_noisy_0045.png,imieniem,0.197
+images/printed_distortion_type_noisy_0046.png,zim e,0.197
+images/printed_distortion_type_noisy_0047.png,sz c z erym,0.258
+images/printed_distortion_type_noisy_0048.png,oby waj a,0.227
+images/printed_distortion_type_noisy_0049.png,dokola,0.202
+images/printed_distortion_type_noisy_0050.png,poorall,0.199
+images/printed_distortion_type_noisy_0051.png,mos lez ny,0.227
+images/printed_distortion_type_noisy_0052.png,wz g led ow,0.257
+images/printed_distortion_type_noisy_0053.png,szampan,0.2
+images/printed_distortion_type_noisy_0054.png,wier zy l by m,0.319
+images/printed_distortion_type_noisy_0055.png,clag,0.171
+images/printed_distortion_type_noisy_0056.png,mialby s,0.231
+images/printed_distortion_type_noisy_0057.png,akademickie,0.229
+images/printed_distortion_type_noisy_0058.png,bez,0.18
+images/printed_distortion_type_noisy_0059.png,parado ks,0.198
+images/printed_distortion_type_noisy_0060.png,promin斜acy,0.234
+images/printed_distortion_type_noisy_0061.png,UstaWEone,0.229
+images/printed_distortion_type_noisy_0062.png,Universal,0.142
+images/printed_distortion_type_noisy_0063.png,TROSKIWOSE,0.272
+images/printed_distortion_type_noisy_0064.png,fundus zo w,0.23
+images/printed_distortion_type_noisy_0065.png,zydka,0.202
+images/printed_distortion_type_noisy_0066.png,zebra ne,0.196
+images/printed_distortion_type_noisy_0067.png,przedmiesciu,0.288
+images/printed_distortion_type_noisy_0068.png,Pamerego,0.225
+images/printed_distortion_type_noisy_0069.png,laseczka,0.226
+images/printed_distortion_type_noisy_0070.png,kapitaine,0.197
+images/printed_distortion_type_noisy_0071.png,Okten,0.167
+images/printed_distortion_type_noisy_0072.png,skutki,0.198
+images/printed_distortion_type_noisy_0073.png,guernantka,0.23
+images/printed_distortion_type_noisy_0074.png,pojda,0.198
+images/printed_distortion_type_noisy_0075.png,rozsadni,0.229
+images/printed_distortion_type_noisy_0076.png,z tama no,0.23
+images/printed_distortion_type_noisy_0077.png,ruski ch,0.197
+images/printed_distortion_type_noisy_0078.png,suzinow i,0.258
+images/printed_distortion_type_noisy_0079.png,baje,0.166
+images/printed_distortion_type_noisy_0080.png,sz wa j car,0.226
+images/printed_distortion_type_noisy_0081.png,mie,0.14
+images/printed_distortion_type_noisy_0082.png,bi cie m,0.23
+images/printed_distortion_type_noisy_0083.png,otaczaty,0.23
+images/printed_distortion_type_noisy_0084.png,koszem,0.167
+images/printed_distortion_type_noisy_0085.png,Chodnik,0.198
+images/printed_distortion_type_noisy_0086.png,od zied zi czy t,0.29
+images/printed_distortion_type_noisy_0087.png,przeklenstwo,0.26
+images/printed_distortion_type_noisy_0088.png,ty in e,0.198
+images/printed_distortion_type_noisy_0089.png,miej,0.169
+images/printed_distortion_type_noisy_0090.png,kura gie,0.229
+images/printed_distortion_type_noisy_0091.png,bue,0.166
+images/printed_distortion_type_noisy_0092.png,zostawiajac,0.29
+images/printed_distortion_type_noisy_0093.png,Latam!,0.201
+images/printed_distortion_type_noisy_0094.png,S pro wad za,0.263
+images/printed_distortion_type_noisy_0095.png,mow ies,0.232
+images/printed_distortion_type_noisy_0096.png,zm arte go,0.201
+images/printed_distortion_type_noisy_0097.png,stow em,0.198
+images/printed_distortion_type_noisy_0098.png,dukatow,0.229
+images/printed_distortion_type_noisy_0099.png,mies iac u,0.261
+images/printed_distortion_type_low_resolution_0000.png,okro p ne,0.232
+images/printed_distortion_type_low_resolution_0001.png,pr zy s ste,0.261
+images/printed_distortion_type_low_resolution_0002.png,wad g,0.198
+images/printed_distortion_type_low_resolution_0003.png,zaprosiny,0.227
+images/printed_distortion_type_low_resolution_0004.png,przystuchiwat,0.257
+images/printed_distortion_type_low_resolution_0005.png,z a bawi e,0.257
+images/printed_distortion_type_low_resolution_0006.png,si mi at em,0.226
+images/printed_distortion_type_low_resolution_0007.png,wzgorza,0.226
+images/printed_distortion_type_low_resolution_0008.png,fig l arnie,0.225
+images/printed_distortion_type_low_resolution_0009.png,salo ch t q,0.257
+images/printed_distortion_type_low_resolution_0010.png,zostawie,0.227
+images/printed_distortion_type_low_resolution_0011.png,mezenasie,0.256
+images/printed_distortion_type_low_resolution_0012.png,floro,0.174
+images/printed_distortion_type_low_resolution_0013.png,lotu,0.167
+images/printed_distortion_type_low_resolution_0014.png,z j az du,0.229
+images/printed_distortion_type_low_resolution_0015.png,zmienita,0.229
+images/printed_distortion_type_low_resolution_0016.png,штату,0.228
+images/printed_distortion_type_low_resolution_0017.png,piel da,0.165
+images/printed_distortion_type_low_resolution_0018.png,сгупи,0.23
+images/printed_distortion_type_low_resolution_0019.png,a ry stokro c jg,0.349
+images/printed_distortion_type_low_resolution_0020.png,niezwykta,0.257
+images/printed_distortion_type_low_resolution_0021.png,aragon tem,0.199
+images/printed_distortion_type_low_resolution_0022.png,z g ubie,0.232
+images/printed_distortion_type_low_resolution_0023.png,n6z,0.198
+images/printed_distortion_type_low_resolution_0024.png,blaznem,0.262
+images/printed_distortion_type_low_resolution_0025.png,bogata,0.199
+images/printed_distortion_type_low_resolution_0026.png,slady,0.171
+images/printed_distortion_type_low_resolution_0027.png,s tabo sci,0.227
+images/printed_distortion_type_low_resolution_0028.png,wsodziwszy,0.258
+images/printed_distortion_type_low_resolution_0029.png,zap ono woc,0.289
+images/printed_distortion_type_low_resolution_0030.png,daw id,0.199
+images/printed_distortion_type_low_resolution_0031.png,zaszedt,0.204
+images/printed_distortion_type_low_resolution_0032.png,s tabi,0.2
+images/printed_distortion_type_low_resolution_0033.png,cel u,0.17
+images/printed_distortion_type_low_resolution_0034.png,zapadt,0.169
+images/printed_distortion_type_low_resolution_0035.png,my sli,0.204
+images/printed_distortion_type_low_resolution_0036.png,t wardy m,0.235
+images/printed_distortion_type_low_resolution_0037.png,oparta,0.17
+images/printed_distortion_type_low_resolution_0038.png,s to sun kowo,0.261
+images/printed_distortion_type_low_resolution_0039.png,rozsadna,0.23
+images/printed_distortion_type_low_resolution_0040.png,tyran,0.169
+images/printed_distortion_type_low_resolution_0041.png,bywal o,0.203
+images/printed_distortion_type_low_resolution_0042.png,dro go,0.168
+images/printed_distortion_type_low_resolution_0043.png,ch wali t,0.23
+images/printed_distortion_type_low_resolution_0044.png,kip iata,0.198
+images/printed_distortion_type_low_resolution_0045.png,imieniem,0.202
+images/printed_distortion_type_low_resolution_0046.png,time,0.138
+images/printed_distortion_type_low_resolution_0047.png,sz cz e ry m,0.258
+images/printed_distortion_type_low_resolution_0048.png,bywaja,0.203
+images/printed_distortion_type_low_resolution_0049.png,dokota,0.198
+images/printed_distortion_type_low_resolution_0050.png,pobr ali,0.23
+images/printed_distortion_type_low_resolution_0051.png,mos ie bny,0.228
+images/printed_distortion_type_low_resolution_0052.png,wz g/ edo w,0.325
+images/printed_distortion_type_low_resolution_0053.png,szampan,0.197
+images/printed_distortion_type_low_resolution_0054.png,wierzylbym,0.291
+images/printed_distortion_type_low_resolution_0055.png,ciag,0.172
+images/printed_distortion_type_low_resolution_0056.png,mia l by s,0.235
+images/printed_distortion_type_low_resolution_0057.png,akademickie,0.232
+images/printed_distortion_type_low_resolution_0058.png,be z,0.171
+images/printed_distortion_type_low_resolution_0059.png,parado ks,0.202
+images/printed_distortion_type_low_resolution_0060.png,promin e jacy,0.259
+images/printed_distortion_type_low_resolution_0061.png,u st a wi one,0.257
+images/printed_distortion_type_low_resolution_0062.png,wymysla,0.227
+images/printed_distortion_type_low_resolution_0063.png,troskliwości,0.264
+images/printed_distortion_type_low_resolution_0064.png,funduszów,0.26
+images/printed_distortion_type_low_resolution_0065.png,Zydk a,0.231
+images/printed_distortion_type_low_resolution_0066.png,zebrane,0.172
+images/printed_distortion_type_low_resolution_0067.png,przedmiesciu,0.289
+images/printed_distortion_type_low_resolution_0068.png,palmieriego,0.229
+images/printed_distortion_type_low_resolution_0069.png,la sec z k q,0.262
+images/printed_distortion_type_low_resolution_0070.png,kapitalne,0.199
+images/printed_distortion_type_low_resolution_0071.png,okien,0.169
+images/printed_distortion_type_low_resolution_0072.png,s kut ki,0.196
+images/printed_distortion_type_low_resolution_0073.png,gu we man tka,0.255
+images/printed_distortion_type_low_resolution_0074.png,pojda,0.197
+images/printed_distortion_type_low_resolution_0075.png,rozs ad ni,0.227
+images/printed_distortion_type_low_resolution_0076.png,z f oman q,0.261
+images/printed_distortion_type_low_resolution_0077.png,ruskich,0.169
+images/printed_distortion_type_low_resolution_0078.png,suzinow i,0.26
+images/printed_distortion_type_low_resolution_0079.png,baje,0.171
+images/printed_distortion_type_low_resolution_0080.png,sz waj car,0.234
+images/printed_distortion_type_low_resolution_0081.png,mie,0.139
+images/printed_distortion_type_low_resolution_0082.png,bic i em,0.198
+images/printed_distortion_type_low_resolution_0083.png,otaczaty,0.227
+images/printed_distortion_type_low_resolution_0084.png,koszem,0.168
+images/printed_distortion_type_low_resolution_0085.png,chodnik,0.172
+images/printed_distortion_type_low_resolution_0086.png,odziedziczyt,0.289
+images/printed_distortion_type_low_resolution_0087.png,przeklevistwo,0.288
+images/printed_distortion_type_low_resolution_0088.png,ty in e,0.197
+images/printed_distortion_type_low_resolution_0089.png,miej,0.167
+images/printed_distortion_type_low_resolution_0090.png,kuracje,0.2
+images/printed_distortion_type_low_resolution_0091.png,bjie,0.167
+images/printed_distortion_type_low_resolution_0092.png,zostawiajac,0.289
+images/printed_distortion_type_low_resolution_0093.png,lat arni,0.198
+images/printed_distortion_type_low_resolution_0094.png,s prow adz a,0.257
+images/printed_distortion_type_low_resolution_0095.png,mow i les,0.231
+images/printed_distortion_type_low_resolution_0096.png,z mar te go,0.23
+images/printed_distortion_type_low_resolution_0097.png,stowem,0.197
+images/printed_distortion_type_low_resolution_0098.png,dukatów,0.199
+images/printed_distortion_type_low_resolution_0099.png,miesiacu,0.256
+images/handwritten_polish_character_confusion_polish_0000.png,za pew ni,0.204
+images/handwritten_polish_character_confusion_polish_0001.png,smietniku,0.23
+images/handwritten_polish_character_confusion_polish_0002.png,z mizer nia l,0.294
+images/handwritten_polish_character_confusion_polish_0003.png,gorze,0.175
+images/handwritten_polish_character_confusion_polish_0004.png,ile,0.139
+images/handwritten_polish_character_confusion_polish_0005.png,rger wala,0.231
+images/handwritten_polish_character_confusion_polish_0006.png,s traci c,0.234
+images/handwritten_polish_character_confusion_polish_0007.png,weg li,0.169
+images/handwritten_polish_character_confusion_polish_0008.png,by wata,0.204
+images/handwritten_polish_character_confusion_polish_0009.png,z nate s,0.232
+images/handwritten_polish_character_confusion_polish_0010.png,ofechat,0.201
+images/handwritten_polish_character_confusion_polish_0011.png,s pegi al no sc,0.292
+images/handwritten_polish_character_confusion_polish_0012.png,istniaty,0.2
+images/handwritten_polish_character_confusion_polish_0013.png,nia,0.138
+images/handwritten_polish_character_confusion_polish_0014.png,dzie sie cio ro,0.263
+images/handwritten_polish_character_confusion_polish_0015.png,usm i ech a,0.257
+images/handwritten_polish_character_confusion_polish_0016.png,w losi,0.199
+images/handwritten_polish_character_confusion_polish_0017.png,pi or ze,0.201
+images/handwritten_polish_character_confusion_polish_0018.png,D wor cz oSt,0.26
+images/handwritten_polish_character_confusion_polish_0019.png,rad za,0.17
+images/handwritten_polish_character_confusion_polish_0020.png,draznito,0.229
+images/handwritten_polish_character_confusion_polish_0021.png,2 oba czy ta,0.265
+images/handwritten_polish_character_confusion_polish_0022.png,opus cilla,0.231
+images/handwritten_polish_character_confusion_polish_0023.png,bie gn a,0.202
+images/handwritten_polish_character_confusion_polish_0024.png,w re czy 1,0.259
+images/handwritten_polish_character_confusion_polish_0025.png,ko goi,0.198
+images/handwritten_polish_character_confusion_polish_0026.png,wyskakiwak,0.291
+images/handwritten_polish_character_confusion_polish_0027.png,kt oz,0.168
+images/handwritten_polish_character_confusion_polish_0028.png,zap o wie dz i at,0.291
+images/handwritten_polish_character_confusion_polish_0029.png,sprezy nach,0.231
+images/handwritten_polish_character_confusion_polish_0030.png,przyja zhe,0.265
+images/handwritten_polish_character_confusion_polish_0031.png,porc je,0.201
+images/handwritten_polish_character_confusion_polish_0032.png,sydhow,0.2
+images/handwritten_polish_character_confusion_polish_0033.png,rekom a,0.2
+images/handwritten_polish_character_confusion_polish_0034.png,publiczności,0.2
+images/handwritten_polish_character_confusion_polish_0035.png,post a nca,0.229
+images/handwritten_polish_character_confusion_polish_0036.png,przel k not,0.231
+images/handwritten_polish_character_confusion_polish_0037.png,m to dz ie inc em,0.293
+images/handwritten_polish_character_confusion_polish_0038.png,ode nw ac,0.204
+images/handwritten_polish_character_confusion_polish_0039.png,s tus zhe,0.264
+images/handwritten_polish_character_confusion_polish_0040.png,us i ad ly,0.231
+images/handwritten_polish_character_confusion_polish_0041.png,cork a,0.2
+images/handwritten_polish_character_confusion_polish_0042.png,s zep na 1,0.293
+images/handwritten_polish_character_confusion_polish_0043.png,od zi at,0.198
+images/handwritten_polish_character_confusion_polish_0044.png,pie kn y ch,0.233
+images/handwritten_polish_character_confusion_polish_0045.png,familia,0.201
+images/handwritten_polish_character_confusion_polish_0046.png,large isle,0.204
+images/handwritten_polish_character_confusion_polish_0047.png,Z y c,0.203
+images/handwritten_polish_character_confusion_polish_0048.png,po zy czy t,0.265
+images/handwritten_polish_character_confusion_polish_0049.png,peh a,0.204
+images/handwritten_polish_character_confusion_polish_0050.png,glupia,0.201
+images/handwritten_polish_character_confusion_polish_0051.png,wy bac zy c,0.262
+images/handwritten_polish_character_confusion_polish_0052.png,dziewiaza,0.228
+images/handwritten_polish_character_confusion_polish_0053.png,haide,0.169
+images/handwritten_polish_character_confusion_polish_0054.png,pa jdi ern ika,0.288
+images/handwritten_polish_character_confusion_polish_0055.png,naste pu jacy,0.259
+images/handwritten_polish_character_confusion_polish_0056.png,mi to sier dz ie,0.289
+images/handwritten_polish_character_confusion_polish_0057.png,stud nie,0.169
+images/handwritten_polish_character_confusion_polish_0058.png,wz no sila,0.258
+images/handwritten_polish_character_confusion_polish_0059.png,mus iata,0.199
+images/handwritten_polish_character_confusion_polish_0060.png,uca to wal,0.227
+images/handwritten_polish_character_confusion_polish_0061.png,2 to dz ie j st wo,0.323
+images/handwritten_polish_character_confusion_polish_0062.png,ge ros c,0.203
+images/handwritten_polish_character_confusion_polish_0063.png,3 u 3 y c,0.289
+images/handwritten_polish_character_confusion_polish_0064.png,za zn a jo mit,0.264
+images/handwritten_polish_character_confusion_polish_0065.png,nieprawdaj,0.26
+images/handwritten_polish_character_confusion_polish_0066.png,maize n st wie,0.263
+images/handwritten_polish_character_confusion_polish_0067.png,do str seg la,0.229
+images/handwritten_polish_character_confusion_polish_0068.png,go sci nny ch,0.263
+images/handwritten_polish_character_confusion_polish_0069.png,wdzieki,0.204
+images/handwritten_polish_character_confusion_polish_0070.png,w st qp i,0.265
+images/handwritten_polish_character_confusion_polish_0071.png,be zi nter eso w no sci,0.35
+images/handwritten_polish_character_confusion_polish_0072.png,tao ce,0.201
+images/handwritten_polish_character_confusion_polish_0073.png,okrzykow,0.232
+images/handwritten_polish_character_confusion_polish_0074.png,k lot nie,0.199
+images/handwritten_polish_character_confusion_polish_0075.png,uroczystość,0.257
+images/handwritten_polish_character_confusion_polish_0076.png,lit oisc iw y m,0.289
+images/handwritten_polish_character_confusion_polish_0077.png,bic,0.139
+images/handwritten_polish_character_confusion_polish_0078.png,zgtupiec,0.265
+images/handwritten_polish_character_confusion_polish_0079.png,post e pow a nie,0.258
+images/handwritten_polish_character_confusion_polish_0080.png,wy jr zal,0.199
+images/handwritten_polish_character_confusion_polish_0081.png,3 wy k la,0.231
+images/handwritten_polish_character_confusion_polish_0082.png,urodzit,0.229
+images/handwritten_polish_character_confusion_polish_0083.png,m to dy mi,0.228
+images/handwritten_polish_character_confusion_polish_0084.png,om ni bus ow,0.227
+images/handwritten_polish_character_confusion_polish_0085.png,Bio nae,0.197
+images/handwritten_polish_character_confusion_polish_0086.png,catonata,0.202
+images/handwritten_polish_character_confusion_polish_0087.png,mile,0.144
+images/handwritten_polish_character_confusion_polish_0088.png,z gad n qc,0.259
+images/handwritten_polish_character_confusion_polish_0089.png,nod bi j ac,0.226
+images/handwritten_polish_character_confusion_polish_0090.png,c ze cie j,0.26
+images/handwritten_polish_character_confusion_polish_0091.png,op o wi ad at em,0.298
+images/handwritten_polish_character_confusion_polish_0092.png,wy j sica,0.23
+images/handwritten_polish_character_confusion_polish_0093.png,pot tora,0.199
+images/handwritten_polish_character_confusion_polish_0094.png,dates,0.136
+images/handwritten_polish_character_confusion_polish_0095.png,sciezhi,0.228
+images/handwritten_polish_character_confusion_polish_0096.png,powr o cie,0.259
+images/handwritten_polish_character_confusion_polish_0097.png,za prope now at a,0.285
+images/handwritten_polish_character_confusion_polish_0098.png,orkiestre,0.198
+images/handwritten_polish_character_confusion_polish_0099.png,Podskoczy,0.23
+images/handwritten_polish_character_confusion_non_polish_0000.png,zb roi,0.166
+images/handwritten_polish_character_confusion_non_polish_0001.png,Zw any,0.201
+images/handwritten_polish_character_confusion_non_polish_0002.png,dvp lom,0.23
+images/handwritten_polish_character_confusion_non_polish_0003.png,stanowczo,0.236
+images/handwritten_polish_character_confusion_non_polish_0004.png,hory tar gu,0.238
+images/handwritten_polish_character_confusion_non_polish_0005.png,oho,0.176
+images/handwritten_polish_character_confusion_non_polish_0006.png,o bau a,0.235
+images/handwritten_polish_character_confusion_non_polish_0007.png,dwUznaczny,0.274
+images/handwritten_polish_character_confusion_non_polish_0008.png,sz czy cie,0.234
+images/handwritten_polish_character_confusion_non_polish_0009.png,pr ze j dz it,0.263
+images/handwritten_polish_character_confusion_non_polish_0010.png,s mac z ny,0.232
+images/handwritten_polish_character_confusion_non_polish_0011.png,sz t and ary,0.232
+images/handwritten_polish_character_confusion_non_polish_0012.png,wi elk ie,0.201
+images/handwritten_polish_character_confusion_non_polish_0013.png,we k sl,0.205
+images/handwritten_polish_character_confusion_non_polish_0014.png,s pro wad za,0.259
+images/handwritten_polish_character_confusion_non_polish_0015.png,kazimierz,0.229
+images/handwritten_polish_character_confusion_non_polish_0016.png,font,0.139
+images/handwritten_polish_character_confusion_non_polish_0017.png,denn,0.171
+images/handwritten_polish_character_confusion_non_polish_0018.png,kapitalik,0.205
+images/handwritten_polish_character_confusion_non_polish_0019.png,zqubi,0.203
+images/handwritten_polish_character_confusion_non_polish_0020.png,zhudzony,0.228
+images/handwritten_polish_character_confusion_non_polish_0021.png,op o wi a dani a,0.321
+images/handwritten_polish_character_confusion_non_polish_0022.png,nut y,0.172
+images/handwritten_polish_character_confusion_non_polish_0023.png,mag le,0.168
+images/handwritten_polish_character_confusion_non_polish_0024.png,upadku,0.198
+images/handwritten_polish_character_confusion_non_polish_0025.png,sur ony,0.195
+images/handwritten_polish_character_confusion_non_polish_0026.png,s brow adz is z,0.284
+images/handwritten_polish_character_confusion_non_polish_0027.png,braca,0.166
+images/handwritten_polish_character_confusion_non_polish_0028.png,dole,0.165
+images/handwritten_polish_character_confusion_non_polish_0029.png,nie s mak u,0.227
+images/handwritten_polish_character_confusion_non_polish_0030.png,lepiej,0.196
+images/handwritten_polish_character_confusion_non_polish_0031.png,niem cami,0.226
+images/handwritten_polish_character_confusion_non_polish_0032.png,pisania,0.167
+images/handwritten_polish_character_confusion_non_polish_0033.png,parku,0.17
+images/handwritten_polish_character_confusion_non_polish_0034.png,przy wi d zen i a,0.318
+images/handwritten_polish_character_confusion_non_polish_0035.png,romans,0.169
+images/handwritten_polish_character_confusion_non_polish_0036.png,wybuchu,0.2
+images/handwritten_polish_character_confusion_non_polish_0037.png,naszego,0.168
+images/handwritten_polish_character_confusion_non_polish_0038.png,no stawa,0.199
+images/handwritten_polish_character_confusion_non_polish_0039.png,ubrana,0.199
+images/handwritten_polish_character_confusion_non_polish_0040.png,balon u,0.2
+images/handwritten_polish_character_confusion_non_polish_0041.png,pe w ne,0.197
+images/handwritten_polish_character_confusion_non_polish_0042.png,mier ny,0.203
+images/handwritten_polish_character_confusion_non_polish_0043.png,ok nach,0.17
+images/handwritten_polish_character_confusion_non_polish_0044.png,ufasz,0.168
+images/handwritten_polish_character_confusion_non_polish_0045.png,pr ze ciw,0.229
+images/handwritten_polish_character_confusion_non_polish_0046.png,io asia,0.168
+images/handwritten_polish_character_confusion_non_polish_0047.png,sz an u je,0.232
+images/handwritten_polish_character_confusion_non_polish_0048.png,os tre,0.169
+images/handwritten_polish_character_confusion_non_polish_0049.png,wale,0.168
+images/handwritten_polish_character_confusion_non_polish_0050.png,w yj a a dem,0.292
+images/handwritten_polish_character_confusion_non_polish_0051.png,na by w cy,0.231
+images/handwritten_polish_character_confusion_non_polish_0052.png,mura ch,0.204
+images/handwritten_polish_character_confusion_non_polish_0053.png,lubi,0.169
+images/handwritten_polish_character_confusion_non_polish_0054.png,g bier ge,0.227
+images/handwritten_polish_character_confusion_non_polish_0055.png,CZO,0.166
+images/handwritten_polish_character_confusion_non_polish_0056.png,lud z ki e,0.256
+images/handwritten_polish_character_confusion_non_polish_0057.png,umie,0.166
+images/handwritten_polish_character_confusion_non_polish_0058.png,kr zak,0.172
+images/handwritten_polish_character_confusion_non_polish_0059.png,grud nia,0.227
+images/handwritten_polish_character_confusion_non_polish_0060.png,r z adki e,0.258
+images/handwritten_polish_character_confusion_non_polish_0061.png,amatorstwo,0.232
+images/handwritten_polish_character_confusion_non_polish_0062.png,wi del cem,0.23
+images/handwritten_polish_character_confusion_non_polish_0063.png,3dumiona,0.226
+images/handwritten_polish_character_confusion_non_polish_0064.png,la taW ce,0.23
+images/handwritten_polish_character_confusion_non_polish_0065.png,no garda,0.2
+images/handwritten_polish_character_confusion_non_polish_0066.png,naz y wac ie,0.263
+images/handwritten_polish_character_confusion_non_polish_0067.png,oficera,0.203
+images/handwritten_polish_character_confusion_non_polish_0068.png,o gro m ny m,0.259
+images/handwritten_polish_character_confusion_non_polish_0069.png,ot roc za,0.196
+images/handwritten_polish_character_confusion_non_polish_0070.png,uprzywilejowane,0.288
+images/handwritten_polish_character_confusion_non_polish_0071.png,dor ob ki ew i cza,0.35
+images/handwritten_polish_character_confusion_non_polish_0072.png,chwi lowe go,0.26
+images/handwritten_polish_character_confusion_non_polish_0073.png,oblan y,0.197
+images/handwritten_polish_character_confusion_non_polish_0074.png,kuglarcem,0.26
+images/handwritten_polish_character_confusion_non_polish_0075.png,dymu,0.199
+images/handwritten_polish_character_confusion_non_polish_0076.png,jad al ny m,0.232
+images/handwritten_polish_character_confusion_non_polish_0077.png,star y ch,0.199
+images/handwritten_polish_character_confusion_non_polish_0078.png,bron i,0.169
+images/handwritten_polish_character_confusion_non_polish_0079.png,kn wi,0.171
+images/handwritten_polish_character_confusion_non_polish_0080.png,mie jsc,0.207
+images/handwritten_polish_character_confusion_non_polish_0081.png,s to sun ek,0.23
+images/handwritten_polish_character_confusion_non_polish_0082.png,herbata,0.199
+images/handwritten_polish_character_confusion_non_polish_0083.png,krzywdzi,0.233
+images/handwritten_polish_character_confusion_non_polish_0084.png,gry mot,0.2
+images/handwritten_polish_character_confusion_non_polish_0085.png,zu iki,0.199
+images/handwritten_polish_character_confusion_non_polish_0086.png,lot,0.138
+images/handwritten_polish_character_confusion_non_polish_0087.png,d zi w na,0.228
+images/handwritten_polish_character_confusion_non_polish_0088.png,bile ty,0.197
+images/handwritten_polish_character_confusion_non_polish_0089.png,bros g ury,0.267
+images/handwritten_polish_character_confusion_non_polish_0090.png,kr 2 es 2 ow ski ch,0.388
+images/handwritten_polish_character_confusion_non_polish_0091.png,cuda,0.167
+images/handwritten_polish_character_confusion_non_polish_0092.png,apetytu,0.2
+images/handwritten_polish_character_confusion_non_polish_0093.png,ucz ci wie,0.196
+images/handwritten_polish_character_confusion_non_polish_0094.png,not n zeb ne,0.261
+images/handwritten_polish_character_confusion_non_polish_0095.png,hul i,0.199
+images/handwritten_polish_character_confusion_non_polish_0096.png,lesie,0.169
+images/handwritten_polish_character_confusion_non_polish_0097.png,to a let a,0.233
+images/handwritten_polish_character_confusion_non_polish_0098.png,nie bie ski ej,0.264
+images/handwritten_polish_character_confusion_non_polish_0099.png,hory zon tu,0.26
+images/handwritten_word_length_effects_short_words_0000.png,przedmiot,0.23
+images/handwritten_word_length_effects_short_words_0001.png,cyn i 2 mu,0.293
+images/handwritten_word_length_effects_short_words_0002.png,ciot ce,0.2
+images/handwritten_word_length_effects_short_words_0003.png,gora,0.169
+images/handwritten_word_length_effects_short_words_0004.png,dam,0.139
+images/handwritten_word_length_effects_short_words_0005.png,pr o in i a cy,0.29
+images/handwritten_word_length_effects_short_words_0006.png,utopic,0.17
+images/handwritten_word_length_effects_short_words_0007.png,g to sami,0.23
+images/handwritten_word_length_effects_short_words_0008.png,galerie,0.174
+images/handwritten_word_length_effects_short_words_0009.png,anglik,0.17
+images/handwritten_word_length_effects_short_words_0010.png,umyt,0.176
+images/handwritten_word_length_effects_short_words_0011.png,dusge,0.204
+images/handwritten_word_length_effects_short_words_0012.png,zeb rato,0.234
+images/handwritten_word_length_effects_short_words_0013.png,wiz e run ek,0.262
+images/handwritten_word_length_effects_short_words_0014.png,bzika,0.168
+images/handwritten_word_length_effects_short_words_0015.png,mogtem,0.201
+images/handwritten_word_length_effects_short_words_0016.png,okazy,0.168
+images/handwritten_word_length_effects_short_words_0017.png,sumowat,0.198
+images/handwritten_word_length_effects_short_words_0018.png,kucharkq,0.228
+images/handwritten_word_length_effects_short_words_0019.png,z god zi c,0.23
+images/handwritten_word_length_effects_short_words_0020.png,tat ko,0.199
+images/handwritten_word_length_effects_short_words_0021.png,zamienila,0.232
+images/handwritten_word_length_effects_short_words_0022.png,gotowej,0.169
+images/handwritten_word_length_effects_short_words_0023.png,we z el,0.2
+images/handwritten_word_length_effects_short_words_0024.png,ssai,0.171
+images/handwritten_word_length_effects_short_words_0025.png,sfrzez,0.23
+images/handwritten_word_length_effects_short_words_0026.png,dz in,0.17
+images/handwritten_word_length_effects_short_words_0027.png,o ho,0.176
+images/handwritten_word_length_effects_short_words_0028.png,nagle,0.172
+images/handwritten_word_length_effects_short_words_0029.png,pote zna,0.235
+images/handwritten_word_length_effects_short_words_0030.png,go la,0.169
+images/handwritten_word_length_effects_short_words_0031.png,apatia,0.172
+images/handwritten_word_length_effects_short_words_0032.png,wyzyn,0.202
+images/handwritten_word_length_effects_short_words_0033.png,jakimi,0.169
+images/handwritten_word_length_effects_short_words_0034.png,jadalnego,0.201
+images/handwritten_word_length_effects_short_words_0035.png,z robie,0.201
+images/handwritten_word_length_effects_short_words_0036.png,o qui miem y,0.262
+images/handwritten_word_length_effects_short_words_0037.png,sp re day,0.199
+images/handwritten_word_length_effects_short_words_0038.png,dro gam i,0.198
+images/handwritten_word_length_effects_short_words_0039.png,nar ze kal,0.199
+images/handwritten_word_length_effects_short_words_0040.png,bry czy ny,0.236
+images/handwritten_word_length_effects_short_words_0041.png,Iwa,0.172
+images/handwritten_word_length_effects_short_words_0042.png,od k ry cie,0.264
+images/handwritten_word_length_effects_short_words_0043.png,blednac,0.228
+images/handwritten_word_length_effects_short_words_0044.png,imie,0.168
+images/handwritten_word_length_effects_short_words_0045.png,prosita,0.2
+images/handwritten_word_length_effects_short_words_0046.png,sz tafe ty,0.232
+images/handwritten_word_length_effects_short_words_0047.png,sied zac a,0.258
+images/handwritten_word_length_effects_short_words_0048.png,post ara,0.167
+images/handwritten_word_length_effects_short_words_0049.png,ku zy nk 0,0.288
+images/handwritten_word_length_effects_short_words_0050.png,rozrzucat,0.232
+images/handwritten_word_length_effects_short_words_0051.png,sci s na 1,0.27
+images/handwritten_word_length_effects_short_words_0052.png,cz olen,0.201
+images/handwritten_word_length_effects_short_words_0053.png,twier d zi,0.233
+images/handwritten_word_length_effects_short_words_0054.png,zi clo my mi,0.238
+images/handwritten_word_length_effects_short_words_0055.png,we sz ta,0.199
+images/handwritten_word_length_effects_short_words_0056.png,oszukuje,0.228
+images/handwritten_word_length_effects_short_words_0057.png,zb lad tes,0.199
+images/handwritten_word_length_effects_short_words_0058.png,potowa,0.169
+images/handwritten_word_length_effects_short_words_0059.png,Ziem ska,0.205
+images/handwritten_word_length_effects_short_words_0060.png,set ne j,0.2
+images/handwritten_word_length_effects_short_words_0061.png,ogniskiem,0.198
+images/handwritten_word_length_effects_short_words_0062.png,mus i a to,0.227
+images/handwritten_word_length_effects_short_words_0063.png,roz lega,0.199
+images/handwritten_word_length_effects_short_words_0064.png,wane,0.168
+images/handwritten_word_length_effects_short_words_0065.png,och ron y,0.23
+images/handwritten_word_length_effects_short_words_0066.png,um izz a 1,0.29
+images/handwritten_word_length_effects_short_words_0067.png,iasnie,0.169
+images/handwritten_word_length_effects_short_words_0068.png,ow o,0.173
+images/handwritten_word_length_effects_short_words_0069.png,u biv ry,0.236
+images/handwritten_word_length_effects_short_words_0070.png,i hne mu,0.235
+images/handwritten_word_length_effects_short_words_0071.png,we dr w ki,0.228
+images/handwritten_word_length_effects_short_words_0072.png,zash ugh,0.227
+images/handwritten_word_length_effects_short_words_0073.png,wr gas nal,0.2
+images/handwritten_word_length_effects_short_words_0074.png,na legam,0.2
+images/handwritten_word_length_effects_short_words_0075.png,o grom ne,0.227
+images/handwritten_word_length_effects_short_words_0076.png,to k,0.169
+images/handwritten_word_length_effects_short_words_0077.png,rud a,0.168
+images/handwritten_word_length_effects_short_words_0078.png,nie winn g,0.228
+images/handwritten_word_length_effects_short_words_0079.png,pokocha,0.199
+images/handwritten_word_length_effects_short_words_0080.png,no zyk ie m,0.26
+images/handwritten_word_length_effects_short_words_0081.png,bank rue tem,0.198
+images/handwritten_word_length_effects_short_words_0082.png,ape ty tu,0.199
+images/handwritten_word_length_effects_short_words_0083.png,trwogg,0.235
+images/handwritten_word_length_effects_short_words_0084.png,dniu,0.207
+images/handwritten_word_length_effects_short_words_0085.png,zim ie,0.202
+images/handwritten_word_length_effects_short_words_0086.png,gard zita,0.204
+images/handwritten_word_length_effects_short_words_0087.png,we z mie,0.199
+images/handwritten_word_length_effects_short_words_0088.png,fatalna,0.174
+images/handwritten_word_length_effects_short_words_0089.png,znika c,0.2
+images/handwritten_word_length_effects_short_words_0090.png,now a,0.168
+images/handwritten_word_length_effects_short_words_0091.png,taki,0.168
+images/handwritten_word_length_effects_short_words_0092.png,odd ac,0.168
+images/handwritten_word_length_effects_short_words_0093.png,saw y,0.203
+images/handwritten_word_length_effects_short_words_0094.png,furmanów,0.23
+images/handwritten_word_length_effects_short_words_0095.png,z trade,0.17
+images/handwritten_word_length_effects_short_words_0096.png,bram g,0.198
+images/handwritten_word_length_effects_short_words_0097.png,skrom nie,0.199
+images/handwritten_word_length_effects_short_words_0098.png,pole ce h,0.198
+images/handwritten_word_length_effects_short_words_0099.png,waznym,0.198
+images/handwritten_word_length_effects_long_words_0000.png,najkratszi/m,0.291
+images/handwritten_word_length_effects_long_words_0001.png,pr zy z woi to sci,0.358
+images/handwritten_word_length_effects_long_words_0002.png,nau czy ciel a,0.303
+images/handwritten_word_length_effects_long_words_0003.png,nie wo/ nik am,0.263
+images/handwritten_word_length_effects_long_words_0004.png,pr ze sli cz na,0.296
+images/handwritten_word_length_effects_long_words_0005.png,post e pow a nie,0.262
+images/handwritten_word_length_effects_long_words_0006.png,nieboszczyk,0.261
+images/handwritten_word_length_effects_long_words_0007.png,zmartwienie,0.232
+images/handwritten_word_length_effects_long_words_0008.png,dob row ol nie,0.231
+images/handwritten_word_length_effects_long_words_0009.png,cudzoziemca,0.296
+images/handwritten_word_length_effects_long_words_0010.png,interesowata,0.232
+images/handwritten_word_length_effects_long_words_0011.png,nieprawdopodobne,0.359
+images/handwritten_word_length_effects_long_words_0012.png,za zd ros z c za,0.323
+images/handwritten_word_length_effects_long_words_0013.png,pr zed mie sci u,0.294
+images/handwritten_word_length_effects_long_words_0014.png,wynagrodzić,0.272
+images/handwritten_word_length_effects_long_words_0015.png,poj ed yn ku je,0.304
+images/handwritten_word_length_effects_long_words_0016.png,bawetnianymi,0.287
+images/handwritten_word_length_effects_long_words_0017.png,od pow i ed zi at by,0.327
+images/handwritten_word_length_effects_long_words_0018.png,ujazdowskiej,0.291
+images/handwritten_word_length_effects_long_words_0019.png,zama i bio is ci u,0.327
+images/handwritten_word_length_effects_long_words_0020.png,or ze glad a j ac,0.293
+images/handwritten_word_length_effects_long_words_0021.png,wy glad a jacy,0.261
+images/handwritten_word_length_effects_long_words_0022.png,s post r zez ono,0.323
+images/handwritten_word_length_effects_long_words_0023.png,po wie dz i al,0.261
+images/handwritten_word_length_effects_long_words_0024.png,dz ies iec i or uh lo we k,0.443
+images/handwritten_word_length_effects_long_words_0025.png,dorobkie wi cz a,0.324
+images/handwritten_word_length_effects_long_words_0026.png,przeszkadzano,0.261
+images/handwritten_word_length_effects_long_words_0027.png,be z explain te reso w no sci,0.385
+images/handwritten_word_length_effects_long_words_0028.png,nie o gran icg eni e,0.353
+images/handwritten_word_length_effects_long_words_0029.png,zatrzymywali,0.323
+images/handwritten_word_length_effects_long_words_0030.png,sp us z c za j ac,0.324
+images/handwritten_word_length_effects_long_words_0031.png,publicznošc,0.26
+images/handwritten_word_length_effects_long_words_0032.png,dob rodzi e j stwa,0.322
+images/handwritten_word_length_effects_long_words_0033.png,w yj as nie nie,0.291
+images/handwritten_word_length_effects_long_words_0034.png,nie par zy ste,0.266
+images/handwritten_word_length_effects_long_words_0035.png,e man cy pac j a,0.292
+images/handwritten_word_length_effects_long_words_0036.png,3 a pro test ou wal a,0.326
+images/handwritten_word_length_effects_long_words_0037.png,obser wat ori um,0.26
+images/handwritten_word_length_effects_long_words_0038.png,kandelabrow,0.235
+images/handwritten_word_length_effects_long_words_0039.png,kapitalist on,0.234
+images/handwritten_word_length_effects_long_words_0040.png,kazi enko w ski ego,0.326
+images/handwritten_word_length_effects_long_words_0041.png,przesliczny,0.294
+images/handwritten_word_length_effects_long_words_0042.png,spraw i ed li w os c,0.355
+images/handwritten_word_length_effects_long_words_0043.png,nie pr zy j aci el em,0.399
+images/handwritten_word_length_effects_long_words_0044.png,za nie pok o jol,0.302
+images/handwritten_word_length_effects_long_words_0045.png,mauszewicz,0.264
+images/handwritten_word_length_effects_long_words_0046.png,szlachetność,0.264
+images/handwritten_word_length_effects_long_words_0047.png,smiertelnie,0.233
+images/handwritten_word_length_effects_long_words_0048.png,zastanawiać,0.294
+images/handwritten_word_length_effects_long_words_0049.png,pr zed sie bio rst wa,0.326
+images/handwritten_word_length_effects_long_words_0050.png,dobrodziejki,0.233
+images/handwritten_word_length_effects_long_words_0051.png,zastawskich,0.259
+images/handwritten_word_length_effects_long_words_0052.png,pr zy pu a z c za j ac,0.406
+images/handwritten_word_length_effects_long_words_0053.png,s post r zeg tem,0.292
+images/handwritten_word_length_effects_long_words_0054.png,prag nie nie m,0.26
+images/handwritten_word_length_effects_long_words_0055.png,s tron nict wo,0.292
+images/handwritten_word_length_effects_long_words_0056.png,wystraszony,0.261
+images/handwritten_word_length_effects_long_words_0057.png,non uc zn ihi em,0.291
+images/handwritten_word_length_effects_long_words_0058.png,zostawiajqc,0.289
+images/handwritten_word_length_effects_long_words_0059.png,pr zy e ida j,0.319
+images/handwritten_word_length_effects_long_words_0060.png,go spoda ruje,0.259
+images/handwritten_word_length_effects_long_words_0061.png,os 2 c 2 c 4 nos ci,0.438
+images/handwritten_word_length_effects_long_words_0062.png,pr z es zed lsz y,0.349
+images/handwritten_word_length_effects_long_words_0063.png,austrackie,0.229
+images/handwritten_word_length_effects_long_words_0064.png,pot wie rd zit,0.26
+images/handwritten_word_length_effects_long_words_0065.png,przebudowac,0.261
+images/handwritten_word_length_effects_long_words_0066.png,kilk u min u to wy m,0.352
+images/handwritten_word_length_effects_long_words_0067.png,zap oui ed zia t,0.337
+images/handwritten_word_length_effects_long_words_0068.png,gu we run ant kg,0.261
+images/handwritten_word_length_effects_long_words_0069.png,dob rod zi ej u,0.259
+images/handwritten_word_length_effects_long_words_0070.png,cy wil i zac j a,0.321
+images/handwritten_word_length_effects_long_words_0071.png,z ro z pac zon y,0.319
+images/handwritten_word_length_effects_long_words_0072.png,z arum ien ien,0.323
+images/handwritten_word_length_effects_long_words_0073.png,la kiero wan y m,0.3
+images/handwritten_word_length_effects_long_words_0074.png,si eni e js zy m,0.35
+images/handwritten_word_length_effects_long_words_0075.png,pr zy to mno sc,0.321
+images/handwritten_word_length_effects_long_words_0076.png,pr zy pat ry wata,0.32
+images/handwritten_word_length_effects_long_words_0077.png,pr 2 y chod zi,0.358
+images/handwritten_word_length_effects_long_words_0078.png,s tron nict wa,0.291
+images/handwritten_word_length_effects_long_words_0079.png,przeglądata,0.261
+images/handwritten_word_length_effects_long_words_0080.png,b togo st a wi one,0.322
+images/handwritten_word_length_effects_long_words_0081.png,pr zl gr z ajac,0.325
+images/handwritten_word_length_effects_long_words_0082.png,zwierciado,0.234
+images/handwritten_word_length_effects_long_words_0083.png,zakochanego,0.261
+images/handwritten_word_length_effects_long_words_0084.png,lich wi a rz om,0.261
+images/handwritten_word_length_effects_long_words_0085.png,naj wie h size j,0.29
+images/handwritten_word_length_effects_long_words_0086.png,pos red n it we m,0.292
+images/handwritten_word_length_effects_long_words_0087.png,s post r zeg la,0.295
+images/handwritten_word_length_effects_long_words_0088.png,nieprzyjemnym,0.261
+images/handwritten_word_length_effects_long_words_0089.png,pr zy pat ry wat,0.289
+images/handwritten_word_length_effects_long_words_0090.png,qr at g no sci,0.261
+images/handwritten_word_length_effects_long_words_0091.png,z mi ark ow aw sy,0.295
+images/handwritten_word_length_effects_long_words_0092.png,o dz i ed zi czy,0.29
+images/handwritten_word_length_effects_long_words_0093.png,roman sowa ta,0.233
+images/handwritten_word_length_effects_long_words_0094.png,z mars z c zy ta,0.339
+images/handwritten_word_length_effects_long_words_0095.png,wier zy ciel i,0.324
+images/handwritten_word_length_effects_long_words_0096.png,braw idl ow os c,0.323
+images/handwritten_word_length_effects_long_words_0097.png,kogokolwiek,0.289
+images/handwritten_word_length_effects_long_words_0098.png,pr zep ras zam,0.258
+images/handwritten_word_length_effects_long_words_0099.png,dobroczynność,0.259
+images/handwritten_context_dependent_errors_word_0000.png,po maga,0.202
+images/handwritten_context_dependent_errors_word_0001.png,niwinskiego,0.229
+images/handwritten_context_dependent_errors_word_0002.png,s pog la dala,0.262
+images/handwritten_context_dependent_errors_word_0003.png,najsilniejsi,0.294
+images/handwritten_context_dependent_errors_word_0004.png,skqdze,0.217
+images/handwritten_context_dependent_errors_word_0005.png,ode tch nel a,0.264
+images/handwritten_context_dependent_errors_word_0006.png,zan is t,0.202
+images/handwritten_context_dependent_errors_word_0007.png,twych,0.171
+images/handwritten_context_dependent_errors_word_0008.png,was ze j,0.2
+images/handwritten_context_dependent_errors_word_0009.png,s pod nica,0.234
+images/handwritten_context_dependent_errors_word_0010.png,cz ten y st a,0.262
+images/handwritten_context_dependent_errors_word_0011.png,doda c,0.201
+images/handwritten_context_dependent_errors_word_0012.png,prostych,0.202
+images/handwritten_context_dependent_errors_word_0013.png,por oz maw i ac,0.292
+images/handwritten_context_dependent_errors_word_0014.png,2 abi ore,0.204
+images/handwritten_context_dependent_errors_word_0015.png,hod u je,0.23
+images/handwritten_context_dependent_errors_word_0016.png,pokojiu,0.23
+images/handwritten_context_dependent_errors_word_0017.png,nishi e,0.2
+images/handwritten_context_dependent_errors_word_0018.png,k west ii,0.201
+images/handwritten_context_dependent_errors_word_0019.png,plam,0.168
+images/handwritten_context_dependent_errors_word_0020.png,zna j om y mi,0.292
+images/handwritten_context_dependent_errors_word_0021.png,choin hee,0.233
+images/handwritten_context_dependent_errors_word_0022.png,wez,0.168
+images/handwritten_context_dependent_errors_word_0023.png,h up i ech iego,0.295
+images/handwritten_context_dependent_errors_word_0024.png,figure,0.136
+images/handwritten_context_dependent_errors_word_0025.png,gawedy,0.227
+images/handwritten_context_dependent_errors_word_0026.png,nu zl by,0.227
+images/handwritten_context_dependent_errors_word_0027.png,cia la,0.17
+images/handwritten_context_dependent_errors_word_0028.png,Pomyslat,0.233
+images/handwritten_context_dependent_errors_word_0029.png,wynosza,0.198
+images/handwritten_context_dependent_errors_word_0030.png,rz uci t,0.229
+images/handwritten_context_dependent_errors_word_0031.png,le czy 1,0.226
+images/handwritten_context_dependent_errors_word_0032.png,plait,0.167
+images/handwritten_context_dependent_errors_word_0033.png,zap oui ed zi at a,0.331
+images/handwritten_context_dependent_errors_word_0034.png,t aniej,0.227
+images/handwritten_context_dependent_errors_word_0035.png,owionak,0.197
+images/handwritten_context_dependent_errors_word_0036.png,z rob i les,0.23
+images/handwritten_context_dependent_errors_word_0037.png,Suki enki,0.232
+images/handwritten_context_dependent_errors_word_0038.png,bia zn em,0.228
+images/handwritten_context_dependent_errors_word_0039.png,cze rwc a,0.266
+images/handwritten_context_dependent_errors_word_0040.png,se kundant a,0.26
+images/handwritten_context_dependent_errors_word_0041.png,s pro wad zono,0.298
+images/handwritten_context_dependent_errors_word_0042.png,przynajmniej,0.289
+images/handwritten_context_dependent_errors_word_0043.png,sercowe,0.202
+images/handwritten_context_dependent_errors_word_0044.png,dru k,0.203
+images/handwritten_context_dependent_errors_word_0045.png,cies zy c,0.235
+images/handwritten_context_dependent_errors_word_0046.png,z wie rz eta,0.23
+images/handwritten_context_dependent_errors_word_0047.png,kilk u min u to wy m,0.354
+images/handwritten_context_dependent_errors_word_0048.png,dw on ku,0.206
+images/handwritten_context_dependent_errors_word_0049.png,slabo&,0.206
+images/handwritten_context_dependent_errors_word_0050.png,pod r zu tk ow,0.267
+images/handwritten_context_dependent_errors_word_0051.png,taj em nice j,0.268
+images/handwritten_context_dependent_errors_word_0052.png,odd zi el nyc h,0.292
+images/handwritten_context_dependent_errors_word_0053.png,brud nyc h,0.268
+images/handwritten_context_dependent_errors_word_0054.png,meza,0.168
+images/handwritten_context_dependent_errors_word_0055.png,schodzi,0.207
+images/handwritten_context_dependent_errors_word_0056.png,pr zy siag l,0.294
+images/handwritten_context_dependent_errors_word_0057.png,austracki,0.232
+images/handwritten_context_dependent_errors_word_0058.png,spad nie,0.198
+images/handwritten_context_dependent_errors_word_0059.png,nie ta dnie,0.228
+images/handwritten_context_dependent_errors_word_0060.png,pog r zeb,0.257
+images/handwritten_context_dependent_errors_word_0061.png,of i cyn ie,0.226
+images/handwritten_context_dependent_errors_word_0062.png,swiezo,0.198
+images/handwritten_context_dependent_errors_word_0063.png,obr ach uj e my,0.316
+images/handwritten_context_dependent_errors_word_0064.png,wynosi,0.166
+images/handwritten_context_dependent_errors_word_0065.png,we zm q,0.197
+images/handwritten_context_dependent_errors_word_0066.png,miler,0.165
+images/handwritten_context_dependent_errors_word_0067.png,wy chowan g,0.232
+images/handwritten_context_dependent_errors_word_0068.png,brudna,0.197
+images/handwritten_context_dependent_errors_word_0069.png,hsieza,0.198
+images/handwritten_context_dependent_errors_word_0070.png,ws zy st kim i,0.288
+images/handwritten_context_dependent_errors_word_0071.png,now ej,0.167
+images/handwritten_context_dependent_errors_word_0072.png,oc zy,0.203
+images/handwritten_context_dependent_errors_word_0073.png,pan,0.137
+images/handwritten_context_dependent_errors_word_0074.png,najiwyiei,0.257
+images/handwritten_context_dependent_errors_word_0075.png,mor ze,0.165
+images/handwritten_context_dependent_errors_word_0076.png,za baw ie,0.23
+images/handwritten_context_dependent_errors_word_0077.png,kaj da,0.197
+images/handwritten_context_dependent_errors_word_0078.png,kawai r nia,0.259
+images/handwritten_context_dependent_errors_word_0079.png,foczej,0.199
+images/handwritten_context_dependent_errors_word_0080.png,jadge,0.168
+images/handwritten_context_dependent_errors_word_0081.png,zasiadt,0.228
+images/handwritten_context_dependent_errors_word_0082.png,zn is z c zen i a,0.319
+images/handwritten_context_dependent_errors_word_0083.png,kor it ki ego,0.257
+images/handwritten_context_dependent_errors_word_0084.png,Fizykq,0.246
+images/handwritten_context_dependent_errors_word_0085.png,suki enke,0.233
+images/handwritten_context_dependent_errors_word_0086.png,op is e,0.207
+images/handwritten_context_dependent_errors_word_0087.png,otoczonae,0.232
+images/handwritten_context_dependent_errors_word_0088.png,rush ich,0.172
+images/handwritten_context_dependent_errors_word_0089.png,wahac,0.202
+images/handwritten_context_dependent_errors_word_0090.png,gatunkowy,0.233
+images/handwritten_context_dependent_errors_word_0091.png,ud ali,0.171
+images/handwritten_context_dependent_errors_word_0092.png,wz g led ami,0.263
+images/handwritten_context_dependent_errors_word_0093.png,hob iet y,0.261
+images/handwritten_context_dependent_errors_word_0094.png,nita,0.171
+images/handwritten_context_dependent_errors_word_0095.png,herb at a,0.229
+images/handwritten_context_dependent_errors_word_0096.png,m to dz ien iec,0.323
+images/handwritten_context_dependent_errors_word_0097.png,minclowa,0.215
+images/handwritten_context_dependent_errors_word_0098.png,man mun ou y,0.231
+images/handwritten_context_dependent_errors_word_0099.png,ki elis z ek,0.264
+images/handwritten_context_dependent_errors_sentences_0000.png,"Stu zac y wy s zed l, O oku l ski cz ul sie zu pe b nieo tr ze= wiong.",1.095
+images/handwritten_context_dependent_errors_sentences_0001.png,Tera zon zac zak bi c wSt of.,0.54
+images/handwritten_context_dependent_errors_sentences_0002.png,ZostaltylkoSjumaniOchocki,0.563
+images/handwritten_context_dependent_errors_sentences_0003.png,Alb o wr aca jn a mie j sce.,0.537
+images/handwritten_context_dependent_errors_sentences_0004.png,A lete z ro bil in amf i gla!,0.529
+images/handwritten_context_dependent_errors_sentences_0005.png,"milceriećnvafo pape minut, nareszcie przerwała je pani.",0.809
+images/handwritten_context_dependent_errors_sentences_0006.png,Krazy li wy j sk o wi rozi ngj bron i ig dz ies grata or kiest ra,0.84
+images/handwritten_context_dependent_errors_sentences_0007.png,Dopierockmaksiepoczumszydotknecieczyjejkreki.,0.775
+images/handwritten_context_dependent_errors_sentences_0008.png,A lew noc y p are raz y p taka ta,0.511
+images/handwritten_context_dependent_errors_sentences_0009.png,we gie tek s post rz e gl j aiz di gai cz a pke.,0.747
+images/handwritten_context_dependent_errors_sentences_0010.png,Wohulshiprybiegdoniej.,0.41
+images/handwritten_context_dependent_errors_sentences_0011.png,Baron po bie gl w str one to war zy stwa,0.586
+images/handwritten_context_dependent_errors_sentences_0012.png,Po cos obie same jma c icd obry humor?,0.566
+images/handwritten_context_dependent_errors_sentences_0013.png,Od te j ch wili za cz yna pan st uzi be pr zy w nie.,0.784
+images/handwritten_context_dependent_errors_sentences_0014.png,"Pr zeg ra ko bie ta, it on a e b, na",0.597
+images/handwritten_context_dependent_errors_sentences_0015.png,"Nie ch ce go so bie kocha, by le ob oie by li 822 e 6 li wi",0.908
+images/handwritten_context_dependent_errors_sentences_0016.png,We gie leh z bie gl ze w z go rza.,0.623
+images/handwritten_context_dependent_errors_sentences_0017.png,nic mini eod pow i adas z?,0.446
+images/handwritten_context_dependent_errors_sentences_0018.png,Pani Wąsowska znowu się zadziwita.,0.599
+images/handwritten_context_dependent_errors_sentences_0019.png,Zd j at cz a pke i poca to wat Wok ul ski ego w re kg.,0.806
+images/handwritten_context_dependent_errors_sentences_0020.png,PaniWasowskazaczetamusiepilnieprzypatrywać.,0.71
+images/handwritten_context_dependent_errors_sentences_0021.png,Pngeciewczonaibytuwnatuszunabalu?,0.561
+images/handwritten_context_dependent_errors_sentences_0022.png,Szumam zd z in il sie j esz cz emo c nui g.,0.687
+images/handwritten_context_dependent_errors_sentences_0023.png,Sed zia zw nci lse do s lu 2 ce j pan iK nz es z ows hie j.,0.993
+images/handwritten_context_dependent_errors_sentences_0024.png,K obi e ty w sic i eh a j q sie za to bq.,0.659
+images/handwritten_context_dependent_errors_sentences_0025.png,"Qo wizycie obrzydilwego adwokata wiedziatem juz, co wyśleć.",1.023
+images/handwritten_context_dependent_errors_sentences_0026.png,w ki kada ni pr zy s zed l do nie goR zeck i.,0.746
+images/handwritten_context_dependent_errors_sentences_0027.png,Nie ch by tam mia bag ach of w.,0.443
+images/handwritten_context_dependent_errors_sentences_0028.png,w podo b nyc h w ipa dka a ck nie z rec z no sze s tavi er tel ny w gr ze chew.,1.143
+images/handwritten_context_dependent_errors_sentences_0029.png,"Ale nie chg atu jeRo ssi, je je j nie wi d zia t!",0.78
+images/handwritten_context_dependent_errors_sentences_0030.png,Moze to i dobr ze.,0.359
+images/handwritten_context_dependent_errors_sentences_0031.png,Sam aJo asia chet nie z rob it a by m nie swoim ple nip o ten tem.,0.817
+images/handwritten_context_dependent_errors_sentences_0032.png,Panna Florentynazrobilarekomaruchoznaczajacyrezygnaclje.,0.811
+images/handwritten_context_dependent_errors_sentences_0033.png,Po' s nia dan iuZ a je chat po u o' y; gaz z e to sie j eg na' .,0.993
+images/handwritten_context_dependent_errors_sentences_0034.png,i pa now ie w sz/ st ko rob i a e an sp of kee.,0.723
+images/handwritten_context_dependent_errors_sentences_0035.png,Oba ek w ipa ies zy b ko zb liza ly sie do sie bie.,0.819
+images/handwritten_context_dependent_errors_sentences_0036.png,Zydki zac ze ly pokazy wa c pal cami na baron owe i chr zaka c.,0.863
+images/handwritten_context_dependent_errors_sentences_0037.png,O koto jed gn as tey Ocho c kiO o pow a dZi lD oku l sk ie go do je go mies z kani a,1.178
+images/handwritten_context_dependent_errors_sentences_0038.png,Panna Iza bela z mar sz czy la br wi.,0.57
+images/handwritten_context_dependent_errors_sentences_0039.png,Znowuspatjakkamien.,0.383
+images/handwritten_context_dependent_errors_sentences_0040.png,"Usiadta na brzegu aksamitnego sprzętu, jeszcze mocniej zawstydzona.",0.862
+images/handwritten_context_dependent_errors_sentences_0041.png,"No, i jak wi d ze, z robim yin tere s.",0.654
+images/handwritten_context_dependent_errors_sentences_0042.png,"szk rozb i oie z br ze ki em, k tory ob u dz il lr a",0.769
+images/handwritten_context_dependent_errors_sentences_0043.png,IjeszczegorszerezeczywidzipanIgnacy.,0.56
+images/handwritten_context_dependent_errors_sentences_0044.png,Banon pod nio st sie z foto lu.,0.473
+images/handwritten_context_dependent_errors_sentences_0045.png,Jednocześnieobudzitsiepantecki.,0.533
+images/handwritten_context_dependent_errors_sentences_0046.png,"oto moje prag nie nia, ow oc ws zy st k ich pop reed n ich.",0.839
+images/handwritten_context_dependent_errors_sentences_0047.png,Pannie Felicji krew itz y nap tyne ty do oc zu.,0.69
+images/handwritten_context_dependent_errors_sentences_0048.png,Po co k carefully pow i gyi kon ie?,0.474
+images/handwritten_context_dependent_errors_sentences_0049.png,Zostavili ci broche gra to wi p are ty sie cy 2 b to y ch,0.751
+images/handwritten_context_dependent_errors_sentences_0050.png,Dokulski wsko czy el do sw ego pow oz ui ot w orz yel loru net e.,0.902
+images/handwritten_context_dependent_errors_sentences_0051.png,Nad zi& nie z adam nic in ne go.,0.536
+images/handwritten_context_dependent_errors_sentences_0052.png,"Bytajuizpotnoc,wiecsobieposzedt.",0.592
+images/handwritten_context_dependent_errors_sentences_0053.png,Fe to wali nasa zi milo.,0.445
+images/handwritten_context_dependent_errors_sentences_0054.png,Degie lek opus c it go bar dz owz rus zon y,0.656
+images/handwritten_context_dependent_errors_sentences_0055.png,Sz lang baum zac i aga od wiel moz nego S.,0.622
+images/handwritten_context_dependent_errors_sentences_0056.png,Faha'sElabaotuchaBeysnelaWohulshiemu.,0.655
+images/handwritten_context_dependent_errors_sentences_0057.png,Wszystkoznaczytrafnydobórnazwiskimajatków.,0.715
+images/handwritten_context_dependent_errors_sentences_0058.png,Star ski pods ko czy ld on ig j.,0.458
+images/handwritten_context_dependent_errors_sentences_0059.png,"Toch n ill one ost a bien ie, k to reju zp rzes z to.",0.772
+images/handwritten_context_dependent_errors_sentences_0060.png,Moc nou sci sn qe mu re kei wy s zed l.,0.647
+images/handwritten_context_dependent_errors_sentences_0061.png,Placirozbawione,0.292
+images/handwritten_context_dependent_errors_sentences_0062.png,Dz is z buz i boi ew nie j podobnego ro dz a jnu p rao nie nie,0.865
+images/handwritten_context_dependent_errors_sentences_0063.png,Osobliwieroitasiestudenteria.,0.472
+images/handwritten_context_dependent_errors_sentences_0064.png,"Nie bole s, on apr zy nap nie j nie kami e",0.588
+images/handwritten_context_dependent_errors_sentences_0065.png,Na res z cie pow oz pus z c zono we w n q tr z toru.,0.768
+images/handwritten_context_dependent_errors_sentences_0066.png,A lez moi mku p cem nie by to g aw gy.,0.625
+images/handwritten_context_dependent_errors_sentences_0067.png,Salony no zb nz mie wu ty je go naz wii shi em.,0.688
+images/handwritten_context_dependent_errors_sentences_0068.png,Co sies tuz mie nito.,0.416
+images/handwritten_context_dependent_errors_sentences_0069.png,"Pnawda, Belu, je nie pos i ed zim y tu dtu ze j?",0.805
+images/handwritten_context_dependent_errors_sentences_0070.png,"Tak by loz aw sze, naw et w go ce kr ze mie ngu",0.677
+images/handwritten_context_dependent_errors_sentences_0071.png,Lec g nagle 3 a tr 3 y mal sie ium ille l,0.691
+images/handwritten_context_dependent_errors_sentences_0072.png,Wokul ski s post rz e g+ to iz now uZ mies za+ sie.,0.758
+images/handwritten_context_dependent_errors_sentences_0073.png,D 0 sk le pu nie ch cia lom us ie is c.,0.657
+images/handwritten_context_dependent_errors_sentences_0074.png,Świecił jąbiś ήsiejęć i nawet jeszcze śpiewały stowiibi.,0.945
+images/handwritten_context_dependent_errors_sentences_0075.png,"Nie s mi al em po my s lec, i ez qin eli.",0.732
+images/handwritten_context_dependent_errors_sentences_0076.png,Nie na lez edo ich refer atu.,0.5
+images/handwritten_context_dependent_errors_sentences_0077.png,Uokulshiniexmialspejreenaania.,0.543
+images/handwritten_context_dependent_errors_sentences_0078.png,Wola us ki emu po cie mania to Woc 2 ach,0.638
+images/handwritten_context_dependent_errors_sentences_0079.png,"Nad kon du k to r sw is n q t, od pow i ed zi a no mu zl oko mot y wy.",1.017
+images/handwritten_context_dependent_errors_sentences_0080.png,To jah iS dobry cz le czy na.,0.503
+images/handwritten_context_dependent_errors_sentences_0081.png,Widoktenbytnadwszelkiwyrazzatosny.,0.598
+images/handwritten_context_dependent_errors_sentences_0082.png,OsiodmejledwiegozbudziliKonstantyimaruszewicz.,0.724
+images/handwritten_context_dependent_errors_sentences_0083.png,OdeszlyiWkrotceniktyzafurtka,0.56
+images/handwritten_context_dependent_errors_sentences_0084.png,"Czymogewiedzieć,zjakiegopowodu!",0.534
+images/handwritten_context_dependent_errors_sentences_0085.png,W saliro b is ie ruch.,0.414
+images/handwritten_context_dependent_errors_sentences_0086.png,Dlaczegomójojcieckupitpaniskidom!,0.586
+images/handwritten_context_dependent_errors_sentences_0087.png,Wokulski stuchat i patrzył.,0.524
+images/handwritten_context_dependent_errors_sentences_0088.png,wjiela ksiaghe i gacjela cytać.,0.589
+images/handwritten_context_dependent_errors_sentences_0089.png,"Starskiwciąznierozumiat,ocochodzi.",0.595
+images/handwritten_context_dependent_errors_sentences_0090.png,zaws ze i we w sz y st kim.,0.466
+images/handwritten_context_dependent_errors_sentences_0091.png,pano wato go mies pok og in ez dum mie nie.,0.556
+images/handwritten_context_dependent_errors_sentences_0092.png,"wokulski t roc he pol land t, le cz s po ko j nie usi adl do rac hunk ow.",0.982
+images/handwritten_context_dependent_errors_sentences_0093.png,Тумсгазем рапла Izabela dojechala doНиоги.,0.715
+images/handwritten_context_dependent_errors_sentences_0094.png,"Nie,ustretdoismierci.",0.38
+images/handwritten_context_dependent_errors_sentences_0095.png,Alenic mu to nie pomeglo.,0.444
+images/handwritten_context_dependent_errors_sentences_0096.png,"Leczygdyynojnzatnašwiatto,mlglistebnazyzhihaty.",0.87
+images/handwritten_context_dependent_errors_sentences_0097.png,Ut asia kied y mia tz ap y tae: k to pr zy j ech at?,0.796
+images/handwritten_context_dependent_errors_sentences_0098.png,Uboqi czto wieh dotłnąwszy pienieędzy zacząt się tnąsić.,0.93
+images/handwritten_context_dependent_errors_sentences_0099.png,"Natural nie, ze pow in ien emna nig z as lu zy c.",0.686
+images/handwritten_distortion_type_clean_0000.png,sześćdziesięciu,0.367
+images/handwritten_distortion_type_clean_0001.png,zak on c zy,0.291
+images/handwritten_distortion_type_clean_0002.png,dzieciom,0.23
+images/handwritten_distortion_type_clean_0003.png,opiekz,0.199
+images/handwritten_distortion_type_clean_0004.png,pole ga,0.169
+images/handwritten_distortion_type_clean_0005.png,us mie ch net a,0.263
+images/handwritten_distortion_type_clean_0006.png,gan own emu,0.229
+images/handwritten_distortion_type_clean_0007.png,zak az,0.2
+images/handwritten_distortion_type_clean_0008.png,odrzucik,0.23
+images/handwritten_distortion_type_clean_0009.png,porc elan a,0.26
+images/handwritten_distortion_type_clean_0010.png,cesar st ume m,0.289
+images/handwritten_distortion_type_clean_0011.png,mini e,0.169
+images/handwritten_distortion_type_clean_0012.png,wydolywajac,0.291
+images/handwritten_distortion_type_clean_0013.png,ucz c in ie,0.229
+images/handwritten_distortion_type_clean_0014.png,janocka,0.198
+images/handwritten_distortion_type_clean_0015.png,f iran kg,0.228
+images/handwritten_distortion_type_clean_0016.png,hi note ce,0.197
+images/handwritten_distortion_type_clean_0017.png,mi are,0.167
+images/handwritten_distortion_type_clean_0018.png,pohochac,0.225
+images/handwritten_distortion_type_clean_0019.png,dole,0.165
+images/handwritten_distortion_type_clean_0020.png,py taj a,0.225
+images/handwritten_distortion_type_clean_0021.png,d gia lac y,0.232
+images/handwritten_distortion_type_clean_0022.png,cie hau y m,0.259
+images/handwritten_distortion_type_clean_0023.png,osobe,0.167
+images/handwritten_distortion_type_clean_0024.png,w/ sun a,0.228
+images/handwritten_distortion_type_clean_0025.png,dziekujqc,0.26
+images/handwritten_distortion_type_clean_0026.png,cata,0.167
+images/handwritten_distortion_type_clean_0027.png,ut ye,0.167
+images/handwritten_distortion_type_clean_0028.png,foto lem,0.166
+images/handwritten_distortion_type_clean_0029.png,s to lu,0.198
+images/handwritten_distortion_type_clean_0030.png,us iau je,0.227
+images/handwritten_distortion_type_clean_0031.png,panou,0.168
+images/handwritten_distortion_type_clean_0032.png,przedmiotem,0.258
+images/handwritten_distortion_type_clean_0033.png,wydobywac,0.257
+images/handwritten_distortion_type_clean_0034.png,schodon,0.198
+images/handwritten_distortion_type_clean_0035.png,rani ony,0.229
+images/handwritten_distortion_type_clean_0036.png,cglouwieku,0.293
+images/handwritten_distortion_type_clean_0037.png,by lib y,0.203
+images/handwritten_distortion_type_clean_0038.png,przymhnae,0.29
+images/handwritten_distortion_type_clean_0039.png,pozycji,0.231
+images/handwritten_distortion_type_clean_0040.png,pusha,0.174
+images/handwritten_distortion_type_clean_0041.png,gru bo,0.203
+images/handwritten_distortion_type_clean_0042.png,p raw g,0.202
+images/handwritten_distortion_type_clean_0043.png,ku pey,0.199
+images/handwritten_distortion_type_clean_0044.png,wu y mag an,0.26
+images/handwritten_distortion_type_clean_0045.png,skar zy ta,0.263
+images/handwritten_distortion_type_clean_0046.png,ru mian a,0.234
+images/handwritten_distortion_type_clean_0047.png,my them,0.169
+images/handwritten_distortion_type_clean_0048.png,u topi i,0.233
+images/handwritten_distortion_type_clean_0049.png,otoczony,0.236
+images/handwritten_distortion_type_clean_0050.png,nishi,0.171
+images/handwritten_distortion_type_clean_0051.png,obietnic,0.201
+images/handwritten_distortion_type_clean_0052.png,uwa j ac,0.232
+images/handwritten_distortion_type_clean_0053.png,pamigthi,0.263
+images/handwritten_distortion_type_clean_0054.png,pow in sz ow an i em,0.33
+images/handwritten_distortion_type_clean_0055.png,os ly,0.171
+images/handwritten_distortion_type_clean_0056.png,state y,0.173
+images/handwritten_distortion_type_clean_0057.png,wgnosi,0.206
+images/handwritten_distortion_type_clean_0058.png,zajmowania,0.236
+images/handwritten_distortion_type_clean_0059.png,nie cie r pli wo sci,0.355
+images/handwritten_distortion_type_clean_0060.png,maria n ng,0.232
+images/handwritten_distortion_type_clean_0061.png,dale kim,0.172
+images/handwritten_distortion_type_clean_0062.png,saw,0.174
+images/handwritten_distortion_type_clean_0063.png,w spil niki em,0.293
+images/handwritten_distortion_type_clean_0064.png,ludzkim,0.232
+images/handwritten_distortion_type_clean_0065.png,arty s to w,0.231
+images/handwritten_distortion_type_clean_0066.png,moi e,0.204
+images/handwritten_distortion_type_clean_0067.png,wi elmo i nemo,0.291
+images/handwritten_distortion_type_clean_0068.png,podstawie,0.23
+images/handwritten_distortion_type_clean_0069.png,czys to,0.2
+images/handwritten_distortion_type_clean_0070.png,mus iata,0.199
+images/handwritten_distortion_type_clean_0071.png,bot eg uji e,0.259
+images/handwritten_distortion_type_clean_0072.png,odd al by,0.199
+images/handwritten_distortion_type_clean_0073.png,spot y ka,0.2
+images/handwritten_distortion_type_clean_0074.png,no yy c gka,0.26
+images/handwritten_distortion_type_clean_0075.png,Stach,0.171
+images/handwritten_distortion_type_clean_0076.png,amulet,0.171
+images/handwritten_distortion_type_clean_0077.png,bydro,0.17
+images/handwritten_distortion_type_clean_0078.png,rozumysz,0.232
+images/handwritten_distortion_type_clean_0079.png,od zi e zy,0.263
+images/handwritten_distortion_type_clean_0080.png,my s le,0.197
+images/handwritten_distortion_type_clean_0081.png,s tarac,0.197
+images/handwritten_distortion_type_clean_0082.png,zale i,0.197
+images/handwritten_distortion_type_clean_0083.png,osmielit,0.23
+images/handwritten_distortion_type_clean_0084.png,ru mien cem,0.259
+images/handwritten_distortion_type_clean_0085.png,pojade,0.199
+images/handwritten_distortion_type_clean_0086.png,wyobragi,0.23
+images/handwritten_distortion_type_clean_0087.png,z de nen wow any,0.261
+images/handwritten_distortion_type_clean_0088.png,s trasz li we,0.261
+images/handwritten_distortion_type_clean_0089.png,dražni,0.201
+images/handwritten_distortion_type_clean_0090.png,gas i adl,0.232
+images/handwritten_distortion_type_clean_0091.png,wysocka,0.202
+images/handwritten_distortion_type_clean_0092.png,wi dac,0.171
+images/handwritten_distortion_type_clean_0093.png,y ole c gn osi,0.292
+images/handwritten_distortion_type_clean_0094.png,Znana,0.205
+images/handwritten_distortion_type_clean_0095.png,le kar z em,0.232
+images/handwritten_distortion_type_clean_0096.png,in sty tuc j,0.262
+images/handwritten_distortion_type_clean_0097.png,d gi wne go,0.262
+images/handwritten_distortion_type_clean_0098.png,pushki,0.173
+images/handwritten_distortion_type_clean_0099.png,warszawy,0.231
+images/handwritten_distortion_type_blur_0000.png,зательніялієдно,0.414
+images/handwritten_distortion_type_blur_0001.png,spacey,0.169
+images/handwritten_distortion_type_blur_0002.png,die cie m,0.234
+images/handwritten_distortion_type_blur_0003.png,aplets,0.175
+images/handwritten_distortion_type_blur_0004.png,+0.01,0.256
+images/handwritten_distortion_type_blur_0005.png,usmichnela,0.259
+images/handwritten_distortion_type_blur_0006.png,y=-10000,0.319
+images/handwritten_distortion_type_blur_0007.png,also,0.139
+images/handwritten_distortion_type_blur_0008.png,odtruck,0.17
+images/handwritten_distortion_type_blur_0009.png,porcelain a,0.202
+images/handwritten_distortion_type_blur_0010.png,cesaustaven,0.229
+images/handwritten_distortion_type_blur_0011.png,minie,0.173
+images/handwritten_distortion_type_blur_0012.png,اااااااااااااااااااا,0.708
+images/handwritten_distortion_type_blur_0013.png,quinquies,0.197
+images/handwritten_distortion_type_blur_0014.png,procka,0.167
+images/handwritten_distortion_type_blur_0015.png,frankq,0.201
+images/handwritten_distortion_type_blur_0016.png,space,0.138
+images/handwritten_distortion_type_blur_0017.png,minor,0.138
+images/handwritten_distortion_type_blur_0018.png,اااااااااااااااااااا,0.708
+images/handwritten_distortion_type_blur_0019.png,dole,0.165
+images/handwritten_distortion_type_blur_0020.png,pytgia,0.196
+images/handwritten_distortion_type_blur_0021.png,窦窦窦窦窦窦窦窦窦窦窦窦窦,0.502
+images/handwritten_distortion_type_blur_0022.png,-+�+�,0.257
+images/handwritten_distortion_type_blur_0023.png,only,0.136
+images/handwritten_distortion_type_blur_0024.png,ماسوع,0.196
+images/handwritten_distortion_type_blur_0025.png,dziękujące,0.196
+images/handwritten_distortion_type_blur_0026.png,cala,0.165
+images/handwritten_distortion_type_blur_0027.png,"x
+4
+4
+4",0.316
+images/handwritten_distortion_type_blur_0028.png,fie dion,0.225
+images/handwritten_distortion_type_blur_0029.png,ctobu,0.194
+images/handwritten_distortion_type_blur_0030.png,why,0.134
+images/handwritten_distortion_type_blur_0031.png,pandag,0.194
+images/handwritten_distortion_type_blur_0032.png,prembital,0.194
+images/handwritten_distortion_type_blur_0033.png,myllophase,0.225
+images/handwritten_distortion_type_blur_0034.png,chodim,0.166
+images/handwritten_distortion_type_blur_0035.png,rainy,0.172
+images/handwritten_distortion_type_blur_0036.png,ciguida,0.196
+images/handwritten_distortion_type_blur_0037.png,by lib y,0.198
+images/handwritten_distortion_type_blur_0038.png,ااااايح,0.286
+images/handwritten_distortion_type_blur_0039.png,-0.05,0.255
+images/handwritten_distortion_type_blur_0040.png,"●
+●
+●
+●●●●●●●●●●●●●●●●●●●●",0.887
+images/handwritten_distortion_type_blur_0041.png,yleb.,0.2
+images/handwritten_distortion_type_blur_0042.png,my,0.138
+images/handwritten_distortion_type_blur_0043.png,kup cy,0.199
+images/handwritten_distortion_type_blur_0044.png,اااااااااااااااااااا,0.706
+images/handwritten_distortion_type_blur_0045.png,三个月,0.136
+images/handwritten_distortion_type_blur_0046.png,name,0.136
+images/handwritten_distortion_type_blur_0047.png,I −100,0.257
+images/handwritten_distortion_type_blur_0048.png,alpia,0.195
+images/handwritten_distortion_type_blur_0049.png,otocany,0.23
+images/handwritten_distortion_type_blur_0050.png,nisk,0.166
+images/handwritten_distortion_type_blur_0051.png,obietnic,0.198
+images/handwritten_distortion_type_blur_0052.png,I −y = 0,0.287
+images/handwritten_distortion_type_blur_0053.png,"●
+●●●●●●●●●●●●●●●●●●●●",0.764
+images/handwritten_distortion_type_blur_0054.png,pouvinszowanie,0.264
+images/handwritten_distortion_type_blur_0055.png,os ly,0.169
+images/handwritten_distortion_type_blur_0056.png,et al.,0.201
+images/handwritten_distortion_type_blur_0057.png,"I 
+I 
+I 
+I 
+I 
+I 
+I 
+I 
+I 
+I 
+I",0.74
+images/handwritten_distortion_type_blur_0058.png,spin VIS,0.168
+images/handwritten_distortion_type_blur_0059.png,sci cie pl anti,0.259
+images/handwritten_distortion_type_blur_0060.png,mariaing,0.199
+images/handwritten_distortion_type_blur_0061.png,databin,0.197
+images/handwritten_distortion_type_blur_0062.png,say,0.137
+images/handwritten_distortion_type_blur_0063.png,optimal,0.166
+images/handwritten_distortion_type_blur_0064.png,Decision,0.136
+images/handwritten_distortion_type_blur_0065.png,Analytical,0.166
+images/handwritten_distortion_type_blur_0066.png,moi e,0.195
+images/handwritten_distortion_type_blur_0067.png,windows,0.136
+images/handwritten_distortion_type_blur_0068.png,pol t you,0.195
+images/handwritten_distortion_type_blur_0069.png,czysto,0.196
+images/handwritten_distortion_type_blur_0070.png,mus i alu,0.226
+images/handwritten_distortion_type_blur_0071.png,+0123,0.26
+images/handwritten_distortion_type_blur_0072.png,‐‐‐‐,0.227
+images/handwritten_distortion_type_blur_0073.png,spotyka,0.228
+images/handwritten_distortion_type_blur_0074.png,"""",0.14
+images/handwritten_distortion_type_blur_0075.png,stack,0.137
+images/handwritten_distortion_type_blur_0076.png,mlet,0.167
+images/handwritten_distortion_type_blur_0077.png,type,0.139
+images/handwritten_distortion_type_blur_0078.png,rozumysz,0.196
+images/handwritten_distortion_type_blur_0079.png,mediasty,0.168
+images/handwritten_distortion_type_blur_0080.png,myile,0.167
+images/handwritten_distortion_type_blur_0081.png,share,0.141
+images/handwritten_distortion_type_blur_0082.png,data,0.136
+images/handwritten_distortion_type_blur_0083.png,osmieli,0.196
+images/handwritten_distortion_type_blur_0084.png,tumiieron,0.226
+images/handwritten_distortion_type_blur_0085.png,propk,0.165
+images/handwritten_distortion_type_blur_0086.png,орубылі,0.255
+images/handwritten_distortion_type_blur_0087.png,enhancement,0.167
+images/handwritten_distortion_type_blur_0088.png,actualize,0.167
+images/handwritten_distortion_type_blur_0089.png,drażni,0.198
+images/handwritten_distortion_type_blur_0090.png,"I
+I
+I
+I
+I
+I
+I
+I
+I
+I
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+I
+I
+I
+I
+I
+I
+I
+I
+I",1.853
+images/handwritten_distortion_type_blur_0091.png,wysocka,0.234
+images/handwritten_distortion_type_blur_0092.png,wisac,0.171
+images/handwritten_distortion_type_blur_0093.png,polymer,0.174
+images/handwritten_distortion_type_blur_0094.png,Zeneca,0.17
+images/handwritten_distortion_type_blur_0095.png,ｌｅｋａｒｓｅｍ,0.347
+images/handwritten_distortion_type_blur_0096.png,імгіємі,0.319
+images/handwritten_distortion_type_blur_0097.png,يٙچٕٞ,0.349
+images/handwritten_distortion_type_blur_0098.png,postki,0.168
+images/handwritten_distortion_type_blur_0099.png,warszanov,0.236
+images/handwritten_distortion_type_rotated_0000.png,sześćdziesięciu,0.351
+images/handwritten_distortion_type_rotated_0001.png,zak on c 2 y,0.322
+images/handwritten_distortion_type_rotated_0002.png,dzieciom,0.231
+images/handwritten_distortion_type_rotated_0003.png,opieke,0.2
+images/handwritten_distortion_type_rotated_0004.png,vole ga,0.2
+images/handwritten_distortion_type_rotated_0005.png,us mie ch nel a,0.269
+images/handwritten_distortion_type_rotated_0006.png,gan own emu,0.234
+images/handwritten_distortion_type_rotated_0007.png,zak az,0.197
+images/handwritten_distortion_type_rotated_0008.png,od ruc it,0.228
+images/handwritten_distortion_type_rotated_0009.png,porc elan a,0.259
+images/handwritten_distortion_type_rotated_0010.png,cesa r st we m,0.296
+images/handwritten_distortion_type_rotated_0011.png,minie,0.172
+images/handwritten_distortion_type_rotated_0012.png,wydolywajac,0.295
+images/handwritten_distortion_type_rotated_0013.png,ucz ci wie,0.202
+images/handwritten_distortion_type_rotated_0014.png,janocka,0.2
+images/handwritten_distortion_type_rotated_0015.png,firanka,0.201
+images/handwritten_distortion_type_rotated_0016.png,hip otec e,0.23
+images/handwritten_distortion_type_rotated_0017.png,mi are,0.17
+images/handwritten_distortion_type_rotated_0018.png,po hoch ac,0.231
+images/handwritten_distortion_type_rotated_0019.png,dole,0.171
+images/handwritten_distortion_type_rotated_0020.png,py taj a,0.232
+images/handwritten_distortion_type_rotated_0021.png,d gia lag,0.2
+images/handwritten_distortion_type_rotated_0022.png,cie hau y m,0.261
+images/handwritten_distortion_type_rotated_0023.png,osobe,0.173
+images/handwritten_distortion_type_rotated_0024.png,w lsu na,0.232
+images/handwritten_distortion_type_rotated_0025.png,dziekujac,0.23
+images/handwritten_distortion_type_rotated_0026.png,caia,0.175
+images/handwritten_distortion_type_rotated_0027.png,ut yle,0.199
+images/handwritten_distortion_type_rotated_0028.png,fot elen,0.232
+images/handwritten_distortion_type_rotated_0029.png,s to lu,0.197
+images/handwritten_distortion_type_rotated_0030.png,us iu je,0.231
+images/handwritten_distortion_type_rotated_0031.png,panow,0.168
+images/handwritten_distortion_type_rotated_0032.png,pr zed mio tem,0.258
+images/handwritten_distortion_type_rotated_0033.png,wy do by wac,0.259
+images/handwritten_distortion_type_rotated_0034.png,scho4on,0.227
+images/handwritten_distortion_type_rotated_0035.png,rani ony,0.226
+images/handwritten_distortion_type_rotated_0036.png,cglouvieku,0.257
+images/handwritten_distortion_type_rotated_0037.png,by lib y,0.198
+images/handwritten_distortion_type_rotated_0038.png,pr zy m kn qe,0.318
+images/handwritten_distortion_type_rotated_0039.png,pozycji,0.228
+images/handwritten_distortion_type_rotated_0040.png,push a,0.169
+images/handwritten_distortion_type_rotated_0041.png,gru bo,0.2
+images/handwritten_distortion_type_rotated_0042.png,pr ayy,0.196
+images/handwritten_distortion_type_rotated_0043.png,ku pey,0.197
+images/handwritten_distortion_type_rotated_0044.png,w y magazine,0.196
+images/handwritten_distortion_type_rotated_0045.png,skar zy ta,0.255
+images/handwritten_distortion_type_rotated_0046.png,ru mian g,0.227
+images/handwritten_distortion_type_rotated_0047.png,my them,0.169
+images/handwritten_distortion_type_rotated_0048.png,u to pi,0.196
+images/handwritten_distortion_type_rotated_0049.png,otoczony,0.227
+images/handwritten_distortion_type_rotated_0050.png,nishi,0.167
+images/handwritten_distortion_type_rotated_0051.png,obietnic,0.195
+images/handwritten_distortion_type_rotated_0052.png,uwa j ac,0.226
+images/handwritten_distortion_type_rotated_0053.png,pamia,0.196
+images/handwritten_distortion_type_rotated_0054.png,pow in sz ow a nie m,0.317
+images/handwritten_distortion_type_rotated_0055.png,os ly,0.166
+images/handwritten_distortion_type_rotated_0056.png,state),0.197
+images/handwritten_distortion_type_rotated_0057.png,wgnosi,0.206
+images/handwritten_distortion_type_rotated_0058.png,gajmowania,0.227
+images/handwritten_distortion_type_rotated_0059.png,nie cie r pli wo sci,0.348
+images/handwritten_distortion_type_rotated_0060.png,maria mn a,0.228
+images/handwritten_distortion_type_rotated_0061.png,dale kim,0.17
+images/handwritten_distortion_type_rotated_0062.png,saw,0.171
+images/handwritten_distortion_type_rotated_0063.png,w sp olm iki em,0.322
+images/handwritten_distortion_type_rotated_0064.png,ludzkim,0.228
+images/handwritten_distortion_type_rotated_0065.png,arty s to w,0.229
+images/handwritten_distortion_type_rotated_0066.png,moi e,0.2
+images/handwritten_distortion_type_rotated_0067.png,wi elmo ien u,0.29
+images/handwritten_distortion_type_rotated_0068.png,podstawie,0.232
+images/handwritten_distortion_type_rotated_0069.png,czysto,0.211
+images/handwritten_distortion_type_rotated_0070.png,mus iata,0.198
+images/handwritten_distortion_type_rotated_0071.png,bot eg uji e,0.259
+images/handwritten_distortion_type_rotated_0072.png,odd al by,0.201
+images/handwritten_distortion_type_rotated_0073.png,s poby ka,0.234
+images/handwritten_distortion_type_rotated_0074.png,no jy cg ka,0.263
+images/handwritten_distortion_type_rotated_0075.png,Stach,0.171
+images/handwritten_distortion_type_rotated_0076.png,amulet,0.17
+images/handwritten_distortion_type_rotated_0077.png,by s tro,0.203
+images/handwritten_distortion_type_rotated_0078.png,ro zu my sz,0.228
+images/handwritten_distortion_type_rotated_0079.png,od zi ey,0.199
+images/handwritten_distortion_type_rotated_0080.png,myslg,0.197
+images/handwritten_distortion_type_rotated_0081.png,s tarac,0.198
+images/handwritten_distortion_type_rotated_0082.png,zale i,0.2
+images/handwritten_distortion_type_rotated_0083.png,osmielit,0.228
+images/handwritten_distortion_type_rotated_0084.png,umiercen,0.197
+images/handwritten_distortion_type_rotated_0085.png,pojade,0.2
+images/handwritten_distortion_type_rotated_0086.png,wyobraji,0.23
+images/handwritten_distortion_type_rotated_0087.png,z de new ou any,0.263
+images/handwritten_distortion_type_rotated_0088.png,str as zi we,0.23
+images/handwritten_distortion_type_rotated_0089.png,dražni,0.199
+images/handwritten_distortion_type_rotated_0090.png,q asia dt,0.197
+images/handwritten_distortion_type_rotated_0091.png,wysocka,0.227
+images/handwritten_distortion_type_rotated_0092.png,wi dac,0.168
+images/handwritten_distortion_type_rotated_0093.png,y ole c gn osi,0.294
+images/handwritten_distortion_type_rotated_0094.png,znana,0.167
+images/handwritten_distortion_type_rotated_0095.png,le kar z em,0.229
+images/handwritten_distortion_type_rotated_0096.png,in st ytu c!,0.322
+images/handwritten_distortion_type_rotated_0097.png,d gi wne go,0.259
+images/handwritten_distortion_type_rotated_0098.png,pushki,0.168
+images/handwritten_distortion_type_rotated_0099.png,war sz a wy,0.23
+images/handwritten_distortion_type_noisy_0000.png,sze s cdz ies iec iu,0.448
+images/handwritten_distortion_type_noisy_0001.png,zak on cy l,0.26
+images/handwritten_distortion_type_noisy_0002.png,dzie cio m,0.26
+images/handwritten_distortion_type_noisy_0003.png,opieke,0.2
+images/handwritten_distortion_type_noisy_0004.png,polega,0.178
+images/handwritten_distortion_type_noisy_0005.png,usmechnela,0.258
+images/handwritten_distortion_type_noisy_0006.png,aman cw nema,0.229
+images/handwritten_distortion_type_noisy_0007.png,salsa,0.169
+images/handwritten_distortion_type_noisy_0008.png,car zu c il,0.231
+images/handwritten_distortion_type_noisy_0009.png,porc elan a,0.259
+images/handwritten_distortion_type_noisy_0010.png,cesa is tue m,0.29
+images/handwritten_distortion_type_noisy_0011.png,mine,0.138
+images/handwritten_distortion_type_noisy_0012.png,wy doo y waj ao,0.32
+images/handwritten_distortion_type_noisy_0013.png,u ozc u wie,0.268
+images/handwritten_distortion_type_noisy_0014.png,janocka,0.2
+images/handwritten_distortion_type_noisy_0015.png,firanka,0.17
+images/handwritten_distortion_type_noisy_0016.png,hino te,0.199
+images/handwritten_distortion_type_noisy_0017.png,m are,0.17
+images/handwritten_distortion_type_noisy_0018.png,pohoch ac,0.24
+images/handwritten_distortion_type_noisy_0019.png,ole,0.137
+images/handwritten_distortion_type_noisy_0020.png,pytajg,0.23
+images/handwritten_distortion_type_noisy_0021.png,dguatag,0.23
+images/handwritten_distortion_type_noisy_0022.png,cie hau y m,0.261
+images/handwritten_distortion_type_noisy_0023.png,osce,0.169
+images/handwritten_distortion_type_noisy_0024.png,Why s uwa,0.232
+images/handwritten_distortion_type_noisy_0025.png,dziekujac,0.232
+images/handwritten_distortion_type_noisy_0026.png,cala,0.174
+images/handwritten_distortion_type_noisy_0027.png,EXPLORE,0.2
+images/handwritten_distortion_type_noisy_0028.png,Tot el em,0.2
+images/handwritten_distortion_type_noisy_0029.png,s to lu,0.199
+images/handwritten_distortion_type_noisy_0030.png,us u ve,0.198
+images/handwritten_distortion_type_noisy_0031.png,pano u,0.2
+images/handwritten_distortion_type_noisy_0032.png,przedmiotem,0.258
+images/handwritten_distortion_type_noisy_0033.png,wydolywac,0.26
+images/handwritten_distortion_type_noisy_0034.png,schodow,0.198
+images/handwritten_distortion_type_noisy_0035.png,ren ion y,0.198
+images/handwritten_distortion_type_noisy_0036.png,CJowieku,0.23
+images/handwritten_distortion_type_noisy_0037.png,by lib y,0.2
+images/handwritten_distortion_type_noisy_0038.png,przymhnal,0.261
+images/handwritten_distortion_type_noisy_0039.png,poz.,0.228
+images/handwritten_distortion_type_noisy_0040.png,pusha,0.169
+images/handwritten_distortion_type_noisy_0041.png,grmo,0.169
+images/handwritten_distortion_type_noisy_0042.png,pian g,0.199
+images/handwritten_distortion_type_noisy_0043.png,kup cy,0.198
+images/handwritten_distortion_type_noisy_0044.png,Wy maa an,0.229
+images/handwritten_distortion_type_noisy_0045.png,skarzyla,0.263
+images/handwritten_distortion_type_noisy_0046.png,rumi an a,0.231
+images/handwritten_distortion_type_noisy_0047.png,my a i em,0.23
+images/handwritten_distortion_type_noisy_0048.png,u to pu,0.198
+images/handwritten_distortion_type_noisy_0049.png,otoczony,0.229
+images/handwritten_distortion_type_noisy_0050.png,nishi,0.166
+images/handwritten_distortion_type_noisy_0051.png,obietnic,0.198
+images/handwritten_distortion_type_noisy_0052.png,c waa gac,0.265
+images/handwritten_distortion_type_noisy_0053.png,pam at,0.205
+images/handwritten_distortion_type_noisy_0054.png,po wins zo wan i em,0.293
+images/handwritten_distortion_type_noisy_0055.png,osty,0.169
+images/handwritten_distortion_type_noisy_0056.png,state,0.138
+images/handwritten_distortion_type_noisy_0057.png,wgnosi,0.198
+images/handwritten_distortion_type_noisy_0058.png,gaj mou ania,0.261
+images/handwritten_distortion_type_noisy_0059.png,nieciertpiwosci,0.288
+images/handwritten_distortion_type_noisy_0060.png,marianne,0.166
+images/handwritten_distortion_type_noisy_0061.png,dale kim,0.169
+images/handwritten_distortion_type_noisy_0062.png,saw,0.167
+images/handwritten_distortion_type_noisy_0063.png,us poln i kiel,0.286
+images/handwritten_distortion_type_noisy_0064.png,ludzikim,0.229
+images/handwritten_distortion_type_noisy_0065.png,art usl ow,0.227
+images/handwritten_distortion_type_noisy_0066.png,moze,0.167
+images/handwritten_distortion_type_noisy_0067.png,wiel moz n emu,0.286
+images/handwritten_distortion_type_noisy_0068.png,Podstawne,0.226
+images/handwritten_distortion_type_noisy_0069.png,czysfo,0.197
+images/handwritten_distortion_type_noisy_0070.png,musiata,0.196
+images/handwritten_distortion_type_noisy_0071.png,bot eg ye,0.197
+images/handwritten_distortion_type_noisy_0072.png,odd a by,0.195
+images/handwritten_distortion_type_noisy_0073.png,spotyka,0.229
+images/handwritten_distortion_type_noisy_0074.png,conjunction,0.168
+images/handwritten_distortion_type_noisy_0075.png,stack,0.141
+images/handwritten_distortion_type_noisy_0076.png,amulet,0.169
+images/handwritten_distortion_type_noisy_0077.png,bydro,0.171
+images/handwritten_distortion_type_noisy_0078.png,YOZU my sz,0.262
+images/handwritten_distortion_type_noisy_0079.png,od zi e zy,0.265
+images/handwritten_distortion_type_noisy_0080.png,mus le,0.167
+images/handwritten_distortion_type_noisy_0081.png,starac,0.168
+images/handwritten_distortion_type_noisy_0082.png,zala,0.169
+images/handwritten_distortion_type_noisy_0083.png,osmieli,0.198
+images/handwritten_distortion_type_noisy_0084.png,num ien cem,0.261
+images/handwritten_distortion_type_noisy_0085.png,pode,0.169
+images/handwritten_distortion_type_noisy_0086.png,why塑料,0.169
+images/handwritten_distortion_type_noisy_0087.png,z de nen wow any,0.259
+images/handwritten_distortion_type_noisy_0088.png,str as zi we,0.229
+images/handwritten_distortion_type_noisy_0089.png,drazni,0.199
+images/handwritten_distortion_type_noisy_0090.png,asad,0.168
+images/handwritten_distortion_type_noisy_0091.png,wysocka,0.227
+images/handwritten_distortion_type_noisy_0092.png,wi d,0.167
+images/handwritten_distortion_type_noisy_0093.png,snolegness,0.23
+images/handwritten_distortion_type_noisy_0094.png,Zhana,0.168
+images/handwritten_distortion_type_noisy_0095.png,le car ze w,0.231
+images/handwritten_distortion_type_noisy_0096.png,in sty tuc,0.229
+images/handwritten_distortion_type_noisy_0097.png,d gian e,0.231
+images/handwritten_distortion_type_noisy_0098.png,pushki,0.169
+images/handwritten_distortion_type_noisy_0099.png,warszawy,0.23
+images/handwritten_distortion_type_low_resolution_0000.png,seiddreisiciu,0.291
+images/handwritten_distortion_type_low_resolution_0001.png,20 koi c ny,0.291
+images/handwritten_distortion_type_low_resolution_0002.png,di tic in,0.199
+images/handwritten_distortion_type_low_resolution_0003.png,spicy,0.169
+images/handwritten_distortion_type_low_resolution_0004.png,~edge,0.168
+images/handwritten_distortion_type_low_resolution_0005.png,u i mie ch ne lo,0.319
+images/handwritten_distortion_type_low_resolution_0006.png,yinmen,0.2
+images/handwritten_distortion_type_low_resolution_0007.png,2000,0.231
+images/handwritten_distortion_type_low_resolution_0008.png,od ruc i,0.231
+images/handwritten_distortion_type_low_resolution_0009.png,porc elan a,0.259
+images/handwritten_distortion_type_low_resolution_0010.png,ces us ture m,0.273
+images/handwritten_distortion_type_low_resolution_0011.png,minie,0.169
+images/handwritten_distortion_type_low_resolution_0012.png,میا م ها و,0.32
+images/handwritten_distortion_type_low_resolution_0013.png,m czci nie,0.227
+images/handwritten_distortion_type_low_resolution_0014.png,pro ck a,0.198
+images/handwritten_distortion_type_low_resolution_0015.png,firankq,0.227
+images/handwritten_distortion_type_low_resolution_0016.png,Gpolence,0.197
+images/handwritten_distortion_type_low_resolution_0017.png,s岗,0.167
+images/handwritten_distortion_type_low_resolution_0018.png,"􀪋
+􀪋􀪋􀪋􀪋
+􀪋
+􀪋􀪋􀪋�",1.371
+images/handwritten_distortion_type_low_resolution_0019.png,do le,0.174
+images/handwritten_distortion_type_low_resolution_0020.png,Рутаја,0.263
+images/handwritten_distortion_type_low_resolution_0021.png,c plo g,0.227
+images/handwritten_distortion_type_low_resolution_0022.png,􀤞􀤞􀤞􀤞􀤞􀤠,0.839
+images/handwritten_distortion_type_low_resolution_0023.png,eon y,0.198
+images/handwritten_distortion_type_low_resolution_0024.png,4 j sony c,0.257
+images/handwritten_distortion_type_low_resolution_0025.png,dziękajce,0.263
+images/handwritten_distortion_type_low_resolution_0026.png,�al,0.17
+images/handwritten_distortion_type_low_resolution_0027.png,"4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4 
+4",0.747
+images/handwritten_distortion_type_low_resolution_0028.png,fet edo we,0.262
+images/handwritten_distortion_type_low_resolution_0029.png,et b,0.167
+images/handwritten_distortion_type_low_resolution_0030.png,water,0.138
+images/handwritten_distortion_type_low_resolution_0031.png,pam,0.167
+images/handwritten_distortion_type_low_resolution_0032.png,pr and mio te,0.259
+images/handwritten_distortion_type_low_resolution_0033.png,wp lily p use,0.261
+images/handwritten_distortion_type_low_resolution_0034.png,стногіки,0.263
+images/handwritten_distortion_type_low_resolution_0035.png,rainy,0.17
+images/handwritten_distortion_type_low_resolution_0036.png,cfa uic bu,0.263
+images/handwritten_distortion_type_low_resolution_0037.png,by lib y,0.198
+images/handwritten_distortion_type_low_resolution_0038.png,ملاط,0.2
+images/handwritten_distortion_type_low_resolution_0039.png,pper,0.169
+images/handwritten_distortion_type_low_resolution_0040.png,"6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+6
+6
+6
+6
+6
+6
+6
+6
+6
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+6
+6
+6
+6
+6
+6
+6
+6
+6
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+6
+6
+6
+6
+6
+6
+6
+6
+6
+8
+8
+8
+8
+8
+8
+8
+8
+8
+8
+6
+6
+6
+6
+6
+6
+6
+6
+6
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+6
+6
+6
+6
+6
+6
+6
+6
+6
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+6
+6
+6
+6
+6
+6
+6
+6
+6
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+2
+2
+2
+2
+2
+2
+2
+2
+2
+1
+1
+1
+1
+1
+1
+1
+1
+1
+3
+3
+3
+3
+3
+3
+3
+3
+3
+1
+1
+1
+1
+1
+1
+1
+1
+1",10.449
+images/handwritten_distortion_type_low_resolution_0041.png,grah.,0.252
+images/handwritten_distortion_type_low_resolution_0042.png,play,0.144
+images/handwritten_distortion_type_low_resolution_0043.png,kup cy,0.203
+images/handwritten_distortion_type_low_resolution_0044.png,"""y=space",0.234
+images/handwritten_distortion_type_low_resolution_0045.png,Ки��ірна,0.297
+images/handwritten_distortion_type_low_resolution_0046.png,name,0.14
+images/handwritten_distortion_type_low_resolution_0047.png,I = 100,0.297
+images/handwritten_distortion_type_low_resolution_0048.png,wepi,0.198
+images/handwritten_distortion_type_low_resolution_0049.png,otoczony,0.23
+images/handwritten_distortion_type_low_resolution_0050.png,مظفاه,0.228
+images/handwritten_distortion_type_low_resolution_0051.png,obietnic,0.216
+images/handwritten_distortion_type_low_resolution_0052.png,anj od,0.198
+images/handwritten_distortion_type_low_resolution_0053.png,ٓ民政ٔ,0.259
+images/handwritten_distortion_type_low_resolution_0054.png,po wins zo wan i em,0.288
+images/handwritten_distortion_type_low_resolution_0055.png,os ly,0.167
+images/handwritten_distortion_type_low_resolution_0056.png,etatg,0.2
+images/handwritten_distortion_type_low_resolution_0057.png,"""78""",0.227
+images/handwritten_distortion_type_low_resolution_0058.png,piyhemia,0.226
+images/handwritten_distortion_type_low_resolution_0059.png,kit c it pia nfc i,0.347
+images/handwritten_distortion_type_low_resolution_0060.png,-0.0108q,0.346
+images/handwritten_distortion_type_low_resolution_0061.png,dale kin,0.166
+images/handwritten_distortion_type_low_resolution_0062.png,"(107) 
+(107)",0.439
+images/handwritten_distortion_type_low_resolution_0063.png,wpilhile,0.231
+images/handwritten_distortion_type_low_resolution_0064.png,ldstop,0.169
+images/handwritten_distortion_type_low_resolution_0065.png,a i lyi tie,0.26
+images/handwritten_distortion_type_low_resolution_0066.png,mo ize,0.2
+images/handwritten_distortion_type_low_resolution_0067.png,wi c l mo tnam,0.296
+images/handwritten_distortion_type_low_resolution_0068.png,pol t ace,0.2
+images/handwritten_distortion_type_low_resolution_0069.png,czysło,0.201
+images/handwritten_distortion_type_low_resolution_0070.png,mus iata,0.212
+images/handwritten_distortion_type_low_resolution_0071.png,"""",0.14
+images/handwritten_distortion_type_low_resolution_0072.png,- 0009,0.292
+images/handwritten_distortion_type_low_resolution_0073.png,spohya,0.199
+images/handwritten_distortion_type_low_resolution_0074.png,eir te,0.199
+images/handwritten_distortion_type_low_resolution_0075.png,stack,0.138
+images/handwritten_distortion_type_low_resolution_0076.png,miet,0.168
+images/handwritten_distortion_type_low_resolution_0077.png,b pte,0.199
+images/handwritten_distortion_type_low_resolution_0078.png,rozumysz,0.227
+images/handwritten_distortion_type_low_resolution_0079.png,s tao it y,0.257
+images/handwritten_distortion_type_low_resolution_0080.png,my ile,0.168
+images/handwritten_distortion_type_low_resolution_0081.png,starac,0.168
+images/handwritten_distortion_type_low_resolution_0082.png,zati,0.166
+images/handwritten_distortion_type_low_resolution_0083.png,osmielit,0.228
+images/handwritten_distortion_type_low_resolution_0084.png,tun i oic em,0.287
+images/handwritten_distortion_type_low_resolution_0085.png,popk,0.17
+images/handwritten_distortion_type_low_resolution_0086.png,v yb uj,0.259
+images/handwritten_distortion_type_low_resolution_0087.png,plasmoscopy,0.228
+images/handwritten_distortion_type_low_resolution_0088.png,strat is in,0.228
+images/handwritten_distortion_type_low_resolution_0089.png,drazni,0.197
+images/handwritten_distortion_type_low_resolution_0090.png,pish,0.167
+images/handwritten_distortion_type_low_resolution_0091.png,wysocka,0.197
+images/handwritten_distortion_type_low_resolution_0092.png,wild ad,0.167
+images/handwritten_distortion_type_low_resolution_0093.png,prof e gres e,0.264
+images/handwritten_distortion_type_low_resolution_0094.png,zerar a,0.197
+images/handwritten_distortion_type_low_resolution_0095.png,le kar sem,0.201
+images/handwritten_distortion_type_low_resolution_0096.png,`etytuj,0.231
+images/handwritten_distortion_type_low_resolution_0097.png,d g in go,0.232
+images/handwritten_distortion_type_low_resolution_0098.png,postki,0.17
+images/handwritten_distortion_type_low_resolution_0099.png,earszavey,0.261

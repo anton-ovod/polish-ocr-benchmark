@@ -6,14 +6,15 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
+from scipy.stats import spearmanr
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "common"))
 from metrics import cer_authors, cer_text, normalize_text, wer_text
 
 ROOT = Path(__file__).resolve().parents[1]
-MODEL_ORDER = ["qwen7b", "qwen", "tesseract", "easyocr", "paddle", "trocr"]
-MODEL_NAMES = {"qwen7b": "Qwen2.5-VL-7B", "qwen": "Qwen2.5-VL-3B", "tesseract": "Tesseract", "easyocr": "EasyOCR", "paddle": "PaddleOCR",
-               "trocr": "TrOCR"}
+MODEL_ORDER = ["qwen7b", "internvl", "deepseek", "tesseract", "easyocr", "paddle", "got"]
+MODEL_NAMES = {"qwen7b": "Qwen2.5-VL 7B", "internvl": "InternVL3-8B", "deepseek": "DeepSeek-VL2", "tesseract": "Tesseract",
+               "easyocr": "EasyOCR", "paddle": "PaddleOCR", "got": "GOT-OCR2"}
 CELL_ORDER = [
     ("polish_character_confusion", "polish", "z polskimi znakami"),
     ("polish_character_confusion", "non_polish", "bez polskich znaków"),
@@ -105,36 +106,13 @@ def latex_overall(overall, path):
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
-def latex_cells(by_cell, models, path):
-    head = " & ".join(MODEL_NAMES.get(m, m) for m in models)
-    lines = [r"\begin{tabular}{l" + "c" * len(models) + "}", r"\toprule", f"Podkategoria & {head} \\\\", r"\midrule"]
-    previous = None
-    for cat, sub, label in CELL_ORDER:
-        if previous and cat != previous:
-            lines.append(r"\midrule")
-        previous = cat
-        cells = []
-        for m in models:
-            p, h = (by_cell.get((m, typ, cat, sub), float("nan")) for typ in ("printed", "handwritten"))
-            cells.append(f"{fmt(p)} / {fmt(h)}")
-        lines.append(f"{label} & " + " & ".join(cells) + r" \\")
-    lines += [r"\bottomrule", r"\end{tabular}"]
-    path.write_text("\n".join(lines) + "\n", encoding="utf-8")
-
-
-def latex_effects(effects, models, path):
-    head = " & ".join(MODEL_NAMES.get(m, m) for m in models)
-    lines = [r"\begin{tabular}{l" + "r" * len(models) + "}", r"\toprule", f"Czynnik & {head} \\\\", r"\midrule"]
-    for label, *_ in EFFECTS:
-        cells = []
-        for m in models:
-            r = effects.get((m, label))
-            if r is None:
-                cells.append("--")
-                continue
-            text = f"{r['delta']:+.3f}".replace("0.", ".", 1)
-            cells.append(rf"\textbf{{{text}}}" if r["lo"] > 0 or r["hi"] < 0 else text)
-        lines.append(f"{label} & " + " & ".join(cells) + r" \\")
+def latex_gold(table, path):
+    lines = [r"\begin{tabular}{lrrrrrr}", r"\toprule",
+             r"Model & \multicolumn{2}{c}{CER} & \multicolumn{2}{c}{Miejsce} & WER & Puste \\",
+             r" & syntetyczny & PHCD & syntetyczny & PHCD & PHCD & PHCD \\", r"\midrule"]
+    for m, r in table.sort_values("gold_rank").iterrows():
+        lines.append(f"{MODEL_NAMES.get(m, m)} & {fmt(r.synthetic_cer)} & {fmt(r.gold_cer)} & {int(r.synthetic_rank)} & "
+                     f"{int(r.gold_rank)} & {fmt(r.gold_wer)} & {int(r.gold_empty)} \\\\")
     lines += [r"\bottomrule", r"\end{tabular}"]
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
@@ -142,11 +120,12 @@ def latex_effects(effects, models, path):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--data", type=Path, default=ROOT / "research" / "data")
+    ap.add_argument("--gold", type=Path, default=ROOT / "research" / "gold" / "data")
     ap.add_argument("--results", type=Path, default=ROOT / "research" / "results")
     ap.add_argument("--tables", type=Path, default=ROOT / "docs" / "research" / "article" / "tables")
     args = ap.parse_args()
 
-    df = load(args.data, args.results)
+    df = load(args.data, args.results / "synthetic")
     models = ordered(df.model.unique())
     out = args.results / "summary"
     out.mkdir(exist_ok=True)
@@ -185,10 +164,21 @@ def main():
     print(by_cell.cer.unstack("model")[models].round(3).to_string(), "\n")
     print(effects.pivot(index="effect", columns="model", values="delta")[models].round(3).to_string())
 
+    gold = load(args.gold, args.results / "gold")
+    reference = df[(df.type == "handwritten") & (df.subcategory == "sentences")].groupby("model").cer.mean()
+    gold_table = pd.DataFrame({"synthetic_cer": reference, "gold_cer": gold.groupby("model").cer.mean(),
+                               "gold_wer": gold.groupby("model").wer.mean(),
+                               "gold_empty": gold.groupby("model").prediction.apply(lambda s: (s.str.strip() == "").sum()),
+                               "gold_seconds": gold.groupby("model").seconds.mean()}).loc[models]
+    gold_table["synthetic_rank"] = gold_table.synthetic_cer.rank().astype(int)
+    gold_table["gold_rank"] = gold_table.gold_cer.rank().astype(int)
+    rho, p = spearmanr(gold_table.synthetic_cer, gold_table.gold_cer)
+    gold_table.round(4).to_csv(out / "gold.csv")
+    print("\n" + gold_table.round(3).to_string(), f"\n\nSpearman rho = {rho:.3f}, p = {p:.3f}, n = {len(gold_table)}")
+
     args.tables.mkdir(parents=True, exist_ok=True)
+    latex_gold(gold_table, args.tables / "gold.tex")
     latex_overall(overall, args.tables / "overall.tex")
-    latex_cells(by_cell.cer.to_dict(), models, args.tables / "cells.tex")
-    latex_effects(effects.set_index(["model", "effect"]).to_dict("index"), models, args.tables / "effects.tex")
     print(f"\nLaTeX tables written to {args.tables}")
 
 

@@ -34,8 +34,8 @@ na GPU. Wyniki z `MyDrive/ocr-benchmark/replication/` kopiujemy do `replication/
 
 ## Własne badanie
 
-W przygotowaniu (`research/`): zbiór syntetyczny TRDG z polskim korpusem, 1008 zdjęć odręcznej Inwokacji
-i 9 modeli. Notebook `research/research.ipynb` jeszcze nie istnieje.
+Zbiór syntetyczny TRDG z polskim korpusem (*Lalka*), zdjęcia odręcznej Inwokacji (PHSF)
+i 7 modeli. Uruchamianie: `research/make_bundle.sh`, potem `research/research.ipynb` w Colabie.
 
 ## Licencje
 
