@@ -66,9 +66,8 @@ rzeczywisty 1968 skanów oraz analiza błędów diakrytycznych, w~tym ogranicze�
 Tesseract~\cite{smith2007} i~PP-OCR~\cite{li2022ppocrv3} łączą moduły detekcji i~rozpoznawania,
 EasyOCR~\cite{easyocr} stosuje rozpoznawanie sekwencyjne. GOT-OCR2~\cite{wei2024got} jest modelem
 wyspecjalizowanym w~OCR, natomiast Qwen2.5-VL~\cite{bai2025qwen25vl}, InternVL3~\cite{zhu2025internvl3}
-i~DeepSeek-VL2~\cite{wu2024deepseekvl2} to modele ogólnego przeznaczenia. Dla polskiego pisma odręcznego
-istnieją głównie systemy specjalizowane, np.\ rozpoznawanie kart słownikowych~\cite{idziak2023}; porównań
-VLM na tym materiale nie znaleźliśmy. Dane syntetyczne z~biblioteki TRDG~\cite{trdg} pozwalają kontrolować
+i~DeepSeek-VL2~\cite{wu2024deepseekvl2} to modele ogólnego przeznaczenia. Dla polskiego pisma odręcznego dostępna jest baza PHCD~\cite{tokovarov2020}, przeznaczona do uczenia
+rozpoznawania znaków; porównań VLM na tym materiale nie znaleźliśmy. Dane syntetyczne z~biblioteki TRDG~\cite{trdg} pozwalają kontrolować
 cechy tekstu, co wykorzystują Yılmaz i~in.~\cite{yilmaz2026}.
 
 %------------------------------------------------------------------------------
@@ -101,9 +100,8 @@ wersjami pakietów i~commitem wag; VLM otrzymują prompty autorów z~,,Turkish''
 Badamy Qwen2.5-VL 7B~\cite{bai2025qwen25vl} (limit 512 tokenów odpowiedzi), InternVL3-8B~\cite{zhu2025internvl3},
 DeepSeek-VL2-tiny~\cite{wu2024deepseekvl2}, GOT-OCR2~\cite{wei2024got}, PaddleOCR 2.9.1~\cite{li2022ppocrv3}
 (\texttt{pl}), Tesseract~\cite{smith2007} (\texttt{pol}; \texttt{--psm 7} dla obrazów syntetycznych, \texttt{--psm 6}
-dla skanów) i~EasyOCR~\cite{easyocr} (\texttt{pl}). Wyłączyliśmy TrOCR (rozpoznaje pojedyncze linie angielskiego
-druku) oraz modele zamknięte. Phi-3.5-vision i~Pixtral-12B pozostały niedokończone, bo Colab przestał przydzielać
-właściwe GPU (833 z~2200 obrazów syntetycznych i~200 z~1968 skanów), więc nie wchodzą do analizy.
+dla skanów) i~EasyOCR~\cite{easyocr} (\texttt{pl}). Pomijamy TrOCR (rozpoznaje pojedyncze linie angielskiego
+druku) oraz modele zamknięte, których wyniki trudno odtworzyć.
 
 \textbf{Miary.} Predykcję $p_i$ i~wzorzec $t_i$ normalizujemy: NFC, małe litery, usunięta interpunkcja
 (przepisujący stosują ją niespójnie, a~modele dodają losowo), polskie znaki zostają. Podstawą jest błąd znakowy
@@ -196,8 +194,7 @@ liter ń, ś, ź i~ż, więc zastępuje je podobnymi (,,ludnošci'' zamiast ,,lu
 predykcji i~odtwarza opublikowane liczby dopiero w~wariancie bez spacji (0,311), co zmienia miejsce modelu w~rankingu.
 
 \textbf{Ograniczenia.} Obrazy syntetyczne są jednoliniowe, na białym tle (tekstury papieru autorów nie zostały
-udostępnione), a~skany zawierają jeden krótki tekst. Do analizy weszło siedem modeli zamiast planowanych dziewięciu;
-przy $n=7$ korelacja jest istotna dopiero od $\rho\approx0{,}79$, a~zależy od ułożenia trzech środkowych
+udostępnione), a~skany zawierają jeden krótki tekst. Przy siedmiu modelach korelacja jest istotna dopiero od $\rho\approx0{,}79$, a~zależy od ułożenia trzech środkowych
 pozycji.
 
 %------------------------------------------------------------------------------
