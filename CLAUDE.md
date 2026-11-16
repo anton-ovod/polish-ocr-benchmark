@@ -75,8 +75,8 @@ i zniekształcenia obrazu. Polskiego nie porównujemy z tureckim.
   jak w powtórzeniu (`common/run_models.py`).
 - Dodane przez nas (2): Tesseract `pol`, EasyOCR `pl`.
 - Pominięte: Phi-3.5-vision i Pixtral-12B (Colab przestał przydzielać A100/H100; Phi policzony tylko dla 833 z 2200 obrazów
-  syntetycznych, Pixtral dla całego syntetycznego, ale tylko 200 z 1968 skanów Gold; wyniki w `research/results/excluded/`,
-  nie wchodzą do analizy ani artykułu; oba są w replikacji), TrOCR (checkpoint `trocr-large-printed` rozpoznaje tylko pojedyncze linie angielskiego druku,
+  syntetycznych, Pixtral dla całego syntetycznego, ale tylko 200 z 1968 skanów Gold; ich cząstkowych wyników nie
+  przechowujemy i nie wchodzą do analizy ani artykułu; oba są w replikacji), TrOCR (checkpoint `trocr-large-printed` rozpoznaje tylko pojedyncze linie angielskiego druku,
   nie obsługuje całych stron), GPT-4o i Claude (komercyjne). Uzasadnienie w artykule: tylko modele otwarte
   dla pełnej odtwarzalności i zerowego kosztu (API są zamknięte, płatne i zmieniają się bez wersjonowania).
 - Przy 7 modelach Spearman ma sens, ale próg istotności (dwustronny, 0,05) to ρ ≈ 0,79; przy 5 modelach tylko ρ = 1.
