@@ -122,14 +122,17 @@ Każdy katalog zawiera tylko to, czego faktycznie używa.
   artykułu bazowego, 8 slajdów, bez naszej replikacji), `speaker_notes.md`. `article/`: PDF artykułu bazowego (poza gitem).
 - `docs/research/`: dokumenty do naszego badania. `article/`: `main.tex` (szkielet LNCS po polsku z `\TODO{}`),
   `references.bib`, `tables/*.tex` (generuje `summarize.py`, nie edytować ręcznie), `figures/`. `presentation/`:
-  prezentacja naszego badania (jeszcze nie istnieje).
+  `presentation.tex` (Lab 5, 8 slajdów, do 5 minut), `speaker_notes.md` (z odpowiedziami na pytania), wykresy
+  `model_ranking.pdf`, `conditions_heatmap.pdf`, `examples.pdf` i `phcd_scan.png`. Wykresy zrobione poza repo
+  (szkic kolegi), liczby z `research/results/analysis/`; odsetek błędnych odpowiedzi różnych od wzorca tylko
+  diakrytykami (26–33% dla VLM i PaddleOCR, 3% Tesseract) liczony osobno, nie przez `analyze.py`.
 
 ### Uruchamianie
 - Replikacja: `python replication/build_labels.py --n 50`, `replication/make_bundle.sh`, `ocr_bundle.zip` na
   `MyDrive/ocr-benchmark/`, potem `replication/replication.ipynb` w Colabie (A100).
 - Nasze badanie: `research/make_bundle.sh`, `ocr_bundle.zip` na `MyDrive/ocr-benchmark/`, potem `research/research.ipynb`
   w Colabie (A100). Notebook uruchamia 7 modeli (`common/run_models.py`) na obu zbiorach i liczy wyniki.
-- LaTeX: `cd docs/research/article && latexmk -pdf main.tex` (analogicznie `docs/replication/presentation`, `presentation.tex`).
+- LaTeX: `cd docs/research/article && latexmk -pdf main.tex` (analogicznie `docs/replication/presentation` i `docs/research/presentation`, `presentation.tex`).
 
 ### Ustalenia techniczne
 - **CER w kodzie autorów** (`cer_wer_calculation.py`, zamienione argumenty) dzieli odległość przez długość
@@ -187,4 +190,4 @@ Każdy katalog zawiera tylko to, czego faktycznie używa.
 
 ### Do zrobienia
 - Artykuł (`main.tex`, ok. 5,4 strony treści): autorzy i uczelnia (`\TODO{}`), dopracowanie przeglądu literatury o OCR dla polskiego, sprawdzenie wyniku GOT-OCR2 na skanach (0,795) na surowych predykcjach.
-- Prezentacja naszego badania (`docs/research/presentation/`).
+- Prezentacja naszego badania (`docs/research/presentation/`): potwierdzić datę Lab 5 (22.11), slajd 8 jest na styk (overfull 11 pt).
