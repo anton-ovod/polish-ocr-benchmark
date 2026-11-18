@@ -190,4 +190,4 @@ Każdy katalog zawiera tylko to, czego faktycznie używa.
 
 ### Do zrobienia
 - Artykuł (`main.tex`, ok. 5,4 strony treści): autorzy i uczelnia (`\TODO{}`), dopracowanie przeglądu literatury o OCR dla polskiego, sprawdzenie wyniku GOT-OCR2 na skanach (0,795) na surowych predykcjach.
-- Prezentacja naszego badania (`docs/research/presentation/`): potwierdzić datę Lab 5 (22.11), slajd 8 jest na styk (overfull 11 pt).
+- Prezentacja naszego badania (`docs/research/presentation/`): potwierdzić datę Lab 5 (22.11); prawy blok slajdu 8 skrócony (był overfull 11 pt), `presentation.pdf` do przebudowania.
