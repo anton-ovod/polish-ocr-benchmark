@@ -10,8 +10,11 @@
 \usepackage{amsmath}
 \usepackage{booktabs}
 \usepackage{graphicx}
+\usepackage{float}
 \usepackage{xcolor}
 \usepackage{hyperref}
+\usepackage{xurl}
+\usepackage{indentfirst}
 \newcommand{\TODO}[1]{\textcolor{red}{[TODO: #1]}}
 \renewcommand{\andname}{i}
 \renewcommand{\lastandname}{\unskip{} i}
@@ -26,9 +29,11 @@
 
 \raggedbottom
 \begin{document}
+\hyphenation{EasyOCR PaddleOCR Tesseract InternVL3 Tesseracta Tesseractem}
+\setlength{\emergencystretch}{1.5em}
 
-\title{Ocena silników OCR i modeli wizyjno-językowych w~rozpoznawaniu tekstu polskiego na danych syntetycznych i~rzeczywistych}
-\titlerunning{OCR i VLM dla tekstu polskiego}
+\title{Ocena silników OCR i~modeli wizyjno-językowych w~rozpoznawaniu tekstu polskiego na danych syntetycznych i~rzeczywistych}
+\titlerunning{OCR i modele wizyjno-językowe dla tekstu polskiego}
 \author{Anton Ovod \and Maciej Pietras \and Marek Siuzdak \and Paweł Podgórski}
 \authorrunning{A. Ovod i in.}
 \institute{Politechnika Lubelska, Wydział Elektrotechniki i Informatyki, Lublin\\\email{s99806@pollub.edu.pl}}
@@ -36,105 +41,139 @@
 \maketitle
 
 \begin{abstract}
-Systemy rozpoznawania tekstu uczone są głównie na materiale angielskim, co utrudnia im odczyt
-liter z~diakrytykami. Powtarzamy protokół Yılmaza i~in.~\cite{yilmaz2026} dla języka polskiego:
-generujemy 2200 obrazów z~\emph{Lalki} (druk i~pismo odręczne) ze sterowaniem polskimi znakami, długością
-słowa, kontekstem i~zniekształceniami, a~dodatkowo oceniamy modele na 1968 skanach odręcznie przepisanej
-Inwokacji z~\emph{Pana Tadeusza}. Porównujemy siedem otwartych systemów: Qwen2.5-VL, InternVL3,
-DeepSeek-VL2, GOT-OCR2, PaddleOCR, Tesseract i~EasyOCR. Najniższy błąd znakowy uzyskuje Qwen2.5-VL
-(CER 0,059 na danych syntetycznych, 0,102 na skanach). Ranking na syntetycznym piśmie odręcznym zgadza
-się z~rankingiem na skanach (Spearman $\rho=0{,}89$, $p=0{,}007$).
+W~pracy porównano, jak siedem otwartych narzędzi rozpoznaje tekst polski: modele wizyjno-językowe
+\mbox{Qwen2.5-VL}, InternVL3 i~\mbox{DeepSeek-VL2}, model \mbox{GOT-OCR2} oraz klasyczne silniki PaddleOCR, Tesseract
+i~EasyOCR. Oceniono je na syntetycznych obrazach druku i~pisma odręcznego, w~których kontrolowano polskie znaki,
+długość tekstu i~zniekształcenia, oraz na skanach odręcznie przepisanej inwokacji z~\emph{Pana Tadeusza}. Na obu
+zbiorach najdokładniejszy okazał się \mbox{Qwen2.5-VL}, a~polskie znaki i~niska rozdzielczość pogarszały wyniki prawie
+wszystkich narzędzi. Ranking na obrazach syntetycznych powtórzył się niemal bez zmian na skanach, dlatego takie
+dane mogą służyć do wstępnego wyboru modelu.
 \keywords{OCR \and modele wizyjno-językowe \and język polski \and dane syntetyczne \and znaki diakrytyczne}
 \end{abstract}
 
 %------------------------------------------------------------------------------
 \section{Wprowadzenie}
 
-Klasyczne silniki OCR wypierają modele wizyjno-językowe (VLM), które czytają tekst z~obrazu bez
-osobnych etapów detekcji i~segmentacji. Uczy się je jednak przede wszystkim na danych angielskich i~chińskich,
-a~polski zawiera dziewięć liter z~diakrytykami (ą, ć, ę, ł, ń, ó, ś, ź, ż), często różniących się od
-łacińskich odpowiedników tylko ogonkiem, kreską lub kropką. Yılmaz i~in.~\cite{yilmaz2026} wykazali
-dla tureckiego, że znaki specyficzne dla języka stanowią główne źródło błędów.
+Klasyczne silniki OCR, w~których detekcja i~rozpoznawanie tekstu są osobnymi etapami, coraz częściej ustępują
+modelom wizyjno-językowym, odczytującym napisy bezpośrednio z~obrazu. Uczy się je jednak głównie na
+danych angielskich i~chińskich, podczas gdy alfabet polski zawiera dziewięć liter diakrytycznych (ą, ć, ę, ł,
+ń, ó, ś, ź, ż), odróżnianych od podstawowych form łacińskich jedynie ogonkiem, kreską lub kropką. Na przykładzie języka tureckiego wykazano, że znaki specyficzne dla
+danego alfabetu należą do głównych źródeł błędów rozpoznawania~\cite{yilmaz2026}. W~przypadku polskiego nie
+znaleziono natomiast porównania, które obejmowałoby zarówno modele wizyjno-językowe, jak i~klasyczne silniki.
 
-Celem pracy jest ocena otwartych systemów OCR i~VLM na tekście polskim oraz określenie, jak błąd zależy od
-cech tekstu i~obrazu. Stawiamy trzy pytania: (1) który z~otwartych systemów najlepiej rozpoznaje polski tekst, (2) jak błąd zależy
-od polskich znaków, długości słowa, kontekstu, rodzaju pisma i~zniekształceń, (3) czy ranking na danych
-syntetycznych odpowiada rankingowi na prawdziwym piśmie odręcznym. Elementy nowości: przeniesienie protokołu
-\cite{yilmaz2026} na język polski, dodanie klasycznych silników z~modelem polskim (Tesseract, EasyOCR), zbiór
-rzeczywisty 1968 skanów oraz analiza błędów diakrytycznych, w~tym ograniczeń słowników znaków.
+Celem pracy jest sprawdzenie, jak otwarte silniki OCR i~modele wizyjno-językowe radzą sobie z~polszczyzną oraz od jakich cech
+napisu i~obrazu zależy dokładność rozpoznawania. Przygotowano do tego kontrolowany zbiór syntetyczny z~drukiem
+i~pismem odręcznym, na którym oceniono siedem rozwiązań: trzy uniwersalne modele wizyjno-językowe, \mbox{GOT-OCR2}
+zaprojektowany wyłącznie do odczytu tekstu oraz trzy klasyczne silniki obsługujące język polski. Następnie porównano je na 1968 skanach prawdziwych rękopisów.
+Oprócz ogólnego poziomu błędu przeanalizowano osobno pomyłki dotyczące liter diakrytycznych. Badanie odpowiada na trzy pytania: (1) które narzędzie najlepiej odczytuje
+polski tekst, (2) jak na wynik wpływają diakrytyki, długość słowa, kontekst, rodzaj pisma i~zniekształcenia
+obrazu oraz (3) czy ranking systemów na danych syntetycznych jest taki sam jak na rzeczywistym piśmie
+odręcznym.
 
 %------------------------------------------------------------------------------
 \section{Przegląd literatury}
 
-Tesseract~\cite{smith2007} i~PP-OCR~\cite{li2022ppocrv3} łączą moduły detekcji i~rozpoznawania,
-EasyOCR~\cite{easyocr} stosuje rozpoznawanie sekwencyjne. GOT-OCR2~\cite{wei2024got} jest modelem
-wyspecjalizowanym w~OCR, natomiast Qwen2.5-VL~\cite{bai2025qwen25vl}, InternVL3~\cite{zhu2025internvl3}
-i~DeepSeek-VL2~\cite{wu2024deepseekvl2} to modele ogólnego przeznaczenia. Dla polskiego pisma odręcznego dostępna jest baza PHCD~\cite{tokovarov2020}, przeznaczona do uczenia
-rozpoznawania znaków; porównań VLM na tym materiale nie znaleźliśmy. Dane syntetyczne z~biblioteki TRDG~\cite{trdg} pozwalają kontrolować
-cechy tekstu, co wykorzystują Yılmaz i~in.~\cite{yilmaz2026}.
+Klasyczne otwarte silniki pracują etapami: Tesseract~\cite{smith2007} najpierw wyszukuje linie i~słowa,
+a~następnie klasyfikuje znaki, natomiast PaddleOCR~\cite{li2022ppocrv3} 
+i~EasyOCR\footnote{\url{https://github.com/JaidedAI/EasyOCR}} łączą detektor obszarów tekstu z~osobną
+siecią rozpoznającą ich treść. Obsługa języka zależy w~nich od dostępnego modelu, a~zakres zwracanych liter
+wyznacza alfabet przyjęty podczas jego trenowania. \mbox{GOT-OCR2}~\cite{wei2024got} zastępuje cały ten potok jedną
+architekturą typu koder--dekoder, która przekształca obraz bezpośrednio w~ciąg znaków, choć wciąż służy
+wyłącznie do odczytu tekstu. Uniwersalne modele wizyjno-językowe, takie jak \mbox{Qwen2.5-VL}~\cite{bai2025qwen25vl},
+InternVL3~\cite{zhu2025internvl3} i~\mbox{DeepSeek-VL2}~\cite{wu2024deepseekvl2}, wykonują to samo na polecenie wyrażone
+w~języku naturalnym, przy czym jest to dla nich tylko jedno z~wielu zadań wyuczonych na dużych zbiorach obrazów
+z~opisami. Wyniki testu OCRBench~\cite{liu2024ocrbench} wskazują jednak, że najwięcej trudności sprawiają im
+materiały wielojęzyczne i~pismo odręczne.
+
+Ręczne opisanie dużego zbioru obrazów jest kosztowne, dlatego do kontrolowanej oceny stosuje się dane
+syntetyczne. Biblioteka TRDG\footnote{\url{https://github.com/Belval/TextRecognitionDataGenerator}} tworzy je
+z~dowolnego tekstu, co pozwala porównać grupy różniące się tylko jedną cechą, a~na podobnym materiale uczono też
+narzędzie Idziaka i~in.~\cite{idziak2021} odczytujące odręczne polskie fiszki słownikowe. Sztuczne obrazy nie
+oddają jednak w~pełni zmienności pisma, dlatego ranking modeli ustalony na nich porównuje się z~wynikami
+na danych rzeczywistych, jak w~pracy Yılmaza i~in.~\cite{yilmaz2026} dla tekstu tureckiego.
 
 %------------------------------------------------------------------------------
 \section{Materiał i metody}
 
-\textbf{Zbiór syntetyczny.} Korpus stanowi \emph{Lalka}, tomy I i~II (Wolne Lektury\footnote{\url{https://wolnelektury.pl}}, domena publiczna).
-Słowa mają co najmniej trzy litery i~występują w~tekście minimum dwukrotnie, zdania liczą 4--8 słów.
-Obrazy powstają w~TRDG 1.8.0~\cite{trdg} z~parametrami autorów badania bazowego (wysokość 64~px, czarny tekst
-na białym tle) i~fontami z~Google Fonts: 15 drukowanymi i~19 odręcznymi, każdym sprawdzonym w~tabeli
-\texttt{cmap} pod kątem wszystkich użytych glifów. Dla obu rodzajów pisma tworzymy 11 komórek:
-słowa z~polskimi znakami i~bez nich, słowa krótkie (${<}10$ znaków) i~długie (${>}10$), słowo i~zdanie
-oraz pięć wariantów tych samych słów (czysty, rozmycie, obrót do $\pm16^\circ$, szum gaussowski, obniżona
-rozdzielczość). Daje to 22 komórki po 100 obrazów (ziarno 42, rys.~\ref{fig:examples}).
+\textbf{Zbiór syntetyczny.} Źródłem tekstu była \emph{Lalka} Bolesława Prusa (tomy I i~II z~Wolnych
+Lektur\footnote{\url{https://wolnelektury.pl}}, domena publiczna), z~której wybrano słowa o~co najmniej trzech
+literach, występujące w~powieści przynajmniej dwukrotnie, oraz zdania liczące 4--8 słów. Obrazy o~wysokości
+64~px z~czarnym napisem na białym tle, jak u~Yılmaza i~in.~\cite{yilmaz2026}, wygenerowano w~TRDG 1.8.0
+z~użyciem 15 czcionek drukowanych i~19 odręcznych z~Google Fonts. Dla obu rodzajów pisma utworzono po 11 komórek ze 100
+obrazami (łącznie 2200, rys.~\ref{fig:examples}): słowa z~polskimi znakami i~bez nich, słowa
+krótsze i~dłuższe niż 10 znaków, pojedyncze słowa i~zdania oraz pięć wersji jednego zestawu słów, czyli czystą,
+rozmytą, obróconą o~losowy kąt do $\pm16^\circ$, z~dodanym szumem gaussowskim i~wygenerowaną w~obniżonej
+rozdzielczości (40 zamiast 64~px).
 
-\textbf{Zbiór PHCD.} Z~Polish Handwritten Characters Database (PHCD)~\cite{tokovarov2020}, dostępnej publicznie\footnote{\url{https://cs.pollub.pl/phcd/}}, bierzemy wszystkie 1968 skanów stron
-z~odręcznie przepisanymi czterema pierwszymi wersami Inwokacji (szarość, 2500--5900~px szerokości).
-Skany zmniejszamy do 2048~px dłuższego boku i~przetwarzamy w~całości, bez dzielenia na linie. Tekst wzorcowy
-to ta sama Inwokacja znormalizowana jak predykcje; pomyłki przepisujących pozostają w~danych.
+\textbf{Skany PHCD.} Każdy z~1968 skanów z~bazy PHCD~\cite{tokovarov2020}\footnote{\url{https://cs.pollub.pl/phcd/}}
+zawiera te same cztery pierwsze wersy \emph{Pana Tadeusza}, różnią się one więc przede wszystkim charakterem pisma. Obrazy
+w~odcieniach szarości zmniejszono do 2048~px dłuższego boku i~podawano modelom w~całości, bez dzielenia na linie. Wzorcem był tekst tych wersów znormalizowany tak samo jak odpowiedzi narzędzi, przy
+czym pomyłek popełnionych przez przepisujących nie poprawiano.
 
-\begin{figure}[!b]
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.9\textwidth]{figures/examples.pdf}
   \caption{Przykłady ze zbioru syntetycznego (kolejno: słowo z~polskimi znakami, słowo długie oraz pięć
-  wariantów jednego słowa) i~skan PHCD.}
+  wersji jednego słowa) i~skan PHCD.}
   \label{fig:examples}
 \end{figure}
 
-\textbf{Modele.} Wszystkie otwarte, uruchamiane w~Google Colab (A100), każdy we własnym środowisku z~przypiętymi
-wersjami pakietów i~commitem wag; VLM otrzymują prompty autorów z~,,Turkish'' zastąpionym przez ,,Polish''.
-Badamy Qwen2.5-VL 7B~\cite{bai2025qwen25vl} (limit 512 tokenów odpowiedzi), InternVL3-8B~\cite{zhu2025internvl3},
-DeepSeek-VL2-tiny~\cite{wu2024deepseekvl2}, GOT-OCR2~\cite{wei2024got}, PaddleOCR 2.9.1~\cite{li2022ppocrv3}
-(\texttt{pl}), Tesseract~\cite{smith2007} (\texttt{pol}; \texttt{--psm 7} dla obrazów syntetycznych, \texttt{--psm 6}
-dla skanów) i~EasyOCR~\cite{easyocr} (\texttt{pl}). Pomijamy TrOCR (rozpoznaje pojedyncze linie angielskiego
-druku) oraz modele zamknięte, których wyniki trudno odtworzyć.
+\textbf{Przebieg obliczeń.} Badanie przeprowadzono na platformie Google Colab z~kartą graficzną
+NVIDIA A100 o~40~GB pamięci. Każde z~siedmiu narzędzi uruchomiono we własnym środowisku z~ustalonymi wersjami
+pakietów i~wag. \mbox{Qwen2.5-VL} i~InternVL3 użyto w~wariantach o~7 i~8~mld parametrów, a~\mbox{DeepSeek-VL2} w~najmniejszej
+wersji tiny (1~mld aktywnych). Klasycznym silnikom wskazano język polski, a~modele wizyjno-językowe otrzymywały
+polecenie dosłownego przepisania tekstu z~obrazu. Tesseract odczytywał obrazy syntetyczne jako pojedynczą linię, a~skany jako blok
+tekstu.
 
-\textbf{Miary.} Predykcję $p_i$ i~wzorzec $t_i$ normalizujemy: NFC, małe litery, usunięta interpunkcja
-(przepisujący stosują ją niespójnie, a~modele dodają losowo), polskie znaki zostają. Podstawą jest błąd znakowy
+\textbf{Miary.} Odpowiedź modelu $p_i$ i~wzorzec $t_i$ sprowadzono do postaci NFC i~małych liter, a~interpunkcję
+usunięto, ponieważ przepisujący stosowali ją niespójnie, a~modele dodawały ją przypadkowo. Polskie znaki
+pozostawiono bez zmian. Podstawową miarą był współczynnik błędów znakowych
 \begin{equation}\label{eq:cer}
   \mathrm{CER}_i = \min\left(1,\ \frac{S_i + D_i + I_i}{|t_i|}\right),
 \end{equation}
-gdzie $S_i$, $D_i$, $I_i$ oznaczają podstawienia, usunięcia i~wstawienia w~minimalnym ciągu edycji;
-$\mathrm{WER}_i$ liczymy analogicznie na słowach (dla zdań i~skanów). Średnią $\overline{\mathrm{CER}}(A)$
-po zbiorze $A$ uzupełniamy o~odsetek \emph{błędów wyłącznie diakrytycznych} wśród predykcji błędnych
-$E=\{i: p_i\neq t_i\}$:
+gdzie $S_i$, $D_i$ i~$I_i$ to liczby podstawień, usunięć i~wstawień w~minimalnym ciągu edycji. Dla zdań
+obliczono analogicznie współczynnik błędów słownych (WER). Ponadto dla każdego modelu ustalono
+odsetek \emph{pomyłek wyłącznie diakrytycznych}, czyli błędnych odpowiedzi $E=\{i: p_i\neq t_i\}$,
+które po usunięciu znaków diakrytycznych zgadzają się ze wzorcem:
 \begin{equation}\label{eq:diacr}
   R_{\mathrm{diakr}} = \frac{|\{i\in E: s(p_i) = s(t_i)\}|}{|E|},
 \end{equation}
-gdzie $s(\cdot)$ usuwa diakrytyki (ą$\to$a, ł$\to$l). Niepewność szacujemy bootstrapem ($B=1000$,
-percentyle 2,5 i~97,5), a~wpływ czynnika różnicą średnich
-$\Delta=\overline{\mathrm{CER}}(A)-\overline{\mathrm{CER}}(B)$ względem grupy odniesienia $B$ (słowa bez polskich
-znaków, obrazy czyste, druk, pojedyncze słowo, słowa krótkie); efekt jest istotny, gdy przedział $\Delta$ nie obejmuje
-zera. Zgodność rankingów oceniamy korelacją Spearmana między CER na czystych zdaniach pisma odręcznego
-(zbiór syntetyczny) a~CER na skanach.
+gdzie $s(\cdot)$ zamienia polskie litery na łacińskie odpowiedniki (ą$\to$a, ł$\to$l). Wpływ czynnika
+mierzono różnicą średnich $\Delta=\overline{\mathrm{CER}}(A)-\overline{\mathrm{CER}}(B)$ między grupą z~daną
+cechą $A$ a~grupą odniesienia $B$: słowa z~polskimi znakami porównano ze słowami bez nich, długie z~krótkimi,
+zdania z~pojedynczymi wyrazami, pismo odręczne z~drukiem, a~każde zniekształcenie z~obrazami czystymi. Przedziały ufności 95\% dla średnich i~różnic
+wyznaczono metodą bootstrap (1000 losowań, percentyle 2,5 i~97,5), a~efekt uznawano za istotny, gdy przedział
+$\Delta$ nie obejmował zera. Zgodność rankingów oceniono korelacją Spearmana między CER na czystych zdaniach
+syntetycznego pisma odręcznego a~CER na skanach.
 
 %------------------------------------------------------------------------------
 \section{Wyniki}
 
-\textbf{Zbiór syntetyczny.} Najniższy średni CER ma Qwen2.5-VL (0,059; tab.~\ref{tab:overall}),
-za nim DeepSeek-VL2 (0,143) i~InternVL3 (0,147) o~pokrywających się przedziałach ufności, dalej EasyOCR
-(0,174), PaddleOCR (0,183), Tesseract (0,206) i~GOT-OCR2 (0,320). Pismo odręczne utrudnia rozpoznawanie
-wszystkim systemom ($\Delta$ od $+0{,}08$ dla Qwena do $+0{,}24$ dla Tesseracta), natomiast na czystym
-druku Tesseract i~EasyOCR są niemal bezbłędne (CER ${\le}0{,}002$).
+\textbf{Zbiór syntetyczny.} Najdokładniej odczytywał tekst \mbox{Qwen2.5-VL} ze średnim CER 0,059, ponad
+dwukrotnie niższym niż kolejne w~rankingu \mbox{DeepSeek-VL2} i~InternVL3, których przedziały ufności się pokrywają
+(tab.~\ref{tab:overall}). Za nimi znalazły się klasyczne silniki, a~najsłabiej wypadł \mbox{GOT-OCR2} (0,320).
+Pismo odręczne okazało się trudniejsze od druku dla każdego narzędzia, a~największą różnicę wykazały
+Tesseract i~EasyOCR, które czysty druk rozpoznawały niemal bezbłędnie.
 
-\begin{figure}[!b]
+\begin{table}[H]
+  \caption{Wyniki na zbiorze syntetycznym: CER~\eqref{eq:cer} z~95\% przedziałem ufności, WER dla zdań
+  i~odsetek pomyłek wyłącznie diakrytycznych~\eqref{eq:diacr}.}
+  \label{tab:overall}
+  \centering\small\setlength{\tabcolsep}{6pt}
+  \input{tables/overall.tex}
+\end{table}
+
+Polskie znaki zwiększały błąd wszystkich modeli, istotnie u~sześciu z~siedmiu (rys.~\ref{fig:conditions}).
+Najbardziej szkodziły \mbox{GOT-OCR2}, \mbox{DeepSeek-VL2}, PaddleOCR i~InternVL3, mniej \mbox{Qwen2.5-VL} i~EasyOCR,
+a~w~przypadku Tesseracta różnica nie była istotna. Długie słowa nie pogarszały wyniku żadnego narzędzia,
+a~w~InternVL3, \mbox{DeepSeek-VL2} i~PaddleOCR wręcz go poprawiały. Podobnie zdania odczytywano dokładniej niż
+pojedyncze słowa w~\mbox{Qwen2.5-VL}, InternVL3, PaddleOCR i~\mbox{GOT-OCR2}, natomiast EasyOCR radził sobie z~nimi gorzej.
+Spośród zniekształceń najgroźniejsza okazała się niska rozdzielczość, która pogarszała wynik każdego
+narzędzia, zwłaszcza klasycznych silników. Rozmycie również utrudniało odczyt wszystkim modelom, a~najwięcej traciły na nim EasyOCR
+i~Tesseract. Szum i~obrót miały z~kolei znaczenie niemal wyłącznie dla Tesseracta, który na zaszumionych
+obrazach mylił się prawie tak często jak przy niskiej rozdzielczości.
+
+\begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{figures/conditions.pdf}
   \caption{Średni CER modeli w~warunkach zbioru syntetycznego; w~dolnym wierszu liczba modeli, u~których
@@ -142,76 +181,61 @@ druku Tesseract i~EasyOCR są niemal bezbłędne (CER ${\le}0{,}002$).
   \label{fig:conditions}
 \end{figure}
 
-\begin{table}[!b]
-  \caption{Średni CER~\eqref{eq:cer} według rodzaju pisma z~95\% przedziałem ufności, WER dla zdań,
-  odsetek błędów wyłącznie diakrytycznych~\eqref{eq:diacr} oraz czas na obraz (A100).}
-  \label{tab:overall}
-  \centering\small
-  \input{tables/overall.tex}
-\end{table}
+\textbf{Skany PHCD.} Na prawdziwym piśmie odręcznym każde narzędzie myliło się częściej niż na obrazach
+syntetycznych (rys.~\ref{fig:ranking}). Najniższy błąd ponownie miał \mbox{Qwen2.5-VL} (0,103),
+a~najwyższy \mbox{GOT-OCR2} (0,795), przy czym CER klasycznych silników przekraczał 0,4. Ranking modeli na skanach okazał się
+istotnie zgodny z~ustalonym na czystych zdaniach syntetycznego pisma odręcznego ($\rho=0{,}89$,
+$p=0{,}007$, $n=7$), a~miejscami zamieniły się jedynie Tesseract, EasyOCR i~PaddleOCR.
 
-Polskie znaki podnoszą błąd najsilniej w~GOT-OCR2 ($+0{,}23$), DeepSeek-VL2 ($+0{,}18$), PaddleOCR ($+0{,}16$)
-i~InternVL3 ($+0{,}14$); Qwen odnotowuje $+0{,}05$, a~Tesseract i~EasyOCR zaledwie $+0{,}02$ i~$+0{,}03$
-(rys.~\ref{fig:conditions}). Długie słowa nie pogarszają wyniku, a~w~InternVL3, DeepSeek-VL2 i~PaddleOCR
-obniżają go istotnie (ok.\ $-0{,}04$), co wiąże się z~większą ilością kontekstu; podobnie zdanie zamiast słowa
-zmniejsza błąd w~PaddleOCR, GOT-OCR2 i~InternVL3 (od $-0{,}04$ do $-0{,}07$), przy czym EasyOCR zyskuje tu
-$+0{,}05$. Wśród zniekształceń najgroźniejsza jest niska rozdzielczość (EasyOCR $+0{,}68$, Tesseract $+0{,}53$,
-PaddleOCR $+0{,}41$, pozostałe $+0{,}19$--$+0{,}26$); szum załamuje niemal wyłącznie Tesseract ($+0{,}52$),
-rozmycie EasyOCR ($+0{,}44$) i~Tesseract ($+0{,}24$), a~obrót wpływa na wynik niewiele poza Tesseractem ($+0{,}12$).
-
-\newpage
-\textbf{Skany Inwokacji.} Błędy są tu wyraźnie większe niż na obrazach syntetycznych (rys.~\ref{fig:ranking}, tab.~\ref{tab:gold}):
-Qwen2.5-VL osiąga CER 0,102 (WER 0,242), InternVL3 0,219, DeepSeek-VL2 0,355, Tesseract 0,419, EasyOCR 0,632,
-PaddleOCR 0,649, a~GOT-OCR2 0,795. PaddleOCR nie zwraca odpowiedzi dla 17 skanów, Tesseract dla 3, EasyOCR dla 2.
-Korelacja Spearmana między rankingiem na syntetycznym piśmie odręcznym a~rankingiem na skanach wynosi
-$\rho=0{,}89$ ($p=0{,}007$, $n=7$) i~przekracza próg istotności dla siedmiu obiektów ($\rho\approx0{,}79$,
-test dwustronny, $\alpha=0{,}05$). Miejsca 1--3 i~7 pokrywają się w~obu rankingach, zamieniają się tylko
-Tesseract, EasyOCR i~PaddleOCR.
-
-\begin{figure}[!b]
+\begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{figures/ranking.pdf}
-  \caption{Średni CER na zbiorze syntetycznym i~na skanach PHCD.}
+  \caption{Średni CER na czystych zdaniach syntetycznego pisma odręcznego i~na skanach PHCD; modele
+  według wyniku na skanach, w~nawiasach miejsca w~obu rankingach.}
   \label{fig:ranking}
 \end{figure}
-
-\begin{table}[!b]
-  \caption{CER na zdaniach syntetycznego pisma odręcznego (obrazy czyste) i~na skanach, miejsca w~rankingach
-  oraz WER i~liczba pustych odpowiedzi na skanach.}
-  \label{tab:gold}
-  \centering\small
-  \input{tables/gold.tex}
-\end{table}
 
 %------------------------------------------------------------------------------
 \section{Dyskusja}
 
-Najlepiej wypadają ogólne modele wizyjno-językowe, a~Qwen2.5-VL wyraźnie wyprzedza resztę na obu zbiorach.
-Silniki klasyczne dominują na czystym druku, ale zawodzą przy piśmie odręcznym i~zniekształceniach;
-GOT-OCR2, choć zaprojektowany do OCR, zajmuje ostatnie miejsce. Zbliżony obraz opisują Yılmaz i~in.~\cite{yilmaz2026}:
-znaki specyficzne dla języka pogarszają wyniki większości modeli, a~ranking syntetyczny odpowiada rzeczywistemu
-($\rho=0{,}92$ u~autorów); w~naszym powtórzeniu ich badania Qwen2.5-VL również okazał się najlepszym modelem otwartym.
-Wartości liczbowych dla obu języków nie zestawiamy, bo korpusy i~fonty się różnią.
+Przewaga \mbox{Qwen2.5-VL} na obu zbiorach pokazuje, że ogólny model wizyjno-językowy może odczytywać polski tekst
+dokładniej niż narzędzia przeznaczone wyłącznie do tego zadania. Klasyczne silniki tracą dopiero przy piśmie
+odręcznym i~zniekształconym obrazie, co sugeruje, że uczono je głównie na wyraźnym druku, a~wrażliwość
+Tesseracta na szum może wynikać z~progowania obrazu przed rozpoznaniem~\cite{smith2007}. Ostatnie miejsce
+\mbox{GOT-OCR2} jest zgodne z~deklaracją autorów, że obsługuje on głównie angielski i~chiński~\cite{wei2024got}.
 
-PaddleOCR z~modelem \texttt{pl} korzysta ze wspólnego słownika łacińskiego, w~którym brakuje
-liter ń, ś, ź i~ż, więc zastępuje je podobnymi (,,ludnošci'' zamiast ,,ludności''). Wzór~\eqref{eq:cer} daje dla GOT-OCR2, który gubi spacje, CER 0,391; kod autorów dzieli odległość przez długość
-predykcji i~odtwarza opublikowane liczby dopiero w~wariancie bez spacji (0,311), co zmienia miejsce modelu w~rankingu.
+Pomyłki dotyczące polskich liter mają w~poszczególnych narzędziach różny charakter. W~modelach wizyjno-językowych i~PaddleOCR od jednej
+czwartej do jednej trzeciej błędnych odpowiedzi różniło się od wzorca tylko diakrytykami (tab.~\ref{tab:overall}),
+co oznacza, że słowo odczytano poprawnie, a~pomylono jedynie ogonki, kreski lub kropki. W~PaddleOCR
+przyczyną jest zestaw znaków: model języka polskiego korzysta ze wspólnego dla alfabetów łacińskich słownika bez
+liter ń, ś, ź i~ż, dlatego zastępuje je podobnymi (,,ludnošci'' zamiast ,,ludności''). Tesseract popełniał
+takie pomyłki rzadko, a~jego pozostałe błędy obejmowały także litery bez znaków diakrytycznych.
+Mniejszy błąd części narzędzi na długich słowach i~zdaniach wskazuje z~kolei, że dłuższy kontekst pomaga
+uzupełnić niepewne litery.
 
-\textbf{Ograniczenia i dalsze prace.} Obrazy syntetyczne są jednoliniowe, na białym tle (tekstury papieru autorów nie zostały
-udostępnione), a~skany zawierają jeden krótki tekst. Przy siedmiu modelach korelacja jest istotna dopiero od $\rho\approx0{,}79$, a~zależy od ułożenia trzech środkowych
-pozycji. W~dalszych pracach planujemy dodać większe modele, tła z teksturą papieru oraz teksty wielowierszowe.
+Zgodność rankingów oznacza, że tanie dane syntetyczne pozwalają wstępnie uszeregować modele przed oceną na
+materiale rzeczywistym, podobnie jak w~badaniu Yılmaza i~in.~\cite{yilmaz2026} dla tureckiego, choć nie
+przewidują poziomu błędu, który na skanach był co najmniej dwukrotnie wyższy.
+
+\textbf{Ograniczenia i~dalsze prace.} Obrazy syntetyczne zawierały jedną linię tekstu na białym tle, a~skany
+zawsze ten sam znany fragment, który modele wizyjno-językowe mogły poznać podczas trenowania. Rankingi objęły
+tylko siedem narzędzi, a~przy tak małej próbie korelacja Spearmana jest istotna dopiero od $\rho\approx0{,}79$,
+dlatego już kilka dodatkowych zamian sąsiednich miejsc mogłoby podważyć ich zgodność. Pominięto też rozwiązania
+zamknięte i~większe niż 8~mld parametrów, które dalsze prace mogą uwzględnić, podobnie jak tła z~teksturą papieru
+i~tekst wielowierszowy.
 
 %------------------------------------------------------------------------------
 \section{Wnioski}
 
-Qwen2.5-VL 7B rozpoznaje polski tekst najdokładniej zarówno na obrazach syntetycznych (CER 0,059), jak i~na
-skanach (0,102). Polskie znaki pogarszają wyniki większości systemów, a~silniki klasyczne cechuje wrażliwość na
-szum, rozmycie i~niską rozdzielczość. Zgodność rankingów ($\rho=0{,}89$) pokazuje, że tanie dane syntetyczne
-trafnie przewidują kolejność modeli na prawdziwym piśmie, choć nie poziom błędu.
+Najdokładniej polski tekst odczytywał \mbox{Qwen2.5-VL}, zarówno na obrazach syntetycznych, jak i~na skanach.
+Polskie znaki pogarszały wyniki prawie wszystkich narzędzi, a~spośród zniekształceń najbardziej szkodziła
+niska rozdzielczość, zwłaszcza klasycznym silnikom. Ranking ustalony na obrazach syntetycznych
+powtórzył się niemal bez zmian na prawdziwym piśmie, dlatego takie dane mogą służyć do wstępnego wyboru modelu.
 
 \subsubsection*{Dostępność danych i kodu.}
-Generator, skrypty, predykcje dla każdego obrazu i~zbiór syntetyczny:
-\url{https://github.com/anton-ovod/polish-ocr-benchmark} (kod na licencji MIT). Skany PHCD pobiera się ze strony
+Generator odtwarzający zbiór syntetyczny z~ustalonym ziarnem, skrypty i~odpowiedzi modeli dla każdego obrazu
+udostępniono na licencji MIT
+w~repozytorium \url{https://github.com/anton-ovod/polish-ocr-benchmark}, a~skany PHCD można pobrać ze strony
 autorów zbioru.
 
 \bibliographystyle{splncs04}

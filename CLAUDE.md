@@ -23,6 +23,11 @@ syntetycznych i rzeczywistych”
 polskiego oraz określenie, jak na błąd wpływają polskie znaki diakrytyczne, długość tekstu, rodzaj pisma
 i zniekształcenia obrazu. Polskiego nie porównujemy z tureckim.
 
+**Artykuł jest samodzielny**, nie jest rozszerzeniem ani powtórzeniem bazowego: nie piszemy „protokół autorów”,
+„badanie bazowe”, „nasze powtórzenie”. Artykuł bazowy to zwykła pozycja bibliografii, cytowana tylko przy faktycznie
+przejętych elementach (parametry generatora, prompty), w przeglądzie literatury i jakościowo w dyskusji (bez
+zestawiania liczb). Wyników replikacji w artykule nie ma.
+
 **Pytania badawcze:**
 1. Który model najlepiej rozpoznaje polski tekst (oba zbiory)?
 2. Jak na błąd wpływają polskie znaki, długość, druk / pismo ręczne i zniekształcenia (zbiór syntetyczny)?
@@ -32,7 +37,7 @@ i zniekształcenia obrazu. Polskiego nie porównujemy z tureckim.
 ### Dane
 - Generator TRDG 1.8.0, tylko druk (printed) i pismo ręczne (handwritten), **bez tekstu w scenie**.
   Generator piszemy sami, kod autorów służy jako wzór parametrów (ma bugi).
-- Jeden korpus: Wolne Lektury, **sama „Lalka” Prusa, tom I i II** (domena publiczna), słowa filtrowane słownikiem.
+- Jeden korpus: Wolne Lektury, **sama „Lalka” Prusa, tom I i II** (domena publiczna); słowa co najmniej 3-literowe, występujące co najmniej 2 razy, zdania 4–8 słów (bez filtra słownikowego).
 - Porównania:
   - z polskimi znakami / bez,
   - krótkie / długie słowa (próg 10 znaków),
@@ -116,12 +121,12 @@ Każdy katalog zawiera tylko to, czego faktycznie używa.
   fontów), `generate_dataset.py`, `summarize.py` (tabele LaTeX do `docs/research/article/tables/`), `plot_results.py`
   (wykresy do `docs/research/article/figures/`). `prepare_gold.py` (skalowanie skanów i etykiety),
   `analyze.py` (CER, WER, błędy na znakach diakrytycznych, ranking, Spearman), `make_bundle.sh` (buduje `ocr_bundle.zip` z kodem i gotowymi zbiorami,
-  poza gitem), `research.ipynb` (Colab, jedyny punkt wejścia). `summarize.py` (tabele `overall.tex`, `gold.tex`) i `plot_results.py` (wykresy `conditions`, `ranking`) czytają wyniki `analyze.py`.
+  poza gitem), `research.ipynb` (Colab, jedyny punkt wejścia). `summarize.py` (tabela `overall.tex`) i `plot_results.py` (wykresy `conditions`, `ranking`) czytają wyniki `analyze.py`. `ranking` zestawia CER na czystych zdaniach syntetycznego pisma odręcznego (podstawa Spearmana) z CER na skanach.
   Wygenerowane obrazy i skany nie są w repo (`research/data/`, `research/gold/`); predykcje i podsumowania z Colaba są w `research/results/`.
 - `docs/replication/`: dokumenty do powtórzenia badania bazowego. `presentation/`: `presentation.tex` (prezentacja
   artykułu bazowego, 8 slajdów, bez naszej replikacji), `speaker_notes.md`. `article/`: PDF artykułu bazowego (poza gitem).
 - `docs/research/`: dokumenty do naszego badania. `article/`: `main.tex` (szkielet LNCS po polsku z `\TODO{}`),
-  `references.bib`, `tables/*.tex` (generuje `summarize.py`, nie edytować ręcznie), `figures/`. `presentation/`:
+  `references.bib` (najwyżej 10 pozycji), `tables/*.tex` (generuje `summarize.py`, nie edytować ręcznie), `figures/`. `presentation/`:
   `presentation.tex` (Lab 5, 8 slajdów, do 5 minut), `speaker_notes.md` (z odpowiedziami na pytania), wykresy
   `model_ranking.pdf`, `conditions_heatmap.pdf`, `examples.pdf` i `phcd_scan.png`. Wykresy zrobione poza repo
   (szkic kolegi), liczby z `research/results/analysis/`; odsetek błędnych odpowiedzi różnych od wzorca tylko
@@ -189,5 +194,5 @@ Każdy katalog zawiera tylko to, czego faktycznie używa.
   `summarize.py` → `summary/effects.csv` i kolumna CI w `tables/overall.tex`.
 
 ### Do zrobienia
-- Artykuł (`main.tex`, ok. 5,4 strony treści): dopracowanie przeglądu literatury o OCR dla polskiego, sprawdzenie wyniku GOT-OCR2 na skanach (0,795) na surowych predykcjach.
+- Artykuł (`main.tex`, 6 stron treści): dopracowanie przeglądu literatury o OCR dla polskiego, sprawdzenie wyniku GOT-OCR2 na skanach (0,795) na surowych predykcjach.
 - Prezentacja naszego badania (`docs/research/presentation/`): potwierdzić datę Lab 5 (22.11), slajd 8 jest na styk (overfull 11 pt).
