@@ -50,10 +50,10 @@ def main():
     plt.rcParams.update({"font.size": 7.5, "text.color": INK, "pdf.fonttype": 42, "savefig.dpi": 220,
                          "savefig.bbox": "tight"})
 
-    rows = [("druk", "printed"), ("pismo odręczne", "handwritten")]
+    rows = [("druk", "printed"), ("pismo\nodręczne", "handwritten")]
     grid_cells = [c for c in CELLS if c[1] != "sentences"]
-    fig = plt.figure(figsize=(4.8, 2.9))
-    outer = GridSpec(3, 1, figure=fig, height_ratios=[1, 1, 2.2], hspace=0.55)
+    fig = plt.figure(figsize=(4.8, 2.0))
+    outer = GridSpec(3, 1, figure=fig, height_ratios=[0.7, 0.7, 2.4], hspace=0.3)
     for r, (name, typ) in enumerate(rows):
         paths = [args.data / first(labels, typ, c, s) for c, s, _ in grid_cells]
         widths = [Image.open(p).width for p in paths]
@@ -62,7 +62,7 @@ def main():
             ax = fig.add_subplot(inner[k])
             panel(ax, p, title if r == 0 else None)
             if k == 0:
-                ax.set_ylabel(name, fontsize=7.5, color=INK2)
+                ax.set_ylabel(name, fontsize=7, color=INK2, rotation=0, ha="right", va="center")
     ax = fig.add_subplot(outer[2])
     panel(ax, args.gold / gold.iloc[0].file, "skan ze zbioru PHCD (po zmniejszeniu do 2048 px)")
     args.out.mkdir(parents=True, exist_ok=True)

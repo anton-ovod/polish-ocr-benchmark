@@ -13,7 +13,7 @@ from metrics import cer_authors, cer_text, normalize_text, wer_text
 
 ROOT = Path(__file__).resolve().parents[1]
 MODEL_ORDER = ["qwen7b", "internvl", "deepseek", "tesseract", "easyocr", "paddle", "got"]
-MODEL_NAMES = {"qwen7b": "Qwen2.5-VL 7B", "internvl": "InternVL3-8B", "deepseek": "DeepSeek-VL2", "tesseract": "Tesseract",
+MODEL_NAMES = {"qwen7b": "Qwen2.5-VL", "internvl": "InternVL3", "deepseek": "DeepSeek-VL2", "tesseract": "Tesseract",
                "easyocr": "EasyOCR", "paddle": "PaddleOCR", "got": "GOT-OCR2"}
 CELL_ORDER = [
     ("polish_character_confusion", "polish", "z polskimi znakami"),
@@ -90,29 +90,22 @@ def ordered(models):
     return [m for m in MODEL_ORDER if m in models] + sorted(set(models) - set(MODEL_ORDER))
 
 
+def num(x, digits):
+    return f"{x:.{digits}f}".replace(".", ",")
+
+
 def fmt(x):
-    return "--" if pd.isna(x) else f"{x:.3f}".replace("0.", ".", 1) if x < 1 else f"{x:.2f}"
+    return "--" if pd.isna(x) else num(x, 3) if x < 1 else num(x, 2)
 
 
 def latex_overall(overall, path):
-    lines = [r"\begin{tabular}{lrrrcrrr}", r"\toprule",
-             r"Model & \multicolumn{4}{c}{CER} & WER & Diakr. & s/obraz \\",
-             r" & druk & pismo & razem & 95\% CI & zdania & [\%] & \\", r"\midrule"]
-    for m, r in overall.iterrows():
+    lines = [r"\begin{tabular}{lcccccc}", r"\toprule",
+             r"Model & \multicolumn{4}{c}{CER} & WER & Tylko diakr. \\", r"\cmidrule(lr){2-5}",
+             r" & druk & pismo & razem & 95\% CI & zdania & [\%] \\", r"\midrule"]
+    for m, r in overall.sort_values("cer").iterrows():
         lines.append(f"{MODEL_NAMES.get(m, m)} & {fmt(r.printed)} & {fmt(r.handwritten)} & {fmt(r.cer)} & "
-                     f"[{fmt(r.cer_lo)}, {fmt(r.cer_hi)}] & {fmt(r.wer_sentences)} & "
-                     f"{100 * r.diacritics_only_share:.0f} & {r.seconds:.2f} \\\\")
-    lines += [r"\bottomrule", r"\end{tabular}"]
-    path.write_text("\n".join(lines) + "\n", encoding="utf-8")
-
-
-def latex_gold(table, path):
-    lines = [r"\begin{tabular}{lrrrrrr}", r"\toprule",
-             r"Model & \multicolumn{2}{c}{CER} & \multicolumn{2}{c}{Miejsce} & WER & Puste \\",
-             r" & syntetyczny & PHCD & syntetyczny & PHCD & PHCD & PHCD \\", r"\midrule"]
-    for m, r in table.sort_values("gold_rank").iterrows():
-        lines.append(f"{MODEL_NAMES.get(m, m)} & {fmt(r.synthetic_cer)} & {fmt(r.gold_cer)} & {int(r.synthetic_rank)} & "
-                     f"{int(r.gold_rank)} & {fmt(r.gold_wer)} & {int(r.gold_empty)} \\\\")
+                     f"{fmt(r.cer_lo)}--{fmt(r.cer_hi)} & {fmt(r.wer_sentences)} & "
+                     f"{100 * r.diacritics_only_share:.0f} \\\\")
     lines += [r"\bottomrule", r"\end{tabular}"]
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
@@ -177,7 +170,6 @@ def main():
     print("\n" + gold_table.round(3).to_string(), f"\n\nSpearman rho = {rho:.3f}, p = {p:.3f}, n = {len(gold_table)}")
 
     args.tables.mkdir(parents=True, exist_ok=True)
-    latex_gold(gold_table, args.tables / "gold.tex")
     latex_overall(overall, args.tables / "overall.tex")
     print(f"\nLaTeX tables written to {args.tables}")
 
