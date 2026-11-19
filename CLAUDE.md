@@ -189,6 +189,7 @@ Każdy katalog zawiera tylko to, czego faktycznie używa.
   zwrócić („ludnošci”, „5piacy”). Przebieg z `en` (ustawienie autorów) dawał to samo (CER 0,18 vs 0,19), więc go usunęliśmy;
   w artykule jest tylko PaddleOCR `pl`, podpisywany po prostu „PaddleOCR”.
 - Tekstury papieru autorów nie są opublikowane; renderujemy na białym tle.
-- **Obliczenia w artykule** (sekcje 3.3–3.4): wzory (1)–(5) — CER/WER, średnia, odsetek błędów
-  diakrytycznych, bootstrap 95% CI (B=1000 jak u autorów), efekt Δ = różnica średnich z CI. Liczy je
-  `summarize.py` → `summary/effects.csv` i kolumna CI w `tables/overall.tex`.
+- **Obliczenia w artykule** (akapit „Miary” w sekcji 3): numerowane wzory (1) CER i (2) odsetek pomyłek wyłącznie
+  diakrytycznych; w tekście bez numeru WER, efekt Δ = różnica średnich i bootstrap 95% CI (B=1000, percentyle 2,5
+  i 97,5, efekt istotny, gdy CI Δ nie obejmuje zera). Liczy je `summarize.py` → `summary/effects.csv` i kolumna CI
+  w `tables/overall.tex`.
