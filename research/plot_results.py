@@ -52,7 +52,7 @@ GROUPS = [
     ("Znaki", [("polish_character_confusion", "non_polish", "bez"), ("polish_character_confusion", "polish", "z")]),
     ("Pismo", [("type", "printed", "druk"), ("type", "handwritten", "pismo")]),
     ("Zniekształcenie", [("distortion_type", "clean", "czysty"), ("distortion_type", "rotated", "obrót"),
-                         ("distortion_type", "noisy", "szum"), ("distortion_type", "blur", "rozmycie"),
+                         ("distortion_type", "noisy", "szum"), ("distortion_type", "blur", "roz-\nmycie"),
                          ("distortion_type", "low_resolution", "niska\nrozdz.")]),
     ("Długość", [("word_length_effects", "short_words", "<10"), ("word_length_effects", "long_words", ">10")]),
     ("Kontekst", [("context_dependent_errors", "word", "słowo"), ("context_dependent_errors", "sentences", "zdanie")]),
@@ -69,7 +69,7 @@ def plot_conditions(df, models, out):
     cmap = LinearSegmentedColormap.from_list("blues", BLUES)
     columns = [(g, col, val, label) for g, cols in GROUPS for col, val, label in cols]
     grid = np.array([[condition_mean(df, m, col, val) for _, col, val, _ in columns] for m in models])
-    fig = plt.figure(figsize=(WIDTH, 0.27 * len(models) + 1.5))
+    fig = plt.figure(figsize=(WIDTH, 0.23 * len(models) + 1.3))
     ax = fig.add_axes([0.17, 0.2, 0.83, 0.6])
     xs, x, prev = [], 0.0, None
     for g, *_ in columns:
@@ -106,7 +106,7 @@ def plot_conditions(df, models, out):
 
     distortions = np.stack([col("distortion_type", d) for d in DISTORTIONS], axis=1)
     counts = [
-        ("z znakami\ngorzej", (col("polish_character_confusion", "polish") > col("polish_character_confusion", "non_polish")).sum()),
+        ("ze znakami\ngorzej", (col("polish_character_confusion", "polish") > col("polish_character_confusion", "non_polish")).sum()),
         ("pismo\ntrudniejsze", (col("type", "handwritten") > col("type", "printed")).sum()),
         ("najtrudniejsza\nniska rozdz.", (distortions.argmax(axis=1) == len(DISTORTIONS) - 1).sum()),
         ("długie\nłatwiejsze", (col("word_length_effects", "long_words") < col("word_length_effects", "short_words")).sum()),
@@ -115,7 +115,7 @@ def plot_conditions(df, models, out):
     for (g, v), (text, k) in zip(tops.items(), counts):
         ax.text((v[0] + v[-1]) / 2, len(models) - 0.1, f"{text}\nu {k} z {len(models)}", ha="center", va="top",
                 fontsize=5.6, color=INK2, linespacing=1.15, clip_on=False)
-    cax = fig.add_axes([0.17, 0.94, 0.18, 0.025])
+    cax = fig.add_axes([0.02, 0.83, 0.11, 0.025])
     cax.imshow(np.linspace(0, 1, 100)[None, :], cmap=cmap, aspect="auto")
     cax.set_xticks([0, 99], ["0", pl(vmax)], fontsize=5.8)
     cax.set_yticks([])
@@ -123,24 +123,29 @@ def plot_conditions(df, models, out):
     cax.grid(False)
     for spine in cax.spines.values():
         spine.set_visible(False)
-    fig.text(0.0, 0.952, "CER", fontsize=6.5, color=INK2, va="center")
+    fig.text(0.02, 0.875, "CER", fontsize=6.5, color=INK2, va="center")
     save(fig, out, "conditions")
 
 
-def plot_ranking(overall, phsf_scores, models, out):
+def bootstrap_ci(values, rng):
+    boots = rng.choice(values, size=(1000, len(values))).mean(axis=1)
+    return values.mean(), np.percentile(boots, 2.5), np.percentile(boots, 97.5)
+
+
+def plot_ranking(df, phsf_scores, models, out):
     rng = np.random.default_rng(42)
-    rows = []
-    for m in models:
-        values = phsf_scores[phsf_scores.model == m].cer.to_numpy()
-        boots = rng.choice(values, size=(1000, len(values))).mean(axis=1)
-        rows.append((m, overall.loc[m, "cer"], overall.loc[m, "cer_lo"], overall.loc[m, "cer_hi"], values.mean(),
-                     np.percentile(boots, 2.5), np.percentile(boots, 97.5)))
-    order = sorted(rows, key=lambda r: r[1])
-    fig, ax = plt.subplots(figsize=(WIDTH, 0.42 * len(order) + 0.7))
+    reference = df[(df.type == "handwritten") & (df.subcategory == "sentences")]
+    rows = [(m, *bootstrap_ci(reference[reference.model == m].cer.to_numpy(), rng),
+             *bootstrap_ci(phsf_scores[phsf_scores.model == m].cer.to_numpy(), rng)) for m in models]
+    synth_rank = {r[0]: k for k, r in enumerate(sorted(rows, key=lambda r: r[1]), 1)}
+    order = sorted(rows, key=lambda r: r[4])
+    n_reference = reference.groupby("model").size().max()
+    fig, ax = plt.subplots(figsize=(WIDTH, 0.25 * len(order) + 0.55))
     y = np.arange(len(order))
     h = 0.36
-    ax.barh(y - h / 2, [r[1] for r in order], height=h, color="#2a78d6", label="zbiór syntetyczny (2200 obrazów)")
-    ax.barh(y + h / 2, [r[4] for r in order], height=h, color="#eb6834", label="PHCD (1968 skanów)")
+    ax.barh(y - h / 2, [r[1] for r in order], height=h, color="#2a78d6",
+            label=f"syntetyczne pismo odręczne, zdania ({n_reference} obrazów)")
+    ax.barh(y + h / 2, [r[4] for r in order], height=h, color="#eb6834", label=f"PHCD ({len(phsf_scores) // len(models)} skanów)")
     ax.errorbar([r[1] for r in order], y - h / 2, xerr=[[r[1] - r[2] for r in order], [r[3] - r[1] for r in order]],
                 fmt="none", ecolor=INK2, elinewidth=0.8, capsize=1.8)
     ax.errorbar([r[4] for r in order], y + h / 2, xerr=[[r[4] - r[5] for r in order], [r[6] - r[4] for r in order]],
@@ -152,12 +157,12 @@ def plot_ranking(overall, phsf_scores, models, out):
     ax.set_xlabel("średni CER (mniej = lepiej), wąsy: 95% przedział ufności")
     ax.grid(axis="y", visible=False)
     ax.tick_params(axis="y", length=0)
-    ax.text(1.02, -0.85, "synt.", transform=ax.get_yaxis_transform(), fontsize=6.5, color=MUTED, ha="left")
-    ax.text(1.16, -0.85, "PHCD", transform=ax.get_yaxis_transform(), fontsize=6.5, color=MUTED, ha="left")
-    for yi, r in zip(y, order):
-        ax.text(1.02, yi, pl(r[1], 3), transform=ax.get_yaxis_transform(), fontsize=7, va="center")
-        ax.text(1.16, yi, pl(r[4], 3), transform=ax.get_yaxis_transform(), fontsize=7, va="center")
-    ax.legend(loc="lower center", bbox_to_anchor=(0.5, 1.0), ncol=2, handlelength=1.2, columnspacing=1.2)
+    ax.text(1.02, -0.85, "synt. (miejsce)", transform=ax.get_yaxis_transform(), fontsize=6.5, color=MUTED, ha="left")
+    ax.text(1.24, -0.85, "PHCD (miejsce)", transform=ax.get_yaxis_transform(), fontsize=6.5, color=MUTED, ha="left")
+    for k, (yi, r) in enumerate(zip(y, order), 1):
+        ax.text(1.02, yi, f"{pl(r[1], 3)} ({synth_rank[r[0]]})", transform=ax.get_yaxis_transform(), fontsize=7, va="center")
+        ax.text(1.24, yi, f"{pl(r[4], 3)} ({k})", transform=ax.get_yaxis_transform(), fontsize=7, va="center")
+    ax.legend(loc="upper right", handlelength=1.0, fontsize=6.5)
     save(fig, out, "ranking")
 
 
@@ -176,7 +181,7 @@ def main():
 
     print(f"Figures for {', '.join(models)} -> {args.out}")
     plot_conditions(df, models, args.out)
-    plot_ranking(overall, phsf_scores, models, args.out)
+    plot_ranking(df, phsf_scores, models, args.out)
 
 
 if __name__ == "__main__":
