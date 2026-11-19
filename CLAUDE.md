@@ -192,7 +192,3 @@ Każdy katalog zawiera tylko to, czego faktycznie używa.
 - **Obliczenia w artykule** (sekcje 3.3–3.4): wzory (1)–(5) — CER/WER, średnia, odsetek błędów
   diakrytycznych, bootstrap 95% CI (B=1000 jak u autorów), efekt Δ = różnica średnich z CI. Liczy je
   `summarize.py` → `summary/effects.csv` i kolumna CI w `tables/overall.tex`.
-
-### Do zrobienia
-- Artykuł (`main.tex`, 6 stron treści): dopracowanie przeglądu literatury o OCR dla polskiego, sprawdzenie wyniku GOT-OCR2 na skanach (0,795) na surowych predykcjach.
-- Prezentacja naszego badania (`docs/research/presentation/`): potwierdzić datę Lab 5 (22.11), slajd 8 jest na styk (overfull 11 pt).
