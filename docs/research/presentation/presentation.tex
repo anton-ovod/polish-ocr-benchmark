@@ -46,8 +46,8 @@
 \begin{frame}{Cel i~pytania badawcze}
   \small
   \begin{itemize}
-    \item Silniki OCR i~modele wizyjno-językowe (VLM) uczy się głównie na angielskim, a~polski ma 9 liter
-      z~diakrytykami: ą, ć, ę, ł, ń, ó, ś, ź, ż.
+    \item Silniki OCR i~modele wizyjno-językowe (VLM) są uczone głównie na tekstach angielskich, w~których nie
+      występują polskie litery z~diakrytykami: ą, ć, ę, ł, ń, ó, ś, ź, ż.
     \item Yılmaz i~in.\ pokazali dla tureckiego, że litery swoiste są głównym źródłem błędów; powtarzamy ich
       protokół dla polskiego.
   \end{itemize}
@@ -92,7 +92,7 @@
         \midrule
         Polskie znaki & z~nimi, bez nich \\[1pt]
         Długość słowa & poniżej 10, ponad 10 znaków \\[1pt]
-        Kontekst & pojedyncze słowo, zdanie 4-8 słów \\[1pt]
+        Kontekst & słowo, zdanie 4-8 słów \\[1pt]
         Zniekształcenia & czysty, rozmycie, obrót, szum, niska rozdzielczość \\
         \bottomrule
       \end{tabular}
@@ -232,11 +232,10 @@
         \small
         \setlength{\leftmargini}{1.2em}
         \begin{itemize}
-          \item Protokół Yılmaza i~in.\ przeniesiony na polski: własny generator, fonty sprawdzone pod kątem polskich liter.
-          \item Silniki z~modelem polskim (Tesseract, EasyOCR) obok modeli VLM.
+          \item Protokół Yılmaza i~in.\ dla polskiego: własny generator i~dobór fontów.
+          \item Silniki z~modelem polskim obok VLM, analiza błędów diakrytycznych.
           \item 1968 skanów z~bazy PHCD; porównań VLM na tym materiale nie znaleźliśmy.
-          \item Analiza błędów diakrytycznych.
-          \item Powtórzenie badania bazowego: 8 modeli, CER zgodny z~autorami do 0,001 (Pixtral 0,007).
+          \item Powtórzone badanie bazowe: 8 modeli, różnica CER do 0,001 (Pixtral 0,007).
         \end{itemize}
       \end{block}
     \end{column}

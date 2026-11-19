@@ -1,6 +1,6 @@
 # Notatki do wystąpienia na Lab 5
 
-Około 500 słów, czyli 4 minuty przy tempie 120-130 słów na minutę; reszta z 5 minut zostaje na przejścia między slajdami i pokazywanie wykresów. Liczby pochodzą z `research/results/analysis/` (commit 9708a83).
+Około 500 słów, czyli 4 minuty przy tempie 120-130 słów na minutę; reszta z 5 minut zostaje na przejścia między slajdami i pokazywanie wykresów. Liczby pochodzą z `research/results/` (commit 9708a83). Przedziały ufności dla skanów, odsetki niepełnych odczytów skanów i ρ = 0,82 dla całego pisma odręcznego policzono osobno z predykcji w tym katalogu.
 
 ## Slajd 1. Tytuł (10 s)
 
@@ -8,7 +8,7 @@ Przedstawiamy nasz artykuł: ocenę silników OCR i modeli wizyjno-językowych w
 
 ## Slajd 2. Cel i pytania (40 s)
 
-Modele wizyjno-językowe i silniki OCR uczy się głównie na tekstach angielskich. Polski ma dziewięć liter z diakrytykami, które od liter łacińskich różni tylko ogonek, kreska albo kropka. Autorzy artykułu bazowego pokazali dla tureckiego, że takie litery są głównym źródłem błędów. My powtarzamy ich protokół dla polskiego. Chcemy wiedzieć, który system najlepiej czyta polski tekst, co najbardziej zwiększa błąd i czy kolejność modeli na danych syntetycznych zgadza się z kolejnością na prawdziwym piśmie.
+Silniki OCR i modele wizyjno-językowe są uczone głównie na tekstach angielskich, w których nie ma polskich liter z diakrytykami. Jest ich dziewięć i od liter łacińskich różni je tylko ogonek, kreska albo kropka. Autorzy artykułu bazowego pokazali dla tureckiego, że takie litery są głównym źródłem błędów. My powtarzamy ich protokół dla polskiego. Chcemy wiedzieć, który system najlepiej czyta polski tekst, co najbardziej zwiększa błąd i czy kolejność modeli na danych syntetycznych zgadza się z kolejnością na prawdziwym piśmie.
 
 ## Slajd 3. Materiał (45 s)
 
@@ -20,7 +20,7 @@ Badamy siedem otwartych modeli bez douczania: trzy modele wizyjno-językowe, GOT
 
 ## Slajd 5. Porównanie modeli (45 s)
 
-Najlepszy na obu zbiorach jest Qwen2.5-VL: błąd znakowy około 6% na danych syntetycznych i 10% na skanach. Na czystym druku klasyczne Tesseract i EasyOCR są prawie bezbłędne, ale pismo odręczne podnosi błąd wszystkim modelom. Skany są wyraźnie trudniejsze niż obrazy syntetyczne. U modeli wizyjno-językowych mniej więcej co trzecia błędna odpowiedź różni się od wzorca tylko diakrytykami, a u Tesseracta tylko 3%.
+Najlepszy na obu zbiorach jest Qwen2.5-VL: błąd znakowy około 6% na danych syntetycznych i 10% na skanach. Na czystym druku klasyczne Tesseract i EasyOCR są prawie bezbłędne, ale pismo odręczne podnosi błąd wszystkim modelom. Skany są wyraźnie trudniejsze niż obrazy syntetyczne. U modeli wizyjno-językowych od 26 do 33% błędnych odpowiedzi różni się od wzorca tylko diakrytykami, a u Tesseracta 3%.
 
 ## Slajd 6. Co utrudnia odczyt (45 s)
 
@@ -28,7 +28,7 @@ Mapa pokazuje błąd w każdej kategorii. Polskie znaki szkodzą modelom wizyjno
 
 ## Slajd 7. Dane syntetyczne a prawdziwe pismo (40 s)
 
-Porównujemy błąd na syntetycznych zdaniach pisanych odręcznie z błędem na skanach. Korelacja Spearmana wynosi 0,89 i jest istotna. Trzy pierwsze miejsca i ostatnie są takie same, zamieniają się tylko trzy silniki klasyczne. Dane syntetyczne przewidują więc kolejność modeli, ale nie poziom błędu. GOT-OCR2 i PaddleOCR często przerywają odczyt w połowie strony, co tłumaczy ich wysoki błąd na skanach.
+Porównujemy błąd na syntetycznych zdaniach pisanych odręcznie z błędem na skanach. Korelacja Spearmana wynosi 0,89 i jest istotna. Trzy pierwsze miejsca i ostatnie są takie same, zamieniają się tylko trzy silniki klasyczne. Dane syntetyczne przewidują więc kolejność modeli, ale nie poziom błędu. GOT-OCR2 i PaddleOCR często zwracają mniej niż połowę tekstu ze skanu, co w dużej części tłumaczy ich wysoki błąd.
 
 ## Slajd 8. Wnioski i wkład własny (40 s)
 
@@ -37,7 +37,7 @@ Podsumowując: Qwen2.5-VL czyta polski tekst najdokładniej, polskie znaki szkod
 ## Na pytania
 
 - **Dlaczego 7 modeli, a nie 9 z planu?** Phi-3.5-vision i Pixtral-12B nie zostały policzone, bo Colab przestał przydzielać A100. Phi policzono dla 833 z 2200 obrazów, Pixtrala dla całego zbioru syntetycznego i 200 skanów; tych cząstkowych wyników nie używamy.
-- **Dlaczego stary PaddleOCR 2.9.1?** Tej wersji używali autorzy artykułu bazowego. PaddleOCR 3.x ma w modelu polskim wszystkie 18 polskich liter.
+- **Dlaczego stary PaddleOCR 2.9.1?** Kod autorów artykułu bazowego korzysta z interfejsu PaddleOCR 2.x, a z wersją 2.9.1 powtórzyliśmy 99,4% ich odpowiedzi. PaddleOCR 3.x ma w modelu polskim wszystkie 18 polskich liter.
 - **Dlaczego bez TrOCR?** Model `trocr-large-printed` czyta tylko pojedyncze linie angielskiego druku, a nie całe strony.
 - **Czym różni się miara od autorów?** Obie zamieniają tekst na małe litery i usuwają interpunkcję. Autorzy usuwali też spacje, my je zostawiamy, więc sklejone słowa liczą się jako błąd. CER jest obcięty do 1, a pusta odpowiedź liczy się jako 1.
 - **Czy korelacja zależy od wyboru zdań?** Dla całego syntetycznego pisma odręcznego, a nie tylko zdań, wynosi 0,82, nadal powyżej progu istotności (około 0,79 dla 7 modeli).
