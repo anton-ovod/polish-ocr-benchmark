@@ -189,5 +189,5 @@ Każdy katalog zawiera tylko to, czego faktycznie używa.
   `summarize.py` → `summary/effects.csv` i kolumna CI w `tables/overall.tex`.
 
 ### Do zrobienia
-- Artykuł (`main.tex`, ok. 5,4 strony treści): autorzy i uczelnia (`\TODO{}`), dopracowanie przeglądu literatury o OCR dla polskiego, sprawdzenie wyniku GOT-OCR2 na skanach (0,795) na surowych predykcjach.
+- Artykuł (`main.tex`, ok. 5,4 strony treści): dopracowanie przeglądu literatury o OCR dla polskiego, sprawdzenie wyniku GOT-OCR2 na skanach (0,795) na surowych predykcjach.
 - Prezentacja naszego badania (`docs/research/presentation/`): potwierdzić datę Lab 5 (22.11), slajd 8 jest na styk (overfull 11 pt).
