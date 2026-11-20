@@ -1,8 +1,8 @@
-% Prezentacja artykułu własnego (Lab 5): 8 slajdów, do 5 minut.
-% Kompilacja: latexmk -pdf presentation.tex (obok muszą leżeć model_ranking.pdf, conditions_heatmap.pdf, examples.pdf
-% i phcd_scan.png).
-% Liczby: research/results/analysis/ (commit 9708a83); odsetek odpowiedzi różnych tylko diakrytykami liczony osobno.
-% Data Lab 5 według harmonogramu z października, do potwierdzenia.
+% Prezentacja artykułu (Lab 5): 8 slajdów, do 5 minut.
+% Kompilacja: latexmk -pdf presentation.tex (rysunki z ../article/figures podane pełną ścieżką, żeby żaden
+% stary plik o tej samej nazwie w tym katalogu ich nie zasłonił; skan phcd_scan.png obok).
+% Liczby jak w artykule (research/results/, tables/overall.tex); odczyty skanu ze slajdu 7: research/results/gold/*.csv,
+% images/inwokacja_0000.png.
 \documentclass[aspectratio=169,11pt]{beamer}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -14,235 +14,178 @@
 
 \usetheme{default}
 \usecolortheme{seahorse}
+\useoutertheme{infolines}
+\setbeamertemplate{headline}{}
 \setbeamertemplate{navigation symbols}{}
-\setbeamertemplate{footline}[frame number]
+\setbeamersize{text margin left=1cm,text margin right=1cm}
 \definecolor{akcent}{rgb}{0.2,0.2,0.7}
+\definecolor{blad}{rgb}{0.8,0.1,0.1}
 \setbeamercolor{block title}{bg=akcent!18,fg=akcent!70!black}
 \setbeamercolor{block body}{bg=akcent!6}
 \setbeamerfont{block title}{size=\small,series=\bfseries}
 
-% Wąska kolumna z etykietą po lewej, bez justowania, bo w wąskich kolumnach rozciąga odstępy.
-% Bez \leavevmode kolor przesuwa pierwszy wiersz komórki o linię w dół.
-\newcolumntype{L}[1]{>{\raggedright\arraybackslash\leavevmode\color{akcent!70!black}}p{#1}}
-\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
-\newcommand{\zrodlo}[1]{\par\vfill{\tiny\color{black!65}#1\par}}
+\newcommand{\bl}[1]{\textcolor{blad}{#1}}
+\newcommand{\naglowek}[1]{{\color{akcent!70!black}\bfseries #1}\par\smallskip}
 
-\title{Ocena silników OCR i~modeli wizyjno-językowych w~rozpoznawaniu tekstu polskiego na danych syntetycznych i~rzeczywistych}
-\subtitle{Artykuł własny. Artykuł bazowy: Y.~Yılmaz, E.\,G.~Hanoğlu, A.\,G.~Özkan, K.~Öztoprak,
-  \emph{International Journal on Document Analysis and Recognition}, Springer, 2026,
-  \href{https://doi.org/10.1007/s10032-026-00613-6}{doi:10.1007/s10032-026-00613-6}}
-\author{Anton Ovod, Maciej Pietras, Marek Siuzdak, Paweł Podgórski}
-\institute{Politechnika Lubelska, Wydział Elektrotechniki i~Informatyki}
-\date{Laboratorium 5, 22.11.2026}
+\title[OCR i modele wizyjno-językowe dla tekstu polskiego]{Ocena silników OCR i~modeli wizyjno-językowych
+  w~rozpoznawaniu tekstu polskiego na danych syntetycznych i~rzeczywistych}
+\author[A.~Ovod i~in.]{Anton Ovod, Maciej Pietras, Marek Siuzdak, Paweł Podgórski}
+\institute[Politechnika Lubelska]{Politechnika Lubelska, Wydział Elektrotechniki i~Informatyki}
+\date[Lab 5, 22.11.2026]{Przygotowanie i~publikowanie artykułów naukowych\\Laboratorium 5, 22.11.2026}
 
 \begin{document}
 
 % 1 --------------------------------------------------------------------------
-\begin{frame}
+\begin{frame}[plain]
   \titlepage
 \end{frame}
 
 % 2 --------------------------------------------------------------------------
-\begin{frame}{Cel i~pytania badawcze}
+\begin{frame}{Motywacja i~cel pracy}
   \small
   \begin{itemize}
-    \item Silniki OCR i~modele wizyjno-językowe (VLM) są uczone głównie na tekstach angielskich, w~których nie
-      występują polskie litery z~diakrytykami: ą, ć, ę, ł, ń, ó, ś, ź, ż.
-    \item Yılmaz i~in.\ pokazali dla tureckiego, że litery swoiste są głównym źródłem błędów; powtarzamy ich
-      protokół dla polskiego.
+    \item Modele wizyjno-językowe są uczone głównie na danych angielskich i~chińskich.
+    \item Alfabet polski zawiera dziewięć liter diakrytycznych: {\color{akcent}ą, ć, ę, ł, ń, ó, ś, ź, ż}.
+    \item W~języku tureckim litery specyficzne dla alfabetu należą do głównych źródeł błędów~[1].
+    \item Dla języka polskiego nie znaleziono porównania tych modeli z~klasycznymi silnikami OCR.
   \end{itemize}
-  \begin{block}{Cel}
-    Porównanie otwartych silników OCR i~modeli VLM w~rozpoznawaniu tekstu polskiego oraz sprawdzenie, czy wyniki
-    z~danych syntetycznych przenoszą się na prawdziwe pismo ręczne.
+  \begin{block}{Cel pracy}
+    Ocena, jak otwarte silniki OCR i~modele wizyjno-językowe rozpoznają tekst polski i~od jakich cech tekstu
+    i~obrazu zależy ich dokładność.
     \begin{enumerate}
-      \item Który system najlepiej odczytuje polski tekst?
-      \item Jak na błąd wpływają polskie znaki, długość, kontekst, pismo i~zniekształcenia?
-      \item Czy kolejność modeli na danych syntetycznych zgadza się z~prawdziwym pismem?
+      \item Które narzędzie najlepiej rozpoznaje tekst polski?
+      \item Jak na błąd wpływają znaki diakrytyczne, długość, kontekst, rodzaj pisma i~zniekształcenia?
+      \item Czy ranking uzyskany na danych syntetycznych powtarza się na rzeczywistym piśmie?
     \end{enumerate}
   \end{block}
-  \medskip
-  {\footnotesize Słowa kluczowe: OCR, modele wizyjno-językowe, język polski, dane syntetyczne, znaki diakrytyczne\par}
+  \vfill
+  {\footnotesize\color{black!70} Słowa kluczowe: OCR, modele wizyjno-językowe, język polski, dane syntetyczne, znaki diakrytyczne\par}
+  {\tiny\color{black!65} [1] Y.~Yılmaz i~in., \emph{Benchmarking OCR and vision-language models for Turkish text recognition},
+  IJDAR, Springer, 2026.\par}
 \end{frame}
 
 % 3 --------------------------------------------------------------------------
-\begin{frame}{Materiał: dwa zbiory danych}
+\begin{frame}{Materiał badawczy}
+  \centerline{\includegraphics[width=0.7\textwidth]{./examples.pdf}}
+  \medskip
+  \small
   \begin{columns}[T]
-    \begin{column}{0.44\textwidth}
-      \small
-      \begin{tabular}{@{}lr@{}}
-        \toprule
-        Zbiór & Obrazy \\
-        \midrule
-        Syntetyczny, \emph{Lalka} B.~Prusa & 2200 \\
-        Skany z~bazy PHCD, Inwokacja & 1968 \\
-        \bottomrule
-      \end{tabular}
-
-      \smallskip
-      \includegraphics[width=\linewidth]{phcd_scan.png}
-
-      {\footnotesize Skany: 4 wersy Inwokacji przepisane odręcznie (baza PHCD, Politechnika Lubelska), czytane
-      w~całości.\par}
+    \begin{column}{0.48\textwidth}
+      \naglowek{Zbiór syntetyczny: 2200 obrazów}
+      Słowa i~zdania z~\emph{Lalki} B.~Prusa wygenerowane w~TRDG~1.8.0, druk i~pismo odręczne, po 11 grup
+      ze 100 obrazami.
     \end{column}
-    \begin{column}{0.53\textwidth}
-      \small
-      \begin{tabular}{@{}L{2.4cm}P{4.55cm}@{}}
-        \toprule
-        Kategoria & Podkategorie \\
-        \midrule
-        Polskie znaki & z~nimi, bez nich \\[1pt]
-        Długość słowa & poniżej 10, ponad 10 znaków \\[1pt]
-        Kontekst & słowo, zdanie 4-8 słów \\[1pt]
-        Zniekształcenia & czysty, rozmycie, obrót, szum, niska rozdzielczość \\
-        \bottomrule
-      \end{tabular}
-
-      \smallskip
-      {\footnotesize 2 rodzaje pisma $\times$ 11 podkategorii $\times$ 100 obrazów = \textbf{2200}. Generator TRDG~1.8.0,
-      15 krojów drukowanych i~19 odręcznych, każdy z~kompletem polskich liter.\par}
+    \begin{column}{0.48\textwidth}
+      \naglowek{Zbiór rzeczywisty: 1968 skanów}
+      Odręcznie przepisany początek inwokacji \emph{Pana Tadeusza} z~bazy PHCD Politechniki Lubelskiej.
     \end{column}
   \end{columns}
-
-  \vspace{4pt}
-  \includegraphics[width=\textwidth]{examples.pdf}
-  \zrodlo{Tekst: \emph{Lalka}, Wolne Lektury (domena publiczna). Skany: PHCD, Tokovarov i~in., ASTRJ 2020, \url{https://cs.pollub.pl/phcd/}.}
+  \vfill
+  {\tiny\color{black!65} Tekst: \emph{Lalka}, Wolne Lektury (domena publiczna). Skany: baza PHCD (Tokovarov i~in., 2020),
+  \url{https://cs.pollub.pl/phcd/}.\par}
 \end{frame}
 
 % 4 --------------------------------------------------------------------------
-\begin{frame}{Metody: modele i~ocena}
+\begin{frame}{Metody badawcze}
   \begin{columns}[T]
-    \begin{column}{0.45\textwidth}
+    \begin{column}{0.46\textwidth}
       \small
-      7 otwartych modeli bez douczania:
-
-      \smallskip
-      \begin{tabular}{@{}L{1.9cm}P{3.95cm}@{}}
+      \naglowek{Badane narzędzia}
+      \begin{tabular}{@{}>{\raggedright\arraybackslash}p{3.3cm}>{\raggedright\arraybackslash}p{2.6cm}@{}}
         \toprule
-        VLM & Qwen2.5-VL 7B, InternVL3-8B, DeepSeek-VL2-tiny \\[2pt]
-        Model OCR & GOT-OCR2 \\[2pt]
-        Silniki klasyczne & PaddleOCR 2.9.1, Tesseract, EasyOCR (modele polskie) \\
+        modele \mbox{wizyjno-językowe} & Qwen2.5-VL\newline InternVL3\newline DeepSeek-VL2 \\[3pt]
+        model tylko do OCR & GOT-OCR2 \\[3pt]
+        klasyczne silniki & PaddleOCR\newline Tesseract\newline EasyOCR \\
         \bottomrule
       \end{tabular}
 
       \medskip
-      Google Colab, GPU A100; każdy model we własnym środowisku, przypięte wersje pakietów i~wag.
-
-      \medskip
-      {\footnotesize\color{black!65} Z~planu nie zostały policzone Phi-3.5-vision i~Pixtral-12B: Colab przestał przydzielać A100.\par}
+      Narzędzia otwarte, użyte bez douczania; klasyczne silniki z~modelem języka polskiego. Obliczenia: Google
+      Colab, NVIDIA A100.
     \end{column}
-    \begin{column}{0.52\textwidth}
+    \begin{column}{0.5\textwidth}
       \small
+      \naglowek{Miary oceny}
+      \[
+        \text{CER} = \min\left(1,\ \frac{S + D + I}{N}\right)
+      \]
+      {\footnotesize $S$, $D$, $I$: liczby podstawień, usunięć i~wstawień, $N$: długość wzorca.\par}
+      \medskip
       \begin{itemize}
-        \item Polecenie dla VLM jak u~autorów, z~,,Turkish'' zamienionym na ,,Polish''.
-        \item Przed liczeniem: małe litery, bez interpunkcji; polskie znaki zostają.
-        \item Miary: CER $=(S+D+I)/N$ obcięty do 1, WER dla zdań i~skanów.
-        \item Błędy diakrytyczne: odsetek błędnych odpowiedzi, które różnią się od wzorca tylko diakrytykami.
-        \item Statystyka: bootstrap 95\% (1000 losowań), efekt jako różnica średnich CER.
-        \item Spearman: CER na czystych zdaniach pisma odręcznego a~CER na skanach.
+        \item Normalizacja: małe litery, bez interpunkcji.
+        \item Miary uzupełniające: WER dla zdań, odsetek pomyłek wyłącznie diakrytycznych.
+        \item Statystyka: 95\% przedziały ufności (bootstrap, 1000 prób), korelacja rang Spearmana.
       \end{itemize}
     \end{column}
   \end{columns}
 \end{frame}
 
 % 5 --------------------------------------------------------------------------
-\begin{frame}{Wyniki: porównanie modeli}
-  \begin{columns}[T]
-    \begin{column}{0.62\textwidth}
-      \includegraphics[width=\textwidth]{model_ranking.pdf}
-    \end{column}
-    \begin{column}{0.36\textwidth}
-      \small
-      \begin{itemize}
-        \item Qwen2.5-VL 7B najlepszy na obu zbiorach.
-        \item Czysty druk: Tesseract i~EasyOCR prawie bez błędów (CER do 0,002).
-        \item Pismo odręczne trudniejsze dla wszystkich: CER wyższy o~0,08-0,24.
-        \item Na skanach CER 1,5-3,6 raza wyższy.
-        \item VLM i~PaddleOCR: 26-33\% błędnych odpowiedzi różni się tylko diakrytykami, Tesseract 3\%.
-      \end{itemize}
-    \end{column}
-  \end{columns}
-  \zrodlo{Kreski: przedziały 95\% (bootstrap, 1000 losowań).}
+\begin{frame}{Wyniki: zbiór syntetyczny}
+  \centerline{\includegraphics[width=0.68\textwidth]{./conditions.pdf}}
+  \small
+  \begin{itemize}
+    \item Najdokładniejszy Qwen2.5-VL: CER 0,059, ponad dwukrotnie mniej niż kolejne modele.
+    \item 26-33\% błędnych odpowiedzi modeli wizyjno-językowych i~PaddleOCR to pomyłki wyłącznie diakrytyczne
+      (Tesseract: 3\%).
+  \end{itemize}
 \end{frame}
 
 % 6 --------------------------------------------------------------------------
-\begin{frame}{Wyniki: co utrudnia odczyt (zbiór syntetyczny)}
-  % Klamra zaraz po tytule ramki zostałaby podtytułem, dlatego \centerline.
-  \centerline{\includegraphics[width=0.95\textwidth]{conditions_heatmap.pdf}}
+\begin{frame}{Wyniki: skany PHCD}
+  \centerline{\includegraphics[width=0.84\textwidth]{./ranking.pdf}}
   \small
   \begin{itemize}
-    \item Polskie znaki: VLM tracą od 0,05 (Qwen2.5-VL) do 0,18 (DeepSeek-VL2), GOT-OCR2 0,23, PaddleOCR 0,16
-      (w~wersji 2.9.1 jego słownik nie ma ń, ś, ź, ż), a~Tesseract i~EasyOCR z~modelem polskim tylko 0,01 i~0,03.
-    \item Szum psuje głównie Tesseract (+0,52), rozmycie EasyOCR (+0,43) i~Tesseract (+0,24).
+    \item Ranking na skanach jest zgodny z~rankingiem na syntetycznych zdaniach odręcznych: $\rho = 0{,}89$,
+      $p = 0{,}007$. Zamiany miejsc dotyczą tylko Tesseracta, EasyOCR i~PaddleOCR.
+    \item CER na skanach jest co najmniej dwukrotnie wyższy niż na syntetycznych zdaniach odręcznych.
   \end{itemize}
 \end{frame}
 
 % 7 --------------------------------------------------------------------------
-\begin{frame}{Wyniki: dane syntetyczne a~prawdziwe pismo}
-  \begin{columns}[T]
-    \begin{column}{0.53\textwidth}
-      \small
-      \setlength{\tabcolsep}{5pt}
-      \begin{tabular}{@{}lcccc@{}}
-        \toprule
-        & \multicolumn{2}{c}{CER} & \multicolumn{2}{c}{Miejsce} \\
-        \cmidrule(lr){2-3}\cmidrule(l){4-5}
-        Model & zdania & skany & zdania & skany \\
-        \midrule
-        Qwen2.5-VL 7B & 0,012 & 0,103 & 1 & 1 \\
-        InternVL3-8B & 0,087 & 0,220 & 2 & 2 \\
-        DeepSeek-VL2 & 0,101 & 0,355 & 3 & 3 \\
-        Tesseract & 0,164 & 0,419 & 5 & 4 \\
-        EasyOCR & 0,207 & 0,632 & 6 & 5 \\
-        PaddleOCR & 0,131 & 0,650 & 4 & 6 \\
-        GOT-OCR2 & 0,328 & 0,795 & 7 & 7 \\
-        \bottomrule
-      \end{tabular}
+\begin{frame}{Przykład odczytu skanu PHCD}
+  \centerline{\includegraphics[width=0.58\textwidth]{phcd_scan.png}}
+  \medskip
+  \small
+  \centering
+  \begin{tabular}{@{}lcl@{}}
+    \toprule
+    & CER skanu & drugi wers \\
+    \midrule
+    wzorzec & & Ile Cię trzeba cenić? Ten tylko się dowie: \\
+    Qwen2.5-VL & 0,11 & \bl{Je} Cię trzeba \bl{ocalić}? Ten tylko się dowie: \\
+    InternVL3 & 0,25 & \bl{śle} cię trzeba \bl{emicą}. Ten tylko \bl{ser dawie}: \\
+    DeepSeek-VL2 & 0,28 & \bl{Je Cie trobe conic}? Ten \bl{tyko sie dowe}: \\
+    GOT-OCR2 & 0,95 & \bl{s it u o} \quad {\footnotesize (cała odpowiedź)} \\
+    \bottomrule
+  \end{tabular}
 
-      \smallskip
-      {\footnotesize Zdania: czyste zdania pisma odręcznego ze zbioru syntetycznego (100 obrazów).\par}
-    \end{column}
-    \begin{column}{0.44\textwidth}
-      \small
-      \begin{itemize}
-        \item Spearman $\rho=0{,}89$ ($p=0{,}007$), próg istotności dla 7 modeli to około 0,79.
-        \item Miejsca 1-3 i~7 takie same, zamieniają się tylko Tesseract, EasyOCR i~PaddleOCR.
-        \item Dane syntetyczne przewidują kolejność, ale nie poziom błędu.
-        \item GOT-OCR2 i~PaddleOCR często nie kończą strony: 67\% i~46\% odpowiedzi ma mniej niż połowę tekstu.
-      \end{itemize}
-    \end{column}
-  \end{columns}
+  \medskip
+  Kolejność narzędzi na tym skanie jest zgodna z~rankingiem na całym zbiorze skanów.
 \end{frame}
 
 % 8 --------------------------------------------------------------------------
-\begin{frame}{Wnioski, elementy nowości i~wkład własny}
-  \begin{columns}[T]
-    \begin{column}{0.48\textwidth}
-      \begin{block}{Wnioski}
-        \small
-        \setlength{\leftmargini}{1.2em}
-        \begin{itemize}
-          \item Qwen2.5-VL 7B odczytuje polski tekst najdokładniej na obu zbiorach.
-          \item Polskie znaki szkodzą modelom VLM i~PaddleOCR, a~prawie nie szkodzą silnikom z~modelem polskim.
-          \item Ranking z~danych syntetycznych przewiduje kolejność modeli na prawdziwym piśmie ($\rho=0{,}89$), ale nie poziom błędu.
-        \end{itemize}
-      \end{block}
-    \end{column}
-    \begin{column}{0.48\textwidth}
-      \begin{block}{Elementy nowości i~wkład własny}
-        \small
-        \setlength{\leftmargini}{1.2em}
-        \begin{itemize}
-          \item Protokół Yılmaza i~in.\ dla polskiego: własny generator i~dobór fontów.
-          \item Silniki z~modelem polskim obok VLM, analiza błędów diakrytycznych.
-          \item 1968 skanów z~bazy PHCD; porównań VLM na tym materiale nie znaleźliśmy.
-          \item Powtórzone badanie bazowe: 8 modeli, różnica CER do 0,001 (Pixtral 0,007).
-        \end{itemize}
-      \end{block}
-    \end{column}
-  \end{columns}
+\begin{frame}{Wnioski}
+  \small
+  \begin{enumerate}
+    \item Najdokładniej tekst polski rozpoznaje Qwen2.5-VL, zarówno na obrazach syntetycznych, jak i~na skanach.
+    \item Polskie znaki i~niska rozdzielczość pogarszają wyniki prawie wszystkich narzędzi. Klasyczne silniki
+      najwięcej tracą przy piśmie odręcznym i~zniekształceniach.
+    \item Ranking z~danych syntetycznych powtarza się na rzeczywistym piśmie, dlatego takie dane nadają się
+      do wstępnego wyboru modelu, choć nie przewidują poziomu błędu.
+  \end{enumerate}
+  \begin{block}{Elementy nowości}
+    \begin{itemize}
+      \setlength{\itemsep}{0pt}
+      \item porównanie modeli wizyjno-językowych i~klasycznych silników OCR dla języka polskiego,
+      \item kontrolowany zbiór syntetyczny z~polskimi znakami,
+      \item ocena na 1968 rzeczywistych rękopisach z~bazy PHCD,
+      \item analiza pomyłek wyłącznie diakrytycznych.
+    \end{itemize}
+  \end{block}
   \vfill
-  {\footnotesize Dostęp do danych: kod i~odpowiedzi modeli dla każdego obrazu na GitHubie (licencja MIT), zbiór syntetyczny
-  odtwarzalny z~generatora i~ziarna, skany w~bazie PHCD.\par}
+  {\footnotesize Kod, generator i~odpowiedzi modeli:
+  \href{https://github.com/anton-ovod/polish-ocr-benchmark}{github.com/anton-ovod/polish-ocr-benchmark}\par}
 \end{frame}
 
 \end{document}

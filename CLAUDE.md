@@ -127,10 +127,9 @@ Każdy katalog zawiera tylko to, czego faktycznie używa.
   artykułu bazowego, 8 slajdów, bez naszej replikacji), `speaker_notes.md`. `article/`: PDF artykułu bazowego (poza gitem).
 - `docs/research/`: dokumenty do naszego badania. `article/`: `main.tex` (szkielet LNCS po polsku z `\TODO{}`),
   `references.bib` (najwyżej 10 pozycji), `tables/*.tex` (generuje `summarize.py`, nie edytować ręcznie), `figures/`. `presentation/`:
-  `presentation.tex` (Lab 5, 8 slajdów, do 5 minut), `speaker_notes.md` (z odpowiedziami na pytania), wykresy
-  `model_ranking.pdf`, `conditions_heatmap.pdf`, `examples.pdf` i `phcd_scan.png`. Wykresy zrobione poza repo
-  (szkic kolegi), liczby z `research/results/analysis/`; odsetek błędnych odpowiedzi różnych od wzorca tylko
-  diakrytykami (26–33% dla VLM i PaddleOCR, 3% Tesseract) liczony osobno, nie przez `analyze.py`.
+  `presentation.tex` (Lab 5, 8 slajdów, do 5 minut), `speaker_notes.md` (z odpowiedziami na pytania) i `phcd_scan.png`
+  (skan `inwokacja_0000` do slajdu z odczytami modeli). Wykresy prezentacja bierze z `../article/figures/`, więc po ich
+  przegenerowaniu wystarczy ją przekompilować; liczby i nazwy modeli są takie same jak w artykule.
 
 ### Uruchamianie
 - Replikacja: `python replication/build_labels.py --n 50`, `replication/make_bundle.sh`, `ocr_bundle.zip` na
