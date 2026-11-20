@@ -8,7 +8,7 @@ Dzień dobry. Chcielibyśmy przedstawić nasz artykuł o tym, jak silniki OCR i 
 
 ## Slajd 2. Motywacja i cel pracy (40 s)
 
-Modele wizyjno-językowe są uczone głównie na tekstach angielskich i chińskich, więc nie wiadomo, jak dobrze radzą sobie z językami, które mają własne litery. W języku polskim jest ich dziewięć, a od zwykłych liter łacińskich różni je tylko ogonek, kreska albo kropka, więc łatwo o pomyłkę. Badanie dla języka tureckiego pokazało, że właśnie takie litery są jednym z głównych źródeł błędów. Dla polskiego nie znaleźliśmy porównania, które obejmowałoby zarówno modele wizyjno-językowe, jak i klasyczne silniki OCR. Dlatego postawiliśmy trzy pytania: które narzędzie czyta polski tekst najlepiej, od czego zależy błąd i czy ranking ustalony na tanich danych syntetycznych powtórzy się na prawdziwym piśmie.
+Modele wizyjno-językowe są uczone głównie na tekstach angielskich i chińskich, więc nie wiadomo było, jak dobrze radzą sobie z językami, które mają własne litery. W języku polskim jest ich dziewięć, a od zwykłych liter łacińskich różni je tylko ogonek, kreska albo kropka, więc łatwo o pomyłkę. Badanie dla języka tureckiego pokazało, że właśnie takie litery są jednym z głównych źródeł błędów. Dla polskiego nie znaleźliśmy porównania, które obejmowałoby zarówno modele wizyjno-językowe, jak i klasyczne silniki OCR. Dlatego postawiliśmy trzy pytania: które narzędzie czyta polski tekst najlepiej, od czego zależy błąd i czy ranking ustalony na tanich danych syntetycznych powtórzy się na prawdziwym piśmie.
 
 ## Slajd 3. Materiał badawczy (40 s)
 
