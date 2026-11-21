@@ -128,8 +128,9 @@ Każdy katalog zawiera tylko to, czego faktycznie używa.
 - `docs/research/`: dokumenty do naszego badania. `article/`: `main.tex` (szkielet LNCS po polsku z `\TODO{}`),
   `references.bib` (najwyżej 10 pozycji), `tables/*.tex` (generuje `summarize.py`, nie edytować ręcznie), `figures/`. `presentation/`:
   `presentation.tex` (Lab 5, 8 slajdów, do 5 minut), `speaker_notes.md` (z odpowiedziami na pytania) i `phcd_scan.png`
-  (skan `inwokacja_0000` do slajdu z odczytami modeli). Wykresy prezentacja bierze z `../article/figures/`, więc po ich
-  przegenerowaniu wystarczy ją przekompilować; liczby i nazwy modeli są takie same jak w artykule.
+  (skan `inwokacja_0000` do slajdu z odczytami modeli). `examples.pdf`, `conditions.pdf` i `ranking.pdf` to kopie z
+  `../article/figures/`, więc po przegenerowaniu wykresów trzeba je skopiować ponownie i przekompilować prezentację;
+  liczby i nazwy modeli są takie same jak w artykule.
 
 ### Uruchamianie
 - Replikacja: `python replication/build_labels.py --n 50`, `replication/make_bundle.sh`, `ocr_bundle.zip` na
