@@ -1,6 +1,6 @@
 % Prezentacja artykułu (Lab 5): 8 slajdów, do 5 minut.
-% Kompilacja: latexmk -pdf presentation.tex (rysunki z ../article/figures podane pełną ścieżką, żeby żaden
-% stary plik o tej samej nazwie w tym katalogu ich nie zasłonił; skan phcd_scan.png obok).
+% Kompilacja: latexmk -pdf presentation.tex. examples.pdf, conditions.pdf i ranking.pdf to kopie z ../article/figures;
+% po przegenerowaniu wykresów trzeba je tu skopiować ponownie.
 % Liczby jak w artykule (research/results/, tables/overall.tex); odczyty skanu ze slajdu 7: research/results/gold/*.csv,
 % images/inwokacja_0000.png.
 \documentclass[aspectratio=169,11pt]{beamer}
@@ -45,9 +45,9 @@
   \small
   \begin{itemize}
     \item Modele wizyjno-językowe są uczone głównie na danych angielskich i~chińskich.
-    \item Alfabet polski zawiera dziewięć liter diakrytycznych: {\color{akcent}ą, ć, ę, ł, ń, ó, ś, ź, ż}.
     \item W~języku tureckim litery specyficzne dla alfabetu należą do głównych źródeł błędów~[1].
     \item Dla języka polskiego nie znaleziono porównania tych modeli z~klasycznymi silnikami OCR.
+    \item Alfabet polski zawiera dziewięć liter diakrytycznych: {\color{akcent}ą, ć, ę, ł, ń, ó, ś, ź, ż}, które mogą być problematyczne w~odczycie.
   \end{itemize}
   \begin{block}{Cel pracy}
     Ocena, jak otwarte silniki OCR i~modele wizyjno-językowe rozpoznają tekst polski i~od jakich cech tekstu
@@ -59,7 +59,6 @@
     \end{enumerate}
   \end{block}
   \vfill
-  {\footnotesize\color{black!70} Słowa kluczowe: OCR, modele wizyjno-językowe, język polski, dane syntetyczne, znaki diakrytyczne\par}
   {\tiny\color{black!65} [1] Y.~Yılmaz i~in., \emph{Benchmarking OCR and vision-language models for Turkish text recognition},
   IJDAR, Springer, 2026.\par}
 \end{frame}
@@ -125,7 +124,7 @@
   \centerline{\includegraphics[width=0.68\textwidth]{./conditions.pdf}}
   \small
   \begin{itemize}
-    \item Najdokładniejszy Qwen2.5-VL: CER 0,059, ponad dwukrotnie mniej niż kolejne modele.
+    \item Najdokładniejszy Qwen2.5-VL: CER 0,059,\\ ponad dwukrotnie niższy niż u kolejnych modeli.
     \item 26-33\% błędnych odpowiedzi modeli wizyjno-językowych i~PaddleOCR to pomyłki wyłącznie diakrytyczne
       (Tesseract: 3\%).
   \end{itemize}
@@ -144,7 +143,7 @@
 
 % 7 --------------------------------------------------------------------------
 \begin{frame}{Przykład odczytu skanu PHCD}
-  \centerline{\includegraphics[width=0.58\textwidth]{phcd_scan.png}}
+  \centerline{\setlength{\fboxsep}{4pt}\fcolorbox{black!30}{white}{\includegraphics[width=0.58\textwidth]{phcd_scan.png}}}
   \medskip
   \small
   \centering
@@ -159,9 +158,6 @@
     GOT-OCR2 & 0,95 & \bl{s it u o} \quad {\footnotesize (cała odpowiedź)} \\
     \bottomrule
   \end{tabular}
-
-  \medskip
-  Kolejność narzędzi na tym skanie jest zgodna z~rankingiem na całym zbiorze skanów.
 \end{frame}
 
 % 8 --------------------------------------------------------------------------
@@ -183,9 +179,6 @@
       \item analiza pomyłek wyłącznie diakrytycznych.
     \end{itemize}
   \end{block}
-  \vfill
-  {\footnotesize Kod, generator i~odpowiedzi modeli:
-  \href{https://github.com/anton-ovod/polish-ocr-benchmark}{github.com/anton-ovod/polish-ocr-benchmark}\par}
 \end{frame}
 
 \end{document}
